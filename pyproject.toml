@@ -8,7 +8,6 @@ authors = ["npujol <naivy.luna@gmail.com>"]
 python = "^3.9"
 slob = {git = "https://github.com/itkach/slob.git"}
 peewee = "^3.14.0"
-ankisync = "^0.2.3"
 beautifulsoup4 = "^4.9.3"
 html5lib = "^1.1"
 
