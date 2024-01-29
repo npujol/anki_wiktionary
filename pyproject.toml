@@ -9,6 +9,8 @@ python = "^3.9"
 slob = {git = "https://github.com/itkach/slob.git"}
 peewee = "^3.14.0"
 beautifulsoup4 = "^4.9.3"
+genanki = "^0.13.1"
+requests = "^2.31.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.1.1"
