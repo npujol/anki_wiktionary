@@ -1,0 +1,25 @@
+.card {
+ font-family: arial;
+ font-size:150%;
+ text-align: center;
+ color: Black;
+ background-color:black;
+}
+
+#rubric {
+  text-align: left;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  background: #1d6695;
+  color: white;
+  font-weight: 500;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+          width:300px;
+          border-radius: 20px;
+}

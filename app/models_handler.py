@@ -1,12 +1,15 @@
-from bs4 import BeautifulSoup
 import json
-from peewee import BareField, IntegerField, Model, SqliteDatabase, TextField
-import slob
 
-from app.constants import OLD_ANKI_TEMPLATE
+from peewee import BareField, IntegerField, Model, TextField
+from peewee import SqliteDatabase
+
+from .constants import OLD_ANKI_TEMPLATE
+from .ipa_handler import get_main_word_with_ipa
 
 
 database = SqliteDatabase(None)
+
+database.init("Deutsch/collection.anki2")
 
 
 class BaseModel(Model):
@@ -116,44 +119,6 @@ class SqliteStat1(BaseModel):
         primary_key = False
 
 
-database.init("B1_Wortliste_DTZ_Goethe.apkg_FILES/collection.anki2")
-
-
-def get_IPA_from_Wiktionary(word):
-    with slob.open("dewiktionary-20200420.slob") as r:
-        values = slob.find(word, r, match_prefix=False)
-        for _, blob_word in values:
-            content = blob_word.content
-            soup = BeautifulSoup(content, "html5lib")
-            try:
-                ipa = soup.find(class_="ipa").get_text()  # type: ignore
-                return ipa
-            except Exception:
-                pass
-    return ""
-
-
-def get_main_word_with_ipa(front):
-    parts = front.split(",")
-    length_parts = len(parts)
-    try:
-        if length_parts == 1:
-            return get_IPA_from_Wiktionary(parts[0])
-        elif length_parts == 2:
-            first_word = parts[0].split(" ")
-            if len(first_word) == 1:
-                parts[0] = get_IPA_from_Wiktionary(first_word[0])
-            else:
-                _, noun = first_word
-            return get_IPA_from_Wiktionary(noun)  # type: ignore
-        elif length_parts == 4:
-            return get_IPA_from_Wiktionary(parts[0])
-        else:
-            return ""
-    except Exception:
-        return ""
-
-
 def change_fields():
     with database.atomic():
         all_content = Notes.select()
@@ -176,7 +141,6 @@ def add_model():
     with database.atomic():
         col_1 = Col.select()[0]
         col_1.models = json.dumps(OLD_ANKI_TEMPLATE)
-
         col_1.save()
 
 
@@ -186,10 +150,6 @@ def update_model():
         for row in all_content:
             row.mid = "143453125187"
             row.save()
-
-
-# update_model()
-# change_fields()
 
 
 def change_fields_add_ipa():

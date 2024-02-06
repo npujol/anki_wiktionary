@@ -3,10 +3,6 @@ import slob
 from bs4 import BeautifulSoup
 
 
-# logger = logging.getLogger("peewee")
-# logger.addHandler(logging.StreamHandler())
-# logger.setLevel(logging.DEBUG)
-
 database = SqliteDatabase(None)
 
 
@@ -33,7 +29,7 @@ class Notes(BaseModel):
         table_name = "notes"
 
 
-database.init("B1_Wortliste_DTZ_Goethe.apkg_FILES/collection.anki2")
+database.init("Deutsch/collection.anki2")
 
 
 def get_IPA_from_Wiktionary(word: str):
@@ -78,6 +74,7 @@ def get_main_word_with_ipa(front: str):
 
 
 def change_apkg(database_name: str = None):
+    breakpoint()
     with database.atomic():
         all_content = Notes.select()
         for row in all_content:
