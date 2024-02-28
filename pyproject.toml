@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "anki_wiktionary"
+name = "app"
 version = "0.1.0"
 description = ""
 authors = ["npujol <naivy.luna@gmail.com>"]
@@ -12,6 +12,8 @@ beautifulsoup4 = "^4.9.3"
 genanki = "^0.13.1"
 requests = "^2.31.0"
 pdbpp = "^0.10.3"
+pytest = "^8.0.0"
+pydantic = "^2.6.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.1.1"

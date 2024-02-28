@@ -2,6 +2,8 @@ import json
 import requests
 import logging
 
+from app.serializers import Note
+
 logger = logging.getLogger(__name__)
 
 
@@ -25,6 +27,8 @@ class AnkiConnector:
         "sync",
         "exportPackage",
         "importPackage",
+        "addNote",
+        "addNotes",
     )
 
     def __init__(self, server_url: str = "http://127.0.0.1:8765"):
@@ -51,6 +55,11 @@ class AnkiConnector:
     def get_cards_from_deck(self, deck_name: str):
         query = f"deck:{deck_name}"
         return self.make_request("findCards", query=query)
+
+    def add_note(self, note: Note):
+        return self.make_request(
+            "addNote", note.model_dump(mode="python", by_alias=True)
+        )
 
 
 connector = AnkiConnector()
