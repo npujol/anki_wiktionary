@@ -7,18 +7,18 @@ authors = ["npujol <naivy.luna@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 slob = {git = "https://github.com/itkach/slob.git"}
-peewee = "^3.14.0"
-beautifulsoup4 = "^4.9.3"
-genanki = "^0.13.1"
-requests = "^2.31.0"
-pdbpp = "^0.10.3"
-pytest = "^8.0.0"
-pydantic = "^2.6.1"
-
-[tool.poetry.group.dev.dependencies]
-black = "^24.1.1"
-ruff = "^0.1.14"
-isort = "^5.13.2"
+peewee = "*"
+beautifulsoup4 = "*"
+genanki = "*"
+requests = "*"
+pdbpp = "*"
+pytest = "*"
+pydantic = "*"
+black = "*"
+ruff = "*"
+isort = "*"
+pytest-insta = "*"
+pytest-vcr = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
