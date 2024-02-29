@@ -32,9 +32,10 @@ class Note(BaseModel):
     model_name: str = Field(..., alias="modelName")
     fields: Fields
     tags: list[str]
-    audio: list[AudioItem]
-    video: list[VideoItem]
-    picture: list[PictureItem]
+    audio: list[AudioItem] = []
+    video: list[VideoItem] = []
+    picture: list[PictureItem] = []
+    options: dict = {"allowDuplicate": False}
 
 
 class Params(BaseModel):

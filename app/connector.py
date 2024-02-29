@@ -1,4 +1,3 @@
-import json
 import requests
 import logging
 
@@ -34,10 +33,9 @@ class AnkiConnector:
     def __init__(self, server_url: str = "http://127.0.0.1:8765"):
         self.server_url = server_url
 
-    def make_request(self, action, **params):
+    def make_request(self, action, params={}):
         request_data = {"action": action, "params": params, "version": 6}
-        request_json = json.dumps(request_data).encode("utf-8")
-        response = requests.post(self.server_url, data=request_json).json()
+        response = requests.post(self.server_url, json=request_data).json()
         if len(response) != 2:
             raise Exception("response has an unexpected number of fields")
         if "error" not in response or "result" not in response:
@@ -54,18 +52,11 @@ class AnkiConnector:
 
     def get_cards_from_deck(self, deck_name: str):
         query = f"deck:{deck_name}"
-        return self.make_request("findCards", query=query)
+        return self.make_request("findCards", {"query": query})
 
     def add_note(self, note: Note):
+        data = note.model_dump(mode="python", by_alias=True)
         return self.make_request(
-            "addNote", note.model_dump(mode="python", by_alias=True)
+            "addNote",
+            {"note": data},
         )
-
-
-connector = AnkiConnector()
-
-result = connector.get_available_decks()
-print(f"{result}")
-
-result = connector.get_cards_from_deck(deck_name=result.get("New words"))
-print(f"{result}")

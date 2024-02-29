@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: '{"action": "addNote", "params": {"note": {"deckName": "Test", "modelName":
+      "Basic", "fields": {"Front": "front content1", "Back": "back content1"}, "tags":
+      ["test"], "audio": [{"url": "https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kanji=\u732b&kana=\u306d\u3053",
+      "filename": "yomichan_\u306d\u3053_\u732b.mp3", "skipHash": "7e2c2f954ef6051373ba916f000168dc",
+      "fields": ["Front"]}], "video": [{"url": "https://cdn.videvo.net/videvo_files/video/free/2015-06/small_watermarked/Contador_Glam_preview.mp4",
+      "filename": "countdown.mp4", "skipHash": "4117e8aab0d37534d9c8eac362388bbe",
+      "fields": ["Back"]}], "picture": [{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/A_black_cat_named_Tilly.jpg/220px-A_black_cat_named_Tilly.jpg",
+      "filename": "black_cat.jpg", "skipHash": "8d6e4646dfae812bf39651b59d7429ce",
+      "fields": ["Back"]}], "options": {"allowDuplicate": true}}}, "version": 6}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '917'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: POST
+    uri: http://127.0.0.1:8765/
+  response:
+    body:
+      string: '{"result": 1709242691373, "error": null}'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Origin:
+      - http://localhost
+      Content-Length:
+      - '40'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+version: 1
