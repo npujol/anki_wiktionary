@@ -1,7 +1,7 @@
 import requests
 import logging
 
-from app.serializers import Note
+from app.serializers import CustomNote, Note
 
 logger = logging.getLogger(__name__)
 
@@ -54,9 +54,12 @@ class AnkiConnector:
         query = f"deck:{deck_name}"
         return self.make_request("findCards", {"query": query})
 
-    def add_note(self, note: Note):
-        data = note.model_dump(mode="python", by_alias=True)
+    def add_note(self, note: Note | CustomNote):
+        data = note.model_dump(mode="python", by_alias=True, exclude_none=True)
         return self.make_request(
             "addNote",
             {"note": data},
         )
+
+    def get_models_and_ids(self):
+        return self.make_request("modelNamesAndIds")

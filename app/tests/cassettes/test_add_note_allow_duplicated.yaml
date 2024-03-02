@@ -26,7 +26,7 @@ interactions:
     uri: http://127.0.0.1:8765/
   response:
     body:
-      string: '{"result": 1709242761033, "error": null}'
+      string: '{"result": 1709401040058, "error": null}'
     headers:
       Access-Control-Allow-Headers:
       - '*'
@@ -66,7 +66,7 @@ interactions:
     uri: http://127.0.0.1:8765/
   response:
     body:
-      string: '{"result": 1709242762193, "error": null}'
+      string: '{"result": 1709401041247, "error": null}'
     headers:
       Access-Control-Allow-Headers:
       - '*'

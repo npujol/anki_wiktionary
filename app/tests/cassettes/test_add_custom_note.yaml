@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: '{"action": "addNote", "params": {"note": {"deckName": "Test", "modelName":
+      "Basic_", "fields": {"full_word": "content1", "plural": "content1", "characteristics":
+      "content1", "ipa": "content1", "meaning": "content1", "meaning_spanish": "content1",
+      "example1": "content1", "example1e": "content1", "example2": "content1", "example2e":
+      "content1"}, "tags": ["test"], "audio": [{"url": "https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kanji=\u732b&kana=\u306d\u3053",
+      "filename": "yomichan_\u306d\u3053_\u732b.mp3", "skipHash": "7e2c2f954ef6051373ba916f000168dc",
+      "fields": ["audio"]}], "video": [], "picture": []}}, "version": 6}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '645'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: POST
+    uri: http://127.0.0.1:8765/
+  response:
+    body:
+      string: '{"result": 1709417122720, "error": null}'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Origin:
+      - http://localhost
+      Content-Length:
+      - '40'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+version: 1

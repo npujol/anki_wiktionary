@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import BaseModel, Field
 
 
@@ -35,7 +36,7 @@ class Note(BaseModel):
     audio: list[AudioItem] = []
     video: list[VideoItem] = []
     picture: list[PictureItem] = []
-    options: dict = {"allowDuplicate": False}
+    # options: dict = {"allowDuplicate": False}
 
 
 class Params(BaseModel):
@@ -46,3 +47,22 @@ class Model(BaseModel):
     action: str
     version: int
     params: Params
+
+
+class CustomFields(BaseModel):
+    full_word: str
+    plural: Optional[str] = None
+    characteristics: Optional[str] = None
+    ipa: Optional[str] = None
+    audio: Optional[list[AudioItem]] = None
+    # audio: Optional[str] = None
+    meaning: Optional[str] = None
+    meaning_spanish: Optional[str] = None
+    example1: Optional[str] = None
+    example1e: Optional[str] = None
+    example2: Optional[str] = None
+    example2e: Optional[str] = None
+
+
+class CustomNote(Note):
+    fields: CustomFields
