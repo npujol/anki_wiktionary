@@ -55,7 +55,6 @@ class CustomFields(BaseModel):
     characteristics: Optional[str] = None
     ipa: Optional[str] = None
     audio: Optional[list[AudioItem]] = None
-    # audio: Optional[str] = None
     meaning: Optional[str] = None
     meaning_spanish: Optional[str] = None
     example1: Optional[str] = None

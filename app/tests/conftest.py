@@ -77,7 +77,6 @@ def custom_note_data():
             "plural": "content1",
             "characteristics": "content1",
             "ipa": "content1",
-            # "audio": "content1",
             "meaning": "content1",
             "meaning_spanish": "content1",
             "example1": "content1",
