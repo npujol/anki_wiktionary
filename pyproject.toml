@@ -5,7 +5,7 @@ description = ""
 authors = ["npujol <naivy.luna@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
 slob = {git = "https://github.com/itkach/slob.git"}
 peewee = "*"
 beautifulsoup4 = "*"
@@ -19,6 +19,7 @@ ruff = "*"
 isort = "*"
 pytest-insta = "*"
 pytest-vcr = "*"
+wiktionary-de-parser = "^0.11.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
