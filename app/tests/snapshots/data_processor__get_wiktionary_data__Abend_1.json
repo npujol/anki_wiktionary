@@ -1,0 +1,25 @@
+{
+  "name": "Abend",
+  "hyphenation": [
+    "Abend"
+  ],
+  "ipa": [
+    "\u02c8a\u02d0bn\u0329t"
+  ],
+  "language": {
+    "lang": "Deutsch",
+    "lang_code": "de"
+  },
+  "lemma": {
+    "lemma": "Abend",
+    "inflected": false
+  },
+  "pos": {
+    "Substantiv": [
+      "Nachname"
+    ]
+  },
+  "rhymes": [
+    "a\u02d0bn\u0329t"
+  ]
+}

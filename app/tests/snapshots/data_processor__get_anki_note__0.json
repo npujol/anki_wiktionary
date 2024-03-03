@@ -1,0 +1,16 @@
+{
+  "deckName": "Test",
+  "modelName": "Basic_",
+  "fields": {
+    "full_word": "Abend",
+    "plural": "missing",
+    "ipa": "\u02c8a\u02d0bn\u0329t,\u02c8a\u02d0bm\u0329t",
+    "meaning": "name: Abend\nhyphenation: ['Abend']\nflexion: {'Genus': 'm', 'Nominativ Singular': 'Abend', 'Nominativ Plural': 'Abende', 'Genitiv Singular': 'Abends', 'Genitiv Plural': 'Abende', 'Dativ Singular': 'Abend', 'Dativ Plural': 'Abenden', 'Akkusativ Singular': 'Abend', 'Akkusativ Plural': 'Abende'}\nipa: ['\u02c8a\u02d0bn\u0329t', '\u02c8a\u02d0bm\u0329t']\nlanguage: {'lang': 'Deutsch', 'lang_code': 'de'}\nlemma: {'lemma': 'Abend', 'inflected': False}\npos: {'Substantiv': []}\nrhymes: ['a\u02d0bn\u0329t']\nname: Abend\nhyphenation: ['Abend']\nipa: ['\u02c8a\u02d0bn\u0329t']\nlanguage: {'lang': 'Deutsch', 'lang_code': 'de'}\nlemma: {'lemma': 'Abend', 'inflected': False}\npos: {'Substantiv': ['Nachname']}\nrhymes: ['a\u02d0bn\u0329t']\nname: Abend\nhyphenation: ['Abend']\nipa: ['\u02c8a\u02d0bn\u0329t', '\u02c8a\u02d0bm\u0329t']\nlanguage: {'lang': 'Deutsch', 'lang_code': 'de'}\nlemma: {'lemma': 'Abend', 'inflected': False}\npos: {'Substantiv': ['Toponym']}\nrhymes: ['a\u02d0bn\u0329t']\n"
+  },
+  "tags": [
+    "test"
+  ],
+  "audio": [],
+  "video": [],
+  "picture": []
+}
