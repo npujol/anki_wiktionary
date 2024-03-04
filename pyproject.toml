@@ -21,6 +21,7 @@ pytest-insta = "*"
 pytest-vcr = "*"
 wiktionary-de-parser = "^0.11.5"
 python-telegram-bot = {extras = ["job-queue"], version = "^20.8"}
+environs = "^11.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

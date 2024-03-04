@@ -1,36 +1,80 @@
-# Telegram bot token
-TOKEN = "7012446974:AAHvqbUjQseYp1KV1EIvB_8Hds49UyEEp5Y"
-
 import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
-import datetime
+from environs import Env
 
-# Enable logging
+from app.main import get_anki_note_data, save_anki_note_to_list
+
+
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
 
+env = Env()
+env.read_env()
+
+# Telegram bot token
+TOKEN = env("TELEGRAM_TOKEN")
+
 # File path to store Anki notes
-ANKI_NOTES_FILE_PATH = "anki_notes.txt"
+ANKI_NOTES_FILE_PATH = env("ANKI_NOTES_FILE_PATH") or "anki_notes.txt"
 
 
-# Function to create an Anki note
-async def create_anki_note(word: str) -> None:
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(ANKI_NOTES_FILE_PATH, "a") as file:
-        file.write(f"{timestamp}: {word}\n")
-    print(f"Anki note created: {timestamp}: {word}")
+logger = logging.getLogger(__name__)
 
 
-# Command handler for the bot
 async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    word = " ".join(context.args)
+    """
+    Asynchronously handles a word update.
+
+    Args:
+        update (Update): The update object.
+        context (ContextTypes.DEFAULT_TYPE): The context object.
+
+    Returns:
+        None
+    """
+    args = context.args or []
+    word = " ".join(args)
+    message = update.message
+    if not message:
+        logger.error("No message provided.")
+        return
     if word:
-        await create_anki_note(word)
-        await update.message.reply_text("Anki note created successfully.")
+        await save_anki_note_to_list(word)
+        msg = f"Anki note of {word=} saved successfully."
+        logger.info(msg)
+        await message.reply_text(msg)
+        data = await get_anki_note_data(word)
+        await message.reply_text(data.model_dump_json(indent=4))
     else:
-        await update.message.reply_text("Please provide a word to create an Anki note.")
+        msg = "Please provide a word to create an Anki note."
+        logger.info(msg)
+        await message.reply_text(msg)
+
+
+async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """
+    Asynchronously handles a word update.
+
+    Args:
+        update (Update): The update object.
+        context (ContextTypes.DEFAULT_TYPE): The context object.
+
+    Returns:
+        None
+    """
+    message = update.message
+    if not message:
+        logger.error("No message provided.")
+        return
+    msg = (
+        "Commands:\n"
+        "/help: Provides help of the bot.\n/word: Creates an Anki note content and"
+        "set the Note to the queue to save in Anki."
+    )
+    logger.info(msg)
+    await message.reply_text(msg)
 
 
 def main() -> None:
@@ -40,6 +84,7 @@ def main() -> None:
 
     # Register command handlers
     application.add_handler(CommandHandler("word", handle_word))
+    application.add_handler(CommandHandler("help", handle_help))
 
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
