@@ -6,19 +6,15 @@ authors = ["npujol <naivy.luna@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-slob = {git = "https://github.com/itkach/slob.git"}
-peewee = "*"
-beautifulsoup4 = "*"
-genanki = "*"
 requests = "*"
-pdbpp = "*"
-pytest = "*"
+# pdbpp = "*".
+# pytest = "*"
 pydantic = "*"
-black = "*"
-ruff = "*"
-isort = "*"
-pytest-insta = "*"
-pytest-vcr = "*"
+# black = "*"
+# ruff = "*"
+# isort = "*"
+# pytest-insta = "*"
+# pytest-vcr = "*"
 wiktionary-de-parser = "^0.11.5"
 python-telegram-bot = {extras = ["job-queue"], version = "^20.8"}
 environs = "^11.0.0"
