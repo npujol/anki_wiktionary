@@ -1,8 +1,10 @@
 from datetime import datetime
-from app.connector import AnkiConnector
+from app.anki_connector import AnkiConnector
 from app.data_processor import NoteDataProcessor
 import logging
 from environs import Env
+
+from app.serializers import CustomNote
 
 
 env = Env()
@@ -17,6 +19,15 @@ logger = logging.getLogger(__name__)
 
 
 def generate_note(word: str) -> bool:
+    """
+    Generate Anki note for a given word and add it to Anki database.
+
+    Args:
+        word (str): The word for which the Anki note is to be created.
+
+    Returns:
+        bool: True if the Anki note is created successfully, False otherwise.
+    """
     try:
         logger.info(f"Creating Anki note for {word}")
         note = NoteDataProcessor().get_anki_note(word)
@@ -28,12 +39,29 @@ def generate_note(word: str) -> bool:
     return True
 
 
-async def get_anki_note_data(word: str):
+async def get_anki_note_data(word: str) -> CustomNote:
+    """
+    Asynchronously retrieves Anki note data for a given word.
+
+    Args:
+        word (str): The word for which to retrieve Anki note data.
+
+    Returns:
+        NoteData: The Anki note data for the specified word.
+    """
     return NoteDataProcessor().get_anki_note(word)
 
 
-# Function to save an Anki note
 async def save_anki_note_to_list(word: str) -> None:
+    """
+    Asynchronous function to save an Anki note to a list.
+
+    Args:
+        word (str): The word to be saved as a note.
+
+    Returns:
+        None
+    """
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(ANKI_NOTES_FILE_PATH, "a") as file:
         file.write(f"{word}\n")
@@ -41,10 +69,14 @@ async def save_anki_note_to_list(word: str) -> None:
 
 
 def generate_notes() -> bool:
+    """
+    A function to generate notes from a file and write them back to the file.
+    """
     try:
         with open(ANKI_NOTES_FILE_PATH, "r") as file:
             words = file.readlines()
         for word in words:
+            logger.info(f"Generating Anki note for {word}")
             try:
                 word = word.strip()
                 generate_note(word)

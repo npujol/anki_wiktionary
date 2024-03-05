@@ -1,5 +1,5 @@
 from typing import Any
-from app.connector import AnkiConnector
+from app.anki_connector import AnkiConnector
 from app.serializers import CustomNote, Note
 import pytest
 
