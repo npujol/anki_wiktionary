@@ -65,3 +65,19 @@ class CustomFields(BaseModel):
 
 class CustomNote(Note):
     fields: CustomFields
+
+    def pretty_print(self) -> str:
+        msg = f""" 
+                full_word: {self.fields.full_word}
+                plural: {self.fields.plural}
+                characteristics: {self.fields.characteristics}
+                ipa: {self.fields.ipa}
+                audio: {self.fields.audio}
+                meaning: {self.fields.meaning}
+                meaning_spanish: {self.fields.meaning_spanish}
+                example1: {self.fields.example1}
+                example1e: {self.fields.example1e}
+                example2: {self.fields.example2}
+                example2e: {self.fields.example2e}
+            """
+        return msg

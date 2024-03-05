@@ -9,6 +9,17 @@ class WiktionaryDataProcessor:
         self.base_url = "https://de.wiktionary.org/w/api.php"
 
     def get_wiktionary_data(self, word: str) -> list[ParsedWiktionaryPageEntry]:
+        """
+        Fetches data from Wiktionary for a given word and returns a list of
+        ParsedWiktionaryPageEntry objects.
+
+        Args:
+            word (str): The word to fetch data for.
+
+        Returns:
+            list[ParsedWiktionaryPageEntry]: A list of ParsedWiktionaryPageEntry objects
+            containing information about the word.
+        """
         params = {
             "action": "parse",
             "page": word,

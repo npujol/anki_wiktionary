@@ -46,7 +46,7 @@ async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         logger.info(msg)
         await message.reply_text(msg)
         data = await get_anki_note_data(word)
-        await message.reply_text(data.model_dump_json(indent=4))
+        await message.reply_text(data.pretty_print())
     else:
         msg = "Please provide a word to create an Anki note."
         logger.info(msg)
