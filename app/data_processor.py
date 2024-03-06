@@ -1,6 +1,6 @@
 import requests
-from wiktionary_de_parser import WiktionaryParser
 from wiktionary_de_parser.models import ParsedWiktionaryPageEntry, WiktionaryPage
+from app.parser.parser import CustomParser
 from app.serializers import CustomFields, CustomNote
 
 
@@ -28,7 +28,7 @@ class WiktionaryDataProcessor:
         }
 
         content = requests.get(self.base_url, params=params).json().get("parse")
-        parser = WiktionaryParser()
+        parser = CustomParser()
         page = WiktionaryPage(
             page_id=content.get("pageid"),
             name=content.get("title"),
