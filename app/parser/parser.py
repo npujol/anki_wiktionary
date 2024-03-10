@@ -2,8 +2,11 @@ from wiktionary_de_parser import WiktionaryParser
 import importlib.util
 import inspect
 from pathlib import Path
+from wiktionary_de_parser.models import WiktionaryPageEntry
 
 from wiktionary_de_parser.parser import Parser
+
+from app.parser.models import CustomParsedWiktionaryPageEntry
 
 
 class CustomParser(WiktionaryParser):
@@ -42,3 +45,19 @@ class CustomParser(WiktionaryParser):
                         classes.append(obj)
 
         return classes
+
+    def custom_parse_entry(self, wiktionary_entry: WiktionaryPageEntry):
+        """
+        Parses an entry of a page.
+        """
+
+        # Instantiate all subclasses and run them
+        results = {
+            (instance := subclass(wiktionary_entry)).name: instance.run()
+            for subclass in self.parser_classes
+        }
+
+        # Add the page name
+        results["name"] = wiktionary_entry.page.name
+
+        return CustomParsedWiktionaryPageEntry(**results)

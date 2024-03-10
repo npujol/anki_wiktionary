@@ -28,6 +28,10 @@ class WiktionaryDataProcessor:
         }
 
         content = requests.get(self.base_url, params=params).json().get("parse")
+
+        if not content:
+            return []
+
         parser = CustomParser()
         page = WiktionaryPage(
             page_id=content.get("pageid"),
@@ -36,9 +40,8 @@ class WiktionaryDataProcessor:
         )
         word_types: list[ParsedWiktionaryPageEntry] = []
         for entry in parser.entries_from_page(page):
-            results = parser.parse_entry(entry)
+            results = parser.custom_parse_entry(entry)
             word_types.append(results)
-
         return word_types
 
 
