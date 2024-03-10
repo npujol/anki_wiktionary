@@ -133,3 +133,6 @@ dmypy.json
 B1_Wortliste_DTZ_Goethe.apkg_FILES
 B1_Wortliste_DTZ_Goethe.zip
 Deutsch
+
+.direnv/
+.envrc
