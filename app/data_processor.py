@@ -1,14 +1,18 @@
+import logging
 import requests
-from wiktionary_de_parser.models import ParsedWiktionaryPageEntry, WiktionaryPage
+from wiktionary_de_parser.models import WiktionaryPage
+from app.parser.models import CustomParsedWiktionaryPageEntry
 from app.parser.parser import CustomParser
 from app.serializers import CustomFields, CustomNote
+
+logger = logging.getLogger(__name__)
 
 
 class WiktionaryDataProcessor:
     def __init__(self) -> None:
         self.base_url = "https://de.wiktionary.org/w/api.php"
 
-    def get_wiktionary_data(self, word: str) -> list[ParsedWiktionaryPageEntry]:
+    def get_wiktionary_data(self, word: str) -> list[CustomParsedWiktionaryPageEntry]:
         """
         Fetches data from Wiktionary for a given word and returns a list of
         ParsedWiktionaryPageEntry objects.
@@ -38,7 +42,7 @@ class WiktionaryDataProcessor:
             name=content.get("title"),
             wikitext=content.get("wikitext").get("*"),
         )
-        word_types: list[ParsedWiktionaryPageEntry] = []
+        word_types = []
         for entry in parser.entries_from_page(page):
             results = parser.custom_parse_entry(entry)
             word_types.append(results)
@@ -52,16 +56,23 @@ class NoteDataProcessor:
         self.model_name = model_name
 
     # TODO: Update Note content
-    def get_anki_note(self, word: str) -> CustomNote:
+    def get_anki_note(self, word: str) -> CustomNote | None:
         content = self.data_handler.get_wiktionary_data(word)
-        meaning = ""
-        for item in content:
-            for k, v in item.model_dump(
-                mode="python",
-                by_alias=True,
-                exclude_none=True,
-            ).items():
-                meaning += f"{k}: {v}\n"
+        # TODO: get meaning using a parser
+        # meaning = ""
+        # for item in content:
+        #     for k, v in item.model_dump(
+        #         mode="python",
+        #         by_alias=True,
+        #         exclude_none=True,
+        #     ).items():
+        #         meaning += f"{k}: {v}\n"
+        if not content:
+            logger.info(f"Note for {word} not found.")
+            return
+        if not content[0]:
+            logger.info(f"Note for {word} not found.")
+            return
 
         note = CustomNote(
             deckName=self.deck_name,
@@ -72,11 +83,11 @@ class NoteDataProcessor:
                 # characteristics="missing",
                 ipa=",".join(content[0].ipa),  # type: ignore
                 # audio=content[0].audio,
-                meaning=meaning,
+                # meaning=meaning,
                 # meaning_spanish=content[0].meaning_spanish,
-                # example1=content[0].example1,
+                example1=content[0].example[0] or "",  # type: ignore
                 # example1e=content[0].example1e,
-                # example2=content[0].example2,
+                example2=content[0].example[1] or "",  # type: ignore
                 # example2e=content[0].example2e,
             ),
             tags=["test"],

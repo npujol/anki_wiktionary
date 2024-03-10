@@ -31,6 +31,9 @@ def generate_note(word: str) -> bool:
     try:
         logger.info(f"Creating Anki note for {word}")
         note = NoteDataProcessor().get_anki_note(word)
+        if not note:
+            logger.error(f"Anki note for {word=} could not be created.")
+            return False
         id = AnkiConnector().add_note(note)
         logger.info(f"Note of {word=} with {id=} was created.")
     except Exception as e:
@@ -39,7 +42,7 @@ def generate_note(word: str) -> bool:
     return True
 
 
-async def get_anki_note_data(word: str) -> CustomNote:
+async def get_anki_note_data(word: str) -> CustomNote | None:
     """
     Asynchronously retrieves Anki note data for a given word.
 
@@ -75,7 +78,7 @@ def generate_notes() -> bool:
     try:
         with open(ANKI_NOTES_FILE_PATH, "r") as file:
             words = file.readlines()
-        for word in words:
+        for word in set(words):
             logger.info(f"Generating Anki note for {word}")
             try:
                 word = word.strip()
