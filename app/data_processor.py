@@ -67,6 +67,7 @@ class NoteDataProcessor:
         #         exclude_none=True,
         #     ).items():
         #         meaning += f"{k}: {v}\n"
+        # breakpoint()
         if not content:
             logger.info(f"Note for {word} not found.")
             return
@@ -79,9 +80,19 @@ class NoteDataProcessor:
             modelName=self.model_name,
             fields=CustomFields(
                 full_word=word,
-                plural="missing",
-                # characteristics="missing",
-                ipa=",".join(content[0].ipa),  # type: ignore
+                plural="|".join(
+                    f"{k}: {v}"
+                    for k, v in content[0].flexion.items()
+                    if "plural" in k.lower()
+                )
+                if content[0].flexion
+                else "",
+                characteristics="|".join(
+                    f"{k}: {v}" for k, v in content[0].flexion.items()
+                )
+                if content[0].flexion
+                else "",
+                ipa=",".join(content[0].ipa or []),  # type: ignore
                 # audio=content[0].audio,
                 # meaning=meaning,
                 # meaning_spanish=content[0].meaning_spanish,
