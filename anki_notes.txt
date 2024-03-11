@@ -15,3 +15,6 @@ rausschmissen
 Propeller
 Strand
 Essen
+essen
+gegessen
+Wasser
