@@ -51,7 +51,6 @@ class ParseExample(Parser):
         return result
 
     def run(self) -> ParseExampleResult:
-        # TODO Add support for "Beispiele"-templates
         paragraph = self.find_paragraph("Beispiele", self.entry.wikitext)
         result = None
 

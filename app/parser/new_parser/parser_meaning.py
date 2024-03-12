@@ -19,29 +19,30 @@ class ParseMeaning(Parser):
         found: list[str] = []
         sentence = ""
         for node in parsed_paragraph.nodes:
-            # breakpoint()
             if node == ":":
                 continue
             # allow "<ref>"-tags to follow
             if isinstance(node, Wikilink):
-                # breakpoint()
-                sentence += str(node.title) or ""
+                sentence += str(node.title)
+                if "\n" in node.title:
+                    found.append(sentence)
+                    sentence = ""
                 continue
             if isinstance(node, Tag) and node.tag == "ref":
                 continue
             if hasattr(node, "value"):
-                if node.value.startswith("["):
-                    sentence += node.value
-                else:
-                    sentence += node.value
+                sentence += node.value
+                if "\n" in node.value:
                     found.append(sentence)
                     sentence = ""
             elif hasattr(node, "contents"):
                 sentence += str(node.contents)
+                if "\n" in node.contents:
+                    found.append(sentence)
+                    sentence = ""
 
         if sentence:
             found.append(sentence)
-        # breakpoint()
         if found:
             return found
 
@@ -49,19 +50,15 @@ class ParseMeaning(Parser):
     def parse(cls, wikitext: str):
         parsed_paragraph = mwparserfromhell.parse(wikitext)
         result = None
-        # breakpoint()
         if parsed_paragraph:
-            example = cls.parse_strings(parsed_paragraph)
-            if example:
-                result = example
-
+            meaning = cls.parse_strings(parsed_paragraph)
+            if meaning:
+                result = meaning
         return result
 
     def run(self) -> ParseMeaningResult:
-        # TODO Add support for "Beispiele"-templates
         paragraph = self.find_paragraph("Bedeutungen", self.entry.wikitext)
         result = None
-        # breakpoint()
         if paragraph:
             result = self.parse(paragraph)
         return result

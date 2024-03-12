@@ -55,26 +55,14 @@ class NoteDataProcessor:
         self.deck_name = deck_name
         self.model_name = model_name
 
-    # TODO: Update Note content
     def get_anki_note(self, word: str) -> CustomNote | None:
         content = self.data_handler.get_wiktionary_data(word)
-        # TODO: get meaning using a parser
-        # meaning = ""
-        # for item in content:
-        #     for k, v in item.model_dump(
-        #         mode="python",
-        #         by_alias=True,
-        #         exclude_none=True,
-        #     ).items():
-        #         meaning += f"{k}: {v}\n"
-        # breakpoint()
         if not content:
             logger.info(f"Note for {word} not found.")
             return
         if not content[0]:
             logger.info(f"Note for {word} not found.")
             return
-
         note = CustomNote(
             deckName=self.deck_name,
             modelName=self.model_name,
@@ -93,13 +81,13 @@ class NoteDataProcessor:
                 if content[0].flexion
                 else "",
                 ipa=",".join(content[0].ipa or []),  # type: ignore
-                # audio=content[0].audio,
-                # meaning=meaning,
-                # meaning_spanish=content[0].meaning_spanish,
+                # audio=content[0].audio, TODO: Add audio support
+                meaning="|".join(content[0].meaning or []),
+                # meaning_spanish=content[0].meaning_spanish, TODO: Add meaning support
                 example1=content[0].example[0] or "",  # type: ignore
-                # example1e=content[0].example1e,
+                # example1e=content[0].example1e, TODO: Add example support
                 example2=content[0].example[1] or "",  # type: ignore
-                # example2e=content[0].example2e,
+                # example2e=content[0].example2e, TODO: Add example support
             ),
             tags=["test"],
             audio=[],
