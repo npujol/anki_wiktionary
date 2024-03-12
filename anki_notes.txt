@@ -18,3 +18,5 @@ Essen
 essen
 gegessen
 Wasser
+Luft
+Sand
