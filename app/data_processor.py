@@ -68,18 +68,20 @@ class NoteDataProcessor:
             modelName=self.model_name,
             fields=CustomFields(
                 full_word=word,
-                plural="|".join(
-                    f"{k}: {v}"
-                    for k, v in content[0].flexion.items()
-                    if "plural" in k.lower()
-                )
-                if content[0].flexion
-                else "",
-                characteristics="|".join(
-                    f"{k}: {v}" for k, v in content[0].flexion.items()
-                )
-                if content[0].flexion
-                else "",
+                plural=(
+                    "|".join(
+                        f"{k}: {v}"
+                        for k, v in content[0].flexion.items()
+                        if "plural" in k.lower()
+                    )
+                    if content[0].flexion
+                    else ""
+                ),
+                characteristics=(
+                    "|".join(f"{k}: {v}" for k, v in content[0].flexion.items())
+                    if content[0].flexion
+                    else ""
+                ),
                 ipa=",".join(content[0].ipa or []),  # type: ignore
                 # audio=content[0].audio, TODO: Add audio support
                 meaning="|".join(content[0].meaning or []),

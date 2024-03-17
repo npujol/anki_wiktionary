@@ -385,7 +385,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sun, 03 Mar 2024 21:28:36 GMT
+      - Sun, 17 Mar 2024 12:32:46 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -393,28 +393,28 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-9fcc7b45f-97trj
+      - mw-api-ext.eqiad.main-7bcfbd49bb-zkvht
       server-timing:
-      - cache;desc="pass", host;desc="cp3070"
+      - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=03-Mar-2024;Path=/;HttpOnly;secure;Expires=Thu, 04 Apr 2024
+      - WMF-Last-Access=17-Mar-2024;Path=/;HttpOnly;secure;Expires=Thu, 18 Apr 2024
         12:00:00 GMT
-      - WMF-Last-Access-Global=03-Mar-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
-        04 Apr 2024 12:00:00 GMT
-      - GeoIP=DE:BE:Berlin:52.57:13.42:v4; Path=/; secure; Domain=.wiktionary.org
+      - WMF-Last-Access-Global=17-Mar-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
+        18 Apr 2024 12:00:00 GMT
+      - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600
       strict-transport-security:
       - max-age=106384710; includeSubDomains; preload
       transfer-encoding:
       - chunked
       vary:
-      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
       x-cache:
-      - cp3070 miss, cp3070 pass
+      - cp3072 miss, cp3072 pass
       x-cache-status:
       - pass
       x-client-ip:
-      - 2003:e9:7731:b2dd:f381:4f22:6619:3c53
+      - 2003:e9:7731:b2ec:8ee9:46f4:8b21:f277
       x-content-type-options:
       - nosniff
       x-frame-options:
@@ -423,22 +423,289 @@ interactions:
       code: 200
       message: OK
 - request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+die+Tageszeit+nach+dem+Nachmittag%2C+die+beginnt%2C+wenn+die+Sonne+den+Horizont+erreicht%2C+und+bei+v%C3%B6lliger+Dunkelheit+endet%3B+dem+Abend+geht+der+Tag+voran+und+auf+den+Abend+folgt+die+Nacht%0A%7C%5B2%5D++die+Himmelsrichtung+Westen%0A%7C%5B3%5D++verschliffene+Begr%C3%BC%C3%9Fungsfloskel+%E2%80%9Eguten+Abend%E2%80%9C%0A%7C%5B4%5D++Abschluss%2C+Ende%2C+Schluss+%28f%C3%BCr+Leben%2C+Epochen%2C+langandauernde+Herrschaften+und+%C3%84hnlichem%29%0A%7C%5B5%5D++Abendveranstaltung%3B+Abend+mit+heiterem%2C+vielgestaltigem+Programm%3B+Abendempfang
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"V0hBQdSeJ5Bq9vbUIT96hw\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%7C%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%7C%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%7C%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%7C%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%7C%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%7C%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%7C%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%7C%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20la%20hora%20del%20d%C3%ADa%20despu%C3%A9s%20de%20la%20tarde%2C%20que%20comienza%20cuando%20el%20sol%20llega%20al%20horizonte%20y%20termina%20cuando%20oscurece%20completamente%3B%20La%20tarde%20es%20precedida%20por%20el%20d%C3%ADa%20y%20la%20tarde%20es%20seguida%20por%20la%20noche.%0A%7C%5B2%5D%20la%20direcci%C3%B3n%20oeste%0A%7C%5B3%5D%20frase%20de%20saludo%20arrastrada%20%E2%80%9Cbuenas%20noches%E2%80%9D%0A%7C%5B4%5D%20Conclusi%C3%B3n%2C%20fin%2C%20conclusi%C3%B3n%20%28para%20vidas%2C%20%C3%A9pocas%2C%20reinados%20duraderos%20y%20similares%29%0A%7C%5B5%5D%20Evento%20nocturno%3B%20Velada%20con%20un%20programa%20alegre%20y%20variado%3B%20Recepci%C3%B3n%20nocturna&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] die Tageszeit
+        nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht, und
+        bei v\xF6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf den
+        Abend folgt die Nacht\n|[2]  die Himmelsrichtung Westen\n|[3]  verschliffene
+        Begr\xFC\xDFungsfloskel \u201Eguten Abend\u201C\n|[4]  Abschluss, Ende, Schluss
+        (f\xFCr Leben, Epochen, langandauernde Herrschaften und \xC4hnlichem)\n|[5]
+        \ Abendveranstaltung; Abend mit heiterem, vielgestaltigem Programm; Abendempfang\"><div
+        class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
+        class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        la hora del d\xEDa despu\xE9s de la tarde, que comienza cuando el sol llega
+        al horizonte y termina cuando oscurece completamente; La tarde es precedida
+        por el d\xEDa y la tarde es seguida por la noche.\n|[2] la direcci\xF3n oeste\n|[3]
+        frase de saludo arrastrada \u201Cbuenas noches\u201D\n|[4] Conclusi\xF3n,
+        fin, conclusi\xF3n (para vidas, \xE9pocas, reinados duraderos y similares)\n|[5]
+        Evento nocturno; Velada con un programa alegre y variado; Recepci\xF3n nocturna</div><div
+        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-U40Zmz1IPB34gSm4so2UDw' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 17 Mar 2024 12:32:46 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=18.SE=nFYXRhgQM2qQbrEQGurfQFAwTKQUf1qSW-LoYY1ySYu4Av6DANXblU32RQoJcJLEPaBZYVUuA04pqiapZhQnsnODWesVRGOFUEbsiBGJJ-7XsmDzMmYYJlLCh7QnJz4XZULqZqRzH7p01R4VCzsGmvypoGQ0M4nHbXE1PT9e71I;
+        expires=Thu, 17-Apr-2025 04:51:04 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctHikmII0JBiePflJRPH15dMEkCsBsTbfTxY-NZNZ1UBYs3101kDgdgpfQZrABD71M9gjQLi1pvnWCcDsRAPx7ujt9ezCSz4enknIwAohSGK"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+%E2%80%9EEines+Abends%2C+als+sie+so+vertraulich+beisammensa%C3%9Fen%2C+klopfte+jemand+an+die+T%C3%BCre%2C+als+wollte+er+eingelassen+sein.%E2%80%9C
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"E4fNRM7Vz1JCsocGcZpOzw\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%E2%80%9EEines%20Abends%2C%20als%20sie%20so%20vertraulich%20beisammensa%C3%9Fen%2C%20klopfte%20jemand%20an%20die%20T%C3%BCre%2C%20als%20wollte%20er%20eingelassen%20sein.%E2%80%9C&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%E2%80%9EEines%20Abends%2C%20als%20sie%20so%20vertraulich%20beisammensa%C3%9Fen%2C%20klopfte%20jemand%20an%20die%20T%C3%BCre%2C%20als%20wollte%20er%20eingelassen%20sein.%E2%80%9C&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20%E2%80%9CUna%20noche%2C%20mientras%20estaban%20sentados%20juntos%20en%20confianza%2C%20alguien%20llam%C3%B3%20a%20la%20puerta%20como%20si%20quisiera%20que%20le%20dejaran%20entrar%E2%80%9D.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] \u201EEines
+        Abends, als sie so vertraulich beisammensa\xDFen, klopfte jemand an die T\xFCre,
+        als wollte er eingelassen sein.\u201C\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[1] \u201CUna noche, mientras estaban sentados
+        juntos en confianza, alguien llam\xF3 a la puerta como si quisiera que le
+        dejaran entrar\u201D.</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-rAIoItTf7hOO0v7eceeYjg' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 17 Mar 2024 12:32:46 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=18.SE=SDB0fSRnTbl3N0wTFSpdukt-OWm1_wHxXs7h4k8SOSdyptiQnOOo0yNmyVMZXYaMes7iT-2Yg5iAmXgHOn8CF-VI2NjinXpR9zZQoAyP7lX4eIJB9ULeBU2YBJYVvm4S6wpRZ4XuoVj5MY9qiKwAwfEpRPtWVuaFlyV2RDQIqp8;
+        expires=Thu, 17-Apr-2025 04:51:04 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctHikmJw1JBiePflJRPH15dMEkCsBsTbfTxY-NZNZ1UBYs3101kDgdgpfQZrABD71M9gjQLi1pvnWCcDsRAPx7ujt9ezCWz4uKWFCQAjbSE0"
+    status:
+      code: 200
+      message: OK
+- request:
     body: '{"action": "addNote", "params": {"note": {"deckName": "Test", "modelName":
-      "Basic_", "fields": {"full_word": "Abend", "plural": "missing", "ipa": "\u02c8a\u02d0bn\u0329t,\u02c8a\u02d0bm\u0329t",
-      "meaning": "name: Abend\nhyphenation: [''Abend'']\nflexion: {''Genus'': ''m'',
-      ''Nominativ Singular'': ''Abend'', ''Nominativ Plural'': ''Abende'', ''Genitiv
-      Singular'': ''Abends'', ''Genitiv Plural'': ''Abende'', ''Dativ Singular'':
-      ''Abend'', ''Dativ Plural'': ''Abenden'', ''Akkusativ Singular'': ''Abend'',
-      ''Akkusativ Plural'': ''Abende''}\nipa: [''\u02c8a\u02d0bn\u0329t'', ''\u02c8a\u02d0bm\u0329t'']\nlanguage:
-      {''lang'': ''Deutsch'', ''lang_code'': ''de''}\nlemma: {''lemma'': ''Abend'',
-      ''inflected'': False}\npos: {''Substantiv'': []}\nrhymes: [''a\u02d0bn\u0329t'']\nname:
-      Abend\nhyphenation: [''Abend'']\nipa: [''\u02c8a\u02d0bn\u0329t'']\nlanguage:
-      {''lang'': ''Deutsch'', ''lang_code'': ''de''}\nlemma: {''lemma'': ''Abend'',
-      ''inflected'': False}\npos: {''Substantiv'': [''Nachname'']}\nrhymes: [''a\u02d0bn\u0329t'']\nname:
-      Abend\nhyphenation: [''Abend'']\nipa: [''\u02c8a\u02d0bn\u0329t'', ''\u02c8a\u02d0bm\u0329t'']\nlanguage:
-      {''lang'': ''Deutsch'', ''lang_code'': ''de''}\nlemma: {''lemma'': ''Abend'',
-      ''inflected'': False}\npos: {''Substantiv'': [''Toponym'']}\nrhymes: [''a\u02d0bn\u0329t'']\n"},
-      "tags": ["test"], "audio": [], "video": [], "picture": []}}, "version": 6}'
+      "Basic_", "fields": {"full_word": "Abend", "plural": "Nominativ Plural: Abende|Genitiv
+      Plural: Abende|Dativ Plural: Abenden|Akkusativ Plural: Abende", "characteristics":
+      "Genus: m|Nominativ Singular: Abend|Nominativ Plural: Abende|Genitiv Singular:
+      Abends|Genitiv Plural: Abende|Dativ Singular: Abend|Dativ Plural: Abenden|Akkusativ
+      Singular: Abend|Akkusativ Plural: Abende", "ipa": "\u02c8a\u02d0bn\u0329t,\u02c8a\u02d0bm\u0329t",
+      "meaning": "[1] die Tageszeit nach dem Nachmittag, die beginnt, wenn die Sonne
+      den Horizont erreicht, und bei v\u00f6lliger Dunkelheit endet; dem Abend geht
+      der Tag voran und auf den Abend folgt die Nacht\n|[2]  die Himmelsrichtung Westen\n|[3]  verschliffene
+      Begr\u00fc\u00dfungsfloskel \u201eguten Abend\u201c\n|[4]  Abschluss, Ende,
+      Schluss (f\u00fcr Leben, Epochen, langandauernde Herrschaften und \u00c4hnlichem)\n|[5]  Abendveranstaltung;
+      Abend mit heiterem, vielgestaltigem Programm; Abendempfang\n", "meaning_spanish":
+      "[1] la hora del d\u00eda despu\u00e9s de la tarde, que comienza cuando el sol
+      llega al horizonte y termina cuando oscurece completamente; La tarde es precedida
+      por el d\u00eda y la tarde es seguida por la noche.\n|[2] la direcci\u00f3n
+      oeste\n|[3] frase de saludo arrastrada \u201cbuenas noches\u201d\n|[4] Conclusi\u00f3n,
+      fin, conclusi\u00f3n (para vidas, \u00e9pocas, reinados duraderos y similares)\n|[5]
+      Evento nocturno; Velada con un programa alegre y variado; Recepci\u00f3n nocturna",
+      "example1": "[1] \u201eEines Abends, als sie so vertraulich beisammensa\u00dfen,
+      klopfte jemand an die T\u00fcre, als wollte er eingelassen sein.\u201c", "example1e":
+      "[1] \u201cUna noche, mientras estaban sentados juntos en confianza, alguien
+      llam\u00f3 a la puerta como si quisiera que le dejaran entrar\u201d.", "example2":
+      "\n", "example2e": ""}, "tags": ["test"], "audio": [], "video": [], "picture":
+      []}}, "version": 6}'
     headers:
       Accept:
       - '*/*'
@@ -447,7 +714,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1281'
+      - '1953'
       Content-Type:
       - application/json
       User-Agent:
@@ -456,7 +723,7 @@ interactions:
     uri: http://127.0.0.1:8765/
   response:
     body:
-      string: '{"result": 1709501316312, "error": null}'
+      string: '{"result": 1710678766620, "error": null}'
     headers:
       Access-Control-Allow-Headers:
       - '*'

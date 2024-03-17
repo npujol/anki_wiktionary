@@ -1,5 +1,6 @@
-from typing import Optional
-from pydantic import BaseModel, Field
+from typing import Any, Optional
+from pydantic import BaseModel, Field, model_validator
+from deep_translator import GoogleTranslator
 
 
 class Fields(BaseModel):
@@ -61,6 +62,23 @@ class CustomFields(BaseModel):
     example1e: Optional[str] = None
     example2: Optional[str] = None
     example2e: Optional[str] = None
+
+    @model_validator(mode="before")
+    def validate_missing_translations(cls, values: Any) -> Any:
+        handler = GoogleTranslator(source="de", target="es")
+        to_translate_map = {
+            "meaning": "meaning_spanish",
+            "example1": "example1e",
+            "example2": "example2e",
+        }
+        for original, to_generate in to_translate_map.items():
+            original_value = values.get(original, None)
+            if not values.get(to_generate, None) and original_value:
+                trans_result = handler.translate(
+                    original_value,
+                )
+                values[to_generate] = trans_result if trans_result else ""
+        return values
 
 
 class CustomNote(Note):
