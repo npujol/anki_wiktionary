@@ -52,6 +52,11 @@ __Note__: Copy the token provided by BotFather and save it securely. Do not shar
     python app/main.py
     ```
 
+- Start a server to serve audios
+    ```bash
+    python app/server.py
+    ```
+
 ## Bot command
 - `/word`: Creates an Anki note content and set the Note to the queue to save in Anki.
 - `/help`: Provides help of the bot.

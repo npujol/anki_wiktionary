@@ -385,7 +385,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sun, 17 Mar 2024 12:32:46 GMT
+      - Mon, 18 Mar 2024 21:32:27 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -393,14 +393,14 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-7bcfbd49bb-zkvht
+      - mw-api-ext.eqiad.main-8dcb9c5bc-9trwn
       server-timing:
-      - cache;desc="pass", host;desc="cp3072"
+      - cache;desc="pass", host;desc="cp3069"
       set-cookie:
-      - WMF-Last-Access=17-Mar-2024;Path=/;HttpOnly;secure;Expires=Thu, 18 Apr 2024
+      - WMF-Last-Access=18-Mar-2024;Path=/;HttpOnly;secure;Expires=Fri, 19 Apr 2024
         12:00:00 GMT
-      - WMF-Last-Access-Global=17-Mar-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
-        18 Apr 2024 12:00:00 GMT
+      - WMF-Last-Access-Global=18-Mar-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Fri,
+        19 Apr 2024 12:00:00 GMT
       - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600
       strict-transport-security:
@@ -410,11 +410,11 @@ interactions:
       vary:
       - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
       x-cache:
-      - cp3072 miss, cp3072 pass
+      - cp3069 miss, cp3069 pass
       x-cache-status:
       - pass
       x-client-ip:
-      - 2003:e9:7731:b2ec:8ee9:46f4:8b21:f277
+      - 2003:e9:7731:b2f1:2b40:34e7:8b24:65a4
       x-content-type-options:
       - nosniff
       x-frame-options:
@@ -440,7 +440,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"V0hBQdSeJ5Bq9vbUIT96hw\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"pMV1da6f006WN_f9HgtCIw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -515,9 +515,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-U40Zmz1IPB34gSm4so2UDw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-G0tqe62T7Ljj1GO3aaN4og' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -525,7 +525,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 17 Mar 2024 12:32:46 GMT
+      - Mon, 18 Mar 2024 21:32:27 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -538,8 +538,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=18.SE=nFYXRhgQM2qQbrEQGurfQFAwTKQUf1qSW-LoYY1ySYu4Av6DANXblU32RQoJcJLEPaBZYVUuA04pqiapZhQnsnODWesVRGOFUEbsiBGJJ-7XsmDzMmYYJlLCh7QnJz4XZULqZqRzH7p01R4VCzsGmvypoGQ0M4nHbXE1PT9e71I;
-        expires=Thu, 17-Apr-2025 04:51:04 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=18.SE=AhffgOt6kZ3fDI8sYNmVXpk3aEpjxKSQmGtQLnl71YX7fSOY_agSdaEl8_6Lc7W8EleooVxNropyIDXR4Ih4E4MKMub4CkcJxYOu1uTepqiWY_8sFINmuV8O_o3ZuWBkLXgiKXihdeacvJKkWfF7Pyacbj33iOZqBLTzNplRELc;
+        expires=Fri, 18-Apr-2025 13:50:45 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -552,7 +552,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctHikmII0JBiePflJRPH15dMEkCsBsTbfTxY-NZNZ1UBYs3101kDgdgpfQZrABD71M9gjQLi1pvnWCcDsRAPx7ujt9ezCSz4enknIwAohSGK"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctHikmJw0ZBiePflJRPH15dMEkCsBsTbfTxY-NZNZ1UBYs3101kDgdgpfQZrABD71M9gjQLi1pvnWCcDsRAPx-unj9azCVyYe-wNEwAmCyGh"
     status:
       code: 200
       message: OK
@@ -574,7 +574,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"E4fNRM7Vz1JCsocGcZpOzw\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"vxu19ybID79weZ2wCmsfKw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -640,9 +640,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-rAIoItTf7hOO0v7eceeYjg' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-9k-lPdN-NGUCqZP0Ygpfsw' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -650,7 +650,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 17 Mar 2024 12:32:46 GMT
+      - Mon, 18 Mar 2024 21:32:27 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -663,8 +663,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=18.SE=SDB0fSRnTbl3N0wTFSpdukt-OWm1_wHxXs7h4k8SOSdyptiQnOOo0yNmyVMZXYaMes7iT-2Yg5iAmXgHOn8CF-VI2NjinXpR9zZQoAyP7lX4eIJB9ULeBU2YBJYVvm4S6wpRZ4XuoVj5MY9qiKwAwfEpRPtWVuaFlyV2RDQIqp8;
-        expires=Thu, 17-Apr-2025 04:51:04 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=18.SE=LAtsGUNKSFVx1KxP3fvK0F2jaNyYOS1fNBOGdv2gxbITmknLXYbVu2bLYZJBT5X-me3ZoN8TodwXET-k-mrS0QHz8BJLxI8y5cDzLOk7AaxhY9sjMxLi692nqeCk6Afvks3jejd7mzG7D5b2EceQwqalaSBBSX2ZBuU7XYnrDxo;
+        expires=Fri, 18-Apr-2025 13:50:45 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -677,12 +677,81 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctHikmJw1JBiePflJRPH15dMEkCsBsTbfTxY-NZNZ1UBYs3101kDgdgpfQZrABD71M9gjQLi1pvnWCcDsRAPx7ujt9ezCWz4uKWFCQAjbSE0"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctHikmJw0ZBiePflJRPH15dMEkCsBsTbfTxY-NZNZ1UBYs3101kDgdgpfQZrABD71M9gjQLi1pvnWCcDsRAPx-unj9azCWxYcu8gMwAleiF2"
     status:
       code: 200
       message: OK
 - request:
-    body: '{"action": "addNote", "params": {"note": {"deckName": "Test", "modelName":
+    body: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Abend%5C%22%2C%5C%22de%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+    headers:
+      Content-Length:
+      - '135'
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=utf-8
+      Referer:
+      - http://translate.google.com/
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/47.0.2526.106 Safari/537.36
+    method: POST
+    uri: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+  response:
+    body:
+      string: ')]}''
+
+
+        [["wrb.fr","jQ1olc","[\"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OpKQKZjz44ieAMGBOLvVdXqbenW79x/r//NExB8R8N6MAN4GcFhD8xfy3LuNtCAQGmhZGUKidR4swVmjxs6KgdQtJf49Id/////+uvcuh2JKomOwJoQG9TKjJGcIBZW18y4VEJ6UNB5nFGnd4IHlhuaB8FQtrfNm//NExCoRkLaIAN5QTK0WuQ8MB5QLEDzWQOfChUAh4DKR////////2XLqatYZ2awwhw2vQEiJwKMmextAsFWTnBQtK7UgQbeGBG6wub+AhOa5FeDUgSDri/BHmHQ0cq5a//NExDYR2SKAANvGcCCciMoKwAPFYv//////3u/9FWSPK+hptYHCU4BXsXBVWjgIZ0tAJiopQNVikyltKbMxD97XIez/7WWNo0BtzhkBGDDM4eHgM8FVS8sDTWB0V/////NExEERgM50AN4GcP/0f//pBgFa4XGn6/moElDI7nk6hssoZcB0pMnJi0KXRfZcqYNWUMOly5w/SAAvrUrpo8dSWAqyo9lyc9fEKSrtNTf////+p3/keykFDAAozUgO//NExE4RwI5oANZSTBHXYHBFskJpgCuu8aHRIJNJFJucFM6ltLS5d1lKYyKWE/KrudRIOXByJXDq/LD5KL23qOrBJ88zR///98tK3/5FO0iWdCzLII49jY2MsMbE9y5r//NExFoR8JpMAVkwAN0ThoCrKAjb80M1HxDgpYjApfZNFSx6hVxYkIOZ+i6CDoEQYolZJlRr/Ut0kE2Iwl5wW5QHGPv/rZ7J3GWPQliVHOTy8Sg9P//9qErNz47GWZDk//NExGUhmypsAY9oABvJQvha///TuzpqWikaIOhjLm4l4wY8zAviWCYICMEUOep08uPR0iHWlyomoIg9ioo24jWo+YeInj0M+3sdz1/3ERHExVR/FvXUektMe9/y+9Ii//NExDEcyyqoAYZAAC329vTzcRd+mR5BiCnFNqLkCGG3JqBqjg5c8kaAoTVpLQHcKDcPDBU7zzLFDQfAWBqNEcqxZPowIlw9HmmFKHw0A1Uv+knJotIBkT//+861///p//NExBASQxasAcEQAex8nV/q3/90IjErsr3O5GZamyEO5gxVQzvKPDMFA2MJZzVclIQQohzu4UokSV1IpSMtEIbKsGLEEHb+2FO7tdHU7gyzGe9aO/TXYpUq3un6Zcqi//NExBoVexqgAUIoAY51dk2R9P/1TMlZKpS7JRRUq1Ugi4fAoqJRhw8phgOcco5zmZjlz2KynHq1roQ1lYxo05TNlVnUrqIlGvEYX6d1EMDkc6sg0hlQo4qI1PZAoapz//NExBcWeq6gAYMoAAQYdU1FXNKzU/ivzCJCuj1L9GM4xlvU6Wl9eqIZVHh4OBNxUUEmSNKUOIVz3pSY5jPcSOKijMiPQ4rhJRYTpads6yU4BAIK2cokbLfdkFAKRpFH//NExBARek4wAcYQABqr0M/MZkMZ5QEBdSlLMY0xvm/////9V9aGMyGMapS1K3KU2UtAICYwYxpSgLlAQ1///5FYLAwpwESWq1SagInrMzGupbBmZjwy7M3sGVQElgqs//NExB0P6MXwABjGcDQlBUFT0sJTpYOlg7g1Bl3xKd63VPrstKukvEq57yMqGvDVTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExDAAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExIMAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExKwAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExKwAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExKwAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEFNRTMu//NExKwAAANIAAAAADEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//NExKwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//NExKwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\"]",null,null,null,"generic"],["di",78],["af.httprm",78,"-8938568499316492182",15]]'
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Accept-Ranges:
+      - none
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment; filename="response.bin"; filename*=UTF-8''response.bin
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport
+      Content-Type:
+      - application/json; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin-allow-popups
+      Date:
+      - Mon, 18 Mar 2024 21:32:28 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=18.SE=TlbMsuroMez7L3Vqseh98W-IHiz5eBrc05R_fNhSVCjpU6gQ4zAS5y8aB0NTbBVaNN90K7vRQyTkmfcbqdLy5kkbkCTIkIr9lpfOUkOQHyD2HCuvipzDKHYQIp1wxd5bmDZY3HWNVlabmLDVR5T1YiMm64r4k8DJI3h6RB2QAts;
+        expires=Fri, 18-Apr-2025 13:50:46 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"action": "addNote", "params": {"note": {"deckName": "Mein Deutsch", "modelName":
       "Basic_", "fields": {"full_word": "Abend", "plural": "Nominativ Plural: Abende|Genitiv
       Plural: Abende|Dativ Plural: Abenden|Akkusativ Plural: Abende", "characteristics":
       "Genus: m|Nominativ Singular: Abend|Nominativ Plural: Abende|Genitiv Singular:
@@ -704,7 +773,8 @@ interactions:
       klopfte jemand an die T\u00fcre, als wollte er eingelassen sein.\u201c", "example1e":
       "[1] \u201cUna noche, mientras estaban sentados juntos en confianza, alguien
       llam\u00f3 a la puerta como si quisiera que le dejaran entrar\u201d.", "example2":
-      "\n", "example2e": ""}, "tags": ["test"], "audio": [], "video": [], "picture":
+      "\n", "example2e": ""}, "tags": ["test"], "audio": [{"url": "Abend.mp3", "filename":
+      "Abend.mp3", "skipHash": "true", "fields": ["audio"]}], "video": [], "picture":
       []}}, "version": 6}'
     headers:
       Accept:
@@ -714,7 +784,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1953'
+      - '2047'
       Content-Type:
       - application/json
       User-Agent:
@@ -723,7 +793,7 @@ interactions:
     uri: http://127.0.0.1:8765/
   response:
     body:
-      string: '{"result": 1710678766620, "error": null}'
+      string: '{"result": 1710797549857, "error": null}'
     headers:
       Access-Control-Allow-Headers:
       - '*'

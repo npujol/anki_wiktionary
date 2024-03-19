@@ -83,13 +83,9 @@ class NoteDataProcessor:
                     else ""
                 ),
                 ipa=",".join(content[0].ipa or []),  # type: ignore
-                # audio=content[0].audio, TODO: Add audio support
                 meaning="|".join(content[0].meaning or []),
-                # meaning_spanish=content[0].meaning_spanish, TODO: Add meaning support
-                example1=content[0].example[0] or "",  # type: ignore
-                # example1e=content[0].example1e, TODO: Add example support
-                example2=content[0].example[1] or "",  # type: ignore
-                # example2e=content[0].example2e, TODO: Add example support
+                example1=content[0].example[0] if len(content[0].example) else "",  # type: ignore
+                example2=content[0].example[1] if len(content[0].example) > 1 else "",  # type: ignore
             ),
             tags=["test"],
             audio=[],
