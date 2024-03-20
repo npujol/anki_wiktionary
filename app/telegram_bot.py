@@ -1,4 +1,5 @@
 import logging
+from pathlib import Path
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 from environs import Env
@@ -45,11 +46,15 @@ async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         msg = f"Anki note of {word=} saved successfully."
         logger.info(msg)
         await message.reply_text(msg)
-        data = await get_anki_note_data(word)
-        if not data:
+        note = await get_anki_note_data(word)
+        if not note:
             await message.reply_text("Anki note could not be created.")
             return
-        await message.reply_text(data.pretty_print())
+        await message.reply_text(note.pretty_print())
+        if note is not None and note.audio and note.audio[0]:
+            filepath = Path(__file__).parent.parent / f"files/{word}.mp3"
+            await message.reply_audio(filepath)
+            filepath.unlink()
     else:
         msg = "Please provide a word to create an Anki note."
         logger.info(msg)

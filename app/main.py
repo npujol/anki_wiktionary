@@ -84,7 +84,9 @@ async def get_anki_note_data(word: str) -> CustomNote | None:
     Returns:
         NoteData: The Anki note data for the specified word.
     """
-    return NoteDataProcessor().get_anki_note(word)
+    note = NoteDataProcessor().get_anki_note(word)
+    if note is not None:
+        return add_audio(note)
 
 
 async def save_anki_note_to_list(word: str) -> None:
