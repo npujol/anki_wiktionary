@@ -69,23 +69,31 @@ class NoteDataProcessor:
             fields=CustomFields(
                 full_word=word,
                 plural=(
-                    "|".join(
+                    "\n    ".join(
                         f"{k}: {v}"
                         for k, v in content[0].flexion.items()
                         if "plural" in k.lower()
                     )
-                    if content[0].flexion
+                    if content[0].flexion and content[0].flexion != ""
                     else ""
                 ),
                 characteristics=(
-                    "|".join(f"{k}: {v}" for k, v in content[0].flexion.items())
-                    if content[0].flexion
+                    "\n    ".join(f"{k}: {v}" for k, v in content[0].flexion.items())
+                    if content[0].flexion and content[0].flexion != ""
                     else ""
                 ),
-                ipa=",".join(content[0].ipa or []),  # type: ignore
-                meaning="|".join(content[0].meaning or []),
-                example1=content[0].example[0] if len(content[0].example) else "",  # type: ignore
-                example2=content[0].example[1] if len(content[0].example) > 1 else "",  # type: ignore
+                ipa=", ".join(content[0].ipa or []),  # type: ignore
+                meaning="\n    ".join(
+                    c.strip().replace("\n", "")
+                    for c in (content[0].meaning or [])
+                    if c != "" and c.strip().replace("\n", "") != ""
+                ),
+                example1=content[0].example[0].strip().replace("\n", "")  # type: ignore
+                if len(content[0].example)  # type: ignore
+                else "",
+                example2=content[0].example[1].strip().replace("\n", "")  # type: ignore
+                if len(content[0].example) > 1  # type: ignore
+                else "",  # type: ignore
             ),
             tags=["test"],
             audio=[],

@@ -86,12 +86,16 @@ class CustomNote(Note):
 
     def pretty_print(self) -> str:
         msg = (
-            f"full_word: {self.fields.full_word}\nplural: {self.fields.plural}"
-            + f"\ncharacteristics: {self.fields.characteristics}\nipa: "
-            + f"{self.fields.ipa}\naudio: {self.fields.audio}\nmeaning: "
-            + f"{self.fields.meaning}\nmeaning_spanish: {self.fields.meaning_spanish}\n"
-            + f"example1: {self.fields.example1}\nexample1e: "
-            + f"{self.fields.example1e}\nexample2: {self.fields.example2}\nexample2e: "
-            + f"{self.fields.example2e}"
+            f"full_word:\n    {self.fields.full_word}\n\n"
+            + f"plural:\n    {self.fields.plural}\n\n"
+            + f"characteristics:\n    {self.fields.characteristics}\n\n"
+            + f"ipa:\n    {self.fields.ipa}\n\n"
+            + f"audio:\n    {self.fields.audio}\n\n"
+            + f"meaning:\n    {self.fields.meaning}\n\n"
+            + f"meaning_spanish:\n    {self.fields.meaning_spanish}\n\n"
+            + f"example1:\n    {self.fields.example1}\n\n"
+            + f"example1e:\n    {self.fields.example1e}\n\n"
+            + f"example2:\n    {self.fields.example2}\n\n"
+            + f"example2e:\n    {self.fields.example2e}\n"
         )
         return msg
