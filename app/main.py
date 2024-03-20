@@ -19,6 +19,13 @@ ANKI_NOTES_FILE_PATH = env("ANKI_NOTES_FILE_PATH") or "anki_notes.txt"
 logger = logging.getLogger(__name__)
 
 
+async def generate_audio(text: str):
+    tts = gTTS(text, lang="de")  # type: ignore
+    path = Path(__file__).parent.parent / f"files/{text}.mp3"
+    tts.save(path)
+    return path
+
+
 def add_audio(note: CustomNote):
     """
     Asynchronously retrieves Anki note data for a given word.
@@ -29,9 +36,7 @@ def add_audio(note: CustomNote):
     Returns:
         NoteData: The Anki note data for the specified word.
     """
-    tts = gTTS(note.fields.full_word, lang="de")  # type: ignore
-    path = Path(__file__).parent.parent / f"files/{note.fields.full_word}.mp3"
-    tts.save(path)
+    generate_audio(note.fields.full_word)
     note.audio = [
         AudioItem.model_validate(
             {

@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 from environs import Env
 
-from app.main import get_anki_note_data, save_anki_note_to_list
+from app.main import generate_audio, get_anki_note_data, save_anki_note_to_list
 
 
 logging.basicConfig(
@@ -61,6 +61,23 @@ async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         await message.reply_text(msg)
 
 
+async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    args = context.args or []
+    text = " ".join(args)
+    message = update.message
+    if not message:
+        logger.error("No message provided.")
+        return
+    if text:
+        filepath = await generate_audio(text)
+        await message.reply_audio(filepath)
+        filepath.unlink()
+    else:
+        msg = "Please provide a sentence to create audio."
+        logger.info(msg)
+        await message.reply_text(msg)
+
+
 async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """
     Asynchronously handles a word update.
@@ -93,7 +110,8 @@ def main() -> None:
     # Register command handlers
     application.add_handler(CommandHandler("word", handle_word))
     application.add_handler(CommandHandler("help", handle_help))
-
+    application.add_handler(CommandHandler("audio", handle_audio))
+    # TODO IPA, translation
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
