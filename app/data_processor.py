@@ -89,10 +89,10 @@ class NoteDataProcessor:
                     if c != "" and c.strip().replace("\n", "") != ""
                 ),
                 example1=content[0].example[0].strip().replace("\n", "")  # type: ignore
-                if len(content[0].example)  # type: ignore
+                if len(content) and len(content[0].example)  # type: ignore
                 else "",
                 example2=content[0].example[1].strip().replace("\n", "")  # type: ignore
-                if len(content[0].example) > 1  # type: ignore
+                if len(content) and len(content[0].example) > 1  # type: ignore
                 else "",  # type: ignore
             ),
             tags=["test"],
