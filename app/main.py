@@ -1,5 +1,6 @@
 from datetime import datetime
 from app.anki_connector import AnkiConnector
+from app.ankiweb import CardSender
 from app.data_processor import NoteDataProcessor
 import logging
 from environs import Env
@@ -9,7 +10,7 @@ from app.serializers import AudioItem, CustomNote
 
 
 env = Env()
-env.read_env()
+env.read_env(override=True)
 
 
 # File path to store Anki notes
@@ -36,7 +37,10 @@ def add_audio(note: CustomNote):
     Returns:
         NoteData: The Anki note data for the specified word.
     """
-    generate_audio(note.fields.full_word)
+    text = note.fields.full_word
+    tts = gTTS(text, lang="de")  # type: ignore
+    path = Path(__file__).parent.parent / f"files/{text}.mp3"
+    tts.save(path)
     note.audio = [
         AudioItem.model_validate(
             {
@@ -133,5 +137,25 @@ def generate_notes() -> bool:
     return True
 
 
+def send_card_web(word: str):
+    username = env.str("ANKI_USER") or None
+    password = env.str("ANKI_PASS") or None
+    if not username or not password:
+        logger.error("Username or password not set.")
+        return False
+    card_sender = CardSender(username, password, "Mein Deutsch")
+    logger.info(f"Creating Anki note for {word}")
+    note = NoteDataProcessor(
+        deck_name="Mein Deutsch", model_name="Basic_"
+    ).get_anki_note(word)
+
+    if not note:
+        logger.error(f"Anki note for {word=} could not be created.")
+        return False
+    note = add_audio(note)
+    ret = card_sender.send_card(note, "Mein Deutsch")
+
+
 if __name__ == "__main__":
-    generate_notes()
+    # generate_notes()
+    send_card_web("Essen")

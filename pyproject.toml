@@ -13,6 +13,7 @@ python-telegram-bot = {extras = ["job-queue"], version = "^20.8"}
 environs = "^11.0.0"
 deep-translator = "*"
 gtts = "*"
+selenium = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
