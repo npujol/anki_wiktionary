@@ -28,7 +28,8 @@ class WebAnkiConnector:
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.binary_location = chrome_binary_location
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.ChromiumEdge()
+
         if self.driver is None:
             raise Exception("Failed to start Chrome")
 

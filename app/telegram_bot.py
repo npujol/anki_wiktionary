@@ -101,7 +101,8 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     msg = (
         "Commands:\n"
         "/help: Provides help of the bot.\n/word: Creates an Anki note content and"
-        "set the Note to the queue to save in Anki."
+        "set the Note to the queue to save in Anki.\n/audio: Creates audio from a text"
+        "\n/web_word: create deck and send it to web browser"
     )
     logger.info(msg)
     await message.reply_text(msg)
