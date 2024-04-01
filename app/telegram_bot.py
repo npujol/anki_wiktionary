@@ -4,7 +4,12 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 from environs import Env
 
-from app.main import generate_audio, get_anki_note_data, save_anki_note_to_list
+from app.main import (
+    generate_audio,
+    get_anki_note_data,
+    save_anki_note_to_list,
+    send_card_web,
+)
 
 
 logging.basicConfig(
@@ -102,6 +107,33 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     await message.reply_text(msg)
 
 
+async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    args = context.args or []
+    word = " ".join(args)
+    message = update.message
+    if not message:
+        logger.error("No message provided.")
+        return
+    if word:
+        await save_anki_note_to_list(word)
+        msg = f"Anki note of {word=} saved successfully."
+        logger.info(msg)
+        await message.reply_text(msg)
+        note = send_card_web(word)
+        if not note:
+            await message.reply_text("Anki note could not be created.")
+            return
+        await message.reply_text(note.pretty_print())
+        if note is not None and note.audio and note.audio[0]:
+            filepath = Path(__file__).parent.parent / f"files/{word}.mp3"
+            await message.reply_audio(filepath)
+            filepath.unlink()
+    else:
+        msg = "Please provide a word to create an Anki note."
+        logger.info(msg)
+        await message.reply_text(msg)
+
+
 def main() -> None:
     """Run bot."""
     # Create the Application and pass it your bot's token.
@@ -111,6 +143,7 @@ def main() -> None:
     application.add_handler(CommandHandler("word", handle_word))
     application.add_handler(CommandHandler("help", handle_help))
     application.add_handler(CommandHandler("audio", handle_audio))
+    application.add_handler(CommandHandler("web_word", handle_web_word))
     # TODO IPA, translation
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
