@@ -4,10 +4,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from app.private_config import chrome_binary_location
 from pyvirtualdisplay import Display
 import traceback
-
+from selenium.webdriver.chrome.service import Service
 from app.serializers import CustomNote
 
 
@@ -22,14 +21,15 @@ class WebAnkiConnector:
         # Setup Chrome
         self.display = Display(visible=0, size=(800, 600))
         self.display.start()
+        service = Service("/usr/bin/chromedriver")
         options = webdriver.ChromeOptions()
         options.add_argument("--window-size=1920x1080")
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
-        options.binary_location = chrome_binary_location
-        self.driver = webdriver.Chrome()
+        # options.binary_location = chrome_binary_location
+        self.driver = webdriver.Chrome(service=service, options=options)
 
         if self.driver is None:
             raise Exception("Failed to start Chrome")
