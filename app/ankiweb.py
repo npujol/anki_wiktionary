@@ -25,7 +25,7 @@ class WebAnkiConnector:
         self.display = Display(visible=False, size=WINDOW_SIZE)
         self.display.start()
         # Create the Chrome browser service
-        service = Service(executable_path=chrome_binary_location)
+        service = Service(chrome_binary_location)
         # Set up browser options
         options = webdriver.ChromeOptions()
         options.add_argument(f"--window-size={WINDOW_SIZE[0]}x{WINDOW_SIZE[1]}")
