@@ -7,7 +7,6 @@ from pyvirtualdisplay import Display  # type: ignore
 import traceback
 from selenium.webdriver.chrome.service import Service
 from app.serializers import CustomNote
-from private_config import chrome_binary_location
 
 WINDOW_SIZE = (800, 600)
 
@@ -25,7 +24,7 @@ class WebAnkiConnector:
         self.display = Display(visible=False, size=WINDOW_SIZE)
         self.display.start()
         # Create the Chrome browser service
-        service = Service(chrome_binary_location)
+        service = Service("/usr/bin/chromedriver")
         # Set up browser options
         options = webdriver.ChromeOptions()
         options.add_argument(f"--window-size={WINDOW_SIZE[0]}x{WINDOW_SIZE[1]}")
