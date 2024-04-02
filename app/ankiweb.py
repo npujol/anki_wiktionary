@@ -1,15 +1,12 @@
+import os
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 from app.private_config import chrome_binary_location
-
-import time
+from pyvirtualdisplay import Display
 import traceback
-
-
-import os
 
 from app.serializers import CustomNote
 
@@ -18,9 +15,13 @@ class WebAnkiConnector:
     url = "https://ankiweb.net/account/login"
 
     def __init__(self, username: str, password: str):
-        self.last_access = time.time()
+        self.username = username
+        self.password = password
 
+    def start(self):
         # Setup Chrome
+        self.display = Display(visible=0, size=(800, 600))
+        self.display.start()
         options = webdriver.ChromeOptions()
         options.add_argument("--window-size=1920x1080")
         options.add_argument("--ignore-certificate-errors")
@@ -28,12 +29,16 @@ class WebAnkiConnector:
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.binary_location = chrome_binary_location
-        self.driver = webdriver.ChromiumEdge()
+        self.driver = webdriver.Chrome()
 
         if self.driver is None:
             raise Exception("Failed to start Chrome")
 
-        self._initialize_chrome(username, password)
+        self._initialize_chrome(self.username, self.password)
+
+    def close(self):
+        self.driver.quit()
+        self.display.stop()
 
     def _initialize_chrome(self, username, password):
         try:

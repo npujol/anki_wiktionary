@@ -31,7 +31,7 @@ class PictureItem(BaseModel):
 
 class Note(BaseModel):
     deck_name: str = Field(..., alias="deckName")
-    model_name: str = Field(..., alias="modelName")
+    note_model_name: str = Field(..., alias="modelName")
     fields: Fields
     tags: list[str]
     audio: list[AudioItem] = []

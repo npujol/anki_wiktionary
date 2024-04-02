@@ -171,7 +171,8 @@ def send_card_web(word: str):
     if not username or not password:
         logger.error("Username or password not set.")
         return False
-    card_sender = WebAnkiConnector(username, password)
+    web_anki_connector = WebAnkiConnector(username, password)
+
     logger.info(f"Creating Anki note for {word}")
     note = NoteDataProcessor(
         deck_name="Mein Deutsch", model_name="Basic_"
@@ -181,7 +182,10 @@ def send_card_web(word: str):
         logger.error(f"Anki note for {word=} could not be created.")
         return False
     note = add_audio_local(note)
-    is_successful = card_sender.send_card(note, ["Mein Deutsch"])
+    web_anki_connector.start()
+    is_successful = web_anki_connector.send_card(note, ["Mein Deutsch"])
+    web_anki_connector.close()
+
     if not is_successful:
         logger.error(f"Anki note for {word=} could not be created.")
         return False
@@ -189,4 +193,5 @@ def send_card_web(word: str):
 
 
 if __name__ == "__main__":
-    generate_notes()
+    # generate_notes()
+    send_card_web("Essen")
