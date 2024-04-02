@@ -1,13 +1,15 @@
-import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from pyvirtualdisplay import Display
+from pyvirtualdisplay import Display  # type: ignore
 import traceback
 from selenium.webdriver.chrome.service import Service
 from app.serializers import CustomNote
+from private_config import chrome_binary_location
+
+WINDOW_SIZE = (800, 600)
 
 
 class WebAnkiConnector:
@@ -18,31 +20,48 @@ class WebAnkiConnector:
         self.password = password
 
     def start(self):
-        # Setup Chrome
-        self.display = Display(visible=0, size=(800, 600))
+        """Start the browser with the given credentials"""
+        # Start the virtual display
+        self.display = Display(visible=False, size=WINDOW_SIZE)
         self.display.start()
-        service = Service("/usr/bin/chromedriver")
+        # Create the Chrome browser service
+        service = Service(executable_path=chrome_binary_location)
+        # Set up browser options
         options = webdriver.ChromeOptions()
-        options.add_argument("--window-size=1920x1080")
+        options.add_argument(f"--window-size={WINDOW_SIZE[0]}x{WINDOW_SIZE[1]}")
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
-        # options.binary_location = chrome_binary_location
+        # Start the browser
         self.driver = webdriver.Chrome(service=service, options=options)
 
         if self.driver is None:
             raise Exception("Failed to start Chrome")
 
-        self._initialize_chrome(self.username, self.password)
+        self._login_into_anki(self.username, self.password)
 
     def close(self):
+        """Shut down the browser"""
         self.driver.quit()
         self.display.stop()
 
-    def _initialize_chrome(self, username, password):
+    def send_card(self, custom_note: CustomNote, tags: list[str]) -> bool:
+        """Send a card to Anki with the given fields from a CustomNote and tags"""
         try:
-            self.driver.set_window_size(1920, 1080)
+            self._click_add_tab()
+            self._wait_for_elements_to_appear()
+            self._fill_tags(tags)
+            self._fill_fields(custom_note)
+            self._click_add_button()
+            return True
+        except Exception as e:
+            print(traceback.format_exc())
+            raise e from e
+
+    def _login_into_anki(self, username: str, password: str):
+        try:
+            self.driver.set_window_size(*WINDOW_SIZE)
             self.driver.get(self.url)
             WebDriverWait(self.driver, 20).until(
                 EC.visibility_of_element_located(
@@ -59,22 +78,6 @@ class WebAnkiConnector:
             pass_box.send_keys("{}\n".format(password))
         except Exception as e:
             print(traceback.format_exc())
-            if not os.path.isfile("errors/screenshot_error.png"):
-                self.driver.save_screenshot("errors/screenshot_error.png")
-            raise e from e
-
-    def send_card(self, custom_note: CustomNote, tags: list[str]) -> bool:
-        try:
-            self._click_add_tab()
-            self._wait_for_elements_to_appear()
-            self._fill_tags(tags)
-            self._fill_fields(custom_note)
-            self._click_add_button()
-            return True
-        except Exception as e:
-            print(traceback.format_exc())
-            if not os.path.isfile("screenshot_error.png"):
-                self.driver.save_screenshot("screenshot_error.png")
             raise e from e
 
     def _click_add_tab(self):

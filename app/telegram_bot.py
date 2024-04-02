@@ -8,7 +8,7 @@ from app.main import (
     generate_audio,
     get_anki_note_data,
     save_anki_note_to_list,
-    send_card_web,
+    send_card_using_anki_web,
 )
 
 
@@ -115,24 +115,25 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     if not message:
         logger.error("No message provided.")
         return
-    if word:
-        await save_anki_note_to_list(word)
-        msg = f"Anki note of {word=} saved successfully."
-        logger.info(msg)
-        await message.reply_text(msg)
-        note = send_card_web(word)
-        if not note:
-            await message.reply_text("Anki note could not be created.")
-            return
-        await message.reply_text(note.pretty_print())
-        if note is not None and note.audio and note.audio[0]:
-            filepath = Path(__file__).parent.parent / f"files/{word}.mp3"
-            await message.reply_audio(filepath)
-            filepath.unlink()
-    else:
+    if not word:
         msg = "Please provide a word to create an Anki note."
         logger.info(msg)
         await message.reply_text(msg)
+        return
+
+    note = await send_card_using_anki_web(word)
+    if note is None:
+        msg = "Anki note could not be created."
+        logger.error(msg)
+        await message.reply_text(msg)
+        return
+
+    logger.info("Anki note created successfully.")
+    await message.reply_text(note.pretty_print())
+    if note is not None and note.audio and note.audio[0]:
+        filepath = Path(__file__).parent.parent / f"files/{word}.mp3"
+        await message.reply_audio(filepath)
+        filepath.unlink()
 
 
 def main() -> None:
