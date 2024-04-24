@@ -5,6 +5,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes, filters
 from environs import Env
 from telegram.ext._handlers.messagehandler import MessageHandler
 
+
 from app.main import (
     generate_audio,
     get_anki_note_data,
@@ -167,8 +168,9 @@ def main() -> None:
     application.add_handler(CommandHandler("web_word", handle_web_word))
     # Add command handlers for creating Anki note without command
     application.add_handler(
-        MessageHandler(filters.text & (~filters.command), handle_text_without_command)
+        MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text_without_command)
     )
+
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
