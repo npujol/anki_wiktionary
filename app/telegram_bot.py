@@ -1,8 +1,9 @@
 import logging
 from pathlib import Path
 from telegram import Update
-from telegram.ext import Application, CommandHandler, ContextTypes
+from telegram.ext import Application, CommandHandler, ContextTypes, filters
 from environs import Env
+from telegram.ext._handlers.messagehandler import MessageHandler
 
 from app.main import (
     generate_audio,
@@ -136,6 +137,24 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         filepath.unlink()
 
 
+async def handle_text_without_command(
+    update: Update, context: ContextTypes.DEFAULT_TYPE
+) -> None:
+    """
+    Asynchronously handles a text update without a command.
+
+    Args:
+        update (Update): The update object.
+        context (ContextTypes.DEFAULT_TYPE): The context object.
+
+    Returns:
+        None
+    """
+    word = update.message.text
+    if word:
+        await handle_word(update, context)
+
+
 def main() -> None:
     """Run bot."""
     # Create the Application and pass it your bot's token.
@@ -146,7 +165,10 @@ def main() -> None:
     application.add_handler(CommandHandler("help", handle_help))
     application.add_handler(CommandHandler("audio", handle_audio))
     application.add_handler(CommandHandler("web_word", handle_web_word))
-    # TODO IPA, translation
+    # Add command handlers for creating Anki note without command
+    application.add_handler(
+        MessageHandler(filters.text & (~filters.command), handle_text_without_command)
+    )
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 

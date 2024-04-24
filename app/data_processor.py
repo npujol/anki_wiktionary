@@ -57,12 +57,6 @@ class NoteDataProcessor:
 
     def get_anki_note(self, word: str) -> CustomNote | None:
         content = self.data_handler.get_wiktionary_data(word)
-        if not content:
-            logger.info(f"Note for {word} not found.")
-            return
-        if not content[0]:
-            logger.info(f"Note for {word} not found.")
-            return
         note = CustomNote(
             deckName=self.deck_name,
             modelName=self.model_name,
