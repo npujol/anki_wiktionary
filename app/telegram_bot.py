@@ -168,7 +168,7 @@ def main() -> None:
     application.add_handler(CommandHandler("web_word", handle_web_word))
     # Add command handlers for creating Anki note without command
     application.add_handler(
-        MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text_without_command)
+        MessageHandler(filters.TEXT & ~filters.COMMAND, handle_web_word)
     )
 
     # Run the bot until the user presses Ctrl-C
