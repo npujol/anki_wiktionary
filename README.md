@@ -1,9 +1,8 @@
 # anki_wiktionary
-A small project to create Anki notes from the Wiktionary database.
+A small project aims to generate Anki notes using Wiktionary. Leveraging the power of  [Anki](https://apps.ankiweb.net/), this initiative taps into a unique source: a telegram bot. By harnessing the vast linguistic knowledge contained within the Telegram bot, we can create a comprehensive set of Anki notes that will help users expand their vocabulary and improve their language skills.
 
 # Dependencies
 - Anki running in the background
-- Poetry
 
 # Installation
 
@@ -24,11 +23,20 @@ A small project to create Anki notes from the Wiktionary database.
 ```
 TELEGRAM_TOKEN="your_telegram_bot_token"
 ANKI_NOTES_FILE_PATH="anki_notes.txt"
+ANKI_USER="your@email.com"
+ANKI_PASS="a_password"
 ```
 
+|Name|Description|
+|---|---|
+|`TELEGRAM_TOKEN`|Telegram bot token|
+|`ANKI_NOTES_FILE_PATH`|File path to store Anki notes|
+|`ANKI_USER`|Anki username|
+|`ANKI_PASS`|Anki password|
 
-# Create a bot with __BotFather__ on Telegram. 
 
+**How to create a bot with __BotFather__ on Telegram?**
+========================================================
 Follow these following steps:
 
 1. Open Telegram and search for __BotFather__ in the search bar.
@@ -40,23 +48,25 @@ Follow these following steps:
 __Note__: Copy the token provided by BotFather and save it securely. Do not share this token with anyone else as it grants access to your bot.
 
 
-# Commands
+# Project commands
 
-- Running telegram bot
-    ```bash
-    python app/telegram_bot.py
-    ```
+- Running telegram bot in the background
+```bash
+python app/telegram_bot.py
+```
 
-- Running notes generation
-    ```bash
+- Running notes generation using the information from the environment variable `ANKI_NOTES_FILE_PATH`.          
+```bash
     python app/main.py
-    ```
+```
 
-- Start a server to serve audios
-    ```bash
-    python app/server.py
-    ```
+- Start a web server to serve audios
+```bash
+python app/server.py
+```
 
-## Bot command
-- `/word`: Creates an Anki note content and set the Note to the queue to save in Anki.
+## Telegram bot command
 - `/help`: Provides help of the bot.
+- `/word`: Creates an Anki note content and set the Word into the `ANKI_NOTES_FILE_PATH` file to be saved in Anki.
+- `/web_word`: Create an Anki note and send it into Anki using Selenium. This option had the limitation that it cannot send the audio file.
+- `/audio`: Creates audio from a given text.
