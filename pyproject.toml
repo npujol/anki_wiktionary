@@ -47,12 +47,6 @@ addopts = [
   "-v",
 ] # Additional options for pytest, such as -s for capturing stdout and -v for verbose output
 
-[tool.flake8]
-
-exclude = ["README.md"]
-format = "colored"
-max_line_length = 127
-
 [tool.ruff]
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
 lint.select = ["E", "F"]
@@ -130,6 +124,7 @@ lint.exclude = [
   "node_modules",
   "venv",
 ]
+extend-select = ["I"]
 
 # Same as Black.
 line-length = 88

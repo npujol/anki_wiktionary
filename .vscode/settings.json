@@ -4,5 +4,9 @@
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.callArgumentNames": "all",
     "python.analysis.typeCheckingMode": "standard",
-    "python.languageServer": "Pylance"
+    "python.languageServer": "Pylance",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "python.analysis.autoImportCompletions": true,
+    "ruff.organizeImports": true
 }
