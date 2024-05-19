@@ -9,7 +9,7 @@ python = "^3.11"
 requests = "*"
 pydantic = "*"
 wiktionary-de-parser = "^0.11.5"
-python-telegram-bot = {extras = ["job-queue"], version = "^20.8"}
+python-telegram-bot = {extras = ["rate-limiter"], version = "^21.1.1"}
 environs = "^11.0.0"
 deep-translator = "*"
 gtts = "*"
