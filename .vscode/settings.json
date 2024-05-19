@@ -1,0 +1,8 @@
+{
+    "python.analysis.addImport.exactMatchOnly": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.analysis.typeCheckingMode": "standard",
+    "python.languageServer": "Pylance"
+}
