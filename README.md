@@ -33,6 +33,7 @@ ANKI_PASS="a_password"
 |`ANKI_NOTES_FILE_PATH`|File path to store Anki notes|
 |`ANKI_USER`|Anki username|
 |`ANKI_PASS`|Anki password|
+|`BROWSER_PATH`| Path to browser|
 
 
 **How to create a bot with __BotFather__ on Telegram?**
