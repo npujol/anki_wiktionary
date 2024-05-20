@@ -10,10 +10,14 @@ pkgs.mkShell {
   buildInputs = [
     pkgs.python311
     pkgs.poetry
+    pkgs.chromedriver
+    pkgs.chromium
   ];
   shellHook = ''
     poetry env use ${pkgs.lib.getExe pkgs.python311}
     export VIRTUAL_ENV=$(poetry env info --path)
     export PATH=$VIRTUAL_ENV/bin/:$PATH
+    export CHROMEDRIVER_PATH=${pkgs.lib.getExe pkgs.chromedriver}
+    export BROWSER_PATH=${pkgs.lib.getExe pkgs.chromium}
   '';
 }

@@ -25,15 +25,20 @@ TELEGRAM_TOKEN="your_telegram_bot_token"
 ANKI_NOTES_FILE_PATH="anki_notes.txt"
 ANKI_USER="your@email.com"
 ANKI_PASS="a_password"
+BROWSER_PATH="/usr/bin/webdriver"
+CHROMEDRIVER_PATH="/usr/bin/chromedriver"
+FILES_PATH="files"
 ```
 
 |Name|Description|
 |---|---|
-|`TELEGRAM_TOKEN`|Telegram bot token|
-|`ANKI_NOTES_FILE_PATH`|File path to store Anki notes|
-|`ANKI_USER`|Anki username|
-|`ANKI_PASS`|Anki password|
-|`BROWSER_PATH`| Path to browser|
+|`TELEGRAM_TOKEN`|Telegram bot token.|
+|`ANKI_NOTES_FILE_PATH`|File path to store Anki notes.|
+|`ANKI_USER`|Anki username.|
+|`ANKI_PASS`|Anki password.|
+|`BROWSER_PATH`| Path to browser.|
+|`CHROMEDRIVER_PATH`| Path to chromedriver. Optional |
+|`FILES_PATH`| Path to save audio files.|
 
 
 **How to create a bot with __BotFather__ on Telegram?**
