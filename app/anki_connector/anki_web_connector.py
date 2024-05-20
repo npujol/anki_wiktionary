@@ -13,7 +13,7 @@ from app.serializers import CustomNote
 WINDOW_SIZE = (800, 600)
 
 
-class WebAnkiConnector:
+class AnkiWebConnector:
     url = "https://ankiweb.net/account/login"
 
     def __init__(self, username: str, password: str) -> None:

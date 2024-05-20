@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.anki_connector import AnkiConnector
+from app.anki_connector.anki_local_connector import AnkiLocalConnector
 from app.serializers import CustomNote, Note
 
 
@@ -60,8 +60,8 @@ def note_obj(note_data):
 
 
 @pytest.fixture()
-def anki_connector() -> AnkiConnector:
-    return AnkiConnector()
+def anki_connector() -> AnkiLocalConnector:
+    return AnkiLocalConnector()
 
 
 @pytest.fixture()

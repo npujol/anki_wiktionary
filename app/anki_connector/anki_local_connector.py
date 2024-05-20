@@ -8,7 +8,7 @@ from app.serializers import CustomNote, Note
 logger = logging.getLogger(__name__)
 
 
-class AnkiConnector:
+class AnkiLocalConnector:
     # Doc for anki-connect: https://foosoft.net/projects/anki-connect/index.html#card-actions
     def __init__(self, server_url: str = "http://127.0.0.1:8765") -> None:
         self.server_url = server_url
