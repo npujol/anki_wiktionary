@@ -1,6 +1,7 @@
 from typing import Any, Optional
-from pydantic import BaseModel, Field, model_validator
+
 from deep_translator import GoogleTranslator
+from pydantic import BaseModel, Field, model_validator
 
 
 class Fields(BaseModel):
@@ -75,14 +76,15 @@ class CustomFields(BaseModel):
             original_value = values.get(original, None)
             if not values.get(to_generate, None) and original_value:
                 trans_result = handler.translate(
-                    original_value,
+                    text=original_value,
                 )
                 values[to_generate] = trans_result if trans_result else ""
         return values
 
 
 class CustomNote(Note):
-    fields: CustomFields
+    # overrides symbol of same name in class "Note"
+    fields: CustomFields  # type: ignore
 
     def pretty_print(self) -> str:
         msg = (

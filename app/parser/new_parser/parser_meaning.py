@@ -1,9 +1,8 @@
 import mwparserfromhell
 from mwparserfromhell.nodes.tag import Tag
-from mwparserfromhell.wikicode import Wikicode
 from mwparserfromhell.nodes.wikilink import Wikilink
+from mwparserfromhell.wikicode import Wikicode
 from wiktionary_de_parser.parser import Parser
-
 
 ParseMeaningResult = list[str] | None
 
@@ -12,7 +11,7 @@ class ParseMeaning(Parser):
     name = "meaning"
 
     @staticmethod
-    def parse_strings(parsed_paragraph: Wikicode):
+    def parse_strings(parsed_paragraph: Wikicode) -> list[str] | None:
         """
         Reference: https://de.wiktionary.org/wiki/Hilfe:Aussprache
         """
@@ -47,18 +46,20 @@ class ParseMeaning(Parser):
             return found
 
     @classmethod
-    def parse(cls, wikitext: str):
-        parsed_paragraph = mwparserfromhell.parse(wikitext)
+    def parse(cls, wikitext: str) -> list[str] | None:
+        parsed_paragraph = mwparserfromhell.parse(value=wikitext)
         result = None
         if parsed_paragraph:
-            meaning = cls.parse_strings(parsed_paragraph)
+            meaning = cls.parse_strings(parsed_paragraph=parsed_paragraph)
             if meaning:
                 result = meaning
         return result
 
     def run(self) -> ParseMeaningResult:
-        paragraph = self.find_paragraph("Bedeutungen", self.entry.wikitext)
+        paragraph = self.find_paragraph(
+            heading="Bedeutungen", wikitext=self.entry.wikitext
+        )
         result = None
         if paragraph:
-            result = self.parse(paragraph)
+            result = self.parse(wikitext=paragraph)
         return result

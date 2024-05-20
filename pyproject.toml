@@ -9,7 +9,7 @@ python = "^3.11"
 requests = "*"
 pydantic = "*"
 wiktionary-de-parser = "^0.11.5"
-python-telegram-bot = {extras = ["job-queue"], version = "^20.8"}
+python-telegram-bot = {extras = ["rate-limiter"], version = "^21.1.1"}
 environs = "^11.0.0"
 deep-translator = "*"
 gtts = "*"
@@ -46,12 +46,6 @@ addopts = [
   "-s",
   "-v",
 ] # Additional options for pytest, such as -s for capturing stdout and -v for verbose output
-
-[tool.flake8]
-
-exclude = ["README.md"]
-format = "colored"
-max_line_length = 127
 
 [tool.ruff]
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
@@ -130,6 +124,7 @@ lint.exclude = [
   "node_modules",
   "venv",
 ]
+extend-select = ["I"]
 
 # Same as Black.
 line-length = 88

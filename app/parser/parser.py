@@ -1,22 +1,23 @@
-from wiktionary_de_parser import WiktionaryParser
 import importlib.util
 import inspect
 from pathlib import Path
-from wiktionary_de_parser.models import WiktionaryPageEntry
+from typing import Any
 
+from wiktionary_de_parser import WiktionaryParser
+from wiktionary_de_parser.models import WiktionaryPageEntry
 from wiktionary_de_parser.parser import Parser
 
 from app.parser.models import CustomParsedWiktionaryPageEntry
 
 
 class CustomParser(WiktionaryParser):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         new_parsers = self.find_new_parser_classes()
         self.parser_classes = self.parser_classes + new_parsers
 
     @staticmethod
-    def find_new_parser_classes():
+    def find_new_parser_classes() -> list[Any]:
         path = Path(__file__).parent / "new_parser"
         parent_class = Parser
         classes = []
@@ -28,17 +29,19 @@ class CustomParser(WiktionaryParser):
                 and child.name != "__init__.py"
             ):
                 module_name = child.stem
-                spec = importlib.util.spec_from_file_location(module_name, child)
+                spec = importlib.util.spec_from_file_location(
+                    name=module_name, location=child
+                )
 
                 if not spec or not spec.loader:
                     raise Exception(f"Could not load {child}")
 
-                module = importlib.util.module_from_spec(spec)
-                spec.loader.exec_module(module)
+                module = importlib.util.module_from_spec(spec=spec)
+                spec.loader.exec_module(module=module)
 
-                for name, obj in inspect.getmembers(module):
+                for name, obj in inspect.getmembers(object=module):
                     if (
-                        inspect.isclass(obj)
+                        inspect.isclass(object=obj)
                         and issubclass(obj, parent_class)
                         and (obj != parent_class)
                     ):
@@ -46,7 +49,9 @@ class CustomParser(WiktionaryParser):
 
         return classes
 
-    def custom_parse_entry(self, wiktionary_entry: WiktionaryPageEntry):
+    def custom_parse_entry(
+        self, wiktionary_entry: WiktionaryPageEntry
+    ) -> CustomParsedWiktionaryPageEntry:
         """
         Parses an entry of a page.
         """
