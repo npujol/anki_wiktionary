@@ -1,6 +1,7 @@
 from typing import Any, Optional
-from pydantic import BaseModel, Field, model_validator
+
 from deep_translator import GoogleTranslator
+from pydantic import BaseModel, Field, model_validator
 
 
 class Fields(BaseModel):
@@ -82,7 +83,8 @@ class CustomFields(BaseModel):
 
 
 class CustomNote(Note):
-    fields: CustomFields
+    # overrides symbol of same name in class "Note"
+    fields: CustomFields  # type: ignore
 
     def pretty_print(self) -> str:
         msg = (

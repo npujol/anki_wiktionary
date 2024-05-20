@@ -1,11 +1,12 @@
+import traceback
+
+from pyvirtualdisplay import Display  # type: ignore
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from pyvirtualdisplay import Display  # type: ignore
-import traceback
-from selenium.webdriver.chrome.service import Service
 from app.serializers import CustomNote
 
 WINDOW_SIZE = (800, 600)

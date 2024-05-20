@@ -1,9 +1,8 @@
 import mwparserfromhell
 from mwparserfromhell.nodes.tag import Tag
-from mwparserfromhell.wikicode import Wikicode
 from mwparserfromhell.nodes.wikilink import Wikilink
+from mwparserfromhell.wikicode import Wikicode
 from wiktionary_de_parser.parser import Parser
-
 
 ParseMeaningResult = list[str] | None
 

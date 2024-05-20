@@ -1,6 +1,7 @@
-from typing import Any
-import requests
 import logging
+from typing import Any
+
+import requests
 
 from app.serializers import CustomNote, Note
 

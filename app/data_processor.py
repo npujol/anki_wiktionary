@@ -1,6 +1,8 @@
 import logging
+
 import requests
 from wiktionary_de_parser.models import WiktionaryPage
+
 from app.parser.models import CustomParsedWiktionaryPageEntry
 from app.parser.parser import CustomParser
 from app.serializers import CustomFields, CustomNote

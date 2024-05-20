@@ -1,3 +1,5 @@
+from typing import Any
+
 import pytest
 
 from app.anki_connector import AnkiConnector
@@ -58,17 +60,12 @@ def note_obj(note_data):
 
 
 @pytest.fixture()
-def add_note_result():
-    {"result": [1496198395707, None], "error": None}
-
-
-@pytest.fixture()
-def anki_connector():
+def anki_connector() -> AnkiConnector:
     return AnkiConnector()
 
 
 @pytest.fixture()
-def custom_note_data():
+def custom_note_data() -> dict[str, Any]:
     return {
         "deckName": "Test",
         "modelName": "Basic_",

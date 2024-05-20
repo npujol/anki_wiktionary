@@ -1,12 +1,14 @@
+import logging
 from datetime import datetime
+from pathlib import Path
 from typing import Optional
+
+from environs import Env
+from gtts import gTTS  # type: ignore
+
 from app.anki_connector import AnkiConnector
 from app.ankiweb import WebAnkiConnector
 from app.data_processor import NoteDataProcessor
-import logging
-from environs import Env
-from gtts import gTTS  # type: ignore
-from pathlib import Path
 from app.serializers import AudioItem, CustomNote
 
 env = Env()

@@ -1,9 +1,9 @@
-from wiktionary_de_parser import WiktionaryParser
 import importlib.util
 import inspect
 from pathlib import Path
-from wiktionary_de_parser.models import WiktionaryPageEntry
 
+from wiktionary_de_parser import WiktionaryParser
+from wiktionary_de_parser.models import WiktionaryPageEntry
 from wiktionary_de_parser.parser import Parser
 
 from app.parser.models import CustomParsedWiktionaryPageEntry
