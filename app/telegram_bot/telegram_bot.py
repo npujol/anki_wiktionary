@@ -31,7 +31,7 @@ TOKEN = env("TELEGRAM_TOKEN")
 ANKI_NOTES_FILE_PATH = env("ANKI_NOTES_FILE_PATH") or "anki_notes.txt"
 
 
-async def post_init(application: Application):
+async def post_init(application: Application) -> None:
     """
     Set bot commands after initializing the bot.
 
@@ -40,10 +40,13 @@ async def post_init(application: Application):
     """
     await application.bot.set_my_commands(
         [
-            BotCommand("/word", "Create an Anki note for a word"),
-            BotCommand("/help", "Show help message"),
-            BotCommand("/audio", "Create audio from text"),
-            BotCommand("/web_word", "Create an Anki note and send it to AnkiWeb"),
+            BotCommand(command="/word", description="Create an Anki note for a word"),
+            BotCommand(command="/help", description="Show help message"),
+            BotCommand(command="/audio", description="Create audio from text"),
+            BotCommand(
+                command="/web_word",
+                description="Create an Anki note and send it to AnkiWeb",
+            ),
         ]
     )
 
@@ -55,19 +58,29 @@ def main() -> None:
     application = Application.builder().token(TOKEN).build()
 
     # Register command handlers
-    application.add_handler(CommandHandler("word", handle_word))
-    application.add_handler(CommandHandler("help", handle_help))
-    application.add_handler(CommandHandler("audio", handle_audio))
-    application.add_handler(CommandHandler("web_word", handle_web_word))
+    application.add_handler(
+        handler=CommandHandler(command="word", callback=handle_word)
+    )
+    application.add_handler(
+        handler=CommandHandler(command="help", callback=handle_help)
+    )
+    application.add_handler(
+        handler=CommandHandler(command="audio", callback=handle_audio)
+    )
+    application.add_handler(
+        handler=CommandHandler(command="web_word", callback=handle_web_word)
+    )
 
     # Register message handlers
     application.add_handler(
-        MessageHandler(filters.TEXT & ~filters.COMMAND, message_handle)
+        handler=MessageHandler(
+            filters=filters.TEXT & ~filters.COMMAND, callback=message_handle
+        )
     )
     application.add_handler(
-        MessageHandler(
-            filters.VIDEO & ~filters.COMMAND & filters.PHOTO,
-            unsupport_message_handle,
+        handler=MessageHandler(
+            filters=filters.VIDEO & ~filters.COMMAND & filters.PHOTO,
+            callback=unsupport_message_handle,
         )
     )
 

@@ -1,5 +1,4 @@
 import logging
-from pathlib import Path
 
 from telegram import Message, Update
 from telegram.ext import (
@@ -13,8 +12,9 @@ from app.main import (
     save_anki_note_to_list,
     send_card_using_anki_web,
 )
+from app.private_config import working_path
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name=__name__)
 
 
 async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -29,17 +29,17 @@ async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     word = " ".join(args)
     message = update.message
     if not message:
-        logger.error("No message provided.")
+        logger.error(msg="No message provided.")
         return
     if word:
-        await _handle_word(word, message)
+        await _handle_word(word=word, message=message)
     else:
         msg = "Provide the word to create the anki note:"
-        logger.info(msg)
-        await message.reply_text(msg)
+        logger.info(msg=msg)
+        await message.reply_text(text=msg)
 
 
-async def _handle_word(word: str, message: Message):
+async def _handle_word(word: str, message: Message) -> None:
     """
     Handle the processing of a word, saving it as an Anki note, and replying
     with the note data.
@@ -48,18 +48,18 @@ async def _handle_word(word: str, message: Message):
         word (str): The word to process.
         message (Message): The Telegram message object.
     """
-    await save_anki_note_to_list(word)
+    await save_anki_note_to_list(word=word)
     msg = f"Anki note for '{word}' saved successfully."
-    logger.info(msg)
-    await message.reply_text(msg)
-    note = await get_anki_note_data(word)
+    logger.info(msg=msg)
+    await message.reply_text(text=msg)
+    note = await get_anki_note_data(word=word)
     if not note:
-        await message.reply_text("Anki note could not be created.")
+        await message.reply_text(text="Anki note could not be created.")
         return
-    await message.reply_text(note.pretty_print())
+    await message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = Path(__file__).parent.parent / f"files/{word}.mp3"
-        await message.reply_audio(filepath)
+        filepath = working_path / f"{word}.mp3"
+        await message.reply_audio(audio=filepath)
         filepath.unlink()
 
 
@@ -75,16 +75,16 @@ async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     text = " ".join(args)
     message = update.message
     if not message:
-        logger.error("No message provided.")
+        logger.error(msg="No message provided.")
         return
     if text:
-        filepath = await generate_audio(text)
-        await message.reply_audio(filepath)
+        filepath = await generate_audio(text=text)
+        await message.reply_audio(audio=filepath)
         filepath.unlink()
     else:
         msg = "Please provide a sentence to create audio."
-        logger.info(msg)
-        await message.reply_text(msg)
+        logger.info(msg=msg)
+        await message.reply_text(text=msg)
 
 
 async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -97,7 +97,7 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     """
     message = update.message
     if not message:
-        logger.error("No message provided.")
+        logger.error(msg="No message provided.")
         return
     msg = (
         "Commands:\n"
@@ -106,8 +106,8 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         "/audio: Creates audio from a text.\n"
         "/web_word: Creates a deck and sends it to the web browser."
     )
-    logger.info(msg)
-    await message.reply_text(msg)
+    logger.info(msg=msg)
+    await message.reply_text(text=msg)
 
 
 async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -122,26 +122,26 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     word = " ".join(args)
     message = update.message
     if not message:
-        logger.error("No message provided.")
+        logger.error(msg="No message provided.")
         return
     if not word:
         msg = "Please provide a word to create an Anki note."
-        logger.info(msg)
-        await message.reply_text(msg)
+        logger.info(msg=msg)
+        await message.reply_text(text=msg)
         return
 
-    note = await send_card_using_anki_web(word)
+    note = await send_card_using_anki_web(word=word)
     if not note:
         msg = "Anki note could not be created."
-        logger.error(msg)
-        await message.reply_text(msg)
+        logger.error(msg=msg)
+        await message.reply_text(text=msg)
         return
 
-    logger.info("Anki note created successfully.")
-    await message.reply_text(note.pretty_print())
+    logger.info(msg="Anki note created successfully.")
+    await message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = Path(__file__).parent.parent / f"files/{word}.mp3"
-        await message.reply_audio(filepath)
+        filepath = working_path / f"{word}.mp3"
+        await message.reply_audio(audio=filepath)
         filepath.unlink()
 
 
@@ -156,11 +156,11 @@ async def handle_text_without_command(
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
     if not update.message:
-        logger.error("No message provided.")
+        logger.error(msg="No message provided.")
         return
     word = update.message.text
     if word:
-        await handle_word(update, context)
+        await handle_word(update=update, context=context)
 
 
 async def unsupport_message_handle(update: Update, context: CallbackContext) -> None:
@@ -172,9 +172,9 @@ async def unsupport_message_handle(update: Update, context: CallbackContext) -> 
         context (CallbackContext): The context object.
     """
     error_text = "I don't know how to process other inputs. I only work with text."
-    logger.error(error_text)
+    logger.error(msg=error_text)
     if update.message:
-        await update.message.reply_text(error_text)
+        await update.message.reply_text(text=error_text)
 
 
 async def message_handle(update: Update, context: CallbackContext) -> None:
@@ -189,20 +189,20 @@ async def message_handle(update: Update, context: CallbackContext) -> None:
         return
     word = update.message.text
     if not word:
-        await unsupport_message_handle(update, context)
+        await unsupport_message_handle(update=update, context=context)
         return
 
-    await update.message.reply_text("Using the default command /web_word")
-    note = await send_card_using_anki_web(word)
+    await update.message.reply_text(text="Using the default command /web_word")
+    note = await send_card_using_anki_web(word=word)
     if not note:
         msg = "Anki note could not be created."
-        logger.error(msg)
-        await update.message.reply_text(msg)
+        logger.error(msg=msg)
+        await update.message.reply_text(text=msg)
         return
 
-    logger.info("Anki note created successfully.")
-    await update.message.reply_text(note.pretty_print())
+    logger.info(msg="Anki note created successfully.")
+    await update.message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = Path(__file__).parent.parent / f"files/{word}.mp3"
-        await update.message.reply_audio(filepath)
+        filepath = working_path / f"{word}.mp3"
+        await update.message.reply_audio(audio=filepath)
         filepath.unlink()

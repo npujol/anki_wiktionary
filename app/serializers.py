@@ -76,7 +76,7 @@ class CustomFields(BaseModel):
             original_value = values.get(original, None)
             if not values.get(to_generate, None) and original_value:
                 trans_result = handler.translate(
-                    original_value,
+                    text=original_value,
                 )
                 values[to_generate] = trans_result if trans_result else ""
         return values

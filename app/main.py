@@ -1,6 +1,5 @@
 import logging
 from datetime import datetime
-from pathlib import Path
 from typing import Optional
 
 from environs import Env
@@ -9,6 +8,7 @@ from gtts import gTTS  # type: ignore
 from app.anki_connector import AnkiConnector
 from app.ankiweb import WebAnkiConnector
 from app.data_processor import NoteDataProcessor
+from app.private_config import working_path
 from app.serializers import AudioItem, CustomNote
 
 env = Env()
@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 async def generate_audio(text: str):
     tts = gTTS(text, lang="de")  # type: ignore
-    path = Path(__file__).parent.parent / f"files/{text}.mp3"
+    path = working_path / f"{text}.mp3"
     tts.save(path)
     return path
 
@@ -41,13 +41,13 @@ def add_audio(note: CustomNote):
     """
     text = note.fields.full_word
     tts = gTTS(text, lang="de")  # type: ignore
-    path = Path(__file__).parent.parent / f"files/{text}.mp3"
+    path = working_path / f"{text}.mp3"
     tts.save(path)
     note.audio = [
         AudioItem.model_validate(
             {
                 # This value is from the local server
-                "url": f"http://localhost:8000/files/{note.fields.full_word}.mp3",
+                "url": f"http://localhost:8000/{working_path}/{note.fields.full_word}.mp3",
                 "filename": f"{note.fields.full_word}.mp3",
                 "skipHash": "true",
                 "fields": ["audio"],
@@ -57,7 +57,7 @@ def add_audio(note: CustomNote):
     return note
 
 
-def add_audio_local(note: CustomNote):
+def add_audio_local(note: CustomNote) -> CustomNote:
     """
     Asynchronously retrieves Anki note data for a given word.
 
@@ -69,13 +69,13 @@ def add_audio_local(note: CustomNote):
     """
     text = note.fields.full_word
     tts = gTTS(text, lang="de")  # type: ignore
-    path = Path(__file__).parent.parent / f"files/{text}.mp3"
+    path = working_path / f"{text}.mp3"
     tts.save(path)
     note.audio = [
         AudioItem.model_validate(
             {
                 # This value is from the local server
-                "url": f"files/{note.fields.full_word}.mp3",
+                "url": f"{working_path}/{note.fields.full_word}.mp3",
                 "filename": f"{note.fields.full_word}.mp3",
                 "skipHash": "true",
                 "fields": ["audio"],

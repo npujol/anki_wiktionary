@@ -7,7 +7,7 @@ from app.parser.models import CustomParsedWiktionaryPageEntry
 from app.parser.parser import CustomParser
 from app.serializers import CustomFields, CustomNote
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name=__name__)
 
 
 class WiktionaryDataProcessor:
@@ -33,7 +33,7 @@ class WiktionaryDataProcessor:
             "format": "json",
         }
 
-        content = requests.get(self.base_url, params=params).json().get("parse")
+        content = requests.get(url=self.base_url, params=params).json().get("parse")
 
         if not content:
             return []
@@ -45,8 +45,8 @@ class WiktionaryDataProcessor:
             wikitext=content.get("wikitext").get("*"),
         )
         word_types = []
-        for entry in parser.entries_from_page(page):
-            results = parser.custom_parse_entry(entry)
+        for entry in parser.entries_from_page(page=page):
+            results = parser.custom_parse_entry(wiktionary_entry=entry)
             word_types.append(results)
         return word_types
 
@@ -58,7 +58,7 @@ class NoteDataProcessor:
         self.model_name = model_name
 
     def get_anki_note(self, word: str) -> CustomNote | None:
-        content = self.data_handler.get_wiktionary_data(word)
+        content = self.data_handler.get_wiktionary_data(word=word)
         note = CustomNote(
             deckName=self.deck_name,
             modelName=self.model_name,

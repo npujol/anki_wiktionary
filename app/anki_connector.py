@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 class AnkiConnector:
     # Doc for anki-connect: https://foosoft.net/projects/anki-connect/index.html#card-actions
-    def __init__(self, server_url: str = "http://127.0.0.1:8765"):
+    def __init__(self, server_url: str = "http://127.0.0.1:8765") -> None:
         self.server_url = server_url
 
     def make_request(self, action, params={}) -> dict[str, Any]:
@@ -26,18 +26,18 @@ class AnkiConnector:
             The result of the request.
         """
         request_data = {"action": action, "params": params, "version": 6}
-        response = requests.post(self.server_url, json=request_data).json()
+        response = requests.post(url=self.server_url, json=request_data).json()
         if len(response) != 2:
             msg = f"Response has an unexpected number of fields: {response}"
-            logger.error(msg)
+            logger.error(msg=msg)
             raise Exception(msg)
         if "error" not in response or "result" not in response:
             msg = f"Response is missing required error or result field: {response}"
-            logger.error(msg)
+            logger.error(msg=msg)
             raise Exception(msg)
         if response.get("error"):
             msg = f"Request failed: {response.get('error')}"
-            logger.error(msg)
+            logger.error(msg=msg)
             raise Exception(msg)
         return response.get("result")
 
@@ -52,9 +52,9 @@ class AnkiConnector:
             dict[str, Any]: A dictionary containing the available deck names and
             their corresponding IDs.
         """
-        return self.make_request("deckNamesAndIds")
+        return self.make_request(action="deckNamesAndIds")
 
-    def get_cards_from_deck(self, deck_name: str):
+    def get_cards_from_deck(self, deck_name: str) -> dict[str, Any]:
         """
         Get cards from the specified deck.
 
@@ -65,7 +65,7 @@ class AnkiConnector:
             dict: The response from the 'findCards' request.
         """
         query = f"deck:{deck_name}"
-        return self.make_request("findCards", {"query": query})
+        return self.make_request(action="findCards", params={"query": query})
 
     def add_note(self, note: Note | CustomNote) -> dict[str, Any]:
         """
@@ -80,8 +80,8 @@ class AnkiConnector:
         """
         data = note.model_dump(mode="python", by_alias=True, exclude_none=True)
         return self.make_request(
-            "addNote",
-            {"note": data},
+            action="addNote",
+            params={"note": data},
         )
 
     def get_models_and_ids(self) -> dict[str, Any]:
@@ -93,4 +93,4 @@ class AnkiConnector:
             The result of the make_request method with the "modelNamesAndIds" endpoint
             and the note data.
         """
-        return self.make_request("modelNamesAndIds")
+        return self.make_request(action="modelNamesAndIds")
