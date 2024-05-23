@@ -40,27 +40,6 @@
           packages.app = mkPoetryApplication {
             projectDir = ./.;
             preferWheels = true;
-
-            #  without  preferWheels something like this needs to be done
-            # overrides =
-            #   defaultPoetryOverrides.extend
-            #   (final: prev: {
-            #     pyvirtualdisplay =
-            #       prev.pyvirtualdisplay.overridePythonAttrs
-            #       (
-            #         old: {
-            #           buildInputs = (old.buildInputs or []) ++ [prev.setuptools];
-            #         }
-            #       );
-            #
-            #     pytest-insta =
-            #       prev.pytest-insta .overridePythonAttrs
-            #       (
-            #         old: {
-            #           buildInputs = (old.buildInputs or []) ++ [prev.poetry];
-            #         }
-            #       );
-            #   });
           };
 
           # The default package when a specific package name isn't specified.
