@@ -8,5 +8,7 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "python.analysis.autoImportCompletions": true,
-    "ruff.organizeImports": true
+    "ruff.organizeImports": true,
+    "nix.enableLanguageServer": true,
+    "nix.serverPath": "nil"
 }
