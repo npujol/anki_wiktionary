@@ -1,6 +1,5 @@
 import traceback
 
-from pyvirtualdisplay import Display  # type: ignore
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -23,8 +22,6 @@ class AnkiWebConnector:
     def start(self) -> None:
         """Start the browser with the given credentials"""
         # Start the virtual display
-        self.display = Display(visible=False, size=WINDOW_SIZE)
-        self.display.start()
         # Create the Chrome browser service
         service = Service(executable_path=chrome_driver_binary)
         # Set up browser options
@@ -48,7 +45,6 @@ class AnkiWebConnector:
     def close(self) -> None:
         """Shut down the browser"""
         self.driver.quit()
-        self.display.stop()
 
     def send_card(self, custom_note: CustomNote, tags: list[str]) -> bool:
         """Send a card to Anki with the given fields from a CustomNote and tags"""

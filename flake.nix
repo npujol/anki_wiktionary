@@ -41,7 +41,14 @@
             preferWheels = true;
           };
 
-          defaultPackage = packages.app;
+          # Use xvfb-run to run the bot in headless mode
+          packages.bot = pkgs.writeShellScriptBin "bot" ''
+            export CHROMEDRIVER_PATH=${pkgs.lib.getExe pkgs.chromedriver}
+            export BROWSER_PATH=${pkgs.lib.getExe pkgs.brave}
+            ${pkgs.lib.getExe pkgs.xvfb-run} ${packages.app}/bin/bot
+          '';
+
+          defaultPackage = packages.bot;
           formatter = pkgs.alejandra;
         }
     );
