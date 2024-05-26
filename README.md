@@ -76,3 +76,18 @@ python app/server.py
 - `/word`: Creates an Anki note content and set the Word into the `ANKI_NOTES_FILE_PATH` file to be saved in Anki.
 - `/web_word`: Create an Anki note and send it into Anki using Selenium. This option had the limitation that it cannot send the audio file.
 - `/audio`: Creates audio from a given text.
+
+
+## Compile and running using Nix
+
+
+1. Step 1: Build the bot
+
+```bash
+nix build
+```
+
+2. Step 2: Running the bot
+```bash
+./result/bin/bot
+```
