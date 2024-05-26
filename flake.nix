@@ -19,8 +19,7 @@
         inherit (poetry2nix.lib.mkPoetry2Nix {inherit pkgs;}) mkPoetryApplication defaultPoetryOverrides;
       in
         with pkgs; rec {
-          # TODO Check why is compiling chromium
-          # Development environment
+          # Development shell including selenium dependencies
           devShell = mkShell {
             name = "anki_wiktionary";
             buildInputs = [
@@ -36,13 +35,12 @@
             '';
           };
 
-          # Runtime package
+          # Runtime package with all dependencies using python version as default option.
           packages.app = mkPoetryApplication {
             projectDir = ./.;
             preferWheels = true;
           };
 
-          # The default package when a specific package name isn't specified.
           defaultPackage = packages.app;
           formatter = pkgs.alejandra;
         }
