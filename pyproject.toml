@@ -9,7 +9,7 @@ python = "^3.11"
 requests = "*"
 pydantic = "*"
 wiktionary-de-parser = "^0.11.5"
-python-telegram-bot = {extras = ["rate-limiter"], version = "^21.1.1"}
+python-telegram-bot = { extras = ["rate-limiter"], version = "^21.1.1" }
 environs = "^11.0.0"
 deep-translator = "*"
 gtts = "*"
@@ -138,3 +138,6 @@ target-version = "py311"
 [tool.ruff.lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
 max-complexity = 10
+
+[tool.poetry.scripts]
+bot = 'app.telegram_bot.telegram_bot:main'
