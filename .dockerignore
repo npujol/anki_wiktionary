@@ -1,2 +1,6 @@
 /result
 /files
+/.direnv
+/.ruff_cache
+/.vscode
+/.git
