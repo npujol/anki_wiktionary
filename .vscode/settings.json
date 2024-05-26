@@ -10,5 +10,8 @@
     "python.analysis.autoImportCompletions": true,
     "ruff.organizeImports": true,
     "nix.enableLanguageServer": true,
-    "nix.serverPath": "nil"
+    "nix.serverPath": "nil",
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    }
 }
