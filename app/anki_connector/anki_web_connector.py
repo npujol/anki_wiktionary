@@ -1,15 +1,18 @@
 import traceback
 
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from app.private_config import chrome_binary_location, chrome_driver_binary
+from app.private_config import browser_binary_location, browser_driver_binary
 from app.serializers import CustomNote
 
 WINDOW_SIZE = (800, 600)
+
+TIMEOUT = 150
 
 
 class AnkiWebConnector:
@@ -23,22 +26,15 @@ class AnkiWebConnector:
         """Start the browser with the given credentials"""
         # Start the virtual display
         # Create the Chrome browser service
-        service = Service(executable_path=chrome_driver_binary)
+        service = Service(executable_path=browser_driver_binary)
         # Set up browser options
-        options = webdriver.ChromeOptions()
-        if chrome_binary_location:
-            options.binary_location = chrome_binary_location
-        options.add_argument(
-            argument=f"--window-size={WINDOW_SIZE[0]}x{WINDOW_SIZE[1]}"
-        )
-        options.add_argument(argument="--ignore-certificate-errors")
-        options.add_argument(argument="--headless")
-        options.add_argument(argument="--no-sandbox")
-        options.add_argument(argument="--disable-dev-shm-usage")
+        options = webdriver.FirefoxOptions()
+        if browser_binary_location:
+            options.binary_location = browser_binary_location
         # Start the browser
-        self.driver = webdriver.Chrome(service=service, options=options)
+        self.driver = webdriver.Firefox(service=service, options=options)
         if self.driver is None:
-            raise Exception("Failed to start Chrome")
+            raise Exception("Failed to start the browser")
 
         self._login_into_anki(username=self.username, password=self.password)
 
@@ -61,9 +57,8 @@ class AnkiWebConnector:
 
     def _login_into_anki(self, username: str, password: str) -> None:
         try:
-            self.driver.set_window_size(*WINDOW_SIZE)
             self.driver.get(url=self.url)
-            WebDriverWait(driver=self.driver, timeout=20).until(
+            WebDriverWait(driver=self.driver, timeout=TIMEOUT).until(
                 method=EC.visibility_of_element_located(
                     locator=(By.XPATH, '//input[@autocomplete="username"]')
                 )
@@ -75,13 +70,14 @@ class AnkiWebConnector:
             pass_box = self.driver.find_element(
                 by="xpath", value='//input[@autocomplete="current-password"]'
             )
-            pass_box.send_keys("{}\n".format(password))
+            pass_box.send_keys(password)
+            pass_box.send_keys(Keys.ENTER)
         except Exception as e:
             print(traceback.format_exc())
             raise e from e
 
     def _click_add_tab(self) -> None:
-        WebDriverWait(driver=self.driver, timeout=20).until(
+        WebDriverWait(driver=self.driver, timeout=TIMEOUT).until(
             method=EC.visibility_of_element_located(
                 locator=(By.XPATH, '//*[@id="navbarSupportedContent"]/ul[1]/li[2]/a')
             )
@@ -91,7 +87,7 @@ class AnkiWebConnector:
         ).click()
 
     def _wait_for_elements_to_appear(self) -> None:
-        WebDriverWait(driver=self.driver, timeout=20).until(
+        WebDriverWait(driver=self.driver, timeout=TIMEOUT).until(
             method=EC.visibility_of_element_located(
                 locator=(By.XPATH, "/html/body/div/main/form/button")
             )
