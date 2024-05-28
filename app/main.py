@@ -16,7 +16,7 @@ env.read_env(override=True)
 
 
 # File path to store Anki notes
-ANKI_NOTES_FILE_PATH = env("ANKI_NOTES_FILE_PATH") or "anki_notes.txt"
+ANKI_NOTES_FILE_PATH = env("ANKI_NOTES_FILE_PATH", default="anki_notes.txt")
 
 
 logger = logging.getLogger(__name__)
