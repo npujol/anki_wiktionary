@@ -10,6 +10,6 @@ env.read_env(override=True)
 browser_binary_location: str = env("BROWSER_PATH")
 browser_driver_binary: str = env("BROWSERDRIVER_PATH") or "/usr/bin/webdriver"
 
-files_path: str = env("FILES_PATH") or "files"
+files_path: str = env("FILES_PATH", default="files")
 working_path: Path = Path(files_path)
 working_path.mkdir(parents=True, exist_ok=True)
