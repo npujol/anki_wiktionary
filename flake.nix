@@ -31,6 +31,7 @@
             buildInputs = [
               pkgs.python312
               pkgs.poetry
+              pkgs.act
             ];
             shellHook = ''
               poetry env use ${pkgs.lib.getExe pkgs.python312}
