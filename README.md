@@ -29,7 +29,7 @@ ANKI_NOTES_FILE_PATH="anki_notes.txt"
 ANKI_USER="your@email.com"
 ANKI_PASS="a_password"
 BROWSER_PATH="/usr/bin/webdriver"
-CHROMEDRIVER_PATH="/usr/bin/chromedriver"
+BROWSERDRIVER_PATH="/usr/bin/chromedriver"
 FILES_PATH="files"
 ```
 
@@ -40,7 +40,7 @@ FILES_PATH="files"
 | `ANKI_USER`            | Anki username.                               |
 | `ANKI_PASS`            | Anki password.                               |
 | `BROWSER_PATH`         | Path to browser.                             |
-| `CHROMEDRIVER_PATH`    | Path to Chromedriver (optional).             |
+| `BROWSERDRIVER_PATH`    | Path to Chromedriver (optional).             |
 | `FILES_PATH`           | Path to save audio files.                    |
 
 ## How to Create a Bot with BotFather on Telegram

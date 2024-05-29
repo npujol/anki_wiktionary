@@ -5,7 +5,7 @@ description = ""
 authors = ["npujol <naivy.luna@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 requests = "*"
 pydantic = "*"
 wiktionary-de-parser = "^0.11.5"
