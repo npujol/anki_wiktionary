@@ -1,0 +1,15 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extensions.json format
+    "recommendations": [
+      "mhutchie.git-graph",
+      "ms-python.black-formatter",
+      "streetsidesoftware.code-spell-checker",
+      "ms-azuretools.vscode-docker",
+      "bbenoist.Nix",
+      "pinage404.nix-extension-pack",
+      "ms-python.vscode-pylance",
+      "ms-python.python",
+      "charliermarsh.ruff",
+    ]
+  }
