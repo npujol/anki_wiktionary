@@ -13,5 +13,12 @@
     "nix.serverPath": "nil",
     "[toml]": {
         "editor.defaultFormatter": "tamasfe.even-better-toml"
-    }
+    },
+    "cSpell.words": [
+        "Anki",
+        "Deutsch",
+        "pageid",
+        "savefile",
+        "wikitext"
+    ]
 }
