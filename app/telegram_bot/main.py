@@ -1,6 +1,5 @@
 import logging
 
-from environs import Env
 from telegram import BotCommand, Update
 from telegram.ext import (
     Application,
@@ -9,26 +8,21 @@ from telegram.ext import (
     filters,
 )
 
+from app.private_config import bot_token
 from app.telegram_bot.handlers import (
     handle_audio,
     handle_help,
     handle_web_word,
     handle_word,
     message_handle,
-    unsupport_message_handle,
+    unsupported_message_handle,
 )
 
 # Set up logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
-logger = logging.getLogger(__name__)
-
-# Load environment variables
-env = Env()
-env.read_env()
-TOKEN = env("TELEGRAM_TOKEN")
-ANKI_NOTES_FILE_PATH = env("ANKI_NOTES_FILE_PATH") or "anki_notes.txt"
+logger = logging.getLogger(name=__name__)
 
 
 async def post_init(application: Application) -> None:
@@ -55,7 +49,7 @@ def main() -> None:
     """
     Run the bot.
     """
-    application = Application.builder().token(TOKEN).build()
+    application = Application.builder().token(token=bot_token).build()
 
     # Register command handlers
     application.add_handler(
@@ -80,7 +74,7 @@ def main() -> None:
     application.add_handler(
         handler=MessageHandler(
             filters=filters.VIDEO & ~filters.COMMAND & filters.PHOTO,
-            callback=unsupport_message_handle,
+            callback=unsupported_message_handle,
         )
     )
 

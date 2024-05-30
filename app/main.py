@@ -1,35 +1,41 @@
 import logging
 from datetime import datetime
+from pathlib import Path
 from typing import Optional
 
-from environs import Env
 from gtts import gTTS  # type: ignore
 
 from app.anki_connector.anki_local_connector import AnkiLocalConnector
 from app.anki_connector.anki_web_connector import AnkiWebConnector
 from app.data_processor import NoteDataProcessor
-from app.private_config import working_path
+from app.private_config import (
+    anki_note_file_path,
+    anki_password,
+    anki_username,
+    working_path,
+)
 from app.serializers import AudioItem, CustomNote
 
-env = Env()
-env.read_env(override=True)
+logger = logging.getLogger(name=__name__)
 
 
-# File path to store Anki notes
-ANKI_NOTES_FILE_PATH = env("ANKI_NOTES_FILE_PATH", default="anki_notes.txt")
+async def generate_audio(text: str) -> Path:
+    """
+    Asynchronously generates audio for a given text.
 
+    Args:
+        text (str): The text to generate audio for.
 
-logger = logging.getLogger(__name__)
-
-
-async def generate_audio(text: str):
-    tts = gTTS(text, lang="de")  # type: ignore
+    Returns:
+        Path: The path to the generated audio file.
+    """
+    tts = gTTS(text=text, lang="de")  # type: ignore
     path = working_path / f"{text}.mp3"
-    tts.save(path)
+    tts.save(savefile=path)
     return path
 
 
-def add_audio(note: CustomNote):
+def add_audio(note: CustomNote) -> CustomNote:
     """
     Asynchronously retrieves Anki note data for a given word.
 
@@ -40,12 +46,12 @@ def add_audio(note: CustomNote):
         NoteData: The Anki note data for the specified word.
     """
     text = note.fields.full_word
-    tts = gTTS(text, lang="de")  # type: ignore
+    tts = gTTS(text=text, lang="de")  # type: ignore
     path = working_path / f"{text}.mp3"
-    tts.save(path)
+    tts.save(savefile=path)
     note.audio = [
         AudioItem.model_validate(
-            {
+            obj={
                 # This value is from the local server
                 "url": f"http://localhost:8000/{working_path}/{note.fields.full_word}.mp3",
                 "filename": f"{note.fields.full_word}.mp3",
@@ -68,12 +74,12 @@ def add_audio_local(note: CustomNote) -> CustomNote:
         NoteData: The Anki note data for the specified word.
     """
     text = note.fields.full_word
-    tts = gTTS(text, lang="de")  # type: ignore
+    tts = gTTS(text=text, lang="de")  # type: ignore
     path = working_path / f"{text}.mp3"
-    tts.save(path)
+    tts.save(savefile=path)
     note.audio = [
         AudioItem.model_validate(
-            {
+            obj={
                 # This value is from the local server
                 "url": f"{working_path}/{note.fields.full_word}.mp3",
                 "filename": f"{note.fields.full_word}.mp3",
@@ -96,19 +102,19 @@ def generate_note(word: str) -> bool:
         bool: True if the Anki note is created successfully, False otherwise.
     """
     try:
-        logger.info(f"Creating Anki note for {word}")
+        logger.info(msg=f"Creating Anki note for {word}")
         note = NoteDataProcessor(
             deck_name="Mein Deutsch", model_name="Basic_"
-        ).get_anki_note(word)
+        ).get_anki_note(word=word)
 
         if not note:
-            logger.error(f"Anki note for {word=} could not be created.")
+            logger.error(msg=f"Anki note for {word=} could not be created.")
             return False
-        note = add_audio(note)
-        id = AnkiLocalConnector().add_note(note)
-        logger.info(f"Note of {word=} with {id=} was created.")
+        note = add_audio(note=note)
+        id = AnkiLocalConnector().add_note(note=note)
+        logger.info(msg=f"Note of {word=} with {id=} was created.")
     except Exception as e:
-        logger.exception(f"Anki note for {word=} could not be created, due to {e}.")
+        logger.exception(msg=f"Anki note for {word=} could not be created, due to {e}.")
         return False
     return True
 
@@ -138,10 +144,9 @@ async def save_anki_note_to_list(word: str) -> None:
     Returns:
         None
     """
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(ANKI_NOTES_FILE_PATH, "a") as file:
+    with open(file=anki_note_file_path, mode="a") as file:
         file.write(f"{word}\n")
-    logger.info(f"Anki note created: {timestamp}: {word}")
+    logger.info(msg=f"Anki note created: {datetime.now().isoformat()}: {word}")
 
 
 def generate_notes() -> bool:
@@ -149,20 +154,20 @@ def generate_notes() -> bool:
     A function to generate notes from a file and write them back to the file.
     """
     try:
-        with open(ANKI_NOTES_FILE_PATH, "r") as file:
+        with open(file=anki_note_file_path, mode="r") as file:
             words = file.readlines()
         for word in set(words):
-            logger.info(f"Generating Anki note for {word}")
+            logger.info(msg=f"Generating Anki note for {word}")
             try:
                 word = word.strip()
                 generate_note(word)
             except Exception as e:
-                logger.exception(f"Anki notes, due to {e}.")
+                logger.exception(msg=f"Anki notes, due to {e}.")
                 continue
-        with open(ANKI_NOTES_FILE_PATH, "w") as file:
+        with open(file=anki_note_file_path, mode="w") as file:
             words = file.truncate()
     except Exception as e:
-        logger.error(f"Anki notes, due to {e}.")
+        logger.error(msg=f"Anki notes, due to {e}.")
         return False
     return True
 
@@ -172,40 +177,58 @@ async def send_card_using_anki_web(
     deck_name: str = "Mein Deutsch",
     model_name: str = "Basic_",
 ) -> Optional[CustomNote]:
-    """Sends an Anki note to the Anki web interface."""
-    username = env.str("ANKI_USER") or None
-    password = env.str("ANKI_PASS") or None
+    """
+    Asynchronously sends an Anki note to AnkiWeb.
+
+    Args:
+        word (str): The word to be sent to AnkiWeb.
+        deck_name (str, optional): The name of the deck. Defaults to "Mein Deutsch".
+        model_name (str, optional): The name of the model. Defaults to "Basic_".
+
+    Returns:
+        CustomNote: The Anki note that was sent to AnkiWeb.
+    """
+    username = anki_username
+    password = anki_password
 
     if not username or not password:
-        logger.error("Username or password not set.")
+        logger.error(msg="Username or password not set.")
         return
 
     # Create Anki note
-    logger.info(f"Creating Anki note for {word}")
+    logger.info(msg=f"Creating Anki note for {word}")
     note = NoteDataProcessor(
         deck_name=deck_name,
         model_name=model_name,
-    ).get_anki_note(word)
+    ).get_anki_note(word=word)
 
     if not note:
-        logger.error(f"Anki note for {word=} could not be created.")
+        logger.error(msg=f"Anki note for {word=} could not be created.")
         return
 
-    note = add_audio_local(note)
+    note = add_audio_local(note=note)
 
     # Send note to Anki web interface
-    web_anki_connector = AnkiWebConnector(username, password)
+    web_anki_connector = AnkiWebConnector(
+        username=username,
+        password=password,
+    )
     web_anki_connector.start()
     is_successful = web_anki_connector.send_card(
-        note, [deck_name, model_name, datetime.now().isoformat()]
+        custom_note=note,
+        tags=[
+            deck_name,
+            model_name,
+            datetime.now().isoformat(),
+        ],
     )
     web_anki_connector.close()
 
     if not is_successful:
-        logger.error(f"Anki note for {word=} could not be created.")
+        logger.error(msg=f"Anki note for {word=} could not be created.")
         return
 
-    logger.info(f"Note of {word=} was created successfully.")
+    logger.info(msg=f"Note of {word=} was created successfully.")
     return note
 
 
