@@ -33,7 +33,14 @@ class WiktionaryDataProcessor:
             "format": "json",
         }
 
-        content = requests.get(url=self.base_url, params=params).json().get("parse")
+        content = (
+            requests.get(
+                url=self.base_url,
+                params=params,
+            )
+            .json()
+            .get("parse")
+        )
 
         if not content:
             return []
@@ -58,6 +65,11 @@ class NoteDataProcessor:
         self.model_name = model_name
 
     def get_anki_note(self, word: str) -> CustomNote | None:
+        # TODO:
+        # - Review content using ollama
+        # - Include missing values using ollama
+        # - Get content from other sources
+        # - Generate the complete content using ollama
         content = self.data_handler.get_wiktionary_data(word=word)
         note = CustomNote(
             deckName=self.deck_name,

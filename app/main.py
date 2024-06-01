@@ -129,9 +129,9 @@ async def get_anki_note_data(word: str) -> CustomNote | None:
     Returns:
         NoteData: The Anki note data for the specified word.
     """
-    note = NoteDataProcessor().get_anki_note(word)
+    note = NoteDataProcessor().get_anki_note(word=word)
     if note is not None:
-        return add_audio(note)
+        return add_audio(note=note)
 
 
 async def save_anki_note_to_list(word: str) -> None:
@@ -160,7 +160,7 @@ def generate_notes() -> bool:
             logger.info(msg=f"Generating Anki note for {word}")
             try:
                 word = word.strip()
-                generate_note(word)
+                generate_note(word=word)
             except Exception as e:
                 logger.exception(msg=f"Anki notes, due to {e}.")
                 continue

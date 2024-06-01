@@ -53,22 +53,35 @@ def main() -> None:
 
     # Register command handlers
     application.add_handler(
-        handler=CommandHandler(command="word", callback=handle_word)
+        handler=CommandHandler(
+            command="word",
+            callback=handle_word,
+        )
     )
     application.add_handler(
-        handler=CommandHandler(command="help", callback=handle_help)
+        handler=CommandHandler(
+            command="help",
+            callback=handle_help,
+        )
     )
     application.add_handler(
-        handler=CommandHandler(command="audio", callback=handle_audio)
+        handler=CommandHandler(
+            command="audio",
+            callback=handle_audio,
+        )
     )
     application.add_handler(
-        handler=CommandHandler(command="web_word", callback=handle_web_word)
+        handler=CommandHandler(
+            command="web_word",
+            callback=handle_web_word,
+        )
     )
 
     # Register message handlers
     application.add_handler(
         handler=MessageHandler(
-            filters=filters.TEXT & ~filters.COMMAND, callback=message_handle
+            filters=filters.TEXT & ~filters.COMMAND,
+            callback=message_handle,
         )
     )
     application.add_handler(

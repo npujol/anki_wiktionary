@@ -10,13 +10,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from app.private_config import browser_binary_location, browser_driver_binary
 from app.serializers import CustomNote
 
-WINDOW_SIZE = (800, 600)
-
 TIMEOUT = 150
 
 
 class AnkiWebConnector:
-    url = "https://ankiweb.net/account/login"
+    login_url = "https://ankiweb.net/account/login"
 
     def __init__(self, username: str, password: str) -> None:
         self.username = username
@@ -57,7 +55,7 @@ class AnkiWebConnector:
 
     def _login_into_anki(self, username: str, password: str) -> None:
         try:
-            self.driver.get(url=self.url)
+            self.driver.get(url=self.login_url)
             WebDriverWait(driver=self.driver, timeout=TIMEOUT).until(
                 method=EC.visibility_of_element_located(
                     locator=(By.XPATH, '//input[@autocomplete="username"]')

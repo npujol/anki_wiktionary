@@ -5,7 +5,7 @@ import requests
 
 from app.serializers import CustomNote, Note
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name=__name__)
 
 
 class AnkiLocalConnector:
@@ -65,7 +65,10 @@ class AnkiLocalConnector:
             dict: The response from the 'findCards' request.
         """
         query = f"deck:{deck_name}"
-        return self.make_request(action="findCards", params={"query": query})
+        return self.make_request(
+            action="findCards",
+            params={"query": query},
+        )
 
     def add_note(self, note: Note | CustomNote) -> dict[str, Any]:
         """
@@ -78,7 +81,11 @@ class AnkiLocalConnector:
             The result of the make_request method with the "addNote" endpoint
             and the note data.
         """
-        data = note.model_dump(mode="python", by_alias=True, exclude_none=True)
+        data = note.model_dump(
+            mode="python",
+            by_alias=True,
+            exclude_none=True,
+        )
         return self.make_request(
             action="addNote",
             params={"note": data},
