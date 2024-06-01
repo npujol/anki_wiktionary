@@ -51,6 +51,8 @@ class Model(BaseModel):
     params: Params
 
 
+# NOTE: To handle multiple card types in the future, this is the only element
+# that needs to be updated
 class CustomFields(BaseModel):
     full_word: str
     plural: Optional[str] = None

@@ -59,7 +59,7 @@ __Note__: Copy the token provided by BotFather and save it securely. Do not shar
 
 - Running the Telegram bot in the background:
     ```bash
-    python app/telegram_bot.py
+    python app/telegram_bot/main.py
     ```
 - Generating notes using the information from the environment variable `ANKI_NOTES_FILE_PATH`:
     ```bash

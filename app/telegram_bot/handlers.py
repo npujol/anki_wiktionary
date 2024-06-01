@@ -163,7 +163,7 @@ async def handle_text_without_command(
         await handle_word(update=update, context=context)
 
 
-async def unsupport_message_handle(update: Update, context: CallbackContext) -> None:
+async def unsupported_message_handle(update: Update, context: CallbackContext) -> None:
     """
     Handle unsupported message types.
 
@@ -189,7 +189,7 @@ async def message_handle(update: Update, context: CallbackContext) -> None:
         return
     word = update.message.text
     if not word:
-        await unsupport_message_handle(update=update, context=context)
+        await unsupported_message_handle(update=update, context=context)
         return
 
     await update.message.reply_text(text="Using the default command /web_word")

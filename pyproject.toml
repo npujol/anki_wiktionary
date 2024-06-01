@@ -140,4 +140,4 @@ target-version = "py311"
 max-complexity = 10
 
 [tool.poetry.scripts]
-bot = 'app.telegram_bot.telegram_bot:main'
+bot = 'app.telegram_bot.main:main'
