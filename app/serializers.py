@@ -54,17 +54,50 @@ class Model(BaseModel):
 # NOTE: To handle multiple card types in the future, this is the only element
 # that needs to be updated
 class CustomFields(BaseModel):
-    full_word: str
-    plural: Optional[str] = None
-    characteristics: Optional[str] = None
-    ipa: Optional[str] = None
-    audio: Optional[list[AudioItem]] = None
-    meaning: Optional[str] = None
-    meaning_spanish: Optional[str] = None
-    example1: Optional[str] = None
-    example1e: Optional[str] = None
-    example2: Optional[str] = None
-    example2e: Optional[str] = None
+    full_word: str = Field(
+        default=...,
+        description="This field contains the input word to be used in the generated content.",
+    )
+    plural: Optional[str] = Field(
+        default=None,
+        description="This field contains the plural form of the word.",
+    )
+    characteristics: Optional[str] = Field(
+        default=None,
+        description="This field contains specific grammatical characteristics of the word.",
+    )
+    ipa: Optional[str] = Field(
+        default=None,
+        description="This field contains the IPA transcription of the word.",
+    )
+    audio: Optional[list[AudioItem]] = Field(
+        default=None,
+        description="This field contains the audio files associated with the word. In the generation process this field will be ignored.",
+    )
+    meaning: Optional[str] = Field(
+        default=None,
+        description="This field contains the meaning of the word. This field should include the different meanings of the word, including the slangs. Start each meaning on a new line.",
+    )
+    meaning_spanish: Optional[str] = Field(
+        default=None,
+        description="This field contains the meaning of the word in Spanish. This field should be ignores in the generation process.",
+    )
+    example1: Optional[str] = Field(
+        default=None,
+        description="This field contains one example sentence using the word.",
+    )
+    example1e: Optional[str] = Field(
+        default=None,
+        description="This field contains the meaning of the word in Spanish. This field should be ignores in the generation process.",
+    )
+    example2: Optional[str] = Field(
+        default=None,
+        description="This field contains one example sentence using the word. The example sentence should be different from the first example sentence in the example1 field.",
+    )
+    example2e: Optional[str] = Field(
+        default=None,
+        description="This field contains the meaning of the word in Spanish. This field should be ignores in the generation process.",
+    )
 
     @model_validator(mode="before")
     def validate_missing_translations(cls, values: Any) -> Any:
@@ -82,6 +115,19 @@ class CustomFields(BaseModel):
                 )
                 values[to_generate] = trans_result if trans_result else ""
         return values
+
+    @classmethod
+    def model_json_schema_to_generate_fields(cls) -> dict[str, Any]:
+        fields_to_generate = [
+            "plural",
+            "characteristics",
+            "ipa",
+            "meaning",
+            "example1",
+            "example2",
+        ]
+        schema = cls.model_json_schema().get("properties", {})
+        return {key: schema[key] for key in schema.keys() if key in fields_to_generate}
 
 
 class CustomNote(Note):
