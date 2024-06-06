@@ -2,8 +2,9 @@ import json
 import logging
 from typing import Any
 
-import ollama
+from ollama import Client
 
+from app.private_config import ollama_server_url
 from app.serializers import CustomFields, CustomNote
 
 logger = logging.getLogger(name=__name__)
@@ -15,6 +16,7 @@ class OllamaDataProcessor:
     def __init__(self, deck_name: str = "Test", model_name: str = "Basic_") -> None:
         self.deck_name = deck_name
         self.model_name = model_name
+        self.client = Client(host=ollama_server_url)
 
     def get_anki_note(self, word: str) -> CustomNote:
         prompts = self._generate_content_from_scratch_prompts(
@@ -23,7 +25,7 @@ class OllamaDataProcessor:
         )
         fields: dict[str, Any] = {"full_word": word}
         for key, prompt in prompts.items():
-            result = ollama.generate(
+            result = self.client.generate(
                 model="llama3",
                 prompt=prompt,
             )
@@ -71,7 +73,7 @@ class OllamaDataProcessor:
             result[key] = prompt
         return result
 
-    def _review_content_prompt(self, current_content: str) -> str:
+    def _review_content_prompt(self, current_content: dict[str, Any]) -> str:
         # TODO : Review content using ollama
         # - Review content using ollama
         # - Include missing values using ollama
