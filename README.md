@@ -31,6 +31,7 @@ ANKI_PASS="a_password"
 BROWSER_PATH="/usr/bin/webdriver"
 BROWSERDRIVER_PATH="/usr/bin/chromedriver"
 FILES_PATH="files"
+OLLAMA_URL="http://127.0.0.1:11434"
 ```
 
 | Name                   | Description                                  |
@@ -40,8 +41,9 @@ FILES_PATH="files"
 | `ANKI_USER`            | Anki username.                               |
 | `ANKI_PASS`            | Anki password.                               |
 | `BROWSER_PATH`         | Path to browser.                             |
-| `BROWSERDRIVER_PATH`    | Path to Chromedriver (optional).             |
+| `BROWSERDRIVER_PATH`   | Path to Chromedriver (optional).             |
 | `FILES_PATH`           | Path to save audio files.                    |
+| `OLLAMA_URL`           | Ollama server url.                           |
 
 ## How to Create a Bot with BotFather on Telegram
 

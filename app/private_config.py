@@ -21,3 +21,6 @@ anki_password = env.str("ANKI_PASS", default=None)
 
 # Telegram bot credentials
 bot_token = env.str("TELEGRAM_TOKEN", default=None)
+
+# Ollama server url
+ollama_server_url = env.str("OLLAMA_URL", default="http://127.0.0.1:11434")
