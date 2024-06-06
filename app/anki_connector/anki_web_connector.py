@@ -23,10 +23,11 @@ class AnkiWebConnector:
     def start(self) -> None:
         """Start the browser with the given credentials"""
         # Start the virtual display
-        # Create the Chrome browser service
+        # Create the Browser browser service
         service = Service(executable_path=browser_driver_binary)
         # Set up browser options
         options = webdriver.FirefoxOptions()
+        options.add_argument("--headless")  # Run in headless mode
         if browser_binary_location:
             options.binary_location = browser_binary_location
         # Start the browser
@@ -70,9 +71,9 @@ class AnkiWebConnector:
             )
             pass_box.send_keys(password)
             pass_box.send_keys(Keys.ENTER)
-        except Exception as e:
+        except Exception:
             print(traceback.format_exc())
-            raise e from e
+            raise
 
     def _click_add_tab(self) -> None:
         WebDriverWait(driver=self.driver, timeout=TIMEOUT).until(

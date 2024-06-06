@@ -7,7 +7,7 @@ from gtts import gTTS  # type: ignore
 
 from app.anki_connector.anki_local_connector import AnkiLocalConnector
 from app.anki_connector.anki_web_connector import AnkiWebConnector
-from app.data_processor import NoteDataProcessor
+from app.data_processor.note_data_processor import NoteDataProcessor
 from app.private_config import (
     anki_note_file_path,
     anki_password,
