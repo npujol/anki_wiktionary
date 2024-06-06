@@ -25,6 +25,7 @@ class OllamaDataProcessor:
         )
         fields: dict[str, Any] = {"full_word": word}
         for key, prompt in prompts.items():
+            # TODO: Set up a config file to configure the model and prompt
             result = self.client.generate(
                 model="llama3",
                 prompt=prompt,
@@ -73,11 +74,29 @@ class OllamaDataProcessor:
             result[key] = prompt
         return result
 
-    def _review_content_prompt(self, current_content: dict[str, Any]) -> str:
-        # TODO : Review content using ollama
-        # - Review content using ollama
-        # - Include missing values using ollama
-        # - Get content from other sources
-        # - Generate the complete content using ollama
+    def generate_sentence_examples(
+        self, word: str, count_examples: int = 1
+    ) -> list[str]:
+        prompt = (
+            f"Gibt mir {count_examples}-Satz-Beispiele für das Wort: {word}."
+            f"Das Ergebnis sollte eine JSON-Datei mit den Schluesseln: sentences und eine Liste mit  {count_examples} Beispiele. "
+            " Satzbeispielen sein ohne anderen Text oder Erklarung."
+        )
+        result = self.client.generate(
+            model="llama3",
+            prompt=prompt,
+            format="json",
+        )
 
-        return ""
+        response = result.get("response")  # type: ignore
+        content = []
+        if response is None:
+            return content
+        try:
+            json_content = json.loads(response)
+            content = list(json_content.values())
+        except json.JSONDecodeError as e:
+            logger.exception(f"Using raw string, due to {e}.")
+            isinstance(response, str)
+            content = response
+        return content

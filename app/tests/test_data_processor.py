@@ -27,7 +27,7 @@ def test_get_anki_note(snapshot: Any) -> None:
     ), "The result does not match the snapshot"
 
 
-@pytest.mark.vcr(mode="always")
+@pytest.mark.vcr(mode="once")
 def test_ollama_processor_get_anki_note_(snapshot: Any) -> None:
     result = OllamaDataProcessor().get_anki_note(word="Abend")
     assert result, "Add note failed"
@@ -42,3 +42,10 @@ def test__generate_content_from_scratch_prompt(snapshot: Any) -> None:
         json_schema=CustomFields.model_json_schema_to_generate_fields(),
     )
     assert snapshot("json") == prompts, "The result does not match the snapshot"
+
+
+@pytest.mark.vcr(mode="once")
+def test_generate_sentence_examples(snapshot: Any) -> None:
+    result = OllamaDataProcessor().generate_sentence_examples(word="Abend")
+    assert result, "Add note failed"
+    assert snapshot("json") == result
