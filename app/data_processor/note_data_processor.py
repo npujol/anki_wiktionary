@@ -22,39 +22,10 @@ class NoteDataProcessor:
         note = CustomNote(
             deckName=self.deck_name,
             modelName=self.model_name,
-            fields=CustomFields(
-                full_word=word,
-                plural=(
-                    "\n    ".join(
-                        f"{k}: {v}"
-                        for k, v in content[0].flexion.items()
-                        if "plural" in k.lower()
-                    )
-                    if content[0].flexion and content[0].flexion != ""
-                    else ""
-                ),
-                characteristics=(
-                    "\n    ".join(f"{k}: {v}" for k, v in content[0].flexion.items())
-                    if content[0].flexion and content[0].flexion != ""
-                    else ""
-                ),
-                ipa=", ".join(content[0].ipa or []),  # type: ignore
-                meaning="\n    ".join(
-                    c.strip().replace("\n", "")
-                    for c in (content[0].meaning or [])
-                    if c != "" and c.strip().replace("\n", "") != ""
-                ),
-                example1=content[0].example[0].strip().replace("\n", "")  # type: ignore
-                if len(content) and len(content[0].example)  # type: ignore
-                else "",
-                example2=content[0].example[1].strip().replace("\n", "")  # type: ignore
-                if len(content) and len(content[0].example) > 1  # type: ignore
-                else "",  # type: ignore
-            ),
             tags=["test"],
             audio=[],
             video=[],
             picture=[],
-        )
+        ).import_from_content(content=content)
 
         return note

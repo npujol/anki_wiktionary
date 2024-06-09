@@ -1,7 +1,10 @@
-from typing import Any, Optional
+import logging
+from typing import Any, Optional, Self
 
 from deep_translator import GoogleTranslator
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, ValidationError, model_validator
+
+logger = logging.getLogger(name=__name__)
 
 
 class Fields(BaseModel):
@@ -132,9 +135,11 @@ class CustomFields(BaseModel):
 
 class CustomNote(Note):
     # overrides symbol of same name in class "Note"
-    fields: CustomFields  # type: ignore
+    fields: Optional[CustomFields] = None
 
     def pretty_print(self) -> str:
+        if not self.fields:
+            return "No fields found"
         msg = (
             f"full_word:\n    {self.fields.full_word}\n\n"
             + f"plural:\n    {self.fields.plural}\n\n"
@@ -149,3 +154,13 @@ class CustomNote(Note):
             + f"example2e:\n    {self.fields.example2e}\n"
         )
         return msg
+
+    def import_from_content(self, content: dict[str, Any]) -> Self | None:
+        try:
+            self.fields = CustomFields(
+                **{k: v for k, v in content.items() if k in CustomFields.model_fields}
+            )
+            return self
+        except ValidationError as e:
+            logger.exception(msg=f"Failed to import note from content: {e}")
+            return None
