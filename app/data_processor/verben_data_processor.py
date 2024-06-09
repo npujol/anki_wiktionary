@@ -10,7 +10,7 @@ class VerbenDataProcessor:
     def __init__(self) -> None:
         self.base_url = "https://www.verben.de/?w="
 
-    def get_data(self, word: str) -> str:
+    def get_note_data(self, word: str) -> str:
         response = requests.get(
             url=self.base_url + word,
         )

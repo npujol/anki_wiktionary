@@ -18,7 +18,7 @@ class OllamaDataProcessor:
         self.model_name = model_name
         self.client = Client(host=ollama_server_url)
 
-    def get_anki_note(self, word: str) -> CustomNote:
+    def get_note_data(self, word: str) -> CustomNote:
         prompts = self._generate_content_from_scratch_prompts(
             word=word,
             json_schema=CustomFields.model_json_schema_to_generate_fields(),
