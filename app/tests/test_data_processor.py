@@ -4,6 +4,7 @@ import pytest
 
 from app.data_processor.note_data_processor import NoteDataProcessor
 from app.data_processor.ollama_data_processor import OllamaDataProcessor
+from app.data_processor.verben_data_processor import VerbenDataProcessor
 from app.data_processor.wiktionary_data_processor import WiktionaryDataProcessor
 from app.serializers import CustomFields
 
@@ -47,5 +48,12 @@ def test__generate_content_from_scratch_prompt(snapshot: Any) -> None:
 @pytest.mark.vcr(mode="once")
 def test_generate_sentence_examples(snapshot: Any) -> None:
     result = OllamaDataProcessor().generate_sentence_examples(word="Abend")
+    assert result, "Add note failed"
+    assert snapshot("json") == result
+
+
+@pytest.mark.vcr(mode="once")
+def test_get_data_from_verben(snapshot: Any) -> None:
+    result = VerbenDataProcessor().get_data(word="Abend")
     assert result, "Add note failed"
     assert snapshot("json") == result
