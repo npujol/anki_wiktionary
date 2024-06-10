@@ -1,4 +1,5 @@
 import logging
+from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
@@ -10,14 +11,17 @@ class VerbenDataProcessor:
     def __init__(self) -> None:
         self.base_url = "https://www.verben.de/?w="
 
-    def get_note_data(self, word: str) -> str:
+    def get_note_data(self, word: str) -> dict[str, Any]:
         response = requests.get(
             url=self.base_url + word,
         )
 
         if response.status_code != 200:
             logger.info(f"The request to {self.base_url} failed.")
-            return word
+            return {
+                "Front": word,
+                "Back": "",
+            }
         # Get the content of the response
         page_content = response.content
 
@@ -28,8 +32,14 @@ class VerbenDataProcessor:
         body = soup.body
         body = soup.find("body")
         if body is None:
-            return word
+            return {
+                "Front": word,
+                "Back": "",
+            }
         for script in body.find_all(["script", "style"]):
             script.decompose()
 
-        return str(body)
+        return {
+            "Front": word,
+            "Back": str(body),
+        }

@@ -18,7 +18,7 @@ class OllamaDataProcessor:
         self.model_name = model_name
         self.client = Client(host=ollama_server_url)
 
-    def get_note_data(self, word: str) -> CustomNote:
+    def get_note_data(self, word: str) -> dict[str, Any]:
         prompts = self._generate_content_from_scratch_prompts(
             word=word,
             json_schema=CustomFields.model_json_schema_to_generate_fields(),
@@ -40,17 +40,7 @@ class OllamaDataProcessor:
                 content = response
             fields[key] = content
 
-        note = CustomNote(
-            deckName=self.deck_name,
-            modelName=self.model_name,
-            fields=CustomFields(**fields),
-            tags=["test"],
-            audio=[],
-            video=[],
-            picture=[],
-        )
-
-        return note
+        return fields
 
     def _generate_content_from_scratch_prompts(
         self,

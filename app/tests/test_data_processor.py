@@ -29,9 +29,7 @@ def test_get_anki_note(snapshot: Any) -> None:
 def test_ollama_processor_get_anki_note_(snapshot: Any) -> None:
     result = OllamaDataProcessor().get_note_data(word="Abend")
     assert result, "Add note failed"
-    assert snapshot("json") == result.model_dump(
-        mode="python", by_alias=True, exclude_none=True
-    ), "The result does not match the snapshot"
+    assert snapshot("json") == result, "The result does not match the snapshot"
 
 
 def test__generate_content_from_scratch_prompt(snapshot: Any) -> None:
