@@ -6,6 +6,7 @@ from wiktionary_de_parser.models import WiktionaryPage
 
 from app.parser.models import CustomParsedWiktionaryPageEntry
 from app.parser.parser import CustomParser
+from app.serializers import CustomFields
 
 logger = logging.getLogger(name=__name__)
 
@@ -13,6 +14,7 @@ logger = logging.getLogger(name=__name__)
 class WiktionaryDataProcessor:
     def __init__(self) -> None:
         self.base_url = "https://de.wiktionary.org/w/api.php"
+        self.fields_class = CustomFields
 
     def get_note_data(self, word: str) -> dict[str, Any]:
         """

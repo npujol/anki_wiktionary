@@ -1,8 +1,8 @@
 import logging
-from typing import Any, Optional, Self
+from typing import Any, Callable, Optional, Self
 
 from deep_translator import GoogleTranslator
-from pydantic import BaseModel, Field, ValidationError, model_validator
+from pydantic import BaseModel, Field, ValidationError, computed_field, model_validator
 
 logger = logging.getLogger(name=__name__)
 
@@ -52,6 +52,17 @@ class Model(BaseModel):
     action: str
     version: int
     params: Params
+
+
+class BasicFields(BaseModel):  # that needs to be updated
+    Front: str = Field(
+        default=...,
+        description="This field contains the input word to be used in the generated content.",
+    )
+    Back: str = Field(
+        default=...,
+        description="This field contains html content with the information of the word.",
+    )
 
 
 # NOTE: To handle multiple card types in the future, this is the only element
@@ -135,30 +146,56 @@ class CustomFields(BaseModel):
 
 class CustomNote(Note):
     # overrides symbol of same name in class "Note"
-    fields: Optional[CustomFields] = None
+    fields: CustomFields | BasicFields | None = None
+
+    @computed_field(return_type=bool)
+    def shall_add_audio(self) -> bool:
+        shall_add_audio = False
+        if self.fields is not None and isinstance(self.fields, CustomFields):
+            shall_add_audio = True
+        return shall_add_audio
+
+    @computed_field(return_type=str)
+    def card_type(self) -> str:
+        card_type = "Basic"
+        if self.fields is not None and isinstance(self.fields, CustomFields):
+            card_type = "Basic_"
+        if self.fields is not None and isinstance(self.fields, BasicFields):
+            card_type = "Basic"
+        return card_type
 
     def pretty_print(self) -> str:
+        msg = "No fields found"
         if not self.fields:
-            return "No fields found"
-        msg = (
-            f"full_word:\n    {self.fields.full_word}\n\n"
-            + f"plural:\n    {self.fields.plural}\n\n"
-            + f"characteristics:\n    {self.fields.characteristics}\n\n"
-            + f"ipa:\n    {self.fields.ipa}\n\n"
-            + f"audio:\n    {self.fields.audio}\n\n"
-            + f"meaning:\n    {self.fields.meaning}\n\n"
-            + f"meaning_spanish:\n    {self.fields.meaning_spanish}\n\n"
-            + f"example1:\n    {self.fields.example1}\n\n"
-            + f"example1e:\n    {self.fields.example1e}\n\n"
-            + f"example2:\n    {self.fields.example2}\n\n"
-            + f"example2e:\n    {self.fields.example2e}\n"
-        )
+            return msg
+        if isinstance(self.fields, CustomFields):
+            msg = (
+                f"full_word:\n    {self.fields.full_word}\n\n"
+                + f"plural:\n    {self.fields.plural}\n\n"
+                + f"characteristics:\n    {self.fields.characteristics}\n\n"
+                + f"ipa:\n    {self.fields.ipa}\n\n"
+                + f"audio:\n    {self.fields.audio}\n\n"
+                + f"meaning:\n    {self.fields.meaning}\n\n"
+                + f"meaning_spanish:\n    {self.fields.meaning_spanish}\n\n"
+                + f"example1:\n    {self.fields.example1}\n\n"
+                + f"example1e:\n    {self.fields.example1e}\n\n"
+                + f"example2:\n    {self.fields.example2}\n\n"
+                + f"example2e:\n    {self.fields.example2e}\n"
+            )
+        if isinstance(self.fields, BasicFields):
+            msg = (
+                f"Front:\n    {self.fields.Front}\n\n"
+                + f"Back:\n    {self.fields.Back[:200]}\n\n"
+            )
+
         return msg
 
-    def import_from_content(self, content: dict[str, Any]) -> Self | None:
+    def import_from_content(
+        self, content: dict[str, Any], fields_class: Callable
+    ) -> Self | None:
         try:
-            self.fields = CustomFields(
-                **{k: v for k, v in content.items() if k in CustomFields.model_fields}
+            self.fields = fields_class(  # type: ignore
+                **{k: v for k, v in content.items() if k in fields_class.model_fields}  # type: ignore
             )
             return self
         except ValidationError as e:

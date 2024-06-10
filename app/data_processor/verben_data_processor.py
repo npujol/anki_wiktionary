@@ -4,12 +4,15 @@ from typing import Any
 import requests
 from bs4 import BeautifulSoup
 
+from app.serializers import BasicFields
+
 logger = logging.getLogger(name=__name__)
 
 
 class VerbenDataProcessor:
     def __init__(self) -> None:
         self.base_url = "https://www.verben.de/?w="
+        self.fields_class = BasicFields
 
     def get_note_data(self, word: str) -> dict[str, Any]:
         response = requests.get(
@@ -36,7 +39,9 @@ class VerbenDataProcessor:
                 "Front": word,
                 "Back": "",
             }
-        for script in body.find_all(["script", "style"]):
+        # TODO Reduce the size of this field
+        # Remove scripts and styles
+        for script in body.find_all(["script", "style"]):  # type: ignore
             script.decompose()
 
         return {

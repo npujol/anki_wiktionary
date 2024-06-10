@@ -17,5 +17,7 @@
   ],
   "audio": [],
   "video": [],
-  "picture": []
+  "picture": [],
+  "shall_add_audio": true,
+  "card_type": "Basic_"
 }

@@ -17,6 +17,7 @@ class OllamaDataProcessor:
         self.deck_name = deck_name
         self.model_name = model_name
         self.client = Client(host=ollama_server_url)
+        self.fields_class = CustomFields
 
     def get_note_data(self, word: str) -> dict[str, Any]:
         prompts = self._generate_content_from_scratch_prompts(

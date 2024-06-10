@@ -21,13 +21,14 @@ class NoteDataProcessor:
     ) -> CustomNote | None:
         content = {}
         if not processor_name:
-            for processor_name in PROCESSORS_MAP.values():
-                content = processor_name.get_note_data(word=word)  # type: ignore
+            for processor in PROCESSORS_MAP.values():
+                content = processor.get_note_data(word=word)  # type: ignore
                 if content:
                     break
         else:
             processor = PROCESSORS_MAP[processor_name]
             content = processor.get_note_data(word=word)
+
         note = CustomNote(
             deckName=self.deck_name,
             modelName=self.model_name,
@@ -35,6 +36,9 @@ class NoteDataProcessor:
             audio=[],
             video=[],
             picture=[],
-        ).import_from_content(content=content)
+        ).import_from_content(
+            content=content,
+            fields_class=processor.fields_class,  # type: ignore
+        )
 
         return note
