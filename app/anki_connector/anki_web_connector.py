@@ -1,4 +1,5 @@
 import traceback
+from venv import logger
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -27,7 +28,7 @@ class AnkiWebConnector:
         service = Service(executable_path=browser_driver_binary)
         # Set up browser options
         options = webdriver.FirefoxOptions()
-        options.add_argument("--headless")  # Run in headless mode
+        options.add_argument(argument="--headless")  # Run in headless mode
         if browser_binary_location:
             options.binary_location = browser_binary_location
         # Start the browser
@@ -41,11 +42,25 @@ class AnkiWebConnector:
         """Shut down the browser"""
         self.driver.quit()
 
-    def send_card(self, custom_note: CustomNote, tags: list[str]) -> bool:
-        """Send a card to Anki with the given fields from a CustomNote and tags"""
+    def send_card(
+        self,
+        custom_note: CustomNote,
+        tags: list[str],
+        card_type: str = "Basic_",
+    ) -> bool:
+        """
+        Send a card to Anki with the given fields from a CustomNote and tags
+        Args:
+            custom_note (CustomNote): The note to send to Anki
+            tags (list[str]): The tags to apply to the card
+            card_type (str): The type of card to send
+        Returns:
+            bool: Whether the card was sent successfully
+        """
         try:
             self._click_add_tab()
             self._wait_for_elements_to_appear()
+            self._select_card_type(card_type)
             self._fill_tags(tags=tags)
             self._fill_fields(custom_note=custom_note)
             self._click_add_button()
@@ -74,6 +89,17 @@ class AnkiWebConnector:
         except Exception:
             print(traceback.format_exc())
             raise
+
+    def _select_card_type(self, card_type: str = "Basic_") -> None:
+        wait = WebDriverWait(driver=self.driver, timeout=TIMEOUT)
+        input_element = wait.until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "input.svelte-apvs86"))
+        )
+
+        # Click on the input element to activate the dropdown (if necessary)
+        input_element.click()
+        input_element.send_keys(card_type)
+        input_element.send_keys(Keys.ENTER)
 
     def _click_add_tab(self) -> None:
         WebDriverWait(driver=self.driver, timeout=TIMEOUT).until(
