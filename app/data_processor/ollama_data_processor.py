@@ -5,7 +5,7 @@ from typing import Any
 from ollama import Client
 
 from app.private_config import ollama_server_url
-from app.serializers import CustomFields, CustomNote
+from app.serializers import CustomFields
 
 logger = logging.getLogger(name=__name__)
 

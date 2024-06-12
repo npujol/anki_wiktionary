@@ -227,7 +227,7 @@ async def send_card_using_anki_web(
             model_name,
             datetime.now().isoformat(),
         ],
-        card_type=note.card_type,
+        card_type=note.card_type,  # type: ignore
     )
     web_anki_connector.close()
 

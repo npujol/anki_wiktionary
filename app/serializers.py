@@ -156,11 +156,11 @@ class CustomNote(Note):
         return shall_add_audio
 
     @computed_field(return_type=str)
-    def card_type(self) -> str:
+    def card_type(cls) -> str:
         card_type = "Basic"
-        if self.fields is not None and isinstance(self.fields, CustomFields):
+        if cls.fields is not None and isinstance(cls.fields, CustomFields):
             card_type = "Basic_"
-        if self.fields is not None and isinstance(self.fields, BasicFields):
+        if cls.fields is not None and isinstance(cls.fields, BasicFields):
             card_type = "Basic"
         return card_type
 

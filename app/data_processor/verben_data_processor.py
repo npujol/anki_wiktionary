@@ -46,5 +46,5 @@ class VerbenDataProcessor:
 
         return {
             "Front": word,
-            "Back": str(body),
+            "Back": str(body)[:500],
         }
