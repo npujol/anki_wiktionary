@@ -128,6 +128,8 @@ class AnkiWebConnector:
 
     def _fill_fields(self, custom_note: CustomNote) -> None:
         audio_file_xpath = None
+        if custom_note.fields is None:
+            return
 
         for k, (f, v) in enumerate(
             iterable=custom_note.fields.model_dump(mode="python").items(), start=1
@@ -140,7 +142,11 @@ class AnkiWebConnector:
             field_div = self.driver.find_element(
                 by="xpath", value=f"/html/body/div/main/form/div[{k}]/div/div"
             )
-            field_div.send_keys(v)
+            # Note: Workaround to activate the upload button
+            field_div.send_keys(" ")
+            self.driver.execute_script(
+                "arguments[0].innerHTML = arguments[1];", field_div, v
+            )
 
         if audio_file_xpath:
             # TODO web version doesn't support uploading audio files
@@ -150,4 +156,5 @@ class AnkiWebConnector:
         add_button = self.driver.find_element(
             by="xpath", value="/html/body/div/main/form/button"
         )
+
         add_button.click()

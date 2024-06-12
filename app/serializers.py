@@ -148,12 +148,14 @@ class CustomNote(Note):
     # overrides symbol of same name in class "Note"
     fields: CustomFields | BasicFields | None = None
 
-    @computed_field(return_type=bool)
-    def shall_add_audio(self) -> bool:
-        shall_add_audio = False
-        if self.fields is not None and isinstance(self.fields, CustomFields):
-            shall_add_audio = True
-        return shall_add_audio
+    @computed_field(return_type=str)
+    def word(cls) -> str:
+        word = "default"
+        if cls.fields is not None and isinstance(cls.fields, CustomFields):
+            word = cls.fields.full_word
+        if cls.fields is not None and isinstance(cls.fields, BasicFields):
+            word = cls.fields.Front
+        return word
 
     @computed_field(return_type=str)
     def card_type(cls) -> str:
