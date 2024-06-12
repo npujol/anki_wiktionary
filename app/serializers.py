@@ -185,6 +185,7 @@ class CustomNote(Note):
                 + f"example2e:\n    {self.fields.example2e}\n"
             )
         if isinstance(self.fields, BasicFields):
+            # TODO Check how can I reduce the size of this message
             msg = (
                 f"Front:\n    {self.fields.Front}\n\n"
                 + f"Back:\n    {self.fields.Back[:200]}\n\n"
