@@ -1,0 +1,16 @@
+{
+  "deckName": "deck_name",
+  "modelName": "model_name",
+  "fields": {
+    "Front": "Abend",
+    "Back": "<body>\n<div id=\"rkopf\"></div>\n<nav class=\"rDunkel\"><div>\n<div class=\"rNav\">\n<div class=\"rRechts\" id=\"rMnImg\" onclick=\"Rahmen.aufzu(['rMn','rMnNav'])\"><svg fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"36\" viewbox=\"0 0 24 24\" width=\"36\" xmlns=\"http://www.w3.org/2000/svg\">\n<path class=\"rAuf\" d=\"m11.41 15.41 4.59-4.58 4.59 4.58 1.41-1.41-6-6l-6 6 1.41 1.41z\" style=\"display: none;\"></path>\n<path class=\"rZu\" d=\"m8 4.667h16v2h-16m0 4h16v2h-16m-2e-7 4h16v2h-16z\" style=\"display: inline;\"></path>\n</svg></div"
+  },
+  "tags": [
+    "test"
+  ],
+  "audio": [],
+  "video": [],
+  "picture": [],
+  "shall_add_audio": false,
+  "card_type": "Basic"
+}

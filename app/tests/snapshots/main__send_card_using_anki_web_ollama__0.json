@@ -1,0 +1,25 @@
+{
+  "deckName": "deck_name",
+  "modelName": "model_name",
+  "fields": {
+    "full_word": "Abend",
+    "plural": "{\n\"Abende\"\n}",
+    "characteristics": "{\n\"Aktivit\u00e4t\": \"Verben\",\n\"Geschlecht\": \"maskulin\",\n\"Wortart\": \"Nomen\",\n\"Flexion\": [\n  {\n    \"Kasus\": \"Nominativ\",\n    \"Form\": \"Abend\"\n  },\n  {\n    \"Kasus\": \"Genitiv\",\n    \"Form\": \"Abends\"\n  },\n  {\n    \"Kasus\": \"Dativ\",\n    \"Form\": \"Abende\"\n  },\n  {\n    \"Kasus\": \"Akkusativ\",\n    \"Form\": \"Abend\"\n  }\n]\"}",
+    "ipa": "{\n\"a\u026a\u032fb\u0294\u0259nt\"\n}",
+    "audio": null,
+    "meaning": "{\n\"Ende des Tages\"\n\"Das Abend ist der Zeitpunkt, an dem der Tag endet und die Nacht beginnt.\"\n\"In der Computersprache bezeichnet Abend eine Ausgabefunktion, die ein Protokoll mit den Ereignissen eines bestimmten Zeitraums darstellt.\"",
+    "meaning_spanish": "{\n\"Fin del d\u00eda\"\n\"La tarde es el momento en que termina el d\u00eda y comienza la noche\".\n\"En lenguaje inform\u00e1tico, tarde significa una funci\u00f3n de salida que representa un registro de los eventos de un per\u00edodo de tiempo espec\u00edfico\".",
+    "example1": "Der Abend war sch\u00f6n und friedlich, ein perfektes Ende eines langen Tages.",
+    "example1e": "La tarde fue hermosa y tranquila, un final perfecto para un largo d\u00eda.",
+    "example2": "Der Computer ging abend nachts automatisch in den Ruhe-Modus, um seine Leistung zu speichern.",
+    "example2e": "La computadora entraba autom\u00e1ticamente en modo de suspensi\u00f3n por la noche para salvar su rendimiento."
+  },
+  "tags": [
+    "test"
+  ],
+  "audio": [],
+  "video": [],
+  "picture": [],
+  "shall_add_audio": true,
+  "card_type": "Basic_"
+}
