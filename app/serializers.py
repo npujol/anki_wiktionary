@@ -1,7 +1,12 @@
-from typing import Any, Optional
+import logging
+from typing import Any, Callable, Optional, Self
 
 from deep_translator import GoogleTranslator
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, ValidationError, computed_field, model_validator
+
+from app.html_processors.html_to_text import extract_ordered_text
+
+logger = logging.getLogger(name=__name__)
 
 
 class Fields(BaseModel):
@@ -49,6 +54,17 @@ class Model(BaseModel):
     action: str
     version: int
     params: Params
+
+
+class BasicFields(BaseModel):  # that needs to be updated
+    Front: str = Field(
+        default=...,
+        description="This field contains the input word to be used in the generated content.",
+    )
+    Back: str = Field(
+        default=...,
+        description="This field contains html content with the information of the word.",
+    )
 
 
 # NOTE: To handle multiple card types in the future, this is the only element
@@ -132,20 +148,61 @@ class CustomFields(BaseModel):
 
 class CustomNote(Note):
     # overrides symbol of same name in class "Note"
-    fields: CustomFields  # type: ignore
+    fields: CustomFields | BasicFields | None = None
+
+    @computed_field(return_type=str)
+    def word(cls) -> str:
+        word = "default"
+        if cls.fields is not None and isinstance(cls.fields, CustomFields):
+            word = cls.fields.full_word
+        if cls.fields is not None and isinstance(cls.fields, BasicFields):
+            word = cls.fields.Front
+        return word
+
+    @computed_field(return_type=str)
+    def card_type(cls) -> str:
+        card_type = "Basic"
+        if cls.fields is not None and isinstance(cls.fields, CustomFields):
+            card_type = "Basic_"
+        if cls.fields is not None and isinstance(cls.fields, BasicFields):
+            card_type = "Basic"
+        return card_type
 
     def pretty_print(self) -> str:
-        msg = (
-            f"full_word:\n    {self.fields.full_word}\n\n"
-            + f"plural:\n    {self.fields.plural}\n\n"
-            + f"characteristics:\n    {self.fields.characteristics}\n\n"
-            + f"ipa:\n    {self.fields.ipa}\n\n"
-            + f"audio:\n    {self.fields.audio}\n\n"
-            + f"meaning:\n    {self.fields.meaning}\n\n"
-            + f"meaning_spanish:\n    {self.fields.meaning_spanish}\n\n"
-            + f"example1:\n    {self.fields.example1}\n\n"
-            + f"example1e:\n    {self.fields.example1e}\n\n"
-            + f"example2:\n    {self.fields.example2}\n\n"
-            + f"example2e:\n    {self.fields.example2e}\n"
-        )
+        msg = "No fields found"
+        if not self.fields:
+            return msg
+        if isinstance(self.fields, CustomFields):
+            msg = (
+                f"full_word:\n    {self.fields.full_word}\n\n"
+                + f"plural:\n    {self.fields.plural}\n\n"
+                + f"characteristics:\n    {self.fields.characteristics}\n\n"
+                + f"ipa:\n    {self.fields.ipa}\n\n"
+                + f"audio:\n    {self.fields.audio}\n\n"
+                + f"meaning:\n    {self.fields.meaning}\n\n"
+                + f"meaning_spanish:\n    {self.fields.meaning_spanish}\n\n"
+                + f"example1:\n    {self.fields.example1}\n\n"
+                + f"example1e:\n    {self.fields.example1e}\n\n"
+                + f"example2:\n    {self.fields.example2}\n\n"
+                + f"example2e:\n    {self.fields.example2e}\n"
+            )
+        if isinstance(self.fields, BasicFields):
+            ordered_text = extract_ordered_text(self.fields.Back)
+            msg = (
+                f"Front:\n    {self.fields.Front}\n\n"
+                + f"Back:\n    {ordered_text}\n\n"
+            )
+
         return msg
+
+    def import_from_content(
+        self, content: dict[str, Any], fields_class: Callable
+    ) -> Self | None:
+        try:
+            self.fields = fields_class(  # type: ignore
+                **{k: v for k, v in content.items() if k in fields_class.model_fields}  # type: ignore
+            )
+            return self
+        except ValidationError as e:
+            logger.exception(msg=f"Failed to import note from content: {e}")
+            return None

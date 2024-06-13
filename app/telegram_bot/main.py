@@ -12,6 +12,7 @@ from app.private_config import bot_token
 from app.telegram_bot.handlers import (
     handle_audio,
     handle_help,
+    handle_verben_word,
     handle_web_word,
     handle_word,
     message_handle,
@@ -74,6 +75,12 @@ def main() -> None:
         handler=CommandHandler(
             command="web_word",
             callback=handle_web_word,
+        )
+    )
+    application.add_handler(
+        handler=CommandHandler(
+            command="verben",
+            callback=handle_verben_word,
         )
     )
 

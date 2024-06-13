@@ -45,16 +45,15 @@ def add_audio(note: CustomNote) -> CustomNote:
     Returns:
         NoteData: The Anki note data for the specified word.
     """
-    text = note.fields.full_word
-    tts = gTTS(text=text, lang="de")  # type: ignore
-    path = working_path / f"{text}.mp3"
+    tts = gTTS(text=note.word, lang="de")  # type: ignore
+    path = working_path / f"{note.word}.mp3"
     tts.save(savefile=path)
     note.audio = [
         AudioItem.model_validate(
             obj={
                 # This value is from the local server
                 "url": f"http://localhost:8000/{working_path}/{note.fields.full_word}.mp3",
-                "filename": f"{note.fields.full_word}.mp3",
+                "filename": f"{note.word}.mp3",
                 "skipHash": "true",
                 "fields": ["audio"],
             }
@@ -73,16 +72,16 @@ def add_audio_local(note: CustomNote) -> CustomNote:
     Returns:
         NoteData: The Anki note data for the specified word.
     """
-    text = note.fields.full_word
-    tts = gTTS(text=text, lang="de")  # type: ignore
-    path = working_path / f"{text}.mp3"
+    word = note.word
+    tts = gTTS(text=word, lang="de")  # type: ignore
+    path = working_path / f"{word}.mp3"
     tts.save(savefile=path)
     note.audio = [
         AudioItem.model_validate(
             obj={
                 # This value is from the local server
-                "url": f"{working_path}/{note.fields.full_word}.mp3",
-                "filename": f"{note.fields.full_word}.mp3",
+                "url": f"{working_path}/{word}.mp3",
+                "filename": f"{word}.mp3",
                 "skipHash": "true",
                 "fields": ["audio"],
             }
@@ -176,6 +175,7 @@ async def send_card_using_anki_web(
     word: str,
     deck_name: str = "Mein Deutsch",
     model_name: str = "Basic_",
+    processor_name: str = "wiktionary",
 ) -> Optional[CustomNote]:
     """
     Asynchronously sends an Anki note to AnkiWeb.
@@ -184,7 +184,7 @@ async def send_card_using_anki_web(
         word (str): The word to be sent to AnkiWeb.
         deck_name (str, optional): The name of the deck. Defaults to "Mein Deutsch".
         model_name (str, optional): The name of the model. Defaults to "Basic_".
-
+        processor_name (str, optional): The name of the processor. Defaults to "wiktionary".
     Returns:
         CustomNote: The Anki note that was sent to AnkiWeb.
     """
@@ -200,7 +200,10 @@ async def send_card_using_anki_web(
     note = NoteDataProcessor(
         deck_name=deck_name,
         model_name=model_name,
-    ).get_anki_note(word=word)
+    ).get_anki_note(
+        word=word,
+        processor_name=processor_name,
+    )
 
     if not note:
         logger.error(msg=f"Anki note for {word=} could not be created.")
@@ -221,6 +224,7 @@ async def send_card_using_anki_web(
             model_name,
             datetime.now().isoformat(),
         ],
+        card_type=note.card_type,  # type: ignore
     )
     web_anki_connector.close()
 

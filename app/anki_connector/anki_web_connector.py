@@ -27,7 +27,7 @@ class AnkiWebConnector:
         service = Service(executable_path=browser_driver_binary)
         # Set up browser options
         options = webdriver.FirefoxOptions()
-        options.add_argument("--headless")  # Run in headless mode
+        # options.add_argument(argument="--headless")  # Run in headless mode
         if browser_binary_location:
             options.binary_location = browser_binary_location
         # Start the browser
@@ -41,11 +41,25 @@ class AnkiWebConnector:
         """Shut down the browser"""
         self.driver.quit()
 
-    def send_card(self, custom_note: CustomNote, tags: list[str]) -> bool:
-        """Send a card to Anki with the given fields from a CustomNote and tags"""
+    def send_card(
+        self,
+        custom_note: CustomNote,
+        tags: list[str],
+        card_type: str = "Basic_",
+    ) -> bool:
+        """
+        Send a card to Anki with the given fields from a CustomNote and tags
+        Args:
+            custom_note (CustomNote): The note to send to Anki
+            tags (list[str]): The tags to apply to the card
+            card_type (str): The type of card to send
+        Returns:
+            bool: Whether the card was sent successfully
+        """
         try:
             self._click_add_tab()
             self._wait_for_elements_to_appear()
+            self._select_card_type(card_type)
             self._fill_tags(tags=tags)
             self._fill_fields(custom_note=custom_note)
             self._click_add_button()
@@ -75,6 +89,17 @@ class AnkiWebConnector:
             print(traceback.format_exc())
             raise
 
+    def _select_card_type(self, card_type: str = "Basic_") -> None:
+        wait = WebDriverWait(driver=self.driver, timeout=TIMEOUT)
+        input_element = wait.until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "input.svelte-apvs86"))
+        )
+
+        # Click on the input element to activate the dropdown (if necessary)
+        input_element.click()
+        input_element.send_keys(card_type)
+        input_element.send_keys(Keys.ENTER)
+
     def _click_add_tab(self) -> None:
         WebDriverWait(driver=self.driver, timeout=TIMEOUT).until(
             method=EC.visibility_of_element_located(
@@ -103,6 +128,8 @@ class AnkiWebConnector:
 
     def _fill_fields(self, custom_note: CustomNote) -> None:
         audio_file_xpath = None
+        if custom_note.fields is None:
+            return
 
         for k, (f, v) in enumerate(
             iterable=custom_note.fields.model_dump(mode="python").items(), start=1
@@ -115,7 +142,11 @@ class AnkiWebConnector:
             field_div = self.driver.find_element(
                 by="xpath", value=f"/html/body/div/main/form/div[{k}]/div/div"
             )
-            field_div.send_keys(v)
+            self.driver.execute_script(
+                "arguments[0].innerHTML = arguments[1];", field_div, v
+            )
+            # Workaround: to activate the upload button
+            field_div.send_keys(" ")
 
         if audio_file_xpath:
             # TODO web version doesn't support uploading audio files
@@ -125,4 +156,5 @@ class AnkiWebConnector:
         add_button = self.driver.find_element(
             by="xpath", value="/html/body/div/main/form/button"
         )
+
         add_button.click()

@@ -1,16 +1,18 @@
 {
-  "deckName": "Test",
-  "modelName": "Basic_",
+  "deckName": "deck_name",
+  "modelName": "model_name",
   "fields": {
     "full_word": "Abend",
     "plural": "Nominativ Plural: Abende\n    Genitiv Plural: Abende\n    Dativ Plural: Abenden\n    Akkusativ Plural: Abende",
     "characteristics": "Genus: m\n    Nominativ Singular: Abend\n    Nominativ Plural: Abende\n    Genitiv Singular: Abends\n    Genitiv Plural: Abende\n    Dativ Singular: Abend\n    Dativ Plural: Abenden\n    Akkusativ Singular: Abend\n    Akkusativ Plural: Abende",
     "ipa": "\u02c8a\u02d0bn\u0329t, \u02c8a\u02d0bm\u0329t",
+    "audio": null,
     "meaning": "[1] die Tageszeit nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht, und bei v\u00f6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf den Abend folgt die Nacht\n    [2]  die Himmelsrichtung Westen\n    [3]  verschliffene Begr\u00fc\u00dfungsfloskel \u201eguten Abend\u201c\n    [4]  Abschluss, Ende, Schluss (f\u00fcr Leben, Epochen, langandauernde Herrschaften und \u00c4hnlichem)\n    [5]  Abendveranstaltung; Abend mit heiterem, vielgestaltigem Programm; Abendempfang",
     "meaning_spanish": "[1] la hora del d\u00eda despu\u00e9s de la tarde, que comienza cuando el sol llega al horizonte y termina cuando oscurece completamente; La tarde es precedida por el d\u00eda y la tarde es seguida por la noche.\n    [2] la direcci\u00f3n oeste\n    [3] frase de saludo arrastrada \"buenas noches\"\n    [4] Conclusi\u00f3n, fin, conclusi\u00f3n (para vidas, eras, reinados duraderos y similares)\n    [5] Evento nocturno; Velada con un programa alegre y variado; Recepci\u00f3n nocturna",
     "example1": "[1] \u201eEines Abends, als sie so vertraulich beisammensa\u00dfen, klopfte jemand an die T\u00fcre, als wollte er eingelassen sein.\u201c",
     "example1e": "[1] \u201cUna noche, mientras estaban sentados juntos en confianza, alguien llam\u00f3 a la puerta como si quisiera que le dejaran entrar\u201d.",
-    "example2": ""
+    "example2": "",
+    "example2e": null
   },
   "tags": [
     "test"
