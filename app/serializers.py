@@ -4,6 +4,8 @@ from typing import Any, Callable, Optional, Self
 from deep_translator import GoogleTranslator
 from pydantic import BaseModel, Field, ValidationError, computed_field, model_validator
 
+from app.html_processors.html_to_text import extract_ordered_text
+
 logger = logging.getLogger(name=__name__)
 
 
@@ -185,10 +187,10 @@ class CustomNote(Note):
                 + f"example2e:\n    {self.fields.example2e}\n"
             )
         if isinstance(self.fields, BasicFields):
-            # TODO Check how can I reduce the size of this message
+            ordered_text = extract_ordered_text(self.fields.Back)
             msg = (
                 f"Front:\n    {self.fields.Front}\n\n"
-                + f"Back:\n    {self.fields.Back[:200]}\n\n"
+                + f"Back:\n    {ordered_text}\n\n"
             )
 
         return msg

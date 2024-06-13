@@ -27,7 +27,7 @@ class AnkiWebConnector:
         service = Service(executable_path=browser_driver_binary)
         # Set up browser options
         options = webdriver.FirefoxOptions()
-        options.add_argument(argument="--headless")  # Run in headless mode
+        # options.add_argument(argument="--headless")  # Run in headless mode
         if browser_binary_location:
             options.binary_location = browser_binary_location
         # Start the browser
@@ -142,11 +142,11 @@ class AnkiWebConnector:
             field_div = self.driver.find_element(
                 by="xpath", value=f"/html/body/div/main/form/div[{k}]/div/div"
             )
-            # Note: Workaround to activate the upload button
-            field_div.send_keys(" ")
             self.driver.execute_script(
                 "arguments[0].innerHTML = arguments[1];", field_div, v
             )
+            # Workaround: to activate the upload button
+            field_div.send_keys(" ")
 
         if audio_file_xpath:
             # TODO web version doesn't support uploading audio files

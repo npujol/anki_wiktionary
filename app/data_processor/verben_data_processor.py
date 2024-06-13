@@ -4,6 +4,7 @@ from typing import Any
 import requests
 from bs4 import BeautifulSoup
 
+from app.html_processors.html_tags_prune import prune_html_tags
 from app.serializers import BasicFields
 
 logger = logging.getLogger(name=__name__)
@@ -41,9 +42,9 @@ class VerbenDataProcessor:
         lateral_info_element = soup.select_one(lateral_info_selector)
 
         body = (
-            str(self.clean_html(info_element))
+            str(prune_html_tags(info_element))
             if info_element
-            else "" + "<br>" + str(self.clean_html(lateral_info_element))
+            else "" + "<br>" + str(prune_html_tags(lateral_info_element))
             if lateral_info_element
             else ""
         )
@@ -52,12 +53,3 @@ class VerbenDataProcessor:
             "Front": word,
             "Back": str(body),
         }
-
-    def clean_html(self, html):
-        tags_to_remove = ["script", "form", "img", "svg", "path"]
-
-        # Remove the specified tags
-        for tag in tags_to_remove:
-            for element in html.find_all(tag):
-                element.decompose()  # Remove the element from the soup
-        return html
