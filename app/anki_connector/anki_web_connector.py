@@ -27,7 +27,7 @@ class AnkiWebConnector:
         service = Service(executable_path=browser_driver_binary)
         # Set up browser options
         options = webdriver.FirefoxOptions()
-        # options.add_argument(argument="--headless")  # Run in headless mode
+        options.add_argument(argument="--headless")  # Run in headless mode
         if browser_binary_location:
             options.binary_location = browser_binary_location
         # Start the browser
