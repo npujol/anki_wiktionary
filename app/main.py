@@ -9,6 +9,7 @@ from app.anki_connector.anki_local_connector import AnkiLocalConnector
 from app.anki_connector.anki_web_connector import AnkiWebConnector
 from app.data_processor.note_data_processor import NoteDataProcessor
 from app.private_config import (
+    anki_deck_name,
     anki_note_file_path,
     anki_password,
     anki_username,
@@ -103,7 +104,7 @@ def generate_note(word: str) -> bool:
     try:
         logger.info(msg=f"Creating Anki note for {word}")
         note = NoteDataProcessor(
-            deck_name="Mein Deutsch", model_name="Basic_"
+            deck_name=anki_deck_name, model_name="Basic_"
         ).get_anki_note(word=word)
 
         if not note:
@@ -173,7 +174,7 @@ def generate_notes() -> bool:
 
 async def send_card_using_anki_web(
     word: str,
-    deck_name: str = "Mein Deutsch",
+    deck_name: str = anki_deck_name,
     model_name: str = "Basic_",
     processor_name: str = "wiktionary",
 ) -> Optional[CustomNote]:
@@ -215,6 +216,9 @@ async def send_card_using_anki_web(
     web_anki_connector = AnkiWebConnector(
         username=username,
         password=password,
+    )
+    logger.info(
+        msg=f"Sending Anki note for {word} to AnkiWeb using {deck_name=} and {model_name}."
     )
     web_anki_connector.start()
     is_successful = web_anki_connector.send_card(

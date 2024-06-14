@@ -17,7 +17,7 @@ working_path.mkdir(parents=True, exist_ok=True)
 anki_note_file_path = env("ANKI_NOTES_FILE_PATH", default="anki_notes.txt")
 anki_username = env.str("ANKI_USER", default=None)
 anki_password = env.str("ANKI_PASS", default=None)
-
+anki_deck_name = env.str("ANKI_DECK_NAME", default="Mein Deutsch")
 
 # Telegram bot credentials
 bot_token = env.str("TELEGRAM_TOKEN", default=None)
