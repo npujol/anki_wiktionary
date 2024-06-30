@@ -2,6 +2,7 @@ from typing import Any
 
 import pytest
 
+from app.data_processor.duden_data_processor import DudenDataProcessor
 from app.data_processor.note_data_processor import NoteDataProcessor
 from app.data_processor.ollama_data_processor import OllamaDataProcessor
 from app.data_processor.verben_data_processor import VerbenDataProcessor
@@ -50,5 +51,12 @@ def test_generate_sentence_examples(snapshot: Any) -> None:
 @pytest.mark.vcr(mode="once")
 def test_get_data_from_verben(snapshot: Any) -> None:
     result = VerbenDataProcessor().get_note_data(word="Abend")
+    assert result, "Add note failed"
+    assert snapshot("json") == result
+
+
+@pytest.mark.vcr(mode="once")
+def test_get_data_from_duden(snapshot: Any) -> None:
+    result = DudenDataProcessor().get_note_data(word="Abend")
     assert result, "Add note failed"
     assert snapshot("json") == result
