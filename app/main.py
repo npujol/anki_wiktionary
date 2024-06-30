@@ -15,7 +15,7 @@ from app.private_config import (
     anki_username,
     working_path,
 )
-from app.serializers import AudioItem, CustomNote
+from app.serializers import AudioItem, CustomFields, CustomNote
 
 logger = logging.getLogger(name=__name__)
 
@@ -49,17 +49,18 @@ def add_audio(note: CustomNote) -> CustomNote:
     tts = gTTS(text=note.word, lang="de")  # type: ignore
     path = working_path / f"{note.word}.mp3"
     tts.save(savefile=path)
-    note.audio = [
-        AudioItem.model_validate(
-            obj={
-                # This value is from the local server
-                "url": f"http://localhost:8000/{working_path}/{note.fields.full_word}.mp3",
-                "filename": f"{note.word}.mp3",
-                "skipHash": "true",
-                "fields": ["audio"],
-            }
-        )
-    ]
+    if note.fields is not None and isinstance(note.fields, CustomFields):
+        note.audio = [
+            AudioItem.model_validate(
+                obj={
+                    # This value is from the local server
+                    "url": f"http://localhost:8000/{working_path}/{note.fields.full_word}.mp3",
+                    "filename": f"{note.word}.mp3",
+                    "skipHash": "true",
+                    "fields": ["audio"],
+                }
+            )
+        ]
     return note
 
 
