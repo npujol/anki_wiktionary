@@ -12,10 +12,13 @@ class CustomDudenParser:
     def _extract_examples(self) -> list[Any]:
         # Find the <ul> element with the class 'note__list'
         note_list = self.soup.find("ul", class_="note__list")
-
+        if note_list is None:
+            return []
         # Extract all <li> elements within this <ul> element
-        examples = [li.get_text(strip=True) for li in note_list.find_all("li")]
-
+        children = note_list.find_all("li")
+        if children is None:
+            return []
+        examples = [li.get_text(strip=True) for li in children]
         return examples
 
     @property

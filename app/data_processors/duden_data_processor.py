@@ -44,25 +44,28 @@ class DudenDataProcessor:
 
         parser = CustomDudenParser(duden_word=content)
         return {
-            "full_word": f"{content.article} {word}",
-            "plural": self._clean_content_field(content.grammar_overview),
-            "characteristics": self._clean_content_field(content.part_of_speech)
+            "full_word": word,
+            "plural": self._clean_content_field(content=content.grammar_overview),
+            "characteristics": self._clean_content_field(content=content.part_of_speech)
             + "\n"
-            + self._clean_content_field(content.usage),
-            "ipa": self._clean_content_field(content.word_separation)
+            + self._clean_content_field(content=content.usage),
+            "ipa": self._clean_content_field(
+                content=content.word_separation, separator="|"
+            )
             + "\n"
-            + self._clean_content_field(content.phonetic),
-            "meaning": self._clean_content_field(content.meaning_overview)
+            + self._clean_content_field(content=content.phonetic),
+            "meaning": self._clean_content_field(content=content.meaning_overview)
             + "\n\n"
-            + self._clean_content_field(content.synonyms),
-            # MISSING
+            + self._clean_content_field(content=content.synonyms),
             "example1": parser.example1,
             "example2": parser.example2,
         }
 
-    def _clean_content_field(self, content: Union[str, list, None]) -> str:
+    def _clean_content_field(
+        self, content: Union[str, list, None], separator: str = "\n"
+    ) -> str:
         if isinstance(content, list):
-            return "\n".join(content)
+            return separator.join(content)
         if isinstance(content, str):
             return content
         return ""
