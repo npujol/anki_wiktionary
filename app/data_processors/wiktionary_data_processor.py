@@ -4,8 +4,8 @@ from typing import Any
 import requests
 from wiktionary_de_parser.models import WiktionaryPage
 
-from app.parser.models import CustomParsedWiktionaryPageEntry
-from app.parser.parser import CustomWiktionaryParser
+from app.parsers.models import CustomParsedWiktionaryPageEntry
+from app.parsers.wiktionary_parser import CustomWiktionaryParser
 from app.serializers import CustomFields
 
 logger = logging.getLogger(name=__name__)

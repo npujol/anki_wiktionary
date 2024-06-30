@@ -2,11 +2,11 @@ from typing import Any
 
 import pytest
 
-from app.data_processor.duden_data_processor import DudenDataProcessor
-from app.data_processor.note_data_processor import NoteDataProcessor
-from app.data_processor.ollama_data_processor import OllamaDataProcessor
-from app.data_processor.verben_data_processor import VerbenDataProcessor
-from app.data_processor.wiktionary_data_processor import WiktionaryDataProcessor
+from app.data_processors.duden_data_processor import DudenDataProcessor
+from app.data_processors.note_data_processor import NoteDataProcessor
+from app.data_processors.ollama_data_processor import OllamaDataProcessor
+from app.data_processors.verben_data_processor import VerbenDataProcessor
+from app.data_processors.wiktionary_data_processor import WiktionaryDataProcessor
 from app.serializers import CustomFields
 
 
