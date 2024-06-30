@@ -1,20 +1,27 @@
 # anki_wiktionary
+
 A small project aimed at generating Anki notes using Wiktionary. Leveraging the power of [Anki](https://apps.ankiweb.net/), this initiative taps into a unique source: a Telegram bot. By harnessing the vast linguistic knowledge contained within the Telegram bot, we can create a comprehensive set of Anki notes that will help users expand their vocabulary and improve their language skills.
 
 ## Dependencies
+
 - Anki running in the background
 
 ## Installation
 
 1. Clone the project
+
     ```bash
     git clone git@github.com:npujol/anki_wiktionary.git
     ```
+
 2. Move to the project directory
+
     ```bash
     cd anki_wiktionary
     ```
+
 3. Install dependencies
+
     ```bash
     poetry install
     ```
@@ -60,14 +67,19 @@ __Note__: Copy the token provided by BotFather and save it securely. Do not shar
 ## Project Commands
 
 - Running the Telegram bot in the background:
+
     ```bash
     python app/telegram_bot/main.py
     ```
+
 - Generating notes using the information from the environment variable `ANKI_NOTES_FILE_PATH`:
+
     ```bash
     python app/main.py
     ```
+
 - Starting a web server to serve audio files:
+
     ```bash
     python app/server.py
     ```
@@ -82,10 +94,13 @@ __Note__: Copy the token provided by BotFather and save it securely. Do not shar
 ## Compiling and Running Using Nix
 
 1. Build the bot:
+
     ```bash
     nix build
     ```
+
 2. Run the bot:
+
     ```bash
     ./result/bin/bot
     ```
@@ -99,12 +114,29 @@ __Note__: Copy the token provided by BotFather and save it securely. Do not shar
 ### Steps
 
 1. Build the Docker image:
-    ```bash 
+
+    ```bash
     docker build -t telegram-bot-anki .
     ```
+
 2. Run the Docker container:
+
     ```bash
     docker run -e FILES_PATH=<PATH> -e ANKI_PASS=<PASSWORD> -e ANKI_USER=<USERNAME> -e TELEGRAM_TOKEN=<TELEGRAM_TOKEN> -e ANKI_NOTES_FILE_PATH=<ANKI_NOTES_FILE_PATH> telegram-bot-anki
     ```
 
 Make sure to replace placeholders like `<PATH>`, `<PASSWORD>`, `<USERNAME>`, `<TELEGRAM_TOKEN>`, and `<ANKI_NOTES_FILE_PATH>` with your actual values.
+
+## Compiling and Running using docker-compose
+
+### Build the docker-compose images
+
+```bash
+docker-compose build
+```
+
+### Running the docker-compose
+
+```bash
+docker-compose up --build
+```
