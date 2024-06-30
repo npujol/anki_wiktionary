@@ -1,7 +1,7 @@
 import logging
 from typing import Optional
 
-from app.data_processor import PROCESSORS_MAP
+from app.data_processors import PROCESSORS_MAP
 from app.serializers import CustomNote
 
 logger = logging.getLogger(name=__name__)

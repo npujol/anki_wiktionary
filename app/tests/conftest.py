@@ -2,12 +2,12 @@ from typing import Any
 
 import pytest
 
-from app.anki_connector.anki_local_connector import AnkiLocalConnector
+from app.anki_connectors.anki_local_connector import AnkiLocalConnector
 from app.serializers import CustomNote, Note
 
 
 @pytest.fixture()
-def note_data():
+def note_data() -> dict[str, Any]:
     return {
         "deckName": "Test",
         "modelName": "Basic",
@@ -42,7 +42,7 @@ def note_data():
 
 
 @pytest.fixture
-def add_note_request(note_data):
+def add_note_request(note_data) -> dict[str, Any]:
     return {
         "action": "addNotes",
         "version": 6,
@@ -51,9 +51,9 @@ def add_note_request(note_data):
 
 
 @pytest.fixture
-def note_obj(note_data):
+def note_obj(note_data) -> Note:
     return Note.model_validate(
-        note_data,
+        obj=note_data,
         from_attributes=True,
         strict=False,
     )
@@ -95,7 +95,7 @@ def custom_note_data() -> dict[str, Any]:
 
 
 @pytest.fixture
-def add_custom_note_request(custom_note_data):
+def add_custom_note_request(custom_note_data) -> dict[str, Any]:
     return {
         "action": "addNotes",
         "version": 6,
@@ -104,7 +104,7 @@ def add_custom_note_request(custom_note_data):
 
 
 @pytest.fixture
-def custom_note_obj(custom_note_data):
+def custom_note_obj(custom_note_data) -> CustomNote:
     return CustomNote.model_validate(
         custom_note_data,
         from_attributes=True,

@@ -7,10 +7,10 @@ from wiktionary_de_parser import WiktionaryParser
 from wiktionary_de_parser.models import WiktionaryPageEntry
 from wiktionary_de_parser.parser import Parser
 
-from app.parser.models import CustomParsedWiktionaryPageEntry
+from app.parsers.models import CustomParsedWiktionaryPageEntry
 
 
-class CustomParser(WiktionaryParser):
+class CustomWiktionaryParser(WiktionaryParser):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         new_parsers = self.find_new_parser_classes()
@@ -18,7 +18,7 @@ class CustomParser(WiktionaryParser):
 
     @staticmethod
     def find_new_parser_classes() -> list[Any]:
-        path = Path(__file__).parent / "new_parser"
+        path = Path(__file__).parent / "wiktionary"
         parent_class = Parser
         classes = []
 

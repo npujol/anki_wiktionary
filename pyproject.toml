@@ -16,6 +16,7 @@ gtts = "*"
 selenium = "*"
 pyvirtualdisplay = "*"
 ollama = "^0.2.0"
+duden = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"

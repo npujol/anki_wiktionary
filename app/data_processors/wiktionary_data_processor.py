@@ -4,8 +4,8 @@ from typing import Any
 import requests
 from wiktionary_de_parser.models import WiktionaryPage
 
-from app.parser.models import CustomParsedWiktionaryPageEntry
-from app.parser.parser import CustomParser
+from app.parsers.models import CustomParsedWiktionaryPageEntry
+from app.parsers.wiktionary_parser import CustomWiktionaryParser
 from app.serializers import CustomFields
 
 logger = logging.getLogger(name=__name__)
@@ -48,7 +48,7 @@ class WiktionaryDataProcessor:
                 "full_word": word,
             }
 
-        parser = CustomParser()
+        parser = CustomWiktionaryParser()
         page = WiktionaryPage(
             page_id=content.get("pageid"),
             name=content.get("title"),

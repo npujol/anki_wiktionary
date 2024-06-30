@@ -17,9 +17,14 @@
     "cSpell.words": [
         "Anki",
         "Deutsch",
+        "Duden",
         "pageid",
         "savefile",
         "Verben",
         "wikitext"
-    ]
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "nixEnvSelector.nixFile": "${workspaceFolder}/flake.nix"
 }
