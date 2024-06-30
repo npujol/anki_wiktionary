@@ -4,6 +4,7 @@ from typing import Any, Union
 import duden
 from duden.word import DudenWord
 
+from app.parsers.duden_parser import CustomDudenParser
 from app.serializers import CustomFields
 
 logger = logging.getLogger(name=__name__)
@@ -40,6 +41,8 @@ class DudenDataProcessor:
             return {
                 "full_word": word,
             }
+
+        parser = CustomDudenParser(duden_word=content)
         return {
             "full_word": f"{content.article} {word}",
             "plural": self._clean_content_field(content.grammar_overview),
@@ -53,8 +56,8 @@ class DudenDataProcessor:
             + "\n\n"
             + self._clean_content_field(content.synonyms),
             # MISSING
-            "example1": "",
-            "example2": "",
+            "example1": parser.example1,
+            "example2": parser.example2,
         }
 
     def _clean_content_field(self, content: Union[str, list, None]) -> str:
