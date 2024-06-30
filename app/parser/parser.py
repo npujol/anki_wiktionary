@@ -10,7 +10,7 @@ from wiktionary_de_parser.parser import Parser
 from app.parser.models import CustomParsedWiktionaryPageEntry
 
 
-class CustomParser(WiktionaryParser):
+class CustomWiktionaryParser(WiktionaryParser):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         new_parsers = self.find_new_parser_classes()
