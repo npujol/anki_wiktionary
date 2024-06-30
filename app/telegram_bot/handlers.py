@@ -177,6 +177,36 @@ async def handle_verben_word(
         filepath.unlink()
 
 
+async def handle_duden_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    args = context.args or []
+    word = " ".join(args)
+    message = update.message
+    if not message:
+        logger.error(msg="No message provided.")
+        return
+    if not word:
+        msg = "Please provide a word to create an Anki note."
+        logger.info(msg=msg)
+        await message.reply_text(text=msg)
+        return
+
+    note = await send_card_using_anki_web(
+        word=word, processor_name="duden", model_name="Basic_"
+    )
+    if not note:
+        msg = "Anki note could not be created."
+        logger.error(msg=msg)
+        await message.reply_text(text=msg)
+        return
+
+    logger.info(msg="Anki note created successfully.")
+    await message.reply_text(text=note.pretty_print())
+    if note.audio and note.audio[0]:
+        filepath = working_path / f"{word}.mp3"
+        await message.reply_audio(audio=filepath)
+        filepath.unlink()
+
+
 async def handle_text_without_command(
     update: Update, context: ContextTypes.DEFAULT_TYPE
 ) -> None:
