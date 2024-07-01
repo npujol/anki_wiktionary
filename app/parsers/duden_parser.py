@@ -29,6 +29,6 @@ class CustomDudenParser:
 
     @property
     def example2(self):
-        if self.examples:
+        if self.examples and len(self.examples) >= 2:
             return self.examples[1]
         return ""
