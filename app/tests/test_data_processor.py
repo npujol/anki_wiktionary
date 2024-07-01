@@ -56,7 +56,16 @@ def test_get_data_from_verben(snapshot: Any) -> None:
 
 
 @pytest.mark.vcr(mode="once")
-def test_get_data_from_duden(snapshot: Any) -> None:
-    result = DudenDataProcessor().get_note_data(word="Abend")
+@pytest.mark.parametrize(
+    "word",
+    [
+        "Abend",
+        "locker",
+        "Bammel",
+        "selbstverteidigung",
+    ],
+)
+def test_get_data_from_duden(word: str, snapshot: Any) -> None:
+    result = DudenDataProcessor().get_note_data(word=word)
     assert result, "Add note failed"
-    assert snapshot("json") == result
+    assert snapshot(f"{word}.json") == result
