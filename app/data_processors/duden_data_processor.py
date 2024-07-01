@@ -64,8 +64,15 @@ class DudenDataProcessor:
     def _clean_content_field(
         self, content: Union[str, list, None], separator: str = "\n"
     ) -> str:
-        if isinstance(content, list):
-            return separator.join(content)
         if isinstance(content, str):
             return content
-        return ""
+        stack = [content]
+        flat_list = []
+
+        while stack:
+            current = stack.pop()
+            if isinstance(current, str):
+                flat_list.append(current)
+            elif isinstance(current, list):
+                stack.extend(current[::-1])
+        return separator.join(flat_list) if flat_list else ""
