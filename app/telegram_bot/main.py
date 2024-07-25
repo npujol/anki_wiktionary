@@ -1,4 +1,5 @@
 import logging
+from collections import namedtuple
 from typing import Any
 
 from telegram import BotCommand, Update
@@ -30,6 +31,42 @@ logging.basicConfig(
 )
 logger: logging.Logger = logging.getLogger(name=__name__)
 
+CommandInfo = namedtuple(
+    typename="CommandInfo",
+    field_names=[
+        "command",
+        "handler",
+        "description",
+    ],
+)
+
+COMMANDS = [
+    CommandInfo(
+        command="/w",
+        handler=handle_word,
+        description="Create an Anki note for a word",
+    ),
+    CommandInfo(
+        command="/audio", handler=handle_audio, description="Create audio from text"
+    ),
+    CommandInfo(
+        command="/v",
+        handler=handle_verben_word,
+        description="Create an Anki note from verben",
+    ),
+    CommandInfo(
+        command="/d",
+        handler=handle_duden_word,
+        description="Create an Anki note from duden",
+    ),
+    CommandInfo(
+        command="/ww",
+        handler=handle_web_word,
+        description="Create an Anki note and send it to AnkiWeb",
+    ),
+    CommandInfo(command="/help", handler=handle_help, description="Show help message"),
+]
+
 
 async def post_init(application: Application) -> None:
     """
@@ -38,19 +75,11 @@ async def post_init(application: Application) -> None:
     Args:
         application (Application): The application object.
     """
-    await application.bot.set_my_commands(
-        [
-            BotCommand(command="/w", description="Create an Anki note for a word"),
-            BotCommand(command="/help", description="Show help message"),
-            BotCommand(command="/audio", description="Create audio from text"),
-            BotCommand(command="/v", description="Create an Anki note from verben"),
-            BotCommand(command="/d", description="Create an Anki note from duden"),
-            BotCommand(
-                command="/ww",
-                description="Create an Anki note and send it to AnkiWeb",
-            ),
-        ]
-    )
+    commands: list[BotCommand] = [
+        BotCommand(command=command.command, description=command.description)
+        for command in COMMANDS
+    ]
+    await application.bot.set_my_commands(commands)
 
 
 def main() -> None:
@@ -73,44 +102,14 @@ def main() -> None:
         ],
     ] = Application.builder().token(token=bot_token).build()
 
-    # Register command handlers
-    application.add_handler(
-        handler=CommandHandler(
-            command="w",
-            callback=handle_word,
+    # Register words command handlers
+    for command in COMMANDS:
+        application.add_handler(
+            handler=CommandHandler(
+                command=command.command,
+                callback=command.handler,
+            )
         )
-    )
-    application.add_handler(
-        handler=CommandHandler(
-            command="help",
-            callback=handle_help,
-        )
-    )
-    application.add_handler(
-        handler=CommandHandler(
-            command="audio",
-            callback=handle_audio,
-        )
-    )
-    application.add_handler(
-        handler=CommandHandler(
-            command="ww",
-            callback=handle_web_word,
-        )
-    )
-    application.add_handler(
-        handler=CommandHandler(
-            command="v",
-            callback=handle_verben_word,
-        )
-    )
-    application.add_handler(
-        handler=CommandHandler(
-            command="d",
-            callback=handle_duden_word,
-        )
-    )
-
     # Register message handlers
     application.add_handler(
         handler=MessageHandler(
