@@ -102,9 +102,11 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     msg = (
         "Commands:\n"
         "/help: Provides help for the bot.\n"
-        "/word: Creates an Anki note for a word.\n"
-        "/audio: Creates audio from a text.\n"
-        "/web_word: Creates a deck and sends it to the web browser."
+        "/w: Creates an Anki note for a word.\n"
+        "/a: Creates audio from a text.\n"
+        "/ww: Creates a deck and sends it to the web browser."
+        "/d: Creates an Anki note from duden.\n"
+        "/v: Creates an Anki note from verben.\n"
     )
     logger.info(msg=msg)
     await message.reply_text(text=msg)
@@ -112,7 +114,7 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 
 async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """
-    Handle the /web_word command. Create an Anki note and send it to AnkiWeb.
+    Handle the /w command. Create an Anki note and send it to AnkiWeb.
 
     Args:
         update (Update): The update object.

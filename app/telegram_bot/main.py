@@ -42,29 +42,35 @@ CommandInfo = namedtuple(
 
 COMMANDS = [
     CommandInfo(
-        command="/w",
+        command="w",
         handler=handle_word,
         description="Create an Anki note for a word",
     ),
     CommandInfo(
-        command="/audio", handler=handle_audio, description="Create audio from text"
+        command="a",
+        handler=handle_audio,
+        description="Create audio from text",
     ),
     CommandInfo(
-        command="/v",
+        command="v",
         handler=handle_verben_word,
         description="Create an Anki note from verben",
     ),
     CommandInfo(
-        command="/d",
+        command="d",
         handler=handle_duden_word,
         description="Create an Anki note from duden",
     ),
     CommandInfo(
-        command="/ww",
+        command="ww",
         handler=handle_web_word,
         description="Create an Anki note and send it to AnkiWeb",
     ),
-    CommandInfo(command="/help", handler=handle_help, description="Show help message"),
+    CommandInfo(
+        command="help",
+        handler=handle_help,
+        description="Show help message",
+    ),
 ]
 
 
@@ -76,7 +82,7 @@ async def post_init(application: Application) -> None:
         application (Application): The application object.
     """
     commands: list[BotCommand] = [
-        BotCommand(command=command.command, description=command.description)
+        BotCommand(command=f"/{command.command}", description=command.description)
         for command in COMMANDS
     ]
     await application.bot.set_my_commands(commands)
