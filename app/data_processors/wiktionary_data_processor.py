@@ -64,7 +64,7 @@ class WiktionaryDataProcessor:
 
     def _extract_from_content(
         self, word: str, content: list[CustomParsedWiktionaryPageEntry]
-    ):
+    ) -> dict[str, str]:
         if not content:
             return {
                 "full_word": word,

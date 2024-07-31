@@ -25,6 +25,7 @@ class NoteDataProcessor:
         self.deck_name = deck_name
         self.model_name = model_name
 
+    # TODO: Check if the dict info is complete.
     def get_anki_note(
         self, word: str, processor_name: Optional[str] = "wiktionary"
     ) -> CustomNote | None:

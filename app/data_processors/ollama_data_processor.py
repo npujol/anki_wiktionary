@@ -50,17 +50,19 @@ class OllamaDataProcessor:
     ) -> dict[str, Any]:
         result = {}
         for key, value in json_schema.items():
-            prompt = f"""**Generate Content from Word: {word}**
-                    Given a word, generate a piece of content ({key}) based on the following constraints: {value["description"]}
-
-                    **Word:*{word}* ""
-
-                    **Constraints:**
-                    Use the constraints defined in the JSON schema.
-
-                    **Generate Content:**
-                    Using the word "{word}" as input, generate a JSON object with the key and the generated content. 
-                    Please return only the generated content without other text or explanation. The response should be in german."""
+            prompt = (
+                f"""**Generate Content from Word: {word}**"""
+                f""" Given a word, generate a piece of content ({key}) based on"""
+                """ the following constraints: {value["description"]}"""
+                f"""" **Word:*{word}* """
+                """ **Constraints:**"""
+                """ Use the constraints defined in the JSON schema."""
+                """ **Generate Content:**"""
+                f""" Using the word "{word}" as input, generate a JSON object with"""
+                """ the key and the generated content."""
+                """ Please return only the generated content without other text"""
+                """ or explanation. The response should be in german."""
+            )
 
             result[key] = prompt
         return result
@@ -70,8 +72,9 @@ class OllamaDataProcessor:
     ) -> list[str]:
         prompt = (
             f"Gibt mir {count_examples}-Satz-Beispiele für das Wort: {word}."
-            f"Das Ergebnis sollte eine JSON-Datei mit den Schluesseln: sentences und eine Liste mit  {count_examples} Beispiele. "
-            " Satzbeispielen sein ohne anderen Text oder Erklarung."
+            f"Das Ergebnis sollte eine JSON-Datei mit den Schluesseln: sentences"
+            f"und eine Liste mit  {count_examples} Beispiele. "
+            " Satzbeispielen sein ohne anderen Text oder Erklärung."
         )
         result = self.client.generate(
             model="llama3",
@@ -87,7 +90,7 @@ class OllamaDataProcessor:
             json_content = json.loads(response)
             content = list(json_content.values())
         except json.JSONDecodeError as e:
-            logger.exception(f"Using raw string, due to {e}.")
+            logger.exception(msg=f"Using raw string, due to {e}.")
             isinstance(response, str)
             content = response
         return content
