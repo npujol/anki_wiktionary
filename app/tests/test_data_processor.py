@@ -2,8 +2,8 @@ from typing import Any
 
 import pytest
 
+from app.data_processors import NoteDataProcessor
 from app.data_processors.duden_data_processor import DudenDataProcessor
-from app.data_processors.note_data_processor import NoteDataProcessor
 from app.data_processors.ollama_data_processor import OllamaDataProcessor
 from app.data_processors.verben_data_processor import VerbenDataProcessor
 from app.data_processors.wiktionary_data_processor import WiktionaryDataProcessor

@@ -3,7 +3,7 @@ from typing import Any
 
 import pytest
 
-from app.data_processors.note_data_processor import NoteDataProcessor
+from app.data_processors import NoteDataProcessor
 from app.main import generate_note, get_anki_note_data
 
 
