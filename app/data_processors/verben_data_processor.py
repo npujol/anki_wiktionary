@@ -10,6 +10,7 @@ from app.serializers import BasicFields
 logger = logging.getLogger(name=__name__)
 
 
+# TODO Add a Custom Processor to handle Verben data
 class VerbenDataProcessor:
     def __init__(self) -> None:
         self.base_url = "https://www.verben.de/?w="
@@ -21,7 +22,7 @@ class VerbenDataProcessor:
         )
 
         if response.status_code != 200:
-            logger.info(f"The request to {self.base_url} failed.")
+            logger.info(msg=f"The request to {self.base_url} failed.")
             return {
                 "Front": word,
                 "Back": "",
@@ -38,13 +39,13 @@ class VerbenDataProcessor:
         lateral_info_selector = "body > article > div:nth-child(1) > div.rInfo"
 
         # Find the elements using the CSS selectors
-        info_element = soup.select_one(info_selector)
-        lateral_info_element = soup.select_one(lateral_info_selector)
+        info_element = soup.select_one(selector=info_selector)
+        lateral_info_element = soup.select_one(selector=lateral_info_selector)
 
         body = (
-            str(prune_html_tags(info_element))
+            str(object=prune_html_tags(html=info_element))
             if info_element
-            else "" + "<br>" + str(prune_html_tags(lateral_info_element))
+            else "" + "<br>" + str(prune_html_tags(html=lateral_info_element))
             if lateral_info_element
             else ""
         )
