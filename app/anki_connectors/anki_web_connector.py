@@ -92,7 +92,9 @@ class AnkiWebConnector:
     def _select_card_type(self, card_type: str = "Basic_") -> None:
         wait = WebDriverWait(driver=self.driver, timeout=TIMEOUT)
         input_element = wait.until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "input.svelte-apvs86"))
+            method=EC.presence_of_element_located(
+                locator=(By.CSS_SELECTOR, "input.svelte-apvs86")
+            )
         )
 
         # Click on the input element to activate the dropdown (if necessary)
@@ -143,7 +145,9 @@ class AnkiWebConnector:
                 by="xpath", value=f"/html/body/div/main/form/div[{k}]/div/div"
             )
             self.driver.execute_script(
-                "arguments[0].innerHTML = arguments[1];", field_div, v
+                "arguments[0].innerHTML = arguments[1];",
+                field_div,
+                v,
             )
             # Workaround: to activate the upload button
             field_div.send_keys(" ")

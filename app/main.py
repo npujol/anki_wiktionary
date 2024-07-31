@@ -3,7 +3,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from gtts import gTTS  # type: ignore
+from gtts import gTTS
 
 from app.anki_connectors.anki_local_connector import AnkiLocalConnector
 from app.anki_connectors.anki_web_connector import AnkiWebConnector
@@ -186,7 +186,8 @@ async def send_card_using_anki_web(
         word (str): The word to be sent to AnkiWeb.
         deck_name (str, optional): The name of the deck. Defaults to "Mein Deutsch".
         model_name (str, optional): The name of the model. Defaults to "Basic_".
-        processor_name (str, optional): The name of the processor. Defaults to "wiktionary".
+        processor_name (str, optional): The name of the processor.
+        Defaults to "wiktionary".
     Returns:
         CustomNote: The Anki note that was sent to AnkiWeb.
     """
@@ -219,7 +220,10 @@ async def send_card_using_anki_web(
         password=password,
     )
     logger.info(
-        msg=f"Sending Anki note for {word} to AnkiWeb using {deck_name=} and {model_name}."
+        msg=(
+            f"Sending Anki note for {word} to AnkiWeb using {deck_name=} "
+            f"and {model_name}."
+        )
     )
     web_anki_connector.start()
     is_successful = web_anki_connector.send_card(
