@@ -1,9 +1,10 @@
 import logging
-from typing import Any, Union
+from typing import Any
 
 import duden
 from duden.word import DudenWord
 
+from app.helpers.flatten_and_stringify import flatten_and_stringify
 from app.parsers.duden_parser import CustomDudenParser
 from app.serializers import CustomFields
 
@@ -37,42 +38,25 @@ class DudenDataProcessor:
         return content_dict
 
     def _extract_from_content(self, word: str, content: DudenWord) -> dict[str, Any]:
-        if not content:
-            return {
-                "full_word": word,
-            }
-
         parser = CustomDudenParser(duden_word=content)
         return {
             "full_word": word,
-            "plural": self._clean_content_field(content=content.grammar_overview),
-            "characteristics": self._clean_content_field(content=content.part_of_speech)
-            + "\n"
-            + self._clean_content_field(content=content.usage),
-            "ipa": self._clean_content_field(
-                content=content.word_separation, separator="|"
-            )
-            + "\n"
-            + self._clean_content_field(content=content.phonetic),
-            "meaning": self._clean_content_field(content=content.meaning_overview)
-            + "\n\n"
-            + self._clean_content_field(content=content.synonyms),
+            "plural": flatten_and_stringify(content=content.grammar_overview),
+            "characteristics": (
+                flatten_and_stringify(content=content.part_of_speech)
+                + "\n"
+                + flatten_and_stringify(content=content.usage)
+            ),
+            "ipa": (
+                flatten_and_stringify(content=content.word_separation, separator="|")
+                + "\n"
+                + flatten_and_stringify(content=content.phonetic)
+            ),
+            "meaning": (
+                flatten_and_stringify(content=content.meaning_overview)
+                + "\n\n"
+                + flatten_and_stringify(content=content.synonyms)
+            ),
             "example1": parser.example1,
             "example2": parser.example2,
         }
-
-    def _clean_content_field(
-        self, content: Union[str, list, None], separator: str = "\n"
-    ) -> str:
-        if isinstance(content, str):
-            return content
-        stack = [content]
-        flat_list = []
-
-        while stack:
-            current = stack.pop()
-            if isinstance(current, str):
-                flat_list.append(current)
-            elif isinstance(current, list):
-                stack.extend(current[::-1])
-        return separator.join(flat_list) if flat_list else ""
