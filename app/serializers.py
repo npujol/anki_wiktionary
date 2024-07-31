@@ -10,34 +10,34 @@ logger = logging.getLogger(name=__name__)
 
 
 class Fields(BaseModel):
-    front: str = Field(..., alias="Front")
-    back: str = Field(..., alias="Back")
+    front: str = Field(default=..., alias="Front")
+    back: str = Field(default=..., alias="Back")
 
 
 class AudioItem(BaseModel):
     url: str
     filename: str
-    skip_hash: str = Field(..., alias="skipHash")
+    skip_hash: str = Field(default=..., alias="skipHash")
     fields: list[str]
 
 
 class VideoItem(BaseModel):
     url: str
     filename: str
-    skip_hash: str = Field(..., alias="skipHash")
+    skip_hash: str = Field(default=..., alias="skipHash")
     fields: list[str]
 
 
 class PictureItem(BaseModel):
     url: str
     filename: str
-    skip_hash: str = Field(..., alias="skipHash")
+    skip_hash: str = Field(default=..., alias="skipHash")
     fields: list[str]
 
 
 class Note(BaseModel):
-    deck_name: str = Field(..., alias="deckName")
-    note_model_name: str = Field(..., alias="modelName")
+    deck_name: str = Field(default=..., alias="deckName")
+    note_model_name: str = Field(default=..., alias="modelName")
     fields: Fields
     tags: list[str]
     audio: list[AudioItem] = []
@@ -59,11 +59,15 @@ class Model(BaseModel):
 class BasicFields(BaseModel):  # that needs to be updated
     Front: str = Field(
         default=...,
-        description="This field contains the input word to be used in the generated content.",
+        description=(
+            "This field contains the input word to be used in the generated content."
+        ),
     )
     Back: str = Field(
         default=...,
-        description="This field contains html content with the information of the word.",
+        description=(
+            "This field contains html content with the information of the word."
+        ),
     )
 
 
@@ -72,7 +76,9 @@ class BasicFields(BaseModel):  # that needs to be updated
 class CustomFields(BaseModel):
     full_word: str = Field(
         default=...,
-        description="This field contains the input word to be used in the generated content.",
+        description=(
+            "This field contains the input word to be used in the generated content."
+        ),
     )
     plural: Optional[str] = Field(
         default=None,
@@ -80,7 +86,9 @@ class CustomFields(BaseModel):
     )
     characteristics: Optional[str] = Field(
         default=None,
-        description="This field contains specific grammatical characteristics of the word.",
+        description=(
+            "This field contains specific grammatical characteristics of the word."
+        ),
     )
     ipa: Optional[str] = Field(
         default=None,
@@ -88,15 +96,25 @@ class CustomFields(BaseModel):
     )
     audio: Optional[list[AudioItem]] = Field(
         default=None,
-        description="This field contains the audio files associated with the word. In the generation process this field will be ignored.",
+        description=(
+            "This field contains the audio files associated with the word."
+            " In the generation process this field will be ignored."
+        ),
     )
     meaning: Optional[str] = Field(
         default=None,
-        description="This field contains the meaning of the word. This field should include the different meanings of the word, including the slangs. Start each meaning on a new line.",
+        description=(
+            "This field contains the meaning of the word. This field should "
+            "include the different meanings of the word, including the slangs. "
+            "Start each meaning on a new line."
+        ),
     )
     meaning_spanish: Optional[str] = Field(
         default=None,
-        description="This field contains the meaning of the word in Spanish. This field should be ignores in the generation process.",
+        description=(
+            "This field contains the meaning of the word in Spanish. "
+            "This field should be ignores in the generation process."
+        ),
     )
     example1: Optional[str] = Field(
         default=None,
@@ -104,15 +122,25 @@ class CustomFields(BaseModel):
     )
     example1e: Optional[str] = Field(
         default=None,
-        description="This field contains the meaning of the word in Spanish. This field should be ignores in the generation process.",
+        description=(
+            "This field contains the meaning of the word in Spanish. "
+            "This field should be ignores in the generation process."
+        ),
     )
     example2: Optional[str] = Field(
         default=None,
-        description="This field contains one example sentence using the word. The example sentence should be different from the first example sentence in the example1 field.",
+        description=(
+            "This field contains one example sentence using the word. "
+            "The example sentence should be different from the first "
+            "example sentence in the example1 field."
+        ),
     )
     example2e: Optional[str] = Field(
         default=None,
-        description="This field contains the meaning of the word in Spanish. This field should be ignores in the generation process.",
+        description=(
+            "This field contains the meaning of the word in Spanish. "
+            "This field should be ignores in the generation process."
+        ),
     )
 
     @model_validator(mode="before")

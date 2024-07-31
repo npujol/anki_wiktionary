@@ -39,10 +39,10 @@ class ParseExample(Parser):
 
     @classmethod
     def parse(cls, wikitext: str) -> list[str] | None:
-        parsed_paragraph = mwparserfromhell.parse(wikitext)
+        parsed_paragraph = mwparserfromhell.parse(value=wikitext)
         result = None
         if parsed_paragraph:
-            example = cls.parse_strings(parsed_paragraph)
+            example = cls.parse_strings(parsed_paragraph=parsed_paragraph)
             if example:
                 result = example
 

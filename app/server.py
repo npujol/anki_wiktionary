@@ -5,7 +5,7 @@ import socketserver
 from app.private_config import working_path
 
 PORT = 8000
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name=__name__)
 Handler = http.server.SimpleHTTPRequestHandler
 
 
@@ -13,7 +13,7 @@ Handler = http.server.SimpleHTTPRequestHandler
 with socketserver.TCPServer(
     server_address=("", PORT), RequestHandlerClass=Handler
 ) as httpd:
-    logger.info("Serving at port", PORT)
+    logger.info(msg=f"Serving at port {PORT}")
     # Set the directory for the server
     httpd.directory = working_path  # type: ignore
     # Start the server

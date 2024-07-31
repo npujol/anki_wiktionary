@@ -20,9 +20,10 @@ class NoteDataProcessor:
         self, word: str, processor_name: Optional[str] = "wiktionary"
     ) -> CustomNote | None:
         content = {}
+        processor = None
         if not processor_name:
             for processor in PROCESSORS_MAP.values():
-                content = processor.get_note_data(word=word)  # type: ignore
+                content = processor.get_note_data(word=word)
                 if content:
                     break
         else:
@@ -36,9 +37,11 @@ class NoteDataProcessor:
             audio=[],
             video=[],
             picture=[],
-        ).import_from_content(
-            content=content,
-            fields_class=processor.fields_class,  # type: ignore
         )
+        if processor is not None:
+            note = note.import_from_content(
+                content=content,
+                fields_class=processor.fields_class,
+            )
 
         return note
