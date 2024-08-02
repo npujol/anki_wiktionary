@@ -2,9 +2,7 @@ import logging
 from typing import Any
 
 import requests
-from wiktionary_de_parser.models import WiktionaryPage
 
-from app.parsers.models import CustomParsedWiktionaryPageEntry
 from app.parsers.wiktionary_parser import CustomWiktionaryParser
 from app.serializers import CustomFields
 
@@ -48,54 +46,20 @@ class WiktionaryDataProcessor:
                 "full_word": word,
             }
 
-        parser = CustomWiktionaryParser()
-        page = WiktionaryPage(
-            page_id=content.get("pageid"),
-            name=content.get("title"),
-            wikitext=content.get("wikitext").get("*"),
-        )
-        word_types = []
-        for entry in parser.entries_from_page(page=page):
-            results = parser.custom_parse_entry(wiktionary_entry=entry)
-            word_types.append(results)
-
-        content_dict = self._extract_from_content(word=word, content=word_types)
+        content_dict = self._extract_from_content(word=word, content=content)
         return content_dict
 
+    # TODO Move this to a base class
     def _extract_from_content(
-        self, word: str, content: list[CustomParsedWiktionaryPageEntry]
-    ) -> dict[str, str]:
-        if not content:
-            return {
-                "full_word": word,
-            }
-        first = content[0]
+        self, word: str, content: dict[str, Any]
+    ) -> dict[str, Any]:
+        parser = CustomWiktionaryParser(content=content)
         return {
             "full_word": word,
-            "plural": (
-                "\n    ".join(
-                    f"{k}: {v}"
-                    for k, v in first.flexion.items()
-                    if "plural" in k.lower()
-                )
-                if first.flexion and first.flexion != ""
-                else ""
-            ),
-            "characteristics": (
-                "\n    ".join(f"{k}: {v}" for k, v in first.flexion.items())
-                if first.flexion and first.flexion != ""
-                else ""
-            ),
-            "ipa": ", ".join(first.ipa or []),
-            "meaning": "\n    ".join(
-                c.strip().replace("\n", "")
-                for c in (first.meaning or [])
-                if c != "" and c.strip().replace("\n", "") != ""
-            ),
-            "example1": first.example[0].strip().replace("\n", "")
-            if first.example is not None and len(first.example)
-            else "",
-            "example2": first.example[1].strip().replace("\n", "")
-            if first.example is not None and len(first.example) > 1
-            else "",
+            "plural": parser.plural,
+            "characteristics": parser.characteristics,
+            "ipa": parser.ipa,
+            "meaning": parser.meaning,
+            "example1": parser.example1,
+            "example2": parser.example2,
         }
