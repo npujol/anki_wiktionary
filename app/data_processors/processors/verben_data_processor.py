@@ -4,7 +4,7 @@ from typing import Any
 import requests
 from bs4 import BeautifulSoup
 
-from app.html_processors.html_tags_prune import prune_html_tags
+from app.html_processors import prune_html_tags
 from app.serializers import BasicFields
 
 logger = logging.getLogger(name=__name__)

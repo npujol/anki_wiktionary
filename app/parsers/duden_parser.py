@@ -2,7 +2,7 @@ from typing import Any
 
 from duden.word import DudenWord
 
-from app.helpers.flatten_and_stringify import flatten_and_stringify
+from app.helpers import flatten_and_stringify
 
 
 class CustomDudenParser:

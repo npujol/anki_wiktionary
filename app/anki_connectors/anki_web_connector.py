@@ -59,7 +59,7 @@ class AnkiWebConnector:
         try:
             self._click_add_tab()
             self._wait_for_elements_to_appear()
-            self._select_card_type(card_type)
+            self._select_card_type(card_type=card_type)
             self._fill_tags(tags=tags)
             self._fill_fields(custom_note=custom_note)
             self._click_add_button()

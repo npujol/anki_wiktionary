@@ -5,8 +5,7 @@ from typing import Optional
 
 from gtts import gTTS
 
-from app.anki_connectors.anki_local_connector import AnkiLocalConnector
-from app.anki_connectors.anki_web_connector import AnkiWebConnector
+from app.anki_connectors import AnkiLocalConnector, AnkiWebConnector
 from app.data_processors import NoteDataProcessor
 from app.private_config import (
     anki_deck_name,
