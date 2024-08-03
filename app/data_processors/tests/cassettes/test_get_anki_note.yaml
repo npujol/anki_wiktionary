@@ -1,0 +1,696 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://de.wiktionary.org/w/api.php?action=parse&page=Abend&prop=wikitext&format=json
+  response:
+    body:
+      string: '{"parse":{"title":"Abend","pageid":5719,"wikitext":{"*":"{{Siehe auch|[[abend]]}}\n{{Wort
+        der Woche|14|2006}}\n== Abend ({{Sprache|Deutsch}}) ==\n=== {{Wortart|Substantiv|Deutsch}},
+        {{m}} ===\n\n{{Deutsch Substantiv \u00dcbersicht\n|Genus=m\n|Nominativ Singular=Abend\n|Nominativ
+        Plural=Abende\n|Genitiv Singular=Abends\n|Genitiv Plural=Abende\n|Dativ Singular=Abend\n|Dativ
+        Plural=Abenden\n|Akkusativ Singular=Abend\n|Akkusativ Plural=Abende\n|Bild=2006-07-26AbendhimmelRemstal19.jpg|mini|1|der
+        Himmel am ''''Abend''''\n}}\n\n{{Worttrennung}}\n:Abend, {{Pl.}} Aben\u00b7de\n\n{{Aussprache}}\n:{{IPA}}
+        {{Lautschrift|\u02c8a\u02d0bn\u0329t}}, {{Lautschrift|\u02c8a\u02d0bm\u0329t}}\n:{{H\u00f6rbeispiele}}
+        {{Audio|De-Abend.ogg}}, {{Audio|De-Abend2.ogg}}, {{Audio|De-Abend3.ogg}}\n:{{Reime}}
+        {{Reim|a\u02d0bn\u0329t|Deutsch}}\n\n{{Bedeutungen}}\n:[1] die [[Tageszeit]]
+        nach dem Nachmittag, die beginnt, wenn die Sonne den [[Horizont]] erreicht,
+        und bei v\u00f6lliger [[Dunkelheit]] endet; dem Abend geht der [[Tag]] voran
+        und auf den Abend folgt die [[Nacht]]\n:[2] {{K|veraltend}} die [[Himmelsrichtung]]
+        [[Westen]]\n:[3] {{K|ugs.}} verschliffene [[Begr\u00fc\u00dfungsfloskel]]
+        \u201e[[guten Abend]]\u201c\n:[4] {{K|\u00fcbertragen|gehoben}} [[Abschluss]],
+        [[Ende]], [[Schluss]] (f\u00fcr Leben, Epochen, langandauernde Herrschaften
+        und \u00c4hnlichem)\n:[5] {{K|ft=kurz f\u00fcr}} [[Abendveranstaltung]]; Abend
+        mit [[heiter]]em, [[vielgestaltig]]em [[Programm]]; [[Abendempfang]]\n\n{{Herkunft}}\n:[1]:
+        die Herkunft ist unklar; vermutlich von ''''[[indogermanisch]]:'''' ''''[[*epi]]''''
+        - [[nach]], [[hinter]], [[nahe]] [[hinzu]], zu ''''[[althochdeutsch]]:''''
+        ''''[[\u0101band]]'''', [[mittelhochdeutsch]]: ''''[[\u0101bent]]''''<ref>''''Duden.
+        Herkunftsw\u00f6rterbuch. Etymologie der deutschen Sprache.'''' 3., v\u00f6llig
+        neu bearbeitete und erweiterte Auflage. Dudenverlag, Mannheim/ Leipzig/ Wien/
+        Z\u00fcrich 2001, Stichwort: \u201eAbend\u201c. ISBN 3-411-04073-4.</ref>\n:[2]:
+        da die Sonne zur Zeit des Abends<sup>1</sup> im Westen steht\n\n{{Synonyme}}\n:[1]
+        [[Abendstunde]], [[Abendzeit]], [[D\u00e4mmerstunde]]\n:[2] [[West]], [[Westen]]\n:[3]
+        [[''n Abend]]\n:[4] [[Herbst]], [[Lebensabend]], [[Lebensende]]\n:[5] [[Abendshow]],
+        [[Abendunterhaltung]], [[Empfangsabend]], [[Soiree]]\n\n{{Gegenw\u00f6rter}}\n:[1\u20133]
+        [[Mittag]], [[Mitternacht]], [[Morgen]], [[Nacht]], [[Nachmittag]], [[Vormittag]]\n\n{{Oberbegriffe}}\n:[1]
+        [[Tageszeit]]\n:[2] [[Haupthimmelsrichtung]], [[Himmelsrichtung]]\n:[5] [[Veranstaltung]]\n\n{{Unterbegriffe}}\n:[1]
+        [[Altjahrsabend]], [[Dienstagabend]], [[Donnerstagabend]], [[Feierabend]],
+        [[Feiertagsabend]], [[Freitagabend]], [[Fr\u00fchjahrsabend]], [[Fr\u00fchlingsabend]],
+        [[Heiligabend]], [[Heiliger Abend]], [[Herbstabend]], [[Montagabend]], [[Mittwochabend]],
+        [[Samstagabend]], [[Silvesterabend]], [[Sommerabend]], [[Sonnabend]], [[Sonntagabend]],
+        [[Sp\u00e4tabend]], [[Vorabend]], [[Weihnachtsabend]], [[Winterabend]], ''''siehe
+        auch:'''' [[Verzeichnis:Deutsch/Zeit und Kalender]]\n:[4] [[Lebensabend]]\n:[5]
+        ''''nach Inhalt, Programm, Gestaltung:'''' [[Badeabend]], [[Ballettabend]],
+        [[Begr\u00fc\u00dfungsabend]], [[Bierabend]], [[B\u00fcrgerabend]], [[Chansonabend]],
+        [[Damenabend]], [[Diaabend]], [[Diskussionsabend]], [[Elternabend]], [[Er\u00f6ffnungsabend]],
+        [[Fernsehabend]], [[Festabend]], [[Filmabend]], [[Flitterabend]], [[Frauenabend]],
+        [[Frostabend]], [[Fu\u00dfballabend]], [[Galaabend]], [[Gala-Abend]], [[Gedenkabend]],
+        [[Gesellschaftsabend]], [[Gespr\u00e4chsabend]], [[Gewitterabend]], [[Heimatabend]],
+        [[Herrenabend]], [[Heurigenabend]], [[H\u00fcttenabend]], [[Infoabend]], [[Informationsabend]],
+        [[Kammermusikabend]], [[Kampfabend]], [[Kappenabend]], [[Klavierabend]], [[Klubabend]],
+        [[Kneipabend]], [[Konzertabend]], [[Leseabend]], [[Liederabend]], [[Literaturabend]],
+        [[Musikabend]], [[Operettenabend]], [[Opernabend]], [[Polterabend]], [[Premierenabend]],
+        [[Schulungsabend]], [[Skatabend]],  [[Soloabend]], [[Spieleabend]], [[Tanzabend]],
+        [[Tatabend]], [[Theaterabend]], [[Themenabend]], [[Vereinsabend]], [[Videoabend]],
+        [[Vortragsabend]], [[Wahlabend]], [[Weinabend]]\n\n{{Beispiele}}\n:[1] \u201eEines
+        ''''Abends'''', als sie so vertraulich beisammensa\u00dfen, klopfte jemand
+        an die T\u00fcre, als wollte er eingelassen sein.\u201c<ref>{{Literatur |
+        Autor= | Titel=Die Kinder- und Hausm\u00e4rchen der Br\u00fcder Grimm | Verlag=Der
+        KinderbuchVerlag| Ort= |Jahr=2003 | ISBN=978-3358000175 |Seiten=375 |Kommentar=Schneeweisschen
+        und Rosenrot}}</ref>\n:[1] Gegen ''''Abend'''' werden wir uns sehen.\n:[1]
+        Wenn es gestern ''''Abend'''' nicht geklappt hat, dann wird es vielleicht
+        heute ''''Abend'''' oder sp\u00e4testens morgen ''''Abend'''' etwas.\n:[1]
+        Es ist zu fr\u00fch, \u201eguten ''''Abend''''\u201c zu sagen.\n:[2] \u201eDies
+        sind die Namen der St\u00e4mme: von Mitternacht, an dem Wege nach Hethlon,
+        gen Hamath und Hazar-Enon und von Damaskus gegen Hamath, das soll Dan f\u00fcr
+        seinen Teil haben von Morgen bis gen ''''Abend''''.\u201c<ref>bibel-online.net:
+        [http://bibel-online.net/buch/luther_1912/hesekiel/48/ Hesekiel - Kapitel
+        48]</ref>\n:[2] \u201eDer Hof steht am \u00f6stlichen Ausl\u00e4ufer einer
+        schmalen Gel\u00e4nderippe, die sich in der Ausdehnung einer halben Wegstunde
+        von ''''Abend'''' nach Morgen erstreckt in leichtem Bogen, [\u2026]\u201c<ref>{{Literatur
+        | Autor=Wilhelm Die\u00df | Titel=Blitz | Auflage= | Verlag=Deutscher Taschenbuch
+        Verlag | Ort=M\u00fcnchen | Jahr=1979 | ISBN=3-466-10055-0 | Seiten=5 }}</ref>\n:[3]
+        ''''Abend'''' allerseits!\n:[4] Sie stand schon im ''''Abend'''' ihres Lebens,
+        als sie B\u00fccher zu schreiben begann.\n:[1, 5] Wir haben einen wunderbaren
+        ''''Abend'''' in der Oper verbracht.\n:[5] Gute Idee mit dem Informationsabend.
+        Wer organisiert denn den ''''Abend?''''\n\n{{Redewendungen}}\n:[[gut Abend,
+        sch\u00f6n Abend, es weihnachtet sehr|gut ''''Abend'''', sch\u00f6n ''''Abend'''',
+        es weihnachtet sehr]]\n:[[zu Abend essen|zu ''''Abend'''' essen]]\n\n{{Sprichw\u00f6rter}}\n:[[Abend
+        rot, Morgen grau gibt das sch\u00f6nste Tagesblau|''''Abend'''' rot, Morgen
+        grau gibt das sch\u00f6nste Tagesblau]]\n:[[am Abend besuchen k\u00f6nnen|am
+        ''''Abend'''' besuchen k\u00f6nnen]]\n:[[am Abend gekammert, am Morgen gejammert|am
+        ''''Abend'''' gekammert, am Morgen gejammert]]\n:[[am Abend ist der Tanz lieb,
+        am Morgen der Schlaf s\u00fc\u00df|am ''''Abend'''' ist der Tanz lieb, am
+        Morgen der Schlaf s\u00fc\u00df]]\n:[[am Tage errungen, am Abend verschlungen|am
+        Tage errungen, am ''''Abend'''' verschlungen]]\n:[[auf einen b\u00f6sen Tag
+        geh\u00f6rt ein guter Abend|auf einen b\u00f6sen Tag geh\u00f6rt ein guter
+        ''''Abend'''']]\n:[[der Abend ist labend, der Morgen voller Sorgen|der ''''Abend''''
+        ist labend, der Morgen voller Sorgen]]\n:[[der Abend lobt den Tag|der ''''Abend''''
+        lobt den Tag]]\n:[[der Morgen ist weiser als der Abend|der Morgen ist weiser
+        als der ''''Abend'''']]\n:[[ein guter Abend w\u00e4hrt nicht lange|ein guter
+        ''''Abend'''' w\u00e4hrt nicht lange]]\n:[[ein jeder Tag hat seinen Abend|ein
+        jeder Tag hat seinen ''''Abend'''']]\n:[[es ist noch nicht aller Tage Abend|es
+        ist noch nicht aller Tage ''''Abend'''']]\n:[[es kann vor Abend anders werden,
+        als es am fr\u00fchen Morgen war|es kann vor ''''Abend'''' anders werden,
+        als es am fr\u00fchen Morgen war]]\n:[[heller Abend, heitrer Morgen|heller
+        ''''Abend'''', heitrer Morgen]]\n:[[je n\u00e4her der Abend, je weiter nach
+        Haus|je n\u00e4her der ''''Abend'''', je weiter nach Haus]]\n:[[je sp\u00e4ter
+        der Abend, je sch\u00f6ner die G\u00e4ste|je sp\u00e4ter der ''''Abend'''',
+        je sch\u00f6ner die G\u00e4ste]]\n:[[je w\u00e4rmer der Abend, je mehr quaken
+        die Fr\u00f6sche|je w\u00e4rmer der ''''Abend'''', je mehr quaken die Fr\u00f6sche]]\n:[[man
+        soll den Tag nicht vor dem Abend loben|man soll den Tag nicht vor dem ''''Abend''''
+        loben]]\n:[[spinne am Abend, erquickend und labend|spinne am ''''Abend'''',
+        erquickend und labend]], <small>Urspr\u00fcnglich:</small> Spinne''''''n''''''
+        am Abend, erquickend und labend\n:[[V\u00f6gel, die morgens singen, holt am
+        Abend die Katze|V\u00f6gel, die morgens singen, holt am ''''Abend'''' die
+        Katze]]\n:[[was machen wir mit dem angebrochenen Abend?|was machen wir mit
+        dem angebrochenen ''''Abend''''?]]\n:[[wer am Tage Gutes tut, hat am Abend
+        frohen Mut|wer am Tage Gutes tut, hat am ''''Abend'''' frohen Mut]]\n\n{{Charakteristische
+        Wortkombinationen}}\n:[1] ''''Abend'''' [[werden]], [[am]] ''''Abend'''',
+        ''''Abend'''' desselben, ''''Abend'''' [[essen]], ''''Abend'''' [[hinein]],
+        den ganzen ''''Abend'''', [[denkw\u00fcrdig]] ''''Abend'''', [[dieser]] ''''Abend'''',
+        [[frisch]] ''''Abend'''', [[fr\u00fch]] ''''Abend'''', [[gegen]] ''''Abend'''',
+        [[gestern]] ''''Abend'''', [[gleich]] ''''Abend'''',  [[gut]] ''''Abend'''',
+        [[heilig]] ''''Abend'''', ''''Abend'''' [[herabsinken]], ''''Abend'''' [[heranbrechen]],
+        ''''Abend'''' [[hereinbrechen]], [[heut]] ''''Abend'''', [[heute]] ''''Abend'''',
+        [[im Laufe]] des ''''Abend'''', [[jeden]] ''''Abend'''', [[jener]] ''''Abend'''',
+        [[morgen]] ''''Abend'''', [[nach]] diesem ''''Abend'''', [[neblig]] ''''Abend'''',
+        [[romantisch]] ''''Abend'''', [[sch\u00f6n]] ''''Abend'''', [[selber]] ''''Abend'''',
+        [[Sonnenuntergang]], [[sp\u00e4t]] ''''Abend'''',  [[Spinne]] am ''''Abend'''',
+        [[still]] ''''Abend'''', [[st\u00fcrmisch]] ''''Abend'''', [[Tag]], [[Uhrzeit]],
+        ''''Abend'''' [[verbringen]], [[vorhaben]], ''''Abend'''' [[vorher]], ''''Abend''''
+        [[werden]], ''''Abend'''' [[zu]] [[zweit]], ''''Abend'''' [[zuvor]], [[wunderbar]]
+        ''''Abend''''\n:[2] [[gen]] ''''Abend''''\n:[3] ''''Abend'''' [[allerseits]]\n:[4]
+        [[am]] ''''Abend'''', ''''Abend'''' des [[Leben]]s, im ''''Abend'''' des [[Leben]]s
+        stehen\n:[5] der [[angenehm]]e ''''Abend'''', [[bayerisch]]e ''''Abend'''',
+        [[bunt]]e ''''Abend'''', [[denkw\u00fcrdig]]e ''''Abend'''', [[gelungen]]e
+        ''''Abend'''', [[gem\u00fctlich]]e ''''Abend'''', [[gesellig]]e ''''Abend'''',
+        [[gestrig]]e ''''Abend'''', [[heutig]]e ''''Abend'''', [[im Laufe]] des ''''Abend'''',
+        ein ''''Abend'''' im [[Theater]], der [[nett]]e ''''Abend'''', [[romantisch]]e
+        ''''Abend'''', [[sch\u00f6n]]e ''''Abend'''', [[unterhaltsam]]e ''''Abend'''',
+        [[vergn\u00fcglich]]e ''''Abend'''', [[wunderbar]]e ''''Abend''''\n\n{{Wortbildungen}}\n:[[abendelang]],
+        [[abendf\u00fcllend]], [[abendig]]<!--veraltet; Ref. unter https://fwb-online.de/lemma/abendig.s.4adj
+        und Goethe-WB -->, [[abendlich]], [[abendrot]], [[abends]], [[abendw\u00e4rts]]\n:''''Substantive:''''
+        [[Abendakademie]], [[Abendandacht]], [[Abendanfrage]], [[Abendanzug]], [[Abendappell]],
+        [[Abendarbeit]], [[Abendasche]], [[Abendauff\u00fchrung]], [[Abendauktion]],
+        [[Abendausgabe]], [[Abendbalz]], [[Abendbeleuchtung]], [[Abendbesuch]], [[Abendbetglocke]],
+        [[Abendblatt]], [[Abendbrise]], [[Abendbock]], [[Abendb\u00f6rse]], [[Abendbrot]],
+        [[Abendbulle]], [[Abendbummel]], [[Abendcollation]], [[Abendd\u00e4mmern]],
+        [[Abendd\u00e4mmerung]], [[Abenddienst]], [[Abendduft]], [[Abenddunkel]],
+        [[Abendeinkauf]], [[Abendeinladung]], [[Abendeinnahme]], [[Abendempfang]],
+        [[Abenderg\u00f6tzung]], [[Abenderlustigung]], [[Abendessen]], [[Abendfachschule]],
+        [[Abendfahrt]], [[Abendfalter]], [[Abendfeier]], [[Abendfest]], [[Abendfeucht]],
+        [[Abendfeuer]], [[Abendfilm]], [[Abendfleisch]], [[Abendflei\u00df]], [[Abendfliege]],
+        [[Abendforum]], [[Abendfreier]], [[Abendfressen]], [[Abendfriede]], [[Abendfrieden]],
+        [[Abendfrist]], [[Abendfrisur]], [[Abendf\u00fcller]], [[Abendgabe]], [[Abendgage]],
+        [[Abendgala]], [[Abendgang]], [[Abendgarderobe]], [[Abendgast]], [[Abendgazette]],
+        [[Abendgebet]], [[Abendgedinge]], [[Abendgelage]], [[Abendgel\u00e4ut]]/[[Abendgel\u00e4ute]],
+        [[Abendgesang]], [[Abendgeselligkeit]], [[Abendgesellschaft]], [[Abendgespr\u00e4ch]],
+        [[Abendgestaltung]], [[Abendgestirn]], [[Abendgew\u00f6lk]], [[Abendglanz]],
+        [[Abendglocke]], [[Abendglut]], [[Abendgold]], [[Abendgottesdienst]], [[Abendgr\u00fcne]],
+        [[Abendgru\u00df]], [[Abendgymnasium]], [[Abendhaube]], [[Abendhauch]], [[Abendhauptschule]],
+        [[Abendherr]], [[Abendhimmel]], [[Abendhochschule]], [[Abendimbiss]], [[Abendjagd]],
+        [[Abendjournal]], [[Abendkarte]], [[Abendkasse]], [[Abendkauf]], [[Abendklar]],
+        [[Abendklasse]], [[Abendkleid]], [[Abendkleidung]], [[Abendkollation]], [[Abendkonferenz]],
+        [[Abendkonzert]], [[Abendkost]], [[Abendkreis]], [[Abendk\u00fchle]], [[Abendkurs]],
+        [[Abendkursus]], [[Abendkuss]], [[Abendland]], [[Abendl\u00e4nder]], [[Abendlandschaft]],
+        [[Abendl\u00e4rm]], [[Abendlauf]], [[Abendl\u00e4uten]], [[Abendlehrgang]],
+        [[Abendlekt\u00fcre]], [[Abendlicht]], [[Abendlied]], [[Abendluft]], [[Abendl\u00fcftchen]],
+        [[Abendlust]], [[Abendmagazin]], [[Abendmahl]], [[Abendmahlzeit]], [[Abendmantel]],
+        [[Abendm\u00e4rchen]], [[Abendmarkt]], [[Abendmaschine]], [[Abendmatura]],
+        [[Abendmeeting]], [[Abendmeisterschule]], [[Abendmeldung]], [[Abendmelodie]],
+        [[Abendmen\u00fc]], [[Abendmesse]], [[Abendmode]], [[Abendmusik]], [[Abendnachricht]],
+        [[Abendnachrichten]], [[Abendnebel]], [[Abendoberschule]], [[Abend\u00f6ffnung]],
+        [[Abendopfer]], [[Abendpfauenauge]], [[Abendpfeifchen]], [[Abendpfeife]],
+        [[Abendpl\u00e4tzchen]], [[Abendpost]], [[Abendpracht]], [[Abendprediger]],
+        [[Abendpredigt]], [[Abendpresse]], [[Abendprobe]], [[Abendprogramm]], [[Abendpromenade]],
+        [[Abendpunkt]], [[Abendrauch]], [[Abendrealschule]], [[Abendregen]], [[Abendrobe]],
+        [[Abendrot]], [[Abendr\u00f6te]], [[Abendroutine]], [[Abendruf]], [[Abendruhe]],
+        [[Abendrunde]], [[Abendrundgang]], [[Abendschatten]], [[Abendschau]], [[Abendscheiden]],
+        [[Abendschein]], [[Abendschicht]], [[Abendschimmer]], [[Abendschmaus]], [[Abendschnellzug]],
+        [[Abendschoppen]], [[Abendschuh]], [[Abendschule]], [[Abendsch\u00fcler]],
+        [[Abendsegen]], [[Abendsegler]], [[Abendseite]], [[Abendseminar]], [[Abendsendung]],
+        [[Abendsession]], [[Abendshow]], [[Abendsitzung]], [[Abendsonne]], [[Abendsonne-Glut]],
+        [[Abendsonnenblick]], [[Abendsonnenschein]], [[Abendspazieren]], [[Abendspazierfahrt]],
+        [[Abendspaziergang]], [[Abendspeise]], [[Abendspiel]], [[Abendspielplan]],
+        [[Abendspitze]], [[Abendsport]], [[Abendsportfest]], [[Abendsprechstunde]],
+        [[Abendst\u00e4ndchen]], [[Abendstern]], [[Abendstille]], [[Abendstimmung]],
+        [[Abendstrahl]], [[Abendst\u00fcck]], [[Abendstudio]], [[Abendstudium]], [[Abendstunde]],
+        [[Abendstunden]], [[Abendsuppe]], [[Abendtafel]], [[Abendtarif]], [[Abendt\u00e4schchen]],
+        [[Abendtasche]], [[Abendtafel]], [[Abendtau]], [[Abendtanz]], [[Abendtee]],
+        [[Abendtemperatur]], [[Abendtermin]], [[Abendthema]], [[Abendthermik]], [[Abendtipp]],
+        [[Abendtisch]], [[Abendtoilette]], [[Abendtor]], [[Abendtrunk]], [[Abendumhang]],
+        [[Abenduniversit\u00e4t]], [[Abendunterhaltung]], [[Abendunterricht]], [[Abend\u00fcrte]],
+        [[Abendveranstaltung]], [[Abendvergn\u00fcgen]], [[Abendverkauf]], [[Abendverkehr]],
+        [[Abendvisite]], [[Abendvogel]], [[Abendvorlesung]], [[Abendvorstellung]],
+        [[Abendvortrag]], [[Abendw\u00e4ldchen]], [[Abendwalde]], [[Abendwanderung]],
+        [[Abendweite]], [[Abendwind]], [[Abendwindesk\u00fchle]], [[Abendwolke]],
+        [[Abendwort]], [[Abendzeche]], [[Abendzehren]], [[Abendzeit]], [[Abendzeitung]],
+        [[Abendzirkel]], [[Abendzug]], [[Abendzusammenfassung]], [[Abendzusammenkunft]]\n\n====
+        {{\u00dcbersetzungen}} ====\n{{\u00dc-Tabelle|1|G=Tageszeit, die beginnt,
+        wenn die Sonne den Horizont erreicht|\u00dc-Liste=\n*{{af}}: {{\u00dc|af|aand}}\n*{{sq}}:
+        {{\u00dc|sq|aksham}}, {{\u00dc|sq|mbr\u00ebmje}}\n*{{grc}}: {{Polytonisch|[[\u1f11\u03c3\u03c0\u03ad\u03c1\u03b1]]}}
+        (hespera) {{f}}\n*{{ar}}: {{\u00dct|ar|\u0639\u064e\u0634\u0650\u064a\u064e\u0651\u0629|\u02c0asche\u1e8fah}},
+        {{\u00dct|ar|\u0645\u064e\u0633\u064e\u0627\u0621|mas\u0101\u02c0}}\n*{{hy}}:
+        {{\u00dct|hy|\u0565\u0580\u0565\u056f\u0578|ereko}}\n*{{az}}: {{\u00dc|az|ax\u015fam}}\n*{{ast}}:
+        {{\u00dc|ast|tarde}} {{f}}\n*{{bm}}: {{\u00dc|bm|su}}\n*{{ba}}: {{\u00dct|ba|\u043a\u0438\u0441|}}\n*{{eu}}:
+        {{\u00dc|eu|arrats}}\n*{{ber}}: {{\u00dct|ber|\u2d5c\u2d30\u2d4e\u2d3b\u2d37\u2d37\u2d49\u2d5c|tameddit}}
+        {{f}}\n*{{bs}}: {{\u00dct|bs|\u0432\u0435\u0447\u0435|ve\u010de}} {{n}}, {{\u00dct|bs|\u0432\u0435\u0447\u0435\u0440|ve\u010der}}
+        {{f}}\n*{{br}}: {{\u00dc|br|abardae-noz}} {{f}}, {{\u00dc|br|abardaez-noz}}
+        {{f}}, {{\u00dc|br|pardaez-noz}} {{f}}\n*{{bg}}: {{\u00dct|bg|\u0432\u0435\u0447\u0435\u0440|ve\u010der}}\n*{{zh}}:
+        {{\u00dct|zh|\u665a\u4e0a|w\u01censh\u00e0ng}}, {{\u00dct|zh|\u665a|w\u01cen}},
+        {{\u00dct|zh|\u5915|x\u012b}}, {{\u00dct|zh|\u66ae|m\u00f9}}\n**{{zh-tw}}:
+        {{\u00dct|zh|\u9ec3\u660f|hu\u00e1ngh\u016bn}}\n**{{zh-cn}}: {{\u00dct|zh|\u9ec4\u660f|hu\u00e1ngh\u016bn}}\n*{{da}}:
+        {{\u00dc|da|aften}} {{u}}\n*{{en}}: {{\u00dc|en|evening}}, {{\u00dc|en|eve}},
+        {{\u00dc|en|eventide}}\n*{{eo}}: {{\u00dc|eo|vespero}}\n*{{et}}: {{\u00dc|et|\u00f5htu}},
+        {{\u00dc|et|loojang}}\n*{{fo}}: {{\u00dc|fo|kv\u00f8ld}} {{n}}\n*{{fi}}: {{\u00dc|fi|ilta}}\n*{{fr}}:
+        {{\u00dc|fr|soir}} {{m}}\n*{{fur}}: {{\u00dc|fur|sere}} {{f}}\n*{{gl}}: {{\u00dc|gl|ser\u00e1n}}
+        {{m}}, {{\u00dc|gl|tardi\u00f1a}} {{f}}\n*{{ka}}: {{\u00dct|ka|\u10e1\u10d0\u10e6\u10d0\u10db\u10dd|sa\u1e21amo}},
+        {{\u00dct|ka|\u10db\u10ec\u10e3\u10ee\u10e0\u10d8|mts''uchri}}\n*{{gil}}:
+        {{\u00dc|gil|tairiki}}\n*{{el}}: {{\u00dct|el|\u03b2\u03c1\u03b1\u03b4\u03b9\u03ac|vrathi\u00e1}}
+        {{f}}, {{\u00dct|el|\u03b2\u03c1\u03ac\u03b4\u03c5|vr\u00e1thy}} {{n}}\n*{{kl}}:
+        {{\u00dc|kl|unnuk}}\n*{{he}}: {{\u00dct|he|\u05e2\u05e8\u05d1|erew}} {{m}}\n*{{hi}}:
+        {{\u00dct|hi|\u0936\u093e\u092e|\u015b\u0101m}} {{f}}\n*{{io}}: {{\u00dc|io|vespero}}\n*{{id}}:
+        {{\u00dc|id|malam}}\n*{{ia}}: {{\u00dc|ia|vespere}}\n*{{ga}}: {{\u00dc|ga|tr\u00e1thn\u00f3na}}\n*{{zu}}:
+        {{\u00dc|zu|ukuhlwa}}\n*{{is}}: {{\u00dc|is|kv\u00f6ld}}\n*{{it}}: {{\u00dc|it|sera}}
+        {{f}}\n*{{sah}}: {{\u00dct|sah|\u043a\u0438\u044d\u04bb\u044d|}}\n*{{ja}}:
+        ''''englische Entlehnung:'''' {{\u00dct|ja|\u30a4\u30d6\u30cb\u30f3\u30b0|ibuningu}},
+        {{\u00dct|ja|\u5165\u308a\u76f8|\u3044\u308a\u3042\u3044, iri ai}}, {{\u00dct|ja|\u66ae\u308c\u65b9|\u304f\u308c\u304c\u305f,
+        kuregata}}, {{\u00dct|ja|\u6669|\u3070\u3093, ban}}, {{\u00dct|ja|\u65e5\u66ae\u308c\u65b9|\u3072\u3050\u308c\u304c\u305f,
+        higuregata}}, ''''schriftsprachlich:'''' {{\u00dct|ja|\u66ae\u591c|\u307c\u3084,
+        boya}}, {{\u00dct|ja|\u591c\u5206|\u3084\u3076\u3093, yabun}}, ''''schriftsprachlich:''''
+        {{\u00dct|ja|\u5915|\u3086\u3046, y\u016b}}, {{\u00dct|ja|\u5915\u65b9|\u3086\u3046\u304c\u305f,
+        y\u016bgata}}, {{\u00dct|ja|\u5915\u66ae\u308c|\u3086\u3046\u3050\u308c, y\u016bgure}},''''poetisch:''''
+        {{\u00dct|ja|\u5915\u666f|\u3086\u3046\u3051\u3044, y\u016bkei}}, ''''schriftsprachlich:''''
+        {{\u00dct|ja|\u5915\u523b|\u3086\u3046\u3053\u304f, y\u016bkoku}}, {{\u00dct|ja|\u5915\u3055\u308a|\u3086\u3046\u3055\u308a,
+        y\u016bsari}}, ''''schriftsprachlich:'''' {{\u00dct|ja|\u5915\u3079|\u3086\u3046\u3079,
+        y\u016bbe}}, ''''fr\u00fcher Abend:'''' {{\u00dct|ja|\u5bb5|\u3088\u3044,
+        yoi}}\n*{{yi}}: {{\u00dct|yi|\u05d0\u05b8\u05d5\u05d5\u05e0\u05d8|ovnt}} {{m}},
+        ''''fr\u00fcher Abend w\u00e4hrend der D\u00e4mmerung:'''' {{\u00dct|yi|\u05e4\u05bf\u05d0\u05b7\u05e8\u05e0\u05d0\u05b7\u05db\u05d8|farnakht}}
+        {{m}}\n*{{kk}}: {{\u00dct|kk|\u043a\u0435\u0448|}}\n*{{ca}}: ''''fr\u00fcher
+        Abend:'''' {{\u00dc|ca|tarda}} {{f}}; ''''sp\u00e4ter Abend:'''' {{\u00dc|ca|vespre}}
+        {{m}}\n*{{ky}}: {{\u00dct|ky|\u043a\u0435\u0447|}}\n*{{kv}}: {{\u00dct|kv|\u0440\u044b\u0442|ryt}}\n*{{ko}}:
+        {{\u00dct|ko|\uc800\ub141|dscheo-nyeok}}\n*{{kw}}: {{\u00dc|kw|gorthuher}}\n*{{co}}:
+        {{\u00dc|co|sera}} {{f}}\n*{{hr}}: {{\u00dc|hr|ve\u010der}} {{f}}\n*{{ku}}:\n**{{kmr}}:
+        {{\u00dc|kmr|\u00eavar}}, {{\u00dc|kmr|\u06ce\u06a4\u0627\u0631}}\n*{{la}}:
+        {{\u00dc|la|vesper}} {{m}}, {{\u00dc|la|vespera}} {{f}}\n*{{lv}}: {{\u00dc|lv|vakars}}
+        {{m}}\n*{{lt}}: {{\u00dc|lt|vakaras}} {{m}}\n*{{liv}}: {{\u00dc|liv|\u022dd\u00f5g}}\n*{{lb}}:
+        {{\u00dc|lb|Owend}} {{m}}\n*{{mt}}: {{\u00dc|mt|g\u0127axija}}, {{\u00dc|mt|filg\u0127axija}}\n*{{gv}}:
+        {{\u00dc|gv|fastyr}}\n*{{mi}}: {{\u00dc|mi|ahiahi}}, {{\u00dc|mi|maruahiahi}}\n*{{mk}}:
+        {{\u00dct|mk|\u0432\u0435\u0447\u0435|ve\u010de}} {{n}}, {{\u00dct|mk|\u0432\u0435\u0447\u0435\u0440|ve\u010der}}
+        {{f}}\n*{{nds}}: {{\u00dc|nds|Avend}} {{m}}\n*{{nl}}: {{\u00dc|nl|avond}}
+        {{m}}\n*{{se}}: {{\u00dc|se|eahket}}\n*{{no}}:\n**{{nb}}: {{\u00dc|nb|kveld}}
+        {{m}}, {{\u00dc|nb|aften}} {{m}}\n**{{nn}}: {{\u00dc|nn|kveld}}  {{m}}\n*{{oc}}:
+        {{\u00dc|oc|v\u00e8spre}} {{m}}, {{\u00dc|oc|vesprada}} {{f}}\n*{{ps}}: {{\u00dct|ps|\u0645\u0627\u069a\u0627\u0645|}}
+        {{n}}\n*{{fa}}: {{\u00dct|fa|\u0633\u0631\u0634\u0628|}}, {{\u00dct|fa|\u0639\u0635\u0631|}}\n*{{pdt}}:
+        {{\u00dc|pdt|Owent}} {{m}}\n*{{pox}}: {{\u00dc|pox|wicer}} {{m}}\n*{{pl}}:
+        {{\u00dc|pl|wiecz\u00f3r}} {{m}}\n*{{pt}}: {{\u00dc|pt|tarde}} {{f}}\n*{{rm}}:
+        {{\u00dc|rm|saira}}, {{\u00dc|rm|seira}}, {{\u00dc|rm|sera}}, {{\u00dc|rm|sera}},
+        {{\u00dc|rm|saira}}, {{\u00dc|rm|saira}}\n*{{ro}}: {{\u00dc|ro|sear\u0103}}
+        {{f}}\n*{{ru}}: {{\u00dct|ru|\u0432\u0435\u0447\u0435\u0440}} {{m}}\n*{{gd}}:
+        {{\u00dc|gd|feasgar}}\n*{{sv}}: {{\u00dc|sv|kv\u00e4ll}} {{u}}\n*{{sr}}: {{\u00dct|sr|\u0432\u0435\u0447\u0435|ve\u010de}}
+        {{n}}, {{\u00dct|sr|\u0432\u0435\u0447\u0435\u0440|ve\u010der}} {{f}}\n*{{sh}}:
+        {{\u00dct|sh|\u0432\u0435\u0447\u0435|ve\u010de}} {{n}}, {{\u00dct|sh|\u0432\u0435\u0447\u0435\u0440|ve\u010der}}
+        {{f}}\n*{{scn}}: {{\u00dc|scn|sira}} {{f}}\n*{{sk}}: {{\u00dc|sk|ve\u010der}}
+        {{m}}\n*{{sl}}: {{\u00dc|sl|ve\u010der}} {{m}}\n*{{wen}}:\n**{{dsb}}: {{\u00dc|dsb|wjacor}}\n**{{hsb}}:
+        {{\u00dc|hsb|wje\u010dor}} {{m}}, ''''Diminutiv'''' {{\u00dc|hsb|wje\u010dork}}
+        {{m}}\n*{{es}}: {{\u00dc|es|tarde}} {{f}}, ''''nach Sonnenuntergang:'''' {{\u00dc|es|noche}}
+        {{f}}, {{\u00dc|es|v\u00edspera}} {{f}}\n*{{sw}}: {{\u00dc|sw|jio}}, {{\u00dc|sw|jioni}},
+        {{\u00dc|sw|kisikusiku}}, {{\u00dc|sw|kiusikusiku}}, {{\u00dc|sw|magharibi}}\n*{{tg}}:
+        {{\u00dct|tg|\u0448\u0430\u0431|}}\n*{{tt}}: {{\u00dct|tt|\u043a\u0438\u0447|}}\n*{{te}}:
+        {{\u00dct|te|\u0c38\u0c3e\u0c2f\u0c02\u0c24\u0c4d\u0c30\u0c02|saayamtram}},
+        {{\u00dct|te|\u0c38\u0c3e\u0c2f\u0c02\u0c15\u0c3e\u0c32\u0c02|saayamkaalam}}\n*{{th}}:
+        {{\u00dct|th|\u0e15\u0e2d\u0e19\u0e40\u0e22\u0e47\u0e19|dton yen}}, {{\u00dct|th|\u0e2a\u0e32\u0e22\u0e31\u0e13\u0e2b\u0e4c|s\u0103a-yan}}\n*{{cs}}:
+        {{\u00dc|cs|ve\u010der}} {{m}}\n*{{ce}}: {{\u00dct|ce|\u0441\u0443\u044c\u0439\u0440\u0435}}\n*{{cv}}:
+        {{\u00dct|cv|\u043a\u0430\u04ab|}}\n*{{tr}}: {{\u00dc|tr|ak\u015fam}}\n*{{tk}}:
+        {{\u00dc|tk|ag\u015fam}}\n*{{ug}}: {{\u00dct?|ug|\u0626\u0627\u062e\u0634\u0627\u0645|axsham}}\n*{{uk}}:
+        {{\u00dct|uk|\u0432\u0435\u0447\u0456\u0440|ve\u010dir}}, {{\u00dct|uk|\u0432\u0435\u0447\u0456\u0440\u043a\u0430|ve\u010dirka}}\n*{{hu}}:
+        {{\u00dc|hu|este}}\n*{{ur}}: {{\u00dct|ur|\u0634\u0627\u0645|}} {{f}}\n*{{uz}}:
+        {{\u00dc|uz|oqshom}}\n*{{vi}}: {{\u00dc|vi|t\u1ed1i}}\n*{{cy}}: {{\u00dc|cy|noswaith}},
+        {{\u00dc|cy|hwyr}}, {{\u00dc|cy|noson}}\n*{{wa}}: {{\u00dc|wa|shijhe}}\n*{{be}}:
+        {{\u00dct|be|\u0432\u0435\u0447\u0430\u0440|ve\u010dar}} {{m}}\n*{{fy}}: {{\u00dc|fy|j\u00fbn}}\n|Dialekttabelle=\n*Erzgebirgisch:
+        [?] [[Ohmd]], [[Oomd]]\n*[[K\u00f6lsch]]: [?] [[Ovend]]\n*[[Niederpreu\u00dfisch]]:
+        [?] {{\u00dc|nds|Awend}}\n*Obers\u00e4chsisch: [?] [[Ohmd]], [[Oomd]]\n*Ripuarisch:
+        [?] [[Oovend]]\n*Schw\u00e4bisch: [?] [[Obad]]\n*Th\u00fcringisch: [?] [[Ohmd]]\n*Vorarlbergisch
+        (Niederalemannisch): [?] [[Obad]], [[Obig]]\n}}\n\n{{\u00dc-Tabelle|2|G=veraltend:
+        die Himmelsrichtung Westen|\u00dc-Liste=\n*{{fr}}: {{\u00dc|fr|occident}}
+        {{m}}, {{\u00dc|fr|ouest}} {{m}}, {{\u00dc|fr|couchant}} {{m}}\n*{{la}}: {{\u00dc|la|vesper}}
+        {{m}}, {{\u00dc|la|vespera}} {{f}}\n*{{mk}}: {{\u00dct|mk|\u0437\u0430\u043f\u0430\u0434|zapad}}
+        {{m}}\n*{{rm}}: {{\u00dc|rm|saira}}, {{\u00dc|rm|seira}}, {{\u00dc|rm|sera}},
+        {{\u00dc|rm|sera}}, {{\u00dc|rm|saira}}, {{\u00dc|rm|saira}}\n*{{ru}}: {{\u00dct|ru|\u0437\u0430\u043f\u0430\u0434}}
+        {{m}}\n*{{sr}}: {{\u00dct|sr|\u0437\u0430\u043f\u0430\u0434|zapad}} {{m}}\n*{{sh}}:
+        {{\u00dct|sh|\u0437\u0430\u043f\u0430\u0434|zapad}} {{m}}\n*{{sl}}: {{\u00dc|sl|zahod}}
+        {{m}}\n*{{wen}}:\n**{{dsb}}: {{\u00dc|dsb|p\u00f3dwjacor}} {{m}}\n**{{hsb}}:
+        {{\u00dc|hsb|wje\u010dor}} {{m}}, {{\u00dc|hsb|zapad}} {{m}}\n*{{es}}: {{\u00dc|es|occidente}}
+        {{m}}, {{\u00dc|es|oeste}} {{m}}, {{\u00dc|es|poniente}} {{m}}\n*{{tr}}: {{\u00dc|tr|bat\u0131}}\n|Dialekttabelle=\n*Erzgebirgisch:
+        [?] [[Ohmd]], [[Oomd]]\n*[[K\u00f6lsch]]: [?] [[Ovend]]\n*[[Niederpreu\u00dfisch]]:
+        [?] {{\u00dc|nds|Awend}}\n*Obers\u00e4chsisch: [?] [[Ohmd]], [[Oomd]]\n*Ripuarisch:
+        [?] [[Oovend]]\n*Schw\u00e4bisch: [?] [[Obad]]\n*Th\u00fcringisch: [?] [[Ohmd]]\n*Vorarlbergisch
+        (Niederalemannisch): [?] [[Obad]], [[Obig]]\n}}\n\n{{\u00dc-Tabelle|3|G=umgangssprachlich:
+        verschliffene Begr\u00fc\u00dfungsfloskel \u201eguten Abend\u201c|\u00dc-Liste=\n*{{mk}}:
+        {{\u00dct|mk|\u0434\u043e\u0431\u0440\u043e \u0432\u0435\u0447\u0435|dobro
+        ve\u010de}} {{n}}\n*{{ru}}: {{\u00dct|ru|\u0434\u043e\u0431\u0440\u044b\u0439
+        \u0432\u0435\u0447\u0435\u0440}}\n*{{sv}}: {{\u00dc|sv|afton}} {{u}}\n*{{sr}}:
+        {{\u00dct|sr|\u0434\u043e\u0431\u0440\u043e \u0432\u0435\u0447\u0435|dobro
+        ve\u010de}} {{n}}\n*{{sh}}: {{\u00dct|sh|\u0434\u043e\u0431\u0440\u043e \u0432\u0435\u0447\u0435|dobro
+        ve\u010de}} {{n}}\n|Dialekttabelle=\n*Erzgebirgisch: [?] [[Ohmd]], [[Oomd]]\n*[[K\u00f6lsch]]:
+        [?] [[Ovend]]\n*[[Niederpreu\u00dfisch]]: [?] {{\u00dc|nds|Awend}}\n*Obers\u00e4chsisch:
+        [?] [[Ohmd]], [[Oomd]]\n*Ripuarisch: [?] [[Oovend]]\n*Schw\u00e4bisch: [?]
+        [[Obad]]\n*Th\u00fcringisch: [?] [[Ohmd]]\n*Vorarlbergisch (Niederalemannisch):
+        [?] [[Obad]], [[Obig]]\n}}\n\n{{\u00dc-Tabelle|4|G=\u00fcbertragen: Abschluss,
+        Ende, Schluss (f\u00fcr Leben, Epochen, langandauernde Herrschaften und \u00c4hnlichem)|\u00dc-Liste=\n*{{fi}}:
+        {{\u00dc|fi|ehtoo}}\n*{{fr}}: {{\u00dc|fr|soir}} {{m}}\n*{{mk}}: {{\u00dct|mk|\u043a\u0440\u0430\u0458|kraj}}
+        {{m}}\n*{{no}}:\n**{{nb}}: {{\u00dc|nb|kveld}} {{m}}, {{\u00dc|nb|aften}}
+        {{m}}\n**{{nn}}: {{\u00dc|nn|kveld}}  {{m}}\n*{{ru}}: {{\u00dct|ru|\u0437\u0430\u043a\u0430\u0442}}
+        {{m}}\n*{{sv}}: {{\u00dc|sv|afton}} {{u}}\n*{{sr}}: {{\u00dct|sr|\u043a\u0440\u0430\u0458|kraj}}
+        {{m}}\n*{{sh}}: {{\u00dct|sh|\u043a\u0440\u0430\u0458|kraj}} {{m}}\n*{{es}}:
+        {{\u00dc|es|ocaso}} {{m}}\n|Dialekttabelle=\n*Erzgebirgisch: [?] [[Ohmd]],
+        [[Oomd]]\n*[[K\u00f6lsch]]: [?] [[Ovend]]\n*[[Niederpreu\u00dfisch]]: [?]
+        {{\u00dc|nds|Awend}}\n*Obers\u00e4chsisch: [?] [[Ohmd]], [[Oomd]]\n*Ripuarisch:
+        [?] [[Oovend]]\n*Schw\u00e4bisch: [?] [[Obad]]\n*Th\u00fcringisch: [?] [[Ohmd]]\n*Vorarlbergisch
+        (Niederalemannisch): [?] [[Obad]], [[Obig]]\n}}\n\n{{\u00dc-Tabelle|5|G=kurz
+        f\u00fcr: Abendveranstaltung; Abend mit heiterem, vielgestaltigem Programm;
+        Abendempfang|\u00dc-Liste=\n*{{br}}: ''''vor Sonnenuntergang:'''' {{\u00dc|br|abardaevezh}}
+        {{m}}, ''''nach Sonnenuntergang:'''' {{\u00dc|br|nozvezh}} {{f}}\n*{{en}}:
+        {{\u00dc|en|night}}\n*{{fr}}: {{\u00dc|fr|soir\u00e9e}} {{f}}\n*{{ka}}: {{\u00dct|ka|\u10e1\u10d0\u10e6\u10d0\u10db\u10dd|saghamo}}\n*{{it}}:
+        {{\u00dc|it|serata}} {{f}}\n*{{ja}}: {{\u00dct|ja|\u591c\u4f1a|\u3084\u304b\u3044,
+        yakai}}\n*{{mk}}: {{\u00dct|mk|\u0432\u0435\u0447\u0435\u0440\u043d\u0438|ve\u010derni}}\n*{{no}}:\n**{{nb}}:
+        {{\u00dc|nb|kveld}} {{m}}, {{\u00dc|nb|aften}} {{m}}\n**{{nn}}: {{\u00dc|nn|kveld}}  {{m}}\n*{{pl}}:
+        {{\u00dc|pl|wiecz\u00f3r}} {{m}}\n*{{pt}}: {{\u00dc|pt|noitada}} {{f}}\n*{{rm}}:
+        {{\u00dc|rm|sairada}}; ''''Surmeirisch:'''' {{\u00dc|rm|seirada}}; ''''Surselvisch:''''
+        {{\u00dc|rm|serada}}; ''''Sutselvisch:'''' {{\u00dc|rm|serada}}; ''''Oberengadinisch:''''
+        {{\u00dc|rm|saireda}}; ''''Unterengadinisch:'''' {{\u00dc|rm|sairada}}\n*{{ro}}:
+        {{\u00dc|ro|serat\u0103}} {{f}}\n*{{ru}}: {{\u00dct|ru|\u0432\u0435\u0447\u0435\u0440}}
+        {{m}}\n*{{sv}}: {{\u00dc|sv|afton}} {{u}}\n*{{sr}}: {{\u00dct|sr|\u0432\u0435\u0447\u0435\u0440\u045a\u0438|ve\u010dernji}}\n*{{sh}}:
+        {{\u00dct|sh|\u0432\u0435\u0447\u0435\u0440\u045a\u0438|ve\u010dernji}}\n*{{wen}}:\n**{{dsb}}:
+        {{\u00dc|dsb|wjacorne}} {{n}}\n**{{hsb}}: {{\u00dc|hsb|wje\u010dork}} {{m}}\n*{{es}}:
+        {{\u00dc|es|velada}} {{f}}, {{\u00dc|es|noche}} {{f}}\n*{{tr}}: {{\u00dc|tr|gece}}\n|Dialekttabelle=\n*Erzgebirgisch:
+        [?] [[Ohmd]], [[Oomd]]\n*[[K\u00f6lsch]]: [?] [[Ovend]]\n*[[Niederpreu\u00dfisch]]:
+        [?] {{\u00dc|nds|Awend}}\n*Obers\u00e4chsisch: [?] [[Ohmd]], [[Oomd]]\n*Ripuarisch:
+        [?] [[Oovend]]\n*Schw\u00e4bisch: [?] [[Obad]]\n*Th\u00fcringisch: [?] [[Ohmd]]\n*Vorarlbergisch
+        (Niederalemannisch): [?] [[Obad]], [[Obig]]\n}}\n\n{{Referenzen}}\n:[1, 4]
+        {{Wikipedia|Abend}}\n:[1] {{Ref-DRW|Abend}}\n:[1, 2, 4, 5] {{Ref-DWDS|Abend}}\n:[1,
+        2, 4] {{Ref-Goethe|Abend}}\n:[1, 2, 4] {{Ref-Grimm|Abend}}\n:[1] {{Ref-UniLeipzig|Abend}}\n:[1,
+        2, 5] {{Ref-Duden|Abend}}\n\n{{Quellen}}\n\n=== {{Wortart|Substantiv|Deutsch}},
+        {{mf}}, {{Wortart|Nachname|Deutsch}} ===\n\n{{Deutsch Nachname \u00dcbersicht\n|Bild
+        1=Verteilung Nachname Abend DE.png\n|Bildbezug 1=1\n|Bildbeschreibung 1=Verteilung
+        des Nachnamens ''''Abend'''' in Deutschland\n}}\n\n{{Worttrennung}}\n:Abend,
+        {{Pl.}} Abends\n\n{{Aussprache}}\n:{{IPA}} {{Lautschrift|\u02c8a\u02d0bn\u0329t}}\n:{{H\u00f6rbeispiele}}
+        {{Audio|De-Abend.ogg}}, {{Audio|De-Abend2.ogg}}\n:{{Reime}} {{Reim|a\u02d0bn\u0329t|Deutsch}}\n\n{{Bedeutungen}}\n:[1]
+        deutschsprachiger [[Nachname]], [[Familienname]]\n\n{{Herkunft}}\n:''''Die
+        Herkunft ist nicht eindeutig zu erkl\u00e4ren und hat mehrere Deutungstheorien
+        und Deutungshypothesen:''''\n# von [[Feierabend]], einem [[\u00dcbername]]n
+        von [[Bauer]]n und [[Handwerker]]n<ref name=Duden>{{Lit-Duden: Familiennamen|A=2000}}</ref><ref>{{Lit-Bahlow:
+        Namenlexikon|V=Gondrom}}</ref>;\n# ein [[Wohnst\u00e4ttenname]] f\u00fcr jemanden,
+        der im [[Westen]] wohnt (''''siehe:'''' [[#Substantiv, m|Abend]] <sup>[2]</sup>);<ref
+        name=Duden />\n# ein [[Herkunftsname]] von Orten wie ''''''Abend'''''' in
+        Sachsen ''''<small>(siehe unten)</small>'''' oder ''''[[Abenden]]'''' in Nordrhein-Westfalen;<ref
+        name=Duden />\n# eine [[Umdeutung]] des [[Vorname]]ns [[Abund]]<ref name=Duden
+        />\n\n{{Namensvarianten}}\n:[1] [[Aabend]], [[Abendt]], [[Avend]], [[Avent]]\n\n{{Bekannte
+        Namenstr\u00e4ger}}\n:[1] [[w:Lothar Abend|Lothar Abend]], deutscher Boxer\n\n{{Beispiele}}\n:[1]
+        Gr\u00fc\u00dfen Sie die Frau ''''Abend'''' von mir!\n:[1] Herr ''''Abend''''
+        wollte uns kein Interview geben.\n:[1] Die ''''Abends'''' fliegen heute nach
+        Kanada.\n:[1] Der ''''Abend'''' tr\u00e4gt nie die Pullover, die die ''''Abend''''
+        ihm strickt.\n\n{{Wortbildungen}}\n:[[Brunnabend]], [[Fasselabend]], [[Fasslabend]],
+        [[Fastabend]], [[Fastlabend]], [[Fa\u00dflabend]], [[Feierabend]], [[Feirabend]],
+        [[Feuerabendt]], [[Feuerabend]], [[Feyerabendt]], [[Feyerabend]], [[Sonnabend]]\n\n====
+        {{\u00dcbersetzungen}} ====\n{{\u00dc-Tabelle|1|G=deutschsprachiger Nachname,
+        Familienname|\u00dc-Liste=\n*{{en}}: {{\u00dc|en|}}\n}}\n\n{{Referenzen}}\n:[1]
+        {{Wikipedia|Abend_(Begriffskl\u00e4rung)|Abend}}\n:[1] {{Lit-Bahlow: Namenlexikon|V=Gondrom}},
+        Seite 26\n:[1] {{Lit-Duden: Familiennamen|A=2000}}, Seite 74\n:[1] {{Lit-Gottschald:
+        Deutsche Namenkunde|A=6}}, Seite 80\n:[1] {{Lit-Heintze: Familiennamen|A=4}},
+        Seite 99\n:[1] {{Ref-UniLeipzig|Abend}}\n\n{{Quellen}}\n\n{{Navigationsleiste
+        Anthroponyme}}\n\n=== {{Wortart|Substantiv|Deutsch}}, {{n}}, {{Wortart|Toponym|Deutsch}}
+        ===\n\n{{Deutsch Toponym \u00dcbersicht}}\n\n{{Worttrennung}}\n:Abend, {{kPl.}}\n\n{{Aussprache}}\n:{{IPA}}
+        {{Lautschrift|\u02c8a\u02d0bn\u0329t}}, {{Lautschrift|\u02c8a\u02d0bm\u0329t}}\n:{{H\u00f6rbeispiele}}
+        {{Audio|De-Abend.ogg}}, {{Audio|De-Abend2.ogg}}, {{Audio|De-Abend3.ogg}}\n:{{Reime}}
+        {{Reim|a\u02d0bn\u0329t|Deutsch}}\n\n{{Bedeutungen}}\n:[1] Ortsteil der [[Gemeinde]]
+        [[Ketzerbachtal]], [[Landkreis]] [[Mei\u00dfen]], [[Sachsen]], [[Deutschland]]\n\n{{Oberbegriffe}}\n:[1]
+        [[Ortsteil]]\n\n{{Beispiele}}\n:[1] ''''Abend'''' liegt in Sachsen.\n\n{{Wortbildungen}}\n:[[Abendner]],
+        [[Abendnerin]]\n\n==== {{\u00dcbersetzungen}} ====\n{{\u00dc-Tabelle|1|G=Ortsteil
+        der Gemeinde Ketzerbachtal, Landkreis Mei\u00dfen, Sachsen, Deutschland|\u00dc-Liste=\n*{{fr}}:
+        {{\u00dc|fr|}}\n*{{it}}: {{\u00dc|it|}}\n}}\n\n{{Referenzen}}\n:[1] {{Wikipedia|Ketzerbachtal}}\n:[1]
+        [http://opentopomap.org/#map=15/51.13030/13.25775 Lage von Abend auf opentopomap.org
+        (Mitte des Browserfensters)]\n\n{{\u00c4hnlichkeiten 1|[[abends]], [[Advent]],
+        [[eben]], [[ebenda]], [[habend]], [[oben]]|Anagramme=[[baden]], [[Baden]],
+        [[Bande]]}}"}}}'
+    headers:
+      accept-ranges:
+      - bytes
+      age:
+      - '0'
+      cache-control:
+      - private, must-revalidate, max-age=0
+      content-disposition:
+      - inline; filename=api-result.json
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 03 Aug 2024 13:19:41 GMT
+      nel:
+      - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
+        0.0}'
+      report-to:
+      - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
+        }] }'
+      server:
+      - mw-api-ext.eqiad.main-7c589668c5-mrqt9
+      server-timing:
+      - cache;desc="pass", host;desc="cp3068"
+      set-cookie:
+      - WMF-Last-Access=03-Aug-2024;Path=/;HttpOnly;secure;Expires=Wed, 04 Sep 2024
+        12:00:00 GMT
+      - WMF-Last-Access-Global=03-Aug-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Wed,
+        04 Sep 2024 12:00:00 GMT
+      - GeoIP=DE:BE:Berlin:52.57:13.42:v4; Path=/; secure; Domain=.wiktionary.org
+      - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
+      strict-transport-security:
+      - max-age=106384710; includeSubDomains; preload
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      x-cache:
+      - cp3068 miss, cp3068 pass
+      x-cache-status:
+      - pass
+      x-client-ip:
+      - 2003:e9:770b:f8bd:7c8a:ae86:5aa7:f25e
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+die+Tageszeit+nach+dem+Nachmittag%2C+die+beginnt%2C+wenn+die+Sonne+den+Horizont+erreicht%2C+und+bei+v%C3%B6lliger+Dunkelheit+endet%3B+dem+Abend+geht+der+Tag+voran+und+auf+den+Abend+folgt+die+Nacht%0A++++%5B2%5D++die+Himmelsrichtung+Westen%0A++++%5B3%5D++verschliffene+Begr%C3%BC%C3%9Fungsfloskel+%E2%80%9Eguten+Abend%E2%80%9C%0A++++%5B4%5D++Abschluss%2C+Ende%2C+Schluss+%28f%C3%BCr+Leben%2C+Epochen%2C+langandauernde+Herrschaften+und+%C3%84hnlichem%29%0A++++%5B5%5D++Abendveranstaltung%3B+Abend+mit+heiterem%2C+vielgestaltigem+Programm%3B+Abendempfang
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"6d0B9GUW5pbDu6LlukD8Lw\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20la%20hora%20del%20d%C3%ADa%20despu%C3%A9s%20de%20la%20tarde%2C%20que%20comienza%20cuando%20el%20sol%20llega%20al%20horizonte%20y%20termina%20cuando%20oscurece%20completamente%3B%20La%20tarde%20es%20precedida%20por%20el%20d%C3%ADa%20y%20la%20tarde%20es%20seguida%20por%20la%20noche.%0A%20%20%20%20%5B2%5D%20la%20direcci%C3%B3n%20oeste%0A%20%20%20%20%5B3%5D%20frase%20de%20saludo%20arrastrada%20%22buenas%20noches%22%0A%20%20%20%20%5B4%5D%20Conclusi%C3%B3n%2C%20fin%2C%20conclusi%C3%B3n%20%28para%20vidas%2C%20eras%2C%20reinados%20duraderos%20y%20similares%29%0A%20%20%20%20%5B5%5D%20Evento%20nocturno%3B%20Velada%20con%20un%20programa%20alegre%20y%20variado%3B%20Recepci%C3%B3n%20nocturna&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] die Tageszeit
+        nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht, und
+        bei v\xF6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf den
+        Abend folgt die Nacht\n    [2]  die Himmelsrichtung Westen\n    [3]  verschliffene
+        Begr\xFC\xDFungsfloskel \u201Eguten Abend\u201C\n    [4]  Abschluss, Ende,
+        Schluss (f\xFCr Leben, Epochen, langandauernde Herrschaften und \xC4hnlichem)\n
+        \   [5]  Abendveranstaltung; Abend mit heiterem, vielgestaltigem Programm;
+        Abendempfang\"><div class=\"translate-button-container\"><input type=\"submit\"
+        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        la hora del d\xEDa despu\xE9s de la tarde, que comienza cuando el sol llega
+        al horizonte y termina cuando oscurece completamente; La tarde es precedida
+        por el d\xEDa y la tarde es seguida por la noche.\n    [2] la direcci\xF3n
+        oeste\n    [3] frase de saludo arrastrada &quot;buenas noches&quot;\n    [4]
+        Conclusi\xF3n, fin, conclusi\xF3n (para vidas, eras, reinados duraderos y
+        similares)\n    [5] Evento nocturno; Velada con un programa alegre y variado;
+        Recepci\xF3n nocturna</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-to1s4XmlaZNkJIMxiLQlqw' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sat, 03 Aug 2024 13:19:41 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=21.SE=z_0-2b_5t2wgASPT8oql1JIzZn6MO0sbk06Rxqwb_XVg15NOt6ZUo9fW0bA7Wm1s1Muq74cknNJz4L8vcQZYOnHK13AwdZsHcPoF4DhwHBvTDhUv2zMpf0z8gRNlpZgYuAPB0M8aPrJLnt63xzFbKlCAkc5GXfUfS-su0S9RcVG5jEzf;
+        expires=Wed, 03-Sep-2025 05:37:59 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII0JBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ON7e2bGVTWDH7lnTmZTUkvIL40uKEvOKcxJLUnXLU5OKU4vKUovijQyMTAzMjQ31DCziCwwAvmQtBg"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+%E2%80%9EEines+Abends%2C+als+sie+so+vertraulich+beisammensa%C3%9Fen%2C+klopfte+jemand+an+die+T%C3%BCre%2C+als+wollte+er+eingelassen+sein.%E2%80%9C
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"AvxBS9MKtq49vL2ziJAdKg\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%E2%80%9EEines%20Abends%2C%20als%20sie%20so%20vertraulich%20beisammensa%C3%9Fen%2C%20klopfte%20jemand%20an%20die%20T%C3%BCre%2C%20als%20wollte%20er%20eingelassen%20sein.%E2%80%9C&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%E2%80%9EEines%20Abends%2C%20als%20sie%20so%20vertraulich%20beisammensa%C3%9Fen%2C%20klopfte%20jemand%20an%20die%20T%C3%BCre%2C%20als%20wollte%20er%20eingelassen%20sein.%E2%80%9C&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20%E2%80%9CUna%20noche%2C%20mientras%20estaban%20sentados%20juntos%20en%20confianza%2C%20alguien%20llam%C3%B3%20a%20la%20puerta%20como%20si%20quisiera%20que%20le%20dejaran%20entrar%E2%80%9D.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] \u201EEines
+        Abends, als sie so vertraulich beisammensa\xDFen, klopfte jemand an die T\xFCre,
+        als wollte er eingelassen sein.\u201C\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[1] \u201CUna noche, mientras estaban sentados
+        juntos en confianza, alguien llam\xF3 a la puerta como si quisiera que le
+        dejaran entrar\u201D.</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - script-src 'nonce-xaxonNTQORbXhFnXYgekRQ' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sat, 03 Aug 2024 13:19:43 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=21.SE=uuo2lUZY3am99o9_MkuwIH7jSUv7cGt1-LjqtkrMLzCW7ZKfIwamR53tHGlwYDoLhIdyw7GuAkKowFPFTUesE4KPPK1hfzXi_QafcGcDSidb1rJBdD9oIg2ee-T-9SWZLsY52Ux4YBRi5nKOWDTPKnUZ-sl8AYt-59FPqVXq2qekhOL5;
+        expires=Wed, 03-Sep-2025 05:38:01 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ON7f2bGVTeDE1od3mJTUkvIL40uKEvOKcxJLUnXLU5OKU4vKUovijQyMTAzMjQ31DCziCwwA1SUtmA"
+    status:
+      code: 200
+      message: OK
+version: 1

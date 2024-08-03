@@ -1,10 +1,12 @@
 import logging
 from typing import Optional
 
-from app.data_processors.duden_data_processor import DudenDataProcessor
-from app.data_processors.ollama_data_processor import OllamaDataProcessor
-from app.data_processors.verben_data_processor import VerbenDataProcessor
-from app.data_processors.wiktionary_data_processor import WiktionaryDataProcessor
+from app.data_processors.processors.duden_data_processor import DudenDataProcessor
+from app.data_processors.processors.ollama_data_processor import OllamaDataProcessor
+from app.data_processors.processors.verben_data_processor import VerbenDataProcessor
+from app.data_processors.processors.wiktionary_data_processor import (
+    WiktionaryDataProcessor,
+)
 from app.serializers import CustomNote
 
 PROCESSORS_MAP = {
