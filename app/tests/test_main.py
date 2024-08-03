@@ -18,6 +18,6 @@ def test_generate_notes_is_successful(snapshot: Any) -> None:
 async def test_get_anki_note_data_is_successful(
     snapshot: Any,
 ) -> None:
-    result = await asyncio.create_task(get_anki_note_data(word="Abend"))
+    result = await asyncio.create_task(coro=get_anki_note_data(word="Abend"))
     assert result, "Add note failed"
     assert snapshot("json") == result.model_dump(mode="python", by_alias=True)

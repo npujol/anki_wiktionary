@@ -4,7 +4,7 @@ from typing import Any, Callable, Optional, Self
 from deep_translator import GoogleTranslator
 from pydantic import BaseModel, Field, ValidationError, computed_field, model_validator
 
-from app.html_processors.html_to_text import extract_ordered_text
+from app.html_processors import extract_ordered_text
 
 logger = logging.getLogger(name=__name__)
 
