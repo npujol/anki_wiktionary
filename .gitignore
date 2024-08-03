@@ -140,3 +140,4 @@ Deutsch
 anki_notes.txt
 /result
 *.env
+lcov.info

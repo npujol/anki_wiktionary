@@ -26,6 +26,9 @@ ruff = "*"
 isort = "*"
 pytest-insta = "*"
 pytest-vcr = "*"
+pytest-xdist = "^3.6.1"
+pytest-cov = "^5.0.0"
+pytest-watch = "^4.2.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -40,14 +43,6 @@ extend-exclude = '''
   | tests/fixtures
 )/
 '''
-
-[tool.pytest]
-python_files = ["tests.py", "test_*.py", "*_tests.py"]
-testpaths = ["tests"] # Specify the directory where your tests are located
-addopts = [
-  "-s",
-  "-v",
-] # Additional options for pytest, such as -s for capturing stdout and -v for verbose output
 
 [tool.ruff]
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
