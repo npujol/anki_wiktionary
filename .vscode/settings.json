@@ -21,8 +21,10 @@
         "Deutsch",
         "duden",
         "Duden",
+        "extbot",
         "firefox",
         "gtts",
+        "jobqueue",
         "levelname",
         "mwparserfromhell",
         "ollama",
@@ -34,6 +36,7 @@
         "Verben",
         "wikicode",
         "Wikicode",
+        "wikilink",
         "Wikilink",
         "wikitext",
         "wiktionary"
@@ -46,5 +49,11 @@
         "."
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }
