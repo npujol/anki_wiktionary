@@ -135,14 +135,13 @@ interactions:
         \  \" >\n                <a class=\"trickle__link\" href=\"/woerterbuch\"
         \ >\n                          W\xF6rterbuch      </a>\n              </nav><nav
         class=\"trickle trickle--highlighted   \" >\n                <a class=\"trickle__link\"
-        href=\"https://angebot.mentor.duden.de/premium_dir/?utm_source=duden_de&amp;utm_medium=premium_int&amp;utm_campaign=topnavi&amp;utm_content=duden-mentor-textpruefung\"
-        \ >\n                  <span class=\"trickle__link-glyph\">\u24C2\uFE0E</span>\n
-        \                         Textpr\xFCfung      </a>\n              </nav><nav
+        href=\"https://mentor.duden.de/?utm_source=duden_de&amp;utm_medium=leadgen_int&amp;utm_campaign=topnavi&amp;utm_content=textpruefung\"
+        \ >\n                          Textpr\xFCfung      </a>\n              </nav><nav
         class=\"trickle  trickle--parent \" >\n                <a class=\"trickle__link\"
-        href=\"/service\"  >\n                  <span class=\"trickle__link-glyph\">\U0001F50D</span>\n
-        \                         Alle Angebote      </a>\n        \n                  <ul
-        class=\"trickle__children\" tabindex=\"0\">\n                      <li class=\"trickle__child\">\n
-        \             <a class=\"trickle__child-link \" href=\"https://mentor.duden.de/?utm_source=duden_de&amp;utm_medium=premium_int&amp;utm_campaign=topnavi_service&amp;utm_content=duden-mentor-textpruefung\"
+        href=\"/service\"  >\n                          Alle Angebote      </a>\n
+        \       \n                  <ul class=\"trickle__children\" tabindex=\"0\">\n
+        \                     <li class=\"trickle__child\">\n              <a class=\"trickle__child-link
+        \" href=\"https://mentor.duden.de/?utm_source=duden_de&amp;utm_medium=premium_int&amp;utm_campaign=topnavi_service&amp;utm_content=duden-mentor-textpruefung\"
         \ target=\"_blank\" title=\"Duden-Mentor\">\n                Duden-Mentor-Textpr\xFCfung
         \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
         \             <a class=\"trickle__child-link \" href=\"https://lp.duden.de/pur/?utm_source=duden_de&amp;utm_medium=pur_int&amp;utm_campaign=werbefreiheit_hauptnavi\"
@@ -186,11 +185,8 @@ interactions:
         href=\"/ueber_duden/verlagsgeschichte\" >\n                Verlagsgeschichte
         \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
         \             <a class=\"trickle__child-link \" href=\"/programm\" >\n                Verlagsprogramm
-        \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
-        \             <a class=\"trickle__child-link \" href=\"/form/license-request\"
-        >\n                Rechte und Lizenzen              </a>\n            </li>\n
-        \                   </ul>\n                  </nav><nav class=\"trickle   \"
-        >\n                <a class=\"trickle__link\" href=\"https://shop.duden.de?utm_source=duden_de&amp;utm_medium=navigation&amp;utm_campaign=default&amp;utm_content=text\"
+        \             </a>\n            </li>\n                    </ul>\n                  </nav><nav
+        class=\"trickle   \" >\n                <a class=\"trickle__link\" href=\"https://shop.duden.de/?campaignCode=do-hauptnavigation\"
         \ target=\"_blank\" >\n                          Shop      </a>\n              </nav><nav
         class=\"trickle trickle--end  trickle--parent \" >\n                <a class=\"trickle__link\"
         href=\"/\"  title=\"Mein Duden\" title=\"Mein Duden\" aria-label=\"Mein Duden\">\n
@@ -244,11 +240,10 @@ interactions:
         \                                       W\xF6rterbuch\n                    <span
         class=\"listview__arrow\">\u25BB</span>\n                  </a>\n                              </div>\n
         \                     \n                                      <div class=\"listview__item
-        \">\n                                  <a class=\"listview__link\" href=\"https://angebot.mentor.duden.de/premium_dir/?utm_source=duden_de&amp;utm_medium=premium_int&amp;utm_campaign=topnavi&amp;utm_content=duden-mentor-textpruefung\">Textpr\xFCfung</a>\n
+        \">\n                                  <a class=\"listview__link\" href=\"https://mentor.duden.de/?utm_source=duden_de&amp;utm_medium=leadgen_int&amp;utm_campaign=topnavi&amp;utm_content=textpruefung\">Textpr\xFCfung</a>\n
         \                             </div>\n                      \n                                      <div
         class=\"listview__item \">\n                                  <a class=\"listview__link
-        listview__link--forward\" href=\"#listview-alle-angebote\">\n                                          <span
-        class=\"listview__glyph\">\U0001F50D</span>\n                                        Alle
+        listview__link--forward\" href=\"#listview-alle-angebote\">\n                                        Alle
         Angebote\n                    <span class=\"listview__arrow\">\u25BB</span>\n
         \                 </a>\n                              </div>\n                      \n
         \                                     <div class=\"listview__item \">\n                                  <a
@@ -261,7 +256,7 @@ interactions:
         uns\n                    <span class=\"listview__arrow\">\u25BB</span>\n                  </a>\n
         \                             </div>\n                      \n                                      <div
         class=\"listview__item \">\n                                  <a class=\"listview__link\"
-        href=\"https://shop.duden.de?utm_source=duden_de&amp;utm_medium=navigation&amp;utm_campaign=default&amp;utm_content=text\">Shop</a>\n
+        href=\"https://shop.duden.de/?campaignCode=do-hauptnavigation\">Shop</a>\n
         \                             </div>\n                                        </nav>
         \   <nav class=\"listview__view listview__view--child\" id=\"listview-mein-duden\">\n
         \             <header class=\"listview__header\">\n          <a class=\"listview__link
@@ -307,11 +302,10 @@ interactions:
         \   <nav class=\"listview__view listview__view--child\" id=\"listview-alle-angebote\">\n
         \             <header class=\"listview__header\">\n          <a class=\"listview__link
         listview__link--back\" href=\"#listview-root\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
-        \           <span>\n                              <span class=\"listview__glyph\">\U0001F50D</span>\n
-        \                           Alle Angebote\n            </span>\n          </a>\n
-        \       </header>\n                                    \n                                      <div
-        class=\"listview__item \">\n                                  <a class=\"listview__link
-        listview__link--forward\" href=\"#listview-duden-mentor-textprfung--3\">\n
+        \           <span>\n                            Alle Angebote\n            </span>\n
+        \         </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link listview__link--forward\" href=\"#listview-duden-mentor-textprfung--3\">\n
         \                                       Duden-Mentor-Textpr\xFCfung\n                    <span
         class=\"listview__arrow\">\u25BB</span>\n                  </a>\n                              </div>\n
         \                     \n                                      <div class=\"listview__item
@@ -409,12 +403,10 @@ interactions:
         \                             </div>\n                      \n                                      <div
         class=\"listview__item \">\n                                  <a class=\"listview__link\"
         href=\"/programm\">Verlagsprogramm</a>\n                              </div>\n
-        \                     \n                                      <div class=\"listview__item
-        \">\n                                  <a class=\"listview__link\" href=\"/form/license-request\">Rechte
-        und Lizenzen</a>\n                              </div>\n                                        </nav>
-        \   <nav class=\"listview__view listview__view--child\" id=\"listview-dudenredaktion\">\n
-        \             <header class=\"listview__header\">\n          <a class=\"listview__link
-        listview__link--back\" href=\"#listview-ber-uns\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \                                       </nav>    <nav class=\"listview__view
+        listview__view--child\" id=\"listview-dudenredaktion\">\n              <header
+        class=\"listview__header\">\n          <a class=\"listview__link listview__link--back\"
+        href=\"#listview-ber-uns\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
         \           <span>\n                            Dudenredaktion\n            </span>\n
         \         </a>\n        </header>\n                                    \n
         \                                     <div class=\"listview__item \">\n                                  <a
@@ -469,15 +461,15 @@ interactions:
         class=\"internal-banner-ad\">\n\n\n    \n\n\n    <img src=\"https://cdn.duden.de/public_files/2024-02/KI-Mentor%20Werbung.jpg\"
         width=\"901\" height=\"901\" alt=\"Mentor KI Banner\" loading=\"lazy\" />\n\n\n</a>\n\n\n\n\n\n\n<section
         class=\"essay  essay--compact\" >\n      <div class=\"essay__intro\"></div>\n
-        \ \n  <a href=\"https://shop.duden.de/?utm_source=duden_de&amp;utm_medium=sidebanner&amp;utm_campaign=default&amp;utm_content=text\"
-        >\n    \n  </a>\n\n  \n  <h2 class=\"essay__title \">\n    <a href=\"https://shop.duden.de/?utm_source=duden_de&amp;utm_medium=sidebanner&amp;utm_campaign=default&amp;utm_content=text\"
+        \ \n  <a href=\"https://shop.duden.de/?campaignCode=do-teaser\" >\n    \n
+        \ </a>\n\n  \n  <h2 class=\"essay__title \">\n    <a href=\"https://shop.duden.de/?campaignCode=do-teaser\"
         \ aria-label=\"\"></a>\n  </h2>\n  \n  \n\n\n  Die Duden-B\xFCcherwelt\n&nbsp;\n
         \ <footer class=\"essay__bottom\">\n          \n<nav class=\"more   \">\n
-        \ <a href=\"https://shop.duden.de/?utm_source=duden_de&amp;utm_medium=sidebanner&amp;utm_campaign=default&amp;utm_content=text\"
-        class=\"more__link\"  >\n    <span class=\"more__arrow\" aria-label=\"Pfeil
-        nach links\">\u2192</span> <span class=\"more__text\">Jetzt entdecken </span>\n
-        \ </a>\n</nav>\n  \n  </footer>\n</section>\n\n\n\n\n\n\n<section class=\"essay
-        \ essay--compact\" >\n      <div class=\"essay__intro\"></div>\n  \n  <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
+        \ <a href=\"https://shop.duden.de/?campaignCode=do-teaser\" class=\"more__link\"
+        \ >\n    <span class=\"more__arrow\" aria-label=\"Pfeil nach links\">\u2192</span>
+        <span class=\"more__text\">Jetzt entdecken </span>\n  </a>\n</nav>\n  \n  </footer>\n</section>\n\n\n\n\n\n\n<section
+        class=\"essay  essay--compact\" >\n      <div class=\"essay__intro\"></div>\n
+        \ \n  <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
         >\n    \n  </a>\n\n  \n  <h2 class=\"essay__title \">\n    <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
         \ aria-label=\"\"></a>\n  </h2>\n  \n  \n\n\n  Noch Fragen?\n  <footer class=\"essay__bottom\">\n
         \         \n<nav class=\"more   \">\n  <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
@@ -548,26 +540,26 @@ interactions:
         'thumbnails-a',\r\n    container: 'taboola-below-article-thumbnails',\r\n
         \   placement: 'Below Article Thumbnails',\r\n    target_type: 'mix'\r\n  });\r\n</script>\n\n
         \ </div>\n  <div  id=\"block-numero-lexemleaderboardunten\">\n    \n    \n\n\n
-        \ \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"nanafanamikafali\">\n
-        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.nanafanamikafali%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.nanafanamikafali%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.nanafanamikafali__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
-        />\n      <header class=\"nanafanamikafali__label\">Anzeige</header>\n        <span
-        class=\"tile__loader\"></span>\n    <div class=\"nanafanamikafali__content\">\n\n\n
+        \ \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"nanananafelikana\">\n
+        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.nanananafelikana%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.nanananafelikana%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.nanananafelikana__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"nanananafelikana__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"nanananafelikana__content\">\n\n\n
         \ <div id=\"div-gpt-ad-1407836052110-0\"></div>\n</div>\n      <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
         \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
         class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
         alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
         aktivieren</a>\n  </aside>\n</div>\n\n  </div>\n  <div  id=\"block-numero-leaderboard2ndslot\">\n
-        \   \n    \n\n\n  \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"namiminamikafali\">\n
-        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.namiminamikafali%20%7B%0A%20%20%20%20margin%3A%2010px%200%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.namiminamikafali%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
-        />\n      <div class=\"namiminamikafali__content\">\n\n\n  <div id=\"div-gpt-ad-1407836593647-0\"><span
+        \   \n    \n\n\n  \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"nanananafelikana\">\n
+        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.nanananafelikana%20%7B%0A%20%20%20%20margin%3A%2010px%200%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.nanananafelikana%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <div class=\"nanananafelikana__content\">\n\n\n  <div id=\"div-gpt-ad-1407836593647-0\"><span
         id=\"Leaderboard_2ter_Slot\"></span></div></div>\n  </aside>\n</div>\n\n  </div>\n\n\n
         \     </main>\n            <div class=\"tabloid__wide-column\">\n      \n
         \   </div>\n          \n      <div class=\"tabloid__wide-top\">\n        <div
         id=\"block-numero-dudende-d-970x250-1billboard\">\n  \n    \n      \n\n\n
-        \ \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"nakananamikafali\">\n
-        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.nakananamikafali%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.nakananamikafali%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.nakananamikafali__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
-        />\n      <header class=\"nakananamikafali__label\">Anzeige</header>\n        <span
-        class=\"tile__loader\"></span>\n    <div class=\"nakananamikafali__content\">\n\n\n
+        \ \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"nafefenafelikana\">\n
+        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.nafefenafelikana%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.nafefenafelikana%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.nafefenafelikana__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"nafefenafelikana__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"nafefenafelikana__content\">\n\n\n
         \ <div id=\"div-gpt-ad-1407836285982-0\"><span id=\"Duden.de_d_970x250_1\"></span></div>\n</div>\n
         \     <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
         \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
@@ -578,8 +570,9 @@ interactions:
         \                 \n\n\n<div class=\"seclet  seclet--wide\"  id=\"block-numero-footer-menu-2\">\n
         \ \n      <div class=\"seclet__title\" >Duden</div>\n    \n  \n\n<ul class=\"link-list\">\n
         \     <li class=\"link-list__item\">\n      <a class=\"link-list__link \"
-        href=\"https://shop.duden.de/\" >Shop</a>\n    </li>\n      <li class=\"link-list__item\">\n
-        \     <a class=\"link-list__link \" href=\"/Presse-Neuigkeiten\"  title=\"Pressemitteilungen\">Presse</a>\n
+        href=\"https://shop.duden.de/?campaignCode=do-footernavigation\" >Shop</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/Presse-Neuigkeiten\"  title=\"Pressemitteilungen\">Presse</a>\n
         \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
         \" href=\"/handel\" >Handel</a>\n    </li>\n      <li class=\"link-list__item\">\n
         \     <a class=\"link-list__link \" href=\"/Stellenausschreibungen\"  title=\"Stellenausschreibungen\">Stellen</a>\n
@@ -589,7 +582,9 @@ interactions:
         href=\"https://www.duden-institute.de/\"  target=\"_blank\" title=\"Duden
         Institute f\xFCr Lerntherapie\">Duden Institute</a>\n    </li>\n      <li
         class=\"link-list__item\">\n      <a class=\"link-list__link \" href=\"https://www.cornelsen.de/\"
-        >Cornelsen Verlag</a>\n    </li>\n  </ul>\n\n</div>\n\n\n\n<div class=\"seclet
+        >Cornelsen Verlag</a>\n    </li>\n      <li class=\"link-list__item\">\n      <a
+        class=\"link-list__link \" href=\"https://www.duden.de/form/license-request\"
+        >Rechte und Lizenzen</a>\n    </li>\n  </ul>\n\n</div>\n\n\n\n<div class=\"seclet
         \ seclet--wide\"  id=\"block-numero-wissen\">\n  \n      <div class=\"seclet__title\"
         >Wissen</div>\n    \n  \n\n<ul class=\"link-list\">\n      <li class=\"link-list__item\">\n
         \     <a class=\"link-list__link \" href=\"/woerterbuch\" >W\xF6rterbuch</a>\n
@@ -606,10 +601,9 @@ interactions:
         \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
         \" href=\"https://www.duden.de/sprachwissen/inhaltsuebersicht\" >Sprachwissen</a>\n
         \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
-        \" href=\"/wort-des-tages\" >Wort des Tages</a>\n    </li>\n      <li class=\"link-list__item\">\n
-        \     <a class=\"link-list__link \" href=\"/newsletter\" >Newsletter</a>\n
-        \   </li>\n  </ul>\n\n</div>\n\n\n\n<div class=\"seclet  seclet--wide\"  id=\"block-numero-footer-menu-1\">\n
-        \ \n      <div class=\"seclet__title\" >Hilfe</div>\n    \n  \n\n<ul class=\"link-list\">\n
+        \" href=\"/newsletter\" >Newsletter</a>\n    </li>\n  </ul>\n\n</div>\n\n\n\n<div
+        class=\"seclet  seclet--wide\"  id=\"block-numero-footer-menu-1\">\n  \n      <div
+        class=\"seclet__title\" >Hilfe</div>\n    \n  \n\n<ul class=\"link-list\">\n
         \     <li class=\"link-list__item\">\n      <a class=\"link-list__link \"
         href=\"/kontakt\"  title=\"Kontakt\">Kontakt</a>\n    </li>\n      <li class=\"link-list__item\">\n
         \     <a class=\"link-list__link \" href=\"/Sprachberatung-0\"  title=\"Duden-Sprachberatung\">Sprachberatung</a>\n
@@ -668,8 +662,8 @@ interactions:
         \   </div>\n  </div>\n</div>\n\n\n\n\n<aside class=\"eclipse \" id=\"numero-antiadblocker\"
         tabindex=\"0\"  style=\"display: block !important\">\n  <a class=\"eclipse__end\"
         href=\"#close-numero-antiadblocker\">\u274C</a>\n  \n    \n      <script type=\"text/javascript\"
-        src=\"/aab/assets/js/506698893.js?v=1.0.0\"></script>\n<link rel=\"stylesheet\"
-        href=\"/aab/assets/css/2129770936.css?v=1.0.0\">\n\n<div class=\"ads-box\"
+        src=\"/aab/assets/js/577195341.js?v=1.0.0\"></script>\n<link rel=\"stylesheet\"
+        href=\"/aab/assets/css/201830171.css?v=1.0.0\">\n\n<div class=\"ads-box\"
         style=\"position:fixed;top:0;left:0;\" aria-hidden=\"true\">\n  &nbsp;\n</div>\n<div
         id=\"aab-overlay\">\n  <div id=\"aab-container\">\n    <div id=\"aab-left\">\n
         \     <div class=\"title\">Danke, dass Sie Duden online nutzen!</div>\n      <div
@@ -703,13 +697,13 @@ interactions:
       Content-language:
       - de
       Date:
-      - Mon, 01 Jul 2024 21:22:37 GMT
+      - Sat, 03 Aug 2024 13:35:33 GMT
       ETag:
-      - W/"1719868957"
+      - W/"1722692133"
       Expires:
       - Sun, 19 Nov 1978 05:00:00 GMT
       Last-Modified:
-      - Mon, 01 Jul 2024 21:22:37 GMT
+      - Sat, 03 Aug 2024 13:35:33 GMT
       Server:
       - nginx/1.14.0 (Ubuntu)
       Transfer-Encoding:
