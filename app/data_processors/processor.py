@@ -35,7 +35,7 @@ class NoteDataProcessor:
 
     # TODO: Check if the dict info is complete.
     def get_anki_note(
-        self, word: str, processor_name: Optional[str] = "wiktionary"
+        self, word: str, processor_name: Optional[str] = None
     ) -> CustomNote | None:
         content: dict[str, Any] = {}
         processor: (
