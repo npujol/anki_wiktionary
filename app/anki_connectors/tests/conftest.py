@@ -1,9 +1,30 @@
-from typing import Any
+import re
+from typing import Any, Callable
 
 import pytest
+from requests import Request
 
 from app.anki_connectors.anki_local_connector import AnkiLocalConnector
+from app.anki_connectors.anki_web_connector import AnkiWebConnector
+from app.private_config import anki_password, anki_username
 from app.serializers import CustomNote, Note
+
+
+def clean_request_body() -> Callable[..., Any]:
+    def before_record_request(request: Request) -> Request:
+        request.body = b"{}"  # type: ignore
+        current_uri: str = request.uri  # type: ignore
+        request.uri = re.sub(pattern=r"\d", repl="1", string=current_uri)  # type: ignore
+        return request
+
+    return before_record_request
+
+
+@pytest.fixture(scope="module")
+def vcr_config() -> dict[str, Callable[..., Any]]:
+    return {
+        "before_record_request": clean_request_body(),
+    }
 
 
 @pytest.fixture()
@@ -62,6 +83,11 @@ def note_obj(note_data: dict[str, Any]) -> Note:
 @pytest.fixture()
 def anki_local_connector() -> AnkiLocalConnector:
     return AnkiLocalConnector()
+
+
+@pytest.fixture(scope="function")
+def anki_web_connector() -> AnkiWebConnector:
+    return AnkiWebConnector(username=anki_username, password=anki_password)
 
 
 @pytest.fixture()

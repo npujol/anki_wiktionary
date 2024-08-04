@@ -143,8 +143,10 @@ class AnkiWebConnector:
             if f == "audio":
                 audio_file_xpath = f"/html/body/div/main/form/div[{k}]/div/div"
                 continue
+
             if v is None:
                 continue
+
             field_div: Any = self.driver.find_element(
                 by="xpath", value=f"/html/body/div/main/form/div[{k}]/div/div"
             )
@@ -164,5 +166,4 @@ class AnkiWebConnector:
         add_button: Any = self.driver.find_element(
             by="xpath", value="/html/body/div/main/form/button"
         )
-
         add_button.click()
