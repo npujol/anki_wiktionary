@@ -5,8 +5,11 @@ from pathlib import Path
 from typing import Any
 
 from wiktionary_de_parser import WiktionaryParser  # type: ignore
-from wiktionary_de_parser.models import WiktionaryPage, WiktionaryPageEntry
-from wiktionary_de_parser.parser import Parser
+from wiktionary_de_parser.models import (  # type: ignore
+    WiktionaryPage,
+    WiktionaryPageEntry,
+)
+from wiktionary_de_parser.parser import Parser  # type: ignore
 
 from app.parsers.models import CustomParsedWiktionaryPageEntry
 
