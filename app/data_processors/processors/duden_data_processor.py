@@ -1,13 +1,13 @@
 import logging
 from typing import Any
 
-import duden
-from duden.word import DudenWord
+import duden  # type: ignore
+from duden.word import DudenWord  # type: ignore
 
 from app.parsers.duden_parser import CustomDudenParser
 from app.serializers import CustomFields
 
-logger = logging.getLogger(name=__name__)
+logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 # https://github.com/radomirbosak/duden
@@ -27,13 +27,16 @@ class DudenDataProcessor:
         Returns:
             dict[str, Any]: A dictionary containing the fetched data.
         """
-        content = duden.get(word=word)
+        content: None | DudenWord = duden.get(word=word)  # type: ignore
         if not content:
+            logger.error(msg=f"Could not fetch data for word '{word}' using Duden.")
             return {
                 "full_word": word,
             }
 
-        content_dict = self._extract_from_content(word=word, content=content)
+        content_dict: dict[str, Any] = self._extract_from_content(
+            word=word, content=content
+        )
         return content_dict
 
     def _extract_from_content(self, word: str, content: DudenWord) -> dict[str, Any]:
