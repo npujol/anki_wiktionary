@@ -134,7 +134,9 @@ async def get_anki_note_data(word: str) -> CustomNote | None:
         return add_audio(note=note)
 
 
-async def save_anki_note_to_list(word: str) -> None:
+async def save_anki_note_to_list(
+    word: str, file_path: Path | str = anki_note_file_path
+) -> bool:
     """
     Asynchronous function to save an Anki note to a list.
 
@@ -142,19 +144,29 @@ async def save_anki_note_to_list(word: str) -> None:
         word (str): The word to be saved as a note.
 
     Returns:
-        None
+        bool: True if the Anki note is saved successfully, False otherwise.
     """
-    with open(file=anki_note_file_path, mode="a") as file:
-        file.write(f"{word}\n")
-    logger.info(msg=f"Anki note created: {datetime.now().isoformat()}: {word}")
+
+    is_successful = False
+
+    try:
+        with open(file=file_path, mode="a") as file:
+            file.write(f"{word}\n")
+        logger.info(msg=f"Anki note created: {datetime.now().isoformat()}: {word}")
+
+        is_successful = True
+    except Exception as e:
+        logger.exception(msg=f"Anki note could not be created, due to {e}.")
+    return is_successful
 
 
-def generate_notes() -> bool:
+def generate_notes(notes_path: Path | str = anki_note_file_path) -> bool:
     """
     A function to generate notes from a file and write them back to the file.
     """
+
     try:
-        with open(file=anki_note_file_path, mode="r") as file:
+        with open(file=notes_path, mode="r") as file:
             words: list[str] = file.readlines()
         for word in set(words):
             logger.info(msg=f"Generating Anki note for {word}")
@@ -164,7 +176,7 @@ def generate_notes() -> bool:
             except Exception as e:
                 logger.exception(msg=f"Anki notes, due to {e}.")
                 continue
-        with open(file=anki_note_file_path, mode="w") as file:
+        with open(file=notes_path, mode="w") as file:
             words = file.truncate()  # type: ignore
     except Exception as e:
         logger.error(msg=f"Anki notes, due to {e}.")
@@ -225,7 +237,7 @@ async def send_card_using_anki_web(
         )
     )
     web_anki_connector.start()
-    is_successful = web_anki_connector.send_card(
+    is_successful: bool = web_anki_connector.send_card(
         custom_note=note,
         tags=[
             deck_name,

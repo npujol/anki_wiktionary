@@ -1,8 +1,16 @@
-from typing import Any
+from typing import Any, Callable
 
 import pytest
 
+from app.helpers.flatten_and_stringify import clean_request_body
 from app.serializers import CustomNote, Note
+
+
+@pytest.fixture(scope="module")
+def vcr_config() -> dict[str, Callable[..., Any]]:
+    return {
+        "before_record_request": clean_request_body(),
+    }
 
 
 @pytest.fixture()
