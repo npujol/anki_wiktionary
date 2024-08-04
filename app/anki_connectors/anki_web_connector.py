@@ -1,4 +1,5 @@
 import traceback
+from typing import Any
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -7,6 +8,7 @@ from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+from app.anki_connectors.errors import BrowserNotFoundError
 from app.private_config import browser_binary_location, browser_driver_binary
 from app.serializers import CustomNote
 
@@ -14,11 +16,11 @@ TIMEOUT = 150
 
 
 class AnkiWebConnector:
-    login_url = "https://ankiweb.net/account/login"
+    login_url: str = "https://ankiweb.net/account/login"
 
     def __init__(self, username: str, password: str) -> None:
-        self.username = username
-        self.password = password
+        self.username: str = username
+        self.password: str = password
 
     def start(self) -> None:
         """Start the browser with the given credentials"""
@@ -27,13 +29,15 @@ class AnkiWebConnector:
         service = Service(executable_path=browser_driver_binary)
         # Set up browser options
         options = webdriver.FirefoxOptions()
-        options.add_argument(argument="--headless")  # Run in headless mode
+        options.add_argument(  # type: ignore
+            argument="--headless"
+        )  # Run in headless mode
         if browser_binary_location:
             options.binary_location = browser_binary_location
         # Start the browser
         self.driver = webdriver.Firefox(service=service, options=options)
-        if self.driver is None:
-            raise Exception("Failed to start the browser")
+        if self.driver is None:  # type: ignore
+            raise BrowserNotFoundError("Failed to start the browser")
 
         self._login_into_anki(username=self.username, password=self.password)
 
@@ -76,11 +80,11 @@ class AnkiWebConnector:
                     locator=(By.XPATH, '//input[@autocomplete="username"]')
                 )
             )
-            usr_box = self.driver.find_element(
+            usr_box: Any = self.driver.find_element(
                 by="xpath", value='//input[@autocomplete="username"]'
             )
             usr_box.send_keys(username)
-            pass_box = self.driver.find_element(
+            pass_box: Any = self.driver.find_element(
                 by="xpath", value='//input[@autocomplete="current-password"]'
             )
             pass_box.send_keys(password)
@@ -91,7 +95,7 @@ class AnkiWebConnector:
 
     def _select_card_type(self, card_type: str = "Basic_") -> None:
         wait = WebDriverWait(driver=self.driver, timeout=TIMEOUT)
-        input_element = wait.until(
+        input_element: Any = wait.until(
             method=EC.presence_of_element_located(
                 locator=(By.CSS_SELECTOR, "input.svelte-apvs86")
             )
@@ -121,7 +125,7 @@ class AnkiWebConnector:
 
     def _fill_tags(self, tags: list[str]) -> None:
         if tags:
-            tag_input = self.driver.find_element(
+            tag_input: Any = self.driver.find_element(
                 by="xpath", value="/html/body/div/main/form/div[last()]/div/input"
             )
             for tag in tags:
@@ -129,7 +133,7 @@ class AnkiWebConnector:
                 tag_input.send_keys(",")
 
     def _fill_fields(self, custom_note: CustomNote) -> None:
-        audio_file_xpath = None
+        audio_file_xpath: str | None = None
         if custom_note.fields is None:
             return
 
@@ -141,10 +145,10 @@ class AnkiWebConnector:
                 continue
             if v is None:
                 continue
-            field_div = self.driver.find_element(
+            field_div: Any = self.driver.find_element(
                 by="xpath", value=f"/html/body/div/main/form/div[{k}]/div/div"
             )
-            self.driver.execute_script(
+            self.driver.execute_script(  # type: ignore
                 "arguments[0].innerHTML = arguments[1];",
                 field_div,
                 v,
@@ -157,7 +161,7 @@ class AnkiWebConnector:
             pass
 
     def _click_add_button(self) -> None:
-        add_button = self.driver.find_element(
+        add_button: Any = self.driver.find_element(
             by="xpath", value="/html/body/div/main/form/button"
         )
 
