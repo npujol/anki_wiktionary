@@ -2,7 +2,6 @@ from typing import Any
 
 import pytest
 
-from app.anki_connectors.anki_local_connector import AnkiLocalConnector
 from app.serializers import CustomNote, Note
 
 
@@ -42,7 +41,7 @@ def note_data() -> dict[str, Any]:
 
 
 @pytest.fixture
-def add_note_request(note_data) -> dict[str, Any]:
+def add_note_request(note_data: dict[str, Any]) -> dict[str, Any]:
     return {
         "action": "addNotes",
         "version": 6,
@@ -51,17 +50,12 @@ def add_note_request(note_data) -> dict[str, Any]:
 
 
 @pytest.fixture
-def note_obj(note_data) -> Note:
+def note_obj(note_data: dict[str, Any]) -> Note:
     return Note.model_validate(
         obj=note_data,
         from_attributes=True,
         strict=False,
     )
-
-
-@pytest.fixture()
-def anki_connector() -> AnkiLocalConnector:
-    return AnkiLocalConnector()
 
 
 @pytest.fixture()
@@ -95,7 +89,7 @@ def custom_note_data() -> dict[str, Any]:
 
 
 @pytest.fixture
-def add_custom_note_request(custom_note_data) -> dict[str, Any]:
+def add_custom_note_request(custom_note_data: dict[str, Any]) -> dict[str, Any]:
     return {
         "action": "addNotes",
         "version": 6,
@@ -104,9 +98,9 @@ def add_custom_note_request(custom_note_data) -> dict[str, Any]:
 
 
 @pytest.fixture
-def custom_note_obj(custom_note_data) -> CustomNote:
+def custom_note_obj(custom_note_data: dict[str, Any]) -> CustomNote:
     return CustomNote.model_validate(
-        custom_note_data,
+        obj=custom_note_data,
         from_attributes=True,
         strict=False,
     )

@@ -1,6 +1,5 @@
 import logging
-from collections import namedtuple
-from typing import Any
+from typing import Any, Callable, NamedTuple
 
 from telegram import BotCommand, Update
 from telegram.ext import (
@@ -31,16 +30,14 @@ logging.basicConfig(
 )
 logger: logging.Logger = logging.getLogger(name=__name__)
 
-CommandInfo = namedtuple(
-    typename="CommandInfo",
-    field_names=[
-        "command",
-        "handler",
-        "description",
-    ],
-)
 
-COMMANDS = [
+class CommandInfo(NamedTuple):
+    command: str
+    handler: Callable[..., Any]
+    description: str
+
+
+COMMANDS: list[CommandInfo] = [
     CommandInfo(
         command="w",
         handler=handle_word,
@@ -74,7 +71,7 @@ COMMANDS = [
 ]
 
 
-async def post_init(application: Application) -> None:
+async def post_init(application: Any) -> None:
     """
     Set bot commands after initializing the bot.
 
