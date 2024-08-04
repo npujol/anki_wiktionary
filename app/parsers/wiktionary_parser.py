@@ -1,9 +1,10 @@
 import importlib.util
 import inspect
+from importlib.machinery import ModuleSpec
 from pathlib import Path
 from typing import Any
 
-from wiktionary_de_parser import WiktionaryParser
+from wiktionary_de_parser import WiktionaryParser  # type: ignore
 from wiktionary_de_parser.models import WiktionaryPage, WiktionaryPageEntry
 from wiktionary_de_parser.parser import Parser
 
@@ -11,18 +12,20 @@ from app.parsers.models import CustomParsedWiktionaryPageEntry
 
 
 class CustomWiktionaryParser(WiktionaryParser):
-    def __init__(self, content: dict[str, str], *args, **kwargs) -> None:
+    def __init__(self, content: dict[str, str], *args: Any, **kwargs: Any) -> None:
         super().__init__(*args, **kwargs)
-        new_parsers = self.find_new_parser_classes()
+        new_parsers: list[Any] = self.find_new_parser_classes()
         self.parser_classes = self.parser_classes + new_parsers
-        self.word_types = self._extract_word_types(content=content)
-        self.first_word = self.word_types[0] or None
+        self.word_types: list[CustomParsedWiktionaryPageEntry] = (
+            self._extract_word_types(content=content)
+        )
+        self.first_word: CustomParsedWiktionaryPageEntry = self.word_types[0] or None
 
     @staticmethod
     def find_new_parser_classes() -> list[Any]:
-        path = Path(__file__).parent / "wiktionary"
+        path: Path = Path(__file__).parent / "wiktionary"
         parent_class = Parser
-        classes = []
+        classes: list[Any] = []
 
         for child in path.iterdir():
             if (
@@ -30,18 +33,18 @@ class CustomWiktionaryParser(WiktionaryParser):
                 and child.name.endswith(".py")
                 and child.name != "__init__.py"
             ):
-                module_name = child.stem
-                spec = importlib.util.spec_from_file_location(
+                module_name: str = child.stem
+                spec: ModuleSpec | None = importlib.util.spec_from_file_location(
                     name=module_name, location=child
                 )
 
                 if not spec or not spec.loader:
                     raise Exception(f"Could not load {child}")
 
-                module = importlib.util.module_from_spec(spec=spec)
+                module: Any = importlib.util.module_from_spec(spec=spec)
                 spec.loader.exec_module(module=module)
 
-                for name, obj in inspect.getmembers(object=module):
+                for _, obj in inspect.getmembers(object=module):
                     if (
                         inspect.isclass(object=obj)
                         and issubclass(obj, parent_class)
@@ -59,8 +62,8 @@ class CustomWiktionaryParser(WiktionaryParser):
         """
 
         # Instantiate all subclasses and run them
-        results = {
-            (instance := subclass(wiktionary_entry)).name: instance.run()
+        results: dict[str, Any] = {
+            (instance := subclass(wiktionary_entry)).name: instance.run()  # type: ignore
             for subclass in self.parser_classes
         }
 
@@ -72,11 +75,11 @@ class CustomWiktionaryParser(WiktionaryParser):
     def _extract_word_types(
         self, content: dict[str, Any]
     ) -> list[CustomParsedWiktionaryPageEntry]:
-        word_types = []
+        word_types: list[CustomParsedWiktionaryPageEntry] = []
 
-        page_id = content.get("pageid")
-        name = content.get("title")
-        wikitext = self._get_wikitext(content=content)
+        page_id: int | None = content.get("pageid")
+        name: str | None = content.get("title")
+        wikitext: str | None = self._get_wikitext(content=content)
 
         if not page_id or not name or not wikitext:
             return word_types
@@ -86,8 +89,10 @@ class CustomWiktionaryParser(WiktionaryParser):
             name=name,
             wikitext=wikitext,
         )
-        for entry in self.entries_from_page(page=page):
-            results = self.custom_parse_entry(wiktionary_entry=entry)
+        for entry in self.entries_from_page(page=page):  # type: ignore
+            results: CustomParsedWiktionaryPageEntry = self.custom_parse_entry(
+                wiktionary_entry=entry  # type: ignore
+            )
             word_types.append(results)
 
         return word_types
@@ -104,18 +109,18 @@ class CustomWiktionaryParser(WiktionaryParser):
         return (
             "\n    ".join(
                 f"{k}: {v}"
-                for k, v in self.first_word.flexion.items()
-                if "plural" in k.lower()
+                for k, v in self.first_word.flexion.items()  # type: ignore
+                if "plural" in k.lower()  # type: ignore
             )
-            if self.first_word.flexion and self.first_word.flexion != ""
+            if self.first_word.flexion and self.first_word.flexion != ""  # type: ignore
             else ""
         )
 
     @property
     def characteristics(self) -> str | None:
         return (
-            "\n    ".join(f"{k}: {v}" for k, v in self.first_word.flexion.items())
-            if self.first_word.flexion and self.first_word.flexion != ""
+            "\n    ".join(f"{k}: {v}" for k, v in self.first_word.flexion.items())  # type: ignore
+            if self.first_word.flexion and self.first_word.flexion != ""  # type: ignore
             else ""
         )
 

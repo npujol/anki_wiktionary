@@ -6,7 +6,7 @@ import requests
 from app.parsers.wiktionary_parser import CustomWiktionaryParser
 from app.serializers import CustomFields
 
-logger = logging.getLogger(name=__name__)
+logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 class WiktionaryDataProcessor:
@@ -25,14 +25,14 @@ class WiktionaryDataProcessor:
         Returns:
             dict[str, Any]: A dictionary containing the fetched data.
         """
-        params = {
+        params: dict[str, str] = {
             "action": "parse",
             "page": word,
             "prop": "wikitext",
             "format": "json",
         }
 
-        content = (
+        content: Any = (
             requests.get(
                 url=self.base_url,
                 params=params,
@@ -42,11 +42,16 @@ class WiktionaryDataProcessor:
         )
 
         if not content:
+            logger.error(
+                msg=f"Could not fetch data for word '{word}' using Wiktionary."
+            )
             return {
                 "full_word": word,
             }
 
-        content_dict = self._extract_from_content(word=word, content=content)
+        content_dict: dict[str, Any] = self._extract_from_content(
+            word=word, content=content
+        )
         return content_dict
 
     # TODO Move this to a base class

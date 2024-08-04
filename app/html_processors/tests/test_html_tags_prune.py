@@ -1,11 +1,11 @@
 import pytest
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 from app.html_processors import prune_html_tags
 
 
 @pytest.mark.parametrize(
-    "test_html, expected_html",
+    "test_html, expected_html_raw",
     [
         (
             "<h1>Hello</h1><script>alert('hello')</script>",
@@ -28,12 +28,17 @@ from app.html_processors import prune_html_tags
         ),
     ],
 )
-def test_prune_html_tags(test_html, expected_html) -> None:
+def test_prune_html_tags(
+    test_html: str,
+    expected_html_raw: str,
+) -> None:
     """Test that specified tags are removed from the HTML."""
     html = BeautifulSoup(markup=test_html, features="html.parser")
-    expected_html = BeautifulSoup(markup=expected_html, features="html.parser")
+    expected_html: BeautifulSoup = BeautifulSoup(
+        markup=expected_html_raw, features="html.parser"
+    )
 
-    result_html = prune_html_tags(html=html)
+    result_html: Tag = prune_html_tags(html=html)
 
     assert (
         result_html == expected_html

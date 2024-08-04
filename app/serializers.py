@@ -1,12 +1,12 @@
 import logging
 from typing import Any, Callable, Optional, Self
 
-from deep_translator import GoogleTranslator
+from deep_translator import GoogleTranslator  # type: ignore
 from pydantic import BaseModel, Field, ValidationError, computed_field, model_validator
 
 from app.html_processors import extract_ordered_text
 
-logger = logging.getLogger(name=__name__)
+logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 class Fields(BaseModel):
@@ -146,7 +146,7 @@ class CustomFields(BaseModel):
     @model_validator(mode="before")
     def validate_missing_translations(cls, values: Any) -> Any:
         handler = GoogleTranslator(source="de", target="es")
-        to_translate_map = {
+        to_translate_map: dict[str, str] = {
             "meaning": "meaning_spanish",
             "example1": "example1e",
             "example2": "example2e",
@@ -154,7 +154,7 @@ class CustomFields(BaseModel):
         for original, to_generate in to_translate_map.items():
             original_value = values.get(original, None)
             if not values.get(to_generate, None) and original_value:
-                trans_result = handler.translate(
+                trans_result: str = handler.translate(  # type: ignore
                     text=original_value,
                 )
                 values[to_generate] = trans_result if trans_result else ""
@@ -162,7 +162,7 @@ class CustomFields(BaseModel):
 
     @classmethod
     def model_json_schema_to_generate_fields(cls) -> dict[str, Any]:
-        fields_to_generate = [
+        fields_to_generate: list[str] = [
             "plural",
             "characteristics",
             "ipa",
@@ -182,7 +182,7 @@ class CustomNote(Note):
     def word(cls) -> str:
         word = "default"
         if cls.fields is not None and isinstance(cls.fields, CustomFields):
-            word = cls.fields.full_word
+            word: str = cls.fields.full_word
         if cls.fields is not None and isinstance(cls.fields, BasicFields):
             word = cls.fields.Front
         return word
@@ -215,8 +215,8 @@ class CustomNote(Note):
                 + f"example2e:\n    {self.fields.example2e}\n"
             )
         if isinstance(self.fields, BasicFields):
-            ordered_text = extract_ordered_text(self.fields.Back)
-            msg = (
+            ordered_text: str = extract_ordered_text(raw_html=self.fields.Back)
+            msg: str = (
                 f"Front:\n    {self.fields.Front}\n\n"
                 + f"Back:\n    {ordered_text}\n\n"
             )
@@ -224,7 +224,7 @@ class CustomNote(Note):
         return msg
 
     def import_from_content(
-        self, content: dict[str, Any], fields_class: Callable
+        self, content: dict[str, Any], fields_class: Callable[..., Any]
     ) -> Self | None:
         try:
             self.fields = fields_class(  # type: ignore

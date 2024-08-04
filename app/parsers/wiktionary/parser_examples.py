@@ -1,7 +1,7 @@
-import mwparserfromhell
-from mwparserfromhell.nodes.tag import Tag
-from mwparserfromhell.wikicode import Wikicode
-from wiktionary_de_parser.parser import Parser
+import mwparserfromhell  # type: ignore
+from mwparserfromhell.nodes.tag import Tag  # type: ignore
+from mwparserfromhell.wikicode import Wikicode  # type: ignore
+from wiktionary_de_parser.parser import Parser  # type: ignore
 
 ParseExampleResult = list[str] | None
 
@@ -15,45 +15,47 @@ class ParseExample(Parser):
         Reference: https://de.wiktionary.org/wiki/Hilfe:Beispiele
         """
         found: list[str] = []
-        sentence = ""
-        for node in parsed_paragraph.nodes:
+        sentence: str = ""
+        for node in parsed_paragraph.nodes:  # type: ignore
             if node == ":":
                 continue
             # allow "<ref>"-tags to follow
             if isinstance(node, Tag) and node.tag == "ref":
                 continue
-            if hasattr(node, "value"):
-                if node.value.startswith("["):
-                    sentence += node.value
+            if hasattr(node, "value"):  # type: ignore
+                if node.value.startswith("["):  # type: ignore
+                    sentence += node.value  # type: ignore
                 else:
-                    sentence += node.value
-                    found.append(sentence)
+                    sentence += node.value  # type: ignore
+                    found.append(sentence)  # type: ignore
                     sentence = ""
-            elif hasattr(node, "contents"):
-                sentence += str(node.contents)
+            elif hasattr(node, "contents"):  # type: ignore
+                sentence += str(node.contents)  # type: ignore
 
         if sentence:
-            found.append(sentence)
+            found.append(sentence)  # type: ignore
         if found:
             return found
 
     @classmethod
     def parse(cls, wikitext: str) -> list[str] | None:
-        parsed_paragraph = mwparserfromhell.parse(value=wikitext)
-        result = None
+        parsed_paragraph: Wikicode = mwparserfromhell.parse(value=wikitext)
+        result: list[str] | None = None
         if parsed_paragraph:
-            example = cls.parse_strings(parsed_paragraph=parsed_paragraph)
+            example: list[str] | None = cls.parse_strings(
+                parsed_paragraph=parsed_paragraph
+            )
             if example:
                 result = example
 
         return result
 
     def run(self) -> ParseExampleResult:
-        paragraph = self.find_paragraph(
+        paragraph: str | None = self.find_paragraph(
             heading="Beispiele", wikitext=self.entry.wikitext
         )
         result = None
 
         if paragraph:
-            result = self.parse(wikitext=paragraph)
+            result: list[str] | None = self.parse(wikitext=paragraph)
         return result

@@ -1,6 +1,6 @@
 from bs4 import Tag
 
-TAGS_TO_REMOVE = ["script", "form", "img", "svg", "path", "button"]
+TAGS_TO_REMOVE: list[str] = ["script", "form", "img", "svg", "path", "button"]
 
 
 def prune_html_tags(html: Tag, tags_to_remove: list[str] = TAGS_TO_REMOVE) -> Tag:

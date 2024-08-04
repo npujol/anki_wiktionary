@@ -1,1 +1,1 @@
-from .processor import NoteDataProcessor  # noqa: F401
+from .processor import NoteDataProcessor  # type: ignore # noqa: F401
