@@ -1,5 +1,5 @@
 import logging
-from typing import Optional
+from typing import Any, Optional
 
 from app.data_processors.processors.duden_data_processor import DudenDataProcessor
 from app.data_processors.processors.ollama_data_processor import OllamaDataProcessor
@@ -9,13 +9,19 @@ from app.data_processors.processors.wiktionary_data_processor import (
 )
 from app.serializers import CustomNote
 
-PROCESSORS_MAP = {
+PROCESSORS_MAP: dict[
+    str,
+    WiktionaryDataProcessor
+    | OllamaDataProcessor
+    | VerbenDataProcessor
+    | DudenDataProcessor,
+] = {
     "wiktionary": WiktionaryDataProcessor(),
     "ollama": OllamaDataProcessor(),
     "verben": VerbenDataProcessor(),
     "duden": DudenDataProcessor(),
 }
-logger = logging.getLogger(name=__name__)
+logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 class NoteDataProcessor:
@@ -24,24 +30,36 @@ class NoteDataProcessor:
         deck_name: str = "Test",
         model_name: str = "Basic_",
     ) -> None:
-        self.deck_name = deck_name
-        self.model_name = model_name
+        self.deck_name: str = deck_name
+        self.model_name: str = model_name
 
     # TODO: Check if the dict info is complete.
     def get_anki_note(
         self, word: str, processor_name: Optional[str] = "wiktionary"
     ) -> CustomNote | None:
-        content = {}
-        processor = None
+        content: dict[str, Any] = {}
+        processor: (
+            WiktionaryDataProcessor
+            | OllamaDataProcessor
+            | VerbenDataProcessor
+            | DudenDataProcessor
+            | None
+        ) = None
         if not processor_name:
             for processor in PROCESSORS_MAP.values():
                 content = processor.get_note_data(word=word)
                 if content:
                     break
         else:
-            processor = PROCESSORS_MAP[processor_name]
+            processor = PROCESSORS_MAP.get(processor_name, None)  # type: ignore
+            if processor is None:
+                return None
             content = processor.get_note_data(word=word)
-        note = CustomNote(
+
+        if processor is None:
+            return None
+
+        initial_note = CustomNote(
             deckName=self.deck_name,
             modelName=self.model_name,
             tags=["test"],
@@ -49,10 +67,10 @@ class NoteDataProcessor:
             video=[],
             picture=[],
         )
-        if processor is not None:
-            note = note.import_from_content(
-                content=content,
-                fields_class=processor.fields_class,
-            )
-
-        return note
+        note: CustomNote | None = initial_note.import_from_content(
+            content=content,
+            fields_class=processor.fields_class,
+        )
+        if note is None:
+            return note
+        return initial_note

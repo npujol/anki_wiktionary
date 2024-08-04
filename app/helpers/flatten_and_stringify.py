@@ -8,7 +8,7 @@ def flatten_and_stringify(content: Union[str, list[Any]], separator: str = "\n")
     flat_list: list[str] = []
 
     while stack:
-        current = stack.pop()
+        current: Any = stack.pop()
         if isinstance(current, str):
             flat_list.append(current)
         elif isinstance(current, list):

@@ -1,3 +1,5 @@
+from typing import Any
+
 import pytest
 
 from app.helpers import flatten_and_stringify
@@ -14,11 +16,15 @@ from app.helpers import flatten_and_stringify
         ([""], " ", ""),
         (["a", []], " ", "a"),
         (["a", ["b", []]], " ", "a b"),
-    ],
+    ],  # type: ignore
 )
-def test_flatten_and_stringify(content, separator, expected_result) -> None:
+def test_flatten_and_stringify(
+    content: list[Any],
+    separator: str,
+    expected_result: str,
+) -> None:
     """Test the flatten_and_stringify function."""
-    result = flatten_and_stringify(content=content, separator=separator)
+    result: str = flatten_and_stringify(content=content, separator=separator)
     assert (
         result == expected_result
     ), f"Result: {result}, Expected: {expected_result} should be equal."

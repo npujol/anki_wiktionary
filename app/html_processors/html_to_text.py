@@ -1,3 +1,5 @@
+from typing import Any
+
 from bs4 import BeautifulSoup
 
 TAGS_MAPPING: dict[str, str] = {
@@ -24,7 +26,7 @@ def extract_ordered_text(raw_html: str) -> str:
 
     """
     soup = BeautifulSoup(markup=raw_html, features="html.parser")
-    texts = []
+    texts: list[Any] = []
     for element in soup.find_all(name=TAGS_MAPPING.keys()):
         if element.name.startswith("h"):
             level = int(element.name[1])  # Get header level

@@ -9,6 +9,6 @@ from app.data_processors.processors.wiktionary_data_processor import (
 
 @pytest.mark.vcr()
 def test_get_wiktionary_data(snapshot: Any) -> None:
-    result = WiktionaryDataProcessor().get_note_data(word="Abend")
+    result: dict[str, Any] = WiktionaryDataProcessor().get_note_data(word="Abend")
     assert result, "Add note failed"
     assert snapshot("json") == result, "The result does not match the snapshot"

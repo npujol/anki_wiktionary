@@ -26,7 +26,7 @@ from app.html_processors import extract_ordered_text
 )
 def test_extract_ordered_text(raw_html: str, expected_text: str) -> None:
     """Test extract_ordered_text function."""
-    result = extract_ordered_text(raw_html=raw_html)
+    result: str = extract_ordered_text(raw_html=raw_html)
     assert (
         result == expected_text
     ), f"Result: {result}, Expected: {expected_text} should be equal."
