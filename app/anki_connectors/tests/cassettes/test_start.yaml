@@ -1,0 +1,341 @@
+interactions:
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session
+  response:
+    body:
+      string: '{"value":{"sessionId":"8cc6cc56-8b2b-4753-ba13-e5b41bde3c33","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"126.0","moz:accessibilityChecks":false,"moz:buildID":"20240509170740","moz:debuggerAddress":"127.0.0.1:46445","moz:geckodriverVersion":"0.34.0","moz:headless":true,"moz:platformVersion":"6.9.2","moz:processID":974366,"moz:profile":"/tmp/rust_mozprofileLuX49l","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","userAgent":"Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101
+        Firefox/126.0"}}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '793'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:01 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/url
+  response:
+    body:
+      string: '{"value":null}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:01 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/element
+  response:
+    body:
+      string: '{"value":{"error":"no such element","message":"Unable to locate element:
+        //input[@autocomplete=\"username\"]","stacktrace":"RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5\nNoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5\ndom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16\n"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '419'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/element
+  response:
+    body:
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"bab9d8d0-2085-439b-98b3-79d9eb691c3d"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '88'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/execute/sync
+  response:
+    body:
+      string: '{"value":true}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/element
+  response:
+    body:
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"bab9d8d0-2085-439b-98b3-79d9eb691c3d"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '88'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/element/bab1d1d1-1111-111b-11b1-11d1eb111c1d/value
+  response:
+    body:
+      string: '{"value":null}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/element
+  response:
+    body:
+      string: '{"value":{"element-6066-11e4-a52e-4f735466cecf":"a54f7836-cfa3-4fad-8bb1-4bf1e12d445b"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '88'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/element/a11f1111-cfa1-1fad-1bb1-1bf1e11d111b/value
+  response:
+    body:
+      string: '{"value":null}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: POST
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/element/a11f1111-cfa1-1fad-1bb1-1bf1e11d111b/value
+  response:
+    body:
+      string: '{"value":null}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: GET
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/url
+  response:
+    body:
+      string: '{"value":"https://ankiweb.net/account/login"}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '45'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - selenium/4.31.1 (python linux)
+    method: GET
+    uri: http://localhost:11111/session/1cc1cc11-1b1b-1111-ba11-e1b11bde1c11/title
+  response:
+    body:
+      string: '{"value":"Login - AnkiWeb"}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '27'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 04 Aug 2024 12:13:02 GMT
+    status:
+      code: 200
+      message: OK
+version: 1
