@@ -3,17 +3,22 @@ from typing import Any
 
 import requests
 
+from app.anki_connectors.errors import CollectionNotFoundError, ResultNotFoundError
 from app.serializers import CustomNote, Note
 
-logger = logging.getLogger(name=__name__)
+logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 class AnkiLocalConnector:
     # Doc for anki-connect: https://foosoft.net/projects/anki-connect/index.html#card-actions
     def __init__(self, server_url: str = "http://127.0.0.1:8765") -> None:
-        self.server_url = server_url
+        self.server_url: str = server_url
 
-    def make_request(self, action, params={}) -> dict[str, Any]:
+    def make_request(
+        self,
+        action: str,
+        params: dict[str, Any] = {},
+    ) -> dict[str, Any]:
         """
         Makes a request to the server with the specified action and parameters.
 
@@ -25,21 +30,29 @@ class AnkiLocalConnector:
         Returns:
             The result of the request.
         """
-        request_data = {"action": action, "params": params, "version": 6}
-        response = requests.post(url=self.server_url, json=request_data).json()
-        if len(response) != 2:
-            msg = f"Response has an unexpected number of fields: {response}"
-            logger.error(msg=msg)
-            raise Exception(msg)
-        if "error" not in response or "result" not in response:
-            msg = f"Response is missing required error or result field: {response}"
-            logger.error(msg=msg)
-            raise Exception(msg)
-        if response.get("error"):
+        request_data: dict[str, Any] = {
+            "action": action,
+            "params": params,
+            "version": 6,
+        }
+        response: dict[str, dict[str, Any]] = requests.post(
+            url=self.server_url, json=request_data
+        ).json()
+
+        if response.get("error") is not None:
             msg = f"Request failed: {response.get('error')}"
             logger.error(msg=msg)
-            raise Exception(msg)
-        return response.get("result")
+            raise CollectionNotFoundError(msg)
+
+        response_result: dict[str, Any] | None = response.get("result")
+        if response_result is None:
+            msg: str = (
+                f"Response does not contain a result field. Response: {response}."
+            )
+            logger.error(msg=msg)
+            raise ResultNotFoundError(msg)
+
+        return response_result
 
     def get_available_decks(self) -> dict[str, Any]:
         """
@@ -81,7 +94,7 @@ class AnkiLocalConnector:
             The result of the make_request method with the "addNote" endpoint
             and the note data.
         """
-        data = note.model_dump(
+        data: dict[str, Any] = note.model_dump(
             mode="python",
             by_alias=True,
             exclude_none=True,
