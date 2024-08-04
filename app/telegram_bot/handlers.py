@@ -1,8 +1,9 @@
 import logging
+from pathlib import Path
+from typing import Any
 
 from telegram import Message, Update
 from telegram.ext import (
-    CallbackContext,
     ContextTypes,
 )
 
@@ -13,8 +14,9 @@ from app.main import (
     send_card_using_anki_web,
 )
 from app.private_config import working_path
+from app.serializers import CustomNote
 
-logger = logging.getLogger(name=__name__)
+logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -25,9 +27,9 @@ async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
-    args = context.args or []
-    word = " ".join(args)
-    message = update.message
+    args: list[str] = context.args or []
+    word: str = " ".join(args)
+    message: Message | None = update.message
     if not message:
         logger.error(msg="No message provided.")
         return
@@ -49,16 +51,16 @@ async def _handle_word(word: str, message: Message) -> None:
         message (Message): The Telegram message object.
     """
     await save_anki_note_to_list(word=word)
-    msg = f"Anki note for '{word}' saved successfully."
+    msg: str = f"Anki note for '{word}' saved successfully."
     logger.info(msg=msg)
     await message.reply_text(text=msg)
-    note = await get_anki_note_data(word=word)
+    note: CustomNote | None = await get_anki_note_data(word=word)
     if not note:
         await message.reply_text(text="Anki note could not be created.")
         return
     await message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = working_path / f"{word}.mp3"
+        filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
         filepath.unlink()
 
@@ -71,14 +73,14 @@ async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
-    args = context.args or []
-    text = " ".join(args)
-    message = update.message
+    args: list[str] = context.args or []
+    text: str = " ".join(args)
+    message: Message | None = update.message
     if not message:
         logger.error(msg="No message provided.")
         return
     if text:
-        filepath = await generate_audio(text=text)
+        filepath: Path = await generate_audio(text=text)
         await message.reply_audio(audio=filepath)
         filepath.unlink()
     else:
@@ -95,7 +97,7 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
-    message = update.message
+    message: Message | None = update.message
     if not message:
         logger.error(msg="No message provided.")
         return
@@ -120,9 +122,9 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
-    args = context.args or []
-    word = " ".join(args)
-    message = update.message
+    args: list[str] = context.args or []
+    word: str = " ".join(args)
+    message: Message | None = update.message
     if not message:
         logger.error(msg="No message provided.")
         return
@@ -132,7 +134,7 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         await message.reply_text(text=msg)
         return
 
-    note = await send_card_using_anki_web(word=word)
+    note: CustomNote | None = await send_card_using_anki_web(word=word)
     if not note:
         msg = "Anki note could not be created."
         logger.error(msg=msg)
@@ -142,7 +144,7 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     logger.info(msg="Anki note created successfully.")
     await message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = working_path / f"{word}.mp3"
+        filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
         filepath.unlink()
 
@@ -150,9 +152,9 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 async def handle_verben_word(
     update: Update, context: ContextTypes.DEFAULT_TYPE
 ) -> None:
-    args = context.args or []
-    word = " ".join(args)
-    message = update.message
+    args: list[str] = context.args or []
+    word: str = " ".join(args)
+    message: Message | None = update.message
     if not message:
         logger.error(msg="No message provided.")
         return
@@ -162,7 +164,7 @@ async def handle_verben_word(
         await message.reply_text(text=msg)
         return
 
-    note = await send_card_using_anki_web(
+    note: CustomNote | None = await send_card_using_anki_web(
         word=word, processor_name="verben", model_name="Basic"
     )
     if not note:
@@ -174,15 +176,15 @@ async def handle_verben_word(
     logger.info(msg="Anki note created successfully.")
     await message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = working_path / f"{word}.mp3"
+        filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
         filepath.unlink()
 
 
 async def handle_duden_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    args = context.args or []
-    word = " ".join(args)
-    message = update.message
+    args: list[str] = context.args or []
+    word: str = " ".join(args)
+    message: Message | None = update.message
     if not message:
         logger.error(msg="No message provided.")
         return
@@ -192,7 +194,7 @@ async def handle_duden_word(update: Update, context: ContextTypes.DEFAULT_TYPE) 
         await message.reply_text(text=msg)
         return
 
-    note = await send_card_using_anki_web(
+    note: CustomNote | None = await send_card_using_anki_web(
         word=word, processor_name="duden", model_name="Basic_"
     )
     if not note:
@@ -204,7 +206,7 @@ async def handle_duden_word(update: Update, context: ContextTypes.DEFAULT_TYPE) 
     logger.info(msg="Anki note created successfully.")
     await message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = working_path / f"{word}.mp3"
+        filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
         filepath.unlink()
 
@@ -222,12 +224,12 @@ async def handle_text_without_command(
     if not update.message:
         logger.error(msg="No message provided.")
         return
-    word = update.message.text
+    word: str | None = update.message.text
     if word:
         await handle_word(update=update, context=context)
 
 
-async def unsupported_message_handle(update: Update, context: CallbackContext) -> None:
+async def unsupported_message_handle(update: Update, *args: Any, **kwargs: Any) -> None:
     """
     Handle unsupported message types.
 
@@ -241,7 +243,9 @@ async def unsupported_message_handle(update: Update, context: CallbackContext) -
         await update.message.reply_text(text=error_text)
 
 
-async def message_handle(update: Update, context: CallbackContext) -> None:
+async def message_handle(
+    update: Update, context: Any, *args: Any, **kwargs: Any
+) -> None:
     """
     Handle messages, defaulting to the /web_word command.
 
@@ -251,13 +255,13 @@ async def message_handle(update: Update, context: CallbackContext) -> None:
     """
     if not update.message:
         return
-    word = update.message.text
+    word: str | None = update.message.text
     if not word:
         await unsupported_message_handle(update=update, context=context)
         return
 
     await update.message.reply_text(text="Using the default command /web_word")
-    note = await send_card_using_anki_web(word=word)
+    note: CustomNote | None = await send_card_using_anki_web(word=word)
     if not note:
         msg = "Anki note could not be created."
         logger.error(msg=msg)
@@ -267,6 +271,6 @@ async def message_handle(update: Update, context: CallbackContext) -> None:
     logger.info(msg="Anki note created successfully.")
     await update.message.reply_text(text=note.pretty_print())
     if note.audio and note.audio[0]:
-        filepath = working_path / f"{word}.mp3"
+        filepath: Path = working_path / f"{word}.mp3"
         await update.message.reply_audio(audio=filepath)
         filepath.unlink()

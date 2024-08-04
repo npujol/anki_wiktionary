@@ -19,6 +19,7 @@
         "Anki",
         "BROWSERDRIVER",
         "caplog",
+        "coro",
         "Deutsch",
         "duden",
         "Duden",
@@ -40,7 +41,8 @@
         "wikilink",
         "Wikilink",
         "wikitext",
-        "wiktionary"
+        "wiktionary",
+        "yomichan"
     ],
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
