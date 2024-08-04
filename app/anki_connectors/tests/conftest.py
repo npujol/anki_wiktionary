@@ -6,7 +6,6 @@ from requests import Request
 
 from app.anki_connectors.anki_local_connector import AnkiLocalConnector
 from app.anki_connectors.anki_web_connector import AnkiWebConnector
-from app.private_config import anki_password, anki_username
 from app.serializers import CustomNote, Note
 
 
@@ -87,7 +86,7 @@ def anki_local_connector() -> AnkiLocalConnector:
 
 @pytest.fixture(scope="function")
 def anki_web_connector() -> AnkiWebConnector:
-    return AnkiWebConnector(username=anki_username, password=anki_password)
+    return AnkiWebConnector(username="username", password="password")
 
 
 @pytest.fixture()
