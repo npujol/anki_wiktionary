@@ -27,6 +27,7 @@ async def handle_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
+    logger.error(msg="Starting handle_word function.")
     args: list[str] = context.args or []
     word: str = " ".join(args)
     message: Message | None = update.message
@@ -62,7 +63,8 @@ async def _handle_word(word: str, message: Message) -> None:
     if note.audio and note.audio[0]:
         filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
-        filepath.unlink()
+        if filepath.exists():
+            filepath.unlink()
 
 
 async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -73,6 +75,8 @@ async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
+    logger.error(msg="Starting handle_audio function.")
+
     args: list[str] = context.args or []
     text: str = " ".join(args)
     message: Message | None = update.message
@@ -82,7 +86,8 @@ async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     if text:
         filepath: Path = await generate_audio(text=text)
         await message.reply_audio(audio=filepath)
-        filepath.unlink()
+        if filepath.exists():
+            filepath.unlink()
     else:
         msg = "Please provide a sentence to create audio."
         logger.info(msg=msg)
@@ -97,6 +102,8 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
+    logger.error(msg="Starting handle_help function.")
+
     message: Message | None = update.message
     if not message:
         logger.error(msg="No message provided.")
@@ -122,6 +129,8 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
+    logger.error(msg="Starting handle_web_word function.")
+
     args: list[str] = context.args or []
     word: str = " ".join(args)
     message: Message | None = update.message
@@ -146,12 +155,14 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     if note.audio and note.audio[0]:
         filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
-        filepath.unlink()
+        if filepath.exists():
+            filepath.unlink()
 
 
 async def handle_verben_word(
     update: Update, context: ContextTypes.DEFAULT_TYPE
 ) -> None:
+    logger.info(msg="Starting handle_verben_word function.")
     args: list[str] = context.args or []
     word: str = " ".join(args)
     message: Message | None = update.message
@@ -178,10 +189,12 @@ async def handle_verben_word(
     if note.audio and note.audio[0]:
         filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
-        filepath.unlink()
+        if filepath.exists():
+            filepath.unlink()
 
 
 async def handle_duden_word(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    logger.info(msg="Starting handle_duden_word function.")
     args: list[str] = context.args or []
     word: str = " ".join(args)
     message: Message | None = update.message
@@ -208,7 +221,8 @@ async def handle_duden_word(update: Update, context: ContextTypes.DEFAULT_TYPE) 
     if note.audio and note.audio[0]:
         filepath: Path = working_path / f"{word}.mp3"
         await message.reply_audio(audio=filepath)
-        filepath.unlink()
+        if filepath.exists():
+            filepath.unlink()
 
 
 async def handle_text_without_command(
@@ -221,6 +235,7 @@ async def handle_text_without_command(
         update (Update): The update object.
         context (ContextTypes.DEFAULT_TYPE): The context object.
     """
+    logger.info(msg="Starting handle_text_without_command function.")
     if not update.message:
         logger.error(msg="No message provided.")
         return
@@ -237,6 +252,7 @@ async def unsupported_message_handle(update: Update, *args: Any, **kwargs: Any) 
         update (Update): The update object.
         context (CallbackContext): The context object.
     """
+    logger.info(msg="Starting unsupported_message_handle function.")
     error_text = "I don't know how to process other inputs. I only work with text."
     logger.error(msg=error_text)
     if update.message:
@@ -253,6 +269,7 @@ async def message_handle(
         update (Update): The update object.
         context (CallbackContext): The context object.
     """
+    logger.info(msg="Starting message_handle function.")
     if not update.message:
         return
     word: str | None = update.message.text
@@ -273,4 +290,5 @@ async def message_handle(
     if note.audio and note.audio[0]:
         filepath: Path = working_path / f"{word}.mp3"
         await update.message.reply_audio(audio=filepath)
-        filepath.unlink()
+        if filepath.exists():
+            filepath.unlink()
