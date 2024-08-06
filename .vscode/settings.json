@@ -60,5 +60,10 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.inlayHints.variableTypes": true
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.exclude": [
+        "typings/",
+        ".direnv/",
+        "typings/ollama/"
+    ]
 }

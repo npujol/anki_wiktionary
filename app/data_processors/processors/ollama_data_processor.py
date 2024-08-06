@@ -2,7 +2,7 @@ import json
 import logging
 from typing import Any, Iterator, Mapping
 
-from ollama import Client
+from ollama import Client  # type: ignore
 
 from app.private_config import ollama_server_url
 from app.serializers import CustomFields
