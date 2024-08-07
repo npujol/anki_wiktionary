@@ -387,7 +387,7 @@ interactions:
       accept-ranges:
       - bytes
       age:
-      - '0'
+      - '1'
       cache-control:
       - private, must-revalidate, max-age=0
       content-disposition:
@@ -397,7 +397,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 07 Aug 2024 20:12:34 GMT
+      - Wed, 07 Aug 2024 21:47:32 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -405,7 +405,7 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-7d54549dbc-j24m5
+      - mw-api-ext.eqiad.main-7d54549dbc-msf4m
       server-timing:
       - cache;desc="pass", host;desc="cp3072"
       set-cookie:
@@ -446,1262 +446,320 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://www.verben.de/?w=Abend
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%1B1%1D+die+Tageszeit+nach+dem+Nachmittag%1C+die+beginnt%1C+wenn+die+Sonne+den+Horizont+erreicht%1C+und+bei+v%C1%B1lliger+Dunkelheit+endet%1B+dem+Abend+geht+der+Tag+voran+und+auf+den+Abend+folgt+die+Nacht%1A++++%1B1%1D++die+Himmelsrichtung+Westen%1A++++%1B1%1D++verschliffene+Begr%C1%BC%C1%1Fungsfloskel+%E1%11%1Eguten+Abend%E1%11%1C%1A++++%1B1%1D++Abschluss%1C+Ende%1C+Schluss+%11f%C1%BCr+Leben%1C+Epochen%1C+langandauernde+Herrschaften+und+%C1%11hnlichem%11%1A++++%1B1%1D++Abendveranstaltung%1B+Abend+mit+heiterem%1C+vielgestaltigem+Programm%1B+Abendempfang
   response:
     body:
-      string: "<!DOCTYPE html>\n<html lang=\"de\">\n<head>\n<title>Definition \u201EAbend\u201C
-        -  Bedeutung, Synonyme, \xDCbersetzung, Grammatik | Netzverb W\xF6rterbuch</title>\n<meta
-        name=\"description\" content=\"Definition Substantiv Abend: die Tageszeit
-        nach dem Nachmittag; die H\u2026 mit Definitionen,  Beschreibungen, Erkl\xE4rungen,
-        Synonymen und Grammatikangaben im W\xF6rterbuch.\"/>\n<meta property=\"og:site_name\"
-        content=\"Netzverb W\xF6rterbuch\">\n<meta name=\"robots\" content=\"noindex,
-        follow\" />\n<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'
-        />\n<meta name=viewport content=\"width=device-width, initial-scale=1.0\">\t\n<meta
-        name=\"HandheldFriendly\" content=\"true\"/>\n<meta name=\"MobileOptimized\"
-        content=\"width\"/><meta name=\"application-name\" content=\"Netzverb W\xF6rterbuch\"
-        />\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n<link
-        rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n<link
-        rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n<link
-        rel=\"manifest\" href=\"/site.webmanifest\">\n<link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\"
-        color=\"#784500\">\n<meta name=\"msapplication-TileColor\" content=\"#784500\">\n<meta
-        name=\"theme-color\" content=\"#784500\" media=\"(prefers-color-scheme: light)\">\n<meta
-        name=\"theme-color\" content=\"#281700\" media=\"(prefers-color-scheme: dark)\"><script
-        type=\"text/javascript\"> const Rahmen = {}; (function() { function istauf(id)
-        { const e = document.getElementById(id); const d = e.currentStyle ? e.currentStyle.display
-        : getComputedStyle(e, null)?.display; return d !== \"none\"; } function display(e)
-        { let t = e.tagName; if(t===\"UL\"||t===\"DIV\") return \"block\"; if(t===\"TD\")
-        return \"table-cell\"; if(t===\"TR\") return \"table-row\"; return \"inline\";
-        } function aufzu(id, auf) { const elements = document.querySelectorAll('[id=\"'
-        + id + '\"]'); elements.forEach(function(e) { aufzuE(e, auf); }); const buttons
-        = document.querySelectorAll('[id=\"' + id + 'Img\"]'); buttons.forEach(function(b)
-        { aufzuB(b, auf); }); } function aufzuE(e, auf) { e.style.display = auf ?
-        display(e) : \"none\"; if (auf && e.onchange) e.onchange(undefined); } function
-        aufzuB(b, auf) { const ba = b.getElementsByClassName(\"rAuf\")[0]; if (ba)
-        ba.style.display = auf ? display(ba) : \"none\"; const bz = b.getElementsByClassName(\"rZu\")[0];
-        if (bz) bz.style.display = auf ? \"none\" : display(bz); } function setHeight(e)
-        { e.style.height = ''; e.style.height = e.scrollHeight + 'px'; } Rahmen.alleaufzu
-        = function(id, k) { const ia = istauf(id); const elements = document.getElementsByClassName(k);
-        for (let i = 0; i < elements.length; i++) { aufzu(elements[i].id, !ia); }
-        }; Rahmen.a = function(e, u) { document.location = u; e.preventDefault();
-        return false; }; Rahmen.auf = function(ids) { if(ids instanceof Array) { for
-        (const id in ids) aufzu(ids[id], true); } else aufzu(ids, true); }; Rahmen.zu
-        = function(ids) { if (Array.isArray(ids)) { for (const id of ids) { aufzu(id,
-        false); } } else { aufzu(ids, false); } }; Rahmen.aufzu = function(ids) {
-        if (Array.isArray(ids)) { const ia = istauf(ids[0]); for (const id of ids)
-        { aufzu(id, !ia); } } else { aufzu(ids, !istauf(ids)); } }; Rahmen.breite
-        = function() { return Math.max(document.documentElement.clientWidth, window.innerWidth
-        || 0); }; Rahmen.resize = function(ev) { setHeight(ev.target); }; Rahmen.size
-        = function(id) { setHeight(document.getElementById(id)); }; }).apply(Rahmen);
-        const Eingabe = {}; (function() { function element(id) { return document.getElementById(id);
-        } function sprung(e,l,s) { let i; const os = l.getElementsByClassName(\"rEinOpt\");
-        let t = -1; for (i = 0; i<os.length; i++) { if(os[i].classList.contains(\"rEinOptAn\"))
-        t=i; } let p = t + s; if(p<0) p=os.length-1; if(p>os.length-1) p=0; for (i
-        = 0; i<os.length; i++) { if(i===t) os[i].classList.remove(\"rEinOptAn\");
-        if(i===p) { os[i].classList.add(\"rEinOptAn\"); } } e.value=os[p].getAttribute(\"data-word\");
-        e.setSelectionRange(0,e.value.length); } this.zeige = function(ide,idl,v)
-        { let o; const e = element(ide); const l = element(idl); let s = 0; const
-        w = e.value; while(l.children.length>0) l.removeChild(l.children[0]); for(let
-        i=0; i<v.length; i++) { if(!v[i]) continue; let w, t; if(v[i] instanceof Array)
-        { if(v[i].length <= 1) continue; w=v[i][0]; t=v[i][1]; } else { w=v[i]; t=v[i];
-        } o = document.createElement(\"div\"); o.onmousedown=function(ev) { Eingabe.uebernahme(ev,ide);
-        }; o.classList.add(\"rEinOpt\"); o.setAttribute(\"data-word\", w); o.innerHTML
-        = t; l.appendChild(o); s++; } if(s<=0) {l.style.display = \"none\"; return;}
-        l.style.width=(l.parentElement.clientWidth)+\"px\"; e.setAttribute(\"w\",w);
-        l.style.display=\"inline\"; }; this.an = function(ide,idl,fnkl) { const e
-        = element(ide); const w = e.value; setTimeout(function() { if(w!==e.value)
-        return; fnkl(ide,idl,w); },50); }; this.aus = function(ide, idl) { const e
-        = element(ide); const l = element(idl); setTimeout(function() { if(document.activeElement
-        === e || document.activeElement === l) return; l.style.display = \"none\";
-        },50); }; this.uebernahme = function(ev,ide) { const e = element(ide); e.value=ev.target.getAttribute(\"data-word\");
-        e.focus(); if(e.form) e.form.submit(); }; this.taste = function(ide, idl,
-        event) { const l = element(idl); const e = element(ide); let keyCode = ('which'
-        in event) ? event.which : event.keyCode; if(keyCode === 40) { sprung(e, l,
-        1); event.preventDefault(); } if(keyCode === 38) { sprung(e, l, -1); event.preventDefault();
-        } if(keyCode === 27) { l.style.display = \"none\"; } }; }).apply(Eingabe);
-        const Hinweis = {}; (function() { this.weg = function(n) { Hinweis.schliessen(n);
-        document.cookie=\"de.netzverb.rahmen.hinweis_\"+n+\"=none\" + \";expires=\"+new
-        Date(new Date().setFullYear(new Date().getFullYear() + 1)).toUTCString() +
-        \";path=/\"; }; this.schliessen = function(n) { const e = document.getElementById(n);
-        e.style.display=\"none\"; }; }).apply(Hinweis);const Ajax = {}; (function()
-        { let kn, kv, kfa; function pr(p, n, v) { if(!n) return p; return (p ? p +
-        \"&\" : \"\") + encodeURIComponent(n) + \"=\" + encodeURIComponent(v); } function
-        prs(f, s) { let i; let p = pr(null, kn, kv); const is = f.getElementsByTagName(\"input\");
-        for(i = 0; i<is.length; i++) if(!is[i].disabled && is[i].name && (is[i].type
-        !== \"submit\" || is[i] === s)) if(is[i].type !== \"radio\" && is[i].type
-        !== \"checkbox\" || is[i].checked) p = pr(p, is[i].name, is[i].value); const
-        bs = f.getElementsByTagName(\"button\"); for(i = 0; i<bs.length; i++) if(!bs[i].disabled
-        && bs[i].name && bs[i].type === \"submit\" && bs[i] === s) p = pr(p, bs[i].name,
-        bs[i].value); const tas = f.getElementsByTagName(\"textarea\"); for(i = 0;
-        i<tas.length; i++) if(!tas[i].disabled && tas[i].name) p = pr(p, tas[i].name,
-        tas[i].value); const ss = f.getElementsByTagName(\"select\"); for(i = 0; i<ss.length;
-        i++) if(!ss[i].disabled && ss[i].name && ss[i].selectedIndex >= 0) p = pr(p,
-        ss[i].name, ss[i].options[ss[i].selectedIndex].value); return p; } this.param
-        = function (p, n, v) { return pr(p, n ,v); }; this.ersetze = function(e, id,
-        h) { return this.submit(e, id, h); }; this.submit = function(e, id, h) { e.preventDefault();
-        let s; let f = e.currentTarget; if(f.tagName !== \"FORM\") { s = f; f = f.form;
-        } const p = prs(f, s); let fa = f.action; if(s && s.formAction) fa = s.formAction;
-        if(kfa) fa = kfa; this.post(fa, p, id, h); kn = null; kv = null; kfa = null;
-        return false; }; this.submit2 = function(f, h) { const p = prs(f); let fa
-        = f.action; this.post2(fa, p, h); kn = null; kv = null; kfa = null; return
-        false; }; this.get = function(u, id, i, h) { const r = new XMLHttpRequest();
-        r.withCredentials = true; r.onload = function() { const d = document.getElementById(id);
-        if(r.status === 200) { if(i) { d.innerHTML = r.responseText; } else { d.outerHTML
-        = r.responseText; } } else { d.innerHTML = r.responseURL + \" (\" + r.status
-        + \": \" + r.statusText + \")\"; } if(h) { h(); } }; r.open(\"GET\", u, true);
-        r.setRequestHeader('X-Requested-With', 'XMLHttpRequest');\t r.send(); return
-        false; }; this.get2 = function(u, h) { const r = new XMLHttpRequest(); r.withCredentials
-        = true; r.onload = function() { if(h) h(r); }; r.open(\"GET\", u, true); r.setRequestHeader('X-Requested-With',
-        'XMLHttpRequest'); r.send(); return false; }; this.post = function(u, p, id,
-        h) { const r = new XMLHttpRequest(); r.withCredentials = true; r.onload =
-        function() { const d= document.getElementById(id); if(r.status === 200) {
-        d.outerHTML = r.responseText; } else { d.innerHTML = r.responseURL + \" (\"
-        + r.status + \": \" + r.statusText + \")\";\t} if(h) h(); }; r.open(\"POST\",
-        u, true); r.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded;
-        charset=UTF-8\"); r.setRequestHeader('X-Requested-With', 'XMLHttpRequest');\t\t
-        r.send(p); return false; }; this.post2 = function(u, p, h) { const r = new
-        XMLHttpRequest(); r.withCredentials = true; r.onload = function() { if(h)
-        h(r); }; r.open(\"POST\", u, true); r.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded;
-        charset=UTF-8\"); r.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        r.send(p); return false; }; this.aktion = function(x) { kn = 'aktion'; kv
-        = x; }; this.klick = function(e) { kn = e.currentTarget.name; kv = e.currentTarget.value;
-        kfa = null; if(e.currentTarget.formAction !== window.location.href) kfa =
-        e.currentTarget.formAction; }; }).apply(Ajax);var Woerterbuch = {}; (function()
-        { this.suchliste = function(ide,idl,w) { var r = new XMLHttpRequest(); r.open(\"GET\",
-        \"/suche/substantive/i/?w=\" + encodeURI(w), true); r.setRequestHeader('X-Requested-With',
-        'XMLHttpRequest'); r.timeout = 500; r.onload = function (e) { if (r.readyState
-        === 4 && r.status === 200) { Eingabe.zeige(ide,idl,JSON.parse(r.responseText));
-        } }; r.send(null); }; }).apply(Woerterbuch);</script><style type=\"text/css\">html
-        {scroll-behavior:smooth;text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100.1%;}body
-        {margin:0;padding:0;font-family:sans-serif;font-weight:400;color:#111111;fill:#111111;font-size:0.91em;line-height:1.25;}body>article
-        {background-color:#eceaea;}body>*>div {clear:both;padding:2px 8px;}@media
-        (min-width:1058px){ body>*>div {width:1042px;margin:0 auto;}}body,body>footer
-        {background-color:#1e1e1e;}body>footer {color:#e0e0e0;font-size:0.9em;}body>footer
-        a {color:#80bfff;}body>footer h1,body>footer h2 {color:#e0e0e0 !important;}body>nav
-        {position:fixed;z-index:9999;font-size:1.2em;width:100%;max-height:100vh;box-shadow:0
-        3px 5px rgba(0,0,0,0.44); color:#aaaaaa;}body>nav a {color:#aaaaaa;}div.rKpfPlz
-        {height:44px;}body>article>div {position:relative;}a {text-decoration:none;color:#12039c;}.rH
-        {font-family:open sans condensed,open sans,sans-serif;}h1,h2,h3,h4,.rH1,.rH2,.rH3,.rH4
-        {margin-top:16px;margin-bottom:12px;font-family:sans-serif;letter-spacing:-1px;font-weight:bold;}h1,h2,.rH1,.rH2
-        {color:#000000;}a h1,a h2,a h3,a h4 {color:#111111 !important;}h1,.rH1 {font-size:1.5em;}h2,.rH2
-        {font-size:1.35em;}h3,.rH3 {font-size:1.2em;}h4,.rH4 {font-size:1.1em;}p,ul,ol,dl
-        {margin:12px 0 16px 0;}p,li {-moz-hyphens:auto;-o-hyphens:auto;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}ul
-        {list-style-type:disc;padding-left:12px;}mark {background-color:#d0d0d0;color:#111111;font-weight:inherit;}input,select,textarea
-        {font-family:sans-serif;font-size:inherit;line-height:inherit;border:solid
-        1px #d0d0d0;outline:none;box-sizing:border-box;border-radius:0;-webkit-border-radius:0px;appearance:none;-moz-appearance:none;-webkit-appearance:none;}select.rKnpf
-        {appearance:menulist-button;-moz-appearance:menulist;-webkit-appearance:menulist;height:29px;}select.rKnpf:invalid
-        {color:#848484;}select.rKnpf:invalid option {color:#ffffff;}input[type='checkbox']
-        {appearance:checkbox;-moz-appearance:checkbox;-webkit-appearance:checkbox;}input[type='radio']
-        {appearance:radio;-moz-appearance:radio;-webkit-appearance:radio;} nav input,nav
-        select,nav textarea {border:none;}.rMrgn {margin:0 10px 10px 0;}input[type=submit],.rKnpf
-        {padding:5px 10px;margin:0 12px 12px 0;background-color:#000000;color:#ffffff;fill:#ffffff;border:none;}input[type=submit].rInf,.rInf.rKnpf
-        {background-color:#d0d0d0;color:#ffffff;fill:#ffffff;}input[type=submit]:hover,.rKnpf:hover
-        {box-shadow:0px 2px 5px 0px rgba(0,0,0,0.1), 0px 1px 10px 0px rgba(0,0,0,0.1)}input[type=submit].rRechts,.rKnpf.rRechts,.rMrgn.rRechts
-        {margin:0 0 12px 12px;}.rIcn18x18 {padding:5px;font-size:0;}.rIcn18x18 svg
-        {width:18px;height:18px;}textarea {overflow:hidden;}svg,img {vertical-align:baseline;margin:0;}img.rRechts
-        {margin:4px 0 12px 12px;}img.rLinks {margin:4px 12px 12px 0;}button {line-height:inherit;background-color:transparent;padding:0;border:none;margin:0;font-size:inherit;font-family:inherit;color:inherit;border-radius:unset;-webkit-appearance:none;}table
-        {border-spacing:0;border-collapse:collapse;}td,th {padding:0;vertical-align:top;}th
-        a {color:inherit;}hr {border:none;border-bottom:solid 1px #cacaca;margin:0.75em
-        0;}hr.rInf {border-color:#b6b6b6;border-bottom-style:dashed;}hr.rDpl {margin:1.15em
-        0;padding-top:1px;}.rTrng {-moz-hyphens:auto;-o-hyphens:auto;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}.rKnpf,.rIn
-        {box-sizing:border-box;display:inline-block;}.rKnpf {min-height:29px;min-width:29px;}.rDnb
-        {position:absolute;left:100%;margin-left:8px;top:10px;background-color:transparent;}.rNav
-        {height:36px;overflow:hidden;width:100%;padding:2px 0;}.rNav>* {height:36px;}.rMnRnd
-        {margin-bottom:6px;}.rTab {display:table;}.rTab>div {display:table-cell;vertical-align:middle;}.r1Pxl
-        {width:1px;}.r100Pro {width:100%;}.rLinks {float:left;}.rRechts {float:right;}.rDurch
-        {text-decoration:line-through;}.rNobr {white-space:nowrap;}.r1Zeile {white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.rClear
-        {clear:both;}.rClrAft:after {content:\"\";display:table;clear:both;}.rClrBfr:before
-        {content:\"\";display:table;clear:both;}.rClrRechts {clear:right;}.rClrLinks
-        {clear:left;}.rDunkel {background-color:#000000;}.rHell {color:#f5f5f5;}.rZu
-        {display:none;}.rAnkr {width:1px;height:56px;margin-top:-56px;float:left;display:block;}.rRel
-        {position:relative;}.rAbs {position:absolute;}.rAuf {display:inline;}.rInl
-        {display:inline;}.rFuss {margin:0 15px 15px 0;}.rLg {margin-right:8px;}.rAkz
-        {color:#FF4081;}.rKnpf.rAkz {background-color:#FF4081;}.rLst {list-style-type:none;padding-left:0;padding-right:0;}.rLst
-        li {text-indent:-15px;padding-left:15px;padding-right:0;}.rLst[dir=\"rtl\"]
-        li {text-indent:-15px;padding-left:0;padding-right:15px;}.rLst li::before
-        {min-width:15px;float:left;}.rLst[dir=\"rtl\"] li::before {float:right;}.rLstDash
-        li::before {content:\"\u2013\";}.rLstGt li::before {content:\"\xBB\";}.rLstBl
-        li::before {content:\"\u2022\";}.rLstTxt li::before {content:attr(txt); }.rCntr
-        {text-align:center;}.rInf,.rInf a,.rInf mark {color:#848484;fill:#c5c5c5;}.rInf
-        img,.rInf svg {filter:grayscale(100%); }.rKln {font-size:0.9em;}.rMrk {background-color:#ff8bb3;}.rKln
-        img,.rKln svg {zoom:85%;}.rGrs {font-size:1.1em;}/* deprecated */ .rKnObn
-        {margin-top:0 !important;}/* deprecated */ .rKnUnt {margin-bottom:0 !important;}.rU0px
-        {margin-bottom:0px !important;}.rU1px {margin-bottom:1px !important;}.rU3px
-        {margin-bottom:3px !important;}.rU6px {margin-bottom:6px !important;}.rO0px
-        {margin-top:0px !important;}.rO1px {margin-top:1px !important;}.rO3px {margin-top:3px
-        !important;}.rNt::after {content:\"*\";color:#848484;font-size:0.65em;vertical-align:top;font-weight:normal;}.rNoSelect
-        {-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.rImg
-        {border:solid 1px #d0d0d0;}@media (min-width:744px){h1,.rH1 {font-size:1.7em;}h2,.rH2
-        {font-size:1.4em;}article .rAbschnitt {margin-left:-314px;width:100%;float:left;}article
-        .rAbschnitt>div {margin-left:314px;}article .rInfo {width:300px;float:right;}.rFuss
-        {width:330px;}}@media (prefers-color-scheme:dark){body {color:#e1e1e1;fill:#e1e1e1;}mark
-        {color:#e1e1e1;background-color:#3f3f3f;}body>article {background-color:#232323;}body,body>footer
-        {background-color:#060606;}body>footer {color:#e0e0e0;}body>footer a {color:#b9d1ff;}a
-        {color:#b9d1ff;}h1,h2,.rH1,.rH2 {color:#ffffff;}a h1,a h2,a h3,a h4 {color:#e1e1e1
-        !important;}input,select,textarea {background-color:#292a2c;border-color:#101112;color:#e1e1e1;}input[type=submit],.rKnpf
-        {background-color:#000000;color:#e8eaed;fill:#e8eaed;}input[type=submit].rInf,.rInf.rKnpf
-        {background-color:#1d1d1d;color:#626262;fill:#626262;}hr {border-color:#484848;}hr.rInf
-        {border-color:#353535;}.rHell {color:#f5f5f5;}.rInf,.rInf a,.rInf mark {fill:#626262;}.rImg
-        {border-color:#101112;}.rMrk {background-color:#973c5b;}}@media (min-width:1261px)and
-        (max-width:1698px){ body>*>div {margin-right:320px;}}@media (min-width:1261px)and
-        (max-width:1378px){ body>*>div {margin-right:320px;margin-left:0;}}.rBox {margin-bottom:16px;overflow:auto;}.rBox
-        header h2 {margin-top:0;}.rBoxWht {background-color:#ffffff;border:solid 2px
-        #d0d0d0;padding:0px 10px;}.rBoxWht textarea,.rBoxWht input,.rBoxWht select
-        {background-color:#e9e9e9;}.rBoxWht input[type=submit],.rBoxWht .rKnpf {background-color:#000000;}.rBoxWht
-        input[type=submit].rInf,.rBoxWht .rInf.rKnpf {background-color:#d0d0d0;}@media
-        (prefers-color-scheme:dark){ .rBoxWht {background-color:#313131;border-color:#000000;}.rBoxWht
-        textarea,.rBoxWht input,.rBoxWht select {background-color:#212121;}.rBoxWht
-        input[type=submit].rInf,.rBoxWht .rInf.rKnpf {background-color:#272727;color:#626262;fill:#626262;}.rBoxWht
-        hr {border-color:#1b1b1b;}.rBoxWht hr.rInf {border-color:#232323;}}.rHw {width:100%;padding:4px
-        0;background-color:#ffffff;color:#222222;border-bottom:solid 1px #d0d0d0;}.rHw
-        svg {fill:#d0d0d0;}.rHwObn {position:relative;top:0px;}.rHwUnt {opacity:0.91;position:fixed;bottom:0px;z-index:8;box-shadow:1px
-        0px 2px 0px rgba(0,0,0,0.25); }.rHwUnt a {color:#80bfff;}.rHwBox>div {position:static;padding-right:10px;padding-left:13px;}.rHwBox+.rBox
-        {margin-top:0;}.rHwFhlr svg,.rHwTpp svg,.rHwOk svg,.rHwNtrl svg {fill:#ffffff;fill-opacity:0.6;}.rHwFhlr
-        {background-color:#d90000;color:#ffbfbf;border:none;}.rHwTpp {background-color:#aa5500;color:#ffcf9f;border:none;}.rHwOk
-        {background-color:#008000;color:#a6ffa6;border:none;}.rHwNtrl {color:#e0e0e0;background-color:#111111;border:none;}@media
-        (prefers-color-scheme:dark){ .rHw {background-color:#292a2c;color:#e8eaed;border-color:#101112;}.rHw
-        svg {fill:#9aa0a6;}.rHwUnt a {color:#80bfff;}.rHwFhlr {background-color:#6a0000;color:#facfb4;}.rHwFhlr
-        svg,.rHwTpp svg,.rHwOk svg,.rHwNtrl svg {fill:#ffffff;}.rHwTpp {background-color:#422100;color:#f5d99e;}.rHwOk
-        {background-color:#003c00;color:#baf2b7;}.rHwNtrl {color:#e0e0e0;background-color:#111111;}}.rEin
-        {text-align:left;}.rEin input {width:100%;-webkit-appearance:textfield;border-radius:0;}.rEin
-        input::-webkit-search-decoration,.rEin input[type=\"search\"] {-webkit-appearance:none;}.rEinSlct
-        {background-color:#ffffff;display:none;position:absolute;border:none;border-top:solid
-        1px #aaaaaa;color:#666666;z-index:7;box-sizing:border-box;}.rNav .rEinSlct
-        {position:fixed;margin-top:2px;max-height:75%;overflow:scroll;overflow-y:auto;overflow-x:hidden;box-shadow:6px
-        6px 6px 1px rgba(0,0,0,0.5); }.rEinOpt {padding:1px 5px;}.rEinOptAn {background-color:#000000;color:#ffffff;}.rEin
-        .rKln {font-size:0.52em;}.rNav .rEin input {height:30px;margin:0;border-radius:3px;}.rNav
-        .rEin {font-size:17pt !important;margin:1px 5px 0 0;width:300px;max-width:calc(100vw
-        - 210px); border:solid 2px rgba(255,255,255,0.6); border-radius:5px;}@media
-        (prefers-color-scheme:dark){.rEinSlct {background-color:#292a2c;color:#9aa0a6;}.rEinOptAn
-        {background-color:#000000;color:#ffffff;}}.rMn {margin:10px 0 0 auto;padding-top:8px;width:33%;border-top:solid
-        1px #9b9b9b;box-sizing:border-box;}.rMnOpt {padding-top:1px;}.rMnKat {color:#ffffff;}.rMnLnk
-        {margin-right:10px;}.rMnOptn .rMnOptn {margin-left:22px;}@media (max-width:699px){.rMn
-        {width:100%;}}nav.rKrml {margin:9px 0 8px 0;}nav.rKrml span {white-space:nowrap;}.kFrm
-        select {border:none;background-color:transparent;}.kFrm textarea {width:100%;}.kBwrt
-        {font-size:1.3em;}.kAn {color:#000000;}.kAus {color:#aaaaaa;}.kAnt {margin-left:5%;}.kLnk
-        {white-space:nowrap;}@media (prefers-color-scheme:dark){.kAn {color:#dcdee4;}.kAus
-        {color:#5e6064;}}q {font-weight:bold;}q:before {content:none;}q:after {content:none;}q>b,q>b>mark
-        {font-weight:inherit !important;}q>u,q>u>mark {text-decoration:none;}b>u {text-decoration:none;}b>i,q>i
-        {font-style:normal;}b>u,q>b,q>b>mark {color:#b35cb3;}b>q,q>i,q>i>mark {color:#6f878d;}b>i,q>u,q>u>mark,h2.wG,.rH2.wG
-        {color:#c3850f;}b.wM>i,q.wM>u,.wM q>u,q.wM>u>mark,h2.wM,.rH2.wM {color:#0072b7;}b.wF>i,q.wF>u,.wF
-        q>u,q.wF>u>mark,h2.wF,.rH2.wF {color:#d32f2f;}b.wN>i,q.wN>u,.wN q>u,q.wN>u>mark,h2.wN,.rH2.wN
-        {color:#368732;}.rKnpf b>u,.rKnpf q>b {color:#cd8ccd;}.rKnpf b>q,.rKnpf q>i
-        {color:#879a9d;}.rKnpf b>i,.rKnpf q>u {color:#d19554;}.rKnpf b.wM>i,.rKnpf
-        q.wM>u,.rKnpf .wM q>u {color:#5998c5;}.rKnpf b.wF>i,.rKnpf q.wF>u,.rKnpf .wF
-        q>u {color:#d75656;}.rKnpf b.wN>i,.rKnpf q.wN>u,.rKnpf .wN q>u {color:#649b62;}.rInf
-        q>b,.rInf q>u,.rInf q>b>mark,.rInf q>u>mark,.rInf q>mark {color:#848484;fill:#c5c5c5;}.wKnFmt
-        q {font-weight:normal;}.wKnFmt q>b,.wKnFmt q>u {color:inherit;font-weight:normal
-        !important;}s {color:#aaaaaa;text-decoration:none;}g,g a {color:#848484;fill:#c5c5c5;}.rInf
-        b>u,.rInf b>i {color:#848484;fill:#c5c5c5;}@media (prefers-color-scheme:dark){b>u,q>b,q>b>mark
-        {color:#cd8ccd;}b>q,q>i,q>i>mark {color:#879a9d;}b>i,q>u,q>u>mark,h2.wG,.rH2.wG
-        {color:#d19554;}b.wM>i,q.wM>u,.wM q>u,q.wM>u>mark,h2.wM,.rH2.wM {color:#5998c5;}b.wF>i,q.wF>u,.wF
-        q>u,q.wF>u>mark,h2.wF,.rH2.wF {color:#d75656;}b.wN>i,q.wN>u,.wN q>u,q.wN>u>mark,h2.wN,.rH2.wN
-        {color:#649b62;}.wKnFmt q>b,.wKnFmt q>u {color:inherit;}.rInf b>u,.rInf b>i,.rInf
-        q>b,.rInf q>u,.rInf q>b>mark,.rInf q>u>mark,.rInf q>mark {fill:#626262;}}.aArt
-        {min-height:90px;}.aNurMob {min-height:0 !important;}.aDnb {min-height:600px;min-width:300px;}.aInf
-        {min-height:250px;}.aAnz {margin:8px 0;text-align:center;background-color:rgba(255,255,255,0.4);
-        }@media (max-width:1000px){.aArt {min-height:250px;}.aNurDsk {min-height:0
-        !important;}}@media (max-width:1260px){.aDnb {display:none;min-height:unset;min-width:unset;}}@media
-        (prefers-color-scheme:dark){.aAnz {background-color:rgba(255,255,255,0.05);
-        }}.bZrt {}.bKas {}.nCol {width:16px;height:16px;border-radius:50%;margin-right:5px;display:inline-block;}.nColC1
-        {background-color:#0072b7;}.nColC2 {background-color:#d32f2f;}.nColC3 {background-color:#368732;}.nColC4
-        {background-color:#5C5CE0;}.nColC5 {background-color:#c3850f;}.nColC6 {background-color:#E64D61;}.nColC7
-        {background-color:#b35cb3;}.nColC8 {background-color:#FAD64C;}.nColC9 {background-color:#91683C;}.nColTC1
-        {color:#0072b7 !important;}.nColTC2 {color:#d32f2f !important;}.nColTC3 {color:#368732
-        !important;}.nColTC4 {color:#5C5CE0 !important;}.nColTC5 {color:#c3850f !important;}.nColTC6
-        {color:#E64D61 !important;}.nColTC7 {color:#b35cb3 !important;}.nColTC8 {color:#FAD64C
-        !important;}.nColTC9 {color:#91683C !important;}@media (prefers-color-scheme:dark){.nColC1
-        {background-color:#5998c5;}.nColC2 {background-color:#d75656;}.nColC3 {background-color:#649b62;}.nColC4
-        {background-color:#5C5CE0;}.nColC5 {background-color:#d19554;}.nColC6 {background-color:#E64D61;}.nColC7
-        {background-color:#cd8ccd;}.nColC8 {background-color:#FAD64C;}.nColC9 {background-color:#91683C;}.nColTC1
-        {color:#5998c5 !important;}.nColTC2 {color:#d75656 !important;}.nColTC3 {color:#649b62
-        !important;}.nColTC4 {color:#5C5CE0 !important;}.nColTC5 {color:#d19554 !important;}.nColTC6
-        {color:#E64D61 !important;}.nColTC7 {color:#cd8ccd !important;}.nColTC8 {color:#FAD64C
-        !important;}.nColTC9 {color:#91683C !important;}}.rDunkel {background-color:#784500;}.rHell
-        {color:#c9b599;}h1 {color:#784500;}body>nav,body>nav a {color:#c9b599;}input[type=submit],.rKnpf,.rBoxWht
-        .rKnpf {background-color:#784500;}.rHch {background-color:#784500;}.rMn {border-color:#c9b599;}dl.wNrn
-        {list-style-type:none;margin-right:0;margin-left:0;}dl.wNrn dd,dl.wNrn dt
-        {display:flex;margin:2px 0 2px 0;align-items:baseline;}dl.wNrn .wIdx,dl.wNrn
-        .wLng {min-width:23px;}.wIdx {font-size:1.1em;font-weight:bold;}.wFlxs {margin-right:-10px;}.wFlx
-        {margin-right:10px;min-width:100px;}.wFlx table {margin:8px 0 12px 0;}.wFlx
-        table td {padding-right:6px;}.wStmf {margin:4px 0 0 0;}svg.vIcn {fill:#784500;}@media
-        (prefers-color-scheme:dark){.rDunkel {background-color:#281700;}.rHell {color:#a9a299;}body>nav,body>nav
-        a {color:#a9a299;}h1,h2,.rH1,.rH2 {color:#ffffff;}.rHch {background-color:#000000;}input[type=submit],.rKnpf,.rBoxWht
-        .rKnpf {background-color:#000000;}svg.vIcn {fill:#dcdee4;}.rMn {border-color:#736b62;}}</style>\n<script>var
-        uuSymplr,allCookiesSymplr=document.cookie.split(\";\").map((e=>e.split(\"=\"))).reduce(((e,[i,o])=>({...e,[i.trim()]:decodeURIComponent(o)})),{});function
-        createCookieSymplr(e,i){var o=e;if(void 0===(uuSymplr=allCookiesSymplr.uniqueUser)){let
-        e=(Date.now()+window.navigator.userAgent+websiteSymplr).toString();uuSymplr=sha256(e),document.cookie=`uniqueUser=${uuSymplr};max-age=31536000;path=/;SameSite=Strict;
-        Secure`}if(o){var u=allCookiesSymplr.uniqueUserLi;void 0===u&&(u=sha256(i),document.cookie=`uniqueUserLi=${u};max-age=31536000;path=/;SameSite=Strict;
-        Secure`),uuSymplr=u}else document.cookie=\"uniqueUserLi=; max-age=0\"}</script>\n<script
-        async src='https://cdns.symplr.de/verben.de/verben.js'></script>\n</head>\n<body>\n<div
-        id=\"rkopf\"></div>\n<nav class=\"rDunkel\"><div>\n<div class=\"rNav\">\n<div
-        class=\"rRechts\" id=\"rMnImg\" onclick=\"Rahmen.aufzu(['rMn','rMnNav'])\"><svg
-        fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"36\" viewBox=\"0 0 24 24\"
-        width=\"36\" xmlns=\"http://www.w3.org/2000/svg\">\n<path class=\"rAuf\" style=\"display:
-        none;\" d=\"m11.41 15.41 4.59-4.58 4.59 4.58 1.41-1.41-6-6l-6 6 1.41 1.41z\"></path>\n<path
-        class=\"rZu\" style=\"display: inline;\" d=\"m8 4.667h16v2h-16m0 4h16v2h-16m-2e-7
-        4h16v2h-16z\"></path>\n</svg></div>\n<div class=\"rLinks rLg\"><a href=\"/\"><svg
-        xmlns=\"http://www.w3.org/2000/svg\" height=\"36\" width=\"36\" version=\"1.1\"
-        viewBox=\"0 0 320 320\"><path d=\"M8.19 216c55.4-6.93 99.3 10.8 124 57.3.055-13
-        7.25-151 6.65-172-21-29.7-20-65.4-78.1-65.6z\" fill=\"#3a3a3a\"/><path d=\"M309
-        213c-55.4-6.93-97 14.5-121 61.1-.055-13-7.25-151-6.65-172 14.1-28.6 26.9-65.6
-        80-65.9z\" fill=\"#d00\"/><path d=\"M228 228c-15.3 11.5-25.6 18.7-40 46.2l-8.37-166c5.16-11.1
-        8.97-21.1 13.3-28.8 10.1 47.5 29.2 120 35.1 149z\" fill=\"#c90000\"/><path
-        d=\"M157 181c-.207 26.7-.182 52.7-.389 79.4 9.84-9.93 35.9-33.2 32.2-53.8-2.39-13.4-13-22-31.8-25.6z\"
-        fill=\"#ebba00\"/><path d=\"M110 76.7l-13.7 155c14.4 8.68 25.1 25.1 35.8 41.8l4.71-166z\"
-        fill=\"#2d2d2d\"/><path d=\"M62.1 218c12.3 1.77 27.2 9.24 36.2 16.4l17.7-175c-9-8.9-20.5-17.2-41.7-22.4-3
-        76.4-12.2 181-12.2 181z\" fill=\"#333\"/><path d=\"M113 41.1l-22.1 148c10.8-8.04
-        90.9-20 98.9 21.2 0-23-5-132-5-157-15-31.2-58-20.7-72-11.9z\" fill=\"#ffce00\"/><path
-        d=\"M267 213c-12.4 1.73-22.6 7.18-39.9 15.8l-35-149C207.9 58.2 218.8 44.2
-        247 38z\" fill=\"#d30000\"/><path d=\"M160 33.7c-20.2 22.4-24.7 147-24.7 147
-        29.1.176 50.3 9.36 55.4 29.7.424-22.6-4.98-133-5.55-158-5.01-10.4-19.7-15.5-25.2-18.8z\"
-        fill=\"#f5c400\"/></svg></a></div>\n<a class=\"rRechts\" href=\"/user/login/\"><svg
-        fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"36\" viewBox=\"-5 0 25 25\"
-        width=\"36\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12,4A4,4 0
-        0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2
-        0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33
-        9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9
-        12,14.9Z\"/>\n</svg>\n</a>\n<form class=\"rLinks\" id=\"wKpfEin\" action=\"/?w=Abend\">\n<div
-        class=\"rEin rLinks\">\n<input autofocus=\"autofocus\" onfocus=\"this.setSelectionRange(0,
-        this.value.length)\" id=\"xdbe94\" name=\"w\" type=\"search\" value=\"Abend\"
-        placeholder=\"\" title=\"\" autocomplete=\"off\" onkeydown=\"Eingabe.taste('xdbe94','xdbe94Liste',
-        event)\" oninput=\"Eingabe.an('xdbe94','xdbe94Liste',Woerterbuch.suchliste)\"
-        onblur=\"Eingabe.aus('xdbe94','xdbe94Liste')\"><br>\n<div class=\"rEinSlct\"
-        id=\"xdbe94Liste\"></div>\n</div><button class=\"rLinks\" type=\"submit\"><svg
-        fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"36\" viewBox=\"0 0 24 24\"
-        width=\"36\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"
-        ></path>\n</svg></button>\n<button class=\"rLinks\" type=\"submit\" formaction=\"/suche/?w=Abend\"><svg
-        fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"32\" viewBox=\"0 -2 24 24\"
-        width=\"32\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9.5,3A6.5,6.5
-        0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41
-        11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12
-        7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z\"></path>\n</svg></button>\n</form>\n<div
-        class=\"rLinks rHell\" style=\"margin: 8px;\">Netzverb W\xF6rterbuch</div>\n<div
-        class=\"rRechts rTab rNoSelect rMnLnk\" onClick=\"Rahmen.aufzu(['vLng', 'rMn'])\">\n<div>\nDeutsch\n<img
-        src=\"/rahmen/mnwahl.svg\" height=\"8\" width=\"10\">\n</div>\n</div>\n</div>\n<div
-        class=\"rClear\"></div>\n<div class=\"rZu\" id=\"rMn\">\n<div class=\"rMn\">\n<div
-        class=\"rNoSelect\" onClick=\"Rahmen.aufzu('vLng')\">\n<span class=\"rMnKat\">Sprache</span>:
-        Deutsch\n<img src=\"/rahmen/mnwahl.svg\" height=\"8\" width=\"10\" >\n</div>\n<div
-        class=\"rZu\" id=\"vLng\">\n<div class=\"rMnOpt\">\n<img src=\"/rahmen/mnan.svg\"
-        height=\"18\" width=\"18\">&nbsp;\t\n<a href=\"https://www.verben.de/?w=Abend\"
-        rel=\"nofollow\">\nDeutsch\n</a>\n</div>\n<div class=\"rMnOpt\">\n<img src=\"/rahmen/mnaus.svg\"
-        height=\"18\" width=\"18\">&nbsp;\n<a href=\"https://www.woerter.net/?w=Abend\"
-        rel=\"nofollow\">\nEnglish\n</a>\n</div>\n<div class=\"rMnOpt\">\n<img src=\"/rahmen/mnaus.svg\"
-        height=\"18\" width=\"18\">&nbsp;\n<a href=\"https://www.woerter.ru/?w=Abend\"
-        rel=\"nofollow\">\n\u0420\u0443\u0441\u0441\u043A\u0438\u0439\n</a>\n</div>\n</div>\n</div><div>\n<div
-        class=\"rMn\">\n<div>\n<span class=\"rMnKat\">Teilen: </span>\n<a rel=\"nofollow\"
-        href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.verben.de%2Fwort.jsp%3Fw%3DAbend\"
-        title=\"Teilen\"><svg fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"26\"
-        viewBox=\"0 0 24 24\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4
-        0 0,1 14,2H17Z\"></path>\n</svg></a>\n<a rel=\"nofollow\" href=\"https://twitter.com/home?status=https%3A%2F%2Fwww.verben.de%2Fwort.jsp%3Fw%3DAbend\"
-        title=\"Teilen\"><svg fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"26\"
-        viewBox=\"0 0 24 24\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81
-        20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63
-        11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43
-        3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11
-        3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36
-        3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13
-        1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6
-        20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z\"></path>\n</svg></a>\n</div>\n</div>\n</div>\n<div
-        class=\"rMnRnd rClear\"></div>\n</div>\n</div></nav>\n<div class=\"rKpfPlz\">&nbsp;</div>\n<article
-        class=\"\"><div>\n<nav class=\"rKrml rKln rInf\">\n<a href=\"https://www.verben.de/\"><span>W\xF6rterbuch</span></a>\n\u203A
-        \t\n<a href=\"https://www.verben.de/substantive/\"><span>Substantive</span></a>\n\u203A
-        \t\n<a href=\"https://www.verben.de/substantive/Abend.htm\"><span>Abend</span></a>\n</nav><!--
-        Zur\xFCckbutton -->\n<a class=\"rKnpf rLinks\" href=\"https://www.verben.de/substantive/\">\n<svg
-        fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m15 7.6v1.95h-11.4l5.25 5.05-1.35
-        1.4-7.5-7.5 7.5-7.5 1.35 1.35-5.25 5.25z\"></path>\n</svg></a>\n<a class=\"rKnpf
-        rLinks\" href=\"/suche/substantive/\">\n<svg fill=\"\" class=\"kIcn\" height=\"12\"
-        viewBox=\"0 1 15 15\" width=\"12\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"m5.6 1.01a5.57 5.57 0 0 1 5.57 5.57c0 1.38-0.506 2.65-1.34 3.63l0.232
-        0.232h0.677l4.29 4.29-1.29 1.29-4.29-4.29v-0.677l-0.232-0.232c-1 0.8-2.27
-        1.4-3.65 1.4a5.57 5.57 0 0 1 -5.57 -5.62 5.57 5.57 0 0 1 5.57 -5.57m0 1.71c-2.14
-        0-3.86 1.71-3.86 3.86 0 2.14 1.71 3.86 3.86 3.86 2.14 0 3.86-1.71 3.86-3.86
-        0-2.14-1.71-3.86-3.86-3.86z\"></path>\n</svg>&nbsp;\nAlle Substantive</a>\n<h1
-        class=\"rClear\">Definition des Substantivs Abend</h1>\n<p><a href=\"/substantive/Abend.htm\">Definition
-        des Substantivs Abend</a>:<em> die Tageszeit nach dem Nachmittag; die Himmelsrichtung
-        Westen; Abendstunde; West; Herbst; Abendshow</em> mit <a href=\"/substantive/bedeutungen/Abend.htm\">Bedeutungen</a>,
-        <a href=\"/substantive/synonyme/Abend.htm\">Synonymen</a>, <a href=\"https://www.verbformen.de/deklination/substantive/Abend.htm\">Grammatikangaben</a>,
-        <a href=\"/substantive/uebersetzungen/Abend.htm\">\xDCbersetzungen</a> und
-        <a href=\"https://www.verbformen.de/deklination/substantive/Abend.htm\">Deklinationstabellen</a>.</p>\n<div
-        class=\"rAbschnitt \"><div><!------------------- STECKBRIEF ------------------->\n<section
-        class=\"rBox rBoxWht \" id=\"x1c3a9Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><header>\n<a rel=\"nofollow\" target=\"editor\" href=\"https://www.verben.de/bedeutungenweb/substantive/editor/ab/abend.htm\"
-        class=\"rRechts\"><svg fill=\"#909090\" fill-opacity=\"0.2\" viewBox=\"0 0
-        24 24\" width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z\"/>\n</svg></a>\n<span
-        class=\"rInf\"><span class=\"bZrt\" title=\"Wortschatz Zertifikat A1\">\nA1</span>
-        \xB7\n<span title=\"Substantiv\">Substantiv</span> \xB7 <span title=\"Genus
-        maskulin\">maskulin</span> \xB7 <span title=\"regelm\xE4\xDFige Deklination\">regelm\xE4\xDFig</span>
-        \xB7 <span title=\"Genitiv mit -s, Plural mit -e\">-s, -e</span></span>\n<div
-        class=\"rCntr\" style=\"margin: 12px 0 16px 0\">\n<span style=\"font-size:
-        1.55em;\">\n<span style=\"font-size: 1.44em;\"><q class=\"wM\"><u>Abend</u></q></span>,\n<span
-        title=\"Genus maskulin\">der</span></span>\n</div>\n<div id=\"wStckLngImg\"
-        class=\"rInf rKnpf rRechts rClrRechts rNoSelect\" onclick=\"Rahmen.aufzu('wStckLng');
-        Rahmen.aufzu('wStckKrz');\">\n<svg fill=\"\" class=\"kIcn\" height=\"12\"
-        viewBox=\"6 4 12 16\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        style=\"display: none;\" class=\"rAuf\" d=\"M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z\"></path>\n<path
-        style=\"display: inline;\" class=\"rZu\" d=\"M12,16A2,2 0 0,1 14,18A2,2 0
-        0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1
-        12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2
-        0 0,1 10,6A2,2 0 0,1 12,4Z\"></path>\n</svg></div></header>\n<div id=\"x1c3a9\"
-        class=\"rAufZu\">\n<div id=\"wStckKrz\" class=\"rCntr\" style=\"padding: 0
-        4%;\">\n<p class=\"r1Zeile rU3px rO0px\" style=\"font-size: 1.22em;\" onclick=\"Rahmen.aufzu('wStckLng');
-        Rahmen.aufzu('wStckKrz')\">\n<q class=\"wM\">Abend<u>s</u></q> &middot;\n<q
-        class=\"wM\">Abend<u>e</u></q>\u2070</p>\n<p style=\"font-size: 1.22em;\"
-        class=\"r1Zeile rU6px rO0px\" onclick=\"Rahmen.aufzu('wStckLng'); Rahmen.aufzu('wStckKrz')\">\n<span
-        \ lang=\"en\" >\n<img style=\"padding-bottom: 4px; vertical-align: middle\"
-        loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\" width=\"16\"
-        height=\"16\">&nbsp;evening,\neve,\neventide,\nnight</span>\n</p>\n<p class=\"rInf
-        r1Zeile rU3px rO0px\">\n<i>die Tageszeit nach dem Nachmittag; die Himmelsrichtung
-        Westen; Abendstunde; West; Herbst; Abendshow</i>\n</p>\n<p class=\"rInf r1Zeile
-        rU3px rO0px rNt\">\n\xBB Es war <span class=\"wM\"><q>Abend</q></span>\n.
-        <img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\" width=\"13\"
-        height=\"13\">&nbsp;It was evening.</p>\n</div>\n<div class=\"rZu rCntr\"
-        id=\"wStckLng\" onchange=\"Ajax.get('/substantive/steckbrief-info/Abend.htm',
-        'wStckLng', true); document.getElementById('wStckLng').removeAttribute('onchange')\"></div>\n</div>\n<div
-        class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><div
-        class=\"aAnz aArt rClear\" style=\"margin: 0 0 14px 0;\">\n<div id=\"verben.de_lb_1\"></div>\n</div>\n<section
-        class=\"rBox rBoxWht \" id=\"x727e3Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x727e3Img\" onclick=\"Rahmen.alleaufzu('x727e3','rAufZu')\"><svg fill=\"\"
-        height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        class=\"rAuf\" d=\"m16.6 9.67-1.42-1.41l-3.2 3.14-3.17-3.14-1.42 1.41 4.59
-        4.63m-4.59 5.8 1.42 1.41 3.17-3.17 3.17 3.17 1.41-1.41-4.58-4.59-4.59 4.59zm9.19-15.9l-1.42-1.41-3.17
-        3.17-3.17-3.17-1.42 1.41 4.58 4.59\"></path>\n<path class=\"rZu\" d=\"m12
-        13.8-3.17-3.17-1.41 1.41 4.58 4.59 4.59-4.59-1.42-1.41m-3.16-6.36 3.17 3.17
-        1.41-1.41-4.58-4.59-4.59 4.59 1.42 1.41 3.17-3.17zm-0.01 15.2-3.17-3.17-1.41
-        1.41 4.58 4.59 4.59-4.59-1.42-1.41\"></path>\n</svg>\n</button></nav>\n<header>\n<h2
-        class=\"wM rNt\">Bedeutungen</h2></header>\n<div id=\"x727e3\" class=\"rAufZu\">\n<dl
-        class=\"wNrn\">\n<dd>\n<span class=\"wIdx\">a.</span><span><span class=\"rInf\"></span>die
-        Tageszeit nach dem Nachmittag; dem Abend geht der Tag voran und auf den Abend
-        folgt die Nacht; Abendstunde; Abendzeit; D\xE4mmerstunde</span>\n</dd>\n<dd>\n<span
-        class=\"wIdx\">b.</span><span><span class=\"rInf\"></span>die Himmelsrichtung
-        Westen; West; Westen</span>\n</dd>\n<dd>\n<span class=\"wIdx\">c.</span><span><span
-        class=\"rInf\"></span>verschliffene Begr\xFC\xDFungsfloskel f\xFCr \"Guten
-        Abend\"</span>\n</dd>\n<dd>\n<span class=\"wIdx\">d.</span><span><span class=\"rInf\"></span>Abschluss,
-        Ende, Schluss; Herbst; Lebensabend; Lebensende</span>\n</dd>\n<dd>\n<span
-        class=\"rInf\">...</span>\n</dd>\n</dl>\n<hr>\n<a class=\"rKnpf rRechts\"
-        href=\"https://www.verbformen.de/deklination/substantive/Abend.htm\">\nDeklination
-        <svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28
-        0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<a
-        class=\"rKnpf rLinks\" href=\"/substantive/bedeutungen/Abend.htm\">\nBedeutungen
-        <svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
-        1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
-        class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"xd6f20Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"xd6f20Img\" onclick=\"Rahmen.aufzu('xd6f20')\"><svg fill=\"\" height=\"24\"
-        viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
-        class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM rNt\">Synonyme</h2></header>\n<div id=\"xd6f20\" class=\"rAufZu\">\n<dl
-        class=\"wNrn\">\n<dd>\n<span class=\"wIdx\">a.</span><span>&equiv;&nbsp;<a
-        href=\"/substantive/Abendstunde.htm\">Abendstunde</a> &equiv;&nbsp;<a href=\"/substantive/Abendzeit.htm\">Abendzeit</a>
-        &equiv;&nbsp;<a href=\"/substantive/Da3mmerstunde.htm\">D\xE4mmerstunde</a></span>\n</dd>\n<dd>\n<span
-        class=\"wIdx\">b.</span><span>&equiv;&nbsp;<a href=\"/substantive/West.htm\">West</a>
-        &equiv;&nbsp;<a href=\"/substantive/Westen.htm\">Westen</a></span>\n</dd>\n<dd>\n<span
-        class=\"wIdx\">d.</span><span>&equiv;&nbsp;<a href=\"/substantive/Herbst.htm\">Herbst</a>
-        &equiv;&nbsp;<a href=\"/substantive/Lebensabend.htm\">Lebensabend</a> &equiv;&nbsp;<a
-        href=\"/substantive/Lebensende.htm\">Lebensende</a></span>\n</dd>\n<dd>\n<span
-        class=\"wIdx\">e.</span><span>&equiv;&nbsp;<a href=\"/substantive/Abendshow.htm\">Abendshow</a>
-        &equiv;&nbsp;<a href=\"/substantive/Abendunterhaltung.htm\">Abendunterhaltung</a>
-        &equiv;&nbsp;Empfangsabend &equiv;&nbsp;<a href=\"/substantive/Soiree.htm\">Soiree</a></span>\n</dd>\n</dl>\n<hr>\n<a
-        class=\"rKnpf rLinks\" href=\"/substantive/synonyme/Abend.htm\">\nSynonyme
-        <svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
-        1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
-        class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"x70382Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x70382Img\" onclick=\"Rahmen.aufzu('x70382')\"><svg fill=\"\" height=\"24\"
-        viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
-        class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM rNt\">Beispiels\xE4tze</h2></header>\n<div id=\"x70382\" class=\"rAufZu\">\n<ul
-        class=\"rLst rLstGt\">\n<li style=\"margin-top: 4px;\">Es war <span class=\"wM\"><q>Abend</q></span>\n.<a
-        class=\"rInf\" href=\"https://www.satzapp.de/?t=Es war Abend.\">&nbsp;<svg
-        fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28
-        0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span
-        class=\"rInf\">\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;It was evening.</span>\n</li>\n<li style=\"margin-top:
-        4px;\">Ich bade jeden <span class=\"wM\"><q>Abend</q></span>\n.<a class=\"rInf\"
-        href=\"https://www.satzapp.de/?t=Ich bade jeden Abend.\">&nbsp;<svg fill=\"\"
-        class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354
-        0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span >\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;I have a bath every night.</span>\n</li>\n<li
-        style=\"margin-top: 4px;\">Heute <span class=\"wM\"><q>Abend</q></span>\ngibt
-        es Nudeln.<a class=\"rInf\" href=\"https://www.satzapp.de/?t=Heute Abend gibt
-        es Nudeln.\">&nbsp;<svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0
-        1 15 15\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83
-        14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span
-        class=\"rInf\">\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;There's noodles tonight.</span>\n</li>\n<li
-        style=\"margin-top: 4px;\">Was tust du des <span class=\"wM\"><q>Abend<u>s</u></q></span>\n?<a
-        class=\"rInf\" href=\"https://www.satzapp.de/?t=Was tust du des Abends?\">&nbsp;<svg
-        fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28
-        0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span
-        >\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;What do you do in the evenings?</span>\n</li>\n<li
-        style=\"margin-top: 4px;\">Ich bestelle am <span class=\"wM\"><q>Abend</q></span>\neinen
-        Babysitter.<a class=\"rInf\" href=\"https://www.satzapp.de/?t=Ich bestelle
-        am Abend einen Babysitter.\">&nbsp;<svg fill=\"\" class=\"kIcn\" height=\"10\"
-        viewBox=\"0 1 15 15\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354
-        0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span class=\"rInf\">\n<img loading=\"lazy\"
-        alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\" width=\"13\" height=\"13\">&nbsp;I'm
-        ordering a babysitter in the evening.</span>\n</li>\n<li style=\"margin-top:
-        4px;\">Abenteuer ist manchmal nur ein teurer <span class=\"wM\"><q>Abend</q></span>\n.<a
-        class=\"rInf\" href=\"https://www.satzapp.de/?t=Abenteuer ist manchmal nur
-        ein teurer Abend.\">&nbsp;<svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0
-        1 15 15\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83
-        14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span
-        class=\"rInf\">\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;Sometimes adventure is just an expensive
-        evening.</span>\n</li>\n<li style=\"margin-top: 4px;\">Ein Anruf von ihm heute
-        <span class=\"wM\"><q>Abend</q></span>\nist wahrscheinlich.<a class=\"rInf\"
-        href=\"https://www.satzapp.de/?t=Ein Anruf von ihm heute Abend ist wahrscheinlich.\">&nbsp;<svg
-        fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28
-        0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span
-        >\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;A telephone call from him is probable tonight.</span>\n</li>\n<li
-        style=\"margin-top: 4px;\">Es wurde <span class=\"wM\"><q>Abend</q></span>\n.<a
-        class=\"rInf\" href=\"https://www.satzapp.de/?t=Es wurde Abend.\">&nbsp;<svg
-        fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28
-        0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span
-        >\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;Evening came.</span>\n</li>\n<li style=\"margin-top:
-        4px;\">Am <span class=\"wM\"><q>Abend</q></span>\nkamen G\xE4ste.<a class=\"rInf\"
-        href=\"https://www.satzapp.de/?t=Am Abend kamen G\xE4ste.\">&nbsp;<svg fill=\"\"
-        class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354
-        0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span >\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;Guests arrived in the evening.</span>\n</li>\n<li
-        style=\"margin-top: 4px;\">Gestern <span class=\"wM\"><q>Abend</q></span>\nregnete
-        es.<a class=\"rInf\" href=\"https://www.satzapp.de/?t=Gestern Abend regnete
-        es.\">&nbsp;<svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\"
-        width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83 14.4-1.38-1.38
-        8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n<br>\n<span
-        >\n<img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
-        width=\"13\" height=\"13\">&nbsp;It rained yesterday evening.</span>\n</li>\n</ul>\n<hr
-        class=\"rClear\">\n<a href=\"https://www.satzapp.de/saetze/substantive/Abend.htm\"
-        class=\"rKnpf rLinks\">\nBeispiels\xE4tze <svg fill=\"\" class=\"kIcn\" height=\"10\"
-        viewBox=\"0 1 15 15\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354
-        0.0354-7.39z\"></path>\n</svg></a>\n</div>\n<div class=\"rClear\" style=\"margin-top:
-        10px; min-height: 1px\">\n</div>\n</section></div></div><div class=\"rInfo\"><section
-        class=\"rBox rBoxWht \" id=\"x393d3Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x393d3Img\" onclick=\"Rahmen.aufzu('x393d3')\"><svg fill=\"\" height=\"24\"
-        viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
-        class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM\">\xDCbersetzungen</h2></header>\n<div id=\"x393d3\" class=\"rAufZu\">\n<dl
-        class=\"wNrn\" >\n<dd lang=\"en\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"Englisch\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\" width=\"13\"
-        height=\"13\">&nbsp;</span><span>evening, eve, eventide, night</span></dd>\n</dl>\n<dl
-        class=\"wNrn\">\n<dd lang=\"ru\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"Russisch\" alt=\"Russisch\"\nsrc=\"/bedeutungenweb/ru.svg\" width=\"13\"
-        height=\"13\">&nbsp;</span><span>\u0432\u0435\u0447\u0435\u0440, \u0437\u0430\u043A\u0430\u0442,
-        \u0437\u0430\u043F\u0430\u0434, \u0434\u043E\u0431\u0440\u044B\u0439 \u0432\u0435\u0447\u0435\u0440,
-        \u0432\u0435\u0447\u0435\u0440\u043D\u0435\u0435 \u0432\u0440\u0435\u043C\u044F
-        \u0441\u0443\u0442\u043E\u043A, \u0442\u0451\u043C\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F
-        \u0441\u0443\u0442\u043E\u043A, \u0432\u0435\u0447\u0435\u0440\u043E\u043C,
-        \u0432\u0435\u0447\u0435\u0440\u043D\u0438\u0439,<span class=\"rInf\"> ...</span></span></dd>\n<dd
-        lang=\"es\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Spanisch\"
-        alt=\"Spanisch\"\nsrc=\"/bedeutungenweb/es.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>noche,
-        tarde, v\xEDspera, oeste, poniente, occidente, ocaso, velada</span></dd>\n<dd
-        lang=\"fr\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Franz\xF6sisch\"
-        alt=\"Franz\xF6sisch\"\nsrc=\"/bedeutungenweb/fr.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>soir,
-        ouest, occident, couchant, soir\xE9e</span></dd>\n<dd lang=\"tr\"><span class=\"wLng\"><img
-        loading=\"lazy\" title=\"T\xFCrkisch\" alt=\"T\xFCrkisch\"\nsrc=\"/bedeutungenweb/tr.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>ak\u015Fam, bat\u0131, gece</span></dd>\n<dd
-        lang=\"pt\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Portugiesisch\"
-        alt=\"Portugiesisch\"\nsrc=\"/bedeutungenweb/pt.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>tarde,
-        noitada, noite, tardinha, fim da tarde</span></dd>\n<dd lang=\"it\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Italienisch\" alt=\"Italienisch\"\nsrc=\"/bedeutungenweb/it.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>sera, serata, <span class=\"rInf\">vespero</span>,
-        <span class=\"rInf\">vespro</span></span></dd>\n<dd lang=\"ro\"><span class=\"wLng\"><img
-        loading=\"lazy\" title=\"Rum\xE4nisch\" alt=\"Rum\xE4nisch\"\nsrc=\"/bedeutungenweb/ro.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>sear\u0103, serat\u0103, <span
-        class=\"rInf\">dupa amiaza</span></span></dd>\n<dd lang=\"hu\"><span class=\"wLng\"><img
-        loading=\"lazy\" title=\"Ungarisch\" alt=\"Ungarisch\"\nsrc=\"/bedeutungenweb/hu.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>este, est</span></dd>\n<dd lang=\"pl\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Polnisch\" alt=\"Polnisch\"\nsrc=\"/bedeutungenweb/pl.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>wiecz\xF3r, wieczorne przyj\u0119cie</span></dd>\n<dd
-        lang=\"el\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Griechisch\"
-        alt=\"Griechisch\"\nsrc=\"/bedeutungenweb/el.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>\u03B2\u03C1\u03AC\u03B4\u03C5,
-        \u03B2\u03C1\u03B1\u03B4\u03B9\u03AC</span></dd>\n<dd lang=\"nl\"><span class=\"wLng\"><img
-        loading=\"lazy\" title=\"Niederl\xE4ndisch\" alt=\"Niederl\xE4ndisch\"\nsrc=\"/bedeutungenweb/nl.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>avond</span></dd>\n<dd lang=\"cs\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Tschechisch\" alt=\"Tschechisch\"\nsrc=\"/bedeutungenweb/cs.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>ve\u010Der</span></dd>\n<dd
-        lang=\"sv\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Schwedisch\"
-        alt=\"Schwedisch\"\nsrc=\"/bedeutungenweb/sv.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>kv\xE4ll,
-        afton</span></dd>\n<dd lang=\"da\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"D\xE4nisch\" alt=\"D\xE4nisch\"\nsrc=\"/bedeutungenweb/da.svg\" width=\"13\"
-        height=\"13\">&nbsp;</span><span>aften</span></dd>\n<dd lang=\"ja\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Japanisch\" alt=\"Japanisch\"\nsrc=\"/bedeutungenweb/ja.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>\u6669, \u591C\u5206, \u5915\u65B9,
-        \u5165\u308A\u76F8, \u66AE\u308C\u65B9, \u5915\u3055\u308A, \u65E5\u66AE\u308C\u65B9,
-        \u591C\u4F1A,<span class=\"rInf\"> ...</span></span></dd>\n<dd lang=\"fi\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Finnisch\" alt=\"Finnisch\"\nsrc=\"/bedeutungenweb/fi.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>ilta, ehtoo</span></dd>\n<dd
-        lang=\"no\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Norwegisch\"
-        alt=\"Norwegisch\"\nsrc=\"/bedeutungenweb/no.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>kveld,
-        aften</span></dd>\n<dd lang=\"eu\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"Baskisch\" alt=\"Baskisch\"\nsrc=\"/bedeutungenweb/eu.svg\" width=\"13\"
-        height=\"13\">&nbsp;</span><span>arrats</span></dd>\n<dd lang=\"sr\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Serbisch\" alt=\"Serbisch\"\nsrc=\"/bedeutungenweb/sr.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>\u0432\u0435\u0447\u0435, \u0432\u0435\u0447\u0435\u0440,
-        \u0437\u0430\u043F\u0430\u0434, \u0434\u043E\u0431\u0440\u043E \u0432\u0435\u0447\u0435,
-        \u043A\u0440\u0430\u0458, \u0432\u0435\u0447\u0435\u0440\u045A\u0438</span></dd>\n<dd
-        lang=\"mk\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Mazedonisch\"
-        alt=\"Mazedonisch\"\nsrc=\"/bedeutungenweb/mk.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>\u0432\u0435\u0447\u0435,
-        \u0432\u0435\u0447\u0435\u0440, \u0437\u0430\u043F\u0430\u0434, \u0434\u043E\u0431\u0440\u043E
-        \u0432\u0435\u0447\u0435, \u043A\u0440\u0430\u0458, \u0432\u0435\u0447\u0435\u0440\u043D\u0438</span></dd>\n<dd
-        lang=\"sl\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Slowenisch\"
-        alt=\"Slowenisch\"\nsrc=\"/bedeutungenweb/sl.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>ve\u010Der,
-        zahod</span></dd>\n<dd lang=\"sk\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"Slowakisch\" alt=\"Slowakisch\"\nsrc=\"/bedeutungenweb/sk.svg\" width=\"13\"
-        height=\"13\">&nbsp;</span><span>ve\u010Der</span></dd>\n<dd lang=\"bs\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Bosnisch\" alt=\"Bosnisch\"\nsrc=\"/bedeutungenweb/bs.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>\u0432\u0435\u0447\u0435, \u0432\u0435\u0447\u0435\u0440,
-        <span class=\"rInf\">Ve\u010Deras</span>, <span class=\"rInf\">Dobra ve\u010Der</span>,
-        <span class=\"rInf\">Ve\u010De</span></span></dd>\n<dd lang=\"hr\"><span class=\"wLng\"><img
-        loading=\"lazy\" title=\"Kroatisch\" alt=\"Kroatisch\"\nsrc=\"/bedeutungenweb/hr.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>ve\u010De, ve\u010Der</span></dd>\n<dd
-        lang=\"uk\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Ukrainisch\"
-        alt=\"Ukrainisch\"\nsrc=\"/bedeutungenweb/uk.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>\u0432\u0435\u0447\u0456\u0440,
-        \u0432\u0435\u0447\u0456\u0440\u043A\u0430</span></dd>\n<dd lang=\"bg\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Bulgarisch\" alt=\"Bulgarisch\"\nsrc=\"/bedeutungenweb/bg.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span><span class=\"rInf\">\u0432\u0435\u0447\u0435\u0440</span></span></dd>\n<dd
-        lang=\"be\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Belorussisch\"
-        alt=\"Belorussisch\"\nsrc=\"/bedeutungenweb/be.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>\u0432\u0435\u0447\u0430\u0440</span></dd>\n</dl>\n<dl
-        class=\"wNrn\" dir=\"rtl\">\n<dd lang=\"ar\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"Arabisch\" alt=\"Arabisch\"\nsrc=\"/bedeutungenweb/ar.svg\" width=\"13\"
-        height=\"13\"></span><span>\u0645\u064E\u0633\u064E\u0627\u0621&#1548; \u0639\u064E\u0634\u0650\u064A\u064E\u0651\u0629&#1548;
-        \u0645\u0633\u0627\u0621&#1548; \u0639\u0634\u0627\u0621&#1548; \u0623\u0645\u0633\u064A\u0629&#1548;
-        <span class=\"rInf\">\u0627\u0644\u063A\u064E\u0633\u064E\u0642</span>&#1548;
-        <span class=\"rInf\">\u0644\u064A\u0644</span></span></dd>\n<dd lang=\"fa\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Persisch\" alt=\"Persisch\"\nsrc=\"/bedeutungenweb/fa.svg\"
-        width=\"13\" height=\"13\"></span><span>\u063A\u0631\u0648\u0628&#1548; \u0634\u0627\u0645\u06AF\u0627\u0647&#1548;
-        \u0634\u0627\u0645&#1548; \u0633\u0631\u0634\u0628&#1548; <span class=\"rInf\">\u0639\u0635\u0631</span>&#1548;
-        <span class=\"rInf\">\u0645\u063A\u0631\u0628</span>&#1548; <span class=\"rInf\">\u063A\u0631\u0648\u0628\u200C\u06AF\u0627\u0647</span>&#1548;
-        <span class=\"rInf\">\u0645\u063A\u0631\u0628\u06CC</span>&#1548;<span class=\"rInf\">
-        ...</span></span></dd>\n<dd lang=\"ur\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"Urdu\" alt=\"Urdu\"\nsrc=\"/bedeutungenweb/ur.svg\" width=\"13\" height=\"13\"></span><span><span
-        class=\"rInf\">\u0634\u0627\u0645</span>&#1548; <span class=\"rInf\">\u0645\u063A\u0631\u0628</span></span></dd>\n</dl>\n<hr>\n<a
-        class=\"rKnpf rLinks\" href=\"/substantive/uebersetzungen/Abend.htm\">\n\xDCbersetzungen
-        <svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
-        1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
-        class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"xb594fBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"xb594fImg\" onclick=\"Rahmen.aufzu('xb594f')\"><svg fill=\"\" height=\"24\"
-        viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
-        class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM\">Deklination</h2></header>\n<div id=\"xb594f\" class=\"rAufZu\">\n<q
-        class=\"wM\">Abend<u>s</u></q> &middot;\n<q class=\"wM\">Abend<u>e</u></q>\u2070<div
-        class=\"wFlxs\">\n<div class=\"rLinks wFlx\">\n<h3 class=\"wM\">Singular</h3>\n<table><tr><td><q
-        class=\"wM\">Abend</q></td></tr><tr><td><q class=\"wM\">Abend<u>s</u></q></td></tr><tr><td><q
-        class=\"wM\">Abend</q></td></tr><tr><td><q class=\"wM\">Abend</q></td></tr></table>\n</div>\n<div
-        class=\"rLinks wFlx\">\n<h3 class=\"wM\">Plural</h3>\n<table><tr><td><q class=\"wM\">Abend<u>e</u></q>\u2070</td></tr><tr><td><q
-        class=\"wM\">Abend<u>e</u></q>\u2070</td></tr><tr><td><q class=\"wM\">Abend<u>en</u></q>\u2070</td></tr><tr><td><q
-        class=\"wM\">Abend<u>e</u></q>\u2070</td></tr></table>\n</div>\n</div>\n<hr
-        class=\"rClear\">\n<a class=\"rKnpf rLinks\" href=\"https://www.verbformen.de/deklination/substantive/Abend.htm\">\nDeklination
-        <svg fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
-        xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28
-        0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354 0.0354-7.39z\"></path>\n</svg></a>\n</div>\n<div
-        class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><div
-        class=\"aAnz aInf rClear\" style=\"margin: 0 0 14px 0;\">\n<div id=\"verben.de_sitebar_1\"></div>\n</div>\n</div>&nbsp;\n<div
-        class=\"rClear\"></div>\n<div class=\"rAnkr rAnkrBox\" id=\"kommentare\"></div><section
-        class=\"rBox rBoxTrns \" id=\"x820f8Box\" >\n<nav class=\"rRechts\" >\n<button
-        class=\"rRechts rInf\" type=\"button\" id=\"x820f8Img\" onclick=\"Rahmen.aufzu('x820f8')\"><svg
-        fill=\"\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
-        class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        onclick=\"Rahmen.aufzu('x820f8')\">Kommentare</h2></header>\n<div id=\"x820f8\"
-        class=\"rAufZu\">\n<hr><p>\n<span class=\"rInf rKln\">2024/07 \xB7</span>
-        \n<span class=\"rNoSelect rInf rKln\" onclick=\"Rahmen.aufzu('k4dfeeAnt')\">Antworten</span><br>\n<b>anmelden
-        meint:</b> \u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439
-        \u0431\u044B\u043B \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D. \u041F\u043E\u0441\u043B\u0435
-        \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0438 \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u044F
-        \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439 \u0431\u0443\u0434\u0435\u0442
-        \u043E\u043F\u0443\u0431\u043B\u0438\u043A\u043E\u0432\u0430\u043D.</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k4dfeeAnt\">\n<div class=\"kFrm\"
-        id=\"x5b677\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x5b677')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"4dfee\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/07 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k0d2c9Ant')\">Antworten</span><br>\n<span style=\"font-size:
-        1.2em;\">\n<span class=\"kAn\">\u2605\u2605\u2605\u2605\u2605</span></span><b>fatma
-        hassan meint:</b> i love it</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k0d2c9Ant\">\n<div class=\"kFrm\" id=\"x432cd\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x432cd')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"0d2c9\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/07 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k83bf9Ant')\">Antworten</span><br>\n<b>Evelyne A meint:</b>
-        \"Sich \xE4rgern an etwas\" ist doch mit Dativ, nicht mit Akkusativ, oder?</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k83bf9Ant\">\n<div class=\"kFrm\"
-        id=\"x7067b\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x7067b')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"83bf9\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/06 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('keb29dAnt')\">Antworten</span><br>\n<b>Sneaker meint:</b>
-        there is no such word in Russian language - \u0441\u043D\u0438\u043A\u0435\u0440.
-        \ Right translation of German word der Sneaker  to Russian language is \u043A\u0440\u043E\u0441\u0441\u043E\u0432\u043E\u043A,
-        \u0441\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F \u043E\u0431\u0443\u0432\u044C
-        \u0434\u043B\u044F \u043F\u043E\u0432\u0441\u0435\u0434\u043D\u0435\u0432\u043D\u043E\u0441\u0442\u0438</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"keb29dAnt\">\n<div class=\"kFrm\"
-        id=\"x483b1\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x483b1')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"eb29d\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/05 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k4dd06Ant')\">Antworten</span><br>\n<b>YM meint:</b>
-        \u0440\u0456\u0432\u0435\u043D\u044C \u043C\u043E\u0442\u043E\u0440\u043D\u043E\u0457
-        \u043E\u043B\u0438\u0432\u0438</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k4dd06Ant\">\n<div class=\"kFrm\" id=\"xf5e1f\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xf5e1f')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"4dd06\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/04 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('kb1032Ant')\">Antworten</span><br>\n<span style=\"font-size:
-        1.2em;\">\n<span class=\"kAn\">\u2605\u2605\u2605\u2605</span><span class=\"kAus\">\u2605</span>\n</span><b>Tetiana
-        OBUKHOVA meint:</b> Erste Variante von \xDCbersetzung auf Ukrainisch ist Schimpfwort.
-        Das ist deutlich falsch. </p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"kb1032Ant\">\n<div class=\"kFrm\" id=\"x1ba4a\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x1ba4a')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"b1032\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/03 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k17064Ant')\">Antworten</span><br>\n<b>AA meint:</b>
-        Sehr gut aber mann sagt das von persische Sprache \"\u0627\u0637\u0644\u0627\u0639
-        \u062F\u0627\u062F\u0646\u060C\u062E\u0628\u0631 \u062F\u0627\u062F\u0646\"\nYou
-        write the meaning of adj. Section \"\u0645\u062A\u0648\u0627\u0636\u0639\u060C\u0641\u0631\u0648\u062A\u0646'
-        in verb section which must be replaced by  \u067E\u0627\u0633\u062E \u062F\u0627\u062F\u0646
-        \u0627\u0637\u0644\u0627\u0639 \u062F\u0627\u062F\u0646 \u062E\u0628\u0631
-        \u062F\u0627\u062F\u0646\nP.S. the adj. Section is okay.only change verb section\nz.b\njdn\_zu\_jdm/etw\_bescheiden\nto\_summon\_[or\_call]\_sb\_to\_sb/sth\n\u06A9\u0633\u06CC
-        \u0631\u0627 \u0635\u062F\u0627 \u0632\u062F\u0646 \u06CC\u0627 \u062E\u0628\u0631
-        \u06A9\u0631\u062F\u0646\n</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k17064Ant\">\n<div class=\"kFrm\" id=\"x5801f\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x5801f')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"17064\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/03 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k3ca1bAnt')\">Antworten</span><br>\n<b>stefan meint:</b>
-        Proposition of a new word Wasserdampfwolke in Polish \"chmura parowa, chmura
-        pary\"</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k3ca1bAnt\">\n<div
-        class=\"kFrm\" id=\"x4ccf1\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x4ccf1')\">\n<div class=\"rMrgn\">\n<select
-        class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"3ca1b\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/03 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('kf0091Ant')\">Antworten</span><br>\n<b>stefan meint:</b>
-        Kreisbahn in Polnisch ist auh Regionalbahn, \"koleje regionalne, kolej podmiejska\"</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"kf0091Ant\">\n<div class=\"kFrm\"
-        id=\"xa1866\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xa1866')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"f0091\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/01 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k841a7Ant')\">Antworten</span><br>\n<b>Andrii meint:</b>
-        Bitte \xE4ndern sie die ukrainische \xDCbersetzung von \"\u0441\u0438\u0434\u0456\u0442\u0438
-        \u043D\u0430 \u043A\u043E\u0440\u0442\u043E\u0447\u043A\u0430\u0445\" auf
-        \"\u0441\u0438\u0434\u0456\u0442\u0438 \u043D\u0430\u0432\u043F\u043E\u0447\u0456\u043F\u043A\u0438\"
-        und f\xFCgen sie auch \"\u043D\u0430\u043F\u043E\u0447\u0456\u043F\u043A\u0438\",
-        \"\u043A\u0430\u0440\u0430\u0447\u043A\u0438, \u043A\u0430\u0440\u044F\u0447\u043A\u0438\"
-        und \"\u043D\u0430\u043A\u0430\u0440\u044F\u0447\u043A\u0438\" hinzu.</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k841a7Ant\">\n<div class=\"kFrm\"
-        id=\"xb4c88\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xb4c88')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"841a7\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/01 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k2ff4dAnt')\">Antworten</span><br>\n<b>Andrii meint:</b>
-        F\xFCgen Sie bitte zu Ukrainisch das Wort \"\u043F\u0456\u0434\u0441\u043E\u043D\u043D\u044F\"
-        hinzu. Danke.</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k2ff4dAnt\">\n<div
-        class=\"kFrm\" id=\"x2f9ce\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x2f9ce')\">\n<div class=\"rMrgn\">\n<select
-        class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"2ff4d\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2024/01 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k7db59Ant')\">Antworten</span><br>\n<b>\u043F\u0435\u0440\u0435\u0432\u043E\u0434
-        meint:</b> das Fall - \u0440\u0443\u0441\u0441\u043A\u0438\u0439 -\u0432\u0435\u0440\u0451\u0432\u043A\u0430
-        \u0434\u043B\u044F \u043F\u043E\u0434\u043D\u044F\u0442\u0438\u044F \u043F\u0430\u0440\u0443\u0441\u0430,
-        \u0444\u0430\u043B\nder Fall - \u0440\u0443\u0441\u0441\u043A\u0438\u0439
-        - \u0443\u043F\u0430\u043B, \u043F\u0430\u0434\u0435\u043D\u0438\u0435, \u0434\u0435\u043B\u043E,
-        \u043D\u0435\u0443\u0434\u0430\u0447\u0430</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k7db59Ant\">\n<div class=\"kFrm\" id=\"x8c4d1\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x8c4d1')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"7db59\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k8e1aeAnt')\">Antworten</span><br>\n<b>Mohamed@esaam
-        meint:</b> I love this dictionary cuz it has a lot if important staff for
-        anyone who's learning deutsch</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k8e1aeAnt\">\n<div class=\"kFrm\" id=\"x9c627\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x9c627')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"8e1ae\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k2fcecAnt')\">Antworten</span><br>\n<b>Stefan meint:</b>
-        Polnishe \xDCbersetzung ist \"odyseiczny\".</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k2fcecAnt\">\n<div class=\"kFrm\" id=\"x00266\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x00266')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"2fcec\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('kbdbeaAnt')\">Antworten</span><br>\n<b>Edith Neumann
-        meint:</b> Im Sinn von Unsinn machen.\nMeine Mutter schrieb 1945: Ich habe
-        lange nicht mehr gequackelt. Da wird es ja wieder einmal Zeit, von einem Baum
-        zu fallen oder die Treppe herunter zu purzeln.</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"kbdbeaAnt\">\n<div class=\"kFrm\" id=\"x9acf4\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x9acf4')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"bdbea\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k5e65fAnt')\">Antworten</span><br>\n<b>Furkan meint:</b>
-        ...</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k5e65fAnt\">\n<div
-        class=\"kFrm\" id=\"x6ec9c\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x6ec9c')\">\n<div class=\"rMrgn\">\n<select
-        class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"5e65f\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/11 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('ka9974Ant')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
-        \u0421\u043E\u0432\u0456\u0441\u0442\u044C, \u0441\u0443\u043C\u043B\u0456\u043D\u043D\u044F</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"ka9974Ant\">\n<div class=\"kFrm\"
-        id=\"xaf201\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xaf201')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"a9974\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/11 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k40110Ant')\">Antworten</span><br>\n<b>Besher Ghanem
-        meint:</b> Der Artikel von diesem Wort ist: DER</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k40110Ant\">\n<div class=\"kFrm\" id=\"x393e2\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x393e2')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"40110\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/11 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k654c6Ant')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
-        \u041C\u043E\u0436\u043B\u0438\u0432\u043E,  \u043C\u0430\u0431\u0443\u0442\u044C</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k654c6Ant\">\n<div class=\"kFrm\"
-        id=\"x3c63d\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x3c63d')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"654c6\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/11 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('kadfe9Ant')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
-        \u0440\u0435\u0433\u0443\u043B\u044F\u0440\u043D\u0456\u0441\u0442\u044C,
-        \u0437\u0430\u043A\u043E\u043D\u043E\u043C\u0456\u0440\u043D\u0456\u0441\u0442\u044C</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"kadfe9Ant\">\n<div class=\"kFrm\"
-        id=\"xffb69\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xffb69')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"adfe9\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/11 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k70caeAnt')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
-        \u043D\u0435\u0437\u043B\u0456\u0447\u0435\u043D\u043D\u0430 \u043A\u0456\u043B\u044C\u043A\u0456\u0441\u0442\u044C,
-        \u0431\u0435\u0437\u043E\u0434\u043D\u044F, \u0432\u0435\u043B\u0438\u0447\u0435\u0437\u043D\u0430
-        \u043C\u0430\u0441\u0430</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k70caeAnt\">\n<div
-        class=\"kFrm\" id=\"xcb89e\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'xcb89e')\">\n<div class=\"rMrgn\">\n<select
-        class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"70cae\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/10 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('kb52c9Ant')\">Antworten</span><br>\n<b>Ehsan meint:</b>
-        \U0001F1EE\U0001F1F7 \u0645\u062D\u0648\u0637\u0647 \u0628\u0627\u0632\u06CC
-        \u0628\u0631\u0627\u06CC \u06A9\u0648\u062F\u06A9\u0627\u0646 \u0645\u062B\u0644\u0627
-        \u062F\u0631 \u0645\u0631\u0627\u06A9\u0632 \u062E\u0631\u06CC\u062F \u06CC\u0627
-        \u0641\u0631\u062F\u06AF\u0627\u0647 \u0648 \u2026 </p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"kb52c9Ant\">\n<div class=\"kFrm\" id=\"x8fc5f\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x8fc5f')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"b52c9\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/09 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('ke5bbdAnt')\">Antworten</span><br>\n<b>zystko meint:</b>
-        \"an Bedeutung verlieren\" - ist das Dativ oder Akkusativ? K\xF6nnte mir jd
-        weiterhelfen? Danke!</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"ke5bbdAnt\">\n<div
-        class=\"kFrm\" id=\"x4d053\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x4d053')\">\n<div class=\"rMrgn\">\n<select
-        class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"e5bbd\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/09 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k05cf9Ant')\">Antworten</span><br>\n<b>Lucia meint:</b>
-        Espa\xF1ol: acelerado, inquieto (relativo a personalidad)</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k05cf9Ant\">\n<div class=\"kFrm\" id=\"xd0edc\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xd0edc')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"05cf9\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/08 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('k10c57Ant')\">Antworten</span><br>\n<b>Alex meint:</b>
-        What is it at the top of the page?  -  Use of the English verb erinnern</p>\n<div
-        class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k10c57Ant\">\n<div class=\"kFrm\"
-        id=\"xd8935\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xd8935')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"10c57\">\n</form>\n</div></div>\n</div><p>\n<span
-        class=\"rInf rKln\">2023/06 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
-        onclick=\"Rahmen.aufzu('ka2e91Ant')\">Antworten</span><br>\n<b>\u041F\u0435\u0440\u0435\u043A\u043B\u0430\u0434
-        meint:</b> \u0438\u043D\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043B\u044C\u043D\u043E,
-        \u043E\u043A\u0440\u0435\u043C\u0438\u0439</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"ka2e91Ant\">\n<div class=\"kFrm\" id=\"x28048\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x28048')\">\n<div
-        class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
-        value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
-        name=\"bezug\" type=\"hidden\" value=\"a2e91\">\n</form>\n</div></div>\n</div><div
-        class=\"kFrm\" id=\"xb96a5\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'xb96a5')\">\n<div class=\"rMrgn\">\n<select
-        class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
-        value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
-        value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
-        value=\"1\">\u2605</option>\n</select>\n<label for=\"kommentar\">Kommentar:</label><br>\n<div
-        class=\"rClear\"></div>\n<textarea maxlength=\"1000\" rows=\"5\" name=\"kommentar\"
-        id=\"kommentar\" required=\"required\"></textarea>\n</div>\n<a href=\"/user/login/\"
-        class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
-        name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n</form>\n</div></div>\n<div
-        class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><footer
-        class=\"rInf rKln rClear\">\n<p>\u2070 bedeutungsabh\xE4ngig</p>\n<p>\n* Die
-        Definitionen stammen zum Teil aus dem Wiktionary (de.wiktionary.org) und wurden
-        mitunter nachtr\xE4glich ge\xE4ndert. Sie sind unter der Lizenz CC-BY-SA 3.0
-        (creativecommons.org/licenses/by-sa/3.0) frei verf\xFCgbar. Die Urheber k\xF6nnen
-        \xFCber folgende Links nachgeschlagen werden: <a href=\"https://de.wiktionary.org/wiki?curid=5719\"
-        rel=\"nofollow\" target=\"WIKTIONARY\">5719</a>, <a href=\"https://de.wiktionary.org/wiki?curid=5719\"
-        rel=\"nofollow\" target=\"WIKTIONARY\">5719</a>, <a href=\"https://de.wiktionary.org/wiki?curid=5719\"
-        rel=\"nofollow\" target=\"WIKTIONARY\">5719</a>, <a href=\"https://de.wiktionary.org/wiki?curid=5719\"
-        rel=\"nofollow\" target=\"WIKTIONARY\">5719</a>, <a href=\"https://de.wiktionary.org/wiki?curid=5719\"
-        rel=\"nofollow\" target=\"WIKTIONARY\">5719</a></p>\n</footer>\n<div class=\"rDnb\"><div
-        class=\"aAnz aDnb\" style=\"position: fixed;\">\n<div id=\"verben.de_sky_1\"></div>\n</div>\n</div></div><div
-        class=\"rClear\"></div></article><footer><div><div class=\"rLinks rFuss\">\n<h2>Kontakt</h2>\n<p>Netzverb\xAE
-        Deutsch<br>\nInh. <a href=\"https://www.netzverb.de/andreas.htm\">Andreas
-        G\xF6bel</a><br>\nAlte Buchholzer Str. 8<br>\nD-09487 Schlettau</p>\n<p>Telefon:
-        +49 3733 6196894<br>\nE-Mail: info@netzverb.de</p>\n<p>Facebook: <a rel=\"nofollow\"
-        href=\"https://www.facebook.com/Netzverb\">facebook.com/Netzverb</a><br>\nTwitter:
-        <a rel=\"nofollow\" href=\"https://twitter.com/Netzverb\">twitter.com/Netzverb</a><br>\nYoutube:
-        <a href=\"https://www.youtube.com/Netzverb-Deutsch\">youtube.com/Netzverb</a><br>\nTikTok:
-        <a href=\"https://www.tiktok.com/@netzverb\">tiktok.com/@Netzverb</a><br>\nInstagram:
-        <a href=\"https://www.instagram.com/netzverb/\">instagram.com/Netzverb</a><br>\nPinterest:
-        <a href=\"https://www.pinterest.de/netzverb/\">pinterest.de/Netzverb</a><br>\nTumblr:
-        <a href=\"https://netzverb.tumblr.com/\">netzverb.tumblr.com</a><br>\nGoogle
-        Play Store: <a href=\"https://play.google.com/store/apps/dev?id=7197812532170593543\">play.google.com/Netzverb</a><br>\nApple
-        App Store: <a href=\"https://apps.apple.com/de/developer/andreas-goebel/id1522285303\">apps.apple.com/andreas-goebel</a><br></p>\n</div>\n<div
-        class=\"rLinks rFuss\">\n<h2>Netzverb</h2>\n<p>Netzwerk der deutschen Sprache<br>\n<a
-        rel=\"nofollow\" href=\"https://www.netzverb.de\">www.netzverb.de</a></p>\n<p>Deutsche
-        Flexion: <a rel=\"nofollow\" href=\"https://www.verbformen.de\">verbformen.de</a><br>\nDeutsches
-        W\xF6rterbuch: <a rel=\"nofollow\" href=\"https://www.verben.de\">verben.de</a><br>\nDeutsche
-        Grammatik: <a rel=\"nofollow\" href=\"//www.sprachlehre.de\">sprachlehre.de</a><br>\nDeutsche
-        S\xE4tze: <a rel=\"nofollow\" href=\"//www.satzapp.de\">satzapp.de</a><br>\nDeutsche
-        W\xF6rter: <a rel=\"nofollow\" href=\"https://www.verblisten.de\">verblisten.de</a><br>\nSprachforum:
-        <a rel=\"nofollow\" href=\"http://www.konjugation.de\">konjugation.de</a><br></p>\n<p><strong>Apps</strong><br>\n<a
-        href=\"https://netzverb-dictionary.app/\">Netzverb W\xF6rterbuch App</a><br>\nAndroid:
-        <a href=\"https://play.google.com/store/apps/details?id=de.verbformen.app\">Netzverb
-        W\xF6rterbuch</a><br>\niOS: <a href=\"https://apps.apple.com/app/id1638334347\">Netzverb
-        W\xF6rterbuch</a><br></p>\n<p><strong>KI und Chat</strong><br>\nNetzverb Chat:
-        <a href=\"/chat\">chat</a></p>\n</div>\n<div class=\"rLinks rFuss\">\n<h2>Hinweise</h2>\n<p><a
-        href=\"//www.netzverb.de/impressum.htm\">Impressum</a><br>\n<a href=\"//www.netzverb.de/impressum.htm\">Nutzungsbedingungen</a></p>\n<h2>Datenschutz</h2>\n<p><a
-        href=\"//www.netzverb.de/datenschutz.htm\">Datenschutzerkl\xE4rung</a><br>\n<a
-        href=\"#\" onclick=\"window._sp_.loadPrivacyManagerModal(527153)\">Einwilligungen</a></p>\n<a
-        href=\"/user/login/\">Anmelden</a>\n</div>\n<div class=\"rClear\">\n<a href=\"https://creativecommons.org/licenses/by-sa/4.0/\"
-        rel=\"nofollow\">\n<svg fill=\"#fff\" fill-opacity=\"0.6\" height=\"26\" viewBox=\"0
-        0 26 26\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m13
-        0c3.6 0 6.7 1.3 9.3 3.8 1.2 1.2 2.2 2.6 2.8 4.2 0.6 1.6 0.9 3.3 0.9 5 0 1.8-0.3
-        3.5-0.9 5 -0.6 1.6-1.5 2.9-2.8 4.1 -1.3 1.3-2.7 2.2-4.3 2.9 -1.6 0.7-3.3 1-5
-        1s-3.4-0.3-4.9-1c-1.6-0.6-3-1.6-4.3-2.9 -1.3-1.2-2.2-2.6-2.8-4.2 -0.6-1.5-1-3.2-1-4.9s0.3-3.4
-        1-5c0.7-1.6 1.6-3 2.9-4.3 2.5-2.5 5.5-3.8 9.1-3.8Zm0 2.3c-3 0-5.5 1-7.5 3.1
-        -1 1-1.8 2.2-2.3 3.5 -0.5 1.3-0.8 2.6-0.8 4 0 1.4 0.3 2.7 0.8 4 0.5 1.3 1.3
-        2.4 2.4 3.5s2.2 1.8 3.5 2.3c1.3 0.5 2.6 0.8 4 0.8 1.4 0 2.7-0.3 4.1-0.8s2.5-1.3
-        3.5-2.3c2-2 3-4.5 3-7.4 0-1.4-0.3-2.8-0.8-4.1 -0.5-1.3-1.2-2.4-2.2-3.4 -2.1-2.1-4.6-3.1-7.6-3.1Zm-0.2
-        8.5l-1.7 0.9c-0.2-0.4-0.4-0.7-0.7-0.8 -0.3-0.2-0.5-0.2-0.8-0.2 -1.2 0-1.7
-        0.8-1.7 2.3 0 0.7 0.1 1.3 0.4 1.7 0.3 0.4 0.7 0.6 1.3 0.6 0.8 0 1.3-0.4 1.6-1.1l1.6
-        0.8c-0.3 0.6-0.8 1.1-1.4 1.5 -0.6 0.4-1.3 0.5-2 0.5 -1.2 0-2.1-0.4-2.8-1.1
-        -0.7-0.7-1.1-1.7-1.1-3 0-1.2 0.4-2.2 1.1-2.9 0.7-0.7 1.6-1.1 2.7-1.1 1.6 0
-        2.8 0.6 3.5 1.9Zm7.5 0l-1.7 0.9c-0.2-0.4-0.4-0.7-0.7-0.8 -0.3-0.2-0.5-0.2-0.8-0.2
-        -1.2 0-1.7 0.8-1.7 2.3 0 0.7 0.1 1.3 0.4 1.7 0.3 0.4 0.7 0.6 1.3 0.6 0.8 0
-        1.3-0.4 1.6-1.1l1.6 0.8c-0.4 0.6-0.8 1.1-1.4 1.5 -0.6 0.4-1.3 0.5-2 0.5 -1.2
-        0-2.1-0.4-2.8-1.1 -0.7-0.7-1.1-1.7-1.1-3 0-1.2 0.4-2.2 1.1-2.9 0.7-0.7 1.6-1.1
-        2.7-1.1 1.6 0 2.8 0.6 3.4 1.9Z\"></path>\n</svg>\n<svg fill=\"#fff\" fill-opacity=\"0.6\"
-        height=\"26\" viewBox=\"0 0 26 26\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"m13 0c3.7 0 6.7 1.3 9.2 3.8 2.5 2.6 3.8 5.6 3.8 9.2 0 3.7-1.2 6.7-3.7
-        9.1 -2.6 2.6-5.8 3.9-9.3 3.9 -3.6 0-6.6-1.3-9.2-3.8 -2.5-2.6-3.8-5.6-3.8-9.2
-        0-3.6 1.3-6.6 3.8-9.2 2.5-2.5 5.6-3.8 9.2-3.8Zm0.1 2.3c-3 0-5.4 1-7.5 3.1
-        -2.1 2.2-3.2 4.7-3.2 7.6 0 2.9 1.1 5.4 3.2 7.5 2 2 4.5 3.1 7.4 3.1 2.9 0 5.4-1.1
-        7.6-3.2 2-2 3.1-4.5 3.1-7.4s-1-5.5-3.1-7.6c-2-2.1-4.5-3.2-7.5-3.2Zm3.5 7.4v5.3h-1.5v6.3h-4v-6.3h-1.5v-5.3c0-0.2
-        0.1-0.4 0.2-0.6 0.2-0.2 0.4-0.2 0.6-0.2h5.3c0.2 0 0.4 0.1 0.6 0.2 0.2 0.2
-        0.3 0.4 0.3 0.6Zm-5.4-3.4c0-1.2 0.6-1.8 1.8-1.8s1.8 0.6 1.8 1.8c0 1.2-0.6
-        1.8-1.8 1.8 -1.2 0-1.8-0.6-1.8-1.8Z\"></path>\n</svg>\n<svg fill=\"#fff\"
-        fill-opacity=\"0.6\" height=\"26\" viewBox=\"0 0 26 26\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
-        d=\"m13 0c3.6 0 6.7 1.3 9.2 3.8 2.5 2.5 3.8 5.6 3.8 9.2 0 3.6-1.2 6.7-3.7
-        9.1 -2.6 2.6-5.7 3.9-9.3 3.9 -3.5 0-6.6-1.3-9.2-3.8 -2.5-2.6-3.8-5.6-3.8-9.2
-        0-3.5 1.3-6.6 3.8-9.2 2.5-2.5 5.6-3.8 9.2-3.8Zm0 2.3c-3 0-5.4 1-7.5 3.1 -2.1
-        2.2-3.2 4.7-3.2 7.5 0 2.9 1.1 5.4 3.2 7.5 2.1 2.1 4.6 3.2 7.5 3.2 2.9 0 5.4-1.1
-        7.6-3.2 2.1-2 3.1-4.5 3.1-7.4 0-3-1-5.5-3.1-7.5 -2-2.2-4.5-3.2-7.4-3.2Zm-5.7
-        8.9c0.3-1.6 0.9-2.9 1.9-3.7 1-0.9 2.3-1.3 3.8-1.3 2.1 0 3.7 0.7 4.9 2 1.2
-        1.3 1.8 3 1.8 5.1 0 2-0.6 3.7-1.9 5 -1.3 1.3-2.9 2-4.9 2 -1.5 0-2.7-0.4-3.8-1.3s-1.7-2.1-1.9-3.8h3.3c0.1
-        1.6 1 2.4 2.9 2.4 0.9 0 1.7-0.4 2.2-1.2 0.6-0.8 0.8-1.8 0.8-3.2 0-1.4-0.3-2.4-0.8-3.1
-        -0.5-0.7-1.2-1.1-2.2-1.1 -1.7 0-2.7 0.8-2.9 2.3h1l-2.6 2.6 -2.6-2.6 1 0Z\"></path>\n</svg>\n</a>\n<p>Alle
-        origin\xE4ren Inhalte auf dieser Website sind, soweit nichts anderes vermerkt
-        oder mit abweichendem Copyright Hinweis versehen, unter der offenen Lizenz
-        <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" rel=\"license
-        nofollow\" target=\"_blank\">CC BY-SA 4.0</a> <em>(https://creativecommons.org/licenses/by-sa/4.0)</em>
-        verf\xFCgbar. Die Inhalte d\xFCrfen somit frei und dauerhaft verwendet, kopiert
-        und ge\xE4ndert werden und eignen sich im Rahmen von Open Educational Resources
-        (OER) als Lehrmaterial. Bei einer Ver\xF6ffentlichung ist als Urheber <em>\"Netzverb
-        (<a href=\"https://www.verben.de/\">www.verben.de</a>)\"</em> mit Verlinkung
-        auf <em>https://www.verben.de/</em> zu nennen. Mehr Informationen stehen in
-        den <a rel=\"nofollow\" href=\"//www.netzverb.de/impressum.htm\">Nutzungsbedingungen</a>.</p>\n</div>\n<span
-        class=\"rInf rKln\">14 ms</span>\n<script type=\"application/ld+json\">{\n\"@context\":
-        \"http://schema.org\",\n\"@type\": \"WebSite\",\n\"url\": \"https://www.verben.de/\",\n\"potentialAction\":
-        {\n\"@type\": \"SearchAction\",\n\"target\": \"https://www.verben.de/suche/?w={search_term_string}\",\n\"query-input\":
-        \"required name=search_term_string\"\n},\n\"author\": { \"@id\": \"http://www.netzverb.de/\"
-        },\n\"publisher\": { \"@id\": \"http://www.netzverb.de/\" }\n}</script>\n<script
-        type=\"application/ld+json\">[\n{\n\"@context\": \"http://schema.org/\",\n\"@type\":
-        \"SiteNavigationElement\",\n\"name\":\"Bedeutungen\",\n\"url\":\"https://www.verben.de/substantive/bedeutungen/Abend.htm\"\n},\n{\n\"@context\":
-        \"http://schema.org/\",\n\"@type\": \"SiteNavigationElement\",\n\"name\":\"\xDCbersetzungen\",\n\"url\":\"https://www.verben.de/substantive/uebersetzungen/Abend.htm\"\n},\n{\n\"@context\":
-        \"http://schema.org/\",\n\"@type\": \"SiteNavigationElement\",\n\"name\":\"Synonyme\",\n\"url\":\"https://www.verben.de/substantive/synonyme/Abend.htm\"\n},\n{\n\"@context\":
-        \"http://schema.org/\",\n\"@type\": \"SiteNavigationElement\",\n\"name\":\"Definitionen\",\n\"url\":\"https://www.verben.de/substantive/Abend.htm\"\n}\n]</script>\n</div></footer><script
-        async src=\"https://www.googletagmanager.com/gtag/js?id=UA-1466848-16\"></script>\n<script>\nwindow.dataLayer
-        = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js',
-        new Date());\ngtag('config', 'UA-1466848-16', { 'anonymize_ip': true });\n</script>\n<script
-        async type=\"text/javascript\">\nif(document.getElementById(\"wStckLngImg\"))
-        {\ndocument.getElementById(\"wStckLngImg\").addEventListener(\"click\", function()
-        {\ngtag('event', 'open-profile-details', {'event_category' : 'details', 'event_label'
-        : 'Profile Details'});\n});\n}\n</script>\n</body>\n</html>\n"
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"lxpl8bCIpk425w5d7bAs7A\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20la%20hora%20del%20d%C3%ADa%20despu%C3%A9s%20de%20la%20tarde%2C%20que%20comienza%20cuando%20el%20sol%20llega%20al%20horizonte%20y%20termina%20cuando%20oscurece%20completamente%3B%20La%20tarde%20es%20precedida%20por%20el%20d%C3%ADa%20y%20la%20tarde%20es%20seguida%20por%20la%20noche.%0A%20%20%20%20%5B2%5D%20la%20direcci%C3%B3n%20oeste%0A%20%20%20%20%5B3%5D%20frase%20de%20saludo%20arrastrada%20%22buenas%20noches%22%0A%20%20%20%20%5B4%5D%20Conclusi%C3%B3n%2C%20fin%2C%20conclusi%C3%B3n%20%28para%20vidas%2C%20eras%2C%20reinados%20duraderos%20y%20similares%29%0A%20%20%20%20%5B5%5D%20Evento%20nocturno%3B%20Velada%20con%20un%20programa%20alegre%20y%20variado%3B%20Recepci%C3%B3n%20nocturna&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] die Tageszeit
+        nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht, und
+        bei v\xF6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf den
+        Abend folgt die Nacht\n    [2]  die Himmelsrichtung Westen\n    [3]  verschliffene
+        Begr\xFC\xDFungsfloskel \u201Eguten Abend\u201C\n    [4]  Abschluss, Ende,
+        Schluss (f\xFCr Leben, Epochen, langandauernde Herrschaften und \xC4hnlichem)\n
+        \   [5]  Abendveranstaltung; Abend mit heiterem, vielgestaltigem Programm;
+        Abendempfang\"><div class=\"translate-button-container\"><input type=\"submit\"
+        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        la hora del d\xEDa despu\xE9s de la tarde, que comienza cuando el sol llega
+        al horizonte y termina cuando oscurece completamente; La tarde es precedida
+        por el d\xEDa y la tarde es seguida por la noche.\n    [2] la direcci\xF3n
+        oeste\n    [3] frase de saludo arrastrada &quot;buenas noches&quot;\n    [4]
+        Conclusi\xF3n, fin, conclusi\xF3n (para vidas, eras, reinados duraderos y
+        similares)\n    [5] Evento nocturno; Velada con un programa alegre y variado;
+        Recepci\xF3n nocturna</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
     headers:
-      Connection:
-      - Keep-Alive
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
       Content-Encoding:
       - gzip
+      Content-Security-Policy:
+      - script-src 'nonce-6RTUq7yuMGA-Cpx_QFK7bg' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
-      - text/html;charset=UTF-8
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
       Date:
-      - Wed, 07 Aug 2024 20:12:35 GMT
-      Keep-Alive:
-      - timeout=5, max=100
+      - Wed, 07 Aug 2024 21:47:32 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
       Server:
-      - Apache
+      - ESF
       Set-Cookie:
-      - de.netzverb.bedeutungen.helden.referenz=4284; Max-Age=31536000; Expires=Thu,
-        07 Aug 2025 20:12:35 GMT; Path=/
-      Strict-Transport-Security:
-      - max-age=0
+      - __Secure-ENID=21.SE=dGBnj7Kkt7cCCOFbZQUGI4Hn4MQIM2KE7-GMjdnKPNG95r8MeR55g69YSOhxgOAnrVw5XKfYTq87YIPnHSKDtRDIVXWDogo6E0J3UHYL-mMBnajqBy-fNToDBwLLIdOTHNerJEEumKbc4s94TBrXqUxiqPg66C2lOvRkDuUnf2_IWO73;
+        expires=Sun, 07-Sep-2025 14:05:50 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
       Vary:
-      - Accept-Encoding,User-Agent
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
-      - DENY
+      - SAMEORIGIN
       X-XSS-Protection:
-      - 1; mode=block
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw0pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4OL5cO7-VTeDC1f-7GJXUkvIL40uKEvOKcxJLUnXLU5OKU4vKUovijQyMTAwsDMz0DEzjCwwA3AwtyQ"
     status:
       code: 200
-      message: '200'
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%1B1%1D+%E1%11%1EEines+Abends%1C+als+sie+so+vertraulich+beisammensa%C1%1Fen%1C+klopfte+jemand+an+die+T%C1%BCre%1C+als+wollte+er+eingelassen+sein.%E1%11%1C
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"_kHJ7kWVrYFQj-RCOtlBtQ\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%E2%80%9EEines%20Abends%2C%20als%20sie%20so%20vertraulich%20beisammensa%C3%9Fen%2C%20klopfte%20jemand%20an%20die%20T%C3%BCre%2C%20als%20wollte%20er%20eingelassen%20sein.%E2%80%9C&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%E2%80%9EEines%20Abends%2C%20als%20sie%20so%20vertraulich%20beisammensa%C3%9Fen%2C%20klopfte%20jemand%20an%20die%20T%C3%BCre%2C%20als%20wollte%20er%20eingelassen%20sein.%E2%80%9C&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20%E2%80%9CUna%20noche%2C%20mientras%20estaban%20sentados%20juntos%20en%20confianza%2C%20alguien%20llam%C3%B3%20a%20la%20puerta%20como%20si%20quisiera%20que%20le%20dejaran%20entrar%E2%80%9D.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] \u201EEines
+        Abends, als sie so vertraulich beisammensa\xDFen, klopfte jemand an die T\xFCre,
+        als wollte er eingelassen sein.\u201C\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[1] \u201CUna noche, mientras estaban sentados
+        juntos en confianza, alguien llam\xF3 a la puerta como si quisiera que le
+        dejaran entrar\u201D.</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-rdam0WtEqy_wXRhJINS3XA' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Wed, 07 Aug 2024 21:47:32 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=21.SE=EP4TgiTUk1kmZ0vwK8kHFWG_VNRskPvPX99f16TUFHGwE5afFQY1elIZtxyGa3mg5GxgrIgVBOGkQva2EnE-dZkLhJ5iL8YWeCj9X2tUd_WKNcoXjfs9HfVzF7B7dyUSj3VjqUYbjSUYs-8MsqIWE95XBmdJhzmyJKfWOG3snrQR4qwN;
+        expires=Sun, 07-Sep-2025 14:05:50 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4OL5cO7-VTeDDiV9tTEpqSfmF8SVFiXnFOYklqbrlqUnFqUVlqUXxRgZGJgYWBmZ6BqbxBQYA2cotrA"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Content-Length:
+      - '135'
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=utf-8
+      Referer:
+      - http://translate.google.com/
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/47.0.2526.106 Safari/537.36
+    method: POST
+    uri: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+  response:
+    body:
+      string: ')]}''
+
+
+        [["wrb.fr","jQ1olc","[\"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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExDcAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExEwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExEwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExEwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExEwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExEwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExEwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//OExEwAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\"]",null,null,null,"generic"],["di",125],["af.httprm",124,"-9161805657942058664",19]]'
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Accept-Ranges:
+      - none
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment; filename="response.bin"; filename*=UTF-8''response.bin
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport
+      Content-Type:
+      - application/json; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin-allow-popups
+      Date:
+      - Wed, 07 Aug 2024 21:47:32 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=21.SE=OZBFbPu_08BHP_MPRc1Wm5vhamsNQpiDZO-YhlYXm3nS6qFiUc9IjwGaPb7nxBSetsnEMpzSJp3SJA3f88voeo1a3OL_clOIH8mjUrtukdena6uQn4ATHY4Qi_m3ynIz1fxEK_spuYFWWCC7kecIVB5xu6KtxY3XaWeg2huJsGsI9GgD;
+        expires=Sun, 07-Sep-2025 14:05:50 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
 version: 1
