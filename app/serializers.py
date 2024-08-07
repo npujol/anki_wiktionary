@@ -227,9 +227,20 @@ class CustomNote(Note):
         self, content: dict[str, Any], fields_class: Callable[..., Any]
     ) -> Self | None:
         try:
-            self.fields = fields_class(  # type: ignore
-                **{k: v for k, v in content.items() if k in fields_class.model_fields}  # type: ignore
-            )
+            old_instance: CustomFields | BasicFields | None = self.fields
+            if old_instance is None:
+                self.fields = fields_class(  # type: ignore
+                    **{
+                        k: v
+                        for k, v in content.items()
+                        if k in fields_class.model_fields  # type: ignore
+                    }
+                )
+            else:
+                for k, v in content.items():
+                    if k in fields_class.model_fields and not getattr(old_instance, k):  # type: ignore
+                        setattr(old_instance, k, v)
+
             return self
         except ValidationError as e:
             logger.exception(msg=f"Failed to import note from content: {e}")

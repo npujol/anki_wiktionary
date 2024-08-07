@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Any
 
+from app.serializers import CustomNote
+
 
 class BaseDataProcessor(ABC):
     def is_content_complete(self, content: dict[str, Any]) -> bool:
@@ -11,7 +13,7 @@ class BaseDataProcessor(ABC):
         )
 
     @abstractmethod
-    def get_note_data(self, word: str) -> dict[str, Any]:
+    def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         pass
 
     @abstractmethod

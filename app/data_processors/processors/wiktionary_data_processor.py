@@ -5,7 +5,7 @@ import requests
 
 from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.parsers.wiktionary_parser import CustomWiktionaryParser
-from app.serializers import CustomFields
+from app.serializers import CustomFields, CustomNote
 
 logger: logging.Logger = logging.getLogger(name=__name__)
 
@@ -15,7 +15,7 @@ class WiktionaryDataProcessor(BaseDataProcessor):
         self.base_url = "https://de.wiktionary.org/w/api.php"
         self.fields_class = CustomFields
 
-    def get_note_data(self, word: str) -> dict[str, Any]:
+    def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         """
         Fetches data from Wiktionary for a given word and returns a list of
         ParsedWiktionaryPageEntry objects.
@@ -46,14 +46,15 @@ class WiktionaryDataProcessor(BaseDataProcessor):
             logger.error(
                 msg=f"Could not fetch data for word '{word}' using Wiktionary."
             )
-            return {
-                "full_word": word,
-            }
+            return note
 
         content_dict: dict[str, Any] = self._extract_from_content(
             word=word, content=content
         )
-        return content_dict
+        updated_note: CustomNote | None = note.import_from_content(
+            content=content_dict, fields_class=self.fields_class
+        )  # type: ignore
+        return updated_note  # type: ignore
 
     # TODO Move this to a base class
     def _extract_from_content(
