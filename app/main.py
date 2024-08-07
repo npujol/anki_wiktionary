@@ -91,7 +91,7 @@ def add_audio_local(note: CustomNote) -> CustomNote:
     return note
 
 
-def generate_note(word: str) -> bool:
+def generate_note(word: str, processor_name: str | None = None) -> bool:
     """
     Generate Anki note for a given word and add it to Anki database.
 
@@ -105,7 +105,7 @@ def generate_note(word: str) -> bool:
         logger.info(msg=f"Creating Anki note for {word}")
         note: CustomNote | None = NoteDataProcessor(
             deck_name=anki_deck_name, model_name="Basic_"
-        ).get_anki_note(word=word)
+        ).get_anki_note(word=word, processor_name=processor_name)
 
         if not note:
             logger.error(msg=f"Anki note for {word=} could not be created.")
@@ -119,7 +119,9 @@ def generate_note(word: str) -> bool:
     return True
 
 
-async def get_anki_note_data(word: str) -> CustomNote | None:
+async def get_anki_note_data(
+    word: str, processor_name: str | None
+) -> CustomNote | None:
     """
     Asynchronously retrieves Anki note data for a given word.
 
@@ -129,7 +131,9 @@ async def get_anki_note_data(word: str) -> CustomNote | None:
     Returns:
         NoteData: The Anki note data for the specified word.
     """
-    note: CustomNote | None = NoteDataProcessor().get_anki_note(word=word)
+    note: CustomNote | None = NoteDataProcessor().get_anki_note(
+        word=word, processor_name=processor_name
+    )
     if note is not None:
         return add_audio(note=note)
 
@@ -186,9 +190,9 @@ def generate_notes(notes_path: Path | str = anki_note_file_path) -> bool:
 
 async def send_card_using_anki_web(
     word: str,
+    processor_name: Optional[str] = None,
     deck_name: str = anki_deck_name,
     model_name: str = "Basic_",
-    processor_name: str = "wiktionary",
 ) -> Optional[CustomNote]:
     """
     Asynchronously sends an Anki note to AnkiWeb.

@@ -8,7 +8,9 @@ from app.serializers import CustomNote
 
 @pytest.mark.vcr()
 def test_get_anki_note(snapshot: Any) -> None:
-    result = NoteDataProcessor().get_anki_note(word="Abend")
+    result: CustomNote | None = NoteDataProcessor().get_anki_note(
+        word="Abend", processor_name="wiktionary"
+    )
     assert result, "Add note failed"
     assert snapshot("json") == result.model_dump(
         mode="python", by_alias=True, exclude_none=True

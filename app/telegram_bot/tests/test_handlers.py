@@ -28,7 +28,6 @@ from app.telegram_bot.handlers import (
         ("handle_verben_word", handle_verben_word),
         ("handle_duden_word", handle_duden_word),
         ("handle_text_without_command", handle_text_without_command),
-        ("handle_text_without_command", handle_text_without_command),
         ("message_handle", message_handle),
     ],
 )
