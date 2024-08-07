@@ -4,6 +4,7 @@ from typing import Any
 import duden  # type: ignore
 from duden.word import DudenWord  # type: ignore
 
+from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.parsers.duden_parser import CustomDudenParser
 from app.serializers import CustomFields
 
@@ -11,7 +12,7 @@ logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 # https://github.com/radomirbosak/duden
-class DudenDataProcessor:
+class DudenDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
         self.base_url = "https://de.wiktionary.org/w/api.php"
         self.fields_class = CustomFields

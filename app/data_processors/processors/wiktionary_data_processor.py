@@ -3,13 +3,14 @@ from typing import Any
 
 import requests
 
+from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.parsers.wiktionary_parser import CustomWiktionaryParser
 from app.serializers import CustomFields
 
 logger: logging.Logger = logging.getLogger(name=__name__)
 
 
-class WiktionaryDataProcessor:
+class WiktionaryDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
         self.base_url = "https://de.wiktionary.org/w/api.php"
         self.fields_class = CustomFields
