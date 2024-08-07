@@ -4,6 +4,7 @@ from typing import Any, Iterator, Mapping
 
 from ollama import Client  # type: ignore
 
+from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.private_config import ollama_server_url
 from app.serializers import CustomFields
 
@@ -12,7 +13,7 @@ logger: logging.Logger = logging.getLogger(name=__name__)
 # TODO: Set up a config file to configure the prompts
 
 
-class OllamaDataProcessor:
+class OllamaDataProcessor(BaseDataProcessor):
     def __init__(self, deck_name: str = "Test", model_name: str = "Basic_") -> None:
         self.deck_name: str = deck_name
         self.model_name: str = model_name
@@ -103,3 +104,6 @@ class OllamaDataProcessor:
 
             result[key] = prompt
         return result
+
+    def _extract_from_content(self, word: str, content: Any) -> dict[str, Any]:
+        raise NotImplementedError

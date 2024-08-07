@@ -4,6 +4,7 @@ from typing import Any
 import requests
 from bs4 import BeautifulSoup, Tag
 
+from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.html_processors import prune_html_tags
 from app.serializers import BasicFields
 
@@ -11,7 +12,7 @@ logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 # TODO Add a Custom Processor to handle Verben data
-class VerbenDataProcessor:
+class VerbenDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
         self.base_url = "https://www.verben.de/?w="
         self.fields_class = BasicFields
@@ -56,3 +57,6 @@ class VerbenDataProcessor:
             "Front": word,
             "Back": str(body),
         }
+
+    def _extract_from_content(self, word: str, content: Any) -> dict[str, Any]:
+        raise NotImplementedError
