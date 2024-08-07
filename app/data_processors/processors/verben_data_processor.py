@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup, Tag
 
 from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.html_processors import prune_html_tags
-from app.serializers import BasicFields
+from app.serializers import BasicFields, CustomNote
 
 logger: logging.Logger = logging.getLogger(name=__name__)
 
@@ -17,17 +17,14 @@ class VerbenDataProcessor(BaseDataProcessor):
         self.base_url = "https://www.verben.de/?w="
         self.fields_class = BasicFields
 
-    def get_note_data(self, word: str) -> dict[str, Any]:
+    def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         response: requests.Response = requests.get(
             url=self.base_url + word,
         )
 
         if response.status_code != 200:
             logger.info(msg=f"The request to {self.base_url} failed.")
-            return {
-                "Front": word,
-                "Back": "",
-            }
+            return note
         # Get the content of the response
         page_content: bytes = response.content
 
@@ -52,11 +49,19 @@ class VerbenDataProcessor(BaseDataProcessor):
             if lateral_info_element
             else ""
         )
-
-        return {
+        content: dict[str, str] = {
             "Front": word,
             "Back": str(body),
         }
+        updated_note: CustomNote | None = note.import_from_content(
+            content=content, fields_class=self.fields_class
+        )
+
+        return updated_note
 
     def _extract_from_content(self, word: str, content: Any) -> dict[str, Any]:
         raise NotImplementedError
+
+    def is_content_complete(self, content: dict[str, Any]) -> bool:
+        # TODO: Review this and move to a base class
+        return False

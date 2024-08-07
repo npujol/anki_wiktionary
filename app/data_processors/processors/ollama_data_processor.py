@@ -6,7 +6,7 @@ from ollama import Client  # type: ignore
 
 from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.private_config import ollama_server_url
-from app.serializers import CustomFields
+from app.serializers import CustomFields, CustomNote
 
 logger: logging.Logger = logging.getLogger(name=__name__)
 
@@ -20,7 +20,7 @@ class OllamaDataProcessor(BaseDataProcessor):
         self.client = Client(host=ollama_server_url)
         self.fields_class = CustomFields
 
-    def get_note_data(self, word: str) -> dict[str, Any]:
+    def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         prompts: dict[str, Any] = self._generate_content_from_scratch_prompts(
             word=word,
             json_schema=CustomFields.model_json_schema_to_generate_fields(),
@@ -49,7 +49,10 @@ class OllamaDataProcessor(BaseDataProcessor):
                 content: str = response  # type: ignore
             fields[key] = content
 
-        return fields
+        updated_note: CustomNote | None = note.import_from_content(
+            content=fields, fields_class=self.fields_class
+        )
+        return updated_note
 
     def generate_sentence_examples(
         self, word: str, count_examples: int = 1

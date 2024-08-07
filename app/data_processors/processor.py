@@ -17,9 +17,9 @@ PROCESSORS_MAP: dict[
     | DudenDataProcessor,
 ] = {
     "wiktionary": WiktionaryDataProcessor(),
-    "ollama": OllamaDataProcessor(),
     "verben": VerbenDataProcessor(),
     "duden": DudenDataProcessor(),
+    "ollama": OllamaDataProcessor(),
 }
 logger: logging.Logger = logging.getLogger(name=__name__)
 
@@ -37,7 +37,6 @@ class NoteDataProcessor:
     def get_anki_note(
         self, word: str, processor_name: Optional[str] = None
     ) -> CustomNote | None:
-        content: dict[str, Any] = {}
         processor: (
             WiktionaryDataProcessor
             | OllamaDataProcessor
@@ -45,19 +44,6 @@ class NoteDataProcessor:
             | DudenDataProcessor
             | None
         ) = None
-        if not processor_name:
-            for processor in PROCESSORS_MAP.values():
-                content = processor.get_note_data(word=word)
-                if content:
-                    break
-        else:
-            processor = PROCESSORS_MAP.get(processor_name, None)  # type: ignore
-            if processor is None:
-                return None
-            content = processor.get_note_data(word=word)
-
-        if processor is None:
-            return None
 
         initial_note = CustomNote(
             deckName=self.deck_name,
@@ -67,10 +53,44 @@ class NoteDataProcessor:
             video=[],
             picture=[],
         )
-        note: CustomNote | None = initial_note.import_from_content(
-            content=content,
-            fields_class=processor.fields_class,
-        )
-        if note is None:
-            return note
-        return initial_note
+
+        if not processor_name:
+            updated_note = self._get_content_using_multiple_processors(
+                word=word,
+                note=initial_note,
+            )
+        else:
+            processor = PROCESSORS_MAP.get(processor_name, None)  # type: ignore
+            if processor is None:
+                return None
+            updated_note: CustomNote | None = processor.get_note_data(
+                word=word,
+                note=initial_note,
+            )
+
+        return updated_note
+
+    def _get_content_using_multiple_processors(
+        self,
+        word: str,
+        note: CustomNote,
+    ) -> CustomNote | None:
+        content: dict[str, Any] = {}
+        updated_note = note
+        for processor in PROCESSORS_MAP.values():
+            if processor.__class__.__name__ == "OllamaDataProcessor":
+                logger.info(msg=f"Skipping {processor.__class__.__name__} processor.")
+                continue
+            if processor.__class__.__name__ == "VerbenDataProcessor":
+                # TODO: Change VerbenDataProcessor to use CustomFields
+                logger.info(msg=f"Skipping {processor.__class__.__name__} processor.")
+                continue
+
+            updated_note: CustomNote | None = processor.get_note_data(
+                word=word, note=note
+            )
+
+            if processor.is_content_complete(content=content):
+                break
+
+        return updated_note
