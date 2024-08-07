@@ -20,7 +20,7 @@ from app.serializers import CustomNote
 
 @pytest.mark.vcr()
 def test_generate_notes_is_successful(snapshot: Any) -> None:
-    result: bool = generate_note(word="Abend")
+    result: bool = generate_note(word="Abend", processor_name="wiktionary")
     assert result, "Add note failed"
     assert snapshot("json") == result, "The result does not match the snapshot"
 
@@ -30,8 +30,8 @@ def test_generate_notes_is_successful(snapshot: Any) -> None:
 async def test_get_anki_note_data_is_successful(
     snapshot: Any,
 ) -> None:
-    result: CustomNote | None = await asyncio.create_task(
-        coro=get_anki_note_data(word="Abend")
+    result: Any = await asyncio.create_task(
+        coro=get_anki_note_data(word="Abend", processor_name="wiktionary")  # type: ignore
     )
     assert result, "Add note failed"
     assert snapshot("json") == result.model_dump(mode="python", by_alias=True)
@@ -91,7 +91,9 @@ async def test_save_anki_note_to_list(tmp_path: Path) -> None:
 @patch.object(target=AnkiWebConnector, attribute="close")
 async def test_send_card_using_anki_web(close_mock: MagicMock) -> None:
     close_mock.return_value = None
-    note: CustomNote | None = await send_card_using_anki_web(word="Abend")
+    note: CustomNote | None = await send_card_using_anki_web(
+        word="Abend", processor_name="wiktionary"
+    )
     assert note, "Add note failed"
 
     assert note.audio, "The audio field is not set."

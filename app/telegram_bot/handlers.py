@@ -55,7 +55,9 @@ async def _handle_word(word: str, message: Message) -> None:
     msg: str = f"Anki note for '{word}' saved successfully."
     logger.info(msg=msg)
     await message.reply_text(text=msg)
-    note: CustomNote | None = await get_anki_note_data(word=word)
+    note: CustomNote | None = await get_anki_note_data(
+        word=word, processor_name="wiktionary"
+    )
     if not note:
         await message.reply_text(text="Anki note could not be created.")
         return
@@ -143,7 +145,9 @@ async def handle_web_word(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         await message.reply_text(text=msg)
         return
 
-    note: CustomNote | None = await send_card_using_anki_web(word=word)
+    note: CustomNote | None = await send_card_using_anki_web(
+        word=word, processor_name="wiktionary"
+    )
     if not note:
         msg = "Anki note could not be created."
         logger.error(msg=msg)
