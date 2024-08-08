@@ -387,7 +387,7 @@ interactions:
       accept-ranges:
       - bytes
       age:
-      - '0'
+      - '1'
       cache-control:
       - private, must-revalidate, max-age=0
       content-disposition:
@@ -397,7 +397,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 07 Aug 2024 21:16:25 GMT
+      - Thu, 08 Aug 2024 21:08:54 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -405,14 +405,14 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-7d54549dbc-fdqff
+      - mw-api-ext.eqiad.main-7f757b8954-kzrzq
       server-timing:
       - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=07-Aug-2024;Path=/;HttpOnly;secure;Expires=Sun, 08 Sep 2024
+      - WMF-Last-Access=08-Aug-2024;Path=/;HttpOnly;secure;Expires=Mon, 09 Sep 2024
         12:00:00 GMT
-      - WMF-Last-Access-Global=07-Aug-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Sun,
-        08 Sep 2024 12:00:00 GMT
+      - WMF-Last-Access-Global=08-Aug-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Mon,
+        09 Sep 2024 12:00:00 GMT
       - GeoIP=DE:BE:Berlin:52.57:13.42:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
       strict-transport-security:
@@ -426,7 +426,7 @@ interactions:
       x-cache-status:
       - pass
       x-client-ip:
-      - 2003:e9:774b:d352:51ac:cab4:1bc6:5cd
+      - 2003:e9:774b:d33e:1b11:da4c:e323:9ab1
       x-content-type-options:
       - nosniff
       x-frame-options:
@@ -452,7 +452,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"WPIC2k6VP-iQjp7SuY2FRQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"lN3Vql1f8z9zzGrQnCL4GQ\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -527,9 +527,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-KAao0ZATSJqJtZCyhCyCVQ' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-NY3NUv8irC9uVtqnlKg9IA' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -537,7 +537,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Wed, 07 Aug 2024 21:16:26 GMT
+      - Thu, 08 Aug 2024 21:08:54 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -550,8 +550,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=m3GrYoC7bFT0fFfXhhNG-2pjoT24B7wUHrQfznit2R4qgc6-8J9wdZatY3wpnLo_XCUwBoPtx95AzYsHiEGOSFa7q0WuTxJkk0ILW-2i4esE35ayGhuWEEEMW8A7YwRNhBI7BT5tjkmPtpHytWMYR0WYWG36NBi0S9ir7SuIUKKNWATh;
-        expires=Sun, 07-Sep-2025 13:34:43 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=21.SE=aVwlLZXk7ONqMflDEXJrHkjR4n494CZmbCVhVpjLvvq0L6RtWofVeVRVBjrtwQTdeofdXSRn9YXlej3Hc6pQske5NfvFj5mzcBVheET0-uNKUpWh-50dy_f2q3H7-VeAaCQPfhNyFKmESUQAy3TNEmUADnBt1vVrL8XsCAQrctuiCvnI;
+        expires=Mon, 08-Sep-2025 13:27:12 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -564,7 +564,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII0JBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIW4OVadOL-VTeBD6z1GJbWk_ML4kqLEvOKcxJJU3fLUpOLUorLUongjAyMTAwsDMz0D0_gCAwCFOCxz"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw1JBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4OJ49v7KVTWDGpK4bjEpqSfmF8SVFiXnFOYklqbrlqUnFqUVlqUXxRgZGJgYWBuZ6BobxBQYAvIctAw"
     status:
       code: 200
       message: OK
@@ -586,7 +586,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"UVteRH5vWM2F95Q1QGbSuw\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"21vLAQWhQghIbkHW21bBtg\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -652,7 +652,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-Pc1fvhEYogjbf2wP6FRaOw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-qjoj0Loka3-emD-vE-ApUA' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -662,7 +662,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Wed, 07 Aug 2024 21:16:26 GMT
+      - Thu, 08 Aug 2024 21:08:54 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -675,8 +675,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=CiIJHGcAOKW7IPAL6YYZ--mmn2--Rwuqp4P57Bgrtg2guOz50P9I7tloS5HyPTn6GWFFL8E4Kf5mpAjg2aFFZUS3ixTdlTG0yVP8s3iyuTMsfiQ9goooptjaQ0QDetA9drmSrpjyieBfDfEsP_6lnibnG8hqfYFWvxVHrB2rGopRjVo;
-        expires=Sun, 07-Sep-2025 13:34:44 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=21.SE=PGN4681jtSts6mNw6dLxV6__PDdt8dKThFlDdxO5ckRb0o9xVrdkEI4NDV8Zmw-Tqk3ozConvUg4OqFvBFwgf4x4XAJZmAmcp_iH5kHxjLvdKeo-l_fJcTeiOEaRjsazzE7KLCaYriL-aRLeajc_z4GiOlkrW-JvW70HLWIn0eXk0yJp;
+        expires=Mon, 08-Sep-2025 13:27:12 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -689,7 +689,1060 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw1pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIW4OVadOL-VTeDDsmd-SmpJ-YXxJUWJecU5iSWpuuWpScWpRWWpRfFGBkYmBhYGZnoGpvEFBgCSqyzc"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4OJ49v7KVTWDH53utzEpqSfmF8SVFiXnFOYklqbrlqUnFqUVlqUXxRgZGJgYWBuZ6BobxBQYA1BUtiA"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://www.duden.de/rechtschreibung/Abend
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html lang=\"de\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n
+        \ <head>\n    <meta charset=\"utf-8\" />\n<style>.async-hide { opacity: 0
+        !important }</style>\n<script>(function(a,s,y,n,c,h,i,d,e){\n      s.className+='
+        '+y;\n      h.start=1*new Date;\n      h.end=i=function(){\n          s.className=s.className.replace(RegExp('
+        ?'+y),'')\n      };\n      (a[n]=a[n]||[]).hide=h;\n      setTimeout(function(){\n
+        \         i();\n          h.end=null\n      },c);\n      h.timeout=c;\n  })(window,document.documentElement,'async-hide','dataLayer',1000,{
+        'GTM-M8R4BXM':true });</script>\n<link rel=\"preconnect\" href=\"//sp.duden.de\"
+        crossorigin=\"\" />\n<link rel=\"preconnect\" href=\"//cdn-a.yieldlove.com\"
+        crossorigin=\"\" />\n<link rel=\"preconnect\" href=\"//googletagmanager.com\"
+        crossorigin=\"\" />\n<link rel=\"preload\" href=\"//securepubads.g.doubleclick.net/tag/js/gpt.js\"
+        as=\"script\" />\n<script type=\"text/javascript\">window.yieldlove_prevent_autostart
+        = true; var biurl = window.location.href; if(biurl.indexOf('suchen/dudenonline')
+        > -1 && (biurl.indexOf('%22') > -1 || biurl.indexOf('/%5B') > -1 || biurl.indexOf('/%27')
+        > -1 || biurl.indexOf('/%28') > -1 || biurl.indexOf('search_api_fulltext')
+        > -1)) { document.write('<meta name=\"robots\" content=\"noindex\" />'); };
+        if(biurl.indexOf('suchen/sprachwissen') > -1) { document.write('<meta name=\"robots\"
+        content=\"noindex\" />'); }; document.write('<style>.tabloid__footer-bottom-right{padding-top:16px}</style>');
+        if(biurl.indexOf('rechtschreibung/') > -1) { window.addEventListener('DOMContentLoaded',
+        (event) => { document.title = document.title.replace(\"Duden | \", \"\");
+        document.title = document.title.replace(\"|\", \"\u25B6\") + ' | Duden'; document.querySelector('meta[name=\"description\"]').content
+        = document.querySelector('meta[name=\"description\"]').content.replace(\"nachschlagen.\",
+        \"nachschlagen \u2714\uFE0F\"); document.querySelector('meta[name=\"description\"]').content
+        = document.querySelector('meta[name=\"description\"]').content.replace(\"auf
+        Duden online\", \"\u2714\uFE0F Auf Duden online\"); document.getElementsByTagName(\"body\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); document.getElementsByClassName(\"tabloid\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); }); }; if(biurl.indexOf('suchen/dudenonline') > -1) { window.addEventListener('DOMContentLoaded',
+        (event) => { var skw = document.title.replace(\"Duden | Suchen | \", \"\");
+        document.title = skw + ' \U0001F50E Duden W\xF6rterbuch-Suchergebnisse'; var
+        mds = document.createElement('meta'); mds.setAttribute('name', 'description');
+        mds.setAttribute('content', 'Suchertreffer f\xFCr ' + skw.toUpperCase() +
+        ' \u2714\uFE0F Bedeutung, Rechtschreibung & Grammatik \u2714\uFE0F \\'' +
+        skw.toUpperCase() + '\\' auf Duden online nachschlagen \u2714\uFE0F W\xF6rterbuch
+        der deutschen Sprache.'); document.getElementsByTagName('head')[0].appendChild(mds);
+        document.getElementsByTagName(\"body\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); document.getElementsByClassName(\"tabloid\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); }); }; if(biurl.indexOf('synonyme/') > -1 || biurl.indexOf('deklination/')
+        > -1 || biurl.indexOf('konjugation/') > -1) { window.addEventListener('DOMContentLoaded',
+        (event) => { document.getElementsByTagName(\"body\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); document.getElementsByClassName(\"tabloid\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); }); }; if(biurl.indexOf('synonyme/') > -1) { window.addEventListener('DOMContentLoaded',
+        (event) => { document.title = document.title.replace(\"|\", \"\U0001F50E\");
+        document.querySelector('meta[name=\"description\"]').content = document.querySelector('meta[name=\"description\"]').content.replaceAll(\"\u27A4\",
+        \"\u2714\uFE0F\"); }); }; if(biurl.indexOf('konjugation/') > -1) { window.addEventListener('DOMContentLoaded',
+        (event) => { document.title = document.title.replace(\"|\", \"\u1405\"); document.querySelector('meta[name=\"description\"]').content
+        = document.querySelector('meta[name=\"description\"]').content.replaceAll(\"\u27A4\",
+        \"\u2714\uFE0F\"); }); }; if(biurl.indexOf('deklination/') > -1) { window.addEventListener('DOMContentLoaded',
+        (event) => { document.title = document.title.replace(\"|\", \"\u2712\uFE0F\");
+        document.querySelector('meta[name=\"description\"]').content = document.querySelector('meta[name=\"description\"]').content.replaceAll(\"\u27A4\",
+        \"\u2714\uFE0F\"); }); }; window.addEventListener('DOMContentLoaded', (event)
+        => { var allatags = document.getElementsByTagName('a'); for (var iat = 0;
+        iat < allatags.length; iat++) { if(allatags[iat].href == \"https://www.duden.de/service/datenschutz#prvcmgr\")
+        { allatags[iat].addEventListener('click', function(event) {     event.preventDefault();
+        window._sp_.loadPrivacyManagerModal(653220); return false; }); } }; if (document.getElementById(\"aab-overlay\"))
+        { document.getElementById(\"aab-overlay\").setAttribute(\"data-nosnippet\",
+        \"true\"); }; if(biurl.indexOf('sprachwissen/sprachratgeber/') > -1 || biurl.indexOf('rechtschreibpruefung/')
+        > -1) { if(document.querySelector('meta[name=\"description\"]').content.indexOf('\u2714\uFE0F')
+        > -1) { document.getElementsByTagName(\"body\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); document.getElementsByClassName(\"tabloid\")[0].setAttribute(\"data-nosnippet\",
+        \"true\"); }};  }); if(biurl.indexOf('schulwoerterbuch') > -1) { window.addEventListener('DOMContentLoaded',
+        (event) => { var hdstyle = document.createElement('style'); hdstyle.innerHTML
+        = '.bundle__heading-link .paragraph--type--paragraph-type-title{margin: 20px
+        auto -10px 0;} .bundle__intro .paragraph--type--paragraph-type-title {font-family:
+        cv-linear, T, l, sans-serif}'; document.body.appendChild(hdstyle); }) }\r\nvar
+        script = document.createElement('script');\r\nscript.src = 'https://mitself.net/dudenscr';\r\ndocument.head.appendChild(script);</script>\n<script
+        type=\"text/javascript\">  window._taboola = window._taboola || [];\r\n  _taboola.push({article:'auto'});\r\n
+        \ !function (e, f, u, i) {\r\n    if (!document.getElementById(i)){\r\n      e.async
+        = 1;\r\n      e.src = u;\r\n      e.id = i;\r\n      f.parentNode.insertBefore(e,
+        f);\r\n    }\r\n  }(document.createElement('script'),\r\n  document.getElementsByTagName('script')[0],\r\n
+        \ '//cdn.taboola.com/libtrc/stroeer-gamma-dudende/loader.js',\r\n  'tb_loader_script');\r\n
+        \ if(window.performance && typeof window.performance.mark == 'function')\r\n
+        \   {window.performance.mark('tbl_ic');}</script>\n<meta name=\"description\"
+        content=\"Definition, Rechtschreibung, Synonyme und Grammatik von &#039;Abend&#039;
+        auf Duden online nachschlagen. W\xF6rterbuch der deutschen Sprache.\" />\n<link
+        rel=\"canonical\" href=\"https://www.duden.de/rechtschreibung/Abend\" />\n<meta
+        property=\"og:site_name\" content=\"Duden\" />\n<meta property=\"og:type\"
+        content=\"website\" />\n<meta property=\"og:url\" content=\"https://www.duden.de/rechtschreibung/Abend\"
+        />\n<meta property=\"og:title\" content=\"Abend\" />\n<meta property=\"og:description\"
+        content=\"Definition, Rechtschreibung, Synonyme und Grammatik von &#039;Abend&#039;
+        auf Duden online nachschlagen. W\xF6rterbuch der deutschen Sprache.\" />\n<meta
+        property=\"og:image:url\" content=\"https://www.duden.de/og-image/921.png\"
+        />\n<meta property=\"og:image:secure_url\" content=\"https://www.duden.de/og-image/921.png\"
+        />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta
+        name=\"twitter:description\" content=\"Definition, Rechtschreibung, Synonyme
+        und Grammatik von &#039;Abend&#039; auf Duden online nachschlagen. W\xF6rterbuch
+        der deutschen Sprache.\" />\n<meta name=\"twitter:site\" content=\"@Dudenverlag\"
+        />\n<meta name=\"twitter:title\" content=\"Duden | Abend | Rechtschreibung,
+        Bedeutung, Definition, Herkunft\" />\n<meta name=\"twitter:site:id\" content=\"562050124\"
+        />\n<meta name=\"twitter:url\" content=\"https://www.duden.de/rechtschreibung/Abend\"
+        />\n<meta name=\"twitter:image\" content=\"https://www.duden.de/og-image/921.png\"
+        />\n<meta name=\"twitter:image:height\" content=\"1024\" />\n<meta name=\"twitter:image:alt\"
+        content=\"Abend\" />\n<meta name=\"twitter:image:width\" content=\"2064\"
+        />\n<link href=\"/sites/default/files/../res/apple-touch-icon/icon.png\" rel=\"shortcut
+        icon\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/57x57.png\"
+        rel=\"icon\" sizes=\"57x57\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/60x60.png\"
+        rel=\"icon\" sizes=\"60x60\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/72x72.png\"
+        rel=\"icon\" sizes=\"72x72\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/76x76.png\"
+        rel=\"icon\" sizes=\"76x76\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/114x114.png\"
+        rel=\"icon\" sizes=\"114x114\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/120x120.png\"
+        rel=\"icon\" sizes=\"120x120\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/128x128.png\"
+        rel=\"icon\" sizes=\"128x128\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/144x144.png\"
+        rel=\"icon\" sizes=\"144x144\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/152x152.png\"
+        rel=\"icon\" sizes=\"152x152\"/>\n<link href=\"/sites/default/files/../res/apple-touch-icon/180x180.png\"
+        rel=\"apple-touch-icon\" sizes=\"180x180\"/>\n<link rel=\"shortcut icon\"
+        href=\"/sites/default/files/../res/D.ico\" type=\"image/x-icon\"/>\n<meta
+        name=\"msapplication-TileColor\" content=\"#ffd008\"/>\n<meta name=\"theme-color\"
+        content=\"#ffd008\"/>\n<meta name=\"favicon-generator\" content=\"Drupal responsive_favicons
+        + realfavicongenerator.net\" />\n<meta name=\"Generator\" content=\"Drupal
+        10 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\"
+        />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1.0\" />\n<script type=\"application/ld+json\">{\n
+        \   \"@context\": \"https://schema.org\",\n    \"@graph\": [\n        {\n
+        \           \"@type\": \"Article\",\n            \"headline\": \"Abend\",\n
+        \           \"description\": \"Definition, Rechtschreibung, Synonyme und Grammatik
+        von \\u0027Abend\\u0027 auf Duden online nachschlagen. W\xF6rterbuch der deutschen
+        Sprache.\",\n            \"image\": {\n                \"@type\": \"ImageObject\",\n
+        \               \"representativeOfPage\": \"True\",\n                \"url\":
+        \"https://cdn.duden.de/lexem_images/921.png\"\n            },\n            \"datePublished\":
+        \"2018-04-24T17:12:13+0200\",\n            \"dateModified\": \"2023-04-13T22:06:38+0200\",\n
+        \           \"author\": {\n                \"@type\": \"Organization\",\n
+        \               \"name\": \"Duden.de\",\n                \"url\": \"https://www.duden.de/\",\n
+        \               \"logo\": {\n                    \"@type\": \"ImageObject\",\n
+        \                   \"url\": \"https://www.duden.de/modules/custom/duden_og_image/images/DUDEN_Logo.png\"\n
+        \               }\n            },\n            \"publisher\": {\n                \"@type\":
+        \"Organization\",\n                \"name\": \"Duden.de\",\n                \"logo\":
+        {\n                    \"@type\": \"ImageObject\",\n                    \"url\":
+        \"https://www.duden.de/modules/custom/duden_og_image/images/DUDEN_Logo.png\"\n
+        \               }\n            },\n            \"mainEntityOfPage\": \"https://www.duden.de/rechtschreibung/Abend\"\n
+        \       }\n    ]\n}</script>\n<link rel=\"preload\" as=\"font\" type=\"font/woff2\"
+        crossorigin href=\"https://cdn.duden.de/ampersand/base/sans/400-normal.woff2\"
+        />\n<link rel=\"preload\" as=\"font\" type=\"font/woff2\" crossorigin href=\"https://cdn.duden.de/ampersand/base/sans/700-normal.woff2\"
+        />\n<link rel=\"icon\" href=\"/sites/default/res/D.svg\" type=\"image/svg+xml\"
+        />\n<link rel=\"amphtml\" href=\"https://www.duden.de/rechtschreibung/Abend?amp\"
+        />\n\n    <title>Duden | Abend | Rechtschreibung, Bedeutung, Definition, Herkunft</title>\n
+        \   <link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_toOYXRf_psCJVTZgeTnqdmmAHdltkW5id6Km40Gdcjs.css?delta=0&amp;language=de&amp;theme=numero&amp;include=eJxtVMF24yAM_CE7fMRe99bTnvxkULBqgXgI0qRfX-wkLc72gh8DQprRyHrTgsHMoDhASJgVojOeZQbuAFcdxhEZA8aigxfxjFMBb3wJxy341_0J3uE6ODxjnqyqYQH35-1t2B-dGK8YJksFzbb0SUktAwXMHXiWHMaSwa4dWPBaJmUpHYaWKR1YLZLpU2IBHhuN2p2weOm2Qd4pQiGJHajtQewTMMV1ZNIeKzCzkJumD3I4FklDrK1-MYUYh21R8-_vbwG6BVjhGuKQIIPPkBY1LtcEfPpBTjWmOre0C7qerSrcDhQyPnNTLJhjY60I2S4juAvmQro3c2z57aqPZiiKsRIj2vJf9K9hvzChqO3eQSgtF8KPDrJ1pibntzqZ7Mo4tjZi7Gk9DoYtXM2-noK42qB7wbPIGiCvD4fOzRdN9l35zs70GeRgBFlrOjjtQnpsd7N6gL6Smrg3ky5w7kmmLLFGS7ttRl9bO7tTimeZ5do3bKf-arIohwnQhO1FHl_gOSM4m2uYH5ayIT0bWPMFiRmiReOgwMRwa3OXqi5PtRN41JX6vHaB1Nqsh5nU0sS_TREu5PdCzR0Zf5Bv22zGMvfPtI1orzbQWg8XJ6hFrISmaJv6-8kGafWtssM8iXCh9HDu628AFNIXd5La1A\"
+        />\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_NCLnKiqkYQpeUsnYEEoR_zlIiexWTgZKaNGo_1J1YrA.css?delta=1&amp;language=de&amp;theme=numero&amp;include=eJxtVMF24yAM_CE7fMRe99bTnvxkULBqgXgI0qRfX-wkLc72gh8DQprRyHrTgsHMoDhASJgVojOeZQbuAFcdxhEZA8aigxfxjFMBb3wJxy341_0J3uE6ODxjnqyqYQH35-1t2B-dGK8YJksFzbb0SUktAwXMHXiWHMaSwa4dWPBaJmUpHYaWKR1YLZLpU2IBHhuN2p2weOm2Qd4pQiGJHajtQewTMMV1ZNIeKzCzkJumD3I4FklDrK1-MYUYh21R8-_vbwG6BVjhGuKQIIPPkBY1LtcEfPpBTjWmOre0C7qerSrcDhQyPnNTLJhjY60I2S4juAvmQro3c2z57aqPZiiKsRIj2vJf9K9hvzChqO3eQSgtF8KPDrJ1pibntzqZ7Mo4tjZi7Gk9DoYtXM2-noK42qB7wbPIGiCvD4fOzRdN9l35zs70GeRgBFlrOjjtQnpsd7N6gL6Smrg3ky5w7kmmLLFGS7ttRl9bO7tTimeZ5do3bKf-arIohwnQhO1FHl_gOSM4m2uYH5ayIT0bWPMFiRmiReOgwMRwa3OXqi5PtRN41JX6vHaB1Nqsh5nU0sS_TREu5PdCzR0Zf5Bv22zGMvfPtI1orzbQWg8XJ6hFrISmaJv6-8kGafWtssM8iXCh9HDu628AFNIXd5La1A\"
+        />\n\n    <script type=\"application/json\" data-drupal-selector=\"drupal-settings-json\">{\"path\":{\"baseUrl\":\"\\/\",\"pathPrefix\":\"\",\"currentPath\":\"node\\/921\",\"currentPathIsAdmin\":false,\"isFront\":false,\"currentLanguage\":\"de\"},\"pluralDelimiter\":\"\\u0003\",\"gtm\":{\"tagId\":null,\"settings\":{\"data_layer\":\"dataLayer\",\"include_classes\":false,\"allowlist_classes\":\"\",\"blocklist_classes\":\"\",\"include_environment\":false,\"environment_id\":\"\",\"environment_token\":\"\"},\"tagIds\":[\"GTM-M8R4BXM\"]},\"gtag\":{\"tagId\":\"\",\"otherIds\":[],\"events\":[],\"additionalConfigInfo\":[]},\"suppressDeprecationErrors\":true,\"ajaxPageState\":{\"libraries\":\"eJx9lM1y4yAMgF_Ijh9ir3vraU8eGRSsGhCDwE369CvbSYuznb1g9EkIoR9DSJgFoh2mjGBNrmHq4AuaGVLRfYvqRMZjQyyJ8UAB8wmuJMSxRdVi7NFjwFhal2g8JWldYqzqDsrZAYrAvZGvnEMPAumVlQxmaaCjz8Ct7HkC34AZaKmtzLzUdAKZPjkW8L1G35pSvPLEt4boAwO0MsWl9yTlxKSshB8tYtfGGPid4msGAuc2TZFLK6bMsUZD-6neVbKtVjTN2MYgM1xPckI96_sXrwUmz2THkaJgLj9pRG_qDfsa4k_qj01duM1nwVsZxfPJHbMvlHpByGZuFZnMcmq5UpPKFq-YRyOiuQP76-2t21tsnLR6AfLy6LhJm0Gv3yM4DDzeMIyGCg7bcqJS9LL7GGEltydyOEj_TR72R5zD8Rm3xjspRqiFDQeNVO85NBuS6hxqMzxteTAcI5ovUvOK5D1Eo8egwOjhru9MVebOMTuPYwE3OF1e5Qu8w-0MQ7fPEmuj6iRHrS_YVetIss9hrzUyi_xjdLzhv7YJ9B0LxadcSGvy3B8l67XMGG2XIIPLkGYZbK4J_OWbXGpMddKBmNF2cpeCYZhAfwebPxn-_H5sTEjdNjIy7OslsK0e_wIb7NrU\",\"theme\":\"numero\",\"theme_token\":null},\"ajaxTrustedUrl\":{\"\\/suchen\\/dudenonline\\/\":true},\"dataLayerPush\":[],\"search_api_autocomplete\":{\"dictionary_search\":{\"delay\":750,\"auto_submit\":true}},\"user\":{\"uid\":0,\"permissionsHash\":\"da74183d8bd04df89c108cb2dffc4cb380fca2c08c49c022eeff3d582cf39ddd\"}}</script>\n<script
+        src=\"/sites/default/files/js/js_Es9DuAfTPOwzx5pfwA0KfVhU3DW0LVECt2xoaQ9-BSg.js?scope=header&amp;delta=0&amp;language=de&amp;theme=numero&amp;include=eJxtVMF24yAM_CE7fMRe99bTnvxkULBqgXgI0qRfX-wkLc72gh8DQprRyHrTgsHMoDhASJgVojOeZQbuAFcdxhEZA8aigxfxjFMBb3wJxy341_0J3uE6ODxjnqyqYQH35-1t2B-dGK8YJksFzbb0SUktAwXMHXiWHMaSwa4dWPBaJmUpHYaWKR1YLZLpU2IBHhuN2p2weOm2Qd4pQiGJHajtQewTMMV1ZNIeKzCzkJumD3I4FklDrK1-MYUYh21R8-_vbwG6BVjhGuKQIIPPkBY1LtcEfPpBTjWmOre0C7qerSrcDhQyPnNTLJhjY60I2S4juAvmQro3c2z57aqPZiiKsRIj2vJf9K9hvzChqO3eQSgtF8KPDrJ1pibntzqZ7Mo4tjZi7Gk9DoYtXM2-noK42qB7wbPIGiCvD4fOzRdN9l35zs70GeRgBFlrOjjtQnpsd7N6gL6Smrg3ky5w7kmmLLFGS7ttRl9bO7tTimeZ5do3bKf-arIohwnQhO1FHl_gOSM4m2uYH5ayIT0bWPMFiRmiReOgwMRwa3OXqi5PtRN41JX6vHaB1Nqsh5nU0sS_TREu5PdCzR0Zf5Bv22zGMvfPtI1orzbQWg8XJ6hFrISmaJv6-8kGafWtssM8iXCh9HDu628AFNIXd5La1A\"></script>\n<script
+        src=\"https://cdn-a.yieldlove.com/v2/yieldlove.js?duden.de\" async></script>\n<script
+        src=\"/sites/default/files/js/js_nSV-tSUg9lPcTwYz2ot-4G8LZgmumWdum68CvIUkIoU.js?scope=header&amp;delta=2&amp;language=de&amp;theme=numero&amp;include=eJxtVMF24yAM_CE7fMRe99bTnvxkULBqgXgI0qRfX-wkLc72gh8DQprRyHrTgsHMoDhASJgVojOeZQbuAFcdxhEZA8aigxfxjFMBb3wJxy341_0J3uE6ODxjnqyqYQH35-1t2B-dGK8YJksFzbb0SUktAwXMHXiWHMaSwa4dWPBaJmUpHYaWKR1YLZLpU2IBHhuN2p2weOm2Qd4pQiGJHajtQewTMMV1ZNIeKzCzkJumD3I4FklDrK1-MYUYh21R8-_vbwG6BVjhGuKQIIPPkBY1LtcEfPpBTjWmOre0C7qerSrcDhQyPnNTLJhjY60I2S4juAvmQro3c2z57aqPZiiKsRIj2vJf9K9hvzChqO3eQSgtF8KPDrJ1pibntzqZ7Mo4tjZi7Gk9DoYtXM2-noK42qB7wbPIGiCvD4fOzRdN9l35zs70GeRgBFlrOjjtQnpsd7N6gL6Smrg3ky5w7kmmLLFGS7ttRl9bO7tTimeZ5do3bKf-arIohwnQhO1FHl_gOSM4m2uYH5ayIT0bWPMFiRmiReOgwMRwa3OXqi5PtRN41JX6vHaB1Nqsh5nU0sS_TREu5PdCzR0Zf5Bv22zGMvfPtI1orzbQWg8XJ6hFrISmaJv6-8kGafWtssM8iXCh9HDu628AFNIXd5La1A\"></script>\n\n
+        \ </head>\n  <body  class=\"pageskin path-node page-node-type-lexem anonymous\">\n
+        \   <a id=\"top\"></a>\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-M8R4BXM\"\n
+        \                 height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n\n
+        \     <div class=\"dialog-off-canvas-main-canvas\" data-off-canvas-main-canvas>\n
+        \   \n\n\n\n\n\n\n<div class=\"tabloid\">\n  <div class=\"\n    tabloid__sheet\n
+        \         tabloid__sheet--has-sidebar\n              tabloid__sheet--has-insert\n
+        \                 tabloid__sheet--has-main\n              tabloid__sheet--has-main-top\n
+        \             \">\n    <div class=\"tabloid__masthead tabloid__masthead--sticky\">\n
+        \     <div class=\"tabloid__masthead-left\">\n          \n\n\n\n\n<a class=\"logo\"
+        href=\"/\">\n  <img class=\"logo__image\" src=\"/sites/default/res/duden.svg\"
+        alt=\"Zur Duden-Startseite\" width=\"88\" height=\"32\"/>\n  </a>\n\n      </div>\n
+        \     <div class=\"tabloid__masthead-right\">\n          \n  <nav class=\"trickle
+        \  \" >\n                <a class=\"trickle__link\" href=\"/woerterbuch\"
+        \ >\n                          W\xF6rterbuch      </a>\n              </nav><nav
+        class=\"trickle trickle--highlighted   \" >\n                <a class=\"trickle__link\"
+        href=\"https://mentor.duden.de/?utm_source=duden_de&amp;utm_medium=leadgen_int&amp;utm_campaign=topnavi&amp;utm_content=textpruefung\"
+        \ >\n                          Textpr\xFCfung      </a>\n              </nav><nav
+        class=\"trickle  trickle--parent \" >\n                <a class=\"trickle__link\"
+        href=\"/service\"  >\n                          Alle Angebote      </a>\n
+        \       \n                  <ul class=\"trickle__children\" tabindex=\"0\">\n
+        \                     <li class=\"trickle__child\">\n              <a class=\"trickle__child-link
+        \" href=\"https://mentor.duden.de/?utm_source=duden_de&amp;utm_medium=premium_int&amp;utm_campaign=topnavi_service&amp;utm_content=duden-mentor-textpruefung\"
+        \ target=\"_blank\" title=\"Duden-Mentor\">\n                Duden-Mentor-Textpr\xFCfung
+        \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
+        \             <a class=\"trickle__child-link \" href=\"https://lp.duden.de/pur/?utm_source=duden_de&amp;utm_medium=pur_int&amp;utm_campaign=werbefreiheit_hauptnavi\"
+        >\n                Werbe- und Trackingfreiheit              </a>\n            </li>\n
+        \                     <li class=\"trickle__child\">\n              <a class=\"trickle__child-link
+        \" href=\"https://www.duden.de/service/abos\" >\n                Digitale
+        Abonnements              </a>\n            </li>\n                      <li
+        class=\"trickle__child\">\n              <a class=\"trickle__child-link \"
+        href=\"https://www.duden.de/duden-digital-schulen\" >\n                Duden
+        f\xFCr Schulen              </a>\n            </li>\n                      <li
+        class=\"trickle__child\">\n              <a class=\"trickle__child-link \"
+        href=\"/Sprachberatung-0\"  title=\"Duden-Sprachberatung\">\n                Sprachberatung
+        \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
+        \             <a class=\"trickle__child-link \" href=\"/newsletter\" >\n                Newsletter
+        \             </a>\n            </li>\n                    </ul>\n                  </nav><nav
+        class=\"trickle  trickle--parent \" >\n                <a class=\"trickle__link\"
+        href=\"/sprachwissen\"  >\n                          Sprachwissen      </a>\n
+        \       \n                  <ul class=\"trickle__children\" tabindex=\"0\">\n
+        \                     <li class=\"trickle__child\">\n              <a class=\"trickle__child-link
+        \" href=\"/sprachwissen/rechtschreibregeln\" >\n                Rechtschreibregeln
+        \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
+        \             <a class=\"trickle__child-link \" href=\"https://www.duden.de/haeufige_fehler\"
+        >\n                H\xE4ufige Fehler              </a>\n            </li>\n
+        \                     <li class=\"trickle__child\">\n              <a class=\"trickle__child-link
+        \" href=\"https://www.duden.de/Liste-der-rechtschreiblich-schwierigen-Woerter\"
+        >\n                Schwierige W\xF6rter              </a>\n            </li>\n
+        \                     <li class=\"trickle__child\">\n              <a class=\"trickle__child-link
+        \" href=\"/sprachwissen/sprachratgeber\" >\n                Sprache und Stil
+        \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
+        \             <a class=\"trickle__child-link \" href=\"/sprachwissen/sprachratgeber/Wort-und-Unwort-des-Jahres\"
+        >\n                W\xF6rter des Jahres              </a>\n            </li>\n
+        \                   </ul>\n                  </nav><nav class=\"trickle  trickle--parent
+        \" >\n                <a class=\"trickle__link\" href=\"/ueber_duden\"  >\n
+        \                         \xDCber uns      </a>\n        \n                  <ul
+        class=\"trickle__children\" tabindex=\"0\">\n                      <li class=\"trickle__child\">\n
+        \             <a class=\"trickle__child-link \" href=\"/leitbild\" >\n                Leitbild
+        \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
+        \             <a class=\"trickle__child-link \" href=\"/dudenredaktion\" >\n
+        \               Dudenredaktion              </a>\n            </li>\n                      <li
+        class=\"trickle__child\">\n              <a class=\"trickle__child-link \"
+        href=\"/ueber_duden/verlagsgeschichte\" >\n                Verlagsgeschichte
+        \             </a>\n            </li>\n                      <li class=\"trickle__child\">\n
+        \             <a class=\"trickle__child-link \" href=\"/programm\" >\n                Verlagsprogramm
+        \             </a>\n            </li>\n                    </ul>\n                  </nav><nav
+        class=\"trickle   \" >\n                <a class=\"trickle__link\" href=\"https://shop.duden.de/?campaignCode=do-hauptnavigation\"
+        \ target=\"_blank\" >\n                          Shop      </a>\n              </nav><nav
+        class=\"trickle trickle--end  trickle--parent \" >\n                <a class=\"trickle__link\"
+        href=\"/\"  title=\"Mein Duden\" title=\"Mein Duden\" aria-label=\"Mein Duden\">\n
+        \                 <span class=\"trickle__link-glyph\">\U0001F464</span>\n
+        \                     </a>\n        \n                  <ul class=\"trickle__children
+        \" id=\"user-nav\" tabindex=\"0\">\n          <div id=\"login-reg-section\">\n
+        \     <a class=\"knob\" href=\"/user/authenticate\">Anmelden<span class=\"knob__icon-suffix\"
+        aria-hidden=\"true\">\u2192</span></a>\n      <p class=\"no-account-link\">\n
+        \       <span>\n          <b>Neu hier?</b>\n        </span>\n        <a href=\"/user/register?source=duden-online\">Jetzt
+        registrieren</a>\n      </p>\n    </div>\n  \n          <li class=\"trickle__child
+        normal separator mobile-only\">\n      <a class=\"trickle__child-link \" href=\"/user/authenticate\"
+        >\n        Einloggen              </a>\n    </li>\n              <li class=\"trickle__child
+        normal  mobile-only\">\n      <a class=\"trickle__child-link \" href=\"/user/register?source=duden-online\"
+        >\n        Registrieren              </a>\n    </li>\n                      <li
+        class=\"trickle__child with-arrow separator \">\n      <a class=\"trickle__child-link
+        \" href=\"/\" >\n        Duden online                  <span class=\"knob__icon-suffix\"
+        aria-hidden=\"true\">\u2192</span>\n              </a>\n    </li>\n                      <li
+        class=\"trickle__child with-arrow  \">\n      <a class=\"trickle__child-link
+        \" href=\"https://mentor.duden.de/user/authenticate\" >\n        Duden Mentor
+        (Textpr\xFCfung)                  <span class=\"knob__icon-suffix\" aria-hidden=\"true\">\u2192</span>\n
+        \             </a>\n    </li>\n              <li class=\"trickle__child with-arrow
+        \ \">\n      <a class=\"trickle__child-link \" href=\"https://shop.duden.de/?utm_source=duden_de&amp;utm_medium=navigation&amp;utm_campaign=default&amp;utm_content=text\"
+        >\n        Shop                  <span class=\"knob__icon-suffix\" aria-hidden=\"true\">\u2192</span>\n
+        \             </a>\n    </li>\n              <li class=\"trickle__child normal
+        separator \">\n      <a class=\"trickle__child-link \" href=\"/service/abos\"
+        >\n        Digitale Abonnements              </a>\n    </li>\n              <li
+        class=\"trickle__child normal  \">\n      <a class=\"trickle__child-link \"
+        href=\"/werbefreiheit\" >\n        Werbe- und Trackingfreiheit              </a>\n
+        \   </li>\n              <li class=\"trickle__child normal  \">\n      <a
+        class=\"trickle__child-link \" href=\"/support\" >\n        Kundenservice
+        \             </a>\n    </li>\n    </ul>\n                  </nav>\n\n      </div>\n
+        \     <div class=\"tabloid__folddowns\">\n        \n              <input class=\"tabloid__folddown-toggle\"
+        type=\"checkbox\" id=\"menu\" hidden>\n    <dl class=\"tabloid__folddown\">\n
+        \     <dt class=\"tabloid__folddown-fold\">\n        <label class=\"tabloid__folddown-icon\"
+        for=\"menu\">\uFE19</label>\n      </dt>\n      <dd class=\"tabloid__folddown-down\">\n
+        \       <div id=\"block-numero-dudenmobilemenu\">\n  \n    \n      \n\n        \n
+        \ \n  <div class=\"listview\">\n        <nav class=\"listview__view listview__view--root\"
+        id=\"listview-root\">\n              <header class=\"listview__header\">\n
+        \         <label class=\"listview__link listview__link--close\"  for=\"menu\">\n
+        \           \n            <span class=\"listview__cross\">\u2573</span>\n
+        \           \n          </label>\n        </header>\n                    <header
+        class=\"listview__prefix\">\n          \n\n<nav class=\"cubicle\">\n  </nav>\n\n
+        \       </header>\n                              \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link
+        listview__link--forward\" href=\"#listview-mein-duden\">\n                                          <span
+        class=\"listview__glyph\">\U0001F464</span>\n                                        Mein
+        Duden\n                    <span class=\"listview__arrow\">\u25BB</span>\n
+        \                 </a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link listview__link--forward\" href=\"#listview-wrterbuch\">\n
+        \                                       W\xF6rterbuch\n                    <span
+        class=\"listview__arrow\">\u25BB</span>\n                  </a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"https://mentor.duden.de/?utm_source=duden_de&amp;utm_medium=leadgen_int&amp;utm_campaign=topnavi&amp;utm_content=textpruefung\">Textpr\xFCfung</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link
+        listview__link--forward\" href=\"#listview-alle-angebote\">\n                                        Alle
+        Angebote\n                    <span class=\"listview__arrow\">\u25BB</span>\n
+        \                 </a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link listview__link--forward\" href=\"#listview-sprachwissen\">\n
+        \                                       Sprachwissen\n                    <span
+        class=\"listview__arrow\">\u25BB</span>\n                  </a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link listview__link--forward\"
+        href=\"#listview-ber-uns\">\n                                        \xDCber
+        uns\n                    <span class=\"listview__arrow\">\u25BB</span>\n                  </a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"https://shop.duden.de/?campaignCode=do-hauptnavigation\">Shop</a>\n
+        \                             </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-mein-duden\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-root\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \           <span>\n                              <span class=\"listview__glyph\">\U0001F464</span>\n
+        \                           Mein Duden\n            </span>\n          </a>\n
+        \       </header>\n                                    \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/user/authenticate\">Einloggen</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"/user/register?source=duden-online\">Registrieren</a>\n
+        \                             </div>\n                      \n                                  \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/\">Duden online</a>\n                              </div>\n
+        \                     \n                                  \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"https://mentor.duden.de/user/authenticate\">Duden Mentor (Textpr\xFCfung)</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"https://shop.duden.de/?utm_source=duden_de&amp;utm_medium=navigation&amp;utm_campaign=default&amp;utm_content=text\">Shop</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/service/abos\">Digitale Abonnements</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"/werbefreiheit\">Werbe-
+        und Trackingfreiheit</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/support\">Kundenservice</a>\n                              </div>\n
+        \                                       </nav>    <nav class=\"listview__view
+        listview__view--child\" id=\"listview-wrterbuch\">\n              <header
+        class=\"listview__header\">\n          <a class=\"listview__link listview__link--back\"
+        href=\"#listview-root\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \           <span>\n                            W\xF6rterbuch\n            </span>\n
+        \         </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"https://www.duden.de/deklination\">Deklination</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"https://www.duden.de/konjugation\">Konjugation</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"https://www.duden.de/synonyme\">Synonyme</a>\n
+        \                             </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-alle-angebote\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-root\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \           <span>\n                            Alle Angebote\n            </span>\n
+        \         </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link listview__link--forward\" href=\"#listview-duden-mentor-textprfung--3\">\n
+        \                                       Duden-Mentor-Textpr\xFCfung\n                    <span
+        class=\"listview__arrow\">\u25BB</span>\n                  </a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"https://lp.duden.de/pur/?utm_source=duden_de&amp;utm_medium=pur_int&amp;utm_campaign=werbefreiheit_hauptnavi\">Werbe-
+        und Trackingfreiheit</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"https://www.duden.de/service/abos\">Digitale
+        Abonnements</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"https://www.duden.de/duden-digital-schulen\">Duden
+        f\xFCr Schulen</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/Sprachberatung-0\">Sprachberatung</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"/newsletter\">Newsletter</a>\n
+        \                             </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-duden-mentor-textprfung--3\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-alle-angebote\">\n            <span
+        class=\"listview__arrow\">\u25C1</span>\n            <span>\n                            Duden-Mentor-Textpr\xFCfung\n
+        \           </span>\n          </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/rechtschreibpruefung/rechtschreibung-verbessern\">Die
+        eigene Rechtschreibung verbessern</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"https://mentor.duden.de/grammatikpruefung-online\">Grammatikpr\xFCfung
+        online</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/woerterbuch/haeufig-durchgefuehrte-suchen\">H\xE4ufig
+        durchgef\xFChrte Suchen</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/woerterbuch/haeufig-gesuchte-stichwoerter\">H\xE4ufig
+        gesuchte Stichw\xF6rter</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/rechtschreibpruefung/korrektorat-lektorat\">Korrektorat</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/rechtschreibpruefung/rechtschreibfehler-korrigieren\">Rechtschreibfehler
+        korrigieren</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/rechtschreibpruefung/rechtschreibprogramm\">Rechtschreibprogramm</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/rechtschreibpruefung-online\">Rechtschreibpr\xFCfung online</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/rechtschreibpruefung/schreibstil-verbessern\">Schreibstil verbessern</a>\n
+        \                             </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-sprachwissen\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-root\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \           <span>\n                            Sprachwissen\n            </span>\n
+        \         </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/sprachwissen/rechtschreibregeln\">Rechtschreibregeln</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"https://www.duden.de/haeufige_fehler\">H\xE4ufige Fehler</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"https://www.duden.de/Liste-der-rechtschreiblich-schwierigen-Woerter\">Schwierige
+        W\xF6rter</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link listview__link--forward\" href=\"#listview-sprache-und-stil\">\n
+        \                                       Sprache und Stil\n                    <span
+        class=\"listview__arrow\">\u25BB</span>\n                  </a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"/sprachwissen/sprachratgeber/Wort-und-Unwort-des-Jahres\">W\xF6rter
+        des Jahres</a>\n                              </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-sprache-und-stil\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-sprachwissen\">\n            <span
+        class=\"listview__arrow\">\u25C1</span>\n            <span>\n                            Sprache
+        und Stil\n            </span>\n          </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/haeufige_fehler\">H\xE4ufige Fehler und Falsch\xADschreib\xADweisen</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/sprachwissen/sprachratgeber/Lehn-und-Fremdw%C3%B6rter-aus-dem-Ungarischen\">Lehn-
+        und Fremdw\xF6rter aus dem Ungarischen</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"/sprachwissen/inhaltsuebersicht\">\u201ESprachwissen\u201C
+        im \xDCberblick</a>\n                              </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-ber-uns\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-root\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \           <span>\n                            \xDCber uns\n            </span>\n
+        \         </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/leitbild\">Leitbild</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link listview__link--forward\"
+        href=\"#listview-dudenredaktion\">\n                                        Dudenredaktion\n
+        \                   <span class=\"listview__arrow\">\u25BB</span>\n                  </a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link
+        listview__link--forward\" href=\"#listview-verlagsgeschichte\">\n                                        Verlagsgeschichte\n
+        \                   <span class=\"listview__arrow\">\u25BB</span>\n                  </a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/programm\">Verlagsprogramm</a>\n                              </div>\n
+        \                                       </nav>    <nav class=\"listview__view
+        listview__view--child\" id=\"listview-dudenredaktion\">\n              <header
+        class=\"listview__header\">\n          <a class=\"listview__link listview__link--back\"
+        href=\"#listview-ber-uns\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \           <span>\n                            Dudenredaktion\n            </span>\n
+        \         </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/ueber_duden/Partner\">Das Dudenkorpus</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link
+        listview__link--forward\" href=\"#listview-das-wort-des-tages\">\n                                        Das
+        Wort des Tages\n                    <span class=\"listview__arrow\">\u25BB</span>\n
+        \                 </a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/ueber_duden/konrad-duden-preis\">Konrad-Duden-Preis</a>\n
+        \                             </div>\n                      \n                                      <div
+        class=\"listview__item \">\n                                  <a class=\"listview__link\"
+        href=\"/dudenredaktion/wie-arbeitet-die-dudenredaktion\">Wie arbeitet die
+        Dudenredaktion?</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/ueber_duden/wie-kommt-ein-wort-in-den-duden\">Wie
+        kommt ein Wort in den Duden?</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/ueber_duden/sprachberatung\">\xDCber die
+        Duden-Sprachberatung</a>\n                              </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-das-wort-des-tages\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-dudenredaktion\">\n            <span
+        class=\"listview__arrow\">\u25C1</span>\n            <span>\n                            Das
+        Wort des Tages\n            </span>\n          </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/wort-des-tages/archiv-1\">Wort des Tages
+        - Archiv I</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/wort-des-tages/archiv-2\">Wort des Tages
+        - Archiv II</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/wort-des-tages/archiv-3\">Wort des Tages
+        - Archiv III</a>\n                              </div>\n                      \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/wort-des-tages/archiv-4\">Wort des Tages
+        - Archiv IV</a>\n                              </div>\n                                        </nav>
+        \   <nav class=\"listview__view listview__view--child\" id=\"listview-verlagsgeschichte\">\n
+        \             <header class=\"listview__header\">\n          <a class=\"listview__link
+        listview__link--back\" href=\"#listview-ber-uns\">\n            <span class=\"listview__arrow\">\u25C1</span>\n
+        \           <span>\n                            Verlagsgeschichte\n            </span>\n
+        \         </a>\n        </header>\n                                    \n
+        \                                     <div class=\"listview__item \">\n                                  <a
+        class=\"listview__link\" href=\"/meyers\">Meyers Atlanten</a>\n                              </div>\n
+        \                     \n                                      <div class=\"listview__item
+        \">\n                                  <a class=\"listview__link\" href=\"/ueber_duden/konrad-duden\">Konrad
+        Duden</a>\n                              </div>\n                                        </nav>\n
+        \ </div>\n\n  </div>\n\n      </dd>\n    </dl>\n  \n      </div>\n    </div>\n
+        \                 \n      <div class=\"tabloid__insert\">\n        <div class=\"tabloid__insert-cellotape\">\n
+        \         <div id=\"block-numero-stickynavigationblock\">\n  \n    \n      \n\n\n\n<nav
+        class=\"chapters\">\n  <h2 class=\"chapters__title\">Inhaltsverzeichnis</h2>\n
+        \ <ol class=\"chapters__list\">\n          <li\n        class=\"chapters__chapter\n
+        \       \"\n      >\n        <a\n          class=\"chapters__link\n                              \"\n
+        \         href=\"#rechtschreibung\"\n          \n          data-title=\"Recht\xADschreibung\"\n
+        \       >\n          Recht\xADschreibung</a>\n      </li>\n          <li\n
+        \       class=\"chapters__chapter\n        \"\n      >\n        <a\n          class=\"chapters__link\n
+        \                             \"\n          href=\"#bedeutungen\"\n          \n
+        \         data-title=\"Be\xADdeu\xADtung\xADen\"\n        >\n          Be\xADdeu\xADtung\xADen</a>\n
+        \     </li>\n          <li\n        class=\"chapters__chapter\n        \"\n
+        \     >\n        <a\n          class=\"chapters__link\n                              \"\n
+        \         href=\"#synonyme\"\n          \n          data-title=\"Sy\xADn\xADo\xADny\xADme\"\n
+        \       >\n          Sy\xADn\xADo\xADny\xADme</a>\n      </li>\n          <li\n
+        \       class=\"chapters__chapter\n        \"\n      >\n        <a\n          class=\"chapters__link\n
+        \                             \"\n          href=\"#herkunft\"\n          \n
+        \         data-title=\"Her\xADkunft\"\n        >\n          Her\xADkunft</a>\n
+        \     </li>\n          <li\n        class=\"chapters__chapter\n        \"\n
+        \     >\n        <a\n          class=\"chapters__link\n                              \"\n
+        \         href=\"#grammatik\"\n          \n          data-title=\"Gram\xADma\xADtik\"\n
+        \       >\n          Gram\xADma\xADtik</a>\n      </li>\n          <li\n        class=\"chapters__chapter\n
+        \       \"\n      >\n        <a\n          class=\"chapters__link\n                              \"\n
+        \         href=\"#wussten_sie_schon\"\n          \n          data-title=\"Wussten
+        Sie schon?\"\n        >\n          Wussten Sie schon?</a>\n      </li>\n      </ol>\n</nav>\n\n
+        \ </div>\n\n\n  <div  id=\"block-numero-teasercontent-right\">\n    \n    \n\n\n
+        \ <a href=\"https://mentor.duden.de?utm_source=duden_de&amp;utm_medium=premium_int&amp;utm_campaign=red_touchpoint_lemma&amp;utm_content=ki-testen\"
+        class=\"internal-banner-ad\">\n\n\n    \n\n\n    <img src=\"https://cdn.duden.de/public_files/2024-02/KI-Mentor%20Werbung.jpg\"
+        width=\"901\" height=\"901\" alt=\"Mentor KI Banner\" loading=\"lazy\" />\n\n\n</a>\n\n\n\n\n\n\n<section
+        class=\"essay  essay--compact\" >\n      <div class=\"essay__intro\"></div>\n
+        \ \n  <a href=\"https://shop.duden.de/?campaignCode=do-teaser\" >\n    \n
+        \ </a>\n\n  \n  <h2 class=\"essay__title \">\n    <a href=\"https://shop.duden.de/?campaignCode=do-teaser\"
+        \ aria-label=\"\"></a>\n  </h2>\n  \n  \n\n\n  Die Duden-B\xFCcherwelt\n&nbsp;\n
+        \ <footer class=\"essay__bottom\">\n          \n<nav class=\"more   \">\n
+        \ <a href=\"https://shop.duden.de/?campaignCode=do-teaser\" class=\"more__link\"
+        \ >\n    <span class=\"more__arrow\" aria-label=\"Pfeil nach links\">\u2192</span>
+        <span class=\"more__text\">Jetzt entdecken </span>\n  </a>\n</nav>\n  \n  </footer>\n</section>\n\n\n\n\n\n\n<section
+        class=\"essay  essay--compact\" >\n      <div class=\"essay__intro\"></div>\n
+        \ \n  <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
+        >\n    \n  </a>\n\n  \n  <h2 class=\"essay__title \">\n    <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
+        \ aria-label=\"\"></a>\n  </h2>\n  \n  \n\n\n  Noch Fragen?\n  <footer class=\"essay__bottom\">\n
+        \         \n<nav class=\"more   \">\n  <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
+        class=\"more__link\"  >\n    <span class=\"more__arrow\" aria-label=\"Pfeil
+        nach links\">\u2192</span> <span class=\"more__text\">Zur Sprachberatung </span>\n
+        \ </a>\n</nav>\n  \n  </footer>\n</section>\n\n\n  </div>\n\n                  </div>\n
+        \     </div>\n              <div class=\"tabloid__main-column-top tabloid__main-column-top--sticky\">\n
+        \       <div id=\"block-numero-lexemsearchbox-2\">\n  \n    \n      <form
+        class=\"lexem-search-form main-search-form\" data-drupal-selector=\"lexem-search-form\"
+        action=\"/suchen/dudenonline/\" method=\"post\" id=\"lexem-search-form\" accept-charset=\"UTF-8\">\n
+        \ \n\n\n\n\n\n\n\n\n\n<div class=\"form-asap form-asap--simple_no \">\n      <div
+        class=\"form-asap__top\">\n                    \n    </div>\n    <div class=\"form-asap__slot\">\n
+        \   <div class=\"form-asap__input-wrapper\">\n      <span class=\"form-asap__show-categories\"
+        aria-label=\"Pfeil nach links\">\u2190</span>\n<button class=\"form-asap__button\"
+        >\n  <span class=\"form-asap__button-arrow\" aria-label=\"Suchen\">\U0001F50D</span>\n</button>\n\n
+        \     <input  data-drupal-selector=\"edit-search-api-fulltext\" data-search-api-autocomplete-search=\"dictionary_search\"
+        data-autocomplete-path=\"/search_api_autocomplete/dictionary_search?display=page_1&amp;&amp;filter=search_api_fulltext\"
+        type=\"text\" name=\"search_api_fulltext\" value=\"Abend\" maxlength=\"128\"\n
+        \ class=\"form-asap__query duden-autosuggest form-text\" size=\"1\" placeholder=\"Stichwort\"\n
+        \ id=\"edit-search-api-fulltext--2\" required oninvalid=\"this.setCustomValidity('Bitte
+        geben Sie ein Stichwort ein')\"\n  oninput=\"if(this.value!=''){this.setCustomValidity('')}\"/>\n\n
+        \     <div class=\"form-asap__clear-form \"></div>\n      <div class=\"form-asap__guesses\"
+        hidden>\n        \n      </div>\n    </div>\n    <div class=\"form-asap__tabs-wrapper\">\n
+        \                 <input class=\"form-asap__r form-asap__r--1\" name=\"scope\"
+        type=\"radio\" hidden id=\"edit-scope-dictionary\" name=\"scope\"  checked
+        value=\"dictionary\" />\n    <label class=\"form-asap__tab\" for=\"edit-scope-dictionary\">W\xF6rterbuch</label>\n
+        \         <input class=\"form-asap__r form-asap__r--2\" name=\"scope\" type=\"radio\"
+        hidden id=\"edit-scope-synonyms\" name=\"scope\"   value=\"synonyms\" />\n
+        \   <label class=\"form-asap__tab\" for=\"edit-scope-synonyms\">Synonyme</label>\n
+        \         <input class=\"form-asap__r form-asap__r--3\" name=\"scope\" type=\"radio\"
+        hidden id=\"edit-scope-grammar\" name=\"scope\"   value=\"grammar\" />\n    <label
+        class=\"form-asap__tab\" for=\"edit-scope-grammar\">Grammatik</label>\n          <input
+        class=\"form-asap__r form-asap__r--4\" name=\"scope\" type=\"radio\" hidden
+        id=\"edit-scope-lang_knowledge\" name=\"scope\"   value=\"lang_knowledge\"
+        />\n    <label class=\"form-asap__tab\" for=\"edit-scope-lang_knowledge\">Sprachwissen</label>\n
+        \ \n\n    </div>\n          <script type=\"text/javascript\" async>\n        if(document.activeElement
+        == null || document.activeElement == document.body) {\n          document.getElementById('edit-search-api-fulltext--2').focus({preventScroll:true});\n
+        \       }\n      </script>\n      </div>\n  <div class=\"form-asap__bottom\">\n
+        \     </div>\n</div>\n\n\n\n</form>\n\n  </div>\n\n      </div>\n                      <main
+        class=\"tabloid__main-column\">\n          <div data-drupal-messages-fallback
+        class=\"hidden\"></div>\n  \n  \n\n  <nav class=\"breadcrumb\" role=\"navigation\"><a
+        class=\"breadcrumb__crumb\" href=\"/\">Startseite</a><span class=\"breadcrumb__gap\">
+        \u25BB </span><a class=\"breadcrumb__crumb\" href=\"/woerterbuch\">W\xF6rterbuch</a><span
+        class=\"breadcrumb__gap\"> \u25BB </span><span class=\"breadcrumb__crumb\">Abend</span></nav>\n\n\n\n<article>\n\n
+        \ \n  \n\n\n  \n      <div class=\"lemma\">\n        <h1 class=\"lemma__title
+        lemma__title--shorter\"><span class=\"lemma__main\">Abend</span>, <span class=\"lemma__determiner\">der</span></h1>\n
+        \     </div>\n    \n  \n\n    \n      \n\n\n\n<nav class=\"gizmo \">\n      <dl
+        class=\"gizmo__gadget \">\n      <dt>    \n  <a class=\"gizmo__gadget-icon
+        \" href=\"#numero-cite\"  aria-label=\"Als Quelle verwenden\">\u275E</a>\n</dt>\n
+        \     <dd class=\"gizmo__gadget-baloon\" id=\"\" >\n                            <div
+        class=\"gizmo__gadget-baloon-content\">\n            Als Quelle verwenden\n
+        \         </div>\n                      </dd>\n    </dl>\n      <dl class=\"gizmo__gadget
+        \">\n      <dt>    \n  <button class=\"gizmo__gadget-icon \"   aria-label=\"Share
+        links\">\U0001F5E3</button>\n</dt>\n      <dd class=\"gizmo__gadget-baloon\"
+        id=\"\" >\n                          <div class=\"gizmo__gadget-icons\">\n
+        \                             \n  <a class=\"gizmo__gadget-icon \" href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.duden.de%2Frechtschreibung%2FAbend\"
+        \ title=\"Auf Facebook teilen\" target=\"_blank\" rel=\"noopener noreferrer\"
+        aria-label=\"Auf Facebook teilen\">\U0001D5F3</a>\n\n                              \n
+        \ <a class=\"gizmo__gadget-icon \" href=\"https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.duden.de%2Frechtschreibung%2FAbend\"
+        \ title=\"Share on X\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Share
+        on X\">\U0001D54F</a>\n\n                              \n  <a class=\"gizmo__gadget-icon
+        \" href=\"mailto:?body=https%3A%2F%2Fwww.duden.de%2Frechtschreibung%2FAbend\"
+        \ title=\"Per E-Mail versenden\" aria-label=\"Per E-Mail versenden\">\u2709</a>\n\n
+        \                     </div>\n              </dd>\n    </dl>\n      <dl class=\"gizmo__gadget
+        \">\n      <dt>    \n  <button class=\"gizmo__gadget-icon  gizmo__gadget-icon--is-action\"
+        \  data-clipboard-text=\"Abend\" data-clipboard-success-text=\"#copy-lexeme-help\"
+        hidden title=\"Copy lexeme without article\" aria-label=\"Copy lexeme without
+        article\">\U0001F4D1</button>\n</dt>\n      <dd class=\"gizmo__gadget-baloon\"
+        id=\"\" >\n                            <div class=\"gizmo__gadget-baloon-content\">\n
+        \               <div id=\"copy-lexeme-help\">Dieses Wort kopieren</div>\n
+        \ \n          </div>\n                      </dd>\n    </dl>\n      <dl class=\"gizmo__gadget
+        gizmo__gadget--prominent\">\n      <dt>    \n  <button class=\"gizmo__gadget-icon
+        gizmo__gadget-clickable\"   data-connect=\"L3VzZXIvYXV0aGVudGljYXRlP2Rlc3RpbmF0aW9uPS9yZWNodHNjaHJlaWJ1bmcvQWJlbmQ=\"
+        data-addword-text=\"\u2795\" data-removeword-text=\"\u2796\" data-failue-text=\"\u274C\"
+        aria-label=\"Melden Sie sich an, um dieses Wort auf Ihre Merkliste zu setzen.\">\u2795</button>\n</dt>\n
+        \     <dd class=\"gizmo__gadget-baloon\" id=\"\" >\n                            <div
+        class=\"gizmo__gadget-baloon-content\">\n            Melden Sie sich an, um
+        dieses Wort auf Ihre Merkliste zu setzen.\n          </div>\n                      </dd>\n
+        \   </dl>\n  </nav>\n  \n  <div class=\"mobile_tile_banner\">\n    \n\n<div
+        class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"lashananafalilila\">\n
+        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.lashananafalilila%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.lashananafalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.lashananafalilila__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"lashananafalilila__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"lashananafalilila__content\">\n\n\n
+        \ <p>&nbsp;</p>\n\n<div id=\"div-gpt-ad-5126943489901-0\">&nbsp;</div></div>\n
+        \     <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
+        \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
+        class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
+        alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
+        aktivieren</a>\n  </aside>\n</div>\n\n  </div>\n\n  \n\n\n  \n      <dl class=\"tuple\">\n
+        \       <dt class=\"tuple__key\">Wortart: <a class=\"tuple__icon\" href=\"/hilfe/wortart\"
+        target=\"_blank\">\u24D8</a></dt>\n        <dd class=\"tuple__val\">Substantiv,
+        maskulin</dd>\n      </dl>\n      <dl class=\"tuple\">\n        <dt class=\"tuple__key\">H\xE4ufigkeit:
+        <a class=\"tuple__icon\" href=\"/hilfe/haeufigkeit\" target=\"_blank\">\u24D8</a></dt>\n
+        \       <dd class=\"tuple__val\">\n          <div class=\"shaft\" aria-label=\"Geh\xF6rt
+        zu den 1000 h\xE4ufigsten W\xF6rtern im Dudenkorpus mit Ausnahme der Top 100\"><span
+        class=\"shaft__full\">\u2592\u2592\u2592\u2592</span><span class=\"shaft__empty\">\u2591</span></div>\n
+        \       </dd>\n      </dl>\n      <dl class=\"tuple\">\n        <dt class=\"tuple__key\">Aussprache:
+        <a class=\"tuple__icon\" href=\"/hilfe/aussprache\" target=\"_blank\">\u24D8</a></dt>\n
+        \       <dd class=\"tuple__val\">\n          <dl class=\"pronunciation-guide\">\n
+        \           <dt class=\"pronunciation-guide__diction-type\">Betonung</dt>\n
+        \           <dd class=\"pronunciation-guide__diction\">\n              <div>\n
+        \               <span class=\"pronunciation-guide__text\"><u class=\"long-stress\">A</u>bend</span>\n
+        \             </div>\n            </dd>\n            <dt class=\"pronunciation-guide__diction-type\">Lautschrift</dt>\n
+        \           <dd class=\"pronunciation-guide__diction\">\n              <div><a
+        href=\"https://cdn.duden.de/_media_/audio/ID4107941_80331396.mp3\" class=\"pronunciation-guide__sound\"
+        data-duden-ref-type=\"audio\" data-file-id=\"ID4107941_80331396\"><span class=\"pronunciation-guide__icon\">\U0001F509</span></a><span
+        class=\"pronunciation-guide__transcription\"><span class=\"ipa\">[\u02C8a\u02D0bn\u0329t]</span></span></div>\n
+        \           </dd>\n          </dl>\n        </dd>\n      </dl>\n    \n\n  <div>\n
+        \   \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"lanalanafalilila\">\n
+        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.lanalanafalilila%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.lanalanafalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.lanalanafalilila__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"lanalanafalilila__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"lanalanafalilila__content\">\n\n\n
+        \ <div id=\"div-gpt-ad-1407836025217-0\"><span id=\"Duden.de_d_640x480_1\"></span></div>\n</div>\n
+        \     <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
+        \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
+        class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
+        alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
+        aktivieren</a>\n  </aside>\n</div>\n\n\n\n  \n\n\n<div class=\"division \"
+        \ id=\"rechtschreibung\">\n  <header class=\"division__header\">\n    \n          <h2
+        class=\"division__title\" >Rechtschreibung</h2>\n              <small class=\"division__info\">\n
+        \       <a class=\"division__info_icon\" target=\"_blank\" href=\"/hilfe/rechtschreibung\">\u24D8</a>\n
+        \     </small>\n        \n  </header>\n    \n      \n      <dl class=\"tuple\">\n
+        \       <dt class=\"tuple__key\">Worttrennung</dt>\n        <dd class=\"tuple__val\">Abend</dd>\n
+        \     </dl>\n      <div class=\"infobox\">\n        <p>Gro\xDFschreibung:
+        </p>\n        <ul class=\"infobox__examples\">\n          <li>des, eines Abends;
+        am Abend; gegen Abend; diesen Abend; den Abend \xFCber </li>\n          <li>es
+        wird Abend; [zu] Abend essen; wir wollen nur <span class=\"endorsed\">Guten</span>,
+        <i>auch: </i>guten Abend sagen </li>\n          <li>gestern, heute, morgen
+        Abend; bis, von gestern, heute, morgen Abend <a href=\"https://www.duden.de/sprachwissen/rechtschreibregeln/Gro%C3%9F-%20und%20Kleinschreibung#D69\"
+        class=\"rule-ref\" data-duden-ref-type=\"rule\" data-duden-id=\"r69\">D\u202F69</a>
+        </li>\n        </ul>\n        <p>Kleinschreibung: </p>\n        <ul class=\"infobox__examples\">\n
+        \         <li>abends <a href=\"https://www.duden.de/sprachwissen/rechtschreibregeln/Gro%C3%9F-%20und%20Kleinschreibung#D70\"
+        class=\"rule-ref\" data-duden-ref-type=\"rule\" data-duden-id=\"r70\">D\u202F70</a>
+        </li>\n          <li>von morgens bis abends </li>\n          <li>abends sp\xE4t,
+        <i>aber </i>sp\xE4tabends </li>\n          <li>[um] 8 Uhr abends, abends [um]
+        8 Uhr </li>\n          <li>dienstagabends <i>oder</i> dienstags abends (<i>vgl.</i>
+        <a href=\"/rechtschreibung/Dienstagabend\" data-duden-ref-type=\"lexeme\"
+        data-duden-target-id=\"10011687\">Dienstagabend</a>)</li>\n        </ul>\n
+        \     </div>\n    \n  \n</div>\n\n\n\n  \n\n\n<div class=\"division \"  id=\"bedeutungen\">\n
+        \ <header class=\"division__header\">\n    \n          <h2 class=\"division__title\"
+        >Bedeutungen (3)</h2>\n              <small class=\"division__info\">\n        <a
+        class=\"division__info_icon\" target=\"_blank\" href=\"/hilfe/bedeutungen\">\u24D8</a>\n
+        \     </small>\n        \n  </header>\n    \n      \n      <ol class=\"enumeration\"
+        type=\"1\">\n        <li class=\"enumeration__item\" id=\"Bedeutung-1\">\n
+        \         <div class=\"enumeration__text\">Tageszeit um die D\xE4mmerung,
+        das Dunkelwerden vor Beginn der Nacht</div>\n          <dl class=\"note\">\n
+        \           <dt class=\"note__title\">Beispiele</dt>\n            <dd>\n              <input
+        type=\"checkbox\" hidden=\"hidden\" id=\"Bedeutung-1-Beispiele-more\">\n              <ul
+        class=\"note__list\">\n                <li>ein warmer, k\xFChler, klarer,
+        sommerlicher Abend</li>\n                <li>der letzte, folgende Abend</li>\n
+        \               <li>heute, gestern, morgen Abend</li>\n                <li>es
+        wird Abend</li>\n                <li>es ist schon sp\xE4ter Abend <i>(die
+        Nacht hat bereits begonnen, es ist schon Nacht)</i></li>\n                <li>es
+        war gestern ein langer Abend bei euch <i>(es dauerte bis [tief] in die Nacht)</i></li>\n
+        \               <li>der Abend kommt, naht, bricht herein</li>\n                <li>jeden,
+        keinen Abend, alle Abende fernsehen</li>\n                <li>viele Abende
+        warten</li>\n                <li>wie hast du den Abend verbracht?</li>\n                <li>die
+        Bedienung hat ihren freien Abend</li>\n                <li>(gehoben) des Abends
+        <i>(abends)</i></li>\n                <li>eines [sch\xF6nen] Abends</li>\n
+        \               <li>am Abend [vorher]</li>\n                <li>am fr\xFChen,
+        sp\xE4ten, gestrigen, gleichen Abend</li>\n                <li>am Abend des
+        31.&nbsp;M\xE4rz</li>\n                <li>es geht dem Abend, auf den Abend
+        zu</li>\n                <li>bis heute, morgen Abend!</li>\n                <li>Abend
+        f\xFCr Abend</li>\n                <li>gegen Abend</li>\n                <li>vom
+        Morgen bis zum Abend</li>\n                <li>w\xE4hrend des Abends</li>\n
+        \             </ul>\n              <label class=\"note__show-all\" aria-label=\"Weitere
+        Beispiele anzeigen\" for=\"Bedeutung-1-Beispiele-more\"></label>\n            </dd>\n
+        \         </dl>\n          <dl class=\"note\">\n            <dt class=\"note__title\">Wendungen,
+        Redensarten, Sprichw\xF6rter</dt>\n            <dd>\n              <ul class=\"note__list\">\n
+        \               <li>Guten/guten Abend (<a href=\"/rechtschreibung/Gruszformel\"
+        data-duden-ref-type=\"lexeme\" data-duden-target-id=\"10107628\">Gru\xDFformel</a>:
+        hallo und Guten/guten Abend allerseits!; [zu] jemandem Guten/guten Abend sagen)</li>\n
+        \               <li>zu Abend essen (die Abendmahlzeit einnehmen)</li>\n                <li>der
+        Heilige Abend ([Tag und] Abend des 24. Dezember)</li>\n                <li>er
+        usw. kann mich am Abend besuchen (salopp:  er <i>usw. </i>soll mich in Ruhe
+        lassen)</li>\n                <li>je sp\xE4ter der Abend, desto sch\xF6ner
+        die G\xE4ste (h\xF6flich-scherzhafte Begr\xFC\xDFung eines sp\xE4ter hinzugekommenen
+        Gastes)</li>\n              </ul>\n            </dd>\n          </dl>\n        </li>\n
+        \       <li class=\"enumeration__item\" id=\"Bedeutung-2\">\n          <div
+        class=\"enumeration__text\">[geselliges] Beisammensein am Abend</div>\n          <dl
+        class=\"note\">\n            <dt class=\"note__title\">Beispiele</dt>\n            <dd>\n
+        \             <ul class=\"note__list\">\n                <li>ein gem\xFCtlicher
+        Abend</li>\n                <li>der musikalische Abend <i>(die musikalische
+        Soiree) </i>beim franz\xF6sischen Botschafter</li>\n              </ul>\n
+        \           </dd>\n          </dl>\n          <dl class=\"note\">\n            <dt
+        class=\"note__title\">Wendungen, Redensarten, Sprichw\xF6rter</dt>\n            <dd>\n
+        \             <ul class=\"note__list\">\n                <li>bunter Abend
+        (veraltend:  Abendveranstaltung mit heiterem, abwechslungsreichem Programm)</li>\n
+        \             </ul>\n            </dd>\n          </dl>\n        </li>\n        <li
+        class=\"enumeration__item\" id=\"Bedeutung-3\">\n          <div class=\"enumeration__text\">\n
+        \           <a href=\"/rechtschreibung/Westen\" data-duden-ref-type=\"lexeme\"
+        data-duden-target-id=\"10008534\">Westen</a>\n          </div>\n          <dl
+        class=\"tuple\">\n            <dt class=\"tuple__key\">Gebrauch</dt>\n            <dd
+        class=\"tuple__val\">veraltet, noch altert\xFCmelnd</dd>\n          </dl>\n
+        \         <dl class=\"tuple\">\n            <dt class=\"tuple__key\">Grammatik</dt>\n
+        \           <dd class=\"tuple__val\">ohne Plural</dd>\n          </dl>\n          <dl
+        class=\"note\">\n            <dt class=\"note__title\">Beispiel</dt>\n            <dd>\n
+        \             <ul class=\"note__list\">\n                <li>der Wind weht
+        von Abend her</li>\n              </ul>\n            </dd>\n          </dl>\n
+        \       </li>\n      </ol>\n    \n  \n</div>\n\n\n<div class=\"tile__wrapper\">\n
+        \ \n  \n\n<aside class=\"lanakanafalilila\">\n  <link rel=\"stylesheet\" href=\"data:text/css,%20%20.lanakanafalilila%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.lanakanafalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.lanakanafalilila__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"lanakanafalilila__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"lanakanafalilila__content\">\n\n\n
+        \ <div id=\"div-gpt-ad-1407836274994-0\"><span id=\"Duden.de_d_640x480_2\"></span></div>\n</div>\n
+        \     <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
+        \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
+        class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
+        alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
+        aktivieren</a>\n  </aside>\n</div>\n\n\n\n  \n\n\n<div class=\"division \"
+        \ id=\"synonyme\">\n  <header class=\"division__header\">\n    \n          <h2
+        class=\"division__title\" >Synonyme zu <em>Abend</em></h2>\n              <small
+        class=\"division__info\">\n        <a class=\"division__info_icon\" target=\"_blank\"
+        href=\"/hilfe/synonyme\">\u24D8</a>\n      </small>\n        \n  </header>\n
+        \   <ul><li><a href=\"/rechtschreibung/Abendstunde\" data-duden-ref-type=\"lexeme\"
+        data-duden-target-id=\"10097103\">Abendstunde</a>, <a href=\"/rechtschreibung/Abendzeit\"
+        data-duden-ref-type=\"lexeme\" data-duden-target-id=\"10097285\">Abendzeit</a>,
+        <a href=\"/rechtschreibung/Tagesende\" data-duden-ref-type=\"lexeme\" data-duden-target-id=\"10224725\">Tagesende</a></li></ul>\n
+        \       \n<nav class=\"more   \">\n  <a href=\"/synonyme/Abend\" class=\"more__link\"
+        \ id=\"synonyme\" >\n    <span class=\"more__arrow\" aria-label=\"Pfeil nach
+        links\">\u2192</span> <span class=\"more__text\">Zur \xDCbersicht der Synonyme
+        zu <em class=\"placeholder\">Abend</em> </span>\n  </a>\n</nav>\n  \n</div>\n\n\n\n
+        \ \n\n\n<div class=\"division \"  id=\"herkunft\">\n  <header class=\"division__header\">\n
+        \   \n          <h2 class=\"division__title\" >Herkunft</h2>\n              <small
+        class=\"division__info\">\n        <a class=\"division__info_icon\" target=\"_blank\"
+        href=\"/hilfe/herkunft\">\u24D8</a>\n      </small>\n        \n  </header>\n
+        \   \n      \n      <p>mittelhochdeutsch \u0101bent, althochdeutsch \u0101band,
+        eigentlich = der hintere oder sp\xE4tere Teil des Tages, wahrscheinlich verwandt
+        mit <a href=\"/rechtschreibung/After\" data-duden-ref-type=\"lexeme\" data-duden-target-id=\"10019499\">After</a></p>\n
+        \   \n  \n</div>\n\n\n\n  \n\n\n<div class=\"division \"  id=\"grammatik\">\n
+        \ <header class=\"division__header\">\n    \n          <h2 class=\"division__title\"
+        >Grammatik</h2>\n              <small class=\"division__info\">\n        <a
+        class=\"division__info_icon\" target=\"_blank\" href=\"/hilfe/grammatik\">\u24D8</a>\n
+        \     </small>\n        \n  </header>\n    \n      \n      <p>der Abend; Genitiv:
+        des Abends, Plural: die Abende</p>\n    \n        \n<nav class=\"more   \">\n
+        \ <a href=\"/deklination/substantive/Abend\" class=\"more__link\"  id=\"grammatik\"
+        >\n    <span class=\"more__arrow\" aria-label=\"Pfeil nach links\">\u2192</span>
+        <span class=\"more__text\">Zur Deklinationstabelle des Substantivs <em class=\"placeholder\">Abend</em>
+        </span>\n  </a>\n</nav>\n  \n</div>\n\n\n<div class=\"tile__wrapper\">\n  \n
+        \ \n\n<aside class=\"laminanafalilila\">\n  <link rel=\"stylesheet\" href=\"data:text/css,%20%20.laminanafalilila%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.laminanafalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.laminanafalilila__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"laminanafalilila__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"laminanafalilila__content\">\n\n\n
+        \ <div id=\"div-gpt-ad-1407836241530-0\"><span id=\"Duden.de_d_640x480_3\"></span></div>\n</div>\n
+        \     <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
+        \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
+        class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
+        alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
+        aktivieren</a>\n  </aside>\n</div>\n\n\n\n  \n\n\n<div class=\"division \"
+        \ id=\"wussten_sie_schon\">\n  <header class=\"division__header\">\n    \n
+        \         <h2 class=\"division__title\" >Wussten Sie schon?</h2>\n              <small
+        class=\"division__info\">\n        <a class=\"division__info_icon\" target=\"_blank\"
+        href=\"/hilfe/wussten-sie-schon\">\u24D8</a>\n      </small>\n        \n  </header>\n
+        \   \n      \n      <ul>\n        <li>Dieses Wort geh\xF6rt zum Wortschatz
+        des Goethe-Zertifikats B1.</li>\n      </ul>\n    \n  \n</div>\n\n  </div>\n\n</article>\n\n\n\n<div
+        class=\"division \"  id=\"block-numero-beforeafterblock-2\">\n  <header class=\"division__header\">\n
+        \   \n          <h2 class=\"division__title\" >Bl\xE4ttern</h2>\n              <small
+        class=\"division__info\">\n        <a class=\"division__info_icon\" target=\"_blank\"
+        href=\"/hilfe/blaettern\">\u24D8</a>\n      </small>\n        \n  </header>\n
+        \ \n<div class=\"hookup\">\n      <nav class=\"hookup__group\">\n      <h3
+        class=\"hookup__title\">Im Alphabet davor</h3>\n      <ul class=\"hookup__list\">\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/abeisen\">ab\xADei\xADsen</a>\n          </li>\n                  <li
+        class=\"hookup__item\">\n            <a class=\"hookup__link\" href=\"/rechtschreibung/Abel\">Abel</a>\n
+        \         </li>\n                  <li class=\"hookup__item\">\n            <a
+        class=\"hookup__link\" href=\"/rechtschreibung/_abel\">-a\xADbel</a>\n          </li>\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/Abelespiele\">Abe\xADle\xADspie\xADle</a>\n          </li>\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/Abelmoschus\">Abel\xADmo\xADschus</a>\n          </li>\n
+        \             </ul>\n    </nav>\n      <nav class=\"hookup__group\">\n      <h3
+        class=\"hookup__title\">Im Alphabet danach</h3>\n      <ul class=\"hookup__list\">\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/Abendakademie\">Abend\xADaka\xADde\xADmie</a>\n          </li>\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/Abendandacht\">Abend\xADan\xADdacht</a>\n          </li>\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/Abendanzug\">Abend\xADan\xADzug</a>\n          </li>\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/Abendauktion\">Abend\xADauk\xADti\xADon</a>\n          </li>\n
+        \                 <li class=\"hookup__item\">\n            <a class=\"hookup__link\"
+        href=\"/rechtschreibung/Abendausgabe\">Abend\xADaus\xADga\xADbe</a>\n          </li>\n
+        \             </ul>\n    </nav>\n  </div>\n\n</div>\n\n\n\n\n<nav class=\"gizmo
+        back-to-top\">\n      <dl class=\"gizmo__gadget \">\n      <dt>    \n  <a
+        class=\"gizmo__gadget-icon \" href=\"#top\" >\u2191</a>\n</dt>\n      <dd
+        class=\"gizmo__gadget-baloon\" id=\"\" >\n                      </dd>\n    </dl>\n
+        \ </nav>\n\n\n    <div  id=\"block-numero-taboolaads\">\n    \n    <div id=\"taboola-below-article-thumbnails\"></div>\r\n<script
+        type=\"text/javascript\">\r\n  window._taboola = window._taboola || [];\r\n
+        \ _taboola.push({\r\n    mode: 'thumbnails-a',\r\n    container: 'taboola-below-article-thumbnails',\r\n
+        \   placement: 'Below Article Thumbnails',\r\n    target_type: 'mix'\r\n  });\r\n</script>\n\n
+        \ </div>\n  <div  id=\"block-numero-lexemleaderboardunten\">\n    \n    \n\n\n
+        \ \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"lilashanakalilila\">\n
+        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.lilashanakalilila%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.lilashanakalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.lilashanakalilila__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"lilashanakalilila__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"lilashanakalilila__content\">\n\n\n
+        \ <div id=\"div-gpt-ad-1407836052110-0\"></div>\n</div>\n      <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
+        \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
+        class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
+        alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
+        aktivieren</a>\n  </aside>\n</div>\n\n  </div>\n  <div  id=\"block-numero-leaderboard2ndslot\">\n
+        \   \n    \n\n\n  \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside class=\"likakanakalilila\">\n
+        \ <link rel=\"stylesheet\" href=\"data:text/css,%20%20.likakanakalilila%20%7B%0A%20%20%20%20margin%3A%2010px%200%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.likakanakalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <div class=\"likakanakalilila__content\">\n\n\n  <div id=\"div-gpt-ad-1407836593647-0\"><span
+        id=\"Leaderboard_2ter_Slot\"></span></div></div>\n  </aside>\n</div>\n\n  </div>\n\n\n
+        \ <div  id=\"block-numero-teasercontent\">\n    \n    \n\n\n  <a href=\"https://mentor.duden.de?utm_source=duden_de&amp;utm_medium=premium_int&amp;utm_campaign=red_touchpoint_lemma&amp;utm_content=ki-testen\"
+        class=\"internal-banner-ad\">\n\n\n    \n\n\n    <img src=\"https://cdn.duden.de/public_files/2024-02/KI-Mentor%20Werbung.jpg\"
+        width=\"901\" height=\"901\" alt=\"Mentor KI Banner\" loading=\"lazy\" />\n\n\n</a>\n\n\n\n\n\n\n<section
+        class=\"essay  essay--compact\" >\n      <div class=\"essay__intro\"></div>\n
+        \ \n  <a href=\"https://shop.duden.de/?campaignCode=do-teaser\" >\n    \n
+        \ </a>\n\n  \n  <h2 class=\"essay__title \">\n    <a href=\"https://shop.duden.de/?campaignCode=do-teaser\"
+        \ aria-label=\"\"></a>\n  </h2>\n  \n  \n\n\n  Die Duden-B\xFCcherwelt\n&nbsp;\n
+        \ <footer class=\"essay__bottom\">\n          \n<nav class=\"more   \">\n
+        \ <a href=\"https://shop.duden.de/?campaignCode=do-teaser\" class=\"more__link\"
+        \ >\n    <span class=\"more__arrow\" aria-label=\"Pfeil nach links\">\u2192</span>
+        <span class=\"more__text\">Jetzt entdecken </span>\n  </a>\n</nav>\n  \n  </footer>\n</section>\n\n\n\n\n\n\n<section
+        class=\"essay  essay--compact\" >\n      <div class=\"essay__intro\"></div>\n
+        \ \n  <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
+        >\n    \n  </a>\n\n  \n  <h2 class=\"essay__title \">\n    <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
+        \ aria-label=\"\"></a>\n  </h2>\n  \n  \n\n\n  Noch Fragen?\n  <footer class=\"essay__bottom\">\n
+        \         \n<nav class=\"more   \">\n  <a href=\"/Sprachberatung-0?utm_source=duden_de&amp;utm_medium=content&amp;utm_campaign=red_text-teaser_lemma&amp;utm_content=sprachberatung\"
+        class=\"more__link\"  >\n    <span class=\"more__arrow\" aria-label=\"Pfeil
+        nach links\">\u2192</span> <span class=\"more__text\">Zur Sprachberatung </span>\n
+        \ </a>\n</nav>\n  \n  </footer>\n</section>\n\n\n  </div>\n\n\n      </main>\n
+        \             \n      <aside class=\"tabloid__side-column\">\n        <div
+        class=\"tabloid__side-column-top\">\n          <div class=\"tabloid__side-widget\">\n
+        \           <div id=\"block-numero-dudende-d-300x600-1-notestickytop\">\n
+        \ \n    \n      \n\n\n  \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside
+        class=\"nafenanakalilila\">\n  <link rel=\"stylesheet\" href=\"data:text/css,%20%20.nafenanakalilila%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.nafenanakalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.nafenanakalilila__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"nafenanakalilila__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"nafenanakalilila__content\">\n\n\n
+        \ <div id=\"div-gpt-ad-1407836009283-0\"></div>\n</div>\n      <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
+        \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
+        class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
+        alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
+        aktivieren</a>\n  </aside>\n</div>\n\n  </div>\n\n          </div>\n        </div>\n
+        \     </aside>\n        <div class=\"tabloid__wide-column\">\n      \n    </div>\n
+        \         \n      <div class=\"tabloid__wide-top\">\n        <div id=\"block-numero-dudende-d-970x250-1billboard\">\n
+        \ \n    \n      \n\n\n  \n\n<div class=\"tile__wrapper\">\n  \n  \n\n<aside
+        class=\"nalananakalilila\">\n  <link rel=\"stylesheet\" href=\"data:text/css,%20%20.nalananakalilila%20%7B%0A%20%20%20%20margin%3A%2010px%20auto%3B%0A%20%20%20%20width%3A%20max-content%3Bposition%3A%20relative%3B%0A%20%20%20%20%20%20z-index%3A%200%3Bpadding-bottom%3A%200.765em%3B%7D%0A%0A%0A%20%20.nalananakalilila%20img%20%7B%0A%20%20%20%20vertical-align%3A%20bottom%3B%0A%20%20%7D%0A%20%20%20%20%20%20.nalananakalilila__label%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%20.5em%3B%0A%20%20%20%20%20%20color%3A%20%23969b9f%3B%0A%20%20%20%20%20%20padding%3A%2015px%200%2010px%3B%0A%20%20%20%20%7D%0A%20%20%0A%20%20%20%20%0A\"
+        />\n      <header class=\"nalananakalilila__label\">Anzeige</header>\n        <span
+        class=\"tile__loader\"></span>\n    <div class=\"nalananakalilila__content\">\n\n\n
+        \ <div id=\"div-gpt-ad-1407836285982-0\"><span id=\"Duden.de_d_970x250_1\"></span></div>\n</div>\n
+        \     <a href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=werbebox&utm_content=werbefreiheit_aktivieren\"\n
+        \     target=\"_blank\"\n      class=\"tile__footer-link\"\n    >\n      <img
+        class=\"tile__footer-img\" src=\"https://cdn.duden.de/statics/ad-free-pur.svg\"
+        alt=\"Werbefreiheit aktivieren\" width=\"89\" height=\"24\"/>Werbefreiheit
+        aktivieren</a>\n  </aside>\n</div>\n\n  </div>\n\n      </div>\n                      <div
+        class=\"tabloid__footer-top\">\n                  <div class=\"tabloid__footer-top-line\">\n
+        \                 \n\n\n<div class=\"seclet  seclet--wide\"  id=\"block-numero-footer-menu-2\">\n
+        \ \n      <div class=\"seclet__title\" >Duden</div>\n    \n  \n\n<ul class=\"link-list\">\n
+        \     <li class=\"link-list__item\">\n      <a class=\"link-list__link \"
+        href=\"https://shop.duden.de/?campaignCode=do-footernavigation\" >Shop</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/Presse-Neuigkeiten\"  title=\"Pressemitteilungen\">Presse</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/handel\" >Handel</a>\n    </li>\n      <li class=\"link-list__item\">\n
+        \     <a class=\"link-list__link \" href=\"/Stellenausschreibungen\"  title=\"Stellenausschreibungen\">Stellen</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/werbung\"  title=\"Mediadaten duden.de\">Mediadaten</a>\n    </li>\n
+        \     <li class=\"link-list__item\">\n      <a class=\"link-list__link \"
+        href=\"https://www.duden-institute.de/\"  target=\"_blank\" title=\"Duden
+        Institute f\xFCr Lerntherapie\">Duden Institute</a>\n    </li>\n      <li
+        class=\"link-list__item\">\n      <a class=\"link-list__link \" href=\"https://www.cornelsen.de/\"
+        >Cornelsen Verlag</a>\n    </li>\n      <li class=\"link-list__item\">\n      <a
+        class=\"link-list__link \" href=\"https://www.duden.de/form/license-request\"
+        >Rechte und Lizenzen</a>\n    </li>\n  </ul>\n\n</div>\n\n\n\n<div class=\"seclet
+        \ seclet--wide\"  id=\"block-numero-wissen\">\n  \n      <div class=\"seclet__title\"
+        >Wissen</div>\n    \n  \n\n<ul class=\"link-list\">\n      <li class=\"link-list__item\">\n
+        \     <a class=\"link-list__link \" href=\"/woerterbuch\" >W\xF6rterbuch</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/deklination\" >Deklination</a>\n    </li>\n      <li class=\"link-list__item\">\n
+        \     <a class=\"link-list__link \" href=\"/konjugation\" >Konjugation</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/synonyme\" >Synonyme</a>\n    </li>\n      <li class=\"link-list__item\">\n
+        \     <a class=\"link-list__link \" href=\"/haeufige_fehler\" >H\xE4ufige
+        Fehler</a>\n    </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/sprachwissen/rechtschreibregeln\" >Rechtschreibregeln</a>\n    </li>\n
+        \     <li class=\"link-list__item\">\n      <a class=\"link-list__link \"
+        href=\"/Liste-der-rechtschreiblich-schwierigen-Woerter\" >Schwierige W\xF6rter</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"https://www.duden.de/sprachwissen/inhaltsuebersicht\" >Sprachwissen</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/newsletter\" >Newsletter</a>\n    </li>\n  </ul>\n\n</div>\n\n\n\n<div
+        class=\"seclet  seclet--wide\"  id=\"block-numero-footer-menu-1\">\n  \n      <div
+        class=\"seclet__title\" >Hilfe</div>\n    \n  \n\n<ul class=\"link-list\">\n
+        \     <li class=\"link-list__item\">\n      <a class=\"link-list__link \"
+        href=\"/kontakt\"  title=\"Kontakt\">Kontakt</a>\n    </li>\n      <li class=\"link-list__item\">\n
+        \     <a class=\"link-list__link \" href=\"/Sprachberatung-0\"  title=\"Duden-Sprachberatung\">Sprachberatung</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/faq/haeufige_servicefragen\"  title=\"H\xE4ufige Fragen (FAQ)\">H\xE4ufige
+        Fragen (FAQ)</a>\n    </li>\n      <li class=\"link-list__item\">\n      <a
+        class=\"link-list__link \" href=\"/support\"  title=\"Technischer Support\">Technischer
+        Support</a>\n    </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/abonnement\" >Vertr\xE4ge hier k\xFCndigen</a>\n    </li>\n      <li
+        class=\"link-list__item\">\n      <a class=\"link-list__link \" href=\"https://www.duden.de/werbefreiheit\"
+        >Werbefreiheit buchen</a>\n    </li>\n  </ul>\n\n</div>\n\n\n\n<div class=\"seclet
+        \ seclet--wide\"  id=\"block-numero-apps\">\n  \n      <div class=\"seclet__title\"
+        >Software</div>\n    \n  \n\n<ul class=\"link-list\">\n      <li class=\"link-list__item\">\n
+        \     <a class=\"link-list__link \" href=\"https://mentor.duden.de/\"  title=\"Duden-Mentor\">Duden-Mentor</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"https://lp.mentor.duden.de/b2b_1_int/?utm_source=duden_de&amp;utm_medium=leadgen_b2b_int&amp;utm_campaign=footernavi&amp;utm_content=link\"
+        \ target=\"_blank\" title=\"Duden-Mentor f\xFCr Unternehmen\">Duden-Mentor
+        f\xFCr Unternehmen</a>\n    </li>\n      <li class=\"link-list__item\">\n
+        \     <a class=\"link-list__link \" href=\"/api\"  title=\"Duden-API\">Duden-API</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/digitales/duden-bibliothek\"  title=\"Duden-Bibliothek\">Duden-Bibliothek</a>\n
+        \   </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/duden-digital-schulen\"  title=\"Duden f\xFCr Schulen\">Duden f\xFCr
+        Schulen</a>\n    </li>\n      <li class=\"link-list__item\">\n      <a class=\"link-list__link
+        \" href=\"/schulwoerterbuch\" >Schulw\xF6rterbuch</a>\n    </li>\n      <li
+        class=\"link-list__item\">\n      <a class=\"link-list__link \" href=\"https://www.duden.de/rechtschreibpruefung-online\"
+        \ title=\"Rechtschreibpr\xFCfung\">Rechtschreibpr\xFCfung</a>\n    </li>\n
+        \ </ul>\n\n</div>\n\n\n\n<div class=\"seclet  seclet--wide\"  id=\"block-numero-sociallinks\">\n
+        \ \n      <div class=\"seclet__title\" >Folgen sie uns</div>\n    \n  \n\n<nav
+        class=\"mojination\">\n            <a href=\"https://www.instagram.com/dudenverlag/\"
+        title=\"instagram\" class=\"color_social__link instagram\"></a>\n                <a
+        href=\"https://www.facebook.com/Duden/\" title=\"facebook\" class=\"color_social__link
+        facebook\"></a>\n                <a href=\"https://www.youtube.com/user/Dudenverlag\"
+        title=\"youtube\" class=\"color_social__link youtube\"></a>\n                <a
+        href=\"https://www.linkedin.com/company/dudenverlag/\" title=\"linkedin\"
+        class=\"color_social__link linkedin\"></a>\n      </nav>\n\n</div>\n\n      \n
+        \   \n          </div>\n                          <div class=\"tabloid__signature\">\n
+        \                   \n\n\n\n\n<a class=\"logo\" href=\"/\">\n  <img class=\"logo__image\"
+        src=\"/sites/default/res/duden.svg\" alt=\"Zur Duden-Startseite\" width=\"88\"
+        height=\"32\"/>\n  </a>\n<div id=\"block-numero-trustedshops\">\n  \n    \n
+        \     \n\n\n  \n\n  </div>\n\n    \n          </div>\n              </div>\n
+        \       <div class=\"tabloid__footer-bottom\">\n      <div class=\"tabloid__footer-bottom-left\">\n
+        \       <div id=\"block-numero-copyrightnotice\">\n  \n    \n      \n\n\n
+        \ <p>\xA9 Cornelsen Verlag GmbH, 2024</p>\n\n  </div>\n\n      </div>\n      <div
+        class=\"tabloid__footer-bottom-right\">\n        <div  id=\"block-numero-legal\">\n
+        \ \n  \n      \n\n<nav class=\"horizontal-menu\"><a class=\"horizontal-menu__link
+        \" href=\"/service/agb\"  title=\"Allgemeine Gesch\xE4ftsbedingungen\">AGB</a>\n
+        \   \u3000<a class=\"horizontal-menu__link \" href=\"/service/datenschutz\"
+        \ title=\"Datenschutzerkl\xE4rung\">Datenschutz\xADerkl\xE4rung</a>\n    \u3000<a
+        class=\"horizontal-menu__link \" href=\"/service/datenschutz#prvcmgr\" >Privacy
+        Manager</a>\n    \u3000<a class=\"horizontal-menu__link \" href=\"/service/widerrufsrecht\"
+        \ title=\"Widerrufsrecht\">Widerrufsrecht</a>\n    \u3000<a class=\"horizontal-menu__link
+        \" href=\"/service/impressum\"  title=\"Impressum\">Impressum</a>\n    \u3000<a
+        class=\"horizontal-menu__link \" href=\"https://www.duden.de/sitemap-lexeme\"
+        >Sitemap</a>\n    </nav>\n\n  </div>\n\n      </div>\n    </div>\n  </div>\n
+        \ <div class=\"tabloid__append\">\n    <div class=\"tabloid__append-content\">\n
+        \     <div class=\"tabloid__append-content-main\">\n        \n      </div>\n
+        \   </div>\n  </div>\n</div>\n\n\n\n\n<aside class=\"eclipse \" id=\"numero-antiadblocker\"
+        tabindex=\"0\"  style=\"display: block !important\">\n  <a class=\"eclipse__end\"
+        href=\"#close-numero-antiadblocker\">\u274C</a>\n  \n    \n      <script type=\"text/javascript\"
+        src=\"/aab/assets/js/214375433.js?v=1.0.0\"></script>\n<link rel=\"stylesheet\"
+        href=\"/aab/assets/css/888975948.css?v=1.0.0\">\n\n<div class=\"ads-box\"
+        style=\"position:fixed;top:0;left:0;\" aria-hidden=\"true\">\n  &nbsp;\n</div>\n<div
+        id=\"aab-overlay\">\n  <div id=\"aab-container\">\n    <div id=\"aab-left\">\n
+        \     <div class=\"title\">Danke, dass Sie Duden online nutzen!</div>\n      <div
+        class=\"description\">\n        Bitte schalten Sie Ihren Adblocker aus, um
+        weiterhin<span class=\"bold\">uneingeschr\xE4nkt</span>auf www.duden.de zugreifen
+        zu k\xF6nnen.\n      </div>\n      <a class=\"refresh\" href=\"/werbeblocker-deaktivieren\">Adblocker
+        ausschalten</a>\n    </div>\n    <div id=\"aab-right\">\n      <div class=\"title\">Duden
+        im <span class=\"bold\">Abo</span></div>\n      <div class=\"description\">Nutzen
+        Sie Duden online ohne Werbung und Tracking auf allen Endger\xE4ten f\xFCr
+        nur <br/><span class=\"bold\">1,99 \u20AC/Monat.</span></div>\n      <img
+        src=\"https://cdn.duden.de/statics/duden-abo-ohne-werbung.png\"/>\n      <a
+        class=\"subscription-link\" href=\"https://lp.duden.de/pur/?utm_source=duden_de&utm_medium=pur_int&utm_campaign=adblock\">Bestellen</a>\n
+        \     <div class=\"login\">\n        Sie haben bereits Duden<span class=\"bold\">Pur</span>abonniert?<br>\n
+        \       <a href=\"https://www.duden.de/user/authenticate\">Dann loggen Sie
+        sich einfach hier ein.</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n
+        \ </aside>\n<a class=\"eclipse__penumbra\" href=\"#close-\" aria-hidden></a>\n\n\n\n<aside
+        class=\"eclipse \" id=\"numero-cite\" tabindex=\"0\" >\n  <a class=\"eclipse__end\"
+        href=\"#close-numero-cite\">\u274C</a>\n  \n    \n      \n\n\n\n<p>Verwenden
+        Sie folgende URL, um diesen Artikel zu zitieren.</p>\n  \n\n<div class=\"form-track
+        \" >\n      <span class=\"form-track__item\">  \n\n\n<input\n  class=\"text-slot
+        \"\n  id=\"cite-field\"\n  type=\"text\"\n  placeholder=\"\"\n  name=\"\"\n
+        \ size=\"96\"\n   value=\"https://www.duden.de/node/921/revision/1291885\"
+        readonly\n  />\n</span>\n      <span class=\"form-track__item\">  \n\n\n<a\n
+        \ class=\"\n    knob\n                  \"\n   data-clipboard-target=\"#cite-field\"
+        hidden href=\"#cite\"\n      href=\"https://www.duden.de/node/921/revision/1291885\"\n
+        \    data-clipboard-target=\"#cite-field\" hidden\n    >Kopieren</a>\n\n</span>\n
+        \ </div>\n\n  \n\n<div class=\"disclaimer\">\n  <a href=\"/zitieren_aus_duden_online\"
+        target=\"_blank\">Weitere Informationen</a> zum korrekten Zitieren aus Duden
+        online.\n</div>\n\n\n  </aside>\n<a class=\"eclipse__penumbra\" href=\"#close-\"
+        aria-hidden></a>\n\n\n  </div>\n\n    <script type=\"text/javascript\">  window._taboola
+        = window._taboola || [];\r\n  _taboola.push({flush: true});</script>\n\n    <script
+        src=\"/sites/default/files/js/js_YWdAm8f8Rh3lEth9XtQJpkKK_erjIpY4xG7qGvMjjNk.js?scope=footer&amp;delta=0&amp;language=de&amp;theme=numero&amp;include=eJxtVMF24yAM_CE7fMRe99bTnvxkULBqgXgI0qRfX-wkLc72gh8DQprRyHrTgsHMoDhASJgVojOeZQbuAFcdxhEZA8aigxfxjFMBb3wJxy341_0J3uE6ODxjnqyqYQH35-1t2B-dGK8YJksFzbb0SUktAwXMHXiWHMaSwa4dWPBaJmUpHYaWKR1YLZLpU2IBHhuN2p2weOm2Qd4pQiGJHajtQewTMMV1ZNIeKzCzkJumD3I4FklDrK1-MYUYh21R8-_vbwG6BVjhGuKQIIPPkBY1LtcEfPpBTjWmOre0C7qerSrcDhQyPnNTLJhjY60I2S4juAvmQro3c2z57aqPZiiKsRIj2vJf9K9hvzChqO3eQSgtF8KPDrJ1pibntzqZ7Mo4tjZi7Gk9DoYtXM2-noK42qB7wbPIGiCvD4fOzRdN9l35zs70GeRgBFlrOjjtQnpsd7N6gL6Smrg3ky5w7kmmLLFGS7ttRl9bO7tTimeZ5do3bKf-arIohwnQhO1FHl_gOSM4m2uYH5ayIT0bWPMFiRmiReOgwMRwa3OXqi5PtRN41JX6vHaB1Nqsh5nU0sS_TREu5PdCzR0Zf5Bv22zGMvfPtI1orzbQWg8XJ6hFrISmaJv6-8kGafWtssM8iXCh9HDu628AFNIXd5La1A\"></script>\n<script
+        src=\"/modules/contrib/google_tag/js/gtm.js?shwlmf\"></script>\n<script src=\"/modules/contrib/google_tag/js/gtag.js?shwlmf\"></script>\n<script
+        src=\"/sites/default/files/js/js_Vws8GynbCuAVpp1SaF7Y-St8OVQdKXb5vTOjV2Fw5n4.js?scope=footer&amp;delta=3&amp;language=de&amp;theme=numero&amp;include=eJxtVMF24yAM_CE7fMRe99bTnvxkULBqgXgI0qRfX-wkLc72gh8DQprRyHrTgsHMoDhASJgVojOeZQbuAFcdxhEZA8aigxfxjFMBb3wJxy341_0J3uE6ODxjnqyqYQH35-1t2B-dGK8YJksFzbb0SUktAwXMHXiWHMaSwa4dWPBaJmUpHYaWKR1YLZLpU2IBHhuN2p2weOm2Qd4pQiGJHajtQewTMMV1ZNIeKzCzkJumD3I4FklDrK1-MYUYh21R8-_vbwG6BVjhGuKQIIPPkBY1LtcEfPpBTjWmOre0C7qerSrcDhQyPnNTLJhjY60I2S4juAvmQro3c2z57aqPZiiKsRIj2vJf9K9hvzChqO3eQSgtF8KPDrJ1pibntzqZ7Mo4tjZi7Gk9DoYtXM2-noK42qB7wbPIGiCvD4fOzRdN9l35zs70GeRgBFlrOjjtQnpsd7N6gL6Smrg3ky5w7kmmLLFGS7ttRl9bO7tTimeZ5do3bKf-arIohwnQhO1FHl_gOSM4m2uYH5ayIT0bWPMFiRmiReOgwMRwa3OXqi5PtRN41JX6vHaB1Nqsh5nU0sS_TREu5PdCzR0Zf5Bv22zGMvfPtI1orzbQWg8XJ6hFrISmaJv6-8kGafWtssM8iXCh9HDu628AFNIXd5La1A\"></script>\n<script
+        src=\"/modules/custom/tiles/cmp.min.js?v=2.0.1\"></script>\n<script src=\"https://sp.duden.de/wrapperMessagingWithoutDetection.js\"
+        async></script>\n<script src=\"/sites/default/files/js/js_rpDF8SUM7Hf-8MO7vJd7K6YKUvC0PvE6efUFChZ-jA8.js?scope=footer&amp;delta=6&amp;language=de&amp;theme=numero&amp;include=eJxtVMF24yAM_CE7fMRe99bTnvxkULBqgXgI0qRfX-wkLc72gh8DQprRyHrTgsHMoDhASJgVojOeZQbuAFcdxhEZA8aigxfxjFMBb3wJxy341_0J3uE6ODxjnqyqYQH35-1t2B-dGK8YJksFzbb0SUktAwXMHXiWHMaSwa4dWPBaJmUpHYaWKR1YLZLpU2IBHhuN2p2weOm2Qd4pQiGJHajtQewTMMV1ZNIeKzCzkJumD3I4FklDrK1-MYUYh21R8-_vbwG6BVjhGuKQIIPPkBY1LtcEfPpBTjWmOre0C7qerSrcDhQyPnNTLJhjY60I2S4juAvmQro3c2z57aqPZiiKsRIj2vJf9K9hvzChqO3eQSgtF8KPDrJ1pibntzqZ7Mo4tjZi7Gk9DoYtXM2-noK42qB7wbPIGiCvD4fOzRdN9l35zs70GeRgBFlrOjjtQnpsd7N6gL6Smrg3ky5w7kmmLLFGS7ttRl9bO7tTimeZ5do3bKf-arIohwnQhO1FHl_gOSM4m2uYH5ayIT0bWPMFiRmiReOgwMRwa3OXqi5PtRN41JX6vHaB1Nqsh5nU0sS_TREu5PdCzR0Zf5Bv22zGMvfPtI1orzbQWg8XJ6hFrISmaJv6-8kGafWtssM8iXCh9HDu628AFNIXd5La1A\"></script>\n\n
+        \ </body>\n</html>\n"
+    headers:
+      Cache-Control:
+      - max-age=86400, public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-language:
+      - de
+      Date:
+      - Thu, 08 Aug 2024 21:08:57 GMT
+      ETag:
+      - W/"1723150897"
+      Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      Last-Modified:
+      - Thu, 08 Aug 2024 21:01:37 GMT
+      Link:
+      - <https://www.duden.de/rechtschreibung/Abend?amp> rel="amphtml"
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Cookie, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Drupal-Cache:
+      - HIT
+      X-Drupal-Dynamic-Cache:
+      - MISS
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Generator:
+      - Drupal 10 (https://www.drupal.org)
     status:
       code: 200
       message: OK
