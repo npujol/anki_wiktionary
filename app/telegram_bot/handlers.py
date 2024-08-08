@@ -281,7 +281,7 @@ async def message_handle(
         await unsupported_message_handle(update=update, context=context)
         return
 
-    await update.message.reply_text(text="Using the default command /web_word")
+    await update.message.reply_text(text="Using the default command")
     note: CustomNote | None = await send_card_using_anki_web(word=word)
     if not note:
         msg = "Anki note could not be created."
