@@ -17,7 +17,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"N7fAcgy-1S8bdT3g719fGg\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"QEmx-tqdNASbmI1__iWEYw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -57,7 +57,7 @@ interactions:
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
         class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Tageszeit%20um%20die%20D%C3%A4mmerung%2C%20das%20Dunkelwerden%20vor%20Beginn%20der%20Nacht%0A%5Bgeselliges%5D%20Beisammensein%20am%20Abend%0AWesten%0AAbendstunde%0AAbendzeit%0ATagesende&amp;mui=sl&amp;hl=en-US\">German</a>
         \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Tageszeit%20um%20die%20D%C3%A4mmerung%2C%20das%20Dunkelwerden%20vor%20Beginn%20der%20Nacht%0A%5Bgeselliges%5D%20Beisammensein%20am%20Abend%0AWesten%0AAbendstunde%0AAbendzeit%0ATagesende&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Hora%20del%20d%C3%ADa%20al%20anochecer%2C%20oscureciendo%20antes%20del%20comienzo%20de%20la%20noche%0Areuni%C3%B3n%20%5Bsocial%5D%20por%20la%20noche%0AOeste%0Ahora%20de%20la%20tarde%0AHora%20de%20la%20tarde%0AFin%20del%20d%C3%ADa&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Hora%20del%20d%C3%ADa%20alrededor%20del%20anochecer%2C%20oscureciendo%20antes%20del%20comienzo%20de%20la%20noche%0Areuni%C3%B3n%20%5Bsocial%5D%20por%20la%20noche%0AOeste%0Ahora%20de%20la%20tarde%0AHora%20de%20la%20tarde%0AFin%20del%20d%C3%ADa&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
@@ -65,9 +65,9 @@ interactions:
         D\xE4mmerung, das Dunkelwerden vor Beginn der Nacht\n[geselliges] Beisammensein
         am Abend\nWesten\nAbendstunde\nAbendzeit\nTagesende\"><div class=\"translate-button-container\"><input
         type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
-        class=\"result-container\">Hora del d\xEDa al anochecer, oscureciendo antes
-        del comienzo de la noche\nreuni\xF3n [social] por la noche\nOeste\nhora de
-        la tarde\nHora de la tarde\nFin del d\xEDa</div><div class=\"links-container\"><ul><li><a
+        class=\"result-container\">Hora del d\xEDa alrededor del anochecer, oscureciendo
+        antes del comienzo de la noche\nreuni\xF3n [social] por la noche\nOeste\nhora
+        de la tarde\nHora de la tarde\nFin del d\xEDa</div><div class=\"links-container\"><ul><li><a
         href=\"https://www.google.com/m?hl=en-US\">Google home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
         feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
         and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
@@ -83,9 +83,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-OOnev3s3Z-qOOD8Xgqu4wg' 'unsafe-inline';object-src 'none';base-uri
-        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-aJIETyd4FL9eyigxeLBDSw' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -93,7 +93,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Wed, 07 Aug 2024 21:05:53 GMT
+      - Thu, 08 Aug 2024 20:28:54 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -106,8 +106,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=UqK1DBMlDOtDf-D4ySyUPiQ5iXu618JA9qs4CLlbIfUKhwCXQBB1X2jE2md4BWmvYSewmQ-RElk6mWmbHN08ti7fpuNEkRZ99k8CzGXzJb2vYpM2hZDqOHsucdkdTNIqJj1a123MoOoB1Lil4bn2HAZE4amlHPJXNDX_y2f9tWmU77-V;
-        expires=Sun, 07-Sep-2025 13:24:11 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=21.SE=SrdB--Pk2rjPl3ndaUG_5kXd7Eg6-LVELqRH5ccZuVDLTRpV7as6d3sGdRKkhGNVr9Zz61TqejUEWz7Gg5XXuCXQgEjZIEN41Ixs8cMGPD-ND-f9doxE08wyrTqruaG22odwiUE6GV177I0ld-G-gNLgpzDxq-Ycx1vXMjfs8e_P_6M;
+        expires=Mon, 08-Sep-2025 12:47:12 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -120,7 +120,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII1JBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIW4OTYePr-VTeDAnQcGSmpJ-YXxJUWJecU5iSWpuuWpScWpRWWpRfFGBkYmBhYGZnoGpvEFBgCUSizO"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw15BikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ONquXtnKJrBgVXczk5JaUn5hfElRYl5xTmJJqm55alJxalFZalG8kYGRiYGFgbmegWF8gQEAoHksZA"
     status:
       code: 200
       message: OK
@@ -142,7 +142,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"8ksFh_smLTCLIzXZNgYwNQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"3TpjJrV3ZWitg7Olqy1HBA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -207,7 +207,7 @@ interactions:
       - gzip
       Content-Security-Policy:
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-qaoNFBrSM22CfYFMut40xQ' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-XaVGPvyNDsPuJYAN6m2HrA' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
@@ -216,7 +216,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Wed, 07 Aug 2024 21:05:53 GMT
+      - Thu, 08 Aug 2024 20:28:55 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -229,8 +229,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=G7fspyXdA1j-IuaL3AxRaSCDFqJxS_Ydydme8WM7KLE7rUIMKHgKzHrpZdk5aoHV1vio4VKBDMehv4IO0RFjUVjXpCeMN1YGXN6dur0CeionNmPN9JqRFriZJU2AMxQyLFxg7aqZXJaZzApOeWzPzNrDUwZfdMP_xOpbLUUPZuE-4fwY;
-        expires=Sun, 07-Sep-2025 13:24:11 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=21.SE=Ccw3kUny4tPWOEo1FkN-IOteKGGOWZ-PqDFzGroSHg-YAzM8RbRCoz3Wxa1TreZUS4Kvb_2QHVU2206Q5BtUr_UI2mvCGl0lRQNe3YMJnbU64EffUJf_JG3oabhBW4jZKgLWAZ7K9fvI8xtjQExZSi5q8vkcg2ljncWWo7WNAiLQo0tX;
+        expires=Mon, 08-Sep-2025 12:47:13 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -243,7 +243,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIW4OTYePr-VTeDB---1SmpJ-YXxJUWJecU5iSWpuuWpScWpRWWpRfFGBkYmBhYGZnoGpvEFBgCp_y1e"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw1ZBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ONqvXtnKJrDj_PM2ZiW1pPzC-JKixLzinMSSVN3y1KTi1KKy1KJ4IwMjEwMLA3M9A8P4AgMAunctAA"
     status:
       code: 200
       message: OK
@@ -265,7 +265,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"R2RZIeZ_C51okDAyuH98uA\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"CtIsQI9fEjmXpz7R0IyTLg\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -328,9 +328,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-RLItVcyRG_cfNCH4tpUOHw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-e5RYH4jLbVgyIQjCajciqg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -338,7 +338,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Wed, 07 Aug 2024 21:05:53 GMT
+      - Thu, 08 Aug 2024 20:28:56 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -351,8 +351,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=oyTV_oCcI0y22MtVIRi-Mnx3YIGKH1Rwggwws2ERQj9UFYRshdjolZ5-L6B2_YCYtJq7tfzn-rSVm8Yml4E_6F6O3vL6Ge1IrdGPZ5V5iS9PwgipTqxkZh04HRJlHhDwTfaHKunKrTd6PQsD6praZ1X8Uzvn6_G7kKjmqSjGRj5TS5C1;
-        expires=Sun, 07-Sep-2025 13:24:11 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=21.SE=eY5lrZmVEVeinuaKpsgGt5CcydHxULbJKu5bJhHstgwfVXuXfDV1_LHRvcPAkz6Hcgm4h5XpixOMwATzlLV2UZV1JedeueiBMnBfFyjOYeU-jRRgcH_HIidkAZafqybvF6iIbfBEt09iv_LRVFtNYV5oABNjwnfv8dio25m4zALZymI;
+        expires=Mon, 08-Sep-2025 12:47:14 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -365,7 +365,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0ZBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ODYePr-VTeBA777zjEpqSfmF8SVFiXnFOYklqbrlqUnFqUVlqUXxRgZGJgYWBmZ6BqbxBQYAuMgs-Q"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw05BikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ODquXtnKJtCx98BvJiW1pPzC-JKixLzinMSSVN3y1KTi1KKy1KJ4IwMjEwMLA3M9A8P4AgMAvBAtDQ"
     status:
       code: 200
       message: OK
