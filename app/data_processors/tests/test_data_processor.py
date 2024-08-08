@@ -42,7 +42,7 @@ def test_send_card_using_anki_web(
     assert snapshot("json") == note.model_dump(mode="python", by_alias=True)
 
 
-@pytest.mark.vcr(mode="always")
+@pytest.mark.vcr(mode="once")
 def test_get_anki_note_without_processor_name(
     snapshot: Any,
 ) -> None:
