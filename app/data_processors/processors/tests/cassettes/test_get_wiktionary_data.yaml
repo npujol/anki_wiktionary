@@ -397,7 +397,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 07 Aug 2024 21:39:59 GMT
+      - Thu, 08 Aug 2024 20:29:00 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -405,14 +405,14 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-7d54549dbc-tsj67
+      - mw-api-ext.eqiad.main-7f757b8954-vstxn
       server-timing:
       - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=07-Aug-2024;Path=/;HttpOnly;secure;Expires=Sun, 08 Sep 2024
+      - WMF-Last-Access=08-Aug-2024;Path=/;HttpOnly;secure;Expires=Mon, 09 Sep 2024
         12:00:00 GMT
-      - WMF-Last-Access-Global=07-Aug-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Sun,
-        08 Sep 2024 12:00:00 GMT
+      - WMF-Last-Access-Global=08-Aug-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Mon,
+        09 Sep 2024 12:00:00 GMT
       - GeoIP=DE:BE:Berlin:52.57:13.42:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
       strict-transport-security:
@@ -426,7 +426,7 @@ interactions:
       x-cache-status:
       - pass
       x-client-ip:
-      - 2003:e9:774b:d352:51ac:cab4:1bc6:5cd
+      - 2003:e9:774b:d33e:1b11:da4c:e323:9ab1
       x-content-type-options:
       - nosniff
       x-frame-options:
@@ -452,7 +452,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"e5CrxFipPBiJr6egUWamvQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"AdAxVASfUfMwXNHB08OX0g\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -528,7 +528,7 @@ interactions:
       - gzip
       Content-Security-Policy:
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-QTrKaqv747GU7PkvIwH1-g' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-9UgVH6crVrq0SCDI8Vl5Cg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
@@ -537,7 +537,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Wed, 07 Aug 2024 21:39:59 GMT
+      - Thu, 08 Aug 2024 20:29:00 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -550,8 +550,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=qI7Nbmn2R-QBcSzJnAh4uuuPG046nR_Ehx57hPTWGwaWwvUFJXWMQP_-lLJWQaQuArYywT_czCLzM1-GDo04QXUycFiO9w7THNHBhHb81sh9kS5Nhlj0ucZbyHSP1tIQa23a_szppj2tA-H0rLaaUVm_WC9RzPlSAHas_Mewz_c-uHWU;
-        expires=Sun, 07-Sep-2025 13:58:17 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=21.SE=T6-YM5LhoVY6XE7rnUik9tP0EgUQsIvEbazKqjr3yNk6CqW3hALgLDQYnQQMGOyqAXY5EbXUGasF3P1x68OtbWSfE1bWbUitFs0XNk1tXPX2I2ipL4bqTmegW0wkFr3Byhci-AuIzHoOXr-dVphplxAbAVnBlg2z9wtpVhw59yuVkduD;
+        expires=Mon, 08-Sep-2025 12:47:18 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -564,7 +564,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw1JBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ONZfPr-VTWDBowW3GJXUkvIL40uKEvOKcxJLUnXLU5OKU4vKUovijQyMTAwsDMz0DEzjCwwAv-wtJg"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII1pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4OHquXtnKJrCgd90BJiW1pPzC-JKixLzinMSSVN3y1KTi1KKy1KJ4IwMjEwMLA3M9A8P4AgMArlossQ"
     status:
       code: 200
       message: OK
@@ -586,7 +586,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"T1XsQi9U3s2Yrq66eT4tCQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"LM_1UvcuHNyfJmDb6K7xiA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -652,9 +652,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-lf8OzGLkVJXgyfJkVXaC_w' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-mL6CKVofu18nCZRbjep3AA' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -662,7 +662,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Wed, 07 Aug 2024 21:39:59 GMT
+      - Thu, 08 Aug 2024 20:29:00 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -675,8 +675,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=KjKpS5yCDFhvQem1ybbziwSpumdgxD2gzxyHZILdYrwJYF0cgD5zqEvZvvjww-pecKRGZRH-HBs0cUucIAKNeMnmE0CLTa_pw_-sqsthADmx85IPMq3M2CvsoQP4i6biMFXYNJb12FW6bfYTHh0L5xK3d6OMI_g2rpIVL3Ln9YnIzVJY;
-        expires=Sun, 07-Sep-2025 13:58:17 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=21.SE=1BptUp_X0xeuXUzQan30_ZY8rNMjRyjiP9HHAQ1uefSLubRoIux4od61rfw5reKb_uGxB-su85PBJtovq0f65EG15uiLIMsq_QReGFYlyG71U9_cnJIT_FqpBKPehkRwyPhb-WXP5X_BZqYZz3Q9SsRHOlXUynrH_rruH6VYTqD5aD07;
+        expires=Mon, 08-Sep-2025 12:47:18 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -689,7 +689,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII1pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ONZfPr-VTWDB9qcrmZTUkvIL40uKEvOKcxJLUnXLU5OKU4vKUovijQyMTAwsDMz0DEzjCwwAwLItGg"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw15BikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4OHquXtnKJjDjZf9cZiW1pPzC-JKixLzinMSSVN3y1KTi1KKy1KJ4IwMjEwMLA3M9A8P4AgMArKAsuA"
     status:
       code: 200
       message: OK
