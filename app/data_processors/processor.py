@@ -1,6 +1,7 @@
 import logging
 from typing import Any, Optional
 
+from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.data_processors.processors.duden_data_processor import DudenDataProcessor
 from app.data_processors.processors.ollama_data_processor import OllamaDataProcessor
 from app.data_processors.processors.verben_data_processor import VerbenDataProcessor
@@ -11,10 +12,7 @@ from app.serializers import CustomNote
 
 PROCESSORS_MAP: dict[
     str,
-    WiktionaryDataProcessor
-    | OllamaDataProcessor
-    | VerbenDataProcessor
-    | DudenDataProcessor,
+    BaseDataProcessor,
 ] = {
     "wiktionary": WiktionaryDataProcessor(),
     "verben": VerbenDataProcessor(),
@@ -37,13 +35,7 @@ class NoteDataProcessor:
     def get_anki_note(
         self, word: str, processor_name: Optional[str] = None
     ) -> CustomNote | None:
-        processor: (
-            WiktionaryDataProcessor
-            | OllamaDataProcessor
-            | VerbenDataProcessor
-            | DudenDataProcessor
-            | None
-        ) = None
+        processor: BaseDataProcessor | None = None
 
         initial_note = CustomNote(
             deckName=self.deck_name,
