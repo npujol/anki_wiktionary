@@ -31,16 +31,13 @@ from app.telegram_bot.handlers import (
         ("message_handle", message_handle),
     ],
 )
-@patch.object(target=AnkiWebConnector, attribute="close")
 async def test_handle_functions(
-    close_mock: Any,
     function_name: str,
     handle_function: Callable[..., Any],
     caplog: Any,
     snapshot: Any,
 ) -> None:
     # Set up mock objects
-    close_mock.return_value = None
     mock_update = AsyncMock()
     mock_update.message = AsyncMock()
     mock_update.message.text = "Abend"
