@@ -1,9 +1,8 @@
 from typing import Any, Callable
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock
 
 import pytest
 
-from app.anki_connectors.anki_web_connector import AnkiWebConnector
 from app.telegram_bot.handlers import (
     handle_audio,
     handle_duden_word,

@@ -1,4 +1,4 @@
-from typing import Any, Callable
+from typing import Any
 
 import pytest
 
@@ -7,7 +7,7 @@ from app.serializers import CustomNote, Note
 
 
 @pytest.fixture(scope="module")
-def vcr_config() -> dict[str, Callable[..., Any]]:
+def vcr_config() -> dict[str, Any]:
     return {
         "before_record_request": clean_request_body(),
     }

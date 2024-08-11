@@ -1,11 +1,9 @@
 import asyncio
 from pathlib import Path
 from typing import Any
-from unittest.mock import MagicMock, patch
 
 import pytest
 
-from app.anki_connectors.anki_web_connector import AnkiWebConnector
 from app.main import (
     add_audio_local,
     generate_audio,
@@ -88,9 +86,7 @@ async def test_save_anki_note_to_list(tmp_path: Path) -> None:
 
 @pytest.mark.vcr()
 @pytest.mark.asyncio
-@patch.object(target=AnkiWebConnector, attribute="close")
-async def test_send_card_using_anki_web(close_mock: MagicMock) -> None:
-    close_mock.return_value = None
+async def test_send_card_using_anki_web() -> None:
     note: CustomNote | None = await send_card_using_anki_web(
         word="Abend", processor_name="wiktionary"
     )
