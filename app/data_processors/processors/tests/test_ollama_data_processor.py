@@ -6,7 +6,7 @@ from app.data_processors.processors.ollama_data_processor import OllamaDataProce
 from app.serializers import CustomFields, CustomNote
 
 
-@pytest.fixture()
+@pytest.fixture()  # type: ignore
 def ollama_data_processor() -> OllamaDataProcessor:
     return OllamaDataProcessor()
 
