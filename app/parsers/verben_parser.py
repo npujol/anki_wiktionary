@@ -2,7 +2,7 @@ from typing import Any
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 
-# from app.helpers import flatten_and_stringify
+from app.helpers import flatten_and_stringify
 from app.html_processors import clean_text
 
 
@@ -19,11 +19,10 @@ class VerbenParser:
         if examples_div is None:
             return example_list
 
-        # Extract the example sentences from the <li> tags
-        # examples: list[Tag] = examples_div.contents
-        # TODO: Fix this
-
-        # example_list.append(sentence)  # type: ignore
+        examples = examples_div.find_all("p")  # type: ignore
+        for sentence in examples:  # type: ignore
+            if hasattr(sentence, "text"):  # type: ignore
+                example_list.append(clean_text(sentence.text))  # type: ignore
         return example_list
 
     @property
@@ -108,11 +107,18 @@ class VerbenParser:
         if self.info_element is None:
             return result
 
-        meaning_element: Tag | NavigableString | None = self.info_element.find(
-            "span", class_="rInf r1Zeile rU3px rO0px"
-        )
+        meaning_element: Tag | NavigableString | None = self.info_element.find_all(
+            "span", class_="rInf"
+        )  # type: ignore
 
-        if meaning_element is not None:
-            return clean_text(meaning_element.get_text())  # type: ignore
+        if meaning_element is None:
+            return result
 
-        return result
+        result = ""
+        for span in meaning_element:  # type: ignore
+            if "title" in span.attrs:  # type: ignore
+                result += "\n" + span["title"]  # type: ignore
+            if hasattr(span, "text"):  # type: ignore
+                result += "\n" + flatten_and_stringify(content=span.text)  # type: ignore
+
+        return result  # type: ignore
