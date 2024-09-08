@@ -96,7 +96,7 @@ def custom_note_data() -> dict[str, Any]:
     }
 
 
-@pytest.fixture
+@pytest.fixture()  # type: ignore
 def add_custom_note_request(custom_note_data: dict[str, Any]) -> dict[str, Any]:
     return {
         "action": "addNotes",
