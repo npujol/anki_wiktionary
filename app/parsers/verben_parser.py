@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 # from app.helpers import flatten_and_stringify
 from app.html_processors import clean_text
-from app.html_processors.html_to_text import extract_ordered_text
 
 
 class VerbenParser:

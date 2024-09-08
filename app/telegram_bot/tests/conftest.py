@@ -5,7 +5,7 @@ import pytest
 from app.helpers.flatten_and_stringify import clean_request_body
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="module")  # type: ignore
 def vcr_config() -> dict[str, Any]:
     return {
         "ignore_localhost": True,

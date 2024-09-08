@@ -3,7 +3,7 @@ import pytest
 from app.serializers import CustomNote
 
 
-@pytest.fixture
+@pytest.fixture()  # type: ignore
 def initial_note() -> CustomNote:
     return CustomNote(
         deckName="Test",

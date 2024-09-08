@@ -6,14 +6,14 @@ from app.helpers.flatten_and_stringify import clean_request_body
 from app.serializers import CustomNote, Note
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="module")  # type: ignore
 def vcr_config() -> dict[str, Any]:
     return {
         "before_record_request": clean_request_body(),
     }
 
 
-@pytest.fixture()
+@pytest.fixture()  # type: ignore
 def note_data() -> dict[str, Any]:
     return {
         "deckName": "Test",
