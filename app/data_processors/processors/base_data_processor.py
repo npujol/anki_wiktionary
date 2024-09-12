@@ -9,7 +9,7 @@ class BaseDataProcessor(ABC):
         # TODO: Review this and move to a base class
         return all(
             field in content and content.get(field)  # type: ignore
-            for field in self.fields_class.__fields__  # type: ignore
+            for field in self.fields_class.model_fields  # type: ignore
         )
 
     @abstractmethod
