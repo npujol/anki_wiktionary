@@ -30,13 +30,13 @@ jobs:
       uses: SpicyPizza/create-envfile@v1.0
       with:
         # complete the environment variables
-        envkey_ANKI_USER: "example"
-        envkey_ANKI_PASS: "example"
+        envkey_ANKI_USER: ${{ secrets.ANKI_USER }}
+        envkey_ANKI_PASS: ${{ secrets.ANKI_PASS }}
         file_name: .env
 
     - name: Check .env file
       run: |
         cat .env
-        
+
     - name: Test Project
       run: nix develop --command bash -c "poetry install && poetry run pytest ."
