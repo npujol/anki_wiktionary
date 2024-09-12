@@ -28,7 +28,13 @@ class DudenDataProcessor(BaseDataProcessor):
         Returns:
             dict[str, Any]: A dictionary containing the fetched data.
         """
-        content: None | DudenWord = duden.get(word=word, cache=False)  # type: ignore
+        try:
+            content: None | DudenWord = duden.get(word=word, cache=False)  # type: ignore
+        except Exception as e:
+            logger.error(
+                msg=f"Could not fetch data for word '{word}' using Duden due to {e}."
+            )
+            return note
 
         if not content:
             logger.error(msg=f"Could not fetch data for word '{word}' using Duden.")
