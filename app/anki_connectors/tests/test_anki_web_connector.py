@@ -1,6 +1,6 @@
 import pytest
 
-from app.anki_connectors.anki_web_connector import AnkiWebConnector
+from app.anki_connectors import AnkiWebConnector
 from app.serializers import CustomNote
 
 

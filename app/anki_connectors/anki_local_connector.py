@@ -3,8 +3,9 @@ from typing import Any
 
 import requests
 
-from app.anki_connectors.errors import CollectionNotFoundError, ResultNotFoundError
 from app.serializers import CustomNote, Note
+
+from .errors import CollectionNotFoundError, ResultNotFoundError
 
 logger: logging.Logger = logging.getLogger(name=__name__)
 
@@ -13,6 +14,13 @@ class AnkiLocalConnector:
     # Doc for anki-connect: https://foosoft.net/projects/anki-connect/index.html#card-actions
     def __init__(self, server_url: str = "http://127.0.0.1:8765") -> None:
         self.server_url: str = server_url
+
+    def health_check(self) -> bool:
+        try:
+            self.make_request(action="deckNamesAndIds")
+            return True
+        except Exception:
+            return False
 
     def make_request(
         self,

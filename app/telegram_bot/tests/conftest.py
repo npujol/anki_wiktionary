@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.helpers.flatten_and_stringify import clean_request_body
+from app.helpers import clean_request_body
 
 
 @pytest.fixture(scope="module")  # type: ignore

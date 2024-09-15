@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.data_processors.processors.ollama_data_processor import OllamaDataProcessor
+from app.data_processors import OllamaDataProcessor
 from app.serializers import CustomFields, CustomNote
 
 

@@ -2,9 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.data_processors.processors.wiktionary_data_processor import (
-    WiktionaryDataProcessor,
-)
+from app.data_processors import WiktionaryDataProcessor
 from app.serializers import CustomNote
 
 

@@ -19,8 +19,8 @@
   ],
   "audio": [
     {
-      "url": "http://localhost:8000/files/Abend.mp3",
-      "filename": "Abend.mp3",
+      "url": "files/audios/abend.mp3",
+      "filename": "abend.mp3",
       "skipHash": "true",
       "fields": [
         "audio"

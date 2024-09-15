@@ -1,0 +1,35 @@
+interactions:
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '57'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: http://111.1.1.1:1111/
+  response:
+    body:
+      string: '{"result": {"B2.2": 1718374779936, "Default": 1, "Mein Deutsch": 1707255474706,
+        "Test": 1709238207534}, "error": null}'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Origin:
+      - http://localhost
+      Content-Length:
+      - '118'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+version: 1

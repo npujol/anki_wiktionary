@@ -1,14 +1,12 @@
-import logging
 from typing import Any
 
 import duden  # type: ignore
 from duden.word import DudenWord  # type: ignore
 
-from app.data_processors.processors.base_data_processor import BaseDataProcessor
-from app.parsers.duden_parser import CustomDudenParser
+from app.parsers import CustomDudenParser
 from app.serializers import CustomFields, CustomNote
 
-logger: logging.Logger = logging.getLogger(name=__name__)
+from .base_data_processor import BaseDataProcessor
 
 
 # https://github.com/radomirbosak/duden
@@ -16,6 +14,8 @@ class DudenDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
         self.base_url = "https://de.wiktionary.org/w/api.php"
         self.fields_class = CustomFields
+
+        super().__init__()
 
     def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         """
@@ -37,7 +37,9 @@ class DudenDataProcessor(BaseDataProcessor):
             return note
 
         if not content:
-            logger.error(msg=f"Could not fetch data for word '{word}' using Duden.")
+            self.logger.error(
+                msg=f"Could not fetch data for word '{word}' using Duden."
+            )
             return note
 
         content_dict: dict[str, Any] = self._extract_from_content(

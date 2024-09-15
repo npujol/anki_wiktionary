@@ -8,9 +8,10 @@ from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from app.anki_connectors.errors import BrowserNotFoundError
 from app.private_config import browser_binary_location, browser_driver_binary
 from app.serializers import CustomNote
+
+from .errors import BrowserNotFoundError
 
 TIMEOUT = 150
 

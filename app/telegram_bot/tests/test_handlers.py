@@ -3,16 +3,7 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from app.telegram_bot.handlers import (
-    handle_audio,
-    handle_duden_word,
-    handle_help,
-    handle_text_without_command,
-    handle_verben_word,
-    handle_web_word,
-    handle_word,
-    message_handle,
-)
+from app.telegram_bot import BotHandler
 
 
 @pytest.mark.vcr()
@@ -20,14 +11,14 @@ from app.telegram_bot.handlers import (
 @pytest.mark.parametrize(
     ("function_name", "handle_function"),
     [
-        ("handle_word", handle_word),
-        ("handle_audio", handle_audio),
-        ("handle_help", handle_help),
-        ("handle_web_word", handle_web_word),
-        ("handle_verben_word", handle_verben_word),
-        ("handle_duden_word", handle_duden_word),
-        ("handle_text_without_command", handle_text_without_command),
-        ("message_handle", message_handle),
+        ("handle_word", BotHandler().handle_word),
+        ("handle_audio", BotHandler().handle_audio),
+        ("handle_help", BotHandler().handle_help),
+        ("handle_web_word", BotHandler().handle_web_word),
+        ("handle_verben_word", BotHandler().handle_verben_word),
+        ("handle_duden_word", BotHandler().handle_duden_word),
+        ("handle_text_without_command", BotHandler().handle_text_without_command),
+        ("message_handle", BotHandler().message_handle),
     ],
 )
 async def test_handle_functions(

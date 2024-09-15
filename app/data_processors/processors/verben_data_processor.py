@@ -1,29 +1,29 @@
-import logging
+import http
 from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
 
-from app.data_processors.processors.base_data_processor import BaseDataProcessor
-from app.parsers.verben_parser import VerbenParser
+from app.parsers import VerbenParser
 from app.serializers import CustomFields, CustomNote
 
-logger: logging.Logger = logging.getLogger(name=__name__)
+from .base_data_processor import BaseDataProcessor
 
 
-# TODO Add a Custom Processor to handle Verben data
 class VerbenDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
         self.base_url = "https://www.verben.de/?w="
         self.fields_class = CustomFields
+
+        super().__init__()
 
     def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         response: requests.Response = requests.get(
             url=self.base_url + word,
         )
 
-        if response.status_code != 200:
-            logger.info(msg=f"The request to {self.base_url} failed.")
+        if response.status_code != http.HTTPStatus.OK:
+            self.logger.info(msg=f"The request to {self.base_url} failed.")
             return note
         # Get the content of the response
         page_content: bytes = response.content
@@ -34,7 +34,9 @@ class VerbenDataProcessor(BaseDataProcessor):
         )
 
         if not content:
-            logger.error(msg=f"Could not fetch data for word '{word}' using Duden.")
+            self.logger.error(
+                msg=f"Could not fetch data for word '{word}' using Duden."
+            )
             return note
 
         content_dict: dict[str, Any] = self._extract_from_content(

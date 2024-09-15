@@ -11,7 +11,7 @@ from wiktionary_de_parser.models import (  # type: ignore
 )
 from wiktionary_de_parser.parser import Parser  # type: ignore
 
-from app.parsers.models import CustomParsedWiktionaryPageEntry
+from .models import CustomParsedWiktionaryPageEntry
 
 
 class CustomWiktionaryParser(WiktionaryParser):

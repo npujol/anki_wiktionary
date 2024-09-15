@@ -1,19 +1,19 @@
-import logging
 from typing import Any
 
 import requests
 
-from app.data_processors.processors.base_data_processor import BaseDataProcessor
-from app.parsers.wiktionary_parser import CustomWiktionaryParser
+from app.parsers import CustomWiktionaryParser
 from app.serializers import CustomFields, CustomNote
 
-logger: logging.Logger = logging.getLogger(name=__name__)
+from .base_data_processor import BaseDataProcessor
 
 
 class WiktionaryDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
         self.base_url = "https://de.wiktionary.org/w/api.php"
         self.fields_class = CustomFields
+
+        super().__init__()
 
     def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         """
@@ -43,7 +43,7 @@ class WiktionaryDataProcessor(BaseDataProcessor):
         )
 
         if not content:
-            logger.error(
+            self.logger.error(
                 msg=f"Could not fetch data for word '{word}' using Wiktionary."
             )
             return note
@@ -53,10 +53,9 @@ class WiktionaryDataProcessor(BaseDataProcessor):
         )
         updated_note: CustomNote | None = note.import_from_content(
             content=content_dict, fields_class=self.fields_class
-        )  # type: ignore
-        return updated_note  # type: ignore
+        )
+        return updated_note
 
-    # TODO Move this to a base class
     def _extract_from_content(
         self, word: str, content: dict[str, Any]
     ) -> dict[str, Any]:

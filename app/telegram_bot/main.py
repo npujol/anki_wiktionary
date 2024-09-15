@@ -13,22 +13,15 @@ from telegram.ext._extbot import ExtBot
 from telegram.ext._jobqueue import JobQueue
 
 from app.private_config import bot_token
-from app.telegram_bot.handlers import (
-    handle_audio,
-    handle_duden_word,
-    handle_help,
-    handle_verben_word,
-    handle_web_word,
-    handle_word,
-    message_handle,
-    unsupported_message_handle,
-)
+from app.telegram_bot.handlers import BotHandler
 
 # Set up logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.WARNING
 )
 logger: logging.Logger = logging.getLogger(name=__name__)
+
+handler = BotHandler()
 
 
 class CommandInfo(NamedTuple):
@@ -40,32 +33,32 @@ class CommandInfo(NamedTuple):
 COMMANDS: list[CommandInfo] = [
     CommandInfo(
         command="w",
-        handler=handle_word,
+        handler=handler.handle_word,
         description="Create an Anki note for a word",
     ),
     CommandInfo(
         command="a",
-        handler=handle_audio,
+        handler=handler.handle_audio,
         description="Create audio from text",
     ),
     CommandInfo(
         command="v",
-        handler=handle_verben_word,
+        handler=handler.handle_verben_word,
         description="Create an Anki note from verben",
     ),
     CommandInfo(
         command="d",
-        handler=handle_duden_word,
+        handler=handler.handle_duden_word,
         description="Create an Anki note from duden",
     ),
     CommandInfo(
         command="ww",
-        handler=handle_web_word,
+        handler=handler.handle_web_word,
         description="Create an Anki note and send it to AnkiWeb",
     ),
     CommandInfo(
         command="help",
-        handler=handle_help,
+        handler=handler.handle_help,
         description="Show help message",
     ),
 ]
@@ -117,13 +110,13 @@ def main() -> None:
     application.add_handler(
         handler=MessageHandler(
             filters=filters.TEXT & ~filters.COMMAND,
-            callback=message_handle,
+            callback=handler.message_handle,
         )
     )
     application.add_handler(
         handler=MessageHandler(
             filters=filters.VIDEO & ~filters.COMMAND & filters.PHOTO,
-            callback=unsupported_message_handle,
+            callback=handler.unsupported_message_handle,
         )
     )
 

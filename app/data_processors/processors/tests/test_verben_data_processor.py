@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.data_processors.processors.verben_data_processor import VerbenDataProcessor
+from app.data_processors import VerbenDataProcessor
 from app.serializers import CustomNote
 
 
