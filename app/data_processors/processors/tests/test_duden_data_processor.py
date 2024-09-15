@@ -13,6 +13,8 @@ from app.serializers import CustomNote
         "Abend",
         "locker",
         "Bammel",
+        "Verstehen",
+        "verstehen",
     ],
 )
 def test_get_data_from_duden(
@@ -23,7 +25,7 @@ def test_get_data_from_duden(
         note=initial_note,
     )
     assert result, "Add note failed"
-    assert result.fields, "The result does not match the snapshot"
+    assert result.fields, "The result  fields are empty"
     assert snapshot("json") == result.fields.model_dump(
         mode="python"
     ), "The result does not match the snapshot"

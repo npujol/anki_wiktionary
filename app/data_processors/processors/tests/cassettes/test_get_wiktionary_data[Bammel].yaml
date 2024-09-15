@@ -1,0 +1,514 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://de.wiktionary.org/w/api.php?action=parse&page=Bammel&prop=wikitext&format=json
+  response:
+    body:
+      string: '{"parse":{"title":"Bammel","pageid":125720,"wikitext":{"*":"{{Siehe
+        auch|[[bammel]]}}\n== Bammel ({{Sprache|Deutsch}}) ==\n=== {{Wortart|Substantiv|Deutsch}},
+        {{m}} ===\n\n{{Deutsch Substantiv \u00dcbersicht\n|Genus=m\n|Nominativ Singular=Bammel\n|Nominativ
+        Plural=\u2014\n|Genitiv Singular=Bammels\n|Genitiv Plural=\u2014\n|Dativ Singular=Bammel\n|Dativ
+        Plural=\u2014\n|Akkusativ Singular=Bammel\n|Akkusativ Plural=\u2014\n}}\n\n{{Worttrennung}}\n:Bam\u00b7mel,
+        {{kPl.}}\n\n{{Aussprache}}\n:{{IPA}} {{Lautschrift|\u02c8baml\u0329}}\n:{{H\u00f6rbeispiele}}
+        {{Audio|De-Bammel.ogg}}\n:{{Reime}} {{Reim|aml\u0329|Deutsch}}\n\n{{Bedeutungen}}\n:[1]
+        {{K|ugs.}} Angst, Furcht\n\n{{Herkunft}}\n:seit dem 19. Jahrhundert bezeugt;
+        es ist wohl als \u201eHerzklopfen\u201c zu deuten und somit als [[Deverbativ]]
+        zu ''''[[bammeln]]'''' \u201e(von etwas Aufgeh\u00e4ngtem) hin- und herschwanken\u201c
+        zu rechnen; das [[Verb]] selbst tritt in mehreren Lautvarianten auf (siehe
+        ''''[[baumeln]],'''' ''''[[pampeln]]'''' und so weiter); man vermutet, dass
+        es daher [[lautmalerisch]]en Ursprungs sei; im 17. Jahrhundert ist ''''bammeln''''
+        im Sinne von \u201eGlockenton\u201c bezeugt<ref>vergleiche {{Lit-Kluge: Etymologisches
+        W\u00f6rterbuch|A=24}}, Seite 87</ref>\n<!--:\u00dcber das jiddische Wort
+        f\u00fcr ''''furchtsamer Mensch'''' von dem Hebr\u00e4ischen Kompositum [[\u05d1\u05b7\u05bc\u05e2\u05b7\u05dc]]
+        \u200eaus baal (Herr) und ema (Angst). \u2026ACHTUNG: bitte erg\u00e4nze Belegstellen
+        f\u00fcr diese Aussage! Kluge selbst weist auf Wolf hin, ohne jedoch im Einzelnen
+        darauf einzugehen -->\n\n{{Synonyme}}\n:[1] [[Angst]], [[Bange]], [[Furcht]];
+        ''''[[umgangssprachlich]]:'''' [[Muffe]], [[Muffensausen]]; ''''salopp:''''
+        [[Schiss]]: ''''derb:'''' [[Aftersausen]]\n\n{{Gegenw\u00f6rter}}\n:[1] [[Furchtlosigkeit]]\n\n{{Oberbegriffe}}\n:[1]
+        [[Gef\u00fchl]]\n\n{{Unterbegriffe}}\n:[1] [[Mordsbammel]]\n\n{{Beispiele}}\n:[1]
+        Vor der n\u00e4chsten Pr\u00fcfung habe ich einen richtigen ''''Bammel.''''\n:[1]
+        Ich habe ein bisschen ''''Bammel'''' davor, diese Rede zu halten.\n:[1] \u201eEinerseits
+        freute ich mich, meine Verwandten wiederzusehen, andererseits hatte ich gro\u00dfen
+        ''''Bammel'''' davor.\u201c<ref>{{Literatur|Autor=Luigi Brogna|Titel=Sp\u00e4tzle
+        al dente|TitelErg=Neue Geschichten von meiner sizilianischen Familie|Verlag=Ullstein|Ort=
+        Berlin|Jahr=2009|Seiten=10.|Auflage=7.|ISBN= 978-3-548-26671-8}}</ref>\n:[1]
+        \u201e\u00bbAm meisten ''''Bammel'''' habe ich vor meiner Note in Deutsch.\u00ab\u201c<ref>{{Per-Norddeutscher
+        Rundfunk | Online=https://www.ndr.de/nachrichten/info/sendungen/mikado/Zeugnisse-Gemischte-Gefuehle-im-Klassenzimmer,nachricht162.html
+        | Autor= | Titel=Zeugnisse: Gemischte Gef\u00fchle im Klassenzimmer | TitelErg=
+        | Tag=25 | Monat=01 | Jahr=2020 | Zugriff=2020-03-07 | Kommentar=NDR Info
+        Kinderprogramm, Sendereihe: Ohrenb\u00e4r }}</ref>\n:[1] \u201eEr hatte ''''Bammel''''
+        vor dem Wiedersehen mit Reizl.\u201c<ref>{{Literatur | Autor= Isaac Bashevis
+        Singer | Titel= Max, der Schlawiner | TitelErg= Roman| Verlag= Axel Springer
+        Verlag | Ort= Berlin |Jahr= 2011| Seiten= 141.|ISBN= 978-3-942656-32-0}} Englisches
+        Original 1991.</ref>\n:[1] \u201eEin Blick auf die Plakette verr\u00e4t: T\u00dcV
+        abgelaufen! Oha! Helge Albrecht hat ''''Bammel'''' vor dem Termin.\u201c<ref>{{Per-Norddeutscher
+        Rundfunk | Online=https://www.ndr.de/wellenord/TUeV-oder-Hopp,audio323584.html
+        | Autor= | Titel=\"T\u00dcV oder Hopp?\"  | TitelErg= | Tag=19 | Monat=05
+        | Jahr=2017 | Zugriff=2020-03-07 | Kommentar=Text und Audio, Dauer 01:48 mm:ss
+        }}</ref>\n:[1] \u201eManchmal hat Sarah noch ein wenig ''''Bammel'''', dass
+        das Holzblasinstrument [Anmerkung: eine Klarinette] beim Erw\u00e4rmen \u00fcber
+        dem Bunsenbrenner Feuer f\u00e4ngt. \u00bbDa muss man ganz genau die Flamme
+        unter die Klappe halten.\u00ab\u201c<ref>{{Per-Norddeutscher Rundfunk | Online=https://www.ndr.de/nachrichten/schleswig-holstein/Serie-Meine-Ausbildung-in-SH-Holzblasinstrumenten-Macherin,ausbildung666.html
+        | Autor=Robert Tschuschke | Titel=Mit Geduld und Geschick zum Holzblasinstrument
+        | TitelErg= | Tag=24 | Monat=09 | Jahr=2018 | Zugriff=2020-03-07 | Kommentar=
+        }}</ref>\n:[1] Vor einer Zuwanderung brauchen wir in der Bundesrepublik wirklich
+        keinen ''''Bammel'''' zu haben. Denn ohne Zuwanderung wird unsere Bev\u00f6lkerung
+        jedes Jahr ca. 200.000 Personen kleiner.\n:[1] \u201e\u00bbDie Herausforderungen
+        sind selbstverst\u00e4ndlich gro\u00df. ''''Bammel'''' davor habe ich keinen.
+        Ich freue mich eher auf die Aufgabe.\u00ab\u201c<ref>{{Per-Norddeutscher Rundfunk
+        | Online=https://www.ndr.de/nachrichten/schleswig-holstein/Serpil-Midyatli-Portraet-der-designierten-SPD-Chefin,midyatli118.html
+        | Autor=Anna Grusnick | Titel=Midyatli: \"Kopp in den Sand ist nicht mein
+        Stil\" | TitelErg= | Tag=30 | Monat=03 | Jahr=2019 | Zugriff=2020-03-07 |
+        Kommentar= }}</ref>\n:[1] [Der jamaikanische Sprinter Usain] \u201eBolt selbst
+        versp\u00fcrt nach eigenem Bekunden keinen ''''Bammel'''' vor der Rente. \u00bbEs
+        wird eine Freude sein, sich zur\u00fcckzulehnen\u00ab und \u00bbsich zu erinnern\u00ab,
+        sagte er.\u201c<ref>{{Per-Deutsche Welle | Online=https://p.dw.com/p/2hkxl  |
+        Autor= | Titel=Leichtathletik-WM \u2013 Bolt verliert seinen letzten 100-Meter-Lauf
+        | TitelErg= | Tag=05 | Monat=08 | Jahr=2017 | Zugriff=2020-03-07 | Kommentar=
+        }}</ref>\n\n{{Charakteristische Wortkombinationen}}\n:[1] [[ein]]en ([[gro\u00df]]en)
+        Bammel [[vor]] [[jemand]]em/[[etwas]] [[haben]]\n\n==== {{\u00dcbersetzungen}}
+        ====\n{{\u00dc-Tabelle|1|G=umgangssprachlich: Angst, Furcht|\u00dc-Liste=\n*{{en}}:
+        {{\u00dc|en|fear}}\n*{{fr}}: {{\u00dc|fr|frousse}} {{f}}, {{\u00dc|fr|p\u00e9toche}}
+        {{f}}, {{\u00dc|fr|trouille}} {{f}}; ''''(Kanada)'''' {{\u00dc|fr|chienne}}
+        {{f}}, {{\u00dc|fr|souleur}} {{f}}, {{\u00dc|fr|tremblette}} {{f}}, {{\u00dc|fr|venette}}
+        {{f}}, {{\u00dc|fr|verdasse}} {{f}}\n*{{it}}: {{\u00dc|it|fifa}} {{f}}, {{\u00dc|it|strizza}}
+        {{f}}\n*{{sv}}: {{\u00dc|sv|skr\u00e4ck}}\n*{{es}}: {{\u00dc|es|canguelo}}
+        {{m}}, {{\u00dc|es|miedo}} {{m}}\n*{{tr}}: ''''konu\u015fma dili:'''' {{\u00dc|tr|korku}}\n}}\n\n{{Referenzen}}\n:[1]
+        {{Ref-DWDS}}\n:[*] {{Ref-UniLeipzig}}\n:[*] {{Ref-OWID|elexiko|169112|Bammel}}\n:[*]
+        {{Wikipedia-Suche|Bammel}}\n:[1] {{Ref-Pons}}\n:[1] {{Ref-Duden}}\n:[1] {{Ref-wissen.de|W\u00f6rterbuch|Bammel}}\n:[1]
+        [[w:Deutsche Welle|Deutsche Welle]], Deutsch lernen - Wort der Woche: {{Per-Deutsche
+        Welle | Online=https://p.dw.com/p/3G9cX | Autor=Katharina Bo\u00dferhoff |
+        Titel=Der Bammel | TitelErg= | Tag=06 | Monat=03 | Jahr=2020 | Zugriff=2020-03-07
+        | Kommentar=Text und [https://www.dw.com/overlay/media/de/der-bammel/48217627/48179241
+        Audio zum Download], Dauer: 01:20 mm:ss }}\n\n{{Quellen}}\n\n{{\u00c4hnlichkeiten
+        1|[[Bommel]], [[Bummel]], [[Gammel]], [[Hammel]], [[Rammel]]|Anagramme=[[bammle]]}}"}}}'
+    headers:
+      accept-ranges:
+      - bytes
+      age:
+      - '1'
+      cache-control:
+      - private, must-revalidate, max-age=0
+      content-disposition:
+      - inline; filename=api-result.json
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 15 Sep 2024 07:51:49 GMT
+      nel:
+      - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
+        0.0}'
+      report-to:
+      - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
+        }] }'
+      server:
+      - mw-api-ext.eqiad.main-79cbd6dc7f-frxdv
+      server-timing:
+      - cache;desc="pass", host;desc="cp3072"
+      set-cookie:
+      - WMF-Last-Access=15-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 17 Oct 2024
+        00:00:00 GMT
+      - WMF-Last-Access-Global=15-Sep-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
+        17 Oct 2024 00:00:00 GMT
+      - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
+      - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
+      strict-transport-security:
+      - max-age=106384710; includeSubDomains; preload
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      x-cache:
+      - cp3072 miss, cp3072 pass
+      x-cache-status:
+      - pass
+      x-client-ip:
+      - 80.142.138.242
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D++Angst%2C+Furcht
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"uFPZAnjG4aKA_etD1jIu_A\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20Angst%2C%20Furcht&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20Angst%2C%20Furcht&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Miedo%2C%20miedo&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1]  Angst, Furcht\"><div
+        class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
+        class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        Miedo, miedo</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-44HkMjC57rZd23H_jWyyTQ' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:49 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=MCUZLb-iy4GA486dSvdJXMbgSd_f88dBjQWnpfNSllcuwN81897fdNoRpLcgYNKAGApGzPpCqgz1v-hrnSxnwKTLtk-9GNNf-_uhtjdAgE9mjeyFCf5vk1R7DvXfB_KkERhIx8PX3_F5aEzmfZCgK0yj5co_e9yXlg3x86cax0x57KPWC2iKdoeNkZ0;
+        expires=Thu, 16-Oct-2025 00:10:07 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw0ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQN8fUJbO2swl8-LWrVkktKb8wvqQoMa84J7EkVbc8Nak4tagstSjeyMDIxMDS0FDPwDy-wBAAMVwv7A"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+Vor+der+n%C3%A4chsten+Pr%C3%BCfung+habe+ich+einen+richtigen+Bammel.
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"eoJJhPWLwFch6S_QTyzlKA\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Vor%20der%20n%C3%A4chsten%20Pr%C3%BCfung%20habe%20ich%20einen%20richtigen%20Bammel.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Vor%20der%20n%C3%A4chsten%20Pr%C3%BCfung%20habe%20ich%20einen%20richtigen%20Bammel.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Estoy%20muy%20nervioso%20por%20el%20pr%C3%B3ximo%20examen.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] Vor der n\xE4chsten
+        Pr\xFCfung habe ich einen richtigen Bammel.\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[1] Estoy muy nervioso por el pr\xF3ximo examen.</div><div
+        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - script-src 'nonce-wGF_jvizMZh8S2S3gjFV3Q' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:50 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=Yd8s0JdCY9PeLMW2AxcP0UL9PGzRlQmFifbF8iHAzZE-5vSLX2NWkDtk5VjuPTkzshQdoOW3wvY3C_OU4P-GKwjudu74Fy9Ze5kQPUWnisAJNp6uWg0whtpEuhV6jMtL-Buc_dEzf60WyJl9OLbKtcRbTrG72S4lqTsJeVv8tPY5TnMaHjfF2Bpsd9E;
+        expires=Thu, 16-Oct-2025 00:10:08 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8e0JbO2swl8mL55HbOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAEZ6L68"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+Ich+habe+ein+bisschen+Bammel+davor%2C+diese+Rede+zu+halten.
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"sKOFZXUhOBHTIQ3yt3zUug\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Ich%20habe%20ein%20bisschen%20Bammel%20davor%2C%20diese%20Rede%20zu%20halten.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Ich%20habe%20ein%20bisschen%20Bammel%20davor%2C%20diese%20Rede%20zu%20halten.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Estoy%20un%20poco%20nervioso%20por%20dar%20este%20discurso.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] Ich habe ein
+        bisschen Bammel davor, diese Rede zu halten.\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[1] Estoy un poco nervioso por dar este discurso.</div><div
+        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - script-src 'nonce-sS4FFxUtvwNmn4EDm0W10g' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:51 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=R5nHqU54v953BRfj0tUCLHgUusd8dCoF5LKjS8zNXWyu6BIFSyRcSVtV0mEPfhhYqkTexrydGaEnhxSmHtkST_DryL7lOwO3P6m8f1bEIwfJQPie_38XRq3hBVod4qnpL8g6y1xHXIwxmATpVuNk9uydiGgttcsZl1_wz4hbxIV8RPexIXpPV8FRtg;
+        expires=Thu, 16-Oct-2025 00:10:09 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmII0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8f0JbO2swnc-DLvO6OSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAGDEMDQ"
+    status:
+      code: 200
+      message: OK
+version: 1

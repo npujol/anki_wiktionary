@@ -57,7 +57,3 @@ class VerbenDataProcessor(BaseDataProcessor):
             "example1": parser.example1,
             "example2": parser.example2,
         }
-
-    # def is_content_complete(self, content: dict[str, Any]) -> bool:
-    #     # TODO: Review this and move to a base class
-    #     return False

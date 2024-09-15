@@ -1,0 +1,815 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://de.wiktionary.org/w/api.php?action=parse&page=verstehen&prop=wikitext&format=json
+  response:
+    body:
+      string: '{"parse":{"title":"verstehen","pageid":3635,"wikitext":{"*":"== verstehen
+        ({{Sprache|Deutsch}}) ==\n=== {{Wortart|Verb|Deutsch}} ===\n\n{{Deutsch Verb
+        \u00dcbersicht\n|Pr\u00e4sens_ich=verstehe\n|Pr\u00e4sens_du=verstehst\n|Pr\u00e4sens_er,
+        sie, es=versteht\n|Pr\u00e4teritum_ich=verstand\n|Partizip II=verstanden\n|Konjunktiv
+        II_ich=verst\u00e4nde\n|Konjunktiv II_ich*=verst\u00fcnde\n|Imperativ Singular=verstehe\n|Imperativ
+        Plural=versteht\n|Hilfsverb=haben\n}}\n\n{{Anmerkung}}\n:In den Bedeutungen
+        [2a, 2b] dr\u00fcckt das Verb ''''verstehen'''' einen schw\u00e4cheren Grad
+        des rationalen Erfassens aus als sein hier genanntes [[Quasisynonym|(Quasi-)Synonym]]
+        ''''begreifen''''; letzteres Verb spricht dem Subjekt noch das Erkennen tieferer
+        Einsichten und komplexerer Zusammenh\u00e4nge zu. Nicht in der Umgangssprache,
+        wohl aber in gew\u00e4hlter Sprache gilt dieselbe Differenzierung f\u00fcr
+        die Bedeutung [2c].\n\n{{Worttrennung}}\n:ver\u00b7ste\u00b7hen, {{Pr\u00e4t.}}
+        ver\u00b7stand, {{Part.}} ver\u00b7stan\u00b7den\n\n{{Aussprache}}\n:{{IPA}}
+        {{Lautschrift|f\u025b\u0250\u032f\u02c8\u0283te\u02d0\u0259n}}\n:{{H\u00f6rbeispiele}}
+        {{Audio|De-verstehen.ogg}}, {{Audio|De-verstehen2.ogg}}, {{Audio|De-at-verstehen.ogg|spr=at}}\n:{{Reime}}
+        {{Reim|e\u02d0\u0259n|Deutsch}}\n\n{{Bedeutungen}}\n:[1] {{K|trans.}} (Gesprochenes)
+        deutlich akustisch wahrnehmen\n:[2] ''''Anwendung einer intellektuellen F\u00e4higkeit'''':\n::[2a]
+        {{K|trans.}} den Sinngehalt, die Bedeutung von etwas, die Absicht einer Person
+        verstandesm\u00e4\u00dfig erfassen\n::[2b] {{K|trans.}} in bestimmter Weise
+        deutend interpretieren\n::[2c] {{K|refl.}} eine bestimmte Vorstellung beziehungsweise
+        einen bestimmten Eindruck von sich selbst vermitteln; sich in bestimmter Weise
+        darum bem\u00fchen, als jemand Bestimmtes angesehen zu werden\n::[2d] {{K|refl.|kaufmannssprachlich}}
+        (von Preisen) in bestimmter Weise erkennen lassen beziehungsweise zum Ausdruck
+        bringen wollen\n:[3] ''''Anwendung einer emotionalen F\u00e4higkeit'''':\n::[3a]
+        {{K|trans.}} sich in jemanden einf\u00fchlen, in jemandes Situation hineindenken
+        k\u00f6nnen; diese F\u00e4higkeit jemandem gegen\u00fcber zu erkennen geben\n::[3b]
+        {{K|trans.}} (die Verhaltensweise, Haltung, Reaktion, das Gef\u00fchl von
+        jemandes Standpunkt aus gesehen als) nat\u00fcrlich, konsequent, richtig,
+        normal einsch\u00e4tzen, beurteilen, empfinden\n:[4] {{K|refl.}} ohne Streitigkeiten
+        mit jemandem auskommen, eine gute pers\u00f6nliche Beziehung zu jemandem haben\n:[5]
+        ''''Bef\u00e4higung zu T\u00e4tigkeiten'''':\n::[5a] {{K|trans.}} sich etwas
+        (geistig) zu eigen gemacht haben; die F\u00e4higkeit zur Aus\u00fcbung von
+        etwas haben, die Begabung f\u00fcr etwas besitzen\n::[5b] {{K|trans.}} ein
+        besonderes (Fach-, Sach- oder Erfahrungs-)Wissen (von etwas) aufweisen; (mit
+        etwas) vertraut sein, umzugehen wissen; (auf einem bestimmten Gebiet) genau
+        Bescheid wissen (und diesbez\u00fcglich urteilsf\u00e4hig sein)\n::[5c] {{K|refl.}}
+        zu etwas imstande sein; die Fertigkeiten besitzen, etwas Bestimmtes zu tun\n::[5d]
+        {{K|refl.}} sich mit etwas auskennen und gut umzugehen wissen\n:[6] {{K|refl.|tlwvatd.}}
+        sich \u00fcberwindend zu etwas doch bereit erkl\u00e4ren\n\n{{Herkunft}}\n:[[Kompositum]]
+        aus dem [[Pr\u00e4fix]] ''''[[ver-]]'''' und dem [[Verb]] ''''[[stehen]]'''';
+        bezeugt in den [[mittelhochdeutsch]]en Formen ''''verst\u0113n'''' und ''''verst\u0101n,''''
+        welche ihrerseits dem [[Althochdeutsch]]en ''''first\u0101n'''' \u2013 urspr\u00fcnglich
+        \u201erings um etwas stehen, etwas umstehen, etwas in der Gewalt haben, beherrschen\u201c,
+        sp\u00e4ter \u201eerfassen, ergreifen, ertappen; merken, meinen, empfinden,
+        f\u00fchlen; begreifen, einsehen, erkennen\u201c \u2013 entstammen; im [[Gotisch]]en
+        nicht bezeugt; etymologisch verwandt mit [[altenglisch]] ''''farstandan, farstondan'''',
+        [[alts\u00e4chsisch]] ''''farstanden''''; die [[sp\u00e4taltnordisch]]en Formen
+        ''''forstanda, fyrirstanda'''' sind ihrerseits dem [[Mittelniederdeutsch]]en
+        entlehnt\n{{QS Herkunft|unbelegt}}\n\n{{Sinnverwandte W\u00f6rter}}\n:[1]
+        [[h\u00f6ren]]\n:[4] sich [[vertragen]], miteinander [[auskommen]]\n:[5a]
+        [[beherrschen]]\n:[6] [[durchringen]], sich [[hinrei\u00dfen]] [[lassen]]\n\n{{Gegenw\u00f6rter}}\n:[1]
+        [[verst\u00e4ndigen]], [[missverstehen]]\n:[2a, 2b] [[missverstehen]]\n:[4]
+        sich [[anwidern]], sich nicht [[ausstehen]] k\u00f6nnen\n:[6] [[entschlussfreudig]]
+        [[sein#Hilfsverb|sein]]\n\n{{Oberbegriffe}}\n:[1] [[vernehmen]]\n:[2a] [[aufnehmen]]\n:[2c]
+        sich [[einsch\u00e4tzen]]\n:[4] [[auskommen]]\n:[6] [[entscheiden]]\n\n{{Unterbegriffe}}\n:[2a]
+        [[auffassen]], [[auskennen]], [[begreifen]], ''''(umgangssprachlich)'''' [[checken]],
+        [[durchblicken]], [[durchschauen]], [[durchsteigen]], [[einleuchten]], [[einsehen]],
+        [[erfassen]], [[ergr\u00fcnden]], [[erkennen]], [[ermessen]], ''''(gehoben)''''
+        [[fassen]], ''''(bildlich, umgangssprachlich)'''' [[fressen]], [[folgen]],
+        ''''(umgangssprachlich)'''' [[kapieren]], [[l\u00f6sen]], ''''(salopp)''''
+        [[raffen]], [[realisieren]], ''''(umgangssprachlich)'''' [[schnallen]], ''''(Namibia,
+        umgangssprachlich)'''' [[z\u00fcnden]], ''''(Niederdeutsch)'''' [[rallen]]\n:[2b]
+        [[auffassen]], [[erkennen]], [[erschlie\u00dfen]], [[meinen]]\n:[3a] [[nachempfinden]],
+        [[nachvollziehen]]\n:[3b] [[einsehen]]\n:[4] sich (einander) [[anpassen]],
+        [[gernhaben]], [[harmonisieren]], [[m\u00f6gen]]\n\n{{Beispiele}}\n:[1] Es
+        war so laut, man konnte sein eigenes Wort kaum ''''verstehen.''''\n:[1] Streck
+        mir doch nicht den R\u00fccken zu, wenn du mit mir redest, sonst ''''verstehe''''
+        ich dich nicht.\n:[2a] Hegel schreibt: \u201eDas Eins ist die einfache Beziehung
+        des F\u00fcrsichseins auf sich selbst, in der seine Momente in sich zusammengefallen
+        sind, in der es daher die Form der Unmittelbarkeit hat und seine Momente daher
+        nun daseiende werden.\u201c<ref>G.W.F. Hegel, ''''Wissenschaft der Logik'''',
+        Seite 182, ''''Suhrkamp,'''' Frankfurt am Main 1969</ref> Das ''''verstehe''''
+        nun einer!\n:[2a] Hast du die Gebrauchsanweisung gelesen? Die hat man offenbar
+        aus dem Japanischen \u201e\u00fcbersetzt\u201c. Dieses Kauderwelsch ''''versteht''''
+        doch kein Mensch!\n:[2a] {{intrans.}} Wie der Leutnant den Putschgeneral verhaften
+        wollte, erbat der um einen kurzen Aufschub. Der junge Milit\u00e4r ''''verstand,''''
+        salutierte und ging aus dem Zimmer. Noch als er \u00fcber die T\u00fcrschwelle
+        trat, h\u00f6rte er schon den Schuss.\n:[2a] Manches von dem, was ich h\u00f6re,
+        ''''verstehe'''' ich nicht. Manches von dem, was ich ''''verstehe,'''' begreife
+        ich nicht.\n:[2a] Ich ''''verstehe,'''' dass Menschen zuweilen so etwas \u00dcbles
+        tun. Wie sie aber bewusst sich dazu entschlie\u00dfen k\u00f6nnen, begreife
+        ich nicht.\n:[2a] Die Grundschulstudien der letzten Zeit zeigen, Viertkl\u00e4ssler
+        ''''verstehen'''' Texte noch schlechter als vor zehn Jahren.<ref>{{Per-Deutschlandradio
+        | Online=http://www.deutschlandfunkkultur.de/kritik-an-der-grundschule-weg-von-der-selbstlernidylle.1005.de.html?dram:article_id=407745
+        | Autor=Michael Felten | Titel=Kritik an der Grundschule - Weg von der Selbstlernidylle
+        | TitelErg= | Tag=08 | Monat=01 | Jahr=2018 | Zugriff=2018-01-09 | Kommentar=Deutschlandfunk
+        Kultur/Berlin, Sendung: Politisches Feuilleton, Text und Audio (Dauer: 03:39
+        mm:ss) }}</ref>\n:[2a] \u201eDarum rede ich zu ihnen in Gleichnissen. Denn
+        mit sehenden Augen sehen sie nicht und mit h\u00f6renden Ohren h\u00f6ren
+        sie nicht; und sie ''''verstehen'''' es nicht.\u201c<ref>{{Ref-Bibel|Mt|13|13|LUT}}</ref>\n:[2b]
+        \u201eWas ''''versteht'''' sie unter unbedingtem Gehorsam?\u201c\n:[2b] \u201eUnter
+        herk\u00f6mmlichem Bodyflying ''''verstehen'''' Sportler das Reiten auf einem
+        vertikalen Luftstrom, der von einem starken Gebl\u00e4se generiert wird.\u201c<ref>{{Internetquelle|url=https://www.sat1.de/ratgeber/sport-fitness/funsport/indoor-skydiving-spass-beim-bodyflying-im-windkanal
+        |titel= Bodyflying: Auf dem Luftstrom reiten|zugriff= 2020-04-04}}</ref>\n:[2c]
+        Er ''''versteht sich'''' als K\u00fcnstler.\n:[2c] \u201eDas Arabisch-J\u00fcdische
+        Zentrum, in dem je zur H\u00e4lfte Araber und Juden t\u00e4tig sind, ''''versteht
+        sich'''' als Mittler der unterschiedlichen Kulturen, organisiert Festivals,
+        Theaterspiele, Treffen zwischen j\u00fcdischen und arabischen Sch\u00fclern.\u201c<ref>[http://www.taz.de/index.php?id=archivseite&dig=2001/10/13/a0150
+        Online-Ausgabe der taz, ''Archiv'', ''''\"Haifa ist anders\"'''', 13.10.2001]</ref>\n:[2c]
+        \u201eSie ''''verstehen sich'''' als Cr\u00e8me de la Cr\u00e8me der Gesetzesh\u00fcter
+        - doch nun finden sie sich im Zentrum eines internationalen Skandals wieder.\u201c<ref>[http://www.spiegel.de/politik/deutschland/0,1518,545472,00.html
+        Online-Ausgabe des Spiegel, ''Politik'', ''''Elitepolizisten auf Abwegen -
+        Ermittler enth\u00fcllen Dickicht schmutziger Gesch\u00e4fte'''', 04.04.2008]</ref>\n:[2d]
+        \u201eDie Preise ''''verstehen sich'''' inklusive Fr\u00fchst\u00fcck und
+        Minibar.\u201c<ref>[http://www.spiegel.de/lexikon/21492939.html Online-Ausgabe
+        des manager magazin 3/2002 auf den Online-Seiten des Spiegel, ''Spiegel Wissen'',
+        ''''Luthers Lust'''', 01.03.2002]</ref>\n:[3a] Keiner ''''versteht'''' mich!\n:[3a]
+        Sie sind die Einzigen, die mich ''''verstehen.''''\n:[3a] Er f\u00fchlt sich
+        von ihr nicht ''''verstanden.''''\n:[3a] \u201e\u00bb[\u2026] Denn das Herz
+        dieses Volkes ist verstockt: Ihre Ohren h\u00f6ren schwer und ihre Augen sind
+        geschlossen, damit sie nicht etwa mit den Augen sehen und mit den Ohren h\u00f6ren
+        und mit dem Herzen ''''verstehen'''' und sich bekehren, und ich ihnen helfe.\u00ab\u201c<ref>{{Ref-Bibel|Mt|13|15|LUT}}</ref>\n:[3b]
+        ''''Verstehen'''' Sie Spa\u00df?\n:[3b] Durchaus kann ich Ihre Erregung ''''verstehen.''''\n:[3b]
+        Ihnen werden keine Sonderrechte einger\u00e4umt, das m\u00fcssen sie schon
+        ''''verstehen.''''\n:[4] Sie ''''verstand'''' sich schon von fr\u00fchester
+        Jugend an sehr gut mit ihrer Mutter, mit ihrem Vater aber immer sehr schlecht,
+        mit ihm hatte sie meistens Streit.\n:[5a] Sie ''''versteht'''' zu manipulieren.\n:[5a]
+        Sie ''''verstehen'''' es, andere arbeiten zu lassen.\n:[5a] \u201eGichtrische
+        Empfindungen werden jederzeit von einer Dissonanz der mechanischen Schwingungen
+        begleitet \u2013 Leidenschaften mi\u00dfhandeln die Lebenskraft \u2013 der
+        \u00fcberladene Geist dr\u00fcckt sein Geh\u00e4use zu Boden \u2013 wie denn
+        nun? \u2013 Wer es ''''verst\u00fcnde,'''' dem Tod diesen ungebahnten Weg
+        in das Schlo\u00df des Lebens zu ebnen? den K\u00f6rper vom Geist aus zu verderben
+        \u2013 ha! ein Originalwerk! wer das zu Stande br\u00e4chte? \u2013 Ein Werk
+        ohne Gleichen! \u2013 Sinne nach, Moor! \u2013 Das w\u00e4r\u2019 eine Kunst,
+        die\u2019s verdiente, dich zum Erfinder zu haben.\u201c<ref>Friedrich Schiller:
+        ''''Die R\u00e4uber'''', 2. Akt, 1. Scene. In: ''''Schillers s\u00e4mmtliche
+        Werke in zw\u00f6lf B\u00e4nden'''', Band 2, J. G. Cotta\u2019scher Verlag,
+        Stuttgart und T\u00fcbingen, 1847, Seite 48 [[:s:Die_R%C3%A4uber/2._Akt|in
+        Wikisource]]</ref>\n:[5b] Er ''''versteht'''' etwas vom Fotografieren.\n:[5b]
+        Was ''''versteht'''' sie von M\u00e4nnern?\n:[5c] Sie ''''versteht sich''''
+        aufs Singen.\n:[5d] \u201eIch m\u00fcsste ''''mich'''' schlecht auf den Barometer
+        der Seele ''''verstehen,'''' oder der Herr Major ist in der Eifersucht schrecklich
+        wie in der Liebe.\u201c<ref>Friedrich Schiller: ''''Kabale und Liebe'''',
+        3. Akt, 1. Szene. In: ''''61. Hamburger Leseheft'''', Husum/Nordsee, 2005,
+        Seite 42 [[:s:Kabale_und_Liebe/3._Akt|in Wikisource]]</ref>\n:[6] Sie konnten
+        ''''sich'''' nicht zu einer Entschuldigung ''''verstehen.''''\n\n{{Redewendungen}}\n:[[nur
+        Bahnhof verstehen|nur Bahnhof ''''verstehen'''']] oder (veraltet) [[nur Bahnhof
+        und Bratkartoffeln verstehen|nur Bahnhof und Bratkartoffeln ''''verstehen'''']]\n:[[jemandem
+        etwas zu verstehen geben|jemandem etwas zu ''''verstehen'''' geben]] \u2013
+        aus bestimmten Gr\u00fcnden jemandem gegen\u00fcber etwas nur andeutungsweise
+        mitteilen\n:[[sich von selbst verstehen|sich von selbst ''''verstehen'''']]
+        \u2013 nicht ausdr\u00fccklich erw\u00e4hnenswert sein; selbstverst\u00e4ndlich
+        sein\n:[[die Zeichen der Zeit verstehen|die Zeichen der Zeit ''''verstehen'''']]
+        \u2013 die derzeitige, gewisse zuk\u00fcnftige Entwicklungen betreffende Lage
+        beziehungsweise Situation, den Gegebenheiten entsprechend, realistisch einsch\u00e4tzen,
+        interpretieren\n:[[etwas nicht besser verstehen|etwas nicht besser ''''verstehen'''']]
+        \u2013 etwas einzig aus Unbeholfenheit tun\n\n{{Charakteristische Wortkombinationen}}\n:[1]
+        [[alles]] ''''verstehen'''', [[bruchst\u00fcckhaft]] ''''verstehen'''', [[jedes]]
+        [[Wort]] ''''verstehen'''', [[kaum]] [[etwas]] ''''verstehen'''', [[gut]]
+        [[zu]] ''''verstehen'''' sein, [[schlecht]] zu ''''verstehen'''' sein\n:[2a]
+        [[ein]]en [[Gedankengang]] ''''verstehen'''', eine [[Frage]] [[nicht]] ''''verstehen'''',
+        einen [[Zusammenhang]] ([[nicht]]) ''''verstehen''''\n:[2b] etwas ist [[als]]
+        [[Aufforderung]] zu ''''verstehen'''', etwas ist als [[Drohung]] [[zu]] ''''verstehen'''',
+        etwas ist als [[Kritik]] zu ''''verstehen'''', etwas ist in einem anderen
+        [[Sinn]]e zu ''''verstehen'''', jemandes [[Verhalten]] ([[nicht]]) ''''verstehen'''',
+        [[unter]] [[Freiheit]] zu ''''verstehen'''' sein; unter [[Liebe]] zu ''''verstehen''''
+        sein; \u201e''''Verstehen'''' Sie mich bitte [[richtig]]\u201c, \u201e''''Verstehen''''
+        Sie mich bitte [[nicht]] [[falsch]]\u201c; \u201eDamit wir uns [[richtig]]
+        ''''verstehen''''\u201c\n:[2d] die [[Preis]]e ''''verstehen'''' sich [[ab]]
+        [[Lager]], [[frei]] [[Haus]], frei [[Lager]], [[in]] [[Euro]], [[netto]]\n:[3a]
+        sich (nicht) ''''verstanden'''' [[f\u00fchlen]]\n:[3b] keinen [[Humor]] ''''verstehen'''',
+        keinen [[Spa\u00df]] ''''verstehen''''; jemandes [[\u00c4rger]] (gut, nur
+        schwer) ''''verstehen'''', jemandes [[Reaktion]] ''''verstehen''''\n:[4] sich
+        [[gl\u00e4nzend]] ''''verstehen'''' ({{Audio|De-sich gl\u00e4nzend verstehen.ogg|Audio}}),
+        sich mit jemandem ''''verstehen'''', sich [[pr\u00e4chtig]] ''''verstehen'''',
+        sich nicht [[besonders]] ''''verstehen'''', sich [[\u00fcberhaupt]] [[nicht]]
+        ''''verstehen''''\n:[5a] es ([[ausgezeichnet]] / [[geschickt]] / [[gr\u00fcndlich]]
+        / [[meisterhaft]] ''''verstehen''''; {{K|ugs.}} etwas [[aus dem Effeff]])
+        ''''verstehen''''; sein [[Fach]] ''''verstehen'''', sein [[Gesch\u00e4ft]]
+        ''''verstehen'''', sein [[Handwerk]] ''''verstehen'''', seine [[Sache]] ''''verstehen'''',
+        seinen [[Beruf]] ''''verstehen''''; eine [[Fremdsprache]] ''''verstehen'''',
+        einen [[Dialekt]] ''''verstehen'''', nur ein paar [[Brocken]] ''''verstehen''''\n:[5b]
+        etwas ''''verstehen'''' [[von]]\n:[5c, 5d] sich [[auf]] etwas ''''verstehen''''\n:[6]
+        ''''selten:'''' sich zu einer [[Entschuldigung]] ''''verstehen'''', sich zu
+        [[Schadenersatz]] ''''verstehen''''\n\n{{Wortbildungen}}\n:[[einverstanden]],
+        [[einverst\u00e4ndlich]], [[Einverst\u00e4ndnis]], [[Frauenversteher]], [[missverstehen]],
+        [[unverstanden]], [[Verstand]], [[Verst\u00e4ndnis]], [[verst\u00e4ndig]],
+        [[verst\u00e4ndlich]], [[verstehbar]], ''''(landschaftlich, selten)'''' [[verstehlich]],
+        [[wohlverstanden]]\n\n==== {{\u00dcbersetzungen}} ====\n{{\u00dc-Tabelle|\u00dc-Liste=\n*{{af}}:
+        [1, 2a] {{\u00dc|af|verstaan}}\n*{{sq}}: [2a] {{\u00dc|sq|kuptoj}}; [5a] {{\u00dc|sq|p\u00ebrvetsoj}}\n*{{grc}}:
+        [1] {{\u00dct|grc|\u1f00\u03ba\u03bf\u03cd\u03c9}}; [2, 3] {{\u00dct|grc|\u03bc\u03b1\u03bd\u03b8\u03ac\u03bd\u03c9|manthan\u014d}},
+        {{\u00dct|grc|\u03ba\u03b1\u03c4\u03b1\u03bd\u03bf\u03ad\u03c9|katanoe\u014d}},
+        {{\u00dct|grc|\u03b3\u03b9\u03b3\u03bd\u03ce\u03c3\u03ba\u03c9}}; [3]&nbsp;{{\u00dct|grc|\u03c3\u03c5\u03bd\u03af\u03b7\u03bc\u03b9|syni\u0113mi}}<ref>Wiki
+        Lexicon and Concordance\nof the Greek New Testament, Stichwort: \u201e[http://m.katabiblon.com/lexicon.php?lemma=\u03c3\u03c5\u03bd\u03b9\u03b7\u03bc\u03b9  \u03c3\u03c5\u03bd\u03b9\u03b7\u03bc\u03b9]\u201c</ref>\n*{{ar}}:
+        [1] {{\u00dct|ar|\u0648\u064e\u0639\u064e\u0649|}} {{Lautschrift|ua\u02c1\u0101}};
+        [2a] {{\u00dct|ar|\u0623\u062f\u0652\u0631\u064e\u0643\u064e|}} {{Lautschrift|\u0294adraka}},
+        {{\u00dct|ar|\u062a\u064e\u0641\u064e\u0647\u064e\u0651\u0645\u064e|}} {{Lautschrift|tafa\u1e23ama}},
+        {{\u00dct|ar|\u0641\u064e\u0637\u0650\u0646\u064e|}} {{Lautschrift|fa\u1e6dena}},
+        {{\u00dct|ar|\u0641\u064e\u0647\u0650\u0645\u064e|}} {{Lautschrift|fahema}};
+        [5a, 5b] {{\u00dct|ar|\u0641\u064e\u0642\u0650\u0647\u064e|}} {{Lautschrift|faqeha}}\n*{{eu}}:
+        [1, 2a] {{\u00dc|eu|ulertu}}; [1, 4, 5c, 5d] {{\u00dc|eu|aditu}}; [2a] {{\u00dc|eu|konprenitu}}\n*{{br}}:
+        [1] {{\u00dc|br|klevet}}; [2a] {{\u00dc|br|entent}}, {{\u00dc|br|kompren}};
+        [4] {{\u00dc|br|en em glevet}}\n*{{bg}}: [1] {{\u00dct|bg|\u0447\u0443\u0432\u0430\u043c|\u010duvam}},
+        {{\u00dct|bg|\u043d\u0430\u0443\u0447\u0430\u0432\u0430\u043c|nau\u010davam}},
+        {{\u00dct|bg|\u043f\u043e\u0434\u0440\u0430\u0437\u0431\u0438\u0440\u0430\u043c|podrazbiram}},
+        {{\u00dct|bg|\u0441\u0445\u0432\u0430\u0449\u0430\u043c}}; [2a] {{\u00dct|bg|\u0440\u0430\u0437\u0431\u0438\u0440\u0430\u043c|razbiram}}\n*{{zh}}:
+        [1] {{\u00dct|zh|\u61c2|d\u01d2ng}}; [2a] {{\u00dct|zh|\u7406\u89e3|l\u01d0ji\u011b}};
+        [5d] {{\u00dct|zh|\u4e86\u89e3|li\u01ceoji\u011b}}\n**{{zh-tw}}: [1, 2a] ''''(h\u00f6ren
+        und verstehen)'''' {{\u00dct|zh|\u807d\u5f97\u61c2|t\u012bngd\u00e9d\u01d2ng}}\n**{{zh-cn}}:
+        [1, 2a] ''''(h\u00f6ren und verstehen)'''' {{\u00dct|zh|\u542c\u5f97\u61c2|t\u012bngd\u00e9d\u01d2ng}}\n*{{da}}:
+        [2a] {{\u00dc|da|forst\u00e5}}\n*{{en}}: [1, 2a, 2b, 4, 5a] {{\u00dc|en|understand}};
+        [2b] {{\u00dc|en|mean}}, {{\u00dc|en|interpret}}; [2c] {{\u00dc|en|consider}}
+        ({{\u00dc|en|oneself}}, {{\u00dc|en|somebody}} {{\u00dc|en|as}} {{\u00dc|en|something}}),
+        {{\u00dc|en|see}} (oneself, somebody as something); [2d] {{\u00dc|en|be understood}}
+        <!-- Bsp.: The prices are to be understood net -->; [4] {{\u00dc|en|get along}}
+        with each other; [5a] {{\u00dc|en|comprehend}}, {{\u00dc|en|apprehend}}, {{\u00dc|en|grasp}};
+        [5a, 5b] {{\u00dc|en|know}} (something, {{\u00dc|en|about}} something, {{\u00dc|en|how}}
+        {{\u00dc|en|to}} {{\u00dc|en|do}} something); [5c, 5d] {{\u00dc|en|be}} {{\u00dc|en|expert|be
+        an expert}} at something\n*{{eo}}: [2a] {{\u00dc|eo|kapigi}}; [2a, 5a] {{\u00dc|eo|kompreni}};
+        [5a] {{\u00dc|eo|scipovi}}; [5b] {{\u00dc|eo|scii}}\n*{{et}}: [2a] {{\u00dc|et|m\u0151istma}},
+        {{\u00dc|et|taipama}}; [4] {{\u00dc|et|teineteist m\u00f5istma}}\n*{{fi}}:
+        [2a] {{\u00dc|fi|oivaltaa}}, {{\u00dc|fi|ymm\u00e4rt\u00e4\u00e4}}\n*{{fr}}:
+        [1, 2a, 2b, 5b] {{\u00dc|fr|entendre}}; [1, 2a, 3] {{\u00dc|fr|comprendre}};
+        [2a] ''''(Kanada, bildlich, umgangssprachlich)'''' {{\u00dc|fr|arriver en
+        ville}}, ''''(Kanada, umgangssprachlich)'''' {{\u00dc|fr|catcher}}, ''''(Frankreich,
+        umgangssprachlich)'''' {{\u00dc|fr|entraver}}, {{\u00dc|fr|piger}}, ''''(Kanada,
+        umgangssprachlich)'''' {{\u00dc|fr|poigner}}; [2b] {{\u00dc|fr|interpr\u00e9ter}};
+        [2c] se {{\u00dc|fr|consid\u00e9rer}} ({{\u00dc|fr|comme}} {{\u00dc|fr|quelqu''un}},
+        {{\u00dc|fr|quelque chose}}), se {{\u00dc|fr|tenir}} ({{\u00dc|fr|pour}} quelqu''un,
+        quelque chose), se {{\u00dc|fr|voir}} (comme quelqu''un, quelque chose); [2d]
+        s''{{\u00dc|fr|entendre}},  [4] s''{{\u00dc|fr|accorder}}, ''''(Kanada, umgangssprachlich)''''
+        s''{{\u00dc|fr|adonner}} ({{\u00dc|fr|avec}} quelqu''un), se {{\u00dc|fr|comprendre}},
+        s''{{\u00dc|fr|entendre}}, ''''(Kanada, bildlich)'''' {{\u00dc|fr|\u00eatre
+        en affaires}}, se {{\u00dc|fr|plaire}}, {{\u00dc|fr|sympathiser}}; [5a, 5b,
+        5c] s''{{\u00dc|fr|entendre}}; [5a] {{\u00dc|fr|\u00eatre}} {{\u00dc|fr|dou\u00e9}}
+        ({{\u00dc|fr|pour}} quelque chose); [5b] s''{{\u00dc|fr|y}} {{\u00dc|fr|conna\u00eetre}}
+        ({{\u00dc|fr|en}} quelque chose)\n*{{gl}}: [1] {{\u00dc|gl|entender}}, {{\u00dc|gl|comprender}}\n*{{ka}}:
+        [1, 2a] {{\u00dct|ka|\u10d2\u10d0\u10d2\u10d4\u10d1\u10d0|gageba}}, {{\u00dct|ka|\u10d8\u10d2\u10d4\u10d1\u10e1|igebs}}\n*{{el}}:
+        [2a] {{\u00dct|el|\u03ba\u03b1\u03c4\u03b1\u03bb\u03b1\u03b2\u03b1\u03af\u03bd\u03c9|katalaba\u00edno}},
+        {{\u00dct|el|\u03c0\u03b9\u03ac\u03bd\u03c9|pi\u00e1no}}\n*{{io}}: [1] {{\u00dc|io|audar}};
+        [2a] {{\u00dc|io|intelektar}}, {{\u00dc|io|komprenar}}; [5a] {{\u00dc|io|savar}}\n*{{id}}:
+        [1] {{\u00dc|id|dengar|mendengar}}; [2a] {{\u00dc|id|maklum}}, {{\u00dc|id|mengerti}},
+        {{\u00dc|id|paham|memahami}}\n*{{ia}}: [2a] {{\u00dc|ia|comprender}}\n*{{zu}}:
+        [1] {{\u00dc|zu|zwa}}; [2a] {{\u00dc|zu|qonda}}\n*{{is}}: [2, 3] {{\u00dc|is|skilja}}\n*{{it}}:
+        [1] {{\u00dc|it|sentire}}; [2a] {{\u00dc|it|capire}}, {{\u00dc|it|comprendere}};
+        [2b] {{\u00dc|it|intendere}}; [4] {{\u00dc|it|andare d''accordo}}, {{\u00dc|it|intendersi}};
+        [5a] {{\u00dc|it|conoscere}}, {{\u00dc|it|sapere}}; [5c, 5d] {{\u00dc|it|intendersi}}
+        ({{\u00dc|it|di}} {{\u00dc|it|qualcosa}})\n*{{ja}}: [1] {{\u00dct|ja|\u805e\u53d6\u308b|\u304d\u304d\u3068\u308b,
+        kikitoru}}; [2a] {{\u00dct|ja|\u4f1a\u5f97\u3059\u308b|\u3048\u3068\u304f\u3059\u308b,
+        etoku suru}}, {{\u00dct|ja|\u5408\u70b9\u304c\u3044\u304f|\u304c\u3066\u3093\u304c\u3044\u304f,
+        gaten ga iku}}, {{\u00dct|ja|\u610f\u5473\u3092\u53d6\u308b|\u3044\u307f\u3092\u3068\u308b,
+        imi o toru}}, {{\u00dct|ja|\u7406\u89e3\u3059\u308b|\u308a\u304b\u3044\u3059\u308b,
+        rikai suru}}, {{\u00dct|ja|\u4e86\u77e5\u3059\u308b|\u308a\u3087\u3046\u3061\u3059\u308b,
+        ry\u014dchi suru}}, {{\u00dct|ja|\u4e86\u89e3\u3059\u308b|\u308a\u3087\u3046\u304b\u3044\u3059\u308b,
+        ry\u014dkai suru}}, {{\u00dct|ja|\u8ad2\u3068\u3059\u308b|\u308a\u3087\u3046\u3068\u3059\u308b,
+        ry\u014d to suru}}, {{\u00dct|ja|\u7aba\u3044\u77e5\u308b|\u3046\u304b\u304c\u3044\u3057\u308b,
+        ukagaishiru}}, {{\u00dct|ja|\u5224\u308b|\u308f\u304b\u308b, wakaru}}; [2b]
+        {{\u00dct|ja|\u89e3\u3059|\u3052\u3059, gesu}}, {{\u00dct|ja|\u89e3\u91c8\u3059\u308b|\u304b\u3044\u3057\u3083\u304f\u3059\u308b,
+        kaishaku suru}}, {{\u00dct|ja|\u89e3\u3059|\u304b\u3044\u3059, kaisu}}, {{\u00dct|ja|\u89e3\u3059\u308b|\u304b\u3044\u3059\u308b,
+        kaisuru}}, {{\u00dct|ja|\u53d7\u53d6\u308b|\u3046\u3051\u3068\u308b, uketoru}};
+        [3a] {{\u00dct|ja|\u4eba\u306e\u5fc3\u3092\u6c72\u3080|\u3072\u3068\u306e\u3053\u3053\u308d\u3092\u304f\u3080,
+        hito no kokoro o kumu}}, {{\u00dct|ja|\u6c72\u3080|\u304f\u3080, kumu}}; [4]
+        {{\u00dct|ja|\u548c\u3059\u308b|\u308f\u3059\u308b, wasuru}}, {{\u00dct|ja|\u548c\u5408\u3059\u308b|\u308f\u3054\u3046\u3059\u308b,
+        wag\u014d suru}}\n*{{yi}}: [1, 2a, 2b, 3, 5a, 5b] {{\u00dct|yi|\u05e4\u05bf\u05d0\u05b7\u05e8\u05e9\u05d8\u05f2\u05df|farshteyn}}\n*{{kk}}:
+        [2a, 5a] {{\u00dct|kk|\u0442\u04af\u0441\u0456\u043d\u0443}}, {{\u00dct|kk|\u04b1\u0493\u0443}}\n*{{ca}}:
+        [1, 2a] {{\u00dc|ca|entendre}}; [2a] {{\u00dc|ca|comprendre}}, ''''bildlich:''''
+        {{\u00dc|ca|copsar}}, {{\u00dc|ca|captar}}\n*{{tlh}}: [1, 2a] {{\u00dc|tlh|yaj}}\n*{{ko}}:
+        [2a] {{\u00dct|ko|\uc54c\ub2e4|alda}}, {{\u00dct|ko|\uc774\ud574\ud558\ub2e4|\u7406\u89e3,
+        ihaehada}}\n*{{hr}}: [2a] {{\u00dc|hr|shva\u0107ati}}; [2a, 3a] {{\u00dc|hr|razumjeti}},
+        {{\u00dc|hr|shvatiti}}\n*{{la}}: [1] {{\u00dc|la|concipere}}; [2] {{\u00dc|la|comprehendere}},
+        {{\u00dc|la|intellegere}}\n*{{lv}}: [2a] {{\u00dc|lv|noprast}}, {{\u00dc|lv|saprast}}\n*{{lt}}:
+        [2a] {{\u00dc|lt|suprasti}}; [5a] {{\u00dc|lt|mok\u0117ti}}\n*{{nl}}: [1,
+        2a, 2b, 5a] {{\u00dc|nl|verstaan}}; [4] {{\u00dc|nl|overweg komen}} ({{\u00dc|nl|met}})\n*{{no}}:
+        [1, 2a, 2b, 3, 4, 5b] {{\u00dc|no|forst\u00e5}}; [1, 2a, 2c] {{\u00dc|no|oppfatte}}\n*{{pl}}:
+        [1, 2a, 2b, 3, 5a] {{\u00dc|pl|rozumie\u0107}}; [2c] {{\u00dc|pl|uwa\u017ca\u0107}}
+        si\u0119 ({{\u00dc|pl|za}}),  [5a] {{\u00dc|pl|zna\u0107}}, {{\u00dc|pl|umie\u0107}}\n*{{pt}}:
+        [1, 2a, 2b, 5b] {{\u00dc|pt|entender}}; [2a] {{\u00dc|pt|alcan\u00e7ar}},
+        {{\u00dc|pt|atingir}}, {{\u00dc|pt|compreender}}; [2b] {{\u00dc|pt|insinuar}},
+        {{\u00dc|pt|interpretar}}, {{\u00dc|pt|traduzir}}; [4] {{\u00dc|pt|entender|entender-se}},
+        {{\u00dc|pt|compreender|compreender-se}}; [5b] {{\u00dc|pt|conhecer}}, {{\u00dc|pt|saber}}\n*{{rm}}:
+        [2a] {{\u00dc|rm|chapir}}; ''''Surmeirisch:'''' [2a] {{\u00dc|rm|tgapeir}};
+        ''''Surselvisch:'''' [2a] {{\u00dc|rm|capir}}; ''''Sutselvisch:'''' [2a] {{\u00dc|rm|capir}};
+        ''''Oberengadinisch:'''' [2a] {{\u00dc|rm|chapir}}; ''''Unterengadinisch:''''
+        [2a] {{\u00dc|rm|chapir}}\n*{{ro}}: [1, 2a] {{\u00dc|ro|\u00een\u021belege}};
+        [2c] {{\u00dc|ro|vedea}}\n*{{ru}}: [2a, 4, 5c, 5d] {{\u00dct|ru|\u043f\u043e\u043d\u0438\u043c\u0430\u0442\u044c}};
+        [2b] {{\u00dct|ru|\u0440\u0430\u0437\u0431\u0438\u0440\u0430\u0442\u044c}},
+        {{\u00dct|ru|\u0440\u0430\u0437\u043b\u0438\u0447\u0430\u0442\u044c}}; [5a]
+        {{\u00dct|ru|\u0443\u043c\u0435\u0442\u044c}}, {{\u00dct|ru|\u0437\u043d\u0430\u0442\u044c}},
+        {{\u00dct|ru|\u0432\u043b\u0430\u0434\u0435\u0442\u044c}}\n*{{sv}}: [1\u20133]
+        {{\u00dc|sv|f\u00f6rst\u00e5}}; [2, 3] {{\u00dc|sv|uppfatta}}, {{\u00dc|sv|fatta}}\n*{{sr}}:
+        [1] {{\u00dct|sr|\u043f\u043e\u0434\u0440\u0430\u0437\u0443\u043c\u0435\u0432\u0430\u0442\u0438|podrazumevati}};
+        [2a] {{\u00dct|sr|\u0441\u0445\u0432\u0430\u0442\u0430\u0442\u0438|shvatati}},
+        {{\u00dct|sr|\u0441\u0445\u0432\u0430\u0442\u0438\u0442\u0438|shvatiti}};
+        [2a, 5a] {{\u00dct|sr|\u0440\u0430\u0437\u0443\u043c\u0435\u0442\u0438|razumeti}},
+        {{\u00dct|sr|\u0440\u0430\u0437\u0443\u043c\u0435\u0432\u0430\u0442\u0438|razumevati}};
+        [3] {{\u00dct|sr|\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u0442\u0438|poznavati}};
+        [5a, 5b] {{\u00dct|sr|\u0443\u043c\u0435\u0442\u0438|umeti}}\n*{{sk}}: [1,
+        2a] {{\u00dc|sk|rozumie\u0165}}\n*{{sl}}: [2a, 5a] {{\u00dc|sl|razumeti}}\n*{{wen}}:\n**{{dsb}}:
+        [1, 2a, 5] {{\u00dc|dsb|rozm\u011b\u015b}}; [2a] {{\u00dc|dsb|wobp\u015bimje\u015b}},
+        {{\u00dc|dsb|wurozm\u011b\u015b}}, {{\u00dc|dsb|zbada\u015b}}, {{\u00dc|dsb|zrozm\u011b\u015b}};
+        [4] {{\u00dc|dsb|rozm\u011b\u015b}} se, [5a] {{\u00dc|dsb|wum\u011b\u015b}};
+        [5a, 5b] {{\u00dc|dsb|w\u011b\u017ae\u015b}}\n**{{hsb}}: [1] {{\u00dc|hsb|dos\u0142y\u0161e\u0107}};
+        [1, 2a] {{\u00dc|hsb|rozumi\u0107}}, {{\u00dc|hsb|zrozumi\u0107}}; [2a] {{\u00dc|hsb|zap\u0159ije\u0107}};
+        [4] {{\u00dc|hsb|wu\u0144\u0107}}; [5a] {{\u00dc|hsb|wobknje\u017ei\u0107}};
+        [5c, 5d] so {{\u00dc|hsb|wusta\u0107}}\n*{{es}}: [1] {{\u00dc|es|entender}};
+        [2a] {{\u00dc|es|comprender}}; [2c] {{\u00dc|es|tener|tenerse}} ({{\u00dc|es|por}});
+        [4] {{\u00dc|es|llevar|llevarse}}; [5c, 5d] {{\u00dc|es|ser}} {{\u00dc|es|experto}}
+        ({{\u00dc|es|en}} {{\u00dc|es|algo}})\n*{{sw}}: [1] {{\u00dc|sw|sikia}}; [2a]
+        {{\u00dc|sw|elewa}}, {{\u00dc|sw|fahamu}}; [4] {{\u00dc|sw|fahamiana}}\n*{{th}}:
+        [2a] {{\u00dct|th|\u0e40\u0e02\u0e49\u0e32\u0e43\u0e08|k\u00e2o jai}}; [4]
+        {{\u00dct|th|\u0e23\u0e39\u0e49\u0e01\u0e31\u0e19|r\u00f3o gan}}\n*{{cs}}:
+        [1] {{\u00dc|cs|dob\u0159e}} {{\u00dc|cs|sly\u0161et}}; [2a] {{\u00dc|cs|ch\u00e1pat}},
+        {{\u00dc|cs|pochopit}}, {{\u00dc|cs|rozum\u011bt}}; [5a] {{\u00dc|cs|um\u011bt}}\n*{{tr}}:
+        [2a] {{\u00dc|tr|anlamak}}, {{\u00dc|tr|\u00e7akmak}}, {{\u00dc|tr|kavramak}};
+        [4] ({{\u00dc|tr|iyi}}) {{\u00dc|tr|ge\u00e7inmek}}; [5] {{\u00dc|tr|bilmek}}\n*{{uk}}:
+        [1, 2a] {{\u00dct|uk|\u0437\u0440\u043e\u0437\u0443\u043c\u0456\u0442\u0438|zrozumity}};
+        [2a, 5a] {{\u00dct|uk|\u0440\u043e\u0437\u0443\u043c\u0456\u0442\u0438|rozumity}}\n*{{hu}}:
+        [1, 2a] {{\u00dc|hu|meg\u00e9rt}}; [2b] {{\u00dc|hu|\u00e9rt}}, {{\u00dc|hu|\u00e9rtelmez}};
+        [4] {{\u00dc|hu|meg\u00e9rtik egym\u00e1st}}; [5a] {{\u00dc|hu|tud}}\n}}\n\n{{Referenzen}}\n:[1]
+        {{Wikipedia}}\n:[1] {{Ref-Grimm}}\n:[1] {{Ref-DWDS}}\n:[*] {{Ref-UniLeipzig}}\n:[1]
+        {{Ref-FreeDictionary}}\n\n{{Referenzen pr\u00fcfen|Deutsch}}\n\n{{Quellen}}\n\n===
+        {{Wortart|Verb|Deutsch}} ===\n\n{{Deutsch Verb \u00dcbersicht\n|Pr\u00e4sens_ich=verstehe\n|Pr\u00e4sens_du=verstehst\n|Pr\u00e4sens_er,
+        sie, es=versteht\n|Pr\u00e4teritum_ich=verstand\n|Partizip II=verstanden\n|Konjunktiv
+        II_ich=verst\u00e4nde\n|Konjunktiv II_ich*=verst\u00fcnde\n|Imperativ Singular=verstehe\n|Imperativ
+        Plural=versteht\n|Hilfsverb=haben\n}}\n\n{{Worttrennung}}\n:ver\u00b7ste\u00b7hen,
+        {{Pr\u00e4t.}} ver\u00b7stand, {{Part.}} ver\u00b7stan\u00b7den\n\n{{Aussprache}}\n:{{IPA}}
+        {{Lautschrift|f\u025b\u0250\u032f\u02c8\u0283te\u02d0\u0259n}}\n:{{H\u00f6rbeispiele}}
+        {{Audio|De-verstehen.ogg}}, {{Audio|De-verstehen2.ogg}}, {{Audio|De-at-verstehen.ogg|spr=at}}\n:{{Reime}}
+        {{Reim|e\u02d0\u0259n|Deutsch}}\n\n{{Bedeutungen}}\n:[1] {{K|trans.|umgangssprachlich|selten}}
+        seine Zeit durch blo\u00dfes Stehen unn\u00fctz verbringen\n\n{{Herkunft}}\n:[[Kompositum]]
+        aus dem [[Pr\u00e4fix]] ''''[[ver-]]'''' und dem [[Verb]] ''''[[stehen]]''''\n\n{{Sinnverwandte
+        W\u00f6rter}}\n:[1] [[herumstehen]], [[m\u00fc\u00dfig]] [[stehen]]\n\n{{Gegenw\u00f6rter}}\n:[1]
+        [[nutzen]]\n\n{{Oberbegriffe}}\n:[1] [[verweilen]], [[vertun]], [[zubringen]]\n\n{{Unterbegriffe}}\n:[1]
+        [[verbringen]], [[vergeuden]], ''''(umgangssprachlich)'''' [[verplempern]],
+        ''''(umgangssprachlich, abwertend)'''' [[vertr\u00f6deln]], [[verzetteln]]\n\n{{Beispiele}}\n:[1]
+        Wir haben eine Stunde an der Vorverkaufskasse ''''verstanden.''''\n\n{{Charakteristische
+        Wortkombinationen}}\n:[1] eine gewisse Zeit am [[Fahrkartenschalter]] ''''verstehen'''',
+        eine gewisse Zeit an der [[Theaterkasse]] ''''verstehen''''\n\n==== {{\u00dcbersetzungen}}
+        ====\n{{\u00dc-Tabelle|1|G=seine Zeit durch blo\u00dfes Stehen unn\u00fctz
+        verbringen|\u00dc-Liste=\n*{{ar}}: {{\u00dct|ar|\u0648\u064e\u0642\u064e\u0641\u064e|uaqafa}}\n*{{en}}:
+        {{\u00dc|en|spend one''s time standing about}}\n*{{fr}}: {{\u00dc|fr|perdre
+        du temps \u00e0 rester plant\u00e9}}\n*{{ru}}: {{\u00dct|ru|\u043f\u0440\u043e\u0441\u0442\u043e\u044f\u0442\u044c}},
+        {{\u00dct|ru|\u043e\u0442\u0441\u0442\u043e\u044f\u0442\u044c}}\n*{{cs}}:
+        {{\u00dc|cs|prost\u00e1t}} ({{\u00dc|cs|\u010das}})\n}}\n\n{{Referenzen}}\n:[1]
+        {{Ref-DWDS}}\n\n{{\u00c4hnlichkeiten 1|[[anstehen]], [[ausstehen]], [[bestehen]],
+        [[entstehen]], [[erstehen]], [[gestehen]], [[Versehen]], [[versehen]], [[vorstehen]],
+        [[zustehen]]}}"}}}'
+    headers:
+      accept-ranges:
+      - bytes
+      age:
+      - '0'
+      cache-control:
+      - private, must-revalidate, max-age=0
+      content-disposition:
+      - inline; filename=api-result.json
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 15 Sep 2024 07:51:52 GMT
+      nel:
+      - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
+        0.0}'
+      report-to:
+      - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
+        }] }'
+      server:
+      - mw-api-ext.eqiad.main-79cbd6dc7f-5nq58
+      server-timing:
+      - cache;desc="pass", host;desc="cp3072"
+      set-cookie:
+      - WMF-Last-Access=15-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 17 Oct 2024
+        00:00:00 GMT
+      - WMF-Last-Access-Global=15-Sep-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
+        17 Oct 2024 00:00:00 GMT
+      - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
+      - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
+      strict-transport-security:
+      - max-age=106384710; includeSubDomains; preload
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      x-cache:
+      - cp3072 miss, cp3072 pass
+      x-cache-status:
+      - pass
+      x-client-ip:
+      - 80.142.138.242
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D++%28Gesprochenes%29+deutlich+akustisch+wahrnehmen%0A++++%5B2%5D+Anwendung+einer+intellektuellen+F%C3%A4higkeit%3A%0A++++%5B2a%5D++den+Sinngehalt%2C+die+Bedeutung+von+etwas%2C+die+Absicht+einer+Person+verstandesm%C3%A4%C3%9Fig+erfassen%0A++++%5B2b%5D++in+bestimmter+Weise+deutend+interpretieren%0A++++%5B2c%5D++eine+bestimmte+Vorstellung+beziehungsweise+einen+bestimmten+Eindruck+von+sich+selbst+vermitteln%3B+sich+in+bestimmter+Weise+darum+bem%C3%BChen%2C+als+jemand+Bestimmtes+angesehen+zu+werden%0A++++%5B2d%5D++%28von+Preisen%29+in+bestimmter+Weise+erkennen+lassen+beziehungsweise+zum+Ausdruck+bringen+wollen%0A++++%5B3%5D+Anwendung+einer+emotionalen+F%C3%A4higkeit%3A%0A++++%5B3a%5D++sich+in+jemanden+einf%C3%BChlen%2C+in+jemandes+Situation+hineindenken+k%C3%B6nnen%3B+diese+F%C3%A4higkeit+jemandem+gegen%C3%BCber+zu+erkennen+geben%0A++++%5B3b%5D++%28die+Verhaltensweise%2C+Haltung%2C+Reaktion%2C+das+Gef%C3%BChl+von+jemandes+Standpunkt+aus+gesehen+als%29+nat%C3%BCrlich%2C+konsequent%2C+richtig%2C+normal+einsch%C3%A4tzen%2C+beurteilen%2C+empfinden%0A++++%5B4%5D++ohne+Streitigkeiten+mit+jemandem+auskommen%2C+eine+gute+pers%C3%B6nliche+Beziehung+zu+jemandem+haben%0A++++%5B5%5D+Bef%C3%A4higung+zu+T%C3%A4tigkeiten%3A%0A++++%5B5a%5D++sich+etwas+%28geistig%29+zu+eigen+gemacht+haben%3B+die+F%C3%A4higkeit+zur+Aus%C3%BCbung+von+etwas+haben%2C+die+Begabung+f%C3%BCr+etwas+besitzen%0A++++%5B5b%5D++ein+besonderes+%28Fach-%2C+Sach-+oder+Erfahrungs-%29Wissen+%28von+etwas%29+aufweisen%3B+%28mit+etwas%29+vertraut+sein%2C+umzugehen+wissen%3B+%28auf+einem+bestimmten+Gebiet%29+genau+Bescheid+wissen+%28und+diesbez%C3%BCglich+urteilsf%C3%A4hig+sein%29%0A++++%5B5c%5D++zu+etwas+imstande+sein%3B+die+Fertigkeiten+besitzen%2C+etwas+Bestimmtes+zu+tun%0A++++%5B5d%5D++sich+mit+etwas+auskennen+und+gut+umzugehen+wissen%0A++++%5B6%5D++sich+%C3%BCberwindend+zu+etwas+doch+bereit+erkl%C3%A4ren
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"VefOQvw5P1Jiax0sd58k9A\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20%28Gesprochenes%29%20deutlich%20akustisch%20wahrnehmen%0A%20%20%20%20%5B2%5D%20Anwendung%20einer%20intellektuellen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B2a%5D%20%20den%20Sinngehalt%2C%20die%20Bedeutung%20von%20etwas%2C%20die%20Absicht%20einer%20Person%20verstandesm%C3%A4%C3%9Fig%20erfassen%0A%20%20%20%20%5B2b%5D%20%20in%20bestimmter%20Weise%20deutend%20interpretieren%0A%20%20%20%20%5B2c%5D%20%20eine%20bestimmte%20Vorstellung%20beziehungsweise%20einen%20bestimmten%20Eindruck%20von%20sich%20selbst%20vermitteln%3B%20sich%20in%20bestimmter%20Weise%20darum%20bem%C3%BChen%2C%20als%20jemand%20Bestimmtes%20angesehen%20zu%20werden%0A%20%20%20%20%5B2d%5D%20%20%28von%20Preisen%29%20in%20bestimmter%20Weise%20erkennen%20lassen%20beziehungsweise%20zum%20Ausdruck%20bringen%20wollen%0A%20%20%20%20%5B3%5D%20Anwendung%20einer%20emotionalen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B3a%5D%20%20sich%20in%20jemanden%20einf%C3%BChlen%2C%20in%20jemandes%20Situation%20hineindenken%20k%C3%B6nnen%3B%20diese%20F%C3%A4higkeit%20jemandem%20gegen%C3%BCber%20zu%20erkennen%20geben%0A%20%20%20%20%5B3b%5D%20%20%28die%20Verhaltensweise%2C%20Haltung%2C%20Reaktion%2C%20das%20Gef%C3%BChl%20von%20jemandes%20Standpunkt%20aus%20gesehen%20als%29%20nat%C3%BCrlich%2C%20konsequent%2C%20richtig%2C%20normal%20einsch%C3%A4tzen%2C%20beurteilen%2C%20empfinden%0A%20%20%20%20%5B4%5D%20%20ohne%20Streitigkeiten%20mit%20jemandem%20auskommen%2C%20eine%20gute%20pers%C3%B6nliche%20Beziehung%20zu%20jemandem%20haben%0A%20%20%20%20%5B5%5D%20Bef%C3%A4higung%20zu%20T%C3%A4tigkeiten%3A%0A%20%20%20%20%5B5a%5D%20%20sich%20etwas%20%28geistig%29%20zu%20eigen%20gemacht%20haben%3B%20die%20F%C3%A4higkeit%20zur%20Aus%C3%BCbung%20von%20etwas%20haben%2C%20die%20Begabung%20f%C3%BCr%20etwas%20besitzen%0A%20%20%20%20%5B5b%5D%20%20ein%20besonderes%20%28Fach-%2C%20Sach-%20oder%20Erfahrungs-%29Wissen%20%28von%20etwas%29%20aufweisen%3B%20%28mit%20etwas%29%20vertraut%20sein%2C%20umzugehen%20wissen%3B%20%28auf%20einem%20bestimmten%20Gebiet%29%20genau%20Bescheid%20wissen%20%28und%20diesbez%C3%BCglich%20urteilsf%C3%A4hig%20sein%29%0A%20%20%20%20%5B5c%5D%20%20zu%20etwas%20imstande%20sein%3B%20die%20Fertigkeiten%20besitzen%2C%20etwas%20Bestimmtes%20zu%20tun%0A%20%20%20%20%5B5d%5D%20%20sich%20mit%20etwas%20auskennen%20und%20gut%20umzugehen%20wissen%0A%20%20%20%20%5B6%5D%20%20sich%20%C3%BCberwindend%20zu%20etwas%20doch%20bereit%20erkl%C3%A4ren&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20%28Gesprochenes%29%20deutlich%20akustisch%20wahrnehmen%0A%20%20%20%20%5B2%5D%20Anwendung%20einer%20intellektuellen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B2a%5D%20%20den%20Sinngehalt%2C%20die%20Bedeutung%20von%20etwas%2C%20die%20Absicht%20einer%20Person%20verstandesm%C3%A4%C3%9Fig%20erfassen%0A%20%20%20%20%5B2b%5D%20%20in%20bestimmter%20Weise%20deutend%20interpretieren%0A%20%20%20%20%5B2c%5D%20%20eine%20bestimmte%20Vorstellung%20beziehungsweise%20einen%20bestimmten%20Eindruck%20von%20sich%20selbst%20vermitteln%3B%20sich%20in%20bestimmter%20Weise%20darum%20bem%C3%BChen%2C%20als%20jemand%20Bestimmtes%20angesehen%20zu%20werden%0A%20%20%20%20%5B2d%5D%20%20%28von%20Preisen%29%20in%20bestimmter%20Weise%20erkennen%20lassen%20beziehungsweise%20zum%20Ausdruck%20bringen%20wollen%0A%20%20%20%20%5B3%5D%20Anwendung%20einer%20emotionalen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B3a%5D%20%20sich%20in%20jemanden%20einf%C3%BChlen%2C%20in%20jemandes%20Situation%20hineindenken%20k%C3%B6nnen%3B%20diese%20F%C3%A4higkeit%20jemandem%20gegen%C3%BCber%20zu%20erkennen%20geben%0A%20%20%20%20%5B3b%5D%20%20%28die%20Verhaltensweise%2C%20Haltung%2C%20Reaktion%2C%20das%20Gef%C3%BChl%20von%20jemandes%20Standpunkt%20aus%20gesehen%20als%29%20nat%C3%BCrlich%2C%20konsequent%2C%20richtig%2C%20normal%20einsch%C3%A4tzen%2C%20beurteilen%2C%20empfinden%0A%20%20%20%20%5B4%5D%20%20ohne%20Streitigkeiten%20mit%20jemandem%20auskommen%2C%20eine%20gute%20pers%C3%B6nliche%20Beziehung%20zu%20jemandem%20haben%0A%20%20%20%20%5B5%5D%20Bef%C3%A4higung%20zu%20T%C3%A4tigkeiten%3A%0A%20%20%20%20%5B5a%5D%20%20sich%20etwas%20%28geistig%29%20zu%20eigen%20gemacht%20haben%3B%20die%20F%C3%A4higkeit%20zur%20Aus%C3%BCbung%20von%20etwas%20haben%2C%20die%20Begabung%20f%C3%BCr%20etwas%20besitzen%0A%20%20%20%20%5B5b%5D%20%20ein%20besonderes%20%28Fach-%2C%20Sach-%20oder%20Erfahrungs-%29Wissen%20%28von%20etwas%29%20aufweisen%3B%20%28mit%20etwas%29%20vertraut%20sein%2C%20umzugehen%20wissen%3B%20%28auf%20einem%20bestimmten%20Gebiet%29%20genau%20Bescheid%20wissen%20%28und%20diesbez%C3%BCglich%20urteilsf%C3%A4hig%20sein%29%0A%20%20%20%20%5B5c%5D%20%20zu%20etwas%20imstande%20sein%3B%20die%20Fertigkeiten%20besitzen%2C%20etwas%20Bestimmtes%20zu%20tun%0A%20%20%20%20%5B5d%5D%20%20sich%20mit%20etwas%20auskennen%20und%20gut%20umzugehen%20wissen%0A%20%20%20%20%5B6%5D%20%20sich%20%C3%BCberwindend%20zu%20etwas%20doch%20bereit%20erkl%C3%A4ren&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Percibir%20%28hablar%29%20claramente%20ac%C3%BAsticamente%0A%20%20%20%20%5B2%5D%20Aplicaci%C3%B3n%20de%20una%20capacidad%20intelectual%3A%0A%20%20%20%20%5B2a%5D%20captar%20intelectualmente%20el%20significado%2C%20el%20significado%20de%20algo%2C%20la%20intenci%C3%B3n%20de%20una%20persona%0A%20%20%20%20%5B2b%5D%20interpretado%20de%20cierta%20manera%0A%20%20%20%20%5B2c%5D%20transmitir%20una%20determinada%20idea%20o%20impresi%C3%B3n%20de%20uno%20mismo%3B%20hacer%20un%20esfuerzo%20particular%20para%20ser%20visto%20como%20alguien%20espec%C3%ADfico%0A%20%20%20%20%5B2d%5D%20%28de%20precios%29%20revelan%20o%20quieren%20expresarse%20de%20cierta%20manera%0A%20%20%20%20%5B3%5D%20Aplicaci%C3%B3n%20de%20una%20habilidad%20emocional%3A%0A%20%20%20%20%5B3a%5D%20ser%20capaz%20de%20empatizar%20con%20alguien%2C%20pensar%20en%20la%20situaci%C3%B3n%20de%20alguien%3B%20demostrarle%20esta%20habilidad%20a%20alguien%0A%20%20%20%20%5B3b%5D%20%28el%20comportamiento%2C%20actitud%2C%20reacci%C3%B3n%2C%20sentimiento%20visto%20desde%20el%20punto%20de%20vista%20de%20alguien%20como%29%20natural%2C%20consistente%2C%20correcto%2C%20normal%2C%20evaluar%2C%20juzgar%2C%20sentir%0A%20%20%20%20%5B4%5D%20llevarse%20bien%20con%20alguien%20sin%20discusiones%2C%20tener%20una%20buena%20relaci%C3%B3n%20personal%20con%20alguien%0A%20%20%20%20%5B5%5D%20Capacidad%20para%20realizar%20actividades%3A%0A%20%20%20%20%5B5a%5D%20has%20hecho%20algo%20%28mentalmente%29%20tuyo%3B%20tener%20la%20capacidad%20de%20hacer%20algo%2C%20tener%20el%20talento%20para%20algo%0A%20%20%20%20%5B5b%5D%20tener%20conocimiento%20especial%20%28t%C3%A9cnico%2C%20f%C3%A1ctico%20o%20experiencial%29%20%28de%20algo%29%3B%20estar%20familiarizado%20%28con%20algo%29%2C%20saber%20c%C3%B3mo%20afrontarlo%3B%20%28en%20un%20%C3%A1rea%20determinada%29%20tener%20conocimientos%20precisos%20%28y%20poder%20emitir%20juicios%20al%20respecto%29%0A%20%20%20%20%5B5c%5D%20poder%20hacer%20algo%3B%20tener%20las%20habilidades%20para%20hacer%20algo%20espec%C3%ADfico%0A%20%20%20%20%5B5d%5D%20estar%20familiarizado%20con%20algo%20y%20saber%20manejarlo%20bien%0A%20%20%20%20%5B6%5D%20superar%20la%20voluntad%20de%20hacer%20algo&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1]  (Gesprochenes)
+        deutlich akustisch wahrnehmen\n    [2] Anwendung einer intellektuellen F\xE4higkeit:\n
+        \   [2a]  den Sinngehalt, die Bedeutung von etwas, die Absicht einer Person
+        verstandesm\xE4\xDFig erfassen\n    [2b]  in bestimmter Weise deutend interpretieren\n
+        \   [2c]  eine bestimmte Vorstellung beziehungsweise einen bestimmten Eindruck
+        von sich selbst vermitteln; sich in bestimmter Weise darum bem\xFChen, als
+        jemand Bestimmtes angesehen zu werden\n    [2d]  (von Preisen) in bestimmter
+        Weise erkennen lassen beziehungsweise zum Ausdruck bringen wollen\n    [3]
+        Anwendung einer emotionalen F\xE4higkeit:\n    [3a]  sich in jemanden einf\xFChlen,
+        in jemandes Situation hineindenken k\xF6nnen; diese F\xE4higkeit jemandem
+        gegen\xFCber zu erkennen geben\n    [3b]  (die Verhaltensweise, Haltung, Reaktion,
+        das Gef\xFChl von jemandes Standpunkt aus gesehen als) nat\xFCrlich, konsequent,
+        richtig, normal einsch\xE4tzen, beurteilen, empfinden\n    [4]  ohne Streitigkeiten
+        mit jemandem auskommen, eine gute pers\xF6nliche Beziehung zu jemandem haben\n
+        \   [5] Bef\xE4higung zu T\xE4tigkeiten:\n    [5a]  sich etwas (geistig) zu
+        eigen gemacht haben; die F\xE4higkeit zur Aus\xFCbung von etwas haben, die
+        Begabung f\xFCr etwas besitzen\n    [5b]  ein besonderes (Fach-, Sach- oder
+        Erfahrungs-)Wissen (von etwas) aufweisen; (mit etwas) vertraut sein, umzugehen
+        wissen; (auf einem bestimmten Gebiet) genau Bescheid wissen (und diesbez\xFCglich
+        urteilsf\xE4hig sein)\n    [5c]  zu etwas imstande sein; die Fertigkeiten
+        besitzen, etwas Bestimmtes zu tun\n    [5d]  sich mit etwas auskennen und
+        gut umzugehen wissen\n    [6]  sich \xFCberwindend zu etwas doch bereit erkl\xE4ren\"><div
+        class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
+        class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        Percibir (hablar) claramente ac\xFAsticamente\n    [2] Aplicaci\xF3n de una
+        capacidad intelectual:\n    [2a] captar intelectualmente el significado, el
+        significado de algo, la intenci\xF3n de una persona\n    [2b] interpretado
+        de cierta manera\n    [2c] transmitir una determinada idea o impresi\xF3n
+        de uno mismo; hacer un esfuerzo particular para ser visto como alguien espec\xEDfico\n
+        \   [2d] (de precios) revelan o quieren expresarse de cierta manera\n    [3]
+        Aplicaci\xF3n de una habilidad emocional:\n    [3a] ser capaz de empatizar
+        con alguien, pensar en la situaci\xF3n de alguien; demostrarle esta habilidad
+        a alguien\n    [3b] (el comportamiento, actitud, reacci\xF3n, sentimiento
+        visto desde el punto de vista de alguien como) natural, consistente, correcto,
+        normal, evaluar, juzgar, sentir\n    [4] llevarse bien con alguien sin discusiones,
+        tener una buena relaci\xF3n personal con alguien\n    [5] Capacidad para realizar
+        actividades:\n    [5a] has hecho algo (mentalmente) tuyo; tener la capacidad
+        de hacer algo, tener el talento para algo\n    [5b] tener conocimiento especial
+        (t\xE9cnico, f\xE1ctico o experiencial) (de algo); estar familiarizado (con
+        algo), saber c\xF3mo afrontarlo; (en un \xE1rea determinada) tener conocimientos
+        precisos (y poder emitir juicios al respecto)\n    [5c] poder hacer algo;
+        tener las habilidades para hacer algo espec\xEDfico\n    [5d] estar familiarizado
+        con algo y saber manejarlo bien\n    [6] superar la voluntad de hacer algo</div><div
+        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - script-src 'nonce-mQWk_8YLv2oRo2pG2OM6Jw' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:53 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=iOO7pmgcq00MDUo_wYpx6_a8BIMVZ7RfUEIa3mYZ4bUQJb2VkO0KHh54n0uGwXQ6oJd-TlzqpcGpRlF1LP5Jr90JcrKO5IpPUX68idpEkFHaUq59p6psBV6tRIve-37ncgHrRXY_uMO6v6T8SMf0sgLcIqn_i7gaJobwjT-i1vZku5O_VmH5oRg2XA;
+        expires=Thu, 16-Oct-2025 00:10:11 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQN8fMJbO2swl0nFrnp6SWlF8YX1KUmFeck1iSqluemlScWlSWWhRvZGBkYmBpaKhnYB5fYAgAD6cvHw"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+Es+war+so+laut%2C+man+konnte+sein+eigenes+Wort+kaum+verstehen.
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"veM-t5yHKFLwwRbxHtKMNw\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Es%20war%20so%20laut%2C%20man%20konnte%20sein%20eigenes%20Wort%20kaum%20verstehen.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Es%20war%20so%20laut%2C%20man%20konnte%20sein%20eigenes%20Wort%20kaum%20verstehen.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Era%20tan%20ruidoso%20que%20apenas%20pod%C3%ADas%20entender%20tus%20propias%20palabras.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] Es war so
+        laut, man konnte sein eigenes Wort kaum verstehen.\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[1] Era tan ruidoso que apenas pod\xEDas entender
+        tus propias palabras.</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-unpTTQ8qqd7sM0MRnjf0-A' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:55 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=RxetW8UZxSzWQbbdKbdtJhOoJlsWVAFbGUd1M_ZYFVs5M64jTavDuwzBkuMlqbOAyszse54APGmq6RCqJB8v-bhkF55NEAlOyy64I5YzBAl3XCEw7eXRap2CZDEqVpT3d5xfTVhlAp2AX-nunJdf9kJ32IIINyzMwSNT76BLpW_c0QYTd6qnr4Zb-_U;
+        expires=Thu, 16-Oct-2025 00:10:13 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8fsJbO2swl0bJp0hUlJLSm_ML6kKDGvOCexJFW3PDWpOLWoLLUo3sjAyMTA0tBQz8A8vsAQADy_L3A"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+Streck+mir+doch+nicht+den+R%C3%BCcken+zu%2C+wenn+du+mit+mir+redest%2C+sonst+verstehe+ich+dich+nicht.
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"_E_bPmkisPZaA9O7y2rqlw\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Streck%20mir%20doch%20nicht%20den%20R%C3%BCcken%20zu%2C%20wenn%20du%20mit%20mir%20redest%2C%20sonst%20verstehe%20ich%20dich%20nicht.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Streck%20mir%20doch%20nicht%20den%20R%C3%BCcken%20zu%2C%20wenn%20du%20mit%20mir%20redest%2C%20sonst%20verstehe%20ich%20dich%20nicht.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20No%20me%20des%20la%20espalda%20cuando%20me%20hables%2C%20de%20lo%20contrario%20no%20te%20entender%C3%A9.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] Streck mir
+        doch nicht den R\xFCcken zu, wenn du mit mir redest, sonst verstehe ich dich
+        nicht.\"><div class=\"translate-button-container\"><input type=\"submit\"
+        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        No me des la espalda cuando me hables, de lo contrario no te entender\xE9.</div><div
+        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - script-src 'nonce-nFnceKU7J458XNeeQGvTew' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:56 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=b9rpwJ0T3RUNqzugkWgxBxUVrZ6i4AHNsufoA2rVtlT0Mew771Yac2HLl-phSM7F2zTH8As2GOuleP0FjrbPRbZ-2KOYSDFfZXdZAhABeIzhWpwj4ITnTm0zlE7INkTc6PrfhtDEpL_dR6g1mfwVxhbreXatiAKzT3FAzipRtF5zFu4ZkbUTMgrWsOU;
+        expires=Thu, 16-Oct-2025 00:10:14 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw0ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQN8ecJbO2swlcaNuTpaSWlF8YX1KUmFeck1iSqluemlScWlSWWhRvZGBkYmBpaKhnYB5fYAgAEz8vRg"
+    status:
+      code: 200
+      message: OK
+version: 1

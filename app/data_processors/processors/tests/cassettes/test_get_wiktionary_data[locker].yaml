@@ -1,0 +1,505 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://de.wiktionary.org/w/api.php?action=parse&page=locker&prop=wikitext&format=json
+  response:
+    body:
+      string: '{"parse":{"title":"locker","pageid":29549,"wikitext":{"*":"== locker
+        ({{Sprache|Deutsch}}) ==\n=== {{Wortart|Adjektiv|Deutsch}} ===\n\n{{Deutsch
+        Adjektiv \u00dcbersicht\n|Positiv=locker\n|Komparativ=lockerer\n|Superlativ=lockersten\n}}\n\n{{Worttrennung}}\n:lo\u00b7cker,
+        {{Komp.}} lo\u00b7cke\u00b7rer, {{Sup.}} am lo\u00b7ckers\u00b7ten\n\n{{Aussprache}}\n:{{IPA}}
+        {{Lautschrift|\u02c8l\u0254k\u0250}}\n:{{H\u00f6rbeispiele}} {{Audio|De-locker.ogg}}\n:{{Reime}}
+        {{Reim|\u0254k\u0250|Deutsch}}\n\n{{Bedeutungen}}\n:[1] durchl\u00e4ssig,
+        nicht dicht\n:[2] mangelhaft befestigt, wackelig\n:[3] leichtfertig, ohne
+        sittlichen Halt, mit vielen Freiheiten\n:[4] nicht mehr unter Spannung\n:[5]
+        l\u00e4ssig, unkompliziert\n\n{{Synonyme}}\n:[2] [[lose]]\n:[4] [[lose]]\n:[5]
+        [[ungezwungen]]\n\n{{Gegenw\u00f6rter}}\n:[1] [[dicht]]\n:[2] [[fest]]\n:[3]
+        [[streng]]\n:[4] [[straff]]\n:[5] [[gezwungen]], [[angespannt]]\n\n{{Beispiele}}\n:[1]
+        Dieser Schal ist ''''locker'''' gestrickt.\n:[2] Der Griff an der Schultasche
+        ist ganz ''''locker,'''' der geht bestimmt bald ab.\n:[3] Man sagt von ihm,
+        dass er einen ''''lockeren'''' Lebenswandel habe.\n:[4] Du kannst jetzt die
+        ''''lockeren'''' Seile anziehen.\n:[5] Wir treffen uns bei ''''lockerer''''
+        Atmosph\u00e4re und sprechen \u00fcber unsere Erfahrungen.\n\n{{Redewendungen}}\n:[[locker
+        vom Hocker|''''locker'''' vom Hocker]]\n:[[eine lockere Hand haben|eine ''''lockere''''
+        Hand haben]]\n:[[eine Schraube locker haben|eine Schraube ''''locker'''' haben]]\n:[[Geld
+        locker machen|Geld ''''locker'''' machen]]\n\n==== {{\u00dcbersetzungen}}
+        ====\n{{\u00dc-Tabelle|1|G=durchl\u00e4ssig, nicht dicht|\u00dc-Liste=\n*{{en}}:
+        {{\u00dc|en|loose}}\n*{{fr}}: ''''Boden:'''' {{\u00dc|fr|meuble}}, {{\u00dc|fr|l\u00e9ger}}\n*{{ja}}:
+        {{\u00dct|ja|\u7de9\u3044|\u3086\u308b\u3044, yurui}}\n*{{ca}}: {{\u00dc|ca|fluix}},
+        {{\u00dc|ca|solt}}\n*{{lb}}: {{\u00dc|lb|labber}}\n*{{nl}}: {{\u00dc|nl|doorlaatbaar}},\n*{{pl}}:
+        {{\u00dc|pl|lu\u017any}}\n*{{ro}}: {{\u00dc|ro|lejer}}, {{\u00dc|ro|u\u0219or}},
+        {{\u00dc|ro|sl\u0103bit}}\n*{{sv}}:  {{\u00dc|sv|l\u00f6s}}, {{\u00dc|sv|gles}},
+        ''''Boden:'''' {{\u00dc|sv|lucker}} \n*{{es}}: {{\u00dc|es|suelto}}\n}}\n\n{{\u00dc-Tabelle|2|G=mangelhaft
+        befestigt, wackelig|\u00dc-Liste=\n*{{en}}: {{\u00dc|en|loose}}\n*{{ja}}:
+        {{\u00dct|ja|\u7de9\u3044|\u3086\u308b\u3044, yurui}}\n*{{lb}}: {{\u00dc|lb|labber}}\n*{{nl}}:
+        {{\u00dc|nl|los}},\n*{{ro}}: {{\u00dc|ro|sl\u0103bit}}\n*{{sv}}:  {{\u00dc|sv|l\u00f6s}},
+        {{\u00dc|sv|slapp}}, {{\u00dc|sv|lucker}}\n}}\n\n{{\u00dc-Tabelle|3|G=leichtfertig,
+        ohne sittlichen Halt, mit vielen Freiheiten|\u00dc-Liste=\n*{{lb}}: {{\u00dc|lb|labber}}\n*{{nl}}:
+        {{\u00dc|nl|lichtvaardig}},\n*{{ro}}: {{\u00dc|ro|sl\u0103bit}}, {{\u00dc|ro|relaxat}}\n*{{sv}}:  {{\u00dc|sv|l\u00f6ssl\u00e4ppt}}\n}}\n\n{{\u00dc-Tabelle|4|G=nicht
+        mehr unter Spannung|\u00dc-Liste=\n*{{en}}: {{\u00dc|en|relaxed}}\n*{{fi}}:
+        {{\u00dc|fi|rento}}\n*{{nl}}: {{\u00dc|nl|los}},\n*{{ro}}: {{\u00dc|ro|sl\u0103bit}}\n*{{sv}}:  {{\u00dc|sv|l\u00f6s}}\n*{{es}}:
+        {{\u00dc|es|relajado}}\n}}\n\n{{\u00dc-Tabelle|5|G=l\u00e4ssig, unkompliziert|\u00dc-Liste=\n*{{en}}:
+        {{\u00dc|en|relaxed}}, {{\u00dc|en|laid-back}}\n*{{fi}}: {{\u00dc|fi|rento}}\n*{{fr}}:
+        {{\u00dc|fr|d\u00e9tendu}}\n*{{nl}}: {{\u00dc|nl|ontspannen}}\n*{{sv}}:  {{\u00dc|sv|avslappnad}},
+        {{\u00dc|sv|avsp\u00e4nd}}, {{\u00dc|sv|ledig}}\n*{{es}}: {{\u00dc|es|relajado}}\n}}\n\n{{Referenzen}}\n:[1\u20134]
+        {{Ref-Grimm|locker}}\n:[1\u20133] {{Ref-DWDS|locker}}\n:[*] {{Ref-UniLeipzig|locker}}\n:[1\u20135]
+        {{Ref-FreeDictionary|locker}}\n\n=== {{Wortart|Konjugierte Form|Deutsch}}
+        ===\n\n{{Nebenformen}}\n:''''2. Person Singular Imperativ Pr\u00e4sens Aktiv:''''
+        [[lockere]]\n:''''1. Person Singular Indikativ Pr\u00e4sens Aktiv:'''' [[lockere]]\n:''''2.
+        Person Singular Imperativ Pr\u00e4sens Aktiv:'''' [[lockre]]\n:''''1. Person
+        Singular Indikativ Pr\u00e4sens Aktiv:'''' [[lockre]]\n\n{{Worttrennung}}\n:lo\u00b7cker\n\n{{Aussprache}}\n:{{IPA}}
+        {{Lautschrift|\u02c8l\u0254k\u0250}}\n:{{H\u00f6rbeispiele}} {{Audio|De-locker.ogg}}\n:{{Reime}}
+        {{Reim|\u0254k\u0250|Deutsch}}\n\n{{Grammatische Merkmale}}\n*2. Person Singular
+        Imperativ Pr\u00e4sens Aktiv des Verbs ''''''[[lockern]]''''''\n*1. Person
+        Singular Indikativ Pr\u00e4sens Aktiv des Verbs ''''''[[lockern]]''''''\n\n{{Grundformverweis
+        Konj|lockern}}\n\n{{\u00c4hnlichkeiten 1|Anagramme=[[lockre]]}}\n\n== locker
+        ({{Sprache|Englisch}}) ==\n=== {{Wortart|Substantiv|Englisch}} ===\n\n{{Englisch
+        Substantiv \u00dcbersicht\n|Singular=locker\n|Plural=lockers\n}}\n\n{{Worttrennung}}\n:lock\u00b7er\n\n{{Aussprache}}\n:{{IPA}}
+        {{Lautschrift|\u02c8l\u0252k\u0259}}\n:{{H\u00f6rbeispiele}} {{Audio|LL-Q1860
+        (eng)-Vealhurl-locker.wav|spr=uk}}\n\n{{Bedeutungen}}\n:[1] [[Schlie\u00dffach]]\n:[2]
+        [[Spind]], verschlie\u00dfbarer Kasten/ Schrank\n\n{{Beispiele}}\n:[1] Put
+        the letter in a ''''locker'''' if you don\u00b4t trust your parents.\n::Leg
+        den Brief in ein ''''Schlie\u00dffach,'''' wenn du deinen Eltern nicht traust.\n:[2]
+        They saw a note on Jim\u2019s ''''locker.''''\n::Sie sahen eine Nachricht
+        an Jims ''''Spind.''''\n\n{{Wortbildungen}}\n:[[lockerroom]] - Umkleideraum,
+        Umkleidekabine\n\n==== {{\u00dcbersetzungen}} ====\n{{\u00dc-Tabelle|1|G=Schlie\u00dffach|\u00dc-Liste=\n*{{de}}:
+        ''''siehe Bedeutungen''''\n*{{fr}}: {{\u00dc|fr|coffre}} {{m}}\n}}\n\n{{\u00dc-Tabelle|2|G=Spind,
+        verschlie\u00dfbarer Kasten/ Schrank|\u00dc-Liste=\n*{{de}}: ''''siehe Bedeutungen''''\n*{{fr}}:
+        {{\u00dc|fr|armoire m\u00e9tallique}} {{f}}, {{\u00dc|fr|casier}} {{m}}\n}}\n\n{{Referenzen}}\n:[1]
+        {{Wikipedia|spr=en|locker}}\n:[1, 2] {{Ref-Pons|en|locker}}\n:[1, 2] {{Ref-MWD|locker}}\n:[1,
+        2] {{Ref-Dictionary|locker}}\n:[1, 2] [http://en-de.dict.cc/?s=locker dict.cc
+        locker]\n\n{{\u00c4hnlichkeiten 1|[[Hocker]], [[lecker]]}}"}}}'
+    headers:
+      accept-ranges:
+      - bytes
+      age:
+      - '0'
+      cache-control:
+      - private, must-revalidate, max-age=0
+      content-disposition:
+      - inline; filename=api-result.json
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 15 Sep 2024 07:51:45 GMT
+      nel:
+      - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
+        0.0}'
+      report-to:
+      - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
+        }] }'
+      server:
+      - mw-api-ext.eqiad.main-79cbd6dc7f-tkmwp
+      server-timing:
+      - cache;desc="pass", host;desc="cp3072"
+      set-cookie:
+      - WMF-Last-Access=15-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 17 Oct 2024
+        00:00:00 GMT
+      - WMF-Last-Access-Global=15-Sep-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
+        17 Oct 2024 00:00:00 GMT
+      - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
+      - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
+      strict-transport-security:
+      - max-age=106384710; includeSubDomains; preload
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      x-cache:
+      - cp3072 miss, cp3072 pass
+      x-cache-status:
+      - pass
+      x-client-ip:
+      - 80.142.138.242
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+durchl%C3%A4ssig%2C+nicht+dicht%0A++++%5B2%5D+mangelhaft+befestigt%2C+wackelig%0A++++%5B3%5D+leichtfertig%2C+ohne+sittlichen+Halt%2C+mit+vielen+Freiheiten%0A++++%5B4%5D+nicht+mehr+unter+Spannung%0A++++%5B5%5D+l%C3%A4ssig%2C+unkompliziert
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"WYgO9hqLN61eSPnjjAUfng\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20durchl%C3%A4ssig%2C%20nicht%20dicht%0A%20%20%20%20%5B2%5D%20mangelhaft%20befestigt%2C%20wackelig%0A%20%20%20%20%5B3%5D%20leichtfertig%2C%20ohne%20sittlichen%20Halt%2C%20mit%20vielen%20Freiheiten%0A%20%20%20%20%5B4%5D%20nicht%20mehr%20unter%20Spannung%0A%20%20%20%20%5B5%5D%20l%C3%A4ssig%2C%20unkompliziert&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20durchl%C3%A4ssig%2C%20nicht%20dicht%0A%20%20%20%20%5B2%5D%20mangelhaft%20befestigt%2C%20wackelig%0A%20%20%20%20%5B3%5D%20leichtfertig%2C%20ohne%20sittlichen%20Halt%2C%20mit%20vielen%20Freiheiten%0A%20%20%20%20%5B4%5D%20nicht%20mehr%20unter%20Spannung%0A%20%20%20%20%5B5%5D%20l%C3%A4ssig%2C%20unkompliziert&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20permeable%2C%20no%20apretado%0A%20%20%20%20%5B2%5D%20mal%20fijado%2C%20tambaleante%0A%20%20%20%20%5B3%5D%20fr%C3%ADvolo%2C%20sin%20apoyo%20moral%2C%20con%20muchas%20libertades%0A%20%20%20%20%5B4%5D%20ya%20no%20est%C3%A1%20bajo%20tensi%C3%B3n%0A%20%20%20%20%5B5%5D%20informal%2C%20sin%20complicaciones&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] durchl\xE4ssig,
+        nicht dicht\n    [2] mangelhaft befestigt, wackelig\n    [3] leichtfertig,
+        ohne sittlichen Halt, mit vielen Freiheiten\n    [4] nicht mehr unter Spannung\n
+        \   [5] l\xE4ssig, unkompliziert\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[1] permeable, no apretado\n    [2] mal fijado,
+        tambaleante\n    [3] fr\xEDvolo, sin apoyo moral, con muchas libertades\n
+        \   [4] ya no est\xE1 bajo tensi\xF3n\n    [5] informal, sin complicaciones</div><div
+        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - script-src 'nonce-SaIwJ6OJoC1Do1xSuQiBFg' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:45 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=fmqYaLqdfKyva6qgig1K17ig5ts1PlZTtbD3AucSEkHAmCJywmkCt7jhEWo4WkQrTeRbNK1cGrj-W0-N2fsJgadUPKNsQw5r99u9m9-OGFhHiaABK_nTVtFjiNh_cy77Cwf3atCXDocdC_MDQc5rBxpKBEBa_jTC4mWmfWvwvOnnM32KXNjJuaVCSoM;
+        expires=Thu, 16-Oct-2025 00:10:03 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8fEJbO2swlMuHZnEpOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAEGRL5U"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+Dieser+Schal+ist+locker+gestrickt.
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"qYwE_BZQi_1T-R3j9Y8LMA\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Dieser%20Schal%20ist%20locker%20gestrickt.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20Dieser%20Schal%20ist%20locker%20gestrickt.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Esta%20bufanda%20est%C3%A1%20tejida%20de%20forma%20holgada.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] Dieser Schal
+        ist locker gestrickt.\"><div class=\"translate-button-container\"><input type=\"submit\"
+        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        Esta bufanda est\xE1 tejida de forma holgada.</div><div class=\"links-container\"><ul><li><a
+        href=\"https://www.google.com/m?hl=en-US\">Google home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-PcqcDIv9XjSBW4yi_ZvVtw' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:47 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=EhLnS8gyOlwWUKYrY06yqoSmuGRqbaI_PRYbdD7zsprmkiQMXTI8F5u0UXnitTDUgOTDWTUPITtKCLiV8MeRpSkbxukOTG52gDhGky7Y1Wtln4ayoothRQ3yMhAP6enEvYeMkaqYp6FG3OTr7U9DySccr-pV3k84gvOalfBd-FwP27GRkHC88s8kNXw;
+        expires=Thu, 16-Oct-2025 00:10:05 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8fkJbO2swnceLfzKKOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAFYHMAg"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B2%5D+Der+Griff+an+der+Schultasche+ist+ganz+locker%2C+der+geht+bestimmt+bald+ab.
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"8Y0DdHqLCCvaSTTIm23BNA\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B2%5D%20Der%20Griff%20an%20der%20Schultasche%20ist%20ganz%20locker%2C%20der%20geht%20bestimmt%20bald%20ab.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B2%5D%20Der%20Griff%20an%20der%20Schultasche%20ist%20ganz%20locker%2C%20der%20geht%20bestimmt%20bald%20ab.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B2%5D%20El%20asa%20de%20la%20mochila%20escolar%20est%C3%A1%20muy%20suelta%20y%20probablemente%20se%20soltar%C3%A1%20pronto.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[2] Der Griff
+        an der Schultasche ist ganz locker, der geht bestimmt bald ab.\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">[2] El asa de la mochila escolar est\xE1 muy suelta
+        y probablemente se soltar\xE1 pronto.</div><div class=\"links-container\"><ul><li><a
+        href=\"https://www.google.com/m?hl=en-US\">Google home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-mJLG-cAocEbVb8O8v1L48w' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Sun, 15 Sep 2024 07:51:48 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=kYasmH4WHolPbre9Jwm4xR0tvvexjgJybRq1PCJIZYg9sTzQG_7mkfpaYloTKGIqxiLBQu47oEvyT21pYfV_IFMjs1ecZhxBM6UxKoH5yT8GeCPI2J8j2bvuT0MWrd-8ZP_MPpsRpByo7LoWG0rhD6p_-wW9dOIUKtXBnBANE8HfEGblvKIKOlTGQzw;
+        expires=Thu, 16-Oct-2025 00:10:06 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8eUJbO2swmsWPB6MaOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAESiL54"
+    status:
+      code: 200
+      message: OK
+version: 1
