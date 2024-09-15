@@ -2,8 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.anki_connectors.anki_local_connector import AnkiLocalConnector
-from app.anki_connectors.errors import CollectionNotFoundError
+from app.anki_connectors import AnkiLocalConnector, CollectionNotFoundError
 from app.serializers import CustomNote, Note
 
 

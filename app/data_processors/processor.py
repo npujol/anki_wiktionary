@@ -1,14 +1,15 @@
 import logging
 from typing import Any, Optional
 
-from app.data_processors.processors.base_data_processor import BaseDataProcessor
-from app.data_processors.processors.duden_data_processor import DudenDataProcessor
-from app.data_processors.processors.ollama_data_processor import OllamaDataProcessor
-from app.data_processors.processors.verben_data_processor import VerbenDataProcessor
-from app.data_processors.processors.wiktionary_data_processor import (
+from app.serializers import CustomNote
+
+from .processors import (
+    BaseDataProcessor,
+    DudenDataProcessor,
+    OllamaDataProcessor,
+    VerbenDataProcessor,
     WiktionaryDataProcessor,
 )
-from app.serializers import CustomNote
 
 PROCESSORS_MAP: dict[
     str,
@@ -19,7 +20,6 @@ PROCESSORS_MAP: dict[
     "duden": DudenDataProcessor(),
     "ollama": OllamaDataProcessor(),
 }
-logger: logging.Logger = logging.getLogger(name=__name__)
 
 
 class NoteDataProcessor:
@@ -30,8 +30,8 @@ class NoteDataProcessor:
     ) -> None:
         self.deck_name: str = deck_name
         self.model_name: str = model_name
+        self.logger: logging.Logger = logging.getLogger(name=__name__)
 
-    # TODO: Check if the dict info is complete.
     def get_anki_note(
         self, word: str, processor_name: Optional[str] = None
     ) -> CustomNote | None:
@@ -71,11 +71,15 @@ class NoteDataProcessor:
         updated_note = note
         for processor in PROCESSORS_MAP.values():
             if processor.__class__.__name__ == "OllamaDataProcessor":
-                logger.info(msg=f"Skipping {processor.__class__.__name__} processor.")
+                self.logger.info(
+                    msg=f"Skipping {processor.__class__.__name__} processor."
+                )
                 continue
             if processor.__class__.__name__ == "VerbenDataProcessor":
                 # TODO: Change VerbenDataProcessor to use CustomFields
-                logger.info(msg=f"Skipping {processor.__class__.__name__} processor.")
+                self.logger.info(
+                    msg=f"Skipping {processor.__class__.__name__} processor."
+                )
                 continue
 
             updated_note: CustomNote | None = processor.get_note_data(

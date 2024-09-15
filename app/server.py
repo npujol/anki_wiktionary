@@ -5,7 +5,7 @@ import socketserver
 from app.private_config import working_path
 
 PORT = 8000
-logger = logging.getLogger(name=__name__)
+logger: logging.Logger = logging.getLogger(name=__name__)
 Handler = http.server.SimpleHTTPRequestHandler
 
 

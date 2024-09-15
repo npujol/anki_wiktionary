@@ -1,14 +1,12 @@
 import json
-import logging
 from typing import Any, Iterator, Mapping
 
 from ollama import Client  # type: ignore
 
-from app.data_processors.processors.base_data_processor import BaseDataProcessor
 from app.private_config import ollama_server_url
 from app.serializers import CustomFields, CustomNote
 
-logger: logging.Logger = logging.getLogger(name=__name__)
+from .base_data_processor import BaseDataProcessor
 
 # TODO: Set up a config file to configure the prompts
 
@@ -19,6 +17,8 @@ class OllamaDataProcessor(BaseDataProcessor):
         self.model_name: str = model_name
         self.client = Client(host=ollama_server_url)
         self.fields_class = CustomFields
+
+        super().__init__()
 
     def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         prompts: dict[str, Any] = self._generate_content_from_scratch_prompts(
@@ -37,7 +37,7 @@ class OllamaDataProcessor(BaseDataProcessor):
             response: str | None = result.get("response")  # type: ignore
 
             if response is None:
-                logger.error(
+                self.logger.error(
                     msg=f"Could not fetch data for field '{key}' using Ollama."
                 )
                 continue
@@ -45,7 +45,7 @@ class OllamaDataProcessor(BaseDataProcessor):
                 json_content: dict[str, Any] = json.loads(s=response)  # type: ignore
                 content: str = "\n".join(str(v) for v in json_content.values())
             except json.JSONDecodeError as e:
-                logger.exception(msg=f"Using raw string, due to {e}.")
+                self.logger.exception(msg=f"Using raw string, due to {e}.")
                 content: str = response  # type: ignore
             fields[key] = content
 
@@ -80,7 +80,7 @@ class OllamaDataProcessor(BaseDataProcessor):
             json_content: dict[str, Any] = json.loads(s=response)  # type: ignore
             content = list(json_content.values())
         except json.JSONDecodeError as e:
-            logger.exception(msg=f"Using raw string, due to {e}.")
+            self.logger.exception(msg=f"Using raw string, due to {e}.")
             content = response  # type: ignore
         return content
 

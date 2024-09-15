@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.data_processors.processors.duden_data_processor import DudenDataProcessor
+from app.data_processors import DudenDataProcessor
 from app.serializers import CustomNote
 
 

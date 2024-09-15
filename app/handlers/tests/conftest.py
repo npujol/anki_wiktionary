@@ -1,21 +1,26 @@
-from typing import Any, Callable
+from typing import Any
 
 import pytest
 
-from app.anki_connectors.anki_local_connector import AnkiLocalConnector
-from app.anki_connectors.anki_web_connector import AnkiWebConnector
 from app.helpers import clean_request_body
-from app.serializers import CustomNote, Note
+
+from ...serializers.serializers import CustomNote, Note
+from ..anki_handler import AnkiHandler
 
 
 @pytest.fixture(scope="module")  # type: ignore
-def vcr_config() -> dict[str, Callable[..., Any]]:
+def vcr_config() -> dict[str, Any]:
     return {
         "before_record_request": clean_request_body(),
     }
 
 
 @pytest.fixture()
+def anki_handler() -> AnkiHandler:
+    return AnkiHandler()
+
+
+@pytest.fixture()  # type: ignore
 def note_data() -> dict[str, Any]:
     return {
         "deckName": "Test",
@@ -69,16 +74,6 @@ def note_obj(note_data: dict[str, Any]) -> Note:
 
 
 @pytest.fixture()
-def anki_local_connector() -> AnkiLocalConnector:
-    return AnkiLocalConnector()
-
-
-@pytest.fixture(scope="function")
-def anki_web_connector() -> AnkiWebConnector:
-    return AnkiWebConnector(username="username", password="password")
-
-
-@pytest.fixture()
 def custom_note_data() -> dict[str, Any]:
     return {
         "deckName": "Test",
@@ -108,7 +103,7 @@ def custom_note_data() -> dict[str, Any]:
     }
 
 
-@pytest.fixture
+@pytest.fixture()  # type: ignore
 def add_custom_note_request(custom_note_data: dict[str, Any]) -> dict[str, Any]:
     return {
         "action": "addNotes",

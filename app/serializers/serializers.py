@@ -4,6 +4,8 @@ from typing import Any, Callable, Optional, Self
 from deep_translator import GoogleTranslator  # type: ignore
 from pydantic import BaseModel, Field, ValidationError, computed_field, model_validator
 
+from app.audio import AudioHandler
+from app.helpers import to_valid_filename
 from app.html_processors import extract_ordered_text
 
 logger: logging.Logger = logging.getLogger(name=__name__)
@@ -244,4 +246,30 @@ class CustomNote(Note):
             return self
         except ValidationError as e:
             logger.exception(msg=f"Failed to import note from content: {e}")
+
             return None
+
+    async def add_audio(self) -> Self:
+        word = str(self.word)
+
+        audio_path = await AudioHandler().generate_audio(
+            text=str(word), language_code="de"
+        )
+        self.audio = [
+            AudioItem.model_validate(
+                obj={
+                    # This value is from the local server
+                    "url": str(audio_path),
+                    "filename": f"{to_valid_filename(word)}.mp3",
+                    "skipHash": "true",
+                    "fields": ["audio"],
+                }
+            )
+        ]
+
+        return self
+
+    def get_audio_url(self) -> str | None:
+        if self.audio:
+            return self.audio[0].url
+        return None
