@@ -31,7 +31,7 @@ class DudenDataProcessor(BaseDataProcessor):
         try:
             content: None | DudenWord = duden.get(word=word, cache=False)  # type: ignore
         except Exception as e:
-            logger.error(
+            self.logger.error(
                 msg=f"Could not fetch data for word '{word}' using Duden due to {e}."
             )
             return note

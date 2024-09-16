@@ -17,6 +17,7 @@ selenium = "*"
 pyvirtualdisplay = "*"
 ollama = "^0.2.0"
 duden = "*"
+genanki = "^0.13.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
