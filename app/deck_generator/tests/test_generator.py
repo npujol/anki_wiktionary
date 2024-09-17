@@ -10,7 +10,9 @@ def test_anki_deck_creator(temp_markdown_file: Path) -> None:
     deck_name = "TestDeck"
     content_path: Path = temp_markdown_file.parent
 
-    creator = AnkiDeckCreator(content_path=str(content_path), deck_name=deck_name)
+    creator = AnkiDeckCreator(
+        content_path=str(object=content_path), deck_name=deck_name
+    )
 
     out: str = creator.run()
 
