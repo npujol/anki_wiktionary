@@ -50,6 +50,6 @@ def _markdown_to_json(file: Path) -> list[BasicModelContent]:
 
         if not examples:
             continue  # Skip empty sections
-        result.append(BasicModelContent(front=subtitle, back="<hr>".join(examples)))
+        result.append(BasicModelContent(front=subtitle, back="<br><br>".join(examples)))
 
     return result
