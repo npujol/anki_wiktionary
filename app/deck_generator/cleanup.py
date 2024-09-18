@@ -30,7 +30,7 @@ def cleanup(s: str) -> str:
     """Clean up a string."""
     steps: list[Callable[..., str]] = [
         strip_spaces,
-        replace_with_italic,
         replace_with_bold,
+        replace_with_italic,
     ]
     return cleanup_pipeline(s=s, steps=steps)
