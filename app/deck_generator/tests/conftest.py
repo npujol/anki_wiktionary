@@ -4,6 +4,8 @@ from typing import Any, Generator
 
 import pytest
 
+from app.deck_generator import AnkiDeckUpdater
+from app.deck_generator.generator import AnkiDeckCreator
 from app.helpers import to_valid_filename
 
 # Sample markdown content for testing
@@ -45,3 +47,26 @@ def cleanup_deck_file() -> Generator[None, Any, None]:
     output_path = Path(deck_filename)
     if output_path.exists():
         os.remove(path=output_path)
+
+
+@pytest.fixture
+def tmp_content_path(tmp_path: Path) -> Path:
+    """Fixture to provide a temporary content path for markdown files."""
+    # Create a temporary markdown file in the temporary directory
+    content_path: Path = tmp_path / "content"
+    content_path.mkdir()
+
+    # Create a sample markdown file (simulate actual content)
+    sample_file: Path = content_path / "sample.md"
+    sample_file.write_text(data="# Sample Title\n\nSome content goes here.\n")
+
+    return content_path
+
+
+@pytest.fixture
+def tmp_deck_path(tmp_path: Path) -> Path:
+    """Fixture to provide a temporary path for the Anki deck."""
+    # Create a temporary Anki deck in the temporary directory
+
+    deck_path: str = AnkiDeckCreator(content_path=tmp_path, deck_name="TestDeck").run()
+    return Path(deck_path)
