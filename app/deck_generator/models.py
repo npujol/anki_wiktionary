@@ -1,6 +1,10 @@
-from typing import NamedTuple
+from typing import Any
 
 import genanki
+from anki.collection import Collection
+from anki.collection_pb2 import OpChangesWithId
+from anki.models import ModelManager
+from pydantic import BaseModel
 
 from .helpers import generate_random_id
 
@@ -55,7 +59,7 @@ font-size: 35px;
 """
 
 
-class BasicModel(NamedTuple):
+class BasicModel(BaseModel):
     name: str = "GeneratedBasicModel"
 
     def anki_fields(self) -> list[dict[str, str]]:
@@ -88,8 +92,28 @@ class BasicModel(NamedTuple):
             css=self.anki_ccs(),
         )
 
+    def to_anki_model(self, col: Collection, model_name: str) -> dict[str, Any]:
+        mm: ModelManager = col.models
 
-class BasicModelContent(NamedTuple):
+        custom_model: dict[str, Any] = mm.new(model_name)
+
+        mm.add_field(notetype=custom_model, field=mm.new_field(name="front"))
+        mm.add_field(notetype=custom_model, field=mm.new_field(name="back"))
+
+        custom_model["tmpls"] = [
+            {
+                "name": self.name,
+                "qfmt": BASIC_MODEL_FRONT_TEMPLATE,
+                "afmt": BASIC_MODEL_BACK_TEMPLATE,
+                "css": BASIC_MODEL_CSS,
+            }
+        ]
+
+        mm.add_dict(notetype=custom_model)
+        return custom_model
+
+
+class BasicModelContent(BaseModel):
     front: str
     back: str
     type: BasicModel = BasicModel()

@@ -8,7 +8,7 @@ from .models import BasicModelContent
 logger: logging.Logger = logging.getLogger(name=__name__)
 
 
-def markdown_to_json(content_path: Path) -> list[BasicModelContent]:
+def markdown_to_model_content(content_path: Path) -> list[BasicModelContent]:
     """Converts markdown files to json format."""
     result: list[BasicModelContent] = []
 
@@ -17,16 +17,16 @@ def markdown_to_json(content_path: Path) -> list[BasicModelContent]:
 
     if not content_path.is_dir():
         logger.info(msg="Converting single markdown file to json")
-        result += _markdown_to_json(file=content_path)
+        result += _markdown_to_model_content(file=content_path)
     else:
         logger.info(msg="Converting multiple markdown files to json")
         for file in content_path.glob(pattern="*.md"):
-            result += _markdown_to_json(file=file)
+            result += _markdown_to_model_content(file=file)
 
-    return list(set(result))
+    return list(result)
 
 
-def _markdown_to_json(file: Path) -> list[BasicModelContent]:
+def _markdown_to_model_content(file: Path) -> list[BasicModelContent]:
     """Converts a single markdown file to json format."""
     result: list[BasicModelContent] = []
 
