@@ -65,5 +65,7 @@
         "typings/",
         ".direnv/",
         "typings/ollama/"
-    ]
+    ],
+    "ruff.lineLength": 88,
+    "ruff.lint.run": "onSave"
 }
