@@ -34,7 +34,7 @@ class AnkiDeckUpdater:
             self.deck.models.remove(id=model["id"])
 
         self.deck.models.add(
-            notetype=BasicModel().to_anki_model(
+            notetype=BasicModel(name=self.deck_name).to_anki_model(
                 col=self.deck, model_name=self.deck_name
             )
         )

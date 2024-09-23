@@ -2,21 +2,22 @@ from typing import Any
 
 import genanki
 from anki.collection import Collection
-from anki.collection_pb2 import OpChangesWithId
 from anki.models import ModelManager
 from pydantic import BaseModel
 
 from .helpers import generate_random_id
 
+TO_REPLACE_MARK = "TO_REPLACE"
+
 BASIC_MODEL_FRONT_TEMPLATE = """
-<div id="rubric">GeneratedBasicModel</div>
+<div id="rubric">TO_REPLACE</div>
 <div id="front">
     {{front}}
 </div>
 """
 
 BASIC_MODEL_BACK_TEMPLATE = """
-<div id="rubric">GeneratedBasicModel</div>
+<div id="rubric">TO_REPLACE</div>
 <div id="front">
 {{front}}
 </div>
@@ -60,7 +61,7 @@ font-size: 35px;
 
 
 class BasicModel(BaseModel):
-    name: str = "GeneratedBasicModel"
+    name: str
 
     def anki_fields(self) -> list[dict[str, str]]:
         return [
@@ -72,8 +73,8 @@ class BasicModel(BaseModel):
         return [
             {
                 "name": self.name,
-                "qfmt": BASIC_MODEL_FRONT_TEMPLATE,
-                "afmt": BASIC_MODEL_BACK_TEMPLATE,
+                "qfmt": BASIC_MODEL_FRONT_TEMPLATE.replace("TO_REPLACE", self.name),
+                "afmt": BASIC_MODEL_BACK_TEMPLATE.replace("TO_REPLACE", self.name),
             },
         ]
 
@@ -116,7 +117,7 @@ class BasicModel(BaseModel):
 class BasicModelContent(BaseModel):
     front: str
     back: str
-    type: BasicModel = BasicModel()
+    type: BasicModel = BasicModel(name="BasicModel")
 
     def __str__(self) -> str:
         return f"Front: {self.front}, Back: {self.back}"
