@@ -18,7 +18,7 @@
         pkgs = import nixpkgs {
           inherit system;
         };
-        inherit (poetry2nix.lib.mkPoetry2Nix {inherit pkgs;}) mkPoetryApplication defaultPoetryOverrides;
+        inherit (poetry2nix.lib.mkPoetry2Nix {inherit pkgs;}) mkPoetryApplication overrides defaultPoetryOverrides;
       environment-variable = ''
         export BROWSERDRIVER_PATH=${pkgs.lib.getExe pkgs.geckodriver}
         export BROWSER_PATH=${pkgs.lib.getExe pkgs.firefox}
@@ -32,6 +32,7 @@
               pkgs.python312
               pkgs.poetry
               pkgs.act
+              
             ];
             shellHook = ''
               poetry env use ${pkgs.lib.getExe pkgs.python312}
@@ -47,6 +48,13 @@
             preferWheels = true;
             python = pkgs.python312;
             checkGroups = [];
+            overrides = overrides.withDefaults (final: prev: {
+                # Notice that using .overridePythonAttrs or .overrideAttrs won't work!
+               
+                anki = prev.anki.override {
+                  preferWheels = false;
+                };
+              });
           };
 
           # Use xvfb-run to run the bot in headless mode
