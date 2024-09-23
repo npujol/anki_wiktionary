@@ -11,6 +11,10 @@ logger: logging.Logger = logging.getLogger(name=__name__)
 
 def generate_deck(content_path: Path, deck_name: str) -> None:
     try:
+        logger.info(msg=f"Folder path: {content_path}")
+        logger.info(msg=f"Deck name: {deck_name}")
+
+        # Create deck
         handler = AnkiDeckCreator(content_path=content_path, deck_name=deck_name)
         out: str = handler.run()
         logger.info(msg=f"Deck exported to: {out}")

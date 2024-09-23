@@ -26,7 +26,12 @@ class AnkiDeckCreator:
     def create_deck(self) -> None:
         """Creates an Anki deck and model."""
         self.my_deck = genanki.Deck(deck_id=generate_random_id(), name=self.deck_name)
-        self.my_model: genanki.Model = BasicModel().to_genanki_model()
+        self.logger.info(
+            msg=f"Created deck name: {self.deck_name} with id: {self.my_deck.deck_id}"
+        )
+        self.my_model: genanki.Model = BasicModel(
+            name=self.deck_name
+        ).to_genanki_model()
 
     def validate_content_path(self) -> None:
         """Checks if the provided content path exists."""

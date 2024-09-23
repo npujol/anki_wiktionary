@@ -20,9 +20,15 @@ def markdown_to_model_content(content_path: Path) -> list[BasicModelContent]:
         result += _markdown_to_model_content(file=content_path)
     else:
         logger.info(msg="Converting multiple markdown files to json")
+        count = 0
         for file in content_path.glob(pattern="*.md"):
+            count += 1
+            logger.info(msg=f"Converting markdown file #{count}: {file}")
             result += _markdown_to_model_content(file=file)
 
+    logger.info(
+        msg=f"Converted {count} markdown files to length {len(result)} json notes."
+    )
     return list(result)
 
 
@@ -42,6 +48,7 @@ def _markdown_to_model_content(file: Path) -> list[BasicModelContent]:
 
         subtitle: str = cleanup(lines[0].replace("#", ""))  # Extract subtitle
         if subtitle == "---":
+            logger.info(msg="Skipping tags section")
             continue  # Skip tags section
 
         examples: list[str] = [
@@ -49,6 +56,7 @@ def _markdown_to_model_content(file: Path) -> list[BasicModelContent]:
         ]  # Extract examples
 
         if not examples:
+            logger.info(msg="Skipping empty section")
             continue  # Skip empty sections
         result.append(BasicModelContent(front=subtitle, back="<br><br>".join(examples)))
 
