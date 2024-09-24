@@ -32,11 +32,14 @@ jobs:
         # complete the environment variables
         envkey_ANKI_USER: ${{ secrets.ANKI_USER }}
         envkey_ANKI_PASS: ${{ secrets.ANKI_PASS }}
-        file_name: .env
+        file_name: compose.env
 
-    - name: Check .env file
+    - name: Check compose.env file
       run: |
-        cat .env
+        cat compose.env
 
-    - name: Test Project
-      run: nix develop --command bash -c "poetry install && poetry run pytest ."
+        jobs:
+
+    - name: Build and test the stack
+      run: |
+        COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker compose -f docker-compose.testing.yml up --build --abort-on-container-exit

@@ -1,0 +1,31 @@
+services:
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama_container
+    ports:
+      - "8000:8000" # Expose the Ollama service on port 8000
+    networks:
+      - app_network
+
+  app:
+    build:
+      context: .
+      args:
+        progress: plain
+      dockerfile: ./Dockerfile
+    env_file:
+      - path: compose.env
+        required: true # default
+    depends_on:
+      - ollama
+    ports:
+      - "8080:8080"
+    networks:
+      - app_network
+    command: >
+      pytest .
+
+networks:
+  app_network:
+    driver: bridge
