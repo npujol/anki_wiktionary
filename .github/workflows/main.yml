@@ -38,8 +38,6 @@ jobs:
       run: |
         cat compose.env
 
-        jobs:
-
     - name: Build and test the stack
       run: |
         COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker compose -f docker-compose.testing.yml up --build --abort-on-container-exit
