@@ -4,7 +4,6 @@ from typing import Any, Generator
 
 import pytest
 
-from app.deck_generator import AnkiDeckUpdater
 from app.deck_generator.generator import AnkiDeckCreator
 from app.helpers import to_valid_filename
 

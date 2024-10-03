@@ -68,14 +68,6 @@ class CustomDudenParser:
     @property
     def ipa(self) -> str | None:
         result: str | None = None
-        if (
-            hasattr(self.duden_word, "word_separation")
-            and self.duden_word.word_separation  # type: ignore
-        ):
-            result = flatten_and_stringify(
-                content=self.duden_word.word_separation,  # type: ignore
-                separator="|",
-            )
 
         if hasattr(self.duden_word, "phonetic") and self.duden_word.phonetic:  # type: ignore
             phonetic: str = flatten_and_stringify(content=self.duden_word.phonetic)  # type: ignore
