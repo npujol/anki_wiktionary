@@ -15,9 +15,9 @@ PROCESSORS_MAP: dict[
     str,
     BaseDataProcessor,
 ] = {
-    "wiktionary": WiktionaryDataProcessor(),
     "verben": VerbenDataProcessor(),
     "duden": DudenDataProcessor(),
+    "wiktionary": WiktionaryDataProcessor(),
     "ollama": OllamaDataProcessor(),
 }
 
