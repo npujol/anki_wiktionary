@@ -330,11 +330,11 @@ interactions:
         9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9
         12,14.9Z\"/>\n</svg>\n</a>\n<form class=\"rLinks\" id=\"wKpfEin\" action=\"/?w=Abend\">\n<div
         class=\"rEin rLinks\">\n<input autofocus=\"autofocus\" onfocus=\"this.setSelectionRange(0,
-        this.value.length)\" id=\"x8c3e0\" name=\"w\" type=\"search\" value=\"Abend\"
-        placeholder=\"\" title=\"\" autocomplete=\"off\" onkeydown=\"Eingabe.taste('x8c3e0','x8c3e0Liste',
-        event)\" oninput=\"Eingabe.an('x8c3e0','x8c3e0Liste',Woerterbuch.suchliste)\"
-        onblur=\"Eingabe.aus('x8c3e0','x8c3e0Liste')\"><br>\n<div class=\"rEinSlct\"
-        id=\"x8c3e0Liste\"></div>\n</div><button class=\"rLinks\" type=\"submit\"><svg
+        this.value.length)\" id=\"xa7d19\" name=\"w\" type=\"search\" value=\"Abend\"
+        placeholder=\"\" title=\"\" autocomplete=\"off\" onkeydown=\"Eingabe.taste('xa7d19','xa7d19Liste',
+        event)\" oninput=\"Eingabe.an('xa7d19','xa7d19Liste',Woerterbuch.suchliste)\"
+        onblur=\"Eingabe.aus('xa7d19','xa7d19Liste')\"><br>\n<div class=\"rEinSlct\"
+        id=\"xa7d19Liste\"></div>\n</div><button class=\"rLinks\" type=\"submit\"><svg
         fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"36\" viewBox=\"0 0 24 24\"
         width=\"36\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"
         ></path>\n</svg></button>\n<button class=\"rLinks\" type=\"submit\" formaction=\"/suche/?w=Abend\"><svg
@@ -409,8 +409,8 @@ interactions:
         <a href=\"/substantive/uebersetzungen/Abend.htm\">\xDCbersetzungen</a> und
         <a href=\"https://www.verbformen.de/deklination/substantive/Abend.htm\">Deklinationstabellen</a>.</p>\n<div
         class=\"rAbschnitt \"><div><!------------------- STECKBRIEF ------------------->\n<section
-        class=\"rBox rBoxWht \" id=\"xc4b98Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><div id=\"xc4b98\" class=\"rAufZu\">\n<div id=\"wStckLngImg\"
+        class=\"rBox rBoxWht \" id=\"x3a110Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        10px;\"></div><div id=\"x3a110\" class=\"rAufZu\">\n<div id=\"wStckLngImg\"
         class=\"rInf rKnpf rRechts rClrRechts rNoSelect\" onclick=\"Rahmen.aufzu('wStckLng');
         Rahmen.aufzu('wStckKrz');\">\n<svg fill=\"\" class=\"kIcn\" height=\"12\"
         viewBox=\"6 4 12 16\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
@@ -450,9 +450,9 @@ interactions:
         false);\"></div>\n</div>\n</div>\n<div class=\"rClear\" style=\"margin-top:
         10px; min-height: 1px\">\n</div>\n</section><div class=\"aAnz aArt rClear\"
         style=\"margin: 0 0 14px 0;\">\n<div id=\"verben.de_lb_1\"></div>\n</div>\n<section
-        class=\"rBox rBoxWht \" id=\"xd8928Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"x0b01cBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"xd8928Img\" onclick=\"Rahmen.alleaufzu('xd8928','rAufZu')\"><svg fill=\"\"
+        id=\"x0b01cImg\" onclick=\"Rahmen.alleaufzu('x0b01c','rAufZu')\"><svg fill=\"\"
         height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"m16.6 9.67-1.42-1.41l-3.2 3.14-3.17-3.14-1.42 1.41 4.59
         4.63m-4.59 5.8 1.42 1.41 3.17-3.17 3.17 3.17 1.41-1.41-4.58-4.59-4.59 4.59zm9.19-15.9l-1.42-1.41-3.17
@@ -460,7 +460,7 @@ interactions:
         13.8-3.17-3.17-1.41 1.41 4.58 4.59 4.59-4.59-1.42-1.41m-3.16-6.36 3.17 3.17
         1.41-1.41-4.58-4.59-4.59 4.59 1.42 1.41 3.17-3.17zm-0.01 15.2-3.17-3.17-1.41
         1.41 4.58 4.59 4.59-4.59-1.42-1.41\"></path>\n</svg>\n</button></nav>\n<header>\n<h2
-        class=\"wM rNt\">Bedeutungen</h2></header>\n<div id=\"xd8928\" class=\"rAufZu\">\n<dl
+        class=\"wM rNt\">Bedeutungen</h2></header>\n<div id=\"x0b01c\" class=\"rAufZu\">\n<dl
         class=\"wNrn\">\n<dd>\n<span class=\"wIdx\">a.</span><span><span class=\"rInf\"></span>die
         Tageszeit nach dem Nachmittag; dem Abend geht der Tag voran und auf den Abend
         folgt die Nacht; Abendstunde; Abendzeit; D\xE4mmerstunde</span>\n</dd>\n<dd>\n<span
@@ -479,13 +479,13 @@ interactions:
         xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
         1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"x514f2Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"x9cb94Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x514f2Img\" onclick=\"Rahmen.aufzu('x514f2')\"><svg fill=\"\" height=\"24\"
+        id=\"x9cb94Img\" onclick=\"Rahmen.aufzu('x9cb94')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM rNt\">Synonyme</h2></header>\n<div id=\"x514f2\" class=\"rAufZu\">\n<dl
+        class=\"wM rNt\">Synonyme</h2></header>\n<div id=\"x9cb94\" class=\"rAufZu\">\n<dl
         class=\"wNrn\">\n<dd>\n<span class=\"wIdx\">a.</span><span>&equiv;&nbsp;<a
         href=\"/substantive/Abendstunde.htm\">Abendstunde</a> &equiv;&nbsp;<a href=\"/substantive/Abendzeit.htm\">Abendzeit</a>
         &equiv;&nbsp;<a href=\"/substantive/Da3mmerstunde.htm\">D\xE4mmerstunde</a></span>\n</dd>\n<dd>\n<span
@@ -502,13 +502,13 @@ interactions:
         xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
         1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"x5553aBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"xcbfc3Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x5553aImg\" onclick=\"Rahmen.aufzu('x5553a')\"><svg fill=\"\" height=\"24\"
+        id=\"xcbfc3Img\" onclick=\"Rahmen.aufzu('xcbfc3')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM rNt\">Beispiels\xE4tze</h2></header>\n<div id=\"x5553a\" class=\"rAufZu\">\n<ul
+        class=\"wM rNt\">Beispiels\xE4tze</h2></header>\n<div id=\"xcbfc3\" class=\"rAufZu\">\n<ul
         class=\"rLst rLstGt\">\n<li style=\"margin-top: 4px;\">Es war <span class=\"wM\"><q>Abend</q></span>\n.<a
         class=\"rInf\" href=\"https://www.satzapp.de/?t=Es war Abend.\">&nbsp;<svg
         fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
@@ -585,23 +585,23 @@ interactions:
         d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354
         0.0354-7.39z\"></path>\n</svg></a>\n</div>\n<div class=\"rClear\" style=\"margin-top:
         10px; min-height: 1px\">\n</div>\n</section></div></div><div class=\"rInfo\"><section
-        class=\"rBox rBoxWht \" id=\"x38f8cBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"xa7223Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x38f8cImg\" onclick=\"Rahmen.aufzu('x38f8c')\"><svg fill=\"\" height=\"24\"
+        id=\"xa7223Img\" onclick=\"Rahmen.aufzu('xa7223')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM\">\xDCbersetzungen</h2></header>\n<div id=\"x38f8c\" class=\"rAufZu\">\n<dl
+        class=\"wM\">\xDCbersetzungen</h2></header>\n<div id=\"xa7223\" class=\"rAufZu\">\n<dl
         class=\"wNrn\" >\n<dd lang=\"en\"><span class=\"wLng\"><img loading=\"lazy\"
         title=\"Englisch\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\" width=\"13\"
         height=\"13\">&nbsp;</span><span>evening, eve, eventide, night</span></dd>\n</dl>\n<dl
         class=\"wNrn\">\n<dd lang=\"ru\"><span class=\"wLng\"><img loading=\"lazy\"
         title=\"Russisch\" alt=\"Russisch\"\nsrc=\"/bedeutungenweb/ru.svg\" width=\"13\"
         height=\"13\">&nbsp;</span><span>\u0432\u0435\u0447\u0435\u0440, \u0437\u0430\u043A\u0430\u0442,
-        \u0437\u0430\u043F\u0430\u0434, \u0434\u043E\u0431\u0440\u044B\u0439 \u0432\u0435\u0447\u0435\u0440,
         \u0432\u0435\u0447\u0435\u0440\u043D\u0435\u0435 \u0432\u0440\u0435\u043C\u044F
         \u0441\u0443\u0442\u043E\u043A, \u0442\u0451\u043C\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F
-        \u0441\u0443\u0442\u043E\u043A, \u0432\u0435\u0447\u0435\u0440\u043E\u043C,
+        \u0441\u0443\u0442\u043E\u043A, \u0437\u0430\u043F\u0430\u0434, \u0434\u043E\u0431\u0440\u044B\u0439
+        \u0432\u0435\u0447\u0435\u0440, \u0432\u0435\u0447\u0435\u0440\u043E\u043C,
         \u0432\u0435\u0447\u0435\u0440\u043D\u0438\u0439,<span class=\"rInf\"> ...</span></span></dd>\n<dd
         lang=\"es\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Spanisch\"
         alt=\"Spanisch\"\nsrc=\"/bedeutungenweb/es.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>noche,
@@ -688,13 +688,13 @@ interactions:
         xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
         1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"x54086Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"x8d091Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x54086Img\" onclick=\"Rahmen.aufzu('x54086')\"><svg fill=\"\" height=\"24\"
+        id=\"x8d091Img\" onclick=\"Rahmen.aufzu('x8d091')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wM\">Deklination</h2></header>\n<div id=\"x54086\" class=\"rAufZu\">\n<q
+        class=\"wM\">Deklination</h2></header>\n<div id=\"x8d091\" class=\"rAufZu\">\n<q
         class=\"wM\">Abend<u>s</u></q> &middot;\n<q class=\"wM\">Abend<u>e</u></q>\u2070<div
         class=\"wFlxs\">\n<div class=\"rLinks wFlx\">\n<h3 class=\"wM\">Singular</h3>\n<table><tr><td><q
         class=\"wM\">Abend</q></td></tr><tr><td><q class=\"wM\">Abend<u>s</u></q></td></tr><tr><td><q
@@ -709,12 +709,12 @@ interactions:
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><div
         class=\"aAnz aInf rClear\" style=\"margin: 0 0 14px 0;\">\n<div id=\"verben.de_sitebar_1\"></div>\n</div>\n</div>&nbsp;\n<div
         class=\"rClear\"></div>\n<div class=\"rAnkr rAnkrBox\" id=\"kommentare\"></div><section
-        class=\"rBox rBoxTrns \" id=\"x825e1Box\" >\n<nav class=\"rRechts\" >\n<button
-        class=\"rRechts rInf\" type=\"button\" id=\"x825e1Img\" onclick=\"Rahmen.aufzu('x825e1')\"><svg
+        class=\"rBox rBoxTrns \" id=\"x76e2eBox\" >\n<nav class=\"rRechts\" >\n<button
+        class=\"rRechts rInf\" type=\"button\" id=\"x76e2eImg\" onclick=\"Rahmen.aufzu('x76e2e')\"><svg
         fill=\"\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        onclick=\"Rahmen.aufzu('x825e1')\">Kommentare</h2></header>\n<div id=\"x825e1\"
+        onclick=\"Rahmen.aufzu('x76e2e')\">Kommentare</h2></header>\n<div id=\"x76e2e\"
         class=\"rAufZu\">\n<hr><p>\n<span class=\"rInf rKln\">2024/07 \xB7</span>
         \n<span class=\"rNoSelect rInf rKln\" onclick=\"Rahmen.aufzu('k4dfeeAnt')\">Antworten</span><br>\n<b>anmelden
         meint:</b> \u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439
@@ -723,7 +723,7 @@ interactions:
         \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439 \u0431\u0443\u0434\u0435\u0442
         \u043E\u043F\u0443\u0431\u043B\u0438\u043A\u043E\u0432\u0430\u043D.</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k4dfeeAnt\">\n<div class=\"kFrm\"
-        id=\"x71bd3\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x71bd3')\">\n<div
+        id=\"x693a1\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x693a1')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -738,8 +738,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k0d2c9Ant')\">Antworten</span><br>\n<span style=\"font-size:
         1.2em;\">\n<span class=\"kAn\">\u2605\u2605\u2605\u2605\u2605</span></span><b>fatma
         hassan meint:</b> i love it</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k0d2c9Ant\">\n<div class=\"kFrm\" id=\"xd369c\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xd369c')\">\n<div
+        id=\"k0d2c9Ant\">\n<div class=\"kFrm\" id=\"xa0c97\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xa0c97')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -754,7 +754,7 @@ interactions:
         onclick=\"Rahmen.aufzu('k83bf9Ant')\">Antworten</span><br>\n<b>Evelyne A meint:</b>
         \"Sich \xE4rgern an etwas\" ist doch mit Dativ, nicht mit Akkusativ, oder?</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k83bf9Ant\">\n<div class=\"kFrm\"
-        id=\"x9b1ee\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x9b1ee')\">\n<div
+        id=\"x93db1\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x93db1')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -772,7 +772,7 @@ interactions:
         \u0441\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F \u043E\u0431\u0443\u0432\u044C
         \u0434\u043B\u044F \u043F\u043E\u0432\u0441\u0435\u0434\u043D\u0435\u0432\u043D\u043E\u0441\u0442\u0438</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"keb29dAnt\">\n<div class=\"kFrm\"
-        id=\"x1ecd0\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x1ecd0')\">\n<div
+        id=\"x13c93\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x13c93')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -787,8 +787,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k4dd06Ant')\">Antworten</span><br>\n<b>YM meint:</b>
         \u0440\u0456\u0432\u0435\u043D\u044C \u043C\u043E\u0442\u043E\u0440\u043D\u043E\u0457
         \u043E\u043B\u0438\u0432\u0438</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k4dd06Ant\">\n<div class=\"kFrm\" id=\"x8af35\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x8af35')\">\n<div
+        id=\"k4dd06Ant\">\n<div class=\"kFrm\" id=\"x32a56\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x32a56')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -804,8 +804,8 @@ interactions:
         1.2em;\">\n<span class=\"kAn\">\u2605\u2605\u2605\u2605</span><span class=\"kAus\">\u2605</span>\n</span><b>Tetiana
         OBUKHOVA meint:</b> Erste Variante von \xDCbersetzung auf Ukrainisch ist Schimpfwort.
         Das ist deutlich falsch. </p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"kb1032Ant\">\n<div class=\"kFrm\" id=\"x40c53\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x40c53')\">\n<div
+        id=\"kb1032Ant\">\n<div class=\"kFrm\" id=\"x51008\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x51008')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -826,8 +826,8 @@ interactions:
         \u062F\u0627\u062F\u0646\nP.S. the adj. Section is okay.only change verb section\nz.b\njdn\_zu\_jdm/etw\_bescheiden\nto\_summon\_[or\_call]\_sb\_to\_sb/sth\n\u06A9\u0633\u06CC
         \u0631\u0627 \u0635\u062F\u0627 \u0632\u062F\u0646 \u06CC\u0627 \u062E\u0628\u0631
         \u06A9\u0631\u062F\u0646\n</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k17064Ant\">\n<div class=\"kFrm\" id=\"xe1e7f\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xe1e7f')\">\n<div
+        id=\"k17064Ant\">\n<div class=\"kFrm\" id=\"x689e2\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x689e2')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -842,8 +842,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k3ca1bAnt')\">Antworten</span><br>\n<b>stefan meint:</b>
         Proposition of a new word Wasserdampfwolke in Polish \"chmura parowa, chmura
         pary\"</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k3ca1bAnt\">\n<div
-        class=\"kFrm\" id=\"xcf079\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'xcf079')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"xd7a19\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'xd7a19')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -857,7 +857,7 @@ interactions:
         onclick=\"Rahmen.aufzu('kf0091Ant')\">Antworten</span><br>\n<b>stefan meint:</b>
         Kreisbahn in Polnisch ist auh Regionalbahn, \"koleje regionalne, kolej podmiejska\"</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"kf0091Ant\">\n<div class=\"kFrm\"
-        id=\"xd179b\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xd179b')\">\n<div
+        id=\"x1b644\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x1b644')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -877,7 +877,7 @@ interactions:
         \"\u043A\u0430\u0440\u0430\u0447\u043A\u0438, \u043A\u0430\u0440\u044F\u0447\u043A\u0438\"
         und \"\u043D\u0430\u043A\u0430\u0440\u044F\u0447\u043A\u0438\" hinzu.</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k841a7Ant\">\n<div class=\"kFrm\"
-        id=\"xf4276\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xf4276')\">\n<div
+        id=\"xcddd8\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xcddd8')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -892,8 +892,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k2ff4dAnt')\">Antworten</span><br>\n<b>Andrii meint:</b>
         F\xFCgen Sie bitte zu Ukrainisch das Wort \"\u043F\u0456\u0434\u0441\u043E\u043D\u043D\u044F\"
         hinzu. Danke.</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k2ff4dAnt\">\n<div
-        class=\"kFrm\" id=\"x80eaa\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x80eaa')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"x025f4\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'x025f4')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -910,8 +910,8 @@ interactions:
         \u0444\u0430\u043B\nder Fall - \u0440\u0443\u0441\u0441\u043A\u0438\u0439
         - \u0443\u043F\u0430\u043B, \u043F\u0430\u0434\u0435\u043D\u0438\u0435, \u0434\u0435\u043B\u043E,
         \u043D\u0435\u0443\u0434\u0430\u0447\u0430</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k7db59Ant\">\n<div class=\"kFrm\" id=\"xdee84\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xdee84')\">\n<div
+        class=\"rZu\" id=\"k7db59Ant\">\n<div class=\"kFrm\" id=\"x2d0dc\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x2d0dc')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -926,8 +926,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k8e1aeAnt')\">Antworten</span><br>\n<b>Mohamed@esaam
         meint:</b> I love this dictionary cuz it has a lot if important staff for
         anyone who's learning deutsch</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k8e1aeAnt\">\n<div class=\"kFrm\" id=\"xe8ebc\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xe8ebc')\">\n<div
+        id=\"k8e1aeAnt\">\n<div class=\"kFrm\" id=\"x94c75\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x94c75')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -941,8 +941,8 @@ interactions:
         class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k2fcecAnt')\">Antworten</span><br>\n<b>Stefan meint:</b>
         Polnishe \xDCbersetzung ist \"odyseiczny\".</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k2fcecAnt\">\n<div class=\"kFrm\" id=\"x646ec\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x646ec')\">\n<div
+        class=\"rZu\" id=\"k2fcecAnt\">\n<div class=\"kFrm\" id=\"xe715a\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xe715a')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -958,8 +958,8 @@ interactions:
         meint:</b> Im Sinn von Unsinn machen.\nMeine Mutter schrieb 1945: Ich habe
         lange nicht mehr gequackelt. Da wird es ja wieder einmal Zeit, von einem Baum
         zu fallen oder die Treppe herunter zu purzeln.</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"kbdbeaAnt\">\n<div class=\"kFrm\" id=\"x28756\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x28756')\">\n<div
+        class=\"rZu\" id=\"kbdbeaAnt\">\n<div class=\"kFrm\" id=\"x0371a\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x0371a')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -973,8 +973,8 @@ interactions:
         class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k5e65fAnt')\">Antworten</span><br>\n<b>Furkan meint:</b>
         ...</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k5e65fAnt\">\n<div
-        class=\"kFrm\" id=\"xc2b87\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'xc2b87')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"x0cbfa\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'x0cbfa')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -988,7 +988,7 @@ interactions:
         onclick=\"Rahmen.aufzu('ka9974Ant')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
         \u0421\u043E\u0432\u0456\u0441\u0442\u044C, \u0441\u0443\u043C\u043B\u0456\u043D\u043D\u044F</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"ka9974Ant\">\n<div class=\"kFrm\"
-        id=\"x964c0\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x964c0')\">\n<div
+        id=\"x0a9c3\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x0a9c3')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1002,8 +1002,8 @@ interactions:
         class=\"rInf rKln\">2023/11 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k40110Ant')\">Antworten</span><br>\n<b>Besher Ghanem
         meint:</b> Der Artikel von diesem Wort ist: DER</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k40110Ant\">\n<div class=\"kFrm\" id=\"x8a096\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x8a096')\">\n<div
+        class=\"rZu\" id=\"k40110Ant\">\n<div class=\"kFrm\" id=\"x4c128\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x4c128')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1018,7 +1018,7 @@ interactions:
         onclick=\"Rahmen.aufzu('k654c6Ant')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
         \u041C\u043E\u0436\u043B\u0438\u0432\u043E,  \u043C\u0430\u0431\u0443\u0442\u044C</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k654c6Ant\">\n<div class=\"kFrm\"
-        id=\"x2ca1b\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x2ca1b')\">\n<div
+        id=\"x4bc2b\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x4bc2b')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1034,7 +1034,7 @@ interactions:
         \u0440\u0435\u0433\u0443\u043B\u044F\u0440\u043D\u0456\u0441\u0442\u044C,
         \u0437\u0430\u043A\u043E\u043D\u043E\u043C\u0456\u0440\u043D\u0456\u0441\u0442\u044C</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"kadfe9Ant\">\n<div class=\"kFrm\"
-        id=\"x530cd\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x530cd')\">\n<div
+        id=\"xe2bfd\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xe2bfd')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1050,8 +1050,8 @@ interactions:
         \u043D\u0435\u0437\u043B\u0456\u0447\u0435\u043D\u043D\u0430 \u043A\u0456\u043B\u044C\u043A\u0456\u0441\u0442\u044C,
         \u0431\u0435\u0437\u043E\u0434\u043D\u044F, \u0432\u0435\u043B\u0438\u0447\u0435\u0437\u043D\u0430
         \u043C\u0430\u0441\u0430</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k70caeAnt\">\n<div
-        class=\"kFrm\" id=\"x57d29\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x57d29')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"x6d2a4\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'x6d2a4')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -1067,8 +1067,8 @@ interactions:
         \u0628\u0631\u0627\u06CC \u06A9\u0648\u062F\u06A9\u0627\u0646 \u0645\u062B\u0644\u0627
         \u062F\u0631 \u0645\u0631\u0627\u06A9\u0632 \u062E\u0631\u06CC\u062F \u06CC\u0627
         \u0641\u0631\u062F\u06AF\u0627\u0647 \u0648 \u2026 </p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"kb52c9Ant\">\n<div class=\"kFrm\" id=\"x82ee7\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x82ee7')\">\n<div
+        class=\"rZu\" id=\"kb52c9Ant\">\n<div class=\"kFrm\" id=\"x3c66b\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x3c66b')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1083,8 +1083,8 @@ interactions:
         onclick=\"Rahmen.aufzu('ke5bbdAnt')\">Antworten</span><br>\n<b>zystko meint:</b>
         \"an Bedeutung verlieren\" - ist das Dativ oder Akkusativ? K\xF6nnte mir jd
         weiterhelfen? Danke!</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"ke5bbdAnt\">\n<div
-        class=\"kFrm\" id=\"x6ae7c\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x6ae7c')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"x8c594\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'x8c594')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -1097,8 +1097,8 @@ interactions:
         class=\"rInf rKln\">2023/09 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k05cf9Ant')\">Antworten</span><br>\n<b>Lucia meint:</b>
         Espa\xF1ol: acelerado, inquieto (relativo a personalidad)</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k05cf9Ant\">\n<div class=\"kFrm\" id=\"xa7d38\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xa7d38')\">\n<div
+        class=\"rZu\" id=\"k05cf9Ant\">\n<div class=\"kFrm\" id=\"x96158\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x96158')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1113,7 +1113,7 @@ interactions:
         onclick=\"Rahmen.aufzu('k10c57Ant')\">Antworten</span><br>\n<b>Alex meint:</b>
         What is it at the top of the page?  -  Use of the English verb erinnern</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k10c57Ant\">\n<div class=\"kFrm\"
-        id=\"x5cee3\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x5cee3')\">\n<div
+        id=\"x2cba1\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x2cba1')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1128,8 +1128,8 @@ interactions:
         onclick=\"Rahmen.aufzu('ka2e91Ant')\">Antworten</span><br>\n<b>\u041F\u0435\u0440\u0435\u043A\u043B\u0430\u0434
         meint:</b> \u0438\u043D\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043B\u044C\u043D\u043E,
         \u043E\u043A\u0440\u0435\u043C\u0438\u0439</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"ka2e91Ant\">\n<div class=\"kFrm\" id=\"xef1ce\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xef1ce')\">\n<div
+        class=\"rZu\" id=\"ka2e91Ant\">\n<div class=\"kFrm\" id=\"x2cb7d\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x2cb7d')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1140,8 +1140,8 @@ interactions:
         class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
         name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Abend\">\n<input
         name=\"bezug\" type=\"hidden\" value=\"a2e91\">\n</form>\n</div></div>\n</div><div
-        class=\"kFrm\" id=\"x13c6f\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x13c6f')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"xb5738\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'xb5738')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -1239,7 +1239,7 @@ interactions:
         (<a href=\"https://www.verben.de/\">www.verben.de</a>)\"</em> mit Verlinkung
         auf <em>https://www.verben.de/</em> zu nennen. Mehr Informationen stehen in
         den <a rel=\"nofollow\" href=\"//www.netzverb.de/impressum.htm\">Nutzungsbedingungen</a>.</p>\n</div>\n<span
-        class=\"rInf rKln\">14 ms</span>\n<script type=\"application/ld+json\">{\n\"@context\":
+        class=\"rInf rKln\">16 ms</span>\n<script type=\"application/ld+json\">{\n\"@context\":
         \"http://schema.org\",\n\"@type\": \"WebSite\",\n\"url\": \"https://www.verben.de/\",\n\"potentialAction\":
         {\n\"@type\": \"SearchAction\",\n\"target\": \"https://www.verben.de/suche/?w={search_term_string}\",\n\"query-input\":
         \"required name=search_term_string\"\n},\n\"author\": { \"@id\": \"http://www.netzverb.de/\"
@@ -1264,14 +1264,14 @@ interactions:
       Content-Type:
       - text/html;charset=UTF-8
       Date:
-      - Sun, 15 Sep 2024 07:49:55 GMT
+      - Thu, 03 Oct 2024 14:24:07 GMT
       Keep-Alive:
       - timeout=5, max=100
       Server:
       - Apache
       Set-Cookie:
-      - de.netzverb.bedeutungen.helden.referenz=712d; Max-Age=31536000; Expires=Mon,
-        15 Sep 2025 07:49:55 GMT; Path=/
+      - de.netzverb.bedeutungen.helden.referenz=d21e; Max-Age=31536000; Expires=Fri,
+        03 Oct 2025 14:24:07 GMT; Path=/
       Strict-Transport-Security:
       - max-age=0
       Transfer-Encoding:
@@ -1299,13 +1299,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=A1+%C2%B7%0ASubstantiv+%C2%B7+maskulin+%C2%B7+regelm%C3%A4%C3%9Fig+%C2%B7+-s%2C+-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0It+was+evening.%0A%0A%C2%A0There%27s+noodles+tonight.%0A%0A%C2%A0I%27m+ordering+a+babysitter+in+the+evening.%0A%0A%C2%A0Sometimes+adventure+is+just+an+expensive+evening.
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Abend%0A%0A%0AA1+%C2%B7%0ASubstantiv+%C2%B7+maskulin+%C2%B7+regelm%C3%A4%C3%9Fig+%C2%B7+-s%2C+-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0It+was+evening.%0A%0A%C2%A0There%27s+noodles+tonight.%0A%0A%C2%A0I%27m+ordering+a+babysitter+in+the+evening.%0A%0A%C2%A0Sometimes+adventure+is+just+an+expensive+evening.
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"xvyAmPv89vaXKZ5x5JkSgA\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"cO6UPkgltj4Um85rFCQvuw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -1343,22 +1343,22 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=A1%20%C2%B7%0ASubstantiv%20%C2%B7%20maskulin%20%C2%B7%20regelm%C3%A4%C3%9Fig%20%C2%B7%20-s%2C%20-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0It%20was%20evening.%0A%0A%C2%A0There%27s%20noodles%20tonight.%0A%0A%C2%A0I%27m%20ordering%20a%20babysitter%20in%20the%20evening.%0A%0A%C2%A0Sometimes%20adventure%20is%20just%20an%20expensive%20evening.&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=A1%20%C2%B7%0ASubstantiv%20%C2%B7%20maskulin%20%C2%B7%20regelm%C3%A4%C3%9Fig%20%C2%B7%20-s%2C%20-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0It%20was%20evening.%0A%0A%C2%A0There%27s%20noodles%20tonight.%0A%0A%C2%A0I%27m%20ordering%20a%20babysitter%20in%20the%20evening.%0A%0A%C2%A0Sometimes%20adventure%20is%20just%20an%20expensive%20evening.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=A1%20%C2%B7%0Asustantivo%20%C2%B7%20masculino%20%C2%B7%20regular%20%C2%B7%20-s%2C%20-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0Era%20de%20noche.%0A%0A%C2%A0Esta%20noche%20hay%20fideos.%0A%0A%C2%A0Voy%20a%20pedir%20una%20ni%C3%B1era%20por%20la%20noche.%0A%0A%C2%A0A%20veces%20la%20aventura%20es%20s%C3%B3lo%20una%20velada%20cara.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%0A%0AA1%20%C2%B7%0ASubstantiv%20%C2%B7%20maskulin%20%C2%B7%20regelm%C3%A4%C3%9Fig%20%C2%B7%20-s%2C%20-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0It%20was%20evening.%0A%0A%C2%A0There%27s%20noodles%20tonight.%0A%0A%C2%A0I%27m%20ordering%20a%20babysitter%20in%20the%20evening.%0A%0A%C2%A0Sometimes%20adventure%20is%20just%20an%20expensive%20evening.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%0A%0AA1%20%C2%B7%0ASubstantiv%20%C2%B7%20maskulin%20%C2%B7%20regelm%C3%A4%C3%9Fig%20%C2%B7%20-s%2C%20-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0It%20was%20evening.%0A%0A%C2%A0There%27s%20noodles%20tonight.%0A%0A%C2%A0I%27m%20ordering%20a%20babysitter%20in%20the%20evening.%0A%0A%C2%A0Sometimes%20adventure%20is%20just%20an%20expensive%20evening.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Noche%0A%0A%0AA1%20%C2%B7%0Asustantivo%20%C2%B7%20masculino%20%C2%B7%20regular%20%C2%B7%20-s%2C%20-e%0A%0A%0A%0A%0A...%0A%0A%C2%A0Era%20de%20noche.%0A%0A%C2%A0Esta%20noche%20hay%20fideos.%0A%0A%C2%A0Voy%20a%20pedir%20una%20ni%C3%B1era%20por%20la%20noche.%0A%0A%C2%A0A%20veces%20la%20aventura%20es%20s%C3%B3lo%20una%20velada%20cara.&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"A1 \xB7\nSubstantiv
-        \xB7 maskulin \xB7 regelm\xE4\xDFig \xB7 -s, -e\n\n\n\n\n...\n\n\_It was evening.\n\n\_There&#39;s
-        noodles tonight.\n\n\_I&#39;m ordering a babysitter in the evening.\n\n\_Sometimes
-        adventure is just an expensive evening.\"><div class=\"translate-button-container\"><input
-        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
-        class=\"result-container\">A1 \xB7\nsustantivo \xB7 masculino \xB7 regular
-        \xB7 -s, -e\n\n\n\n\n...\n\n\_Era de noche.\n\n\_Esta noche hay fideos.\n\n\_Voy
-        a pedir una ni\xF1era por la noche.\n\n\_A veces la aventura es s\xF3lo una
-        velada cara.</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
-        home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Abend\n\n\nA1
+        \xB7\nSubstantiv \xB7 maskulin \xB7 regelm\xE4\xDFig \xB7 -s, -e\n\n\n\n\n...\n\n\_It
+        was evening.\n\n\_There&#39;s noodles tonight.\n\n\_I&#39;m ordering a babysitter
+        in the evening.\n\n\_Sometimes adventure is just an expensive evening.\"><div
+        class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
+        class=\"translate-button\"></div></form></div><div class=\"result-container\">Noche\n\n\nA1
+        \xB7\nsustantivo \xB7 masculino \xB7 regular \xB7 -s, -e\n\n\n\n\n...\n\n\_Era
+        de noche.\n\n\_Esta noche hay fideos.\n\n\_Voy a pedir una ni\xF1era por la
+        noche.\n\n\_A veces la aventura es s\xF3lo una velada cara.</div><div class=\"links-container\"><ul><li><a
+        href=\"https://www.google.com/m?hl=en-US\">Google home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
         feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
         and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
     headers:
@@ -1373,7 +1373,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-HsoQxl-JT74iCYec6BK9pA' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-u81hxq1D8iXrPzwLboldog' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -1383,7 +1383,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:49:56 GMT
+      - Thu, 03 Oct 2024 14:24:08 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -1396,8 +1396,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=O7KrLTvkMWtMntIoMFyFQkvmrwotMLY_OMPqdUapbZNfg-wYPcX-NP1r06dcXudY2rMdp6-URI1HIcXUGfoSvD-XuB3r-dbDfv5nd-4d0V4FDcbbXf4HnaRK_nof6K3RzIU8AbVid4rx4rpN9gZTiTWVdZQtb4jEVzIJVtnYjd4cgF2fitjgqdwAkNo;
-        expires=Thu, 16-Oct-2025 00:08:13 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=KGAEKppluGGZFGCLqYJmqbBDypFd184V5XYeCmU1HMvM169qrT4gYfDgyinzGh9FJymVtI7_y6X0yB4MdylP44ELxuqS7zNyw2AQubdqLBqO-lMkyIQ3R69XH0kaWB_Y3IWr2O8BlSTpXr1f_gCl5VtouB_RoGbY1GbkM-Vcl6oljIQQBVhto0wS0sM;
+        expires=Mon, 03-Nov-2025 06:42:26 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -1410,7 +1410,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQF8eSxbO2swm86AhWUkvKL4wvKUrMK85JLEnVLU9NKk4tKkstijcyMDIxsDQ01DMwjy8wBADU0i6S"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XB0XPq1nU2g48yfqYxKakn5hfElRYl5xTmJJam65alJxalFZalF8UYGRiaGBgaGegYW8QUGAKIGLGA"
     status:
       code: 200
       message: OK
@@ -1432,7 +1432,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"y-pMkcqkul4y26d9jnOqdQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"rLtlImcS_mJ5CMFgDpg8aA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -1495,9 +1495,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-X5VgutBm8jZimxDLAbLTCw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-9cWc6nfn-pFpBX4f-dZ0kw' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -1505,7 +1505,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:49:57 GMT
+      - Thu, 03 Oct 2024 14:24:08 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -1518,8 +1518,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=O1YEjiqSJbkOVfKkM7_R9tyEGtZ1YPJCL1buLDPPeIsnKkhUst0MKUpKdp5XMcAlWaxQSCQJHXOmjqGUY9OhYSHUiy69oCNRty1vYEdKz_Czb1xUUxhNiskmJBQHpPla6BV2607snhDyjzeAvyDVxuXrybRzNQZrRmz32XWmDbM8oTDeJ6FOWYpYaQ;
-        expires=Thu, 16-Oct-2025 00:08:15 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=j6e562Wu5JWwWESn97b_LpYKR97KNNHbVFCD36pQierjUnM_0lpXGm3WuV-3AZVcqPHbv0QI__xtX8fiz-5-nvc4zheuJs5obXSDeiscufCDb7Sf2k6ODB_9scyzm7peoggzKV_jENLILgEXXdedpuzuGeYZHLAAUeLuDHdGKST_AshpMBGoCDFmpQ;
+        expires=Mon, 03-Nov-2025 06:42:26 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -1532,7 +1532,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8fSxbO2swksmNX3lElJLSm_ML6kKDGvOCexJFW3PDWpOLWoLLUo3sjAyMTA0tBQz8A8vsAQAD5fL4E"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw15BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XB0XPq1nU1gw4oJy5iU1JLyC-NLihLzinMSS1J1y1OTilOLylKL4o0MjEwMDQwM9Qws4gsMAI5VK_4"
     status:
       code: 200
       message: OK
@@ -1554,7 +1554,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"cp2hWPimorPY46zbvESNNg\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"1RdxJUl-LRiA2VLi_iKnTA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -1617,9 +1617,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-gxjaD_ZaRGJu1V_S36QHPA' 'unsafe-inline';object-src 'none';base-uri
-        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-g-AxT2VhhloZNY2EfFKIdw' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -1627,7 +1627,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:49:58 GMT
+      - Thu, 03 Oct 2024 14:24:08 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -1640,8 +1640,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=SybbyjFLLYCKIUwB-h0uPX6ZRf7UOb08_XmDp6xI9MicTW-KdkU-cri-bQvGDHUEtNZAdbVOwnDOPXpzboVx9umes21pHfqgFjP8q01mwXifjxVYCPxgm1_WacY2-yn2O0mynkLLWDqQ4Xxfi4xezbu78U_UNZ1fu6uMMSVa6BZ6537mlGJXDv-eWDE;
-        expires=Thu, 16-Oct-2025 00:08:16 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=LcJU59AGRkYINfKRfiB41uYlSqdl9QG4_ILdawndRo5sxXYc6yVzOFB2lSV1ipcxH0rWqKYFdbmqcU8S0f2Qzu3fmB6wbT4uFEe_1aJsKMod60sZFVtrcKhaIkCxdJFTWed5NxNh2pvVBe7R-lApRcswl6JTyuVj6HObN_j3CfhYfuqCz_i3WnXr9A;
+        expires=Mon, 03-Nov-2025 06:42:26 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -1654,7 +1654,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw0pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8eyxbO2swl8-PNoIbOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAGAdMEQ"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw15BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XB0XPq1nU1gQcOtKcxKakn5hfElRYl5xTmJJam65alJxalFZalF8UYGRiaGBgaGegYW8QUGAJHYLAc"
     status:
       code: 200
       message: OK

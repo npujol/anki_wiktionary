@@ -93,7 +93,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sun, 15 Sep 2024 07:51:45 GMT
+      - Thu, 03 Oct 2024 14:24:32 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -101,14 +101,14 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-79cbd6dc7f-tkmwp
+      - mw-api-ext.eqiad.main-7547c4c79f-p8fcr
       server-timing:
       - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=15-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 17 Oct 2024
-        00:00:00 GMT
-      - WMF-Last-Access-Global=15-Sep-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
-        17 Oct 2024 00:00:00 GMT
+      - WMF-Last-Access=03-Oct-2024;Path=/;HttpOnly;secure;Expires=Mon, 04 Nov 2024
+        12:00:00 GMT
+      - WMF-Last-Access-Global=03-Oct-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Mon,
+        04 Nov 2024 12:00:00 GMT
       - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
       strict-transport-security:
@@ -142,13 +142,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+durchl%C3%A4ssig%2C+nicht+dicht%0A++++%5B2%5D+mangelhaft+befestigt%2C+wackelig%0A++++%5B3%5D+leichtfertig%2C+ohne+sittlichen+Halt%2C+mit+vielen+Freiheiten%0A++++%5B4%5D+nicht+mehr+unter+Spannung%0A++++%5B5%5D+l%C3%A4ssig%2C+unkompliziert
+    uri: https://translate.google.com/m?tl=es&sl=de&q=locker%0A%5B1%5D+durchl%C3%A4ssig%2C+nicht+dicht%0A++++%5B2%5D+mangelhaft+befestigt%2C+wackelig%0A++++%5B3%5D+leichtfertig%2C+ohne+sittlichen+Halt%2C+mit+vielen+Freiheiten%0A++++%5B4%5D+nicht+mehr+unter+Spannung%0A++++%5B5%5D+l%C3%A4ssig%2C+unkompliziert
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"WYgO9hqLN61eSPnjjAUfng\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"W0Gfy-Me6Qs_YHbJtRAqWQ\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -186,19 +186,19 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20durchl%C3%A4ssig%2C%20nicht%20dicht%0A%20%20%20%20%5B2%5D%20mangelhaft%20befestigt%2C%20wackelig%0A%20%20%20%20%5B3%5D%20leichtfertig%2C%20ohne%20sittlichen%20Halt%2C%20mit%20vielen%20Freiheiten%0A%20%20%20%20%5B4%5D%20nicht%20mehr%20unter%20Spannung%0A%20%20%20%20%5B5%5D%20l%C3%A4ssig%2C%20unkompliziert&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20durchl%C3%A4ssig%2C%20nicht%20dicht%0A%20%20%20%20%5B2%5D%20mangelhaft%20befestigt%2C%20wackelig%0A%20%20%20%20%5B3%5D%20leichtfertig%2C%20ohne%20sittlichen%20Halt%2C%20mit%20vielen%20Freiheiten%0A%20%20%20%20%5B4%5D%20nicht%20mehr%20unter%20Spannung%0A%20%20%20%20%5B5%5D%20l%C3%A4ssig%2C%20unkompliziert&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20permeable%2C%20no%20apretado%0A%20%20%20%20%5B2%5D%20mal%20fijado%2C%20tambaleante%0A%20%20%20%20%5B3%5D%20fr%C3%ADvolo%2C%20sin%20apoyo%20moral%2C%20con%20muchas%20libertades%0A%20%20%20%20%5B4%5D%20ya%20no%20est%C3%A1%20bajo%20tensi%C3%B3n%0A%20%20%20%20%5B5%5D%20informal%2C%20sin%20complicaciones&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=locker%0A%5B1%5D%20durchl%C3%A4ssig%2C%20nicht%20dicht%0A%20%20%20%20%5B2%5D%20mangelhaft%20befestigt%2C%20wackelig%0A%20%20%20%20%5B3%5D%20leichtfertig%2C%20ohne%20sittlichen%20Halt%2C%20mit%20vielen%20Freiheiten%0A%20%20%20%20%5B4%5D%20nicht%20mehr%20unter%20Spannung%0A%20%20%20%20%5B5%5D%20l%C3%A4ssig%2C%20unkompliziert&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=locker%0A%5B1%5D%20durchl%C3%A4ssig%2C%20nicht%20dicht%0A%20%20%20%20%5B2%5D%20mangelhaft%20befestigt%2C%20wackelig%0A%20%20%20%20%5B3%5D%20leichtfertig%2C%20ohne%20sittlichen%20Halt%2C%20mit%20vielen%20Freiheiten%0A%20%20%20%20%5B4%5D%20nicht%20mehr%20unter%20Spannung%0A%20%20%20%20%5B5%5D%20l%C3%A4ssig%2C%20unkompliziert&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=perder%0A%5B1%5D%20permeable%2C%20no%20apretado%0A%20%20%20%20%5B2%5D%20mal%20fijado%2C%20tambaleante%0A%20%20%20%20%5B3%5D%20fr%C3%ADvolo%2C%20sin%20apoyo%20moral%2C%20con%20muchas%20libertades%0A%20%20%20%20%5B4%5D%20ya%20no%20est%C3%A1%20bajo%20tensi%C3%B3n%0A%20%20%20%20%5B5%5D%20informal%2C%20sin%20complicaciones&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] durchl\xE4ssig,
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"locker\n[1] durchl\xE4ssig,
         nicht dicht\n    [2] mangelhaft befestigt, wackelig\n    [3] leichtfertig,
         ohne sittlichen Halt, mit vielen Freiheiten\n    [4] nicht mehr unter Spannung\n
         \   [5] l\xE4ssig, unkompliziert\"><div class=\"translate-button-container\"><input
         type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
-        class=\"result-container\">[1] permeable, no apretado\n    [2] mal fijado,
-        tambaleante\n    [3] fr\xEDvolo, sin apoyo moral, con muchas libertades\n
+        class=\"result-container\">perder\n[1] permeable, no apretado\n    [2] mal
+        fijado, tambaleante\n    [3] fr\xEDvolo, sin apoyo moral, con muchas libertades\n
         \   [4] ya no est\xE1 bajo tensi\xF3n\n    [5] informal, sin complicaciones</div><div
         class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
         home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
@@ -216,9 +216,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-SaIwJ6OJoC1Do1xSuQiBFg' 'unsafe-inline';object-src 'none';base-uri
-        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-UO0uAvGyEel6NoU5vq5wOA' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -226,7 +226,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:45 GMT
+      - Thu, 03 Oct 2024 14:24:33 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -239,8 +239,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=fmqYaLqdfKyva6qgig1K17ig5ts1PlZTtbD3AucSEkHAmCJywmkCt7jhEWo4WkQrTeRbNK1cGrj-W0-N2fsJgadUPKNsQw5r99u9m9-OGFhHiaABK_nTVtFjiNh_cy77Cwf3atCXDocdC_MDQc5rBxpKBEBa_jTC4mWmfWvwvOnnM32KXNjJuaVCSoM;
-        expires=Thu, 16-Oct-2025 00:10:03 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=lmJGBqfWtKd5HPP9rs2fz4-xj9TMlvdNV75sSfAWv1HvxDmMCYKJ_zCxaIZb9gjX4bamzThHqpoCD7p-jbyyxiWmkWbJq8jyL_YUFswp_6MthesQOg1FbKUt_xEMt-Ebbja7cEsCT5rVvnQe5goOHe5Ef62ep1am7D_-lRD3gV35AUUzNeNB4Gv2nQ;
+        expires=Mon, 03-Nov-2025 06:42:51 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -253,7 +253,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8fEJbO2swlMuHZnEpOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAEGRL5U"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XAsvPRrO5vAhLbln5iU1JLyC-NLihLzinMSS1J1y1OTilOLylKL4o0MjEwMDQwM9Qws4gsMAJifLDk"
     status:
       code: 200
       message: OK
@@ -275,7 +275,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"qYwE_BZQi_1T-R3j9Y8LMA\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"wWY4gNF7A0lkqvFabcRvHw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -338,9 +338,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-PcqcDIv9XjSBW4yi_ZvVtw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-6IBlbYiuHS7w-nFJSjzl9w' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -348,7 +348,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:47 GMT
+      - Thu, 03 Oct 2024 14:24:36 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -361,8 +361,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=EhLnS8gyOlwWUKYrY06yqoSmuGRqbaI_PRYbdD7zsprmkiQMXTI8F5u0UXnitTDUgOTDWTUPITtKCLiV8MeRpSkbxukOTG52gDhGky7Y1Wtln4ayoothRQ3yMhAP6enEvYeMkaqYp6FG3OTr7U9DySccr-pV3k84gvOalfBd-FwP27GRkHC88s8kNXw;
-        expires=Thu, 16-Oct-2025 00:10:05 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=k2-D_KQqSyJ8_sWqNjA1PcJ9rqG4-1g3zSpmsHeI4-ciVZJOKN5qrNyuUYpBvRM-Jl0Hk6zhhk-rzYUxQgkpGNszJxVzUNP11M-VHqpgW1ao8VANkrMhpLDpFFO7vfM4Ft5MroC-8Fio8l6xmUJHLOm_XTrBApp5H0vudRRMUxkSKyzQjXEHhYA39gk;
+        expires=Mon, 03-Nov-2025 06:42:54 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -375,7 +375,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8fkJbO2swnceLfzKKOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAFYHMAg"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII1JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XAsufRrO5vAg9bbc5mU1JLyC-NLihLzinMSS1J1y1OTilOLylKL4o0MjEwMDQwM9Qws4gsMAKXoLHM"
     status:
       code: 200
       message: OK
@@ -397,7 +397,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"8Y0DdHqLCCvaSTTIm23BNA\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"gUxnLUT2R761PqFVs_m2iA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -461,9 +461,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-mJLG-cAocEbVb8O8v1L48w' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-CJ0w7lgFWZyoCr_WDyqvPg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -471,7 +471,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:48 GMT
+      - Thu, 03 Oct 2024 14:24:37 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -484,8 +484,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=kYasmH4WHolPbre9Jwm4xR0tvvexjgJybRq1PCJIZYg9sTzQG_7mkfpaYloTKGIqxiLBQu47oEvyT21pYfV_IFMjs1ecZhxBM6UxKoH5yT8GeCPI2J8j2bvuT0MWrd-8ZP_MPpsRpByo7LoWG0rhD6p_-wW9dOIUKtXBnBANE8HfEGblvKIKOlTGQzw;
-        expires=Thu, 16-Oct-2025 00:10:06 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=eL-7nZVZ3edkuAmKpuGxsEGQEPfM-2nSWaER96hGqLZ6A44At7G4_RBynXQU8LvOdkqUnTOGzBoGU-pK4-uFK3CONwJ4h4IotSARTXw5skbyW0mxaw3I6sj1helvDUItr2Kb211vb6SK7fJPbmQYu7JvW5qUzzLE0fmGGfRzqo-s3yehFTUndHuXQwE;
+        expires=Mon, 03-Nov-2025 06:42:55 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -498,7 +498,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8eUJbO2swmsWPB6MaOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAESiL54"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XAsvfRrO5vAhYvLtzErqSXlF8aXFCXmFecklqTqlqcmFacWlaUWxRsZGJkYGhgY6hlYxBcYAACqjCyT"
     status:
       code: 200
       message: OK

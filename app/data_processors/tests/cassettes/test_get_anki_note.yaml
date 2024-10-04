@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
     uri: https://de.wiktionary.org/w/api.php?action=parse&page=Abend&prop=wikitext&format=json
   response:
@@ -52,27 +52,27 @@ interactions:
         ''''nach Inhalt, Programm, Gestaltung:'''' [[Badeabend]], [[Ballettabend]],
         [[Begr\u00fc\u00dfungsabend]], [[Bierabend]], [[B\u00fcrgerabend]], [[Chansonabend]],
         [[Damenabend]], [[Diaabend]], [[Diskussionsabend]], [[Elternabend]], [[Er\u00f6ffnungsabend]],
-        [[Fernsehabend]], [[Festabend]], [[Filmabend]], [[Flitterabend]], [[Frauenabend]],
-        [[Frostabend]], [[Fu\u00dfballabend]], [[Galaabend]], [[Gala-Abend]], [[Gedenkabend]],
-        [[Gesellschaftsabend]], [[Gespr\u00e4chsabend]], [[Gewitterabend]], [[Heimatabend]],
-        [[Herrenabend]], [[Heurigenabend]], [[H\u00fcttenabend]], [[Infoabend]], [[Informationsabend]],
-        [[Kammermusikabend]], [[Kampfabend]], [[Kappenabend]], [[Klavierabend]], [[Klubabend]],
-        [[Kneipabend]], [[Konzertabend]], [[Leseabend]], [[Liederabend]], [[Literaturabend]],
-        [[Musikabend]], [[Operettenabend]], [[Opernabend]], [[Polterabend]], [[Premierenabend]],
-        [[Schulungsabend]], [[Skatabend]],  [[Soloabend]], [[Spieleabend]], [[Tanzabend]],
-        [[Tatabend]], [[Theaterabend]], [[Themenabend]], [[Vereinsabend]], [[Videoabend]],
-        [[Vortragsabend]], [[Wahlabend]], [[Weinabend]]\n\n{{Beispiele}}\n:[1] \u201eEines
-        ''''Abends'''', als sie so vertraulich beisammensa\u00dfen, klopfte jemand
-        an die T\u00fcre, als wollte er eingelassen sein.\u201c<ref>{{Literatur |
-        Autor= | Titel=Die Kinder- und Hausm\u00e4rchen der Br\u00fcder Grimm | Verlag=Der
-        KinderbuchVerlag| Ort= |Jahr=2003 | ISBN=978-3358000175 |Seiten=375 |Kommentar=Schneeweisschen
-        und Rosenrot}}</ref>\n:[1] Gegen ''''Abend'''' werden wir uns sehen.\n:[1]
-        Wenn es gestern ''''Abend'''' nicht geklappt hat, dann wird es vielleicht
-        heute ''''Abend'''' oder sp\u00e4testens morgen ''''Abend'''' etwas.\n:[1]
-        Es ist zu fr\u00fch, \u201eguten ''''Abend''''\u201c zu sagen.\n:[2] \u201eDies
-        sind die Namen der St\u00e4mme: von Mitternacht, an dem Wege nach Hethlon,
-        gen Hamath und Hazar-Enon und von Damaskus gegen Hamath, das soll Dan f\u00fcr
-        seinen Teil haben von Morgen bis gen ''''Abend''''.\u201c<ref>bibel-online.net:
+        [[Familienabend]], [[Fernsehabend]], [[Festabend]], [[Filmabend]], [[Flitterabend]],
+        [[Frauenabend]], [[Frostabend]], [[Fu\u00dfballabend]], [[Galaabend]], [[Gala-Abend]],
+        [[Gedenkabend]], [[Gesellschaftsabend]], [[Gespr\u00e4chsabend]], [[Gewitterabend]],
+        [[Heimatabend]], [[Herrenabend]], [[Heurigenabend]], [[H\u00fcttenabend]],
+        [[Infoabend]], [[Informationsabend]], [[Kammermusikabend]], [[Kampfabend]],
+        [[Kappenabend]], [[Klavierabend]], [[Klubabend]], [[Kneipabend]], [[Konzertabend]],
+        [[Leseabend]], [[Liederabend]], [[Literaturabend]], [[Musikabend]], [[Operettenabend]],
+        [[Opernabend]], [[Polterabend]], [[Premierenabend]], [[Schulungsabend]], [[Skatabend]],  [[Soloabend]],
+        [[Spieleabend]], [[Tanzabend]], [[Tatabend]], [[Theaterabend]], [[Themenabend]],
+        [[Vereinsabend]], [[Videoabend]], [[Vortragsabend]], [[Wahlabend]], [[Weinabend]]\n\n{{Beispiele}}\n:[1]
+        \u201eEines ''''Abends'''', als sie so vertraulich beisammensa\u00dfen, klopfte
+        jemand an die T\u00fcre, als wollte er eingelassen sein.\u201c<ref>{{Literatur
+        | Autor= | Titel=Die Kinder- und Hausm\u00e4rchen der Br\u00fcder Grimm |
+        Verlag=Der KinderbuchVerlag| Ort= |Jahr=2003 | ISBN=978-3358000175 |Seiten=375
+        |Kommentar=Schneeweisschen und Rosenrot}}</ref>\n:[1] Gegen ''''Abend''''
+        werden wir uns sehen.\n:[1] Wenn es gestern ''''Abend'''' nicht geklappt hat,
+        dann wird es vielleicht heute ''''Abend'''' oder sp\u00e4testens morgen ''''Abend''''
+        etwas.\n:[1] Es ist zu fr\u00fch, \u201eguten ''''Abend''''\u201c zu sagen.\n:[2]
+        \u201eDies sind die Namen der St\u00e4mme: von Mitternacht, an dem Wege nach
+        Hethlon, gen Hamath und Hazar-Enon und von Damaskus gegen Hamath, das soll
+        Dan f\u00fcr seinen Teil haben von Morgen bis gen ''''Abend''''.\u201c<ref>bibel-online.net:
         [http://bibel-online.net/buch/luther_1912/hesekiel/48/ Hesekiel - Kapitel
         48]</ref>\n:[2] \u201eDer Hof steht am \u00f6stlichen Ausl\u00e4ufer einer
         schmalen Gel\u00e4nderippe, die sich in der Ausdehnung einer halben Wegstunde
@@ -158,26 +158,26 @@ interactions:
         [[Abendgestaltung]], [[Abendgestirn]], [[Abendgew\u00f6lk]], [[Abendglanz]],
         [[Abendglocke]], [[Abendglut]], [[Abendgold]], [[Abendgottesdienst]], [[Abendgr\u00fcne]],
         [[Abendgru\u00df]], [[Abendgymnasium]], [[Abendhaube]], [[Abendhauch]], [[Abendhauptschule]],
-        [[Abendherr]], [[Abendhimmel]], [[Abendhochschule]], [[Abendimbiss]], [[Abendjagd]],
-        [[Abendjournal]], [[Abendkarte]], [[Abendkasse]], [[Abendkauf]], [[Abendklar]],
-        [[Abendklasse]], [[Abendkleid]], [[Abendkleidung]], [[Abendkollation]], [[Abendkonferenz]],
-        [[Abendkonzert]], [[Abendkost]], [[Abendkreis]], [[Abendk\u00fchle]], [[Abendkurs]],
-        [[Abendkursus]], [[Abendkuss]], [[Abendland]], [[Abendl\u00e4nder]], [[Abendlandschaft]],
-        [[Abendl\u00e4rm]], [[Abendlauf]], [[Abendl\u00e4uten]], [[Abendlehrgang]],
-        [[Abendlekt\u00fcre]], [[Abendlicht]], [[Abendlied]], [[Abendluft]], [[Abendl\u00fcftchen]],
-        [[Abendlust]], [[Abendmagazin]], [[Abendmahl]], [[Abendmahlzeit]], [[Abendmantel]],
-        [[Abendm\u00e4rchen]], [[Abendmarkt]], [[Abendmaschine]], [[Abendmatura]],
-        [[Abendmeeting]], [[Abendmeisterschule]], [[Abendmeldung]], [[Abendmelodie]],
-        [[Abendmen\u00fc]], [[Abendmesse]], [[Abendmode]], [[Abendmusik]], [[Abendnachricht]],
-        [[Abendnachrichten]], [[Abendnebel]], [[Abendoberschule]], [[Abend\u00f6ffnung]],
-        [[Abendopfer]], [[Abendpfauenauge]], [[Abendpfeifchen]], [[Abendpfeife]],
-        [[Abendpl\u00e4tzchen]], [[Abendpost]], [[Abendpracht]], [[Abendprediger]],
-        [[Abendpredigt]], [[Abendpresse]], [[Abendprobe]], [[Abendprogramm]], [[Abendpromenade]],
-        [[Abendpunkt]], [[Abendrauch]], [[Abendrealschule]], [[Abendregen]], [[Abendrobe]],
-        [[Abendrot]], [[Abendr\u00f6te]], [[Abendroutine]], [[Abendruf]], [[Abendruhe]],
-        [[Abendrunde]], [[Abendrundgang]], [[Abendschatten]], [[Abendschau]], [[Abendscheiden]],
-        [[Abendschein]], [[Abendschicht]], [[Abendschimmer]], [[Abendschmaus]], [[Abendschnellzug]],
-        [[Abendschoppen]], [[Abendschuh]], [[Abendschule]], [[Abendsch\u00fcler]],
+        [[Abendherr]], [[Abendhimmel]], [[Abendhitze]],  [[Abendhochschule]], [[Abendimbiss]],
+        [[Abendjagd]], [[Abendjournal]], [[Abendkarte]], [[Abendkasse]], [[Abendkauf]],
+        [[Abendklar]], [[Abendklasse]], [[Abendkleid]], [[Abendkleidung]], [[Abendkollation]],
+        [[Abendkonferenz]], [[Abendkonzert]], [[Abendkost]], [[Abendkreis]], [[Abendk\u00fchle]],
+        [[Abendkurs]], [[Abendkursus]], [[Abendkuss]], [[Abendland]], [[Abendl\u00e4nder]],
+        [[Abendlandschaft]], [[Abendl\u00e4rm]], [[Abendlauf]], [[Abendl\u00e4uten]],
+        [[Abendlehrgang]], [[Abendlekt\u00fcre]], [[Abendlicht]], [[Abendlied]], [[Abendluft]],
+        [[Abendl\u00fcftchen]], [[Abendlust]], [[Abendmagazin]], [[Abendmahl]], [[Abendmahlzeit]],
+        [[Abendmantel]], [[Abendm\u00e4rchen]], [[Abendmarkt]], [[Abendmaschine]],
+        [[Abendmatura]], [[Abendmeeting]], [[Abendmeisterschule]], [[Abendmeldung]],
+        [[Abendmelodie]], [[Abendmen\u00fc]], [[Abendmesse]], [[Abendmode]], [[Abendmusik]],
+        [[Abendnachricht]], [[Abendnachrichten]], [[Abendnebel]], [[Abendoberschule]],
+        [[Abend\u00f6ffnung]], [[Abendopfer]], [[Abendpfauenauge]], [[Abendpfeifchen]],
+        [[Abendpfeife]], [[Abendpl\u00e4tzchen]], [[Abendpost]], [[Abendpracht]],
+        [[Abendprediger]], [[Abendpredigt]], [[Abendpresse]], [[Abendprobe]], [[Abendprogramm]],
+        [[Abendpromenade]], [[Abendpunkt]], [[Abendrauch]], [[Abendrealschule]], [[Abendregen]],
+        [[Abendrobe]], [[Abendrot]], [[Abendr\u00f6te]], [[Abendroutine]], [[Abendruf]],
+        [[Abendruhe]], [[Abendrunde]], [[Abendrundgang]], [[Abendschatten]], [[Abendschau]],
+        [[Abendscheiden]], [[Abendschein]], [[Abendschicht]], [[Abendschimmer]], [[Abendschmaus]],
+        [[Abendschnellzug]], [[Abendschoppen]], [[Abendschuh]], [[Abendschule]], [[Abendsch\u00fcler]],
         [[Abendsegen]], [[Abendsegler]], [[Abendseite]], [[Abendseminar]], [[Abendsendung]],
         [[Abendsession]], [[Abendshow]], [[Abendsitzung]], [[Abendsonne]], [[Abendsonne-Glut]],
         [[Abendsonnenblick]], [[Abendsonnenschein]], [[Abendspazieren]], [[Abendspazierfahrt]],
@@ -397,7 +397,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sat, 03 Aug 2024 13:19:41 GMT
+      - Thu, 03 Oct 2024 14:22:09 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -405,15 +405,15 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-7c589668c5-mrqt9
+      - mw-api-ext.eqiad.main-7547c4c79f-7tdqf
       server-timing:
-      - cache;desc="pass", host;desc="cp3068"
+      - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=03-Aug-2024;Path=/;HttpOnly;secure;Expires=Wed, 04 Sep 2024
+      - WMF-Last-Access=03-Oct-2024;Path=/;HttpOnly;secure;Expires=Mon, 04 Nov 2024
         12:00:00 GMT
-      - WMF-Last-Access-Global=03-Aug-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Wed,
-        04 Sep 2024 12:00:00 GMT
-      - GeoIP=DE:BE:Berlin:52.57:13.42:v4; Path=/; secure; Domain=.wiktionary.org
+      - WMF-Last-Access-Global=03-Oct-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Mon,
+        04 Nov 2024 12:00:00 GMT
+      - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
       strict-transport-security:
       - max-age=106384710; includeSubDomains; preload
@@ -422,11 +422,11 @@ interactions:
       vary:
       - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
       x-cache:
-      - cp3068 miss, cp3068 pass
+      - cp3072 miss, cp3072 pass
       x-cache-status:
       - pass
       x-client-ip:
-      - 2003:e9:770b:f8bd:7c8a:ae86:5aa7:f25e
+      - 80.142.138.242
       x-content-type-options:
       - nosniff
       x-frame-options:
@@ -444,15 +444,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+die+Tageszeit+nach+dem+Nachmittag%2C+die+beginnt%2C+wenn+die+Sonne+den+Horizont+erreicht%2C+und+bei+v%C3%B6lliger+Dunkelheit+endet%3B+dem+Abend+geht+der+Tag+voran+und+auf+den+Abend+folgt+die+Nacht%0A++++%5B2%5D++die+Himmelsrichtung+Westen%0A++++%5B3%5D++verschliffene+Begr%C3%BC%C3%9Fungsfloskel+%E2%80%9Eguten+Abend%E2%80%9C%0A++++%5B4%5D++Abschluss%2C+Ende%2C+Schluss+%28f%C3%BCr+Leben%2C+Epochen%2C+langandauernde+Herrschaften+und+%C3%84hnlichem%29%0A++++%5B5%5D++Abendveranstaltung%3B+Abend+mit+heiterem%2C+vielgestaltigem+Programm%3B+Abendempfang
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Abend%0A%5B1%5D+die+Tageszeit+nach+dem+Nachmittag%2C+die+beginnt%2C+wenn+die+Sonne+den+Horizont+erreicht%2C+und+bei+v%C3%B6lliger+Dunkelheit+endet%3B+dem+Abend+geht+der+Tag+voran+und+auf+den+Abend+folgt+die+Nacht%0A++++%5B2%5D++die+Himmelsrichtung+Westen%0A++++%5B3%5D++verschliffene+Begr%C3%BC%C3%9Fungsfloskel+%E2%80%9Eguten+Abend%E2%80%9C%0A++++%5B4%5D++Abschluss%2C+Ende%2C+Schluss+%28f%C3%BCr+Leben%2C+Epochen%2C+langandauernde+Herrschaften+und+%C3%84hnlichem%29%0A++++%5B5%5D++Abendveranstaltung%3B+Abend+mit+heiterem%2C+vielgestaltigem+Programm%3B+Abendempfang
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"6d0B9GUW5pbDu6LlukD8Lw\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"GU1zyYaYXfYRusjkMBRc7w\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -490,21 +490,21 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20la%20hora%20del%20d%C3%ADa%20despu%C3%A9s%20de%20la%20tarde%2C%20que%20comienza%20cuando%20el%20sol%20llega%20al%20horizonte%20y%20termina%20cuando%20oscurece%20completamente%3B%20La%20tarde%20es%20precedida%20por%20el%20d%C3%ADa%20y%20la%20tarde%20es%20seguida%20por%20la%20noche.%0A%20%20%20%20%5B2%5D%20la%20direcci%C3%B3n%20oeste%0A%20%20%20%20%5B3%5D%20frase%20de%20saludo%20arrastrada%20%22buenas%20noches%22%0A%20%20%20%20%5B4%5D%20Conclusi%C3%B3n%2C%20fin%2C%20conclusi%C3%B3n%20%28para%20vidas%2C%20eras%2C%20reinados%20duraderos%20y%20similares%29%0A%20%20%20%20%5B5%5D%20Evento%20nocturno%3B%20Velada%20con%20un%20programa%20alegre%20y%20variado%3B%20Recepci%C3%B3n%20nocturna&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Noche%0A%5B1%5D%20la%20hora%20del%20d%C3%ADa%20despu%C3%A9s%20de%20la%20tarde%2C%20que%20comienza%20cuando%20el%20sol%20llega%20al%20horizonte%20y%20termina%20cuando%20oscurece%20completamente%3B%20La%20tarde%20es%20precedida%20por%20el%20d%C3%ADa%20y%20la%20tarde%20es%20seguida%20por%20la%20noche.%0A%20%20%20%20%5B2%5D%20la%20direcci%C3%B3n%20oeste%0A%20%20%20%20%5B3%5D%20frase%20de%20saludo%20arrastrada%20%22buenas%20noches%22%0A%20%20%20%20%5B4%5D%20Conclusi%C3%B3n%2C%20fin%2C%20conclusi%C3%B3n%20%28para%20vidas%2C%20eras%2C%20reinados%20duraderos%20y%20similares%29%0A%20%20%20%20%5B5%5D%20Evento%20nocturno%3B%20Velada%20con%20un%20programa%20alegre%20y%20variado%3B%20Recepci%C3%B3n%20nocturna&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] die Tageszeit
-        nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht, und
-        bei v\xF6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf den
-        Abend folgt die Nacht\n    [2]  die Himmelsrichtung Westen\n    [3]  verschliffene
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Abend\n[1] die
+        Tageszeit nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht,
+        und bei v\xF6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf
+        den Abend folgt die Nacht\n    [2]  die Himmelsrichtung Westen\n    [3]  verschliffene
         Begr\xFC\xDFungsfloskel \u201Eguten Abend\u201C\n    [4]  Abschluss, Ende,
         Schluss (f\xFCr Leben, Epochen, langandauernde Herrschaften und \xC4hnlichem)\n
         \   [5]  Abendveranstaltung; Abend mit heiterem, vielgestaltigem Programm;
         Abendempfang\"><div class=\"translate-button-container\"><input type=\"submit\"
-        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">Noche\n[1]
         la hora del d\xEDa despu\xE9s de la tarde, que comienza cuando el sol llega
         al horizonte y termina cuando oscurece completamente; La tarde es precedida
         por el d\xEDa y la tarde es seguida por la noche.\n    [2] la direcci\xF3n
@@ -527,9 +527,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-to1s4XmlaZNkJIMxiLQlqw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-TQmyuwuFGAnOBxv48FIvKw' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -537,7 +537,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sat, 03 Aug 2024 13:19:41 GMT
+      - Thu, 03 Oct 2024 14:22:10 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -550,8 +550,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=z_0-2b_5t2wgASPT8oql1JIzZn6MO0sbk06Rxqwb_XVg15NOt6ZUo9fW0bA7Wm1s1Muq74cknNJz4L8vcQZYOnHK13AwdZsHcPoF4DhwHBvTDhUv2zMpf0z8gRNlpZgYuAPB0M8aPrJLnt63xzFbKlCAkc5GXfUfS-su0S9RcVG5jEzf;
-        expires=Wed, 03-Sep-2025 05:37:59 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=e7LbxW9czd2Eq9OgZpgkDXw8Gd6n9fGy8FQvRms320qb7ndWJvkGFljV6WskP3Vh6KDa1kMrS-fOlTrmi6FqZfaiIfUXw06sM0PcqizToMm7dxHdHwvwrGZihz0doYKV7FnCsdKjjxWl_rNCL_7nzDx9NYQ0X9ElHRJHJmZfOk9kRLLjXGDFH6XFjQ;
+        expires=Mon, 03-Nov-2025 06:40:28 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -564,7 +564,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII0JBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ON7e2bGVTWDH7lnTmZTUkvIL40uKEvOKcxJLUnXLU5OKU4vKUovijQyMTAzMjQ31DCziCwwAvmQtBg"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxALcXNMuvhrO5vAh7vtBkpqSfmF8SVFiXnFOYklqbrlqUnFqUVlqUXxRgZGJoYGBoZ6BhbxBQYAcokr_w"
     status:
       code: 200
       message: OK
@@ -578,7 +578,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
     uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+%E2%80%9EEines+Abends%2C+als+sie+so+vertraulich+beisammensa%C3%9Fen%2C+klopfte+jemand+an+die+T%C3%BCre%2C+als+wollte+er+eingelassen+sein.%E2%80%9C
   response:
@@ -586,7 +586,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"AvxBS9MKtq49vL2ziJAdKg\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"obamp9vzoLXBE0kwwto_iA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -652,7 +652,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-xaxonNTQORbXhFnXYgekRQ' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-KR3dWxA6dcJQA-d2-ZmMAw' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -662,7 +662,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sat, 03 Aug 2024 13:19:43 GMT
+      - Thu, 03 Oct 2024 14:22:10 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -675,8 +675,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=21.SE=uuo2lUZY3am99o9_MkuwIH7jSUv7cGt1-LjqtkrMLzCW7ZKfIwamR53tHGlwYDoLhIdyw7GuAkKowFPFTUesE4KPPK1hfzXi_QafcGcDSidb1rJBdD9oIg2ee-T-9SWZLsY52Ux4YBRi5nKOWDTPKnUZ-sl8AYt-59FPqVXq2qekhOL5;
-        expires=Wed, 03-Sep-2025 05:38:01 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=hjA3N0Csoqw8QDfxSmET8MhgDJhGtkE_EE02uDMTJur-ko51_fcsKAiwjOWJ5Hl_sf-QY2PzWGADW6TrfnZShGUfQE2F8uYS6qGeni1kRFwp1kV7eNcYnTgWzWE7WI4OyTg0A-adeEOnh65L_LzCH36--QCxHo5M87uFNAcuZEAWfB9cEXIxhbfhhKg;
+        expires=Mon, 03-Nov-2025 06:40:28 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -689,7 +689,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0pBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxEsiLrIeSLzIaqhwidUeiIV4ON7f2bGVTeDE1od3mJTUkvIL40uKEvOKcxJLUnXLU5OKU4vKUovijQyMTAzMjQ31DCziCwwA1SUtmA"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XBMuvhrO5vAhEOPNjIqqSXlF8aXFCXmFecklqTqlqcmFacWlaUWxRsZGJkYGhgY6hlYxBcYAACbRixW"
     status:
       code: 200
       message: OK

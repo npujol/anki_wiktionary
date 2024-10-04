@@ -1,13 +1,13 @@
 {
   "full_word": "Abend",
-  "plural": "['Die Abende verstrichen langsam, wie die Sonne unterging.']\n['In der Dunkelheit h\u00f6rte man den Abendchor erz\u00e4hlen seine Lieder.']",
-  "characteristics": "Das Abend ist eine Zeit des Tages, die zwischen dem Mittag und dem Morgen liegt.\n['abendlich', 'morgensp\u00e4t']\n['sinken', 'untergehen']\n['Sonne', 'Mond']",
-  "ipa": "/a\u02c8b\u025bnt/",
+  "plural": "['Die Abende sind der beste Zeitpunkt f\u00fcr eine romantische Dinner-Date', 'Ein Abend mit Freunden ist immer ein Erfolg', 'Das Konzert war so gut, dass ich den ganzen Abend lang nicht mehr wegger\u00fcckt bin', 'Der Abend war bei\u00dfender kalt, aber das konnte meine Stimmung nicht tr\u00fcben']",
+  "characteristics": "Substantiv\nAkkusativ\nMaskulinum",
+  "ipa": "a\u02c8b\u0294\u025bnt",
   "audio": null,
-  "meaning": "{\"Abend\": [\n\"Eine Abendpause ist eine Zeit zwischen dem Ende des Arbeitstages und dem Beginn der Freizeit, wenn man sich entspannen und Erholen kann.\nIn einer Reise oder einem Urlaub ist Abend die Zeit, wenn man sich von den Aktivit\u00e4ten des Tages erholen und zum Beispiel ein gutes Essen genie\u00dfen kann.\nAbend kann auch als Symbol f\u00fcr das Ende eines Ereignisses oder einer Phase verwendet werden, wie zum Beispiel bei einem Konzert oder einem Festival.\"}",
-  "meaning_spanish": "{\"Noche\": [\n\"Un descanso nocturno es un momento entre el final de la jornada laboral y el comienzo del tiempo libre en el que uno puede relajarse y descansar.\nEn un viaje o vacaciones, la tarde es el momento en el que puedes relajarte de las actividades del d\u00eda y disfrutar de una buena comida, por ejemplo.\nLa noche tambi\u00e9n se puede utilizar para simbolizar el final de un evento o fase, como un concierto o un festival.\"}",
-  "example1": "Wenn das Programm den Fehler Abend ausgibt, ist es wahrscheinlich aufgrund eines Fehlers oder einer \u00dcberlast der Ressourcen gestorben.",
-  "example1e": "Si el programa da el error Abend, probablemente muri\u00f3 debido a un error o sobrecarga de recursos.",
-  "example2": "Das Abendprogramm des Restaurants war sehr erfolgreich und die G\u00e4ste haben sich bis zum Schluss am\u00fcsiert.",
-  "example2e": "El programa nocturno del restaurante fue todo un \u00e9xito y los invitados disfrutaron hasta el final."
+  "meaning": "Abend\n{\"Bedeutungen\": \n\"Aufh\u00f6ren oder zum Ende kommen: Der Film abendete nach 10 Uhr. \nIn der Computernutzung: Abend - eine Zeitangabe, die den Abschluss eines Prozesses oder Vorgangs anzeigt. \nIm deutschen Sprachgebrauch: Abend kann als Synonym f\u00fcr 'Abendessen' verwendet werden.\"}",
+  "meaning_spanish": "Noche\n{\"Significados\": \n\"Detente o llega al final: la pel\u00edcula termin\u00f3 pasadas las 10 en punto. \nEn uso inform\u00e1tico: Tarde: indicaci\u00f3n de tiempo que indica la finalizaci\u00f3n de un proceso u operaci\u00f3n. \nEn alem\u00e1n: Abend se puede utilizar como sin\u00f3nimo de 'cena'.\"}",
+  "example1": "Die Kriminalpolizei ermittelt noch am Abend, ob der Tatverd\u00e4chtige in seiner Wohnung war, als die Straftat begangen wurde.",
+  "example1e": "Esa noche, la polic\u00eda criminal investig\u00f3 si el sospechoso se encontraba en su apartamento cuando se cometi\u00f3 el crimen.",
+  "example2": "Die Kurse am Abend bieten eine perfekte Gelegenheit zum Erlernen von F\u00e4higkeiten.\nNach dem langen Tag auf See kann man sich im Abendsonnenwinkel erholen.",
+  "example2e": "Las clases nocturnas brindan una oportunidad perfecta para aprender habilidades.\nDespu\u00e9s de un largo d\u00eda en el mar podr\u00e1 relajarse bajo el sol de la tarde."
 }

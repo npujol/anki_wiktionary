@@ -366,7 +366,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sun, 15 Sep 2024 07:51:52 GMT
+      - Thu, 03 Oct 2024 14:24:44 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -374,14 +374,14 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-79cbd6dc7f-5nq58
+      - mw-api-ext.eqiad.main-7547c4c79f-gzb8q
       server-timing:
       - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=15-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 17 Oct 2024
-        00:00:00 GMT
-      - WMF-Last-Access-Global=15-Sep-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
-        17 Oct 2024 00:00:00 GMT
+      - WMF-Last-Access=03-Oct-2024;Path=/;HttpOnly;secure;Expires=Mon, 04 Nov 2024
+        12:00:00 GMT
+      - WMF-Last-Access-Global=03-Oct-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Mon,
+        04 Nov 2024 12:00:00 GMT
       - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
       strict-transport-security:
@@ -415,13 +415,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D++%28Gesprochenes%29+deutlich+akustisch+wahrnehmen%0A++++%5B2%5D+Anwendung+einer+intellektuellen+F%C3%A4higkeit%3A%0A++++%5B2a%5D++den+Sinngehalt%2C+die+Bedeutung+von+etwas%2C+die+Absicht+einer+Person+verstandesm%C3%A4%C3%9Fig+erfassen%0A++++%5B2b%5D++in+bestimmter+Weise+deutend+interpretieren%0A++++%5B2c%5D++eine+bestimmte+Vorstellung+beziehungsweise+einen+bestimmten+Eindruck+von+sich+selbst+vermitteln%3B+sich+in+bestimmter+Weise+darum+bem%C3%BChen%2C+als+jemand+Bestimmtes+angesehen+zu+werden%0A++++%5B2d%5D++%28von+Preisen%29+in+bestimmter+Weise+erkennen+lassen+beziehungsweise+zum+Ausdruck+bringen+wollen%0A++++%5B3%5D+Anwendung+einer+emotionalen+F%C3%A4higkeit%3A%0A++++%5B3a%5D++sich+in+jemanden+einf%C3%BChlen%2C+in+jemandes+Situation+hineindenken+k%C3%B6nnen%3B+diese+F%C3%A4higkeit+jemandem+gegen%C3%BCber+zu+erkennen+geben%0A++++%5B3b%5D++%28die+Verhaltensweise%2C+Haltung%2C+Reaktion%2C+das+Gef%C3%BChl+von+jemandes+Standpunkt+aus+gesehen+als%29+nat%C3%BCrlich%2C+konsequent%2C+richtig%2C+normal+einsch%C3%A4tzen%2C+beurteilen%2C+empfinden%0A++++%5B4%5D++ohne+Streitigkeiten+mit+jemandem+auskommen%2C+eine+gute+pers%C3%B6nliche+Beziehung+zu+jemandem+haben%0A++++%5B5%5D+Bef%C3%A4higung+zu+T%C3%A4tigkeiten%3A%0A++++%5B5a%5D++sich+etwas+%28geistig%29+zu+eigen+gemacht+haben%3B+die+F%C3%A4higkeit+zur+Aus%C3%BCbung+von+etwas+haben%2C+die+Begabung+f%C3%BCr+etwas+besitzen%0A++++%5B5b%5D++ein+besonderes+%28Fach-%2C+Sach-+oder+Erfahrungs-%29Wissen+%28von+etwas%29+aufweisen%3B+%28mit+etwas%29+vertraut+sein%2C+umzugehen+wissen%3B+%28auf+einem+bestimmten+Gebiet%29+genau+Bescheid+wissen+%28und+diesbez%C3%BCglich+urteilsf%C3%A4hig+sein%29%0A++++%5B5c%5D++zu+etwas+imstande+sein%3B+die+Fertigkeiten+besitzen%2C+etwas+Bestimmtes+zu+tun%0A++++%5B5d%5D++sich+mit+etwas+auskennen+und+gut+umzugehen+wissen%0A++++%5B6%5D++sich+%C3%BCberwindend+zu+etwas+doch+bereit+erkl%C3%A4ren
+    uri: https://translate.google.com/m?tl=es&sl=de&q=verstehen%0A%5B1%5D++%28Gesprochenes%29+deutlich+akustisch+wahrnehmen%0A++++%5B2%5D+Anwendung+einer+intellektuellen+F%C3%A4higkeit%3A%0A++++%5B2a%5D++den+Sinngehalt%2C+die+Bedeutung+von+etwas%2C+die+Absicht+einer+Person+verstandesm%C3%A4%C3%9Fig+erfassen%0A++++%5B2b%5D++in+bestimmter+Weise+deutend+interpretieren%0A++++%5B2c%5D++eine+bestimmte+Vorstellung+beziehungsweise+einen+bestimmten+Eindruck+von+sich+selbst+vermitteln%3B+sich+in+bestimmter+Weise+darum+bem%C3%BChen%2C+als+jemand+Bestimmtes+angesehen+zu+werden%0A++++%5B2d%5D++%28von+Preisen%29+in+bestimmter+Weise+erkennen+lassen+beziehungsweise+zum+Ausdruck+bringen+wollen%0A++++%5B3%5D+Anwendung+einer+emotionalen+F%C3%A4higkeit%3A%0A++++%5B3a%5D++sich+in+jemanden+einf%C3%BChlen%2C+in+jemandes+Situation+hineindenken+k%C3%B6nnen%3B+diese+F%C3%A4higkeit+jemandem+gegen%C3%BCber+zu+erkennen+geben%0A++++%5B3b%5D++%28die+Verhaltensweise%2C+Haltung%2C+Reaktion%2C+das+Gef%C3%BChl+von+jemandes+Standpunkt+aus+gesehen+als%29+nat%C3%BCrlich%2C+konsequent%2C+richtig%2C+normal+einsch%C3%A4tzen%2C+beurteilen%2C+empfinden%0A++++%5B4%5D++ohne+Streitigkeiten+mit+jemandem+auskommen%2C+eine+gute+pers%C3%B6nliche+Beziehung+zu+jemandem+haben%0A++++%5B5%5D+Bef%C3%A4higung+zu+T%C3%A4tigkeiten%3A%0A++++%5B5a%5D++sich+etwas+%28geistig%29+zu+eigen+gemacht+haben%3B+die+F%C3%A4higkeit+zur+Aus%C3%BCbung+von+etwas+haben%2C+die+Begabung+f%C3%BCr+etwas+besitzen%0A++++%5B5b%5D++ein+besonderes+%28Fach-%2C+Sach-+oder+Erfahrungs-%29Wissen+%28von+etwas%29+aufweisen%3B+%28mit+etwas%29+vertraut+sein%2C+umzugehen+wissen%3B+%28auf+einem+bestimmten+Gebiet%29+genau+Bescheid+wissen+%28und+diesbez%C3%BCglich+urteilsf%C3%A4hig+sein%29%0A++++%5B5c%5D++zu+etwas+imstande+sein%3B+die+Fertigkeiten+besitzen%2C+etwas+Bestimmtes+zu+tun%0A++++%5B5d%5D++sich+mit+etwas+auskennen+und+gut+umzugehen+wissen%0A++++%5B6%5D++sich+%C3%BCberwindend+zu+etwas+doch+bereit+erkl%C3%A4ren
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"VefOQvw5P1Jiax0sd58k9A\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"IDLMPbU0Ra5AnF2KnIN7SA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -459,56 +459,56 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20%28Gesprochenes%29%20deutlich%20akustisch%20wahrnehmen%0A%20%20%20%20%5B2%5D%20Anwendung%20einer%20intellektuellen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B2a%5D%20%20den%20Sinngehalt%2C%20die%20Bedeutung%20von%20etwas%2C%20die%20Absicht%20einer%20Person%20verstandesm%C3%A4%C3%9Fig%20erfassen%0A%20%20%20%20%5B2b%5D%20%20in%20bestimmter%20Weise%20deutend%20interpretieren%0A%20%20%20%20%5B2c%5D%20%20eine%20bestimmte%20Vorstellung%20beziehungsweise%20einen%20bestimmten%20Eindruck%20von%20sich%20selbst%20vermitteln%3B%20sich%20in%20bestimmter%20Weise%20darum%20bem%C3%BChen%2C%20als%20jemand%20Bestimmtes%20angesehen%20zu%20werden%0A%20%20%20%20%5B2d%5D%20%20%28von%20Preisen%29%20in%20bestimmter%20Weise%20erkennen%20lassen%20beziehungsweise%20zum%20Ausdruck%20bringen%20wollen%0A%20%20%20%20%5B3%5D%20Anwendung%20einer%20emotionalen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B3a%5D%20%20sich%20in%20jemanden%20einf%C3%BChlen%2C%20in%20jemandes%20Situation%20hineindenken%20k%C3%B6nnen%3B%20diese%20F%C3%A4higkeit%20jemandem%20gegen%C3%BCber%20zu%20erkennen%20geben%0A%20%20%20%20%5B3b%5D%20%20%28die%20Verhaltensweise%2C%20Haltung%2C%20Reaktion%2C%20das%20Gef%C3%BChl%20von%20jemandes%20Standpunkt%20aus%20gesehen%20als%29%20nat%C3%BCrlich%2C%20konsequent%2C%20richtig%2C%20normal%20einsch%C3%A4tzen%2C%20beurteilen%2C%20empfinden%0A%20%20%20%20%5B4%5D%20%20ohne%20Streitigkeiten%20mit%20jemandem%20auskommen%2C%20eine%20gute%20pers%C3%B6nliche%20Beziehung%20zu%20jemandem%20haben%0A%20%20%20%20%5B5%5D%20Bef%C3%A4higung%20zu%20T%C3%A4tigkeiten%3A%0A%20%20%20%20%5B5a%5D%20%20sich%20etwas%20%28geistig%29%20zu%20eigen%20gemacht%20haben%3B%20die%20F%C3%A4higkeit%20zur%20Aus%C3%BCbung%20von%20etwas%20haben%2C%20die%20Begabung%20f%C3%BCr%20etwas%20besitzen%0A%20%20%20%20%5B5b%5D%20%20ein%20besonderes%20%28Fach-%2C%20Sach-%20oder%20Erfahrungs-%29Wissen%20%28von%20etwas%29%20aufweisen%3B%20%28mit%20etwas%29%20vertraut%20sein%2C%20umzugehen%20wissen%3B%20%28auf%20einem%20bestimmten%20Gebiet%29%20genau%20Bescheid%20wissen%20%28und%20diesbez%C3%BCglich%20urteilsf%C3%A4hig%20sein%29%0A%20%20%20%20%5B5c%5D%20%20zu%20etwas%20imstande%20sein%3B%20die%20Fertigkeiten%20besitzen%2C%20etwas%20Bestimmtes%20zu%20tun%0A%20%20%20%20%5B5d%5D%20%20sich%20mit%20etwas%20auskennen%20und%20gut%20umzugehen%20wissen%0A%20%20%20%20%5B6%5D%20%20sich%20%C3%BCberwindend%20zu%20etwas%20doch%20bereit%20erkl%C3%A4ren&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20%28Gesprochenes%29%20deutlich%20akustisch%20wahrnehmen%0A%20%20%20%20%5B2%5D%20Anwendung%20einer%20intellektuellen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B2a%5D%20%20den%20Sinngehalt%2C%20die%20Bedeutung%20von%20etwas%2C%20die%20Absicht%20einer%20Person%20verstandesm%C3%A4%C3%9Fig%20erfassen%0A%20%20%20%20%5B2b%5D%20%20in%20bestimmter%20Weise%20deutend%20interpretieren%0A%20%20%20%20%5B2c%5D%20%20eine%20bestimmte%20Vorstellung%20beziehungsweise%20einen%20bestimmten%20Eindruck%20von%20sich%20selbst%20vermitteln%3B%20sich%20in%20bestimmter%20Weise%20darum%20bem%C3%BChen%2C%20als%20jemand%20Bestimmtes%20angesehen%20zu%20werden%0A%20%20%20%20%5B2d%5D%20%20%28von%20Preisen%29%20in%20bestimmter%20Weise%20erkennen%20lassen%20beziehungsweise%20zum%20Ausdruck%20bringen%20wollen%0A%20%20%20%20%5B3%5D%20Anwendung%20einer%20emotionalen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B3a%5D%20%20sich%20in%20jemanden%20einf%C3%BChlen%2C%20in%20jemandes%20Situation%20hineindenken%20k%C3%B6nnen%3B%20diese%20F%C3%A4higkeit%20jemandem%20gegen%C3%BCber%20zu%20erkennen%20geben%0A%20%20%20%20%5B3b%5D%20%20%28die%20Verhaltensweise%2C%20Haltung%2C%20Reaktion%2C%20das%20Gef%C3%BChl%20von%20jemandes%20Standpunkt%20aus%20gesehen%20als%29%20nat%C3%BCrlich%2C%20konsequent%2C%20richtig%2C%20normal%20einsch%C3%A4tzen%2C%20beurteilen%2C%20empfinden%0A%20%20%20%20%5B4%5D%20%20ohne%20Streitigkeiten%20mit%20jemandem%20auskommen%2C%20eine%20gute%20pers%C3%B6nliche%20Beziehung%20zu%20jemandem%20haben%0A%20%20%20%20%5B5%5D%20Bef%C3%A4higung%20zu%20T%C3%A4tigkeiten%3A%0A%20%20%20%20%5B5a%5D%20%20sich%20etwas%20%28geistig%29%20zu%20eigen%20gemacht%20haben%3B%20die%20F%C3%A4higkeit%20zur%20Aus%C3%BCbung%20von%20etwas%20haben%2C%20die%20Begabung%20f%C3%BCr%20etwas%20besitzen%0A%20%20%20%20%5B5b%5D%20%20ein%20besonderes%20%28Fach-%2C%20Sach-%20oder%20Erfahrungs-%29Wissen%20%28von%20etwas%29%20aufweisen%3B%20%28mit%20etwas%29%20vertraut%20sein%2C%20umzugehen%20wissen%3B%20%28auf%20einem%20bestimmten%20Gebiet%29%20genau%20Bescheid%20wissen%20%28und%20diesbez%C3%BCglich%20urteilsf%C3%A4hig%20sein%29%0A%20%20%20%20%5B5c%5D%20%20zu%20etwas%20imstande%20sein%3B%20die%20Fertigkeiten%20besitzen%2C%20etwas%20Bestimmtes%20zu%20tun%0A%20%20%20%20%5B5d%5D%20%20sich%20mit%20etwas%20auskennen%20und%20gut%20umzugehen%20wissen%0A%20%20%20%20%5B6%5D%20%20sich%20%C3%BCberwindend%20zu%20etwas%20doch%20bereit%20erkl%C3%A4ren&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Percibir%20%28hablar%29%20claramente%20ac%C3%BAsticamente%0A%20%20%20%20%5B2%5D%20Aplicaci%C3%B3n%20de%20una%20capacidad%20intelectual%3A%0A%20%20%20%20%5B2a%5D%20captar%20intelectualmente%20el%20significado%2C%20el%20significado%20de%20algo%2C%20la%20intenci%C3%B3n%20de%20una%20persona%0A%20%20%20%20%5B2b%5D%20interpretado%20de%20cierta%20manera%0A%20%20%20%20%5B2c%5D%20transmitir%20una%20determinada%20idea%20o%20impresi%C3%B3n%20de%20uno%20mismo%3B%20hacer%20un%20esfuerzo%20particular%20para%20ser%20visto%20como%20alguien%20espec%C3%ADfico%0A%20%20%20%20%5B2d%5D%20%28de%20precios%29%20revelan%20o%20quieren%20expresarse%20de%20cierta%20manera%0A%20%20%20%20%5B3%5D%20Aplicaci%C3%B3n%20de%20una%20habilidad%20emocional%3A%0A%20%20%20%20%5B3a%5D%20ser%20capaz%20de%20empatizar%20con%20alguien%2C%20pensar%20en%20la%20situaci%C3%B3n%20de%20alguien%3B%20demostrarle%20esta%20habilidad%20a%20alguien%0A%20%20%20%20%5B3b%5D%20%28el%20comportamiento%2C%20actitud%2C%20reacci%C3%B3n%2C%20sentimiento%20visto%20desde%20el%20punto%20de%20vista%20de%20alguien%20como%29%20natural%2C%20consistente%2C%20correcto%2C%20normal%2C%20evaluar%2C%20juzgar%2C%20sentir%0A%20%20%20%20%5B4%5D%20llevarse%20bien%20con%20alguien%20sin%20discusiones%2C%20tener%20una%20buena%20relaci%C3%B3n%20personal%20con%20alguien%0A%20%20%20%20%5B5%5D%20Capacidad%20para%20realizar%20actividades%3A%0A%20%20%20%20%5B5a%5D%20has%20hecho%20algo%20%28mentalmente%29%20tuyo%3B%20tener%20la%20capacidad%20de%20hacer%20algo%2C%20tener%20el%20talento%20para%20algo%0A%20%20%20%20%5B5b%5D%20tener%20conocimiento%20especial%20%28t%C3%A9cnico%2C%20f%C3%A1ctico%20o%20experiencial%29%20%28de%20algo%29%3B%20estar%20familiarizado%20%28con%20algo%29%2C%20saber%20c%C3%B3mo%20afrontarlo%3B%20%28en%20un%20%C3%A1rea%20determinada%29%20tener%20conocimientos%20precisos%20%28y%20poder%20emitir%20juicios%20al%20respecto%29%0A%20%20%20%20%5B5c%5D%20poder%20hacer%20algo%3B%20tener%20las%20habilidades%20para%20hacer%20algo%20espec%C3%ADfico%0A%20%20%20%20%5B5d%5D%20estar%20familiarizado%20con%20algo%20y%20saber%20manejarlo%20bien%0A%20%20%20%20%5B6%5D%20superar%20la%20voluntad%20de%20hacer%20algo&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=verstehen%0A%5B1%5D%20%20%28Gesprochenes%29%20deutlich%20akustisch%20wahrnehmen%0A%20%20%20%20%5B2%5D%20Anwendung%20einer%20intellektuellen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B2a%5D%20%20den%20Sinngehalt%2C%20die%20Bedeutung%20von%20etwas%2C%20die%20Absicht%20einer%20Person%20verstandesm%C3%A4%C3%9Fig%20erfassen%0A%20%20%20%20%5B2b%5D%20%20in%20bestimmter%20Weise%20deutend%20interpretieren%0A%20%20%20%20%5B2c%5D%20%20eine%20bestimmte%20Vorstellung%20beziehungsweise%20einen%20bestimmten%20Eindruck%20von%20sich%20selbst%20vermitteln%3B%20sich%20in%20bestimmter%20Weise%20darum%20bem%C3%BChen%2C%20als%20jemand%20Bestimmtes%20angesehen%20zu%20werden%0A%20%20%20%20%5B2d%5D%20%20%28von%20Preisen%29%20in%20bestimmter%20Weise%20erkennen%20lassen%20beziehungsweise%20zum%20Ausdruck%20bringen%20wollen%0A%20%20%20%20%5B3%5D%20Anwendung%20einer%20emotionalen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B3a%5D%20%20sich%20in%20jemanden%20einf%C3%BChlen%2C%20in%20jemandes%20Situation%20hineindenken%20k%C3%B6nnen%3B%20diese%20F%C3%A4higkeit%20jemandem%20gegen%C3%BCber%20zu%20erkennen%20geben%0A%20%20%20%20%5B3b%5D%20%20%28die%20Verhaltensweise%2C%20Haltung%2C%20Reaktion%2C%20das%20Gef%C3%BChl%20von%20jemandes%20Standpunkt%20aus%20gesehen%20als%29%20nat%C3%BCrlich%2C%20konsequent%2C%20richtig%2C%20normal%20einsch%C3%A4tzen%2C%20beurteilen%2C%20empfinden%0A%20%20%20%20%5B4%5D%20%20ohne%20Streitigkeiten%20mit%20jemandem%20auskommen%2C%20eine%20gute%20pers%C3%B6nliche%20Beziehung%20zu%20jemandem%20haben%0A%20%20%20%20%5B5%5D%20Bef%C3%A4higung%20zu%20T%C3%A4tigkeiten%3A%0A%20%20%20%20%5B5a%5D%20%20sich%20etwas%20%28geistig%29%20zu%20eigen%20gemacht%20haben%3B%20die%20F%C3%A4higkeit%20zur%20Aus%C3%BCbung%20von%20etwas%20haben%2C%20die%20Begabung%20f%C3%BCr%20etwas%20besitzen%0A%20%20%20%20%5B5b%5D%20%20ein%20besonderes%20%28Fach-%2C%20Sach-%20oder%20Erfahrungs-%29Wissen%20%28von%20etwas%29%20aufweisen%3B%20%28mit%20etwas%29%20vertraut%20sein%2C%20umzugehen%20wissen%3B%20%28auf%20einem%20bestimmten%20Gebiet%29%20genau%20Bescheid%20wissen%20%28und%20diesbez%C3%BCglich%20urteilsf%C3%A4hig%20sein%29%0A%20%20%20%20%5B5c%5D%20%20zu%20etwas%20imstande%20sein%3B%20die%20Fertigkeiten%20besitzen%2C%20etwas%20Bestimmtes%20zu%20tun%0A%20%20%20%20%5B5d%5D%20%20sich%20mit%20etwas%20auskennen%20und%20gut%20umzugehen%20wissen%0A%20%20%20%20%5B6%5D%20%20sich%20%C3%BCberwindend%20zu%20etwas%20doch%20bereit%20erkl%C3%A4ren&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=verstehen%0A%5B1%5D%20%20%28Gesprochenes%29%20deutlich%20akustisch%20wahrnehmen%0A%20%20%20%20%5B2%5D%20Anwendung%20einer%20intellektuellen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B2a%5D%20%20den%20Sinngehalt%2C%20die%20Bedeutung%20von%20etwas%2C%20die%20Absicht%20einer%20Person%20verstandesm%C3%A4%C3%9Fig%20erfassen%0A%20%20%20%20%5B2b%5D%20%20in%20bestimmter%20Weise%20deutend%20interpretieren%0A%20%20%20%20%5B2c%5D%20%20eine%20bestimmte%20Vorstellung%20beziehungsweise%20einen%20bestimmten%20Eindruck%20von%20sich%20selbst%20vermitteln%3B%20sich%20in%20bestimmter%20Weise%20darum%20bem%C3%BChen%2C%20als%20jemand%20Bestimmtes%20angesehen%20zu%20werden%0A%20%20%20%20%5B2d%5D%20%20%28von%20Preisen%29%20in%20bestimmter%20Weise%20erkennen%20lassen%20beziehungsweise%20zum%20Ausdruck%20bringen%20wollen%0A%20%20%20%20%5B3%5D%20Anwendung%20einer%20emotionalen%20F%C3%A4higkeit%3A%0A%20%20%20%20%5B3a%5D%20%20sich%20in%20jemanden%20einf%C3%BChlen%2C%20in%20jemandes%20Situation%20hineindenken%20k%C3%B6nnen%3B%20diese%20F%C3%A4higkeit%20jemandem%20gegen%C3%BCber%20zu%20erkennen%20geben%0A%20%20%20%20%5B3b%5D%20%20%28die%20Verhaltensweise%2C%20Haltung%2C%20Reaktion%2C%20das%20Gef%C3%BChl%20von%20jemandes%20Standpunkt%20aus%20gesehen%20als%29%20nat%C3%BCrlich%2C%20konsequent%2C%20richtig%2C%20normal%20einsch%C3%A4tzen%2C%20beurteilen%2C%20empfinden%0A%20%20%20%20%5B4%5D%20%20ohne%20Streitigkeiten%20mit%20jemandem%20auskommen%2C%20eine%20gute%20pers%C3%B6nliche%20Beziehung%20zu%20jemandem%20haben%0A%20%20%20%20%5B5%5D%20Bef%C3%A4higung%20zu%20T%C3%A4tigkeiten%3A%0A%20%20%20%20%5B5a%5D%20%20sich%20etwas%20%28geistig%29%20zu%20eigen%20gemacht%20haben%3B%20die%20F%C3%A4higkeit%20zur%20Aus%C3%BCbung%20von%20etwas%20haben%2C%20die%20Begabung%20f%C3%BCr%20etwas%20besitzen%0A%20%20%20%20%5B5b%5D%20%20ein%20besonderes%20%28Fach-%2C%20Sach-%20oder%20Erfahrungs-%29Wissen%20%28von%20etwas%29%20aufweisen%3B%20%28mit%20etwas%29%20vertraut%20sein%2C%20umzugehen%20wissen%3B%20%28auf%20einem%20bestimmten%20Gebiet%29%20genau%20Bescheid%20wissen%20%28und%20diesbez%C3%BCglich%20urteilsf%C3%A4hig%20sein%29%0A%20%20%20%20%5B5c%5D%20%20zu%20etwas%20imstande%20sein%3B%20die%20Fertigkeiten%20besitzen%2C%20etwas%20Bestimmtes%20zu%20tun%0A%20%20%20%20%5B5d%5D%20%20sich%20mit%20etwas%20auskennen%20und%20gut%20umzugehen%20wissen%0A%20%20%20%20%5B6%5D%20%20sich%20%C3%BCberwindend%20zu%20etwas%20doch%20bereit%20erkl%C3%A4ren&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=entender%0A%5B1%5D%20Percibir%20%28hablar%29%20claramente%20ac%C3%BAsticamente%0A%20%20%20%20%5B2%5D%20Aplicaci%C3%B3n%20de%20una%20capacidad%20intelectual%3A%0A%20%20%20%20%5B2a%5D%20captar%20intelectualmente%20el%20significado%2C%20el%20significado%20de%20algo%2C%20la%20intenci%C3%B3n%20de%20una%20persona%0A%20%20%20%20%5B2b%5D%20interpretado%20de%20cierta%20manera%0A%20%20%20%20%5B2c%5D%20transmitir%20una%20determinada%20idea%20o%20impresi%C3%B3n%20de%20uno%20mismo%3B%20hacer%20un%20esfuerzo%20particular%20para%20ser%20visto%20como%20alguien%20espec%C3%ADfico%0A%20%20%20%20%5B2d%5D%20%28de%20precios%29%20revelan%20o%20quieren%20expresarse%20de%20cierta%20manera%0A%20%20%20%20%5B3%5D%20Aplicaci%C3%B3n%20de%20una%20habilidad%20emocional%3A%0A%20%20%20%20%5B3a%5D%20ser%20capaz%20de%20empatizar%20con%20alguien%2C%20pensar%20en%20la%20situaci%C3%B3n%20de%20alguien%3B%20demostrarle%20esta%20habilidad%20a%20alguien%0A%20%20%20%20%5B3b%5D%20%28el%20comportamiento%2C%20actitud%2C%20reacci%C3%B3n%2C%20sentimiento%20visto%20desde%20el%20punto%20de%20vista%20de%20alguien%20como%29%20natural%2C%20consistente%2C%20correcto%2C%20normal%2C%20evaluar%2C%20juzgar%2C%20sentir%0A%20%20%20%20%5B4%5D%20llevarse%20bien%20con%20alguien%20sin%20discusiones%2C%20tener%20una%20buena%20relaci%C3%B3n%20personal%20con%20alguien%0A%20%20%20%20%5B5%5D%20Capacidad%20para%20realizar%20actividades%3A%0A%20%20%20%20%5B5a%5D%20has%20hecho%20algo%20%28mentalmente%29%20tuyo%3B%20tener%20la%20capacidad%20de%20hacer%20algo%2C%20tener%20el%20talento%20para%20algo%0A%20%20%20%20%5B5b%5D%20tener%20conocimiento%20especial%20%28t%C3%A9cnico%2C%20f%C3%A1ctico%20o%20experiencial%29%20%28de%20algo%29%3B%20estar%20familiarizado%20%28con%20algo%29%2C%20saber%20c%C3%B3mo%20afrontarlo%3B%20%28en%20un%20%C3%A1rea%20determinada%29%20tener%20conocimientos%20precisos%20%28y%20poder%20emitir%20juicios%20al%20respecto%29%0A%20%20%20%20%5B5c%5D%20poder%20hacer%20algo%3B%20tener%20las%20habilidades%20para%20hacer%20algo%20espec%C3%ADfico%0A%20%20%20%20%5B5d%5D%20estar%20familiarizado%20con%20algo%20y%20saber%20manejarlo%20bien%0A%20%20%20%20%5B6%5D%20superar%20la%20voluntad%20de%20hacer%20algo&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1]  (Gesprochenes)
-        deutlich akustisch wahrnehmen\n    [2] Anwendung einer intellektuellen F\xE4higkeit:\n
-        \   [2a]  den Sinngehalt, die Bedeutung von etwas, die Absicht einer Person
-        verstandesm\xE4\xDFig erfassen\n    [2b]  in bestimmter Weise deutend interpretieren\n
-        \   [2c]  eine bestimmte Vorstellung beziehungsweise einen bestimmten Eindruck
-        von sich selbst vermitteln; sich in bestimmter Weise darum bem\xFChen, als
-        jemand Bestimmtes angesehen zu werden\n    [2d]  (von Preisen) in bestimmter
-        Weise erkennen lassen beziehungsweise zum Ausdruck bringen wollen\n    [3]
-        Anwendung einer emotionalen F\xE4higkeit:\n    [3a]  sich in jemanden einf\xFChlen,
-        in jemandes Situation hineindenken k\xF6nnen; diese F\xE4higkeit jemandem
-        gegen\xFCber zu erkennen geben\n    [3b]  (die Verhaltensweise, Haltung, Reaktion,
-        das Gef\xFChl von jemandes Standpunkt aus gesehen als) nat\xFCrlich, konsequent,
-        richtig, normal einsch\xE4tzen, beurteilen, empfinden\n    [4]  ohne Streitigkeiten
-        mit jemandem auskommen, eine gute pers\xF6nliche Beziehung zu jemandem haben\n
-        \   [5] Bef\xE4higung zu T\xE4tigkeiten:\n    [5a]  sich etwas (geistig) zu
-        eigen gemacht haben; die F\xE4higkeit zur Aus\xFCbung von etwas haben, die
-        Begabung f\xFCr etwas besitzen\n    [5b]  ein besonderes (Fach-, Sach- oder
-        Erfahrungs-)Wissen (von etwas) aufweisen; (mit etwas) vertraut sein, umzugehen
-        wissen; (auf einem bestimmten Gebiet) genau Bescheid wissen (und diesbez\xFCglich
-        urteilsf\xE4hig sein)\n    [5c]  zu etwas imstande sein; die Fertigkeiten
-        besitzen, etwas Bestimmtes zu tun\n    [5d]  sich mit etwas auskennen und
-        gut umzugehen wissen\n    [6]  sich \xFCberwindend zu etwas doch bereit erkl\xE4ren\"><div
-        class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
-        class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
-        Percibir (hablar) claramente ac\xFAsticamente\n    [2] Aplicaci\xF3n de una
-        capacidad intelectual:\n    [2a] captar intelectualmente el significado, el
-        significado de algo, la intenci\xF3n de una persona\n    [2b] interpretado
-        de cierta manera\n    [2c] transmitir una determinada idea o impresi\xF3n
-        de uno mismo; hacer un esfuerzo particular para ser visto como alguien espec\xEDfico\n
-        \   [2d] (de precios) revelan o quieren expresarse de cierta manera\n    [3]
-        Aplicaci\xF3n de una habilidad emocional:\n    [3a] ser capaz de empatizar
-        con alguien, pensar en la situaci\xF3n de alguien; demostrarle esta habilidad
-        a alguien\n    [3b] (el comportamiento, actitud, reacci\xF3n, sentimiento
-        visto desde el punto de vista de alguien como) natural, consistente, correcto,
-        normal, evaluar, juzgar, sentir\n    [4] llevarse bien con alguien sin discusiones,
-        tener una buena relaci\xF3n personal con alguien\n    [5] Capacidad para realizar
-        actividades:\n    [5a] has hecho algo (mentalmente) tuyo; tener la capacidad
-        de hacer algo, tener el talento para algo\n    [5b] tener conocimiento especial
-        (t\xE9cnico, f\xE1ctico o experiencial) (de algo); estar familiarizado (con
-        algo), saber c\xF3mo afrontarlo; (en un \xE1rea determinada) tener conocimientos
-        precisos (y poder emitir juicios al respecto)\n    [5c] poder hacer algo;
-        tener las habilidades para hacer algo espec\xEDfico\n    [5d] estar familiarizado
-        con algo y saber manejarlo bien\n    [6] superar la voluntad de hacer algo</div><div
-        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"verstehen\n[1]
+        \ (Gesprochenes) deutlich akustisch wahrnehmen\n    [2] Anwendung einer intellektuellen
+        F\xE4higkeit:\n    [2a]  den Sinngehalt, die Bedeutung von etwas, die Absicht
+        einer Person verstandesm\xE4\xDFig erfassen\n    [2b]  in bestimmter Weise
+        deutend interpretieren\n    [2c]  eine bestimmte Vorstellung beziehungsweise
+        einen bestimmten Eindruck von sich selbst vermitteln; sich in bestimmter Weise
+        darum bem\xFChen, als jemand Bestimmtes angesehen zu werden\n    [2d]  (von
+        Preisen) in bestimmter Weise erkennen lassen beziehungsweise zum Ausdruck
+        bringen wollen\n    [3] Anwendung einer emotionalen F\xE4higkeit:\n    [3a]
+        \ sich in jemanden einf\xFChlen, in jemandes Situation hineindenken k\xF6nnen;
+        diese F\xE4higkeit jemandem gegen\xFCber zu erkennen geben\n    [3b]  (die
+        Verhaltensweise, Haltung, Reaktion, das Gef\xFChl von jemandes Standpunkt
+        aus gesehen als) nat\xFCrlich, konsequent, richtig, normal einsch\xE4tzen,
+        beurteilen, empfinden\n    [4]  ohne Streitigkeiten mit jemandem auskommen,
+        eine gute pers\xF6nliche Beziehung zu jemandem haben\n    [5] Bef\xE4higung
+        zu T\xE4tigkeiten:\n    [5a]  sich etwas (geistig) zu eigen gemacht haben;
+        die F\xE4higkeit zur Aus\xFCbung von etwas haben, die Begabung f\xFCr etwas
+        besitzen\n    [5b]  ein besonderes (Fach-, Sach- oder Erfahrungs-)Wissen (von
+        etwas) aufweisen; (mit etwas) vertraut sein, umzugehen wissen; (auf einem
+        bestimmten Gebiet) genau Bescheid wissen (und diesbez\xFCglich urteilsf\xE4hig
+        sein)\n    [5c]  zu etwas imstande sein; die Fertigkeiten besitzen, etwas
+        Bestimmtes zu tun\n    [5d]  sich mit etwas auskennen und gut umzugehen wissen\n
+        \   [6]  sich \xFCberwindend zu etwas doch bereit erkl\xE4ren\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">entender\n[1] Percibir (hablar) claramente ac\xFAsticamente\n
+        \   [2] Aplicaci\xF3n de una capacidad intelectual:\n    [2a] captar intelectualmente
+        el significado, el significado de algo, la intenci\xF3n de una persona\n    [2b]
+        interpretado de cierta manera\n    [2c] transmitir una determinada idea o
+        impresi\xF3n de uno mismo; hacer un esfuerzo particular para ser visto como
+        alguien espec\xEDfico\n    [2d] (de precios) revelan o quieren expresarse
+        de cierta manera\n    [3] Aplicaci\xF3n de una habilidad emocional:\n    [3a]
+        ser capaz de empatizar con alguien, pensar en la situaci\xF3n de alguien;
+        demostrarle esta habilidad a alguien\n    [3b] (el comportamiento, actitud,
+        reacci\xF3n, sentimiento visto desde el punto de vista de alguien como) natural,
+        consistente, correcto, normal, evaluar, juzgar, sentir\n    [4] llevarse bien
+        con alguien sin discusiones, tener una buena relaci\xF3n personal con alguien\n
+        \   [5] Capacidad para realizar actividades:\n    [5a] has hecho algo (mentalmente)
+        tuyo; tener la capacidad de hacer algo, tener el talento para algo\n    [5b]
+        tener conocimiento especial (t\xE9cnico, f\xE1ctico o experiencial) (de algo);
+        estar familiarizado (con algo), saber c\xF3mo afrontarlo; (en un \xE1rea determinada)
+        tener conocimientos precisos (y poder emitir juicios al respecto)\n    [5c]
+        poder hacer algo; tener las habilidades para hacer algo espec\xEDfico\n    [5d]
+        estar familiarizado con algo y saber manejarlo bien\n    [6] superar la voluntad
+        de hacer algo</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
         home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
         feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
         and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
@@ -524,7 +524,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-mQWk_8YLv2oRo2pG2OM6Jw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-b-GXz2vG87W2gZ6WGATvpg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -534,7 +534,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:53 GMT
+      - Thu, 03 Oct 2024 14:24:45 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -547,8 +547,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=iOO7pmgcq00MDUo_wYpx6_a8BIMVZ7RfUEIa3mYZ4bUQJb2VkO0KHh54n0uGwXQ6oJd-TlzqpcGpRlF1LP5Jr90JcrKO5IpPUX68idpEkFHaUq59p6psBV6tRIve-37ncgHrRXY_uMO6v6T8SMf0sgLcIqn_i7gaJobwjT-i1vZku5O_VmH5oRg2XA;
-        expires=Thu, 16-Oct-2025 00:10:11 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=hqQoyiLBzwD468CqtzzQL6ZRQTT6buECZBh-k7g_wLq2dmbtlCXjcAVsAMLIjFZEUnvSt0tS-BfYAwpc0iKSX6dLtExeq2AY6B4j3sLhZtDsYXF3qB-EoW7zqUGY7vevCyzGtRxy4pNHkDdJ56cMk_Lq4g7TMisVfg0PmOcKXNSh0_a_ruHqMSl1A30;
+        expires=Mon, 03-Nov-2025 06:43:03 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -561,7 +561,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQN8fMJbO2swl0nFrnp6SWlF8YX1KUmFeck1iSqluemlScWlSWWhRvZGBkYmBpaKhnYB5fYAgAD6cvHw"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XCsvfRrO5vAga19ixmV1JLyC-NLihLzinMSS1J1y1OTilOLylKL4o0MjEwMDQwM9Qws4gsMAJ3FLEM"
     status:
       code: 200
       message: OK
@@ -583,7 +583,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"veM-t5yHKFLwwRbxHtKMNw\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"mDYix1cq29O2FOzgN3hK7A\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -648,7 +648,7 @@ interactions:
       - gzip
       Content-Security-Policy:
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-unpTTQ8qqd7sM0MRnjf0-A' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-t6-ASpaFogxBO6e-p5hO6w' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
@@ -657,7 +657,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:55 GMT
+      - Thu, 03 Oct 2024 14:24:48 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -670,8 +670,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=RxetW8UZxSzWQbbdKbdtJhOoJlsWVAFbGUd1M_ZYFVs5M64jTavDuwzBkuMlqbOAyszse54APGmq6RCqJB8v-bhkF55NEAlOyy64I5YzBAl3XCEw7eXRap2CZDEqVpT3d5xfTVhlAp2AX-nunJdf9kJ32IIINyzMwSNT76BLpW_c0QYTd6qnr4Zb-_U;
-        expires=Thu, 16-Oct-2025 00:10:13 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=fUkafaYuaQsID48pBT-gU4oY0FeMuxGcRvS53OsLsYWfkijVDOM22MGcjM1iZJCj6D4GQGXrGQWNBd1IEz_g2xVPtLTYrKQm3SGmC73ypBqmhgvntl3TM3_AsKLeaiKh-PStwrw1tI0ir1qkGlWVhlXylxyFSQdkg4Z9oDYyBgh5Va_tQz_XexILuw;
+        expires=Mon, 03-Nov-2025 06:43:06 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -684,7 +684,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8fsJbO2swl0bJp0hUlJLSm_ML6kKDGvOCexJFW3PDWpOLWoLLUo3sjAyMTA0tBQz8A8vsAQADy_L3A"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw1ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxALcXNsuPRrO5vAjuaXFUpqSfmF8SVFiXnFOYklqbrlqUnFqUVlqUXxRgZGJoYGBoZ6BhbxBQYAe-UsNw"
     status:
       code: 200
       message: OK
@@ -706,7 +706,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"_E_bPmkisPZaA9O7y2rqlw\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"VTWTTRHxRq_ei4v2WbTwpw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -771,9 +771,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-nFnceKU7J458XNeeQGvTew' 'unsafe-inline';object-src 'none';base-uri
-        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-Ao-3jemWGpYL_IuF5GnHqA' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -781,7 +781,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:56 GMT
+      - Thu, 03 Oct 2024 14:24:49 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -794,8 +794,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=b9rpwJ0T3RUNqzugkWgxBxUVrZ6i4AHNsufoA2rVtlT0Mew771Yac2HLl-phSM7F2zTH8As2GOuleP0FjrbPRbZ-2KOYSDFfZXdZAhABeIzhWpwj4ITnTm0zlE7INkTc6PrfhtDEpL_dR6g1mfwVxhbreXatiAKzT3FAzipRtF5zFu4ZkbUTMgrWsOU;
-        expires=Thu, 16-Oct-2025 00:10:14 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=K6YH3GCRia6qb7RX4l7oOOE6mniIp2uEFujOo5D3__7pu1yzekdIPU2rM8Jk5TDh_OksAoCGB0h5FqvVpYgBL_afGe4r5LgpEGeRjvpFOs-1tUPHwNrVu6m0kU3Yyxp9p-_aPCf4GtsqVALyOzq-2beSvkPeehamwLYoq87ruirRMZonvs4jTsOX;
+        expires=Mon, 03-Nov-2025 06:43:07 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -808,7 +808,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw0ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQN8ecJbO2swlcaNuTpaSWlF8YX1KUmFeck1iSqluemlScWlSWWhRvZGBkYmBpaKhnYB5fYAgAEz8vRg"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII1JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XBsvPRrO5vAio6-GUxKakn5hfElRYl5xTmJJam65alJxalFZalF8UYGRiaGBgaGegYW8QUGAJFqK_k"
     status:
       code: 200
       message: OK

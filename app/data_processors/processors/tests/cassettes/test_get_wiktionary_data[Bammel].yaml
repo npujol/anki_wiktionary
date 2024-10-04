@@ -96,7 +96,7 @@ interactions:
       accept-ranges:
       - bytes
       age:
-      - '1'
+      - '0'
       cache-control:
       - private, must-revalidate, max-age=0
       content-disposition:
@@ -106,7 +106,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sun, 15 Sep 2024 07:51:49 GMT
+      - Thu, 03 Oct 2024 14:24:39 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -114,14 +114,14 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-79cbd6dc7f-frxdv
+      - mw-api-ext.eqiad.main-7547c4c79f-jmgrx
       server-timing:
       - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=15-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 17 Oct 2024
-        00:00:00 GMT
-      - WMF-Last-Access-Global=15-Sep-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
-        17 Oct 2024 00:00:00 GMT
+      - WMF-Last-Access=03-Oct-2024;Path=/;HttpOnly;secure;Expires=Mon, 04 Nov 2024
+        12:00:00 GMT
+      - WMF-Last-Access-Global=03-Oct-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Mon,
+        04 Nov 2024 12:00:00 GMT
       - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
       strict-transport-security:
@@ -155,13 +155,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D++Angst%2C+Furcht
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Bammel%0A%5B1%5D++Angst%2C+Furcht
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"uFPZAnjG4aKA_etD1jIu_A\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"NMV7-3WWPXdyDM-SBaRDyw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -199,15 +199,15 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20Angst%2C%20Furcht&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20%20Angst%2C%20Furcht&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20Miedo%2C%20miedo&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Bammel%0A%5B1%5D%20%20Angst%2C%20Furcht&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Bammel%0A%5B1%5D%20%20Angst%2C%20Furcht&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=nervios%0A%5B1%5D%20Miedo%2C%20miedo&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1]  Angst, Furcht\"><div
-        class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
-        class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Bammel\n[1]  Angst,
+        Furcht\"><div class=\"translate-button-container\"><input type=\"submit\"
+        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">nervios\n[1]
         Miedo, miedo</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
         home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
         feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
@@ -225,7 +225,7 @@ interactions:
       - gzip
       Content-Security-Policy:
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-44HkMjC57rZd23H_jWyyTQ' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-UfgEwejLGyinDgsU6pTD1w' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
@@ -234,7 +234,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:49 GMT
+      - Thu, 03 Oct 2024 14:24:39 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -247,8 +247,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=MCUZLb-iy4GA486dSvdJXMbgSd_f88dBjQWnpfNSllcuwN81897fdNoRpLcgYNKAGApGzPpCqgz1v-hrnSxnwKTLtk-9GNNf-_uhtjdAgE9mjeyFCf5vk1R7DvXfB_KkERhIx8PX3_F5aEzmfZCgK0yj5co_e9yXlg3x86cax0x57KPWC2iKdoeNkZ0;
-        expires=Thu, 16-Oct-2025 00:10:07 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=fYFotpQbF5IS6sA-qTRmWn4VVM7B62C_1gkMi7wz4D3ihW0-HJbWbj-193pHMwPbVJWsx1QBkiNHpc4amYemWJQHxqk7ncNRaag1b27M-bxPuFahles__Iyp0wzEWbuBt95KQ16YXb20dAcf6ECVtuif22UsgNZHeuqBhdS00K_KMbFckd7FlkeAKw;
+        expires=Mon, 03-Nov-2025 06:42:57 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -261,7 +261,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw0ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQN8fUJbO2swl8-LWrVkktKb8wvqQoMa84J7EkVbc8Nak4tagstSjeyMDIxMDS0FDPwDy-wBAAMVwv7A"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII0pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XAsv_RrO5vAgg0_1zErqSXlF8aXFCXmFecklqTqlqcmFacWlaUWxRsZGJkYGhgY6hlYxBcYAACrFCyS"
     status:
       code: 200
       message: OK
@@ -283,7 +283,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"eoJJhPWLwFch6S_QTyzlKA\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"oIl79tFFkYdXpzy57mAxDg\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -347,7 +347,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-wGF_jvizMZh8S2S3gjFV3Q' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-7IEO9Y_s_jVf3hpT7jOS2Q' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -357,7 +357,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:50 GMT
+      - Thu, 03 Oct 2024 14:24:41 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -370,8 +370,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=Yd8s0JdCY9PeLMW2AxcP0UL9PGzRlQmFifbF8iHAzZE-5vSLX2NWkDtk5VjuPTkzshQdoOW3wvY3C_OU4P-GKwjudu74Fy9Ze5kQPUWnisAJNp6uWg0whtpEuhV6jMtL-Buc_dEzf60WyJl9OLbKtcRbTrG72S4lqTsJeVv8tPY5TnMaHjfF2Bpsd9E;
-        expires=Thu, 16-Oct-2025 00:10:08 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=ZksEZDwK0hbNVv3_wAlgzwZ1zkM42p8rOI__TDlit5Yfn5yDAWvhRHIsT0qDLw3BLD9ziBV2YQZI0FAOoNxLSpr8uHby27Nzbw_c4Z6HCVBXAg0x2IL8Ho94p0BrFZK0QXz2oYhoE3sAM6qyuB9ypextt5I66FQilmezS941nJ3J0_42XI1u7yYYS3o;
+        expires=Mon, 03-Nov-2025 06:42:59 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -384,7 +384,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8e0JbO2swl8mL55HbOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAEZ6L68"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XCsvPRrO5vAhvt9LxmV1JLyC-NLihLzinMSS1J1y1OTilOLylKL4o0MjEwMDQwM9Qws4gsMAKhpLJU"
     status:
       code: 200
       message: OK
@@ -406,7 +406,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"sKOFZXUhOBHTIQ3yt3zUug\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"-72K-u8iIydxqMyuyKXBOw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -470,7 +470,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-sS4FFxUtvwNmn4EDm0W10g' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-7l_8avA1SAHbU4DXul-Nvg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -480,7 +480,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:51 GMT
+      - Thu, 03 Oct 2024 14:24:42 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -493,8 +493,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=R5nHqU54v953BRfj0tUCLHgUusd8dCoF5LKjS8zNXWyu6BIFSyRcSVtV0mEPfhhYqkTexrydGaEnhxSmHtkST_DryL7lOwO3P6m8f1bEIwfJQPie_38XRq3hBVod4qnpL8g6y1xHXIwxmATpVuNk9uydiGgttcsZl1_wz4hbxIV8RPexIXpPV8FRtg;
-        expires=Thu, 16-Oct-2025 00:10:09 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=ZRZKLvY3-_eBkLlEurnyjJze-2vA9QNDoK489X7Tx8K_PLuPrEPMcq9Nf7hBrdPQPs8GxlbF7hnjT0bG68AKUrcQgjOKoIuaPoZ4rR6i35N7hKtAeYH7phT2w5TjUU-DVEM968zpaApJ_i7KzcBy12Isph2Eq9WmV79fj-43z-fKziSSmHdi4brrEQ;
+        expires=Mon, 03-Nov-2025 06:43:00 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -507,7 +507,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmII0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8f0JbO2swnc-DLvO6OSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAGDEMDQ"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XCsuvRrO5vAib6u5cxKakn5hfElRYl5xTmJJam65alJxalFZalF8UYGRiaGBgaGegYW8QUGAJZmLB8"
     status:
       code: 200
       message: OK

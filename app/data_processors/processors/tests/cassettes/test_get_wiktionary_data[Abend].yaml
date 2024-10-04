@@ -52,7 +52,7 @@ interactions:
         ''''nach Inhalt, Programm, Gestaltung:'''' [[Badeabend]], [[Ballettabend]],
         [[Begr\u00fc\u00dfungsabend]], [[Bierabend]], [[B\u00fcrgerabend]], [[Chansonabend]],
         [[Damenabend]], [[Diaabend]], [[Diskussionsabend]], [[Elternabend]], [[Er\u00f6ffnungsabend]],
-        [[Familienabend], [[Fernsehabend]], [[Festabend]], [[Filmabend]], [[Flitterabend]],
+        [[Familienabend]], [[Fernsehabend]], [[Festabend]], [[Filmabend]], [[Flitterabend]],
         [[Frauenabend]], [[Frostabend]], [[Fu\u00dfballabend]], [[Galaabend]], [[Gala-Abend]],
         [[Gedenkabend]], [[Gesellschaftsabend]], [[Gespr\u00e4chsabend]], [[Gewitterabend]],
         [[Heimatabend]], [[Herrenabend]], [[Heurigenabend]], [[H\u00fcttenabend]],
@@ -397,7 +397,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sun, 15 Sep 2024 07:51:41 GMT
+      - Thu, 03 Oct 2024 14:24:30 GMT
       nel:
       - '{ "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction":
         0.0}'
@@ -405,14 +405,14 @@ interactions:
       - '{ "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0"
         }] }'
       server:
-      - mw-api-ext.eqiad.main-79cbd6dc7f-ddvsc
+      - mw-api-ext.eqiad.main-7547c4c79f-l2rhg
       server-timing:
       - cache;desc="pass", host;desc="cp3072"
       set-cookie:
-      - WMF-Last-Access=15-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 17 Oct 2024
-        00:00:00 GMT
-      - WMF-Last-Access-Global=15-Sep-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Thu,
-        17 Oct 2024 00:00:00 GMT
+      - WMF-Last-Access=03-Oct-2024;Path=/;HttpOnly;secure;Expires=Mon, 04 Nov 2024
+        12:00:00 GMT
+      - WMF-Last-Access-Global=03-Oct-2024;Path=/;Domain=.wiktionary.org;HttpOnly;secure;Expires=Mon,
+        04 Nov 2024 12:00:00 GMT
       - GeoIP=DE:BE:Berlin:52.55:13.41:v4; Path=/; secure; Domain=.wiktionary.org
       - NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
       strict-transport-security:
@@ -446,13 +446,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=%5B1%5D+die+Tageszeit+nach+dem+Nachmittag%2C+die+beginnt%2C+wenn+die+Sonne+den+Horizont+erreicht%2C+und+bei+v%C3%B6lliger+Dunkelheit+endet%3B+dem+Abend+geht+der+Tag+voran+und+auf+den+Abend+folgt+die+Nacht%0A++++%5B2%5D++die+Himmelsrichtung+Westen%0A++++%5B3%5D++verschliffene+Begr%C3%BC%C3%9Fungsfloskel+%E2%80%9Eguten+Abend%E2%80%9C%0A++++%5B4%5D++Abschluss%2C+Ende%2C+Schluss+%28f%C3%BCr+Leben%2C+Epochen%2C+langandauernde+Herrschaften+und+%C3%84hnlichem%29%0A++++%5B5%5D++Abendveranstaltung%3B+Abend+mit+heiterem%2C+vielgestaltigem+Programm%3B+Abendempfang
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Abend%0A%5B1%5D+die+Tageszeit+nach+dem+Nachmittag%2C+die+beginnt%2C+wenn+die+Sonne+den+Horizont+erreicht%2C+und+bei+v%C3%B6lliger+Dunkelheit+endet%3B+dem+Abend+geht+der+Tag+voran+und+auf+den+Abend+folgt+die+Nacht%0A++++%5B2%5D++die+Himmelsrichtung+Westen%0A++++%5B3%5D++verschliffene+Begr%C3%BC%C3%9Fungsfloskel+%E2%80%9Eguten+Abend%E2%80%9C%0A++++%5B4%5D++Abschluss%2C+Ende%2C+Schluss+%28f%C3%BCr+Leben%2C+Epochen%2C+langandauernde+Herrschaften+und+%C3%84hnlichem%29%0A++++%5B5%5D++Abendveranstaltung%3B+Abend+mit+heiterem%2C+vielgestaltigem+Programm%3B+Abendempfang
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"UhrrAx7Hr-G4y_I5BDlLUQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"MsNbrE2JN84awlke5zhRaQ\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -490,21 +490,21 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%5B1%5D%20la%20hora%20del%20d%C3%ADa%20despu%C3%A9s%20de%20la%20tarde%2C%20que%20comienza%20cuando%20el%20sol%20llega%20al%20horizonte%20y%20termina%20cuando%20oscurece%20completamente%3B%20La%20tarde%20es%20precedida%20por%20el%20d%C3%ADa%20y%20la%20tarde%20es%20seguida%20por%20la%20noche.%0A%20%20%20%20%5B2%5D%20la%20direcci%C3%B3n%20oeste%0A%20%20%20%20%5B3%5D%20frase%20de%20saludo%20arrastrada%20%22buenas%20noches%22%0A%20%20%20%20%5B4%5D%20Conclusi%C3%B3n%2C%20fin%2C%20conclusi%C3%B3n%20%28para%20vidas%2C%20eras%2C%20reinados%20duraderos%20y%20similares%29%0A%20%20%20%20%5B5%5D%20Evento%20nocturno%3B%20Velada%20con%20un%20programa%20alegre%20y%20variado%3B%20Recepci%C3%B3n%20nocturna&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%5B1%5D%20die%20Tageszeit%20nach%20dem%20Nachmittag%2C%20die%20beginnt%2C%20wenn%20die%20Sonne%20den%20Horizont%20erreicht%2C%20und%20bei%20v%C3%B6lliger%20Dunkelheit%20endet%3B%20dem%20Abend%20geht%20der%20Tag%20voran%20und%20auf%20den%20Abend%20folgt%20die%20Nacht%0A%20%20%20%20%5B2%5D%20%20die%20Himmelsrichtung%20Westen%0A%20%20%20%20%5B3%5D%20%20verschliffene%20Begr%C3%BC%C3%9Fungsfloskel%20%E2%80%9Eguten%20Abend%E2%80%9C%0A%20%20%20%20%5B4%5D%20%20Abschluss%2C%20Ende%2C%20Schluss%20%28f%C3%BCr%20Leben%2C%20Epochen%2C%20langandauernde%20Herrschaften%20und%20%C3%84hnlichem%29%0A%20%20%20%20%5B5%5D%20%20Abendveranstaltung%3B%20Abend%20mit%20heiterem%2C%20vielgestaltigem%20Programm%3B%20Abendempfang&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Noche%0A%5B1%5D%20la%20hora%20del%20d%C3%ADa%20despu%C3%A9s%20de%20la%20tarde%2C%20que%20comienza%20cuando%20el%20sol%20llega%20al%20horizonte%20y%20termina%20cuando%20oscurece%20completamente%3B%20La%20tarde%20es%20precedida%20por%20el%20d%C3%ADa%20y%20la%20tarde%20es%20seguida%20por%20la%20noche.%0A%20%20%20%20%5B2%5D%20la%20direcci%C3%B3n%20oeste%0A%20%20%20%20%5B3%5D%20frase%20de%20saludo%20arrastrada%20%22buenas%20noches%22%0A%20%20%20%20%5B4%5D%20Conclusi%C3%B3n%2C%20fin%2C%20conclusi%C3%B3n%20%28para%20vidas%2C%20eras%2C%20reinados%20duraderos%20y%20similares%29%0A%20%20%20%20%5B5%5D%20Evento%20nocturno%3B%20Velada%20con%20un%20programa%20alegre%20y%20variado%3B%20Recepci%C3%B3n%20nocturna&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"[1] die Tageszeit
-        nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht, und
-        bei v\xF6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf den
-        Abend folgt die Nacht\n    [2]  die Himmelsrichtung Westen\n    [3]  verschliffene
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Abend\n[1] die
+        Tageszeit nach dem Nachmittag, die beginnt, wenn die Sonne den Horizont erreicht,
+        und bei v\xF6lliger Dunkelheit endet; dem Abend geht der Tag voran und auf
+        den Abend folgt die Nacht\n    [2]  die Himmelsrichtung Westen\n    [3]  verschliffene
         Begr\xFC\xDFungsfloskel \u201Eguten Abend\u201C\n    [4]  Abschluss, Ende,
         Schluss (f\xFCr Leben, Epochen, langandauernde Herrschaften und \xC4hnlichem)\n
         \   [5]  Abendveranstaltung; Abend mit heiterem, vielgestaltigem Programm;
         Abendempfang\"><div class=\"translate-button-container\"><input type=\"submit\"
-        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">[1]
+        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">Noche\n[1]
         la hora del d\xEDa despu\xE9s de la tarde, que comienza cuando el sol llega
         al horizonte y termina cuando oscurece completamente; La tarde es precedida
         por el d\xEDa y la tarde es seguida por la noche.\n    [2] la direcci\xF3n
@@ -527,9 +527,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-cQsvl6P2qWTvgS8pUUZbYg' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-M7Jv6QnQwLfnnLvIROVhLA' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -537,7 +537,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:41 GMT
+      - Thu, 03 Oct 2024 14:24:31 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -550,8 +550,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=HNVvFaBnrU7DeUgfnessAGF06gwrSESO7q0kapwOAJqidb4zE_szWoWpafxGc5dYY8e8JNINM8kaDCYhl1LN-ifx-3ihTh0nPM3cLHZhQNtN1dEk5C0YpmIC1acL9aDz6yirNPO5HYnSyrGvaySxo0HbaPW_QTaU7v_aGnntAts6g4sJ2nUeDIBENaw;
-        expires=Thu, 16-Oct-2025 00:09:59 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=dUm0HsvrnBgxSozGRmBa4Z-7hLpmlB3saSBU1gayTj1YJ9viY4FRp5gzr6psM65oWOdfxfXQVDSIMkUH9nOj5D_pKk_3aRpc8uyi_yHK_e4WcOEmOHX6XAgcv30qP0yihnsUrXCjgCekd6v-BMvspKn70Cwx_WUp9QUv3_0Dmw7TroGve8mzIoWGj14;
+        expires=Mon, 03-Nov-2025 06:42:49 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -564,7 +564,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmJw1ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD0fvklnb2QQ6_kxdw6yklpRfGF9SlJhXnJNYkqpbnppUnFpUlloUb2RgZGJgaWioZ2AeX2AIAD9ZL4U"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw1JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxALcXPMv_RrO5vAhpZeQyW1pPzC-JKixLzinMSSVN3y1KTi1KKy1KJ4IwMjE0MDA0M9A4v4AgMAV5srcA"
     status:
       code: 200
       message: OK
@@ -586,7 +586,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"SpQMFcsz9JhfdmB94m68-w\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"AvhSHWkgIzgl1OnHFakG5w\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -652,9 +652,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-KV3yEQr3J_qhAg-IgYWwaA' 'unsafe-inline';object-src 'none';base-uri
-        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-Vxwvrx4U8XthRx0-BhtNGQ' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -662,7 +662,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:51:43 GMT
+      - Thu, 03 Oct 2024 14:24:31 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -675,8 +675,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=MiH_Qgem0FTk3MCW7_McyQUEe5cCzMn87ylplZSmaf6MhCwEpJYzPxhALH6ZJkCsEQkhWj7s8tFKJXhZpMnqv2hbWR7uDIOobj_90ASR_dS7AEobtG6QoHAxO0LHlJpCfMUDxV8ZL6Wq2Q4iBvyKhUd7h9lIQpAbUSdwQ8fsvuEIAVzmYz84zsGmOg;
-        expires=Thu, 16-Oct-2025 00:10:01 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=gBQwDll4-CoUp2UKoa0oeAClmVyAK3N2o9xqDBKN4XSYJNGIvUhYs6aVEQud4_zT91ADZ-sKnREgwrLgEtnXCOlZM95qG794pW1lLRPA829wk3rhy0wDazSw42rd-TGqB26ef4zR_HZnZxyba-dqOg9169jSgwM-z8L_vEZ_XX-LFc0fkdSDczjumKs;
+        expires=Mon, 03-Nov-2025 06:42:49 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -689,7 +689,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw1ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD0f_klnb2QQO_Hi6j1lJLSm_ML6kKDGvOCexJFW3PDWpOLWoLLUo3sjAyMTA0tBQz8A8vsAQAF0bMCU"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XDMv_RrO5vAilcbHjMpqSXlF8aXFCXmFecklqTqlqcmFacWlaUWxRsZGJkYGhgY6hlYxBcYAACvWiyz"
     status:
       code: 200
       message: OK

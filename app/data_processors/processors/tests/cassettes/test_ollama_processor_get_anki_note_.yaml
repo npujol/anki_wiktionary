@@ -1,15 +1,14 @@
 interactions:
 - request:
-    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend**\n                    Given
+    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend** Given
       a word, generate a piece of content (plural) based on the following constraints:
-      This field contains the plural form of the word.\n\n                    **Word:*Abend*
-      \"\"\n\n                    **Constraints:**\n                    Use the constraints
-      defined in the JSON schema.\n\n                    **Generate Content:**\n                    Using
+      This field contains the plural form of the word.\" **Word:*Abend*  **Constraints:**
+      Use the constraints defined in the JSON schema. **Generate Content:** Using
       the word \"Abend\" as input, generate a JSON object with the key and the generated
-      content. \n                    Please return only the generated content without
-      other text or explanation. The response should be in german.", "system": "",
-      "template": "", "context": [], "stream": false, "raw": false, "images": [],
-      "format": "", "options": {}, "keep_alive": null}'
+      content. Please return only the generated content without other text or explanation.
+      The response should be in german.", "system": "", "template": "", "context":
+      [], "stream": false, "raw": false, "images": [], "format": "", "options": {},
+      "keep_alive": null}'
     headers:
       accept:
       - application/json
@@ -18,40 +17,40 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '814'
+      - '658'
       content-type:
       - application/json
       host:
       - 127.0.0.1:11434
       user-agent:
-      - ollama-python/0.2.0 (x86_64 linux) Python/3.12.3
+      - ollama-python/0.2.1 (x86_64 linux) Python/3.12.3
     method: POST
     uri: http://127.0.0.1:11434/api/generate
   response:
-    content: "{\"model\":\"llama3\",\"created_at\":\"2024-06-02T21:08:59.492230144Z\",\"response\":\"{\\n\\\"Aenden\\\":
-      [\\\"Die Abende verstrichen langsam, wie die Sonne unterging.\\\"],\\n\\\"Abende\\\":
-      [\\\"In der Dunkelheit h\xF6rte man den Abendchor erz\xE4hlen seine Lieder.\\\"]\\n}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,198,504,16644,264,3492,11,7068,264,6710,315,2262,220,7,67646,8,3196,389,279,2768,17413,25,1115,2115,5727,279,39598,1376,315,279,3492,13,271,3909,334,11116,54486,5953,408,9,220,3089,271,3909,334,13221,68063,198,504,5560,279,17413,4613,304,279,4823,11036,13,271,3909,334,32215,9059,68063,198,504,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,4173,295,660,2262,13,720,504,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,90,198,1,32,20468,794,220,1204,18674,3765,11178,2807,496,29424,8859,47096,11,13672,2815,12103,818,22229,3252,1210,1145,198,1,5953,11178,794,220,1204,644,2761,69783,301,23190,305,9603,668,893,3453,3765,408,6279,2781,89,86342,39997,445,22970,93204,198,92,128009],\"total_duration\":10290060270,\"load_duration\":1782411279,\"prompt_eval_count\":129,\"prompt_eval_duration\":3753372000,\"eval_count\":49,\"eval_duration\":4711275000}"
+    content: "{\"model\":\"llama3\",\"created_at\":\"2024-10-03T14:40:37.120399606Z\",\"response\":\"{\\\"Abende\\\":
+      [\\\"Die Abende sind der beste Zeitpunkt f\xFCr eine romantische Dinner-Date\\\",
+      \\\"Ein Abend mit Freunden ist immer ein Erfolg\\\", \\\"Das Konzert war so
+      gut, dass ich den ganzen Abend lang nicht mehr wegger\xFCckt bin\\\", \\\"Der
+      Abend war bei\xDFender kalt, aber das konnte meine Stimmung nicht tr\xFCben\\\"]}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,16644,264,3492,11,7068,264,6710,315,2262,220,7,67646,8,3196,389,279,2768,17413,25,1115,2115,5727,279,39598,1376,315,279,3492,1210,220,334,11116,54486,5953,408,9,256,334,13221,68063,5560,279,17413,4613,304,279,4823,11036,13,220,334,32215,9059,68063,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,8066,2262,13,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,5018,5953,11178,794,220,1204,18674,3765,11178,12868,2761,29922,29931,72965,7328,10021,68567,10782,49191,12,1956,498,220,1,54850,3765,408,5568,7730,22945,6127,26612,4466,42763,75163,498,220,1,33717,24277,89,531,4208,779,18340,11,15297,10864,3453,25893,5797,3765,408,8859,8969,19028,71611,1414,19919,83,9736,498,220,1,22960,3765,408,4208,13582,8156,1693,597,3223,11,19649,6754,65115,45490,800,12828,2234,8969,490,2448,8123,93546,128009],\"total_duration\":17643615770,\"load_duration\":6097962306,\"prompt_eval_count\":114,\"prompt_eval_duration\":3820046000,\"eval_count\":83,\"eval_duration\":7591159000}"
     headers:
       Content-Length:
-      - '1294'
+      - '1545'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 02 Jun 2024 21:08:59 GMT
+      - Thu, 03 Oct 2024 14:40:37 GMT
     http_version: HTTP/1.1
     status_code: 200
 - request:
-    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend**\n                    Given
+    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend** Given
       a word, generate a piece of content (characteristics) based on the following
       constraints: This field contains specific grammatical characteristics of the
-      word.\n\n                    **Word:*Abend* \"\"\n\n                    **Constraints:**\n                    Use
-      the constraints defined in the JSON schema.\n\n                    **Generate
-      Content:**\n                    Using the word \"Abend\" as input, generate
-      a JSON object with the key and the generated content. \n                    Please
-      return only the generated content without other text or explanation. The response
-      should be in german.", "system": "", "template": "", "context": [], "stream":
-      false, "raw": false, "images": [], "format": "", "options": {}, "keep_alive":
-      null}'
+      word.\" **Word:*Abend*  **Constraints:** Use the constraints defined in the
+      JSON schema. **Generate Content:** Using the word \"Abend\" as input, generate
+      a JSON object with the key and the generated content. Please return only the
+      generated content without other text or explanation. The response should be
+      in german.", "system": "", "template": "", "context": [], "stream": false, "raw":
+      false, "images": [], "format": "", "options": {}, "keep_alive": null}'
     headers:
       accept:
       - application/json
@@ -60,40 +59,37 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '844'
+      - '688'
       content-type:
       - application/json
       host:
       - 127.0.0.1:11434
       user-agent:
-      - ollama-python/0.2.0 (x86_64 linux) Python/3.12.3
+      - ollama-python/0.2.1 (x86_64 linux) Python/3.12.3
     method: POST
     uri: http://127.0.0.1:11434/api/generate
   response:
-    content: "{\"model\":\"llama3\",\"created_at\":\"2024-06-02T21:09:09.819280576Z\",\"response\":\"{\\n\\\"Substantiv\\\":
-      \\\"Das Abend ist eine Zeit des Tages, die zwischen dem Mittag und dem Morgen
-      liegt.\\\",\\n\\\"Adjektiv\\\": [\\\"abendlich\\\", \\\"morgensp\xE4t\\\"],\\n\\\"Verb\\\":
-      [\\\"sinken\\\", \\\"untergehen\\\"],\\n\\\"Nomen\\\": [\\\"Sonne\\\", \\\"Mond\\\"]\\n}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,198,504,16644,264,3492,11,7068,264,6710,315,2262,220,7,19740,5706,8,3196,389,279,2768,17413,25,1115,2115,5727,3230,69225,62172,17910,315,279,3492,13,271,3909,334,11116,54486,5953,408,9,220,3089,271,3909,334,13221,68063,198,504,5560,279,17413,4613,304,279,4823,11036,13,271,3909,334,32215,9059,68063,198,504,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,4173,295,660,2262,13,720,504,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,90,198,1,3214,4811,344,794,220,1,33717,3765,408,6127,10021,29931,951,350,1154,11,2815,48326,2486,33718,351,2073,2486,386,40663,65040,10684,198,1,55966,114107,794,220,1204,370,408,6915,498,220,1,76,1813,729,79,14360,8073,198,1,68046,794,220,1204,67838,268,498,220,1,30259,713,12301,8073,198,1,45,6431,794,220,1204,50,30052,498,220,1,44,2159,1365,198,92,128009],\"total_duration\":10281122087,\"load_duration\":1558965,\"prompt_eval_count\":105,\"prompt_eval_duration\":3427114000,\"eval_count\":69,\"eval_duration\":6727841000}"
+    content: '{"model":"llama3","created_at":"2024-10-03T14:40:43.27056487Z","response":"{\n\"Nomen\":
+      \"Substantiv\",\n\"Kasus\": \"Akkusativ\",\n\"Genus\": \"Maskulinum\"\n}","done":true,"done_reason":"stop","context":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,16644,264,3492,11,7068,264,6710,315,2262,220,7,19740,5706,8,3196,389,279,2768,17413,25,1115,2115,5727,3230,69225,62172,17910,315,279,3492,1210,220,334,11116,54486,5953,408,9,256,334,13221,68063,5560,279,17413,4613,304,279,4823,11036,13,220,334,32215,9059,68063,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,8066,2262,13,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,90,198,1,45,6431,794,220,1,3214,4811,344,498,198,1,42,300,355,794,220,1,32,19747,355,20053,498,198,1,10172,355,794,220,1,12975,24292,372,1,198,92,128009],"total_duration":6102908565,"load_duration":41110531,"prompt_eval_count":92,"prompt_eval_duration":3243898000,"eval_count":31,"eval_duration":2774059000}'
     headers:
       Content-Length:
-      - '1467'
+      - '1052'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 02 Jun 2024 21:09:09 GMT
+      - Thu, 03 Oct 2024 14:40:43 GMT
     http_version: HTTP/1.1
     status_code: 200
 - request:
-    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend**\n                    Given
+    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend** Given
       a word, generate a piece of content (ipa) based on the following constraints:
-      This field contains the IPA transcription of the word.\n\n                    **Word:*Abend*
-      \"\"\n\n                    **Constraints:**\n                    Use the constraints
-      defined in the JSON schema.\n\n                    **Generate Content:**\n                    Using
+      This field contains the IPA transcription of the word.\" **Word:*Abend*  **Constraints:**
+      Use the constraints defined in the JSON schema. **Generate Content:** Using
       the word \"Abend\" as input, generate a JSON object with the key and the generated
-      content. \n                    Please return only the generated content without
-      other text or explanation. The response should be in german.", "system": "",
-      "template": "", "context": [], "stream": false, "raw": false, "images": [],
-      "format": "", "options": {}, "keep_alive": null}'
+      content. Please return only the generated content without other text or explanation.
+      The response should be in german.", "system": "", "template": "", "context":
+      [], "stream": false, "raw": false, "images": [], "format": "", "options": {},
+      "keep_alive": null}'
     headers:
       accept:
       - application/json
@@ -102,39 +98,38 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '817'
+      - '661'
       content-type:
       - application/json
       host:
       - 127.0.0.1:11434
       user-agent:
-      - ollama-python/0.2.0 (x86_64 linux) Python/3.12.3
+      - ollama-python/0.2.1 (x86_64 linux) Python/3.12.3
     method: POST
     uri: http://127.0.0.1:11434/api/generate
   response:
-    content: "{\"model\":\"llama3\",\"created_at\":\"2024-06-02T21:09:14.821097193Z\",\"response\":\"{\\n
-      \ \\\"ipa\\\": \\\"/a\u02C8b\u025Bnt/\\\"\\n}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,198,504,16644,264,3492,11,7068,264,6710,315,2262,220,7,86250,8,3196,389,279,2768,17413,25,1115,2115,5727,279,56847,46940,315,279,3492,13,271,3909,334,11116,54486,5953,408,9,220,3089,271,3909,334,13221,68063,198,504,5560,279,17413,4613,304,279,4823,11036,13,271,3909,334,32215,9059,68063,198,504,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,4173,295,660,2262,13,720,504,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,90,198,256,1,86250,794,220,3193,64,135,230,65,133,249,406,11474,198,92,128009],\"total_duration\":4957193389,\"load_duration\":40909267,\"prompt_eval_count\":103,\"prompt_eval_duration\":3415704000,\"eval_count\":16,\"eval_duration\":1458158000}"
+    content: "{\"model\":\"llama3\",\"created_at\":\"2024-10-03T14:40:47.827609703Z\",\"response\":\"{\\\"ipa\\\":
+      \\\"a\u02C8b\u0294\u025Bnt\\\"}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,16644,264,3492,11,7068,264,6710,315,2262,220,7,86250,8,3196,389,279,2768,17413,25,1115,2115,5727,279,56847,46940,315,279,3492,1210,220,334,11116,54486,5953,408,9,256,334,13221,68063,5560,279,17413,4613,304,279,4823,11036,13,220,334,32215,9059,68063,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,8066,2262,13,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,5018,86250,794,220,1,64,135,230,65,134,242,133,249,406,9388,128009],\"total_duration\":4505949062,\"load_duration\":42127246,\"prompt_eval_count\":90,\"prompt_eval_duration\":3157468000,\"eval_count\":15,\"eval_duration\":1263660000}"
     headers:
       Content-Length:
-      - '974'
+      - '894'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 02 Jun 2024 21:09:14 GMT
+      - Thu, 03 Oct 2024 14:40:47 GMT
     http_version: HTTP/1.1
     status_code: 200
 - request:
-    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend**\n                    Given
+    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend** Given
       a word, generate a piece of content (meaning) based on the following constraints:
       This field contains the meaning of the word. This field should include the different
-      meanings of the word, including the slangs. Start each meaning on a new line.\n\n                    **Word:*Abend*
-      \"\"\n\n                    **Constraints:**\n                    Use the constraints
-      defined in the JSON schema.\n\n                    **Generate Content:**\n                    Using
-      the word \"Abend\" as input, generate a JSON object with the key and the generated
-      content. \n                    Please return only the generated content without
-      other text or explanation. The response should be in german.", "system": "",
-      "template": "", "context": [], "stream": false, "raw": false, "images": [],
-      "format": "", "options": {}, "keep_alive": null}'
+      meanings of the word, including the slangs. Start each meaning on a new line.\"
+      **Word:*Abend*  **Constraints:** Use the constraints defined in the JSON schema.
+      **Generate Content:** Using the word \"Abend\" as input, generate a JSON object
+      with the key and the generated content. Please return only the generated content
+      without other text or explanation. The response should be in german.", "system":
+      "", "template": "", "context": [], "stream": false, "raw": false, "images":
+      [], "format": "", "options": {}, "keep_alive": null}'
     headers:
       accept:
       - application/json
@@ -143,43 +138,40 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '929'
+      - '773'
       content-type:
       - application/json
       host:
       - 127.0.0.1:11434
       user-agent:
-      - ollama-python/0.2.0 (x86_64 linux) Python/3.12.3
+      - ollama-python/0.2.1 (x86_64 linux) Python/3.12.3
     method: POST
     uri: http://127.0.0.1:11434/api/generate
   response:
-    content: "{\"model\":\"llama3\",\"created_at\":\"2024-06-02T21:09:29.767795885Z\",\"response\":\"{\\\"Abend\\\":
-      [\\n\\\"Eine Abendpause ist eine Zeit zwischen dem Ende des Arbeitstages und
-      dem Beginn der Freizeit, wenn man sich entspannen und Erholen kann.\\nIn einer
-      Reise oder einem Urlaub ist Abend die Zeit, wenn man sich von den Aktivit\xE4ten
-      des Tages erholen und zum Beispiel ein gutes Essen genie\xDFen kann.\\nAbend
-      kann auch als Symbol f\xFCr das Ende eines Ereignisses oder einer Phase verwendet
-      werden, wie zum Beispiel bei einem Konzert oder einem Festival.\\\"}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,198,504,16644,264,3492,11,7068,264,6710,315,2262,220,7,57865,8,3196,389,279,2768,17413,25,1115,2115,5727,279,7438,315,279,3492,13,1115,2115,1288,2997,279,2204,50800,315,279,3492,11,2737,279,1776,65587,13,5256,1855,7438,389,264,502,1584,13,271,3909,334,11116,54486,5953,408,9,220,3089,271,3909,334,13221,68063,198,504,5560,279,17413,4613,304,279,4823,11036,13,271,3909,334,32215,9059,68063,198,504,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,4173,295,660,2262,13,720,504,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,5018,5953,408,794,220,58,198,1,88976,3765,408,28548,6127,10021,29931,48326,2486,52392,951,58903,267,1154,2073,2486,19110,77,2761,7730,553,275,11,22850,893,9267,37952,857,12778,2073,9939,8619,268,16095,13,198,644,17495,1050,1082,12666,17901,23687,44606,6127,3765,408,2815,29931,11,22850,893,9267,6675,3453,50196,344,65421,2002,951,350,1154,2781,8619,268,2073,16419,80292,4466,342,2142,99775,83857,27922,16095,13,198,5953,408,16095,11168,10942,20185,7328,6754,52392,37208,96113,625,85460,12666,17495,28673,75291,12931,11,13672,16419,80292,13582,17901,24277,89,531,12666,17901,17772,1210,92,128009],\"total_duration\":14901385655,\"load_duration\":41569731,\"prompt_eval_count\":126,\"prompt_eval_duration\":4073945000,\"eval_count\":114,\"eval_duration\":10743277000}"
+    content: "{\"model\":\"llama3\",\"created_at\":\"2024-10-03T14:40:59.539450537Z\",\"response\":\"{\\\"Bedeutungen\\\":
+      \\n\\\"Aufh\xF6ren oder zum Ende kommen: Der Film abendete nach 10 Uhr. \\nIn
+      der Computernutzung: Abend - eine Zeitangabe, die den Abschluss eines Prozesses
+      oder Vorgangs anzeigt. \\nIm deutschen Sprachgebrauch: Abend kann als Synonym
+      f\xFCr 'Abendessen' verwendet werden.\\\"}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,16644,264,3492,11,7068,264,6710,315,2262,220,7,57865,8,3196,389,279,2768,17413,25,1115,2115,5727,279,7438,315,279,3492,13,1115,2115,1288,2997,279,2204,50800,315,279,3492,11,2737,279,1776,65587,13,5256,1855,7438,389,264,502,1584,1210,220,334,11116,54486,5953,408,9,256,334,13221,68063,5560,279,17413,4613,304,279,4823,11036,13,220,334,32215,9059,68063,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,8066,2262,13,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,5018,33,15686,332,11856,794,720,1,82861,71,89387,12666,16419,52392,59165,25,13031,17042,671,408,7870,14375,220,605,39283,13,220,198,644,2761,24019,944,34097,2234,25,3765,408,220,12,10021,29931,526,8393,11,2815,3453,22855,94483,37208,1322,89,65970,12666,650,1813,65587,459,97795,13,220,198,1453,93291,15883,613,27175,1412,25,3765,408,16095,10942,24028,7987,7328,220,6,5953,408,39909,6,75291,12931,1210,92,128009],\"total_duration\":11626264148,\"load_duration\":829558,\"prompt_eval_count\":113,\"prompt_eval_duration\":4061054000,\"eval_count\":82,\"eval_duration\":7481246000}"
     headers:
       Content-Length:
-      - '2028'
+      - '1600'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 02 Jun 2024 21:09:29 GMT
+      - Thu, 03 Oct 2024 14:40:59 GMT
     http_version: HTTP/1.1
     status_code: 200
 - request:
-    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend**\n                    Given
+    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend** Given
       a word, generate a piece of content (example1) based on the following constraints:
-      This field contains one example sentence using the word.\n\n                    **Word:*Abend*
-      \"\"\n\n                    **Constraints:**\n                    Use the constraints
-      defined in the JSON schema.\n\n                    **Generate Content:**\n                    Using
+      This field contains one example sentence using the word.\" **Word:*Abend*  **Constraints:**
+      Use the constraints defined in the JSON schema. **Generate Content:** Using
       the word \"Abend\" as input, generate a JSON object with the key and the generated
-      content. \n                    Please return only the generated content without
-      other text or explanation. The response should be in german.", "system": "",
-      "template": "", "context": [], "stream": false, "raw": false, "images": [],
-      "format": "", "options": {}, "keep_alive": null}'
+      content. Please return only the generated content without other text or explanation.
+      The response should be in german.", "system": "", "template": "", "context":
+      [], "stream": false, "raw": false, "images": [], "format": "", "options": {},
+      "keep_alive": null}'
     headers:
       accept:
       - application/json
@@ -188,40 +180,39 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '824'
+      - '668'
       content-type:
       - application/json
       host:
       - 127.0.0.1:11434
       user-agent:
-      - ollama-python/0.2.0 (x86_64 linux) Python/3.12.3
+      - ollama-python/0.2.1 (x86_64 linux) Python/3.12.3
     method: POST
     uri: http://127.0.0.1:11434/api/generate
   response:
-    content: "{\"model\":\"llama3\",\"created_at\":\"2024-06-02T21:09:37.172257091Z\",\"response\":\"{\\n
-      \ \\\"Beispiel\\\": \\\"Wenn das Programm den Fehler Abend ausgibt, ist es wahrscheinlich
-      aufgrund eines Fehlers oder einer \xDCberlast der Ressourcen gestorben.\\\"\\n}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,198,504,16644,264,3492,11,7068,264,6710,315,2262,220,7,8858,16,8,3196,389,279,2768,17413,25,1115,2115,5727,832,3187,11914,1701,279,3492,13,271,3909,334,11116,54486,5953,408,9,220,3089,271,3909,334,13221,68063,198,504,5560,279,17413,4613,304,279,4823,11036,13,271,3909,334,32215,9059,68063,198,504,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,4173,295,660,2262,13,720,504,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,90,198,256,1,3513,69157,794,220,1,71294,6754,75010,3453,92365,3765,408,9608,70,20938,11,6127,1560,86327,95313,6915,7367,60885,37208,435,2701,9438,12666,17495,50471,4354,2761,432,434,414,48422,13033,269,8123,1210,198,92,128009],\"total_duration\":7358339507,\"load_duration\":40926700,\"prompt_eval_count\":104,\"prompt_eval_duration\":3219112000,\"eval_count\":44,\"eval_duration\":4054977000}"
+    content: "{\"model\":\"llama3\",\"created_at\":\"2024-10-03T14:41:07.105001383Z\",\"response\":\"{\\n\\\"Beispiel-Satz\\\":
+      \\\"Die Kriminalpolizei ermittelt noch am Abend, ob der Tatverd\xE4chtige in
+      seiner Wohnung war, als die Straftat begangen wurde.\\\"}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,16644,264,3492,11,7068,264,6710,315,2262,220,7,8858,16,8,3196,389,279,2768,17413,25,1115,2115,5727,832,3187,11914,1701,279,3492,1210,220,334,11116,54486,5953,408,9,256,334,13221,68063,5560,279,17413,4613,304,279,4823,11036,13,220,334,32215,9059,68063,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,8066,2262,13,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,90,198,1,3513,69157,12,50,20786,794,220,1,18674,735,58140,10097,553,72,2781,24621,3903,18268,1097,3765,408,11,1536,2761,63567,424,67,2357,14244,7404,304,55036,99444,4208,11,10942,2815,27745,728,266,2197,60241,27201,1210,92,128009],\"total_duration\":7560533578,\"load_duration\":41296357,\"prompt_eval_count\":91,\"prompt_eval_duration\":3295070000,\"eval_count\":46,\"eval_duration\":4140841000}"
     headers:
       Content-Length:
-      - '1254'
+      - '1184'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 02 Jun 2024 21:09:37 GMT
+      - Thu, 03 Oct 2024 14:41:07 GMT
     http_version: HTTP/1.1
     status_code: 200
 - request:
-    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend**\n                    Given
+    body: '{"model": "llama3", "prompt": "**Generate Content from Word: Abend** Given
       a word, generate a piece of content (example2) based on the following constraints:
       This field contains one example sentence using the word. The example sentence
-      should be different from the first example sentence in the example1 field.\n\n                    **Word:*Abend*
-      \"\"\n\n                    **Constraints:**\n                    Use the constraints
-      defined in the JSON schema.\n\n                    **Generate Content:**\n                    Using
-      the word \"Abend\" as input, generate a JSON object with the key and the generated
-      content. \n                    Please return only the generated content without
-      other text or explanation. The response should be in german.", "system": "",
-      "template": "", "context": [], "stream": false, "raw": false, "images": [],
-      "format": "", "options": {}, "keep_alive": null}'
+      should be different from the first example sentence in the example1 field.\"
+      **Word:*Abend*  **Constraints:** Use the constraints defined in the JSON schema.
+      **Generate Content:** Using the word \"Abend\" as input, generate a JSON object
+      with the key and the generated content. Please return only the generated content
+      without other text or explanation. The response should be in german.", "system":
+      "", "template": "", "context": [], "stream": false, "raw": false, "images":
+      [], "format": "", "options": {}, "keep_alive": null}'
     headers:
       accept:
       - application/json
@@ -230,26 +221,27 @@ interactions:
       connection:
       - keep-alive
       content-length:
-      - '920'
+      - '764'
       content-type:
       - application/json
       host:
       - 127.0.0.1:11434
       user-agent:
-      - ollama-python/0.2.0 (x86_64 linux) Python/3.12.3
+      - ollama-python/0.2.1 (x86_64 linux) Python/3.12.3
     method: POST
     uri: http://127.0.0.1:11434/api/generate
   response:
-    content: "{\"model\":\"llama3\",\"created_at\":\"2024-06-02T21:09:43.793244207Z\",\"response\":\"{\\\"Example2\\\":
-      \\\"Das Abendprogramm des Restaurants war sehr erfolgreich und die G\xE4ste
-      haben sich bis zum Schluss am\xFCsiert.\\\"}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,198,504,16644,264,3492,11,7068,264,6710,315,2262,220,7,8858,17,8,3196,389,279,2768,17413,25,1115,2115,5727,832,3187,11914,1701,279,3492,13,578,3187,11914,1288,387,2204,505,279,1176,3187,11914,304,279,3187,16,2115,13,271,3909,334,11116,54486,5953,408,9,220,3089,271,3909,334,13221,68063,198,504,5560,279,17413,4613,304,279,4823,11036,13,271,3909,334,32215,9059,68063,198,504,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,4173,295,660,2262,13,720,504,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,5018,13617,17,794,220,1,33717,3765,408,15252,76,951,59193,4208,26574,94194,2073,2815,95689,5455,18096,9267,15184,16419,50379,1892,1097,2448,6455,531,1210,92,128009],\"total_duration\":6575564314,\"load_duration\":42178256,\"prompt_eval_count\":120,\"prompt_eval_duration\":3687497000,\"eval_count\":32,\"eval_duration\":2802758000}"
+    content: "{\"model\":\"llama3\",\"created_at\":\"2024-10-03T14:41:16.163798044Z\",\"response\":\"{\\\"Example1\\\":
+      \\\"Die Kurse am Abend bieten eine perfekte Gelegenheit zum Erlernen von F\xE4higkeiten.\\\",
+      \\\"Example2\\\": \\\"Nach dem langen Tag auf See kann man sich im Abendsonnenwinkel
+      erholen.\\\"}\",\"done\":true,\"done_reason\":\"stop\",\"context\":[128006,882,128007,271,334,32215,9059,505,9506,25,3765,408,334,16644,264,3492,11,7068,264,6710,315,2262,220,7,8858,17,8,3196,389,279,2768,17413,25,1115,2115,5727,832,3187,11914,1701,279,3492,13,578,3187,11914,1288,387,2204,505,279,1176,3187,11914,304,279,3187,16,2115,1210,220,334,11116,54486,5953,408,9,256,334,13221,68063,5560,279,17413,4613,304,279,4823,11036,13,220,334,32215,9059,68063,12362,279,3492,220,1,5953,408,1,439,1988,11,7068,264,4823,1665,449,279,1401,323,279,8066,2262,13,5321,471,1193,279,8066,2262,2085,1023,1495,477,16540,13,578,2077,1288,387,304,43627,13,128009,128006,78191,128007,271,5018,13617,16,794,220,1,18674,735,30385,1097,3765,408,67338,10021,22535,67462,4323,49514,23190,16419,81934,50172,6675,435,22243,343,52807,10684,220,1,13617,17,794,220,1,77019,2486,8859,268,12633,7367,3580,16095,893,9267,737,3765,408,942,12778,86,82276,2781,8619,268,1210,92,128009],\"total_duration\":9014478278,\"load_duration\":41436473,\"prompt_eval_count\":107,\"prompt_eval_duration\":3905831000,\"eval_count\":55,\"eval_duration\":5024578000}"
     headers:
       Content-Length:
-      - '1235'
+      - '1356'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 02 Jun 2024 21:09:43 GMT
+      - Thu, 03 Oct 2024 14:41:16 GMT
     http_version: HTTP/1.1
     status_code: 200
 - request:
@@ -262,15 +254,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=%7B%22Abend%22%3A+%5B%0A%22Eine+Abendpause+ist+eine+Zeit+zwischen+dem+Ende+des+Arbeitstages+und+dem+Beginn+der+Freizeit%2C+wenn+man+sich+entspannen+und+Erholen+kann.%0AIn+einer+Reise+oder+einem+Urlaub+ist+Abend+die+Zeit%2C+wenn+man+sich+von+den+Aktivit%C3%A4ten+des+Tages+erholen+und+zum+Beispiel+ein+gutes+Essen+genie%C3%9Fen+kann.%0AAbend+kann+auch+als+Symbol+f%C3%BCr+das+Ende+eines+Ereignisses+oder+einer+Phase+verwendet+werden%2C+wie+zum+Beispiel+bei+einem+Konzert+oder+einem+Festival.%22%7D
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Abend%0A%7B%22Bedeutungen%22%3A+%0A%22Aufh%C3%B6ren+oder+zum+Ende+kommen%3A+Der+Film+abendete+nach+10+Uhr.+%0AIn+der+Computernutzung%3A+Abend+-+eine+Zeitangabe%2C+die+den+Abschluss+eines+Prozesses+oder+Vorgangs+anzeigt.+%0AIm+deutschen+Sprachgebrauch%3A+Abend+kann+als+Synonym+f%C3%BCr+%27Abendessen%27+verwendet+werden.%22%7D
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"uWxLc804TjVZamGdDVIkZQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"eWzvwtqEdB2lfQxedOViJw\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -308,158 +300,30 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=%7B%22Abend%22%3A%20%5B%0A%22Eine%20Abendpause%20ist%20eine%20Zeit%20zwischen%20dem%20Ende%20des%20Arbeitstages%20und%20dem%20Beginn%20der%20Freizeit%2C%20wenn%20man%20sich%20entspannen%20und%20Erholen%20kann.%0AIn%20einer%20Reise%20oder%20einem%20Urlaub%20ist%20Abend%20die%20Zeit%2C%20wenn%20man%20sich%20von%20den%20Aktivit%C3%A4ten%20des%20Tages%20erholen%20und%20zum%20Beispiel%20ein%20gutes%20Essen%20genie%C3%9Fen%20kann.%0AAbend%20kann%20auch%20als%20Symbol%20f%C3%BCr%20das%20Ende%20eines%20Ereignisses%20oder%20einer%20Phase%20verwendet%20werden%2C%20wie%20zum%20Beispiel%20bei%20einem%20Konzert%20oder%20einem%20Festival.%22%7D&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=%7B%22Abend%22%3A%20%5B%0A%22Eine%20Abendpause%20ist%20eine%20Zeit%20zwischen%20dem%20Ende%20des%20Arbeitstages%20und%20dem%20Beginn%20der%20Freizeit%2C%20wenn%20man%20sich%20entspannen%20und%20Erholen%20kann.%0AIn%20einer%20Reise%20oder%20einem%20Urlaub%20ist%20Abend%20die%20Zeit%2C%20wenn%20man%20sich%20von%20den%20Aktivit%C3%A4ten%20des%20Tages%20erholen%20und%20zum%20Beispiel%20ein%20gutes%20Essen%20genie%C3%9Fen%20kann.%0AAbend%20kann%20auch%20als%20Symbol%20f%C3%BCr%20das%20Ende%20eines%20Ereignisses%20oder%20einer%20Phase%20verwendet%20werden%2C%20wie%20zum%20Beispiel%20bei%20einem%20Konzert%20oder%20einem%20Festival.%22%7D&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=%7B%22Noche%22%3A%20%5B%0A%22Un%20descanso%20nocturno%20es%20un%20momento%20entre%20el%20final%20de%20la%20jornada%20laboral%20y%20el%20comienzo%20del%20tiempo%20libre%20en%20el%20que%20uno%20puede%20relajarse%20y%20descansar.%0AEn%20un%20viaje%20o%20vacaciones%2C%20la%20tarde%20es%20el%20momento%20en%20el%20que%20puedes%20relajarte%20de%20las%20actividades%20del%20d%C3%ADa%20y%20disfrutar%20de%20una%20buena%20comida%2C%20por%20ejemplo.%0ALa%20noche%20tambi%C3%A9n%20se%20puede%20utilizar%20para%20simbolizar%20el%20final%20de%20un%20evento%20o%20fase%2C%20como%20un%20concierto%20o%20un%20festival.%22%7D&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%7B%22Bedeutungen%22%3A%20%0A%22Aufh%C3%B6ren%20oder%20zum%20Ende%20kommen%3A%20Der%20Film%20abendete%20nach%2010%20Uhr.%20%0AIn%20der%20Computernutzung%3A%20Abend%20-%20eine%20Zeitangabe%2C%20die%20den%20Abschluss%20eines%20Prozesses%20oder%20Vorgangs%20anzeigt.%20%0AIm%20deutschen%20Sprachgebrauch%3A%20Abend%20kann%20als%20Synonym%20f%C3%BCr%20%27Abendessen%27%20verwendet%20werden.%22%7D&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Abend%0A%7B%22Bedeutungen%22%3A%20%0A%22Aufh%C3%B6ren%20oder%20zum%20Ende%20kommen%3A%20Der%20Film%20abendete%20nach%2010%20Uhr.%20%0AIn%20der%20Computernutzung%3A%20Abend%20-%20eine%20Zeitangabe%2C%20die%20den%20Abschluss%20eines%20Prozesses%20oder%20Vorgangs%20anzeigt.%20%0AIm%20deutschen%20Sprachgebrauch%3A%20Abend%20kann%20als%20Synonym%20f%C3%BCr%20%27Abendessen%27%20verwendet%20werden.%22%7D&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Noche%0A%7B%22Significados%22%3A%20%0A%22Detente%20o%20llega%20al%20final%3A%20la%20pel%C3%ADcula%20termin%C3%B3%20pasadas%20las%2010%20en%20punto.%20%0AEn%20uso%20inform%C3%A1tico%3A%20Tarde%3A%20indicaci%C3%B3n%20de%20tiempo%20que%20indica%20la%20finalizaci%C3%B3n%20de%20un%20proceso%20u%20operaci%C3%B3n.%20%0AEn%20alem%C3%A1n%3A%20Abend%20se%20puede%20utilizar%20como%20sin%C3%B3nimo%20de%20%27cena%27.%22%7D&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"{&quot;Abend&quot;:
-        [\n&quot;Eine Abendpause ist eine Zeit zwischen dem Ende des Arbeitstages
-        und dem Beginn der Freizeit, wenn man sich entspannen und Erholen kann.\nIn
-        einer Reise oder einem Urlaub ist Abend die Zeit, wenn man sich von den Aktivit\xE4ten
-        des Tages erholen und zum Beispiel ein gutes Essen genie\xDFen kann.\nAbend
-        kann auch als Symbol f\xFCr das Ende eines Ereignisses oder einer Phase verwendet
-        werden, wie zum Beispiel bei einem Konzert oder einem Festival.&quot;}\"><div
-        class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
-        class=\"translate-button\"></div></form></div><div class=\"result-container\">{&quot;Noche&quot;:
-        [\n&quot;Un descanso nocturno es un momento entre el final de la jornada laboral
-        y el comienzo del tiempo libre en el que uno puede relajarse y descansar.\nEn
-        un viaje o vacaciones, la tarde es el momento en el que puedes relajarte de
-        las actividades del d\xEDa y disfrutar de una buena comida, por ejemplo.\nLa
-        noche tambi\xE9n se puede utilizar para simbolizar el final de un evento o
-        fase, como un concierto o un festival.&quot;}</div><div class=\"links-container\"><ul><li><a
-        href=\"https://www.google.com/m?hl=en-US\">Google home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
-        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
-        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
-    headers:
-      Accept-CH:
-      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
-        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform,
-        Sec-CH-UA-Platform-Version
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Cache-Control:
-      - no-cache, no-store, max-age=0, must-revalidate
-      Content-Encoding:
-      - gzip
-      Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-EDR_5R_Wb80PMMOpduxodA' 'unsafe-inline';object-src 'none';base-uri
-        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
-      Content-Type:
-      - text/html; charset=utf-8
-      Cross-Origin-Opener-Policy:
-      - same-origin
-      Cross-Origin-Resource-Policy:
-      - same-site
-      Date:
-      - Sun, 02 Jun 2024 21:09:43 GMT
-      Expires:
-      - Mon, 01 Jan 1990 00:00:00 GMT
-      P3P:
-      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
-      Permissions-Policy:
-      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
-        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
-      Pragma:
-      - no-cache
-      Server:
-      - ESF
-      Set-Cookie:
-      - __Secure-ENID=20.SE=KSbw9Rx0Dh7ZHRL3djTjhD8Fh7gL-PwpyjKTXOo0whWgNB5ySu9kE3E5kjMiSaYUfeeOfIiGVBR8XT77MLtNEgE17eLyNgWQ_OyR-CVUTiCafborbdRWKRmwAkZfamKXdXSxqADuz3CMCbyDooYx9q8cW5xqkUAykCcjxnf0cUI;
-        expires=Thu, 03-Jul-2025 13:28:01 GMT; path=/; domain=.google.com; Secure;
-        HttpOnly; SameSite=lax
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-      reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjstDikmLw1ZBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxO2fL7BOBWIhHo7p-z9vYhO4cHjaTWYltaT8wviSosS84pzEklTd8tSk4tSistSieCMDIxMDUyMLPQOL-AJDAK0CK6k"
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.31.0
-    method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=Wenn+das+Programm+den+Fehler+Abend+ausgibt%2C+ist+es+wahrscheinlich+aufgrund+eines+Fehlers+oder+einer+%C3%9Cberlast+der+Ressourcen+gestorben.
-  response:
-    body:
-      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
-        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
-        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"zWDdyBLd3T7FihxSwFJOsA\">\n    body {\n      font-family:
-        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
-        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
-        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
-        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
-        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
-        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
-        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
-        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
-        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
-        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
-        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
-        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
-        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
-        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
-        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
-        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
-        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
-        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
-        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
-        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
-        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
-        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
-        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
-        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
-        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
-        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
-        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
-        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
-        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
-        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
-        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
-        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
-        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
-        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
-        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
-        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
-        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Wenn%20das%20Programm%20den%20Fehler%20Abend%20ausgibt%2C%20ist%20es%20wahrscheinlich%20aufgrund%20eines%20Fehlers%20oder%20einer%20%C3%9Cberlast%20der%20Ressourcen%20gestorben.&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Wenn%20das%20Programm%20den%20Fehler%20Abend%20ausgibt%2C%20ist%20es%20wahrscheinlich%20aufgrund%20eines%20Fehlers%20oder%20einer%20%C3%9Cberlast%20der%20Ressourcen%20gestorben.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Si%20el%20programa%20da%20el%20error%20Abend%2C%20probablemente%20muri%C3%B3%20debido%20a%20un%20error%20o%20sobrecarga%20de%20recursos.&amp;hl=en-US\">Swap</a></div></div><div
-        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
-        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
-        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Wenn das Programm
-        den Fehler Abend ausgibt, ist es wahrscheinlich aufgrund eines Fehlers oder
-        einer \xDCberlast der Ressourcen gestorben.\"><div class=\"translate-button-container\"><input
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Abend\n{&quot;Bedeutungen&quot;:
+        \n&quot;Aufh\xF6ren oder zum Ende kommen: Der Film abendete nach 10 Uhr. \nIn
+        der Computernutzung: Abend - eine Zeitangabe, die den Abschluss eines Prozesses
+        oder Vorgangs anzeigt. \nIm deutschen Sprachgebrauch: Abend kann als Synonym
+        f\xFCr &#39;Abendessen&#39; verwendet werden.&quot;}\"><div class=\"translate-button-container\"><input
         type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
-        class=\"result-container\">Si el programa da el error Abend, probablemente
-        muri\xF3 debido a un error o sobrecarga de recursos.</div><div class=\"links-container\"><ul><li><a
+        class=\"result-container\">Noche\n{&quot;Significados&quot;: \n&quot;Detente
+        o llega al final: la pel\xEDcula termin\xF3 pasadas las 10 en punto. \nEn
+        uso inform\xE1tico: Tarde: indicaci\xF3n de tiempo que indica la finalizaci\xF3n
+        de un proceso u operaci\xF3n. \nEn alem\xE1n: Abend se puede utilizar como
+        sin\xF3nimo de &#39;cena&#39;.&quot;}</div><div class=\"links-container\"><ul><li><a
         href=\"https://www.google.com/m?hl=en-US\">Google home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
         feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
         and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
     headers:
       Accept-CH:
       - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
-        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
         Sec-CH-UA-Platform-Version
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -468,7 +332,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-olW82HUme7c_rHdME9OspA' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-v1sUMto9EecnC12fB0yi7g' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -478,21 +342,21 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 02 Jun 2024 21:09:44 GMT
+      - Thu, 03 Oct 2024 14:41:16 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
       - CP="This is not a P3P policy! See g.co/p3phelp for more info."
       Permissions-Policy:
       - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
-        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
       Pragma:
       - no-cache
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=20.SE=PWOhW5czQYndc_JANnw6lHCYPkrvjqNaMarqY37_C11Ad-Aa1q9U5sRb2jyIaamox0eJ8qYg0wPWDU8rK5QbrGrszoyLtFJHkmmxE1dFi6727_OuOVgpn5DR1DZpsNU2J3BJllzyZVfxLaCxCNP3Pihzzcz-KzcpRdNF1pmjmQY;
-        expires=Thu, 03-Jul-2025 13:28:02 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=W6As5V4SPkcnKoQI8wlsWWzY8ZY_mok7A3NXlpmB0FQNp877i4LvMl63hdOYEL-Tx_zf4Jipur3CORhBkc3qiRfFESQC-aslZbgTSqNePbnfhLiOfsNrr4qhWn1GTLdTOHWedM4chF-TgyGZitXn6ihdhRVYWtrY1TXKvI20wM0XGOq2zs_69rIrnw;
+        expires=Mon, 03-Nov-2025 06:59:34 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -505,7 +369,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjstDikmJw0JBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxO2fL7BOBWIhHo4Z-z9vYhN48LN1IpOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBqZGFnoFFfIEhAKUXK4k"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XD03Pq1nU1gxbfr6xiV1JLyC-NLihLzinMSS1J1y1OTilOLylKL4o0MjEwMDQwM9Qws4gsMAKlTLJ0"
     status:
       code: 200
       message: OK
@@ -519,15 +383,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=Das+Abendprogramm+des+Restaurants+war+sehr+erfolgreich+und+die+G%C3%A4ste+haben+sich+bis+zum+Schluss+am%C3%BCsiert.
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Die+Kriminalpolizei+ermittelt+noch+am+Abend%2C+ob+der+Tatverd%C3%A4chtige+in+seiner+Wohnung+war%2C+als+die+Straftat+begangen+wurde.
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"d_ydb8ok8ahH9x5QszjjAw\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"_V8uUxQnmGho_VM7qMtz1g\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -565,25 +429,26 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Das%20Abendprogramm%20des%20Restaurants%20war%20sehr%20erfolgreich%20und%20die%20G%C3%A4ste%20haben%20sich%20bis%20zum%20Schluss%20am%C3%BCsiert.&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Das%20Abendprogramm%20des%20Restaurants%20war%20sehr%20erfolgreich%20und%20die%20G%C3%A4ste%20haben%20sich%20bis%20zum%20Schluss%20am%C3%BCsiert.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=El%20programa%20nocturno%20del%20restaurante%20fue%20todo%20un%20%C3%A9xito%20y%20los%20invitados%20disfrutaron%20hasta%20el%20final.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Die%20Kriminalpolizei%20ermittelt%20noch%20am%20Abend%2C%20ob%20der%20Tatverd%C3%A4chtige%20in%20seiner%20Wohnung%20war%2C%20als%20die%20Straftat%20begangen%20wurde.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Die%20Kriminalpolizei%20ermittelt%20noch%20am%20Abend%2C%20ob%20der%20Tatverd%C3%A4chtige%20in%20seiner%20Wohnung%20war%2C%20als%20die%20Straftat%20begangen%20wurde.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Esa%20noche%2C%20la%20polic%C3%ADa%20criminal%20investig%C3%B3%20si%20el%20sospechoso%20se%20encontraba%20en%20su%20apartamento%20cuando%20se%20cometi%C3%B3%20el%20crimen.&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Das Abendprogramm
-        des Restaurants war sehr erfolgreich und die G\xE4ste haben sich bis zum Schluss
-        am\xFCsiert.\"><div class=\"translate-button-container\"><input type=\"submit\"
-        value=\"Translate\" class=\"translate-button\"></div></form></div><div class=\"result-container\">El
-        programa nocturno del restaurante fue todo un \xE9xito y los invitados disfrutaron
-        hasta el final.</div><div class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Die Kriminalpolizei
+        ermittelt noch am Abend, ob der Tatverd\xE4chtige in seiner Wohnung war, als
+        die Straftat begangen wurde.\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">Esa noche, la polic\xEDa criminal investig\xF3
+        si el sospechoso se encontraba en su apartamento cuando se cometi\xF3 el crimen.</div><div
+        class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
         home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
         feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
         and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
     headers:
       Accept-CH:
       - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
-        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
         Sec-CH-UA-Platform-Version
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -593,7 +458,7 @@ interactions:
       - gzip
       Content-Security-Policy:
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-_H9vcc7hWNrHzYXYjDYE9A' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-QiFk8W7KMgnq6ramw7cC6Q' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
@@ -602,21 +467,21 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 02 Jun 2024 21:09:44 GMT
+      - Thu, 03 Oct 2024 14:41:18 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
       - CP="This is not a P3P policy! See g.co/p3phelp for more info."
       Permissions-Policy:
       - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
-        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
       Pragma:
       - no-cache
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=20.SE=hhQJFsX1-Bx8rX379tF57BtLEmQLZv_iBEjQs_rLhTy29lRASuekfZXMfkW-oxlzmcKZ1RonUjaBJqNByLjsXFoBJcmj4NjHqaEbVm-OGFjKkyB5JLiE9OnIBdsdpK5xe2n76Lu0-E_dc9S4XRg5keW55Faolm8F3OA3z4RNTSk;
-        expires=Thu, 03-Jul-2025 13:28:02 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=QSRCBMPFrDZz2LZAwv6C1aJFQDiOCwCox1D66Zq1vKNglfOXLCwc1BMFz7ekxzUGa8hpY_vu_-fmhLj-1_EJgv4mzD5u6wiv5cIsezCeJu1PG7XktXiCeb7gI6qDn2uw6fwviGHU_HbAdu07HNjCkcJJ2RZn1wL_17TZWuZqdL2XZlxBA5Kf2Zu5CYw;
+        expires=Mon, 03-Nov-2025 06:59:36 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -629,7 +494,132 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzjstDikmJw1ZBikPj6kkkNiJ3SZ7AGALFP_QzWKCBuvXmOdTIQJ_07z1oAxO2fL7BOBWIhHo4Z-z9vYhNo2Hd7M7OSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBqZGFnoFFfIEhAKBUK2w"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw15BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XD03fq1nU1gwrzXmxiV1JLyC-NLihLzinMSS1J1y1OTilOLylKL4o0MjEwMDQwM9Qws4gsMAJrXLEg"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Die+Kurse+am+Abend+bieten+eine+perfekte+Gelegenheit+zum+Erlernen+von+F%C3%A4higkeiten.%0ANach+dem+langen+Tag+auf+See+kann+man+sich+im+Abendsonnenwinkel+erholen.
+  response:
+    body:
+      string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
+        Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
+        content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
+        sizes=\"64x64\"><style nonce=\"pRLnqVJ9jSHhjRST6YWVkw\">\n    body {\n      font-family:
+        'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
+        \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
+        none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
+        1px solid #dadce0; /* grey 300 */\n      box-sizing: border-box;\n      color:
+        #5f6368; /* grey 700 */\n      font-size: 18px;\n      line-height: 21px;\n
+        \     padding: 14px 16px;\n    }\n    .logo-image {\n      background-image:
+        url('https://ssl.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_68x28px.svg');\n
+        \     background-repeat: no-repeat;\n      height: 48px;\n      width: 68px;\n
+        \     position: absolute;\n    }\n    .logo-text {\n      margin-left: 72px;\n
+        \     margin-right: 76px;\n      margin-top: 2px;\n    }\n  \n    body {\n
+        \     background-color: #f1f3f4; /* grey 100 */\n    }\n    .languages-container
+        {\n      background-color: #fff;\n      border-bottom: 1px solid #dadce0;
+        /* grey 300 */\n      box-sizing: border-box;\n      color: #3c4043; /* grey
+        800 */\n      font-size: 14px;\n      height: 48px;\n      padding: 14px 16px;\n
+        \   }\n    .sl-and-tl {\n      display: inline-block;\n    }\n    .swap-container
+        {\n      float: right;\n    }\n    html[dir=\"rtl\"] .swap-container {\n      float:
+        left;\n    }\n    .input-container {\n      background-color: #fff;\n      box-shadow:\n
+        \       0px -1px 5px rgba(128, 134, 139, 0.09),\n        0px 3px 5px rgba(128,
+        134, 139, 0.06),\n        0px 1px 2px rgba(60, 64, 67, 0.3),\n        0px
+        1px 3px rgba(60, 64, 67, 0.15);\n    }\n    .input-field {\n      border:
+        0;\n      color: #3c4043; /* grey 800 */\n      font-size: 18px;\n      line-height:
+        24px;\n      padding: 18px 16px;\n      width: 100%;\n    }\n    .translate-button-container
+        {\n      padding: 16px;\n      text-align: right;\n    }\n    html[dir=\"rtl\"]
+        .translate-button-container {\n      text-align: left;\n    }\n    .translate-button
+        {\n      background: #1a73e8; /* blue 600 */\n      border-radius: 4px;\n
+        \     color: #fff;\n      font-size: 14px;\n      line-height: 20px;\n      padding:
+        8px 16px;\n    }\n    .result-container {\n      background: #1a73e8; /* blue
+        600 */\n      box-shadow:\n        0px -1px 5px rgba(128, 134, 139, 0.09),\n
+        \       0px 3px 5px rgba(128, 134, 139, 0.06),\n        0px 1px 2px rgba(60,
+        64, 67, 0.3),\n        0px 1px 3px rgba(60, 64, 67, 0.15);\n      color: #fff;\n
+        \     font-size: 18px;\n      line-height: 24px;\n      margin-bottom: 50px;\n
+        \     padding: 16px 16px 40px 16px;\n    }\n    .links-container a {\n      color:
+        #1967d2; /* blue 700 */\n    }\n    .links-container ul {\n      font-size:
+        12px;\n      line-height: 16px;\n      list-style-type: none;\n      margin:
+        16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
+        16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
+        class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Die%20Kurse%20am%20Abend%20bieten%20eine%20perfekte%20Gelegenheit%20zum%20Erlernen%20von%20F%C3%A4higkeiten.%0ANach%20dem%20langen%20Tag%20auf%20See%20kann%20man%20sich%20im%20Abendsonnenwinkel%20erholen.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Die%20Kurse%20am%20Abend%20bieten%20eine%20perfekte%20Gelegenheit%20zum%20Erlernen%20von%20F%C3%A4higkeiten.%0ANach%20dem%20langen%20Tag%20auf%20See%20kann%20man%20sich%20im%20Abendsonnenwinkel%20erholen.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Las%20clases%20nocturnas%20brindan%20una%20oportunidad%20perfecta%20para%20aprender%20habilidades.%0ADespu%C3%A9s%20de%20un%20largo%20d%C3%ADa%20en%20el%20mar%20podr%C3%A1%20relajarse%20bajo%20el%20sol%20de%20la%20tarde.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
+        value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
+        name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Die Kurse am Abend
+        bieten eine perfekte Gelegenheit zum Erlernen von F\xE4higkeiten.\nNach dem
+        langen Tag auf See kann man sich im Abendsonnenwinkel erholen.\"><div class=\"translate-button-container\"><input
+        type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
+        class=\"result-container\">Las clases nocturnas brindan una oportunidad perfecta
+        para aprender habilidades.\nDespu\xE9s de un largo d\xEDa en el mar podr\xE1
+        relajarse bajo el sol de la tarde.</div><div class=\"links-container\"><ul><li><a
+        href=\"https://www.google.com/m?hl=en-US\">Google home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
+        feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
+        and terms</a></li><li><a href=\"./full\">Switch to full site</a></li></ul></div></body></html>"
+    headers:
+      Accept-CH:
+      - Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List,
+        Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform,
+        Sec-CH-UA-Platform-Version
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
+      - script-src 'nonce-f3fqpk3xzE6lxLxbzBE-BQ' 'unsafe-inline';object-src 'none';base-uri
+        'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      Content-Type:
+      - text/html; charset=utf-8
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Cross-Origin-Resource-Policy:
+      - same-site
+      Date:
+      - Thu, 03 Oct 2024 14:41:19 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      P3P:
+      - CP="This is not a P3P policy! See g.co/p3phelp for more info."
+      Permissions-Policy:
+      - ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*,
+        ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+      Pragma:
+      - no-cache
+      Server:
+      - ESF
+      Set-Cookie:
+      - __Secure-ENID=22.SE=loLBGUtZbk8XrEi2WTfDdrTVHiCZpb3zorPkf8ltQq8vRMsYdQDqWsKi2zopt5_MFxhvMv6-TySQrrANd2pkt-PDl14riI4l6_FWsEGS0DuwWP2bS95Dn8sEsaJzWv16dO-1jVpBkBUild7xFXjA2PCmWFPzaGorlF94Ug3Y9ooBetNu4n0Bg4ZA4w;
+        expires=Mon, 03-Nov-2025 06:59:37 GMT; path=/; domain=.google.com; Secure;
+        HttpOnly; SameSite=lax
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      reporting-endpoints:
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmJw0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XD03_q1nU3gwYlnjcxKakn5hfElRYl5xTmJJam65alJxalFZalF8UYGRiaGBgaGegYW8QUGAKSlLIg"
     status:
       code: 200
       message: OK

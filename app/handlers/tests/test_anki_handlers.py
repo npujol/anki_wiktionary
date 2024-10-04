@@ -14,7 +14,7 @@ async def test_generate_notes_is_successful(
     anki_handler: AnkiHandler, snapshot: Any
 ) -> None:
     result: bool = await anki_handler.generate_note(
-        word="Abendessen", processor_name="wiktionary"
+        word="Morgen", processor_name="wiktionary"
     )
 
     assert result, "Add note failed"
