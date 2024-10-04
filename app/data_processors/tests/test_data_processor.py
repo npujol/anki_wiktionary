@@ -23,7 +23,6 @@ def test_get_anki_note(snapshot: Any) -> None:
     [
         "verben",
         "wiktionary",
-        "ollama",
     ],
 )
 def test_send_card_using_anki_web(

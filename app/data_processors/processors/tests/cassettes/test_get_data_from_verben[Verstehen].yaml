@@ -330,11 +330,11 @@ interactions:
         9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9
         12,14.9Z\"/>\n</svg>\n</a>\n<form class=\"rLinks\" id=\"wKpfEin\" action=\"/?w=Verstehen\">\n<div
         class=\"rEin rLinks\">\n<input autofocus=\"autofocus\" onfocus=\"this.setSelectionRange(0,
-        this.value.length)\" id=\"xeef64\" name=\"w\" type=\"search\" value=\"Verstehen\"
-        placeholder=\"\" title=\"\" autocomplete=\"off\" onkeydown=\"Eingabe.taste('xeef64','xeef64Liste',
-        event)\" oninput=\"Eingabe.an('xeef64','xeef64Liste',Woerterbuch.suchliste)\"
-        onblur=\"Eingabe.aus('xeef64','xeef64Liste')\"><br>\n<div class=\"rEinSlct\"
-        id=\"xeef64Liste\"></div>\n</div><button class=\"rLinks\" type=\"submit\"><svg
+        this.value.length)\" id=\"x1ef32\" name=\"w\" type=\"search\" value=\"Verstehen\"
+        placeholder=\"\" title=\"\" autocomplete=\"off\" onkeydown=\"Eingabe.taste('x1ef32','x1ef32Liste',
+        event)\" oninput=\"Eingabe.an('x1ef32','x1ef32Liste',Woerterbuch.suchliste)\"
+        onblur=\"Eingabe.aus('x1ef32','x1ef32Liste')\"><br>\n<div class=\"rEinSlct\"
+        id=\"x1ef32Liste\"></div>\n</div><button class=\"rLinks\" type=\"submit\"><svg
         fill=\"#ffffff\" fill-opacity=\"0.6\" height=\"36\" viewBox=\"0 0 24 24\"
         width=\"36\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"
         ></path>\n</svg></button>\n<button class=\"rLinks\" type=\"submit\" formaction=\"/suche/?w=Verstehen\"><svg
@@ -412,8 +412,8 @@ interactions:
         <a href=\"/verben/uebersetzungen/verstehen.htm\">\xDCbersetzungen</a> und
         <a href=\"https://www.verbformen.de/konjugation/verstehen.htm\">Konjugationstabellen</a>.</p>\n<div
         class=\"rAbschnitt \"><div><!------------------- STECKBRIEF ------------------->\n<section
-        class=\"rBox rBoxWht \" id=\"xa6c62Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
-        10px;\"></div><div id=\"xa6c62\" class=\"rAufZu\">\n<div id=\"wStckLngImg\"
+        class=\"rBox rBoxWht \" id=\"xd2393Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        10px;\"></div><div id=\"xd2393\" class=\"rAufZu\">\n<div id=\"wStckLngImg\"
         class=\"rInf rKnpf rRechts rClrRechts rNoSelect\" onclick=\"Rahmen.aufzu('wStckLng');
         Rahmen.aufzu('wStckKrz');\">\n<svg fill=\"\" class=\"kIcn\" height=\"12\"
         viewBox=\"6 4 12 16\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
@@ -447,17 +447,17 @@ interactions:
         4px; vertical-align: middle\" loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
         width=\"16\" height=\"16\">&nbsp;https://www.verbformen.de/bedo,\nunderstand,\ncatch
         meaning,\ntake point,\nfigure out,\nlatch on,\ncomprehend,\napprehend,\nget
-        the idea,\nmean,\ninterpret,\ngrasp,\nsee into,\nsee through,\nparse,\nget,\ndig,\ngrok,\nken,\nsavvy</span>\n</p>\n<p
+        the idea,\nmean,\ninterpret,\ngrasp,\nsee into,\nget,\nsee through,\nparse,\ndig,\ngrok,\nken,\nsavvy</span>\n</p>\n<p
         class=\"rInf r1Zeile rU3px rO0px\">\n<i>(Gesprochenes) deutlich akustisch
         wahrnehmen; den Sinngehalt, die Bedeutung von etwas, die Absicht einer Person
         verstandesm\xE4\xDFig erfassen; h\xF6ren; sich vertragen; beherrschen; durchringen</i>\n</p>\n<p
         class=\"rInf r1Zeile rU3px rO0px\">\n(<span title=\"mit Reflexivpronomen im
         Akkusativ (mich)\">sich<span class=\"bKas rInf\">+A</span></span>, <span title=\"mit
-        Akkusativobjekt\">Akk.</span>, <span title=\"'auf' mit Akkusativ\">auf<span
+        Akkusativobjekt\">Akk.</span>, <span title=\"'von' (mit Dativ)\">von<span
+        class=\"bKas rInf\">+D</span></span>, <span title=\"'auf' mit Akkusativ\">auf<span
         class=\"bKas rInf\">+A</span></span>, <span title=\"'mit' (mit Dativ)\">mit<span
-        class=\"bKas rInf\">+D</span></span>, <span title=\"'unter' mit Dativ\">unter<span
-        class=\"bKas rInf\">+D</span></span>, <span title=\"'von' (mit Dativ)\">von<span
         class=\"bKas rInf\">+D</span></span>, <span title=\"'zu' (mit Dativ)\">zu<span
+        class=\"bKas rInf\">+D</span></span>, <span title=\"'unter' mit Dativ\">unter<span
         class=\"bKas rInf\">+D</span></span>, <span title=\"'als' mit Erg\xE4nzung\">als</span>)</p>\n<p
         class=\"rInf r1Zeile rU3px rO0px rNt\">\n\xBB <span class=\"wG\"><q>Versteh<u>t</u></q></span>\nes
         Ungarisch? <img loading=\"lazy\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\"
@@ -466,9 +466,9 @@ interactions:
         'wStckInf', false);\"></div>\n</div>\n</div>\n<div class=\"rClear\" style=\"margin-top:
         10px; min-height: 1px\">\n</div>\n</section><div class=\"aAnz aArt rClear\"
         style=\"margin: 0 0 14px 0;\">\n<div id=\"verben.de_lb_1\"></div>\n</div>\n<section
-        class=\"rBox rBoxWht \" id=\"xf3ac4Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"xcfd02Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"xf3ac4Img\" onclick=\"Rahmen.alleaufzu('xf3ac4','rAufZu')\"><svg fill=\"\"
+        id=\"xcfd02Img\" onclick=\"Rahmen.alleaufzu('xcfd02','rAufZu')\"><svg fill=\"\"
         height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"m16.6 9.67-1.42-1.41l-3.2 3.14-3.17-3.14-1.42 1.41 4.59
         4.63m-4.59 5.8 1.42 1.41 3.17-3.17 3.17 3.17 1.41-1.41-4.58-4.59-4.59 4.59zm9.19-15.9l-1.42-1.41-3.17
@@ -476,7 +476,7 @@ interactions:
         13.8-3.17-3.17-1.41 1.41 4.58 4.59 4.59-4.59-1.42-1.41m-3.16-6.36 3.17 3.17
         1.41-1.41-4.58-4.59-4.59 4.59 1.42 1.41 3.17-3.17zm-0.01 15.2-3.17-3.17-1.41
         1.41 4.58 4.59 4.59-4.59-1.42-1.41\"></path>\n</svg>\n</button></nav>\n<header>\n<h2
-        class=\"wG rNt\">Bedeutungen</h2></header>\n<div id=\"xf3ac4\" class=\"rAufZu\">\n<dl
+        class=\"wG rNt\">Bedeutungen</h2></header>\n<div id=\"xcfd02\" class=\"rAufZu\">\n<dl
         class=\"wNrn\">\n<dd>\n<span class=\"wIdx\">a.</span><span><span class=\"rInf\">&lt;<span
         title=\"transitives Verb\">trans.</span>&gt; </span>(Gesprochenes) deutlich
         akustisch wahrnehmen; h\xF6ren</span>\n</dd>\n<dd>\n<span class=\"wIdx\">b.</span><span><span
@@ -500,20 +500,20 @@ interactions:
         xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
         1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"x39036Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"x9fe2cBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x39036Img\" onclick=\"Rahmen.aufzu('x39036')\"><svg fill=\"\" height=\"24\"
+        id=\"x9fe2cImg\" onclick=\"Rahmen.aufzu('x9fe2c')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wG\">Verwendungen</h2></header>\n<div id=\"x39036\" class=\"rAufZu\">\n<p>\n(<span
+        class=\"wG\">Verwendungen</h2></header>\n<div id=\"x9fe2c\" class=\"rAufZu\">\n<p>\n(<span
         title=\"mit Reflexivpronomen im Akkusativ (mich)\">sich<span class=\"bKas
         rInf\">+A</span></span>, <span title=\"mit Akkusativobjekt\">Akk.</span>,
+        <span title=\"'von' (mit Dativ)\">von<span class=\"bKas rInf\">+D</span></span>,
         <span title=\"'auf' mit Akkusativ\">auf<span class=\"bKas rInf\">+A</span></span>,
         <span title=\"'mit' (mit Dativ)\">mit<span class=\"bKas rInf\">+D</span></span>,
-        <span title=\"'unter' mit Dativ\">unter<span class=\"bKas rInf\">+D</span></span>,
-        <span title=\"'von' (mit Dativ)\">von<span class=\"bKas rInf\">+D</span></span>,
         <span title=\"'zu' (mit Dativ)\">zu<span class=\"bKas rInf\">+D</span></span>,
+        <span title=\"'unter' mit Dativ\">unter<span class=\"bKas rInf\">+D</span></span>,
         <span title=\"'als' mit Erg\xE4nzung\">als</span>)</p>\n<ul class=\"rLst rLstGt\">\n<li>
         <g>jemand</g> <q>versteh<u>t</u></q> <g>etwas</g> unter <g>etwas</g></li>\n<li>
         <g>jemand</g> <q>versteh<u>t</u></q> <g>jemanden/etwas</g> als <g>ein solcher/eine
@@ -534,13 +534,13 @@ interactions:
         class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         d=\"m0 9.4v-1.95h11.4l-5.25-5.05 1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"xda8f1Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"xb06bfBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"xda8f1Img\" onclick=\"Rahmen.aufzu('xda8f1')\"><svg fill=\"\" height=\"24\"
+        id=\"xb06bfImg\" onclick=\"Rahmen.aufzu('xb06bf')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wG rNt\">Synonyme</h2></header>\n<div id=\"xda8f1\" class=\"rAufZu\">\n<dl
+        class=\"wG rNt\">Synonyme</h2></header>\n<div id=\"xb06bf\" class=\"rAufZu\">\n<dl
         class=\"wNrn\">\n<dd>\n<span class=\"wIdx\">a.</span><span>&equiv;&nbsp;<a
         href=\"/verben/ho3ren.htm\">h\xF6ren</a></span>\n</dd>\n<dd>\n<span class=\"wIdx\">e.</span><span>&equiv;&nbsp;<a
         href=\"/verben/beherrschen.htm\">beherrschen</a></span>\n</dd>\n<dd>\n<span
@@ -552,13 +552,13 @@ interactions:
         1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><div
         class=\"aAnz aArt rClear\" style=\"margin: 0 0 14px 0;\">\n<div id=\"verben.de_lb_2\"></div>\n</div>\n<section
-        class=\"rBox rBoxWht \" id=\"x44ac5Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"x091dcBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x44ac5Img\" onclick=\"Rahmen.aufzu('x44ac5')\"><svg fill=\"\" height=\"24\"
+        id=\"x091dcImg\" onclick=\"Rahmen.aufzu('x091dc')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wG rNt\">Beispiels\xE4tze</h2></header>\n<div id=\"x44ac5\" class=\"rAufZu\">\n<ul
+        class=\"wG rNt\">Beispiels\xE4tze</h2></header>\n<div id=\"x091dc\" class=\"rAufZu\">\n<ul
         class=\"rLst rLstGt\">\n<li style=\"margin-top: 4px;\"><span class=\"wG\"><q>Versteh<u>t</u></q></span>\nes
         Ungarisch?<a class=\"rInf\" href=\"https://www.satzapp.de/?t=Versteht es Ungarisch?\">&nbsp;<svg
         fill=\"\" class=\"kIcn\" height=\"10\" viewBox=\"0 1 15 15\" width=\"10\"
@@ -635,13 +635,13 @@ interactions:
         d=\"m2.83 14.4-1.38-1.38 8.06-8.06-7.28 0.141-0.0354-1.94h10.6v10.6l-1.94-0.0354
         0.0354-7.39z\"></path>\n</svg></a>\n</div>\n<div class=\"rClear\" style=\"margin-top:
         10px; min-height: 1px\">\n</div>\n</section></div></div><div class=\"rInfo\"><section
-        class=\"rBox rBoxWht \" id=\"x0cd00Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"x7fffbBox\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x0cd00Img\" onclick=\"Rahmen.aufzu('x0cd00')\"><svg fill=\"\" height=\"24\"
+        id=\"x7fffbImg\" onclick=\"Rahmen.aufzu('x7fffb')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wG\">\xDCbersetzungen</h2></header>\n<div id=\"x0cd00\" class=\"rAufZu\">\n<dl
+        class=\"wG\">\xDCbersetzungen</h2></header>\n<div id=\"x7fffb\" class=\"rAufZu\">\n<dl
         class=\"wNrn\" >\n<dd lang=\"en\"><span class=\"wLng\"><img loading=\"lazy\"
         title=\"Englisch\" alt=\"Englisch\"\nsrc=\"/bedeutungenweb/en.svg\" width=\"13\"
         height=\"13\">&nbsp;</span><span>https://www.verbformen.de/bedo, understand,
@@ -655,17 +655,18 @@ interactions:
         class=\"rInf\"> ...</span></span></dd>\n<dd lang=\"es\"><span class=\"wLng\"><img
         loading=\"lazy\" title=\"Spanisch\" alt=\"Spanisch\"\nsrc=\"/bedeutungenweb/es.svg\"
         width=\"13\" height=\"13\">&nbsp;</span><span>entender, comprender, llevarse,
-        entender de, entender en, saber hacer, llevarse con, entenderse con,<span
+        hacer buenas migas, entender de, entender en, saber hacer, llevarse con,<span
         class=\"rInf\"> ...</span></span></dd>\n<dd lang=\"fr\"><span class=\"wLng\"><img
         loading=\"lazy\" title=\"Franz\xF6sisch\" alt=\"Franz\xF6sisch\"\nsrc=\"/bedeutungenweb/fr.svg\"
         width=\"13\" height=\"13\">&nbsp;</span><span>entendre, comprendre, piger,
-        interpr\xE9ter, accorder, sympathiser, concevoir, saisir</span></dd>\n<dd
-        lang=\"tr\"><span class=\"wLng\"><img loading=\"lazy\" title=\"T\xFCrkisch\"
-        alt=\"T\xFCrkisch\"\nsrc=\"/bedeutungenweb/tr.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>anlamak,
-        \xE7akmak, kavramak, bilmek, anla\u015Fmak</span></dd>\n<dd lang=\"pt\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Portugiesisch\" alt=\"Portugiesisch\"\nsrc=\"/bedeutungenweb/pt.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>entender, atingir, alcan\xE7ar,
-        compreender, insinuar, traduzir, interpretar, entender-se,<span class=\"rInf\">
+        interpr\xE9ter, accorder, sympathiser, concevoir, saisir,<span class=\"rInf\">
+        ...</span></span></dd>\n<dd lang=\"tr\"><span class=\"wLng\"><img loading=\"lazy\"
+        title=\"T\xFCrkisch\" alt=\"T\xFCrkisch\"\nsrc=\"/bedeutungenweb/tr.svg\"
+        width=\"13\" height=\"13\">&nbsp;</span><span>anlamak, \xE7akmak, kavramak,
+        bilmek, anla\u015Fmak</span></dd>\n<dd lang=\"pt\"><span class=\"wLng\"><img
+        loading=\"lazy\" title=\"Portugiesisch\" alt=\"Portugiesisch\"\nsrc=\"/bedeutungenweb/pt.svg\"
+        width=\"13\" height=\"13\">&nbsp;</span><span>compreender, entender, perceber,
+        atingir, alcan\xE7ar, insinuar, traduzir, interpretar,<span class=\"rInf\">
         ...</span></span></dd>\n<dd lang=\"it\"><span class=\"wLng\"><img loading=\"lazy\"
         title=\"Italienisch\" alt=\"Italienisch\"\nsrc=\"/bedeutungenweb/it.svg\"
         width=\"13\" height=\"13\">&nbsp;</span><span>sentire, capire, comprendere,
@@ -678,19 +679,30 @@ interactions:
         \xE9rt, \xE9rtelmez, meg\xE9rtik egym\xE1st, tud</span></dd>\n<dd lang=\"pl\"><span
         class=\"wLng\"><img loading=\"lazy\" title=\"Polnisch\" alt=\"Polnisch\"\nsrc=\"/bedeutungenweb/pl.svg\"
         width=\"13\" height=\"13\">&nbsp;</span><span>rozumie\u0107, zna\u0107, umie\u0107,
-        zrozumie\u0107</span></dd>\n<dd lang=\"el\"><span class=\"wLng\"><img loading=\"lazy\"
-        title=\"Griechisch\" alt=\"Griechisch\"\nsrc=\"/bedeutungenweb/el.svg\" width=\"13\"
-        height=\"13\">&nbsp;</span><span>\u03C0\u03B9\u03AC\u03BD\u03C9, \u03BA\u03B1\u03C4\u03B1\u03BB\u03B1\u03B2\u03B1\u03AF\u03BD\u03C9</span></dd>\n<dd
+        zrozumie\u0107, pojmowa\u0107, poj\u0105\u0107</span></dd>\n<dd lang=\"el\"><span
+        class=\"wLng\"><img loading=\"lazy\" title=\"Griechisch\" alt=\"Griechisch\"\nsrc=\"/bedeutungenweb/el.svg\"
+        width=\"13\" height=\"13\">&nbsp;</span><span>\u03C0\u03B9\u03AC\u03BD\u03C9,
+        \u03BA\u03B1\u03C4\u03B1\u03BB\u03B1\u03B2\u03B1\u03AF\u03BD\u03C9, \u03AD\u03C7\u03C9
+        \u03BA\u03B1\u03C4\u03B1\u03BD\u03CC\u03B7\u03C3\u03B7 \u03B3\u03B9\u03B1,
+        \u03B1\u03BD\u03C4\u03B9\u03BB\u03B1\u03BC\u03B2\u03AC\u03BD\u03BF\u03BC\u03B1\u03B9,
+        \u03C3\u03C5\u03BD\u03B5\u03BD\u03BD\u03BF\u03BF\u03CD\u03BC\u03B1\u03B9,
+        \u03B8\u03B5\u03C9\u03C1\u03BF\u03CD\u03BC\u03B1\u03B9, \u03B1\u03BA\u03BF\u03CD\u03C9,
+        \u03B5\u03BD\u03BD\u03BF\u03CE,<span class=\"rInf\"> ...</span></span></dd>\n<dd
         lang=\"nl\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Niederl\xE4ndisch\"
-        alt=\"Niederl\xE4ndisch\"\nsrc=\"/bedeutungenweb/nl.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>verstaan</span></dd>\n<dd
-        lang=\"cs\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Tschechisch\"
-        alt=\"Tschechisch\"\nsrc=\"/bedeutungenweb/cs.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>ch\xE1pat,
-        rozum\u011Bt, pochopit, um\u011Bt, <span class=\"rInf\">rozum\u011Bt komu/\u010Du-jemand/etwas</span>,
-        <span class=\"rInf\">rozumn\u011Bt si</span></span></dd>\n<dd lang=\"sv\"><span
-        class=\"wLng\"><img loading=\"lazy\" title=\"Schwedisch\" alt=\"Schwedisch\"\nsrc=\"/bedeutungenweb/sv.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>f\xF6rst\xE5, fatta, uppfatta</span></dd>\n<dd
+        alt=\"Niederl\xE4ndisch\"\nsrc=\"/bedeutungenweb/nl.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>verstaan,
+        vanzelfsprekend zijn, verstand hebben van, akkoord gaan met, bedoeld zijn
+        als, bereid zijn tot, veel weten van, kennis hebben,<span class=\"rInf\">
+        ...</span></span></dd>\n<dd lang=\"cs\"><span class=\"wLng\"><img loading=\"lazy\"
+        title=\"Tschechisch\" alt=\"Tschechisch\"\nsrc=\"/bedeutungenweb/cs.svg\"
+        width=\"13\" height=\"13\">&nbsp;</span><span>ch\xE1pat, rozum\u011Bt, pochopit,
+        um\u011Bt, porozum\u011Bt, sly\u0161et, <span class=\"rInf\">rozum\u011Bt
+        komu/\u010Du-jemand/etwas</span>, <span class=\"rInf\">rozumn\u011Bt si</span></span></dd>\n<dd
+        lang=\"sv\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Schwedisch\"
+        alt=\"Schwedisch\"\nsrc=\"/bedeutungenweb/sv.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>f\xF6rst\xE5,
+        fatta, uppfatta, f\xF6rst\xE5 varandra, f\xF6rst\xE5 sig p\xE5, begripa</span></dd>\n<dd
         lang=\"da\"><span class=\"wLng\"><img loading=\"lazy\" title=\"D\xE4nisch\"
-        alt=\"D\xE4nisch\"\nsrc=\"/bedeutungenweb/da.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>forst\xE5</span></dd>\n<dd
+        alt=\"D\xE4nisch\"\nsrc=\"/bedeutungenweb/da.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>forst\xE5,
+        have forstand p\xE5, forst\xE5 hinanden, begribe, kunne, indse</span></dd>\n<dd
         lang=\"ja\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Japanisch\"
         alt=\"Japanisch\"\nsrc=\"/bedeutungenweb/ja.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>\u805E\u53D6\u308B,
         \u5224\u308B, \u4F1A\u5F97\u3059\u308B, \u7406\u89E3\u3059\u308B, \u4E86\u77E5\u3059\u308B,
@@ -703,12 +715,12 @@ interactions:
         ymm\xE4rt\xE4\xE4, k\xE4sitt\xE4\xE4, osata, \xE4lyt\xE4, <span class=\"rInf\">tulla
         toimeen kanssa</span></span></dd>\n<dd lang=\"no\"><span class=\"wLng\"><img
         loading=\"lazy\" title=\"Norwegisch\" alt=\"Norwegisch\"\nsrc=\"/bedeutungenweb/no.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>forst\xE5, oppfatte</span></dd>\n<dd
-        lang=\"eu\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Baskisch\"
-        alt=\"Baskisch\"\nsrc=\"/bedeutungenweb/eu.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>aditu,
-        ulertu, konprenitu</span></dd>\n<dd lang=\"sr\"><span class=\"wLng\"><img
-        loading=\"lazy\" title=\"Serbisch\" alt=\"Serbisch\"\nsrc=\"/bedeutungenweb/sr.svg\"
-        width=\"13\" height=\"13\">&nbsp;</span><span>\u043F\u043E\u0434\u0440\u0430\u0437\u0443\u043C\u0435\u0432\u0430\u0442\u0438,
+        width=\"13\" height=\"13\">&nbsp;</span><span>forst\xE5, oppfatte, forst\xE5
+        hverandre, skj\xF8nne</span></dd>\n<dd lang=\"eu\"><span class=\"wLng\"><img
+        loading=\"lazy\" title=\"Baskisch\" alt=\"Baskisch\"\nsrc=\"/bedeutungenweb/eu.svg\"
+        width=\"13\" height=\"13\">&nbsp;</span><span>aditu, ulertu, konprenitu</span></dd>\n<dd
+        lang=\"sr\"><span class=\"wLng\"><img loading=\"lazy\" title=\"Serbisch\"
+        alt=\"Serbisch\"\nsrc=\"/bedeutungenweb/sr.svg\" width=\"13\" height=\"13\">&nbsp;</span><span>\u043F\u043E\u0434\u0440\u0430\u0437\u0443\u043C\u0435\u0432\u0430\u0442\u0438,
         \u0441\u0445\u0432\u0430\u0442\u0430\u0442\u0438, \u0441\u0445\u0432\u0430\u0442\u0438\u0442\u0438,
         \u0440\u0430\u0437\u0443\u043C\u0435\u0442\u0438, \u0440\u0430\u0437\u0443\u043C\u0435\u0432\u0430\u0442\u0438,
         \u043F\u043E\u0437\u043D\u0430\u0432\u0430\u0442\u0438, \u0443\u043C\u0435\u0442\u0438</span></dd>\n<dd
@@ -730,7 +742,8 @@ interactions:
         height=\"13\"></span><span>\u0641\u064E\u0647\u0650\u0645\u064E&#1548; \u0648\u064E\u0639\u064E\u0649&#1548;
         \u0641\u064E\u0637\u0650\u0646\u064E&#1548; \u0623\u062F\u0652\u0631\u064E\u0643\u064E&#1548;
         \u062A\u064E\u0641\u064E\u0647\u064E\u0651\u0645\u064E&#1548; \u0641\u064E\u0642\u0650\u0647\u064E&#1548;
-        \u0648\u064E\u0642\u064E\u0641\u064E</span></dd>\n<dd lang=\"fa\"><span class=\"wLng\"><img
+        \u0648\u064E\u0642\u064E\u0641\u064E&#1548; \u062A\u0641\u0647\u0645&#1548;<span
+        class=\"rInf\"> ...</span></span></dd>\n<dd lang=\"fa\"><span class=\"wLng\"><img
         loading=\"lazy\" title=\"Persisch\" alt=\"Persisch\"\nsrc=\"/bedeutungenweb/fa.svg\"
         width=\"13\" height=\"13\"></span><span>\u067E\u06CC \u0628\u0631\u062F\u0646&#1548;
         \u062F\u0631\u06A9 \u06A9\u0631\u062F\u0646&#1548; \u0628\u0631\u062F\u0627\u0634\u062A
@@ -745,13 +758,13 @@ interactions:
         xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m0 9.4v-1.95h11.4l-5.25-5.05
         1.35-1.4 7.5 7.5-7.5 7.5-1.35-1.4 5.25-5.2z\"></path>\n</svg></a>\n</div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><section
-        class=\"rBox rBoxWht \" id=\"x721d9Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
+        class=\"rBox rBoxWht \" id=\"xf5474Box\" >\n<div class=\"rClear\" style=\"margin-bottom:
         10px;\"></div><nav class=\"rRechts\" >\n<button class=\"rRechts rInf\" type=\"button\"
-        id=\"x721d9Img\" onclick=\"Rahmen.aufzu('x721d9')\"><svg fill=\"\" height=\"24\"
+        id=\"xf5474Img\" onclick=\"Rahmen.aufzu('xf5474')\"><svg fill=\"\" height=\"24\"
         viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        class=\"wG\">Konjugation</h2></header>\n<div id=\"x721d9\" class=\"rAufZu\">\n<q>versteh<u>t</u></q>
+        class=\"wG\">Konjugation</h2></header>\n<div id=\"xf5474\" class=\"rAufZu\">\n<q>versteh<u>t</u></q>
         &middot;\n<q>verst<b>and</b></q> (<q>verst<b>\xFCnd</b><u>e</u></q>/<q>verst<b>\xE4nd</b><u>e</u></q>)
         &middot;\n<i>hat</i> <q>verst<b>and</b><u>en</u></q><div class=\"wFlxs\">\n<div
         class=\"rLinks wFlx\">\n<h3 class=\"wG\">Pr\xE4sens</h3>\n<table><tr><td><q>versteh<u>(e)\u2075</u></q></td></tr><tr><td><q>versteh<u>st</u></q></td></tr><tr><td><q>versteh<u>t</u></q></td></tr></table>\n</div>\n<div
@@ -763,12 +776,12 @@ interactions:
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><div
         class=\"aAnz aInf rClear\" style=\"margin: 0 0 14px 0;\">\n<div id=\"verben.de_sitebar_1\"></div>\n</div>\n</div>&nbsp;\n<div
         class=\"rClear\"></div>\n<div class=\"rAnkr rAnkrBox\" id=\"kommentare\"></div><section
-        class=\"rBox rBoxTrns \" id=\"xf5c8cBox\" >\n<nav class=\"rRechts\" >\n<button
-        class=\"rRechts rInf\" type=\"button\" id=\"xf5c8cImg\" onclick=\"Rahmen.aufzu('xf5c8c')\"><svg
+        class=\"rBox rBoxTrns \" id=\"x58ad6Box\" >\n<nav class=\"rRechts\" >\n<button
+        class=\"rRechts rInf\" type=\"button\" id=\"x58ad6Img\" onclick=\"Rahmen.aufzu('x58ad6')\"><svg
         fill=\"\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path
         class=\"rAuf\" d=\"M16.59,5.41L15.17,4L12,7.17L8.83,4L7.41,5.41L12,10M7.41,18.59L8.83,20L12,16.83L15.17,20L16.58,18.59L12,14L7.41,18.59Z\"></path>\n<path
         class=\"rZu\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\"></path>\n</svg></button></nav>\n<header>\n<h2
-        onclick=\"Rahmen.aufzu('xf5c8c')\">Kommentare</h2></header>\n<div id=\"xf5c8c\"
+        onclick=\"Rahmen.aufzu('x58ad6')\">Kommentare</h2></header>\n<div id=\"x58ad6\"
         class=\"rAufZu\">\n<hr><p>\n<span class=\"rInf rKln\">2024/07 \xB7</span>
         \n<span class=\"rNoSelect rInf rKln\" onclick=\"Rahmen.aufzu('k4dfeeAnt')\">Antworten</span><br>\n<b>anmelden
         meint:</b> \u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439
@@ -777,7 +790,7 @@ interactions:
         \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439 \u0431\u0443\u0434\u0435\u0442
         \u043E\u043F\u0443\u0431\u043B\u0438\u043A\u043E\u0432\u0430\u043D.</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k4dfeeAnt\">\n<div class=\"kFrm\"
-        id=\"x9801c\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x9801c')\">\n<div
+        id=\"xbf836\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xbf836')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -792,8 +805,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k0d2c9Ant')\">Antworten</span><br>\n<span style=\"font-size:
         1.2em;\">\n<span class=\"kAn\">\u2605\u2605\u2605\u2605\u2605</span></span><b>fatma
         hassan meint:</b> i love it</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k0d2c9Ant\">\n<div class=\"kFrm\" id=\"xff2e0\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xff2e0')\">\n<div
+        id=\"k0d2c9Ant\">\n<div class=\"kFrm\" id=\"xb0b02\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xb0b02')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -808,7 +821,7 @@ interactions:
         onclick=\"Rahmen.aufzu('k83bf9Ant')\">Antworten</span><br>\n<b>Evelyne A meint:</b>
         \"Sich \xE4rgern an etwas\" ist doch mit Dativ, nicht mit Akkusativ, oder?</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k83bf9Ant\">\n<div class=\"kFrm\"
-        id=\"x85a3c\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x85a3c')\">\n<div
+        id=\"xdef55\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xdef55')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -826,7 +839,7 @@ interactions:
         \u0441\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F \u043E\u0431\u0443\u0432\u044C
         \u0434\u043B\u044F \u043F\u043E\u0432\u0441\u0435\u0434\u043D\u0435\u0432\u043D\u043E\u0441\u0442\u0438</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"keb29dAnt\">\n<div class=\"kFrm\"
-        id=\"x05774\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x05774')\">\n<div
+        id=\"xdc78a\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xdc78a')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -841,8 +854,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k4dd06Ant')\">Antworten</span><br>\n<b>YM meint:</b>
         \u0440\u0456\u0432\u0435\u043D\u044C \u043C\u043E\u0442\u043E\u0440\u043D\u043E\u0457
         \u043E\u043B\u0438\u0432\u0438</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k4dd06Ant\">\n<div class=\"kFrm\" id=\"x29aa3\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x29aa3')\">\n<div
+        id=\"k4dd06Ant\">\n<div class=\"kFrm\" id=\"x6af97\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x6af97')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -858,8 +871,8 @@ interactions:
         1.2em;\">\n<span class=\"kAn\">\u2605\u2605\u2605\u2605</span><span class=\"kAus\">\u2605</span>\n</span><b>Tetiana
         OBUKHOVA meint:</b> Erste Variante von \xDCbersetzung auf Ukrainisch ist Schimpfwort.
         Das ist deutlich falsch. </p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"kb1032Ant\">\n<div class=\"kFrm\" id=\"xe6709\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xe6709')\">\n<div
+        id=\"kb1032Ant\">\n<div class=\"kFrm\" id=\"xdceb6\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xdceb6')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -880,8 +893,8 @@ interactions:
         \u062F\u0627\u062F\u0646\nP.S. the adj. Section is okay.only change verb section\nz.b\njdn\_zu\_jdm/etw\_bescheiden\nto\_summon\_[or\_call]\_sb\_to\_sb/sth\n\u06A9\u0633\u06CC
         \u0631\u0627 \u0635\u062F\u0627 \u0632\u062F\u0646 \u06CC\u0627 \u062E\u0628\u0631
         \u06A9\u0631\u062F\u0646\n</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k17064Ant\">\n<div class=\"kFrm\" id=\"x2030c\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x2030c')\">\n<div
+        id=\"k17064Ant\">\n<div class=\"kFrm\" id=\"x411a4\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x411a4')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -896,8 +909,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k3ca1bAnt')\">Antworten</span><br>\n<b>stefan meint:</b>
         Proposition of a new word Wasserdampfwolke in Polish \"chmura parowa, chmura
         pary\"</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k3ca1bAnt\">\n<div
-        class=\"kFrm\" id=\"xc833c\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'xc833c')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"x4f205\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'x4f205')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -911,7 +924,7 @@ interactions:
         onclick=\"Rahmen.aufzu('kf0091Ant')\">Antworten</span><br>\n<b>stefan meint:</b>
         Kreisbahn in Polnisch ist auh Regionalbahn, \"koleje regionalne, kolej podmiejska\"</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"kf0091Ant\">\n<div class=\"kFrm\"
-        id=\"x0fa0b\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x0fa0b')\">\n<div
+        id=\"xb0967\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xb0967')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -931,7 +944,7 @@ interactions:
         \"\u043A\u0430\u0440\u0430\u0447\u043A\u0438, \u043A\u0430\u0440\u044F\u0447\u043A\u0438\"
         und \"\u043D\u0430\u043A\u0430\u0440\u044F\u0447\u043A\u0438\" hinzu.</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k841a7Ant\">\n<div class=\"kFrm\"
-        id=\"xcb746\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xcb746')\">\n<div
+        id=\"xecf08\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xecf08')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -946,8 +959,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k2ff4dAnt')\">Antworten</span><br>\n<b>Andrii meint:</b>
         F\xFCgen Sie bitte zu Ukrainisch das Wort \"\u043F\u0456\u0434\u0441\u043E\u043D\u043D\u044F\"
         hinzu. Danke.</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k2ff4dAnt\">\n<div
-        class=\"kFrm\" id=\"xee8ca\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'xee8ca')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"x6d395\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'x6d395')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -964,8 +977,8 @@ interactions:
         \u0444\u0430\u043B\nder Fall - \u0440\u0443\u0441\u0441\u043A\u0438\u0439
         - \u0443\u043F\u0430\u043B, \u043F\u0430\u0434\u0435\u043D\u0438\u0435, \u0434\u0435\u043B\u043E,
         \u043D\u0435\u0443\u0434\u0430\u0447\u0430</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k7db59Ant\">\n<div class=\"kFrm\" id=\"x029a9\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x029a9')\">\n<div
+        class=\"rZu\" id=\"k7db59Ant\">\n<div class=\"kFrm\" id=\"x0d41b\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x0d41b')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -980,8 +993,8 @@ interactions:
         onclick=\"Rahmen.aufzu('k8e1aeAnt')\">Antworten</span><br>\n<b>Mohamed@esaam
         meint:</b> I love this dictionary cuz it has a lot if important staff for
         anyone who's learning deutsch</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\"
-        id=\"k8e1aeAnt\">\n<div class=\"kFrm\" id=\"xb7d70\">\n<form method=\"post\"
-        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xb7d70')\">\n<div
+        id=\"k8e1aeAnt\">\n<div class=\"kFrm\" id=\"xfd466\">\n<form method=\"post\"
+        action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xfd466')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -995,8 +1008,8 @@ interactions:
         class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k2fcecAnt')\">Antworten</span><br>\n<b>Stefan meint:</b>
         Polnishe \xDCbersetzung ist \"odyseiczny\".</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k2fcecAnt\">\n<div class=\"kFrm\" id=\"x608f8\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x608f8')\">\n<div
+        class=\"rZu\" id=\"k2fcecAnt\">\n<div class=\"kFrm\" id=\"xf9fb0\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xf9fb0')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1012,8 +1025,8 @@ interactions:
         meint:</b> Im Sinn von Unsinn machen.\nMeine Mutter schrieb 1945: Ich habe
         lange nicht mehr gequackelt. Da wird es ja wieder einmal Zeit, von einem Baum
         zu fallen oder die Treppe herunter zu purzeln.</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"kbdbeaAnt\">\n<div class=\"kFrm\" id=\"x828bf\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x828bf')\">\n<div
+        class=\"rZu\" id=\"kbdbeaAnt\">\n<div class=\"kFrm\" id=\"xd0850\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xd0850')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1027,8 +1040,8 @@ interactions:
         class=\"rInf rKln\">2023/12 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k5e65fAnt')\">Antworten</span><br>\n<b>Furkan meint:</b>
         ...</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k5e65fAnt\">\n<div
-        class=\"kFrm\" id=\"x09450\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x09450')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"x1eef8\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'x1eef8')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -1042,7 +1055,7 @@ interactions:
         onclick=\"Rahmen.aufzu('ka9974Ant')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
         \u0421\u043E\u0432\u0456\u0441\u0442\u044C, \u0441\u0443\u043C\u043B\u0456\u043D\u043D\u044F</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"ka9974Ant\">\n<div class=\"kFrm\"
-        id=\"xa5858\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xa5858')\">\n<div
+        id=\"x5fc2f\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x5fc2f')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1056,8 +1069,8 @@ interactions:
         class=\"rInf rKln\">2023/11 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k40110Ant')\">Antworten</span><br>\n<b>Besher Ghanem
         meint:</b> Der Artikel von diesem Wort ist: DER</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k40110Ant\">\n<div class=\"kFrm\" id=\"x75d60\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x75d60')\">\n<div
+        class=\"rZu\" id=\"k40110Ant\">\n<div class=\"kFrm\" id=\"xe4b1f\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xe4b1f')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1072,7 +1085,7 @@ interactions:
         onclick=\"Rahmen.aufzu('k654c6Ant')\">Antworten</span><br>\n<b>Irna Vish meint:</b>
         \u041C\u043E\u0436\u043B\u0438\u0432\u043E,  \u043C\u0430\u0431\u0443\u0442\u044C</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k654c6Ant\">\n<div class=\"kFrm\"
-        id=\"xd4f06\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xd4f06')\">\n<div
+        id=\"x989ce\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x989ce')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1088,7 +1101,7 @@ interactions:
         \u0440\u0435\u0433\u0443\u043B\u044F\u0440\u043D\u0456\u0441\u0442\u044C,
         \u0437\u0430\u043A\u043E\u043D\u043E\u043C\u0456\u0440\u043D\u0456\u0441\u0442\u044C</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"kadfe9Ant\">\n<div class=\"kFrm\"
-        id=\"x5b10e\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x5b10e')\">\n<div
+        id=\"x02015\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x02015')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1104,8 +1117,8 @@ interactions:
         \u043D\u0435\u0437\u043B\u0456\u0447\u0435\u043D\u043D\u0430 \u043A\u0456\u043B\u044C\u043A\u0456\u0441\u0442\u044C,
         \u0431\u0435\u0437\u043E\u0434\u043D\u044F, \u0432\u0435\u043B\u0438\u0447\u0435\u0437\u043D\u0430
         \u043C\u0430\u0441\u0430</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k70caeAnt\">\n<div
-        class=\"kFrm\" id=\"x7f19a\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x7f19a')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"xed874\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'xed874')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -1121,8 +1134,8 @@ interactions:
         \u0628\u0631\u0627\u06CC \u06A9\u0648\u062F\u06A9\u0627\u0646 \u0645\u062B\u0644\u0627
         \u062F\u0631 \u0645\u0631\u0627\u06A9\u0632 \u062E\u0631\u06CC\u062F \u06CC\u0627
         \u0641\u0631\u062F\u06AF\u0627\u0647 \u0648 \u2026 </p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"kb52c9Ant\">\n<div class=\"kFrm\" id=\"x85ef9\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x85ef9')\">\n<div
+        class=\"rZu\" id=\"kb52c9Ant\">\n<div class=\"kFrm\" id=\"xe2026\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xe2026')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1137,8 +1150,8 @@ interactions:
         onclick=\"Rahmen.aufzu('ke5bbdAnt')\">Antworten</span><br>\n<b>zystko meint:</b>
         \"an Bedeutung verlieren\" - ist das Dativ oder Akkusativ? K\xF6nnte mir jd
         weiterhelfen? Danke!</p>\n<div class=\"kAnt\">\t\n<div class=\"rZu\" id=\"ke5bbdAnt\">\n<div
-        class=\"kFrm\" id=\"x91279\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x91279')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"xe7ff5\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'xe7ff5')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -1151,8 +1164,8 @@ interactions:
         class=\"rInf rKln\">2023/09 \xB7</span> \n<span class=\"rNoSelect rInf rKln\"
         onclick=\"Rahmen.aufzu('k05cf9Ant')\">Antworten</span><br>\n<b>Lucia meint:</b>
         Espa\xF1ol: acelerado, inquieto (relativo a personalidad)</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"k05cf9Ant\">\n<div class=\"kFrm\" id=\"x0a3c9\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x0a3c9')\">\n<div
+        class=\"rZu\" id=\"k05cf9Ant\">\n<div class=\"kFrm\" id=\"xce21c\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xce21c')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1167,7 +1180,7 @@ interactions:
         onclick=\"Rahmen.aufzu('k10c57Ant')\">Antworten</span><br>\n<b>Alex meint:</b>
         What is it at the top of the page?  -  Use of the English verb erinnern</p>\n<div
         class=\"kAnt\">\t\n<div class=\"rZu\" id=\"k10c57Ant\">\n<div class=\"kFrm\"
-        id=\"xac1e0\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xac1e0')\">\n<div
+        id=\"xdb8b5\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xdb8b5')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1182,8 +1195,8 @@ interactions:
         onclick=\"Rahmen.aufzu('ka2e91Ant')\">Antworten</span><br>\n<b>\u041F\u0435\u0440\u0435\u043A\u043B\u0430\u0434
         meint:</b> \u0438\u043D\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043B\u044C\u043D\u043E,
         \u043E\u043A\u0440\u0435\u043C\u0438\u0439</p>\n<div class=\"kAnt\">\t\n<div
-        class=\"rZu\" id=\"ka2e91Ant\">\n<div class=\"kFrm\" id=\"x64272\">\n<form
-        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'x64272')\">\n<div
+        class=\"rZu\" id=\"ka2e91Ant\">\n<div class=\"kFrm\" id=\"xc1012\">\n<form
+        method=\"post\" action=\"/kommentare/anlage.htm\" onsubmit=\"Ajax.ersetze(event,'xc1012')\">\n<div
         class=\"rMrgn\">\n<select class=\"kBwrt rRechts\" name=\"bewertung\">\n<option
         value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
@@ -1194,8 +1207,8 @@ interactions:
         class=\"rKnpf\">Anmelden</a>\n<input name=\"pfad\" type=\"hidden\" value=\"/wort.jsp\">\n<input
         name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Verstehen\">\n<input
         name=\"bezug\" type=\"hidden\" value=\"a2e91\">\n</form>\n</div></div>\n</div><div
-        class=\"kFrm\" id=\"x0e429\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
-        onsubmit=\"Ajax.ersetze(event,'x0e429')\">\n<div class=\"rMrgn\">\n<select
+        class=\"kFrm\" id=\"xe33ab\">\n<form method=\"post\" action=\"/kommentare/anlage.htm\"
+        onsubmit=\"Ajax.ersetze(event,'xe33ab')\">\n<div class=\"rMrgn\">\n<select
         class=\"kBwrt rRechts\" name=\"bewertung\">\n<option value=\"\" selected=\"selected\">\u2605\u2730\u2730\u2730\u2730</option>\n<option
         value=\"5\">\u2605\u2605\u2605\u2605\u2605</option>\n<option value=\"4\">\u2605\u2605\u2605\u2605</option>\n<option
         value=\"3\">\u2605\u2605\u2605</option>\n<option value=\"2\">\u2605\u2605</option>\n<option
@@ -1206,14 +1219,10 @@ interactions:
         name=\"url\" type=\"hidden\" value=\"https://www.verben.de/wort.jsp?w=Verstehen\">\n</form>\n</div></div>\n<div
         class=\"rClear\" style=\"margin-top: 10px; min-height: 1px\">\n</div>\n</section><footer
         class=\"rInf rKln rClear\">\n<p>\u2075 umgangssprachlicher Gebrauch \u2077
-        veraltet</p>\n<p>\n* Die Synonyme stammen zum Teil aus dem OpenThesaurus-Eintrag
-        (openthesaurus.de) und wurden mitunter nachtr\xE4glich ge\xE4ndert. Sie sind
-        unter der Lizenz CC-BY-SA 4.0 (creativecommons.org/licenses/by-sa/4.0) frei
-        verf\xFCgbar: <a href=\"https://www.openthesaurus.de/synonyme/verstehen\"
-        rel=\"nofollow\" target=\"THESAURUS\">verstehen</a></p>\n<p>\n* Die Definitionen
-        stammen zum Teil aus dem Wiktionary (de.wiktionary.org) und wurden mitunter
-        nachtr\xE4glich ge\xE4ndert. Sie sind unter der Lizenz CC-BY-SA 3.0 (creativecommons.org/licenses/by-sa/3.0)
-        frei verf\xFCgbar. Die Urheber k\xF6nnen \xFCber folgende Links nachgeschlagen
+        veraltet</p>\n<p>\n* Die Definitionen stammen zum Teil aus dem Wiktionary
+        (de.wiktionary.org) und wurden mitunter nachtr\xE4glich ge\xE4ndert. Sie sind
+        unter der Lizenz CC-BY-SA 3.0 (creativecommons.org/licenses/by-sa/3.0) frei
+        verf\xFCgbar. Die Urheber k\xF6nnen \xFCber folgende Links nachgeschlagen
         werden: <a href=\"https://de.wiktionary.org/wiki?curid=3635\" rel=\"nofollow\"
         target=\"WIKTIONARY\">3635</a>, <a href=\"https://de.wiktionary.org/wiki?curid=3635\"
         rel=\"nofollow\" target=\"WIKTIONARY\">3635</a>, <a href=\"https://de.wiktionary.org/wiki?curid=3635\"
@@ -1231,7 +1240,11 @@ interactions:
         rel=\"nofollow\" target=\"WIKTIONARY\">3635</a>, <a href=\"https://de.wiktionary.org/wiki?curid=3635\"
         rel=\"nofollow\" target=\"WIKTIONARY\">3635</a>, <a href=\"https://de.wiktionary.org/wiki?curid=3635\"
         rel=\"nofollow\" target=\"WIKTIONARY\">3635</a>, <a href=\"https://de.wiktionary.org/wiki?curid=3635\"
-        rel=\"nofollow\" target=\"WIKTIONARY\">3635</a></p>\n</footer>\n<div class=\"rDnb\"><div
+        rel=\"nofollow\" target=\"WIKTIONARY\">3635</a></p>\n<p>\n* Die Synonyme stammen
+        zum Teil aus dem OpenThesaurus-Eintrag (openthesaurus.de) und wurden mitunter
+        nachtr\xE4glich ge\xE4ndert. Sie sind unter der Lizenz CC-BY-SA 4.0 (creativecommons.org/licenses/by-sa/4.0)
+        frei verf\xFCgbar: <a href=\"https://www.openthesaurus.de/synonyme/verstehen\"
+        rel=\"nofollow\" target=\"THESAURUS\">verstehen</a></p>\n</footer>\n<div class=\"rDnb\"><div
         class=\"aAnz aDnb\" style=\"position: fixed;\">\n<div id=\"verben.de_sky_1\"></div>\n</div>\n</div></div><div
         class=\"rClear\"></div></article><footer><div><div class=\"rLinks rFuss\">\n<h2>Kontakt</h2>\n<p>Netzverb\xAE
         Deutsch<br>\nInh. <a href=\"https://www.netzverb.de/andreas.htm\">Andreas
@@ -1310,7 +1323,7 @@ interactions:
         (<a href=\"https://www.verben.de/\">www.verben.de</a>)\"</em> mit Verlinkung
         auf <em>https://www.verben.de/</em> zu nennen. Mehr Informationen stehen in
         den <a rel=\"nofollow\" href=\"//www.netzverb.de/impressum.htm\">Nutzungsbedingungen</a>.</p>\n</div>\n<span
-        class=\"rInf rKln\">32 ms</span>\n<script type=\"application/ld+json\">{\n\"@context\":
+        class=\"rInf rKln\">33 ms</span>\n<script type=\"application/ld+json\">{\n\"@context\":
         \"http://schema.org\",\n\"@type\": \"WebSite\",\n\"url\": \"https://www.verben.de/\",\n\"potentialAction\":
         {\n\"@type\": \"SearchAction\",\n\"target\": \"https://www.verben.de/suche/?w={search_term_string}\",\n\"query-input\":
         \"required name=search_term_string\"\n},\n\"author\": { \"@id\": \"http://www.netzverb.de/\"
@@ -1336,14 +1349,14 @@ interactions:
       Content-Type:
       - text/html;charset=UTF-8
       Date:
-      - Sun, 15 Sep 2024 07:50:04 GMT
+      - Thu, 03 Oct 2024 14:24:20 GMT
       Keep-Alive:
       - timeout=5, max=100
       Server:
       - Apache
       Set-Cookie:
-      - de.netzverb.bedeutungen.helden.referenz=31e4; Max-Age=31536000; Expires=Mon,
-        15 Sep 2025 07:50:04 GMT; Path=/
+      - de.netzverb.bedeutungen.helden.referenz=2240; Max-Age=31536000; Expires=Fri,
+        03 Oct 2025 14:24:20 GMT; Path=/
       Strict-Transport-Security:
       - max-age=0
       Transfer-Encoding:
@@ -1371,13 +1384,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=A1+%C2%B7%0AVerb+%C2%B7+haben+%C2%B7+unregelm%C3%A4%C3%9Fig+%C2%B7+untrennbar+%C2%B7+%3Cauch%3A+transitiv+%C2%B7+reflexiv+%C2%B7+Passiv%3E%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrans.%3E+%0A%0A%0A%3Csich%2BA%3E+%0A%2BA%0A...%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0Does+it+understand+Hungarian%3F%0A%0A%C2%A0Do+you+understand+Portuguese%3F%0A%0A%C2%A0Don%27t+get+me+wrong.%0A%0A%C2%A0What+does+she+understand+about+men%3F%0A%0A%C2%A0He+doesn%27t+feel+understood+by+her.
+    uri: https://translate.google.com/m?tl=es&sl=de&q=Verstehen%0A%0A%0AA1+%C2%B7%0AVerb+%C2%B7+haben+%C2%B7+unregelm%C3%A4%C3%9Fig+%C2%B7+untrennbar+%C2%B7+%3Cauch%3A+transitiv+%C2%B7+reflexiv+%C2%B7+Passiv%3E%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrans.%3E+%0A%0A%0A%3Csich%2BA%3E+%0A%2BA%0A...%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0Does+it+understand+Hungarian%3F%0A%0A%C2%A0Do+you+understand+Portuguese%3F%0A%0A%C2%A0Don%27t+get+me+wrong.%0A%0A%C2%A0What+does+she+understand+about+men%3F%0A%0A%C2%A0He+doesn%27t+feel+understood+by+her.
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"4FVptuEC2rWsUB1JB_y1NA\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"45kPdjq9niwiQZJr2j9lKA\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -1415,22 +1428,23 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=A1%20%C2%B7%0AVerb%20%C2%B7%20haben%20%C2%B7%20unregelm%C3%A4%C3%9Fig%20%C2%B7%20untrennbar%20%C2%B7%20%3Cauch%3A%20transitiv%20%C2%B7%20reflexiv%20%C2%B7%20Passiv%3E%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrans.%3E%20%0A%0A%0A%3Csich%2BA%3E%20%0A%2BA%0A...%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0Does%20it%20understand%20Hungarian%3F%0A%0A%C2%A0Do%20you%20understand%20Portuguese%3F%0A%0A%C2%A0Don%27t%20get%20me%20wrong.%0A%0A%C2%A0What%20does%20she%20understand%20about%20men%3F%0A%0A%C2%A0He%20doesn%27t%20feel%20understood%20by%20her.&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=A1%20%C2%B7%0AVerb%20%C2%B7%20haben%20%C2%B7%20unregelm%C3%A4%C3%9Fig%20%C2%B7%20untrennbar%20%C2%B7%20%3Cauch%3A%20transitiv%20%C2%B7%20reflexiv%20%C2%B7%20Passiv%3E%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrans.%3E%20%0A%0A%0A%3Csich%2BA%3E%20%0A%2BA%0A...%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0Does%20it%20understand%20Hungarian%3F%0A%0A%C2%A0Do%20you%20understand%20Portuguese%3F%0A%0A%C2%A0Don%27t%20get%20me%20wrong.%0A%0A%C2%A0What%20does%20she%20understand%20about%20men%3F%0A%0A%C2%A0He%20doesn%27t%20feel%20understood%20by%20her.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=A1%20%C2%B7%0AVerbo%20%C2%B7%20tener%20%C2%B7%20irregular%20%C2%B7%20inseparable%20%C2%B7%20%3Ctambi%C3%A9n%3A%20transitivo%20%C2%B7%20reflexivo%20%C2%B7%20pasivo%3E%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrad.%3E%20%0A%0A%0A%3C%C3%A9l%20mismo%2BA%3E%20%0A%2BA%0A...%0A%2BA%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0%C2%BFEntiende%20h%C3%BAngaro%3F%0A%0A%C2%A0%C2%BFEntiendes%20portugu%C3%A9s%3F%0A%0A%C2%A0No%20me%20malinterpretes.%0A%0A%C2%A0%C2%BFQu%C3%A9%20entiende%20ella%20sobre%20los%20hombres%3F%0A%0A%C2%A0%C3%89l%20no%20se%20siente%20comprendido%20por%20ella.&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=Verstehen%0A%0A%0AA1%20%C2%B7%0AVerb%20%C2%B7%20haben%20%C2%B7%20unregelm%C3%A4%C3%9Fig%20%C2%B7%20untrennbar%20%C2%B7%20%3Cauch%3A%20transitiv%20%C2%B7%20reflexiv%20%C2%B7%20Passiv%3E%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrans.%3E%20%0A%0A%0A%3Csich%2BA%3E%20%0A%2BA%0A...%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0Does%20it%20understand%20Hungarian%3F%0A%0A%C2%A0Do%20you%20understand%20Portuguese%3F%0A%0A%C2%A0Don%27t%20get%20me%20wrong.%0A%0A%C2%A0What%20does%20she%20understand%20about%20men%3F%0A%0A%C2%A0He%20doesn%27t%20feel%20understood%20by%20her.&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=Verstehen%0A%0A%0AA1%20%C2%B7%0AVerb%20%C2%B7%20haben%20%C2%B7%20unregelm%C3%A4%C3%9Fig%20%C2%B7%20untrennbar%20%C2%B7%20%3Cauch%3A%20transitiv%20%C2%B7%20reflexiv%20%C2%B7%20Passiv%3E%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrans.%3E%20%0A%0A%0A%3Csich%2BA%3E%20%0A%2BA%0A...%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0Does%20it%20understand%20Hungarian%3F%0A%0A%C2%A0Do%20you%20understand%20Portuguese%3F%0A%0A%C2%A0Don%27t%20get%20me%20wrong.%0A%0A%C2%A0What%20does%20she%20understand%20about%20men%3F%0A%0A%C2%A0He%20doesn%27t%20feel%20understood%20by%20her.&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=Entender%0A%0A%0AA1%20%C2%B7%0AVerbo%20%C2%B7%20tener%20%C2%B7%20irregular%20%C2%B7%20inseparable%20%C2%B7%20%3Ctambi%C3%A9n%3A%20transitivo%20%C2%B7%20reflexivo%20%C2%B7%20pasivo%3E%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A%3Ctrad.%3E%20%0A%0A%0A%3C%C3%A9l%20mismo%2BA%3E%20%0A%2BA%0A...%0A%2BA%0A%2BD%0A%2BA%0A%2BD%0A%2BD%0A%2BD%0A...%0A...%0A%0A%C2%A0%C2%BFEntiende%20h%C3%BAngaro%3F%0A%0A%C2%A0%C2%BFEntiendes%20portugu%C3%A9s%3F%0A%0A%C2%A0No%20me%20malinterpretes.%0A%0A%C2%A0%C2%BFQu%C3%A9%20entiende%20ella%20sobre%20los%20hombres%3F%0A%0A%C2%A0%C3%89l%20no%20se%20siente%20comprendido%20por%20ella.&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
-        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"A1 \xB7\nVerb
-        \xB7 haben \xB7 unregelm\xE4\xDFig \xB7 untrennbar \xB7 &lt;auch: transitiv
-        \xB7 reflexiv \xB7 Passiv&gt;\n+A\n+A\n+D\n+D\n+D\n+D\n&lt;trans.&gt; \n\n\n&lt;sich+A&gt;
-        \n+A\n...\n+A\n+A\n+D\n+D\n+D\n+D\n...\n...\n\n\_Does it understand Hungarian?\n\n\_Do
-        you understand Portuguese?\n\n\_Don&#39;t get me wrong.\n\n\_What does she
-        understand about men?\n\n\_He doesn&#39;t feel understood by her.\"><div class=\"translate-button-container\"><input
+        name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"Verstehen\n\n\nA1
+        \xB7\nVerb \xB7 haben \xB7 unregelm\xE4\xDFig \xB7 untrennbar \xB7 &lt;auch:
+        transitiv \xB7 reflexiv \xB7 Passiv&gt;\n+A\n+D\n+A\n+D\n+D\n+D\n&lt;trans.&gt;
+        \n\n\n&lt;sich+A&gt; \n+A\n...\n+A\n+D\n+A\n+D\n+D\n+D\n...\n...\n\n\_Does
+        it understand Hungarian?\n\n\_Do you understand Portuguese?\n\n\_Don&#39;t
+        get me wrong.\n\n\_What does she understand about men?\n\n\_He doesn&#39;t
+        feel understood by her.\"><div class=\"translate-button-container\"><input
         type=\"submit\" value=\"Translate\" class=\"translate-button\"></div></form></div><div
-        class=\"result-container\">A1 \xB7\nVerbo \xB7 tener \xB7 irregular \xB7 inseparable
-        \xB7 &lt;tambi\xE9n: transitivo \xB7 reflexivo \xB7 pasivo&gt;\n+A\n+A\n+D\n+D\n+D\n+D\n&lt;trad.&gt;
-        \n\n\n&lt;\xE9l mismo+A&gt; \n+A\n...\n+A\n+A\n+D\n+D\n+D\n+D\n...\n...\n\n\_\xBFEntiende
+        class=\"result-container\">Entender\n\n\nA1 \xB7\nVerbo \xB7 tener \xB7 irregular
+        \xB7 inseparable \xB7 &lt;tambi\xE9n: transitivo \xB7 reflexivo \xB7 pasivo&gt;\n+A\n+D\n+A\n+D\n+D\n+D\n&lt;trad.&gt;
+        \n\n\n&lt;\xE9l mismo+A&gt; \n+A\n...\n+A\n+D\n+A\n+D\n+D\n+D\n...\n...\n\n\_\xBFEntiende
         h\xFAngaro?\n\n\_\xBFEntiendes portugu\xE9s?\n\n\_No me malinterpretes.\n\n\_\xBFQu\xE9
         entiende ella sobre los hombres?\n\n\_\xC9l no se siente comprendido por ella.</div><div
         class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
@@ -1449,7 +1463,7 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - script-src 'nonce-BEfcBDUFxCWmvEGokq7CRQ' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-4uL2wefL76q-OyFn6PXQHg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
@@ -1459,7 +1473,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:50:04 GMT
+      - Thu, 03 Oct 2024 14:24:21 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -1472,8 +1486,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=Dz0HnMduy1YapDFCsmk35yqNxri75Zhr_V4QPlyASvaWrk_Qbzjj23H3BtCHLM3El7V_u7Kf2ndAKSMK5F7X9dessptXepoIrr7jfDEDVZDO1mGZI3BdnnO8vvrySo-mJVIjPGfXH1bZMY9moRUC7S-Ry2O0y-ikr4ZTATw70-892Mq-lOJ2tBT5jZw;
-        expires=Thu, 16-Oct-2025 00:08:22 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=UMg7iBjRpScsXyQNnJcR9w2AnVo_AnfcMn2Q745NXpxGfeU2EZyjC_xlO9zH_wbTxFuUV-WO2uxbe5maKGNUPdZlW2C10eTRWI2jSYFhfTPOqhvso0UXDChR-QfPMLtVFYbyMLfo4gnEDzrCbjQ1GpQTeUVUE-fUTGiB4H1wju4xwXRLJZYjBwGOSA;
+        expires=Mon, 03-Nov-2025 06:42:39 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -1486,7 +1500,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8eaxbO2swksmLz4ALOSWlJ-YXxJUWJecU5iSapueWpScWpRWWpRvJGBkYmBpaGhnoF5fIEhAEFsL30"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw0ZBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxALcXNMvfRrO5tAx9xWcyW1pPzC-JKixLzinMSSVN3y1KTi1KKy1KJ4IwMjE0MDA0M9A4v4AgMAV3srYA"
     status:
       code: 200
       message: OK
@@ -1508,7 +1522,7 @@ interactions:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"zo_H3rWqrnwiTz0Px3RQeg\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"uXe75kgqcyDIpUpGOcOXDg\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -1572,9 +1586,9 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Security-Policy:
-      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-RzVqaUlEe705xK6UFR1vnQ' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-vh9UcXzMTVroar-1jIrIfg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
+      - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
       Content-Type:
       - text/html; charset=utf-8
       Cross-Origin-Opener-Policy:
@@ -1582,7 +1596,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:50:05 GMT
+      - Thu, 03 Oct 2024 14:24:24 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -1595,8 +1609,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=G0LjUKUxOJlVLd0xJg7FMF1YQnlCmPMjsJNUat3sQYt_QC1udKZXkNPTyz7jLzfvgZrt--EFYZWVKUDxE4spACJbbX15odN_8KFAfXX4eFLP8AuTQfaujKpIK9uJmFzu5TWGaEoyEBJlDeY__fiCyHDkztyBgUJ6w9Ft_JoloX1q2o74i591QaG7spA;
-        expires=Thu, 16-Oct-2025 00:08:23 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=hY7VhtPDzDvGeGENW5V3ArlPOtPmSiiXW45dzEo2xQXYgGvWqjyjnrtWvRylQysGqS0qwdg-h_c1NGB2Z58t289R6WiFoKUvxgmLpxEFA03FSWWX3jaqWhMztXaqJehYOls8o_HND9Qna2B16Qeop7UtiQEoESTsg74ORBrLLU4UkWa5B_Zq2bHarT8;
+        expires=Mon, 03-Nov-2025 06:42:42 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -1609,7 +1623,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw1pBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQD8faxbO2swmc-NOzmklJLSm_ML6kKDGvOCexJFW3PDWpOLWoLLUo3sjAyMTA0tBQz8A8vsAQAFHNL98"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmII0JBikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XDMuPRrO5vAh38NTYxKakn5hfElRYl5xTmJJam65alJxalFZalF8UYGRiaGBgaGegYW8QUGAKbOLHg"
     status:
       code: 200
       message: OK
@@ -1625,13 +1639,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.3
     method: GET
-    uri: https://translate.google.com/m?tl=es&sl=de&q=https%3A%2F%2Fwww.verbformen.de%2Fbedo%2C%0Aunderstand%2C%0Acatch+meaning%2C%0Atake+point%2C%0Afigure+out%2C%0Alatch+on%2C%0Acomprehend%2C%0Aapprehend%2C%0Aget+the+idea%2C%0Amean%2C%0Ainterpret%2C%0Agrasp%2C%0Asee+into%2C%0Asee+through%2C%0Aparse%2C%0Aget%2C%0Adig%2C%0Agrok%2C%0Aken%2C%0Asavvy
+    uri: https://translate.google.com/m?tl=es&sl=de&q=https%3A%2F%2Fwww.verbformen.de%2Fbedo%2C%0Aunderstand%2C%0Acatch+meaning%2C%0Atake+point%2C%0Afigure+out%2C%0Alatch+on%2C%0Acomprehend%2C%0Aapprehend%2C%0Aget+the+idea%2C%0Amean%2C%0Ainterpret%2C%0Agrasp%2C%0Asee+into%2C%0Aget%2C%0Asee+through%2C%0Aparse%2C%0Adig%2C%0Agrok%2C%0Aken%2C%0Asavvy
   response:
     body:
       string: "<!DOCTYPE html><html dir=\"ltr\" lang=\"en-US\"><head><title>Google
         Translate</title><meta name=\"google\" content=\"notranslate\"><meta name=\"viewport\"
         content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"//ssl.gstatic.com/translate/favicon.ico\"
-        sizes=\"64x64\"><style nonce=\"RAg8518y7F78-5-YMS30lQ\">\n    body {\n      font-family:
+        sizes=\"64x64\"><style nonce=\"Hb9EZV1HmyO9LRhuX1dxpQ\">\n    body {\n      font-family:
         'Arial', sans-serif;\n      margin: 0;\n    }\n    a:link,\n    a:visited,\n
         \   a:active {\n      color: #1a73e8; /* blue 600 */\n      text-decoration:
         none;\n    }\n    .header {\n      background-color: #fff;\n      border-bottom:
@@ -1669,20 +1683,20 @@ interactions:
         16px;\n      padding: 0;\n    }\n    .links-container ul li {\n      margin-bottom:
         16px;\n    }\n  </style></head><body><div class=\"header\"><div class=\"logo-image\"></div><div
         class=\"logo-text\">Translate</div></div><div class=\"languages-container\"><div
-        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=https%3A%2F%2Fwww.verbformen.de%2Fbedo%2C%0Aunderstand%2C%0Acatch%20meaning%2C%0Atake%20point%2C%0Afigure%20out%2C%0Alatch%20on%2C%0Acomprehend%2C%0Aapprehend%2C%0Aget%20the%20idea%2C%0Amean%2C%0Ainterpret%2C%0Agrasp%2C%0Asee%20into%2C%0Asee%20through%2C%0Aparse%2C%0Aget%2C%0Adig%2C%0Agrok%2C%0Aken%2C%0Asavvy&amp;mui=sl&amp;hl=en-US\">German</a>
-        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=https%3A%2F%2Fwww.verbformen.de%2Fbedo%2C%0Aunderstand%2C%0Acatch%20meaning%2C%0Atake%20point%2C%0Afigure%20out%2C%0Alatch%20on%2C%0Acomprehend%2C%0Aapprehend%2C%0Aget%20the%20idea%2C%0Amean%2C%0Ainterpret%2C%0Agrasp%2C%0Asee%20into%2C%0Asee%20through%2C%0Aparse%2C%0Aget%2C%0Adig%2C%0Agrok%2C%0Aken%2C%0Asavvy&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
-        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=https%3A%2F%2Fwww.verbo%20Formen.de%2Fbedo%2C%0Aentender%2C%0Acaptar%20significado%2C%0Atoma%20punto%2C%0Aaveriguar%2C%0Aadherirse%2C%0Aentender%2C%0Aaprehender%2C%0Aentiende%20la%20idea%2C%0Asignificar%2C%0Aint%C3%A9rprete%2C%0Acomprender%2C%0Aver%2C%0Aver%20a%20trav%C3%A9s%20de%2C%0Aanalizar%20gramaticalmente%2C%0Aconseguir%2C%0Aexcavar%2C%0Aasimilar%2C%0Aconocido%2C%0Acomprensi%C3%B3n&amp;hl=en-US\">Swap</a></div></div><div
+        class=\"sl-and-tl\"><a href=\"./m?sl=de&amp;tl=es&amp;q=https%3A%2F%2Fwww.verbformen.de%2Fbedo%2C%0Aunderstand%2C%0Acatch%20meaning%2C%0Atake%20point%2C%0Afigure%20out%2C%0Alatch%20on%2C%0Acomprehend%2C%0Aapprehend%2C%0Aget%20the%20idea%2C%0Amean%2C%0Ainterpret%2C%0Agrasp%2C%0Asee%20into%2C%0Aget%2C%0Asee%20through%2C%0Aparse%2C%0Adig%2C%0Agrok%2C%0Aken%2C%0Asavvy&amp;mui=sl&amp;hl=en-US\">German</a>
+        \u2192 <a href=\"./m?sl=de&amp;tl=es&amp;q=https%3A%2F%2Fwww.verbformen.de%2Fbedo%2C%0Aunderstand%2C%0Acatch%20meaning%2C%0Atake%20point%2C%0Afigure%20out%2C%0Alatch%20on%2C%0Acomprehend%2C%0Aapprehend%2C%0Aget%20the%20idea%2C%0Amean%2C%0Ainterpret%2C%0Agrasp%2C%0Asee%20into%2C%0Aget%2C%0Asee%20through%2C%0Aparse%2C%0Adig%2C%0Agrok%2C%0Aken%2C%0Asavvy&amp;mui=tl&amp;hl=en-US\">Spanish</a></div><div
+        class=\"swap-container\"><a href=\"./m?sl=es&amp;tl=de&amp;q=https%3A%2F%2Fwww.verbo%20Formen.de%2Fbedo%2C%0Aentender%2C%0Acaptar%20significado%2C%0Atoma%20punto%2C%0Aaveriguar%2C%0Aadherirse%2C%0Aentender%2C%0Aaprehender%2C%0Aentiende%20la%20idea%2C%0Asignificar%2C%0Aint%C3%A9rprete%2C%0Acomprender%2C%0Aver%2C%0Aconseguir%2C%0Aver%20a%20trav%C3%A9s%20de%2C%0Aanalizar%20gramaticalmente%2C%0Aexcavar%2C%0Aasimilar%2C%0Aconocido%2C%0Acomprensi%C3%B3n&amp;hl=en-US\">Swap</a></div></div><div
         class=\"input-container\"><form action=\"/m\"><input type=\"hidden\" name=\"sl\"
         value=\"de\"><input type=\"hidden\" name=\"tl\" value=\"es\"><input type=\"hidden\"
         name=\"hl\" value=\"en-US\"><input type=\"text\" aria-label=\"Source text\"
         name=\"q\" class=\"input-field\" maxlength=\"2048\" value=\"https://www.verbformen.de/bedo,\nunderstand,\ncatch
         meaning,\ntake point,\nfigure out,\nlatch on,\ncomprehend,\napprehend,\nget
-        the idea,\nmean,\ninterpret,\ngrasp,\nsee into,\nsee through,\nparse,\nget,\ndig,\ngrok,\nken,\nsavvy\"><div
+        the idea,\nmean,\ninterpret,\ngrasp,\nsee into,\nget,\nsee through,\nparse,\ndig,\ngrok,\nken,\nsavvy\"><div
         class=\"translate-button-container\"><input type=\"submit\" value=\"Translate\"
         class=\"translate-button\"></div></form></div><div class=\"result-container\">https://www.verbo
         Formen.de/bedo,\nentender,\ncaptar significado,\ntoma punto,\naveriguar,\nadherirse,\nentender,\naprehender,\nentiende
-        la idea,\nsignificar,\nint\xE9rprete,\ncomprender,\nver,\nver a trav\xE9s
-        de,\nanalizar gramaticalmente,\nconseguir,\nexcavar,\nasimilar,\nconocido,\ncomprensi\xF3n</div><div
+        la idea,\nsignificar,\nint\xE9rprete,\ncomprender,\nver,\nconseguir,\nver
+        a trav\xE9s de,\nanalizar gramaticalmente,\nexcavar,\nasimilar,\nconocido,\ncomprensi\xF3n</div><div
         class=\"links-container\"><ul><li><a href=\"https://www.google.com/m?hl=en-US\">Google
         home</a></li><li><a href=\"https://www.google.com/tools/feedback/survey/xhtml?productId=95112&hl=en-US\">Send
         feedback</a></li><li><a href=\"https://www.google.com/intl/en-US/policies\">Privacy
@@ -1700,7 +1714,7 @@ interactions:
       - gzip
       Content-Security-Policy:
       - require-trusted-types-for 'script';report-uri /_/TranslateNoJsUi/cspreport
-      - script-src 'nonce-lHoyQ8ja8t-NwSvWG4qUvw' 'unsafe-inline';object-src 'none';base-uri
+      - script-src 'nonce-KZhp-donn46U74QlQRpBNg' 'unsafe-inline';object-src 'none';base-uri
         'self';report-uri /_/TranslateNoJsUi/cspreport;worker-src 'self'
       Content-Type:
       - text/html; charset=utf-8
@@ -1709,7 +1723,7 @@ interactions:
       Cross-Origin-Resource-Policy:
       - same-site
       Date:
-      - Sun, 15 Sep 2024 07:50:06 GMT
+      - Thu, 03 Oct 2024 14:24:25 GMT
       Expires:
       - Mon, 01 Jan 1990 00:00:00 GMT
       P3P:
@@ -1722,8 +1736,8 @@ interactions:
       Server:
       - ESF
       Set-Cookie:
-      - __Secure-ENID=22.SE=czu8jRO1AJ8ZPU-I47BysKTS1rawWlG8jXnqS-wKSqpUwFpYQ8eFYskdw0HnLQkSx2zgwwaSVjoe4HkpZWLjIX8MyvMaTW7p-Yb2lArfWKDH13ku9kK9Ir6rNlHz7QQmhysS1okP26RirO49TSFR1IiYldcH0CZPRIldH2cwiCXKkS1oqFmfWau9-Q;
-        expires=Thu, 16-Oct-2025 00:08:24 GMT; path=/; domain=.google.com; Secure;
+      - __Secure-ENID=22.SE=JY_7duKZnZzBBvCDmcsvWT4KQdFpI3Apmk7Ee_nuoyeS024jRSzUKDa2oZinJ_AC7F93ijYxffNhGoMJjIWchBGWsuuKW4hiwXbuqpX691dprYhCkMITWjuZ6vuEfZWSiQmyF_HN9ASTXov9pt3t3o5dduDUb4R792PvEIQyh5AAtKHCUctU9WcnIUk;
+        expires=Mon, 03-Nov-2025 06:42:43 GMT; path=/; domain=.google.com; Secure;
         HttpOnly; SameSite=lax
       Transfer-Encoding:
       - chunked
@@ -1736,7 +1750,7 @@ interactions:
       X-XSS-Protection:
       - '0'
       reporting-endpoints:
-      - default="/_/TranslateNoJsUi/web-reports?context=eJzj8tDikmLw15BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgXhJxkfVA4kVWQ4VLrPZArNpzidUYiIskrrA2ALEQN8e6xbO2swms-N0brqSWlF8YX1KUmFeck1iSqluemlScWlSWWhRvZGBkYmBpaKhnYB5fYAgAHcsvbQ"
+      - default="/_/TranslateNoJsUi/web-reports?context=eJzjctDikmLw05BikPj6kkkNiJ3SZ7AGAHHrzXOsk4E46d951gIgNlS4xGoPxKo9l1iNgbhI4gprAxAL8XDMvPRrO5vAilnvPjMpqSXlF8aXFCXmFecklqTqlqcmFacWlaUWxRsZGJkYGhgY6hlYxBcYAACtciyr"
     status:
       code: 200
       message: OK

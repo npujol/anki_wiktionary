@@ -148,6 +148,14 @@ class CustomFields(BaseModel):
     @model_validator(mode="before")
     def validate_missing_translations(cls, values: Any) -> Any:
         handler = GoogleTranslator(source="de", target="es")
+
+        # Add the full word to the meaning
+        meaning = values.get("meaning", "")
+        if meaning is None:
+            values["meaning"] = values.get("full_word", "")
+        else:
+            values["meaning"] = values.get("full_word", "") + "\n" + meaning
+
         to_translate_map: dict[str, str] = {
             "meaning": "meaning_spanish",
             "example1": "example1e",
