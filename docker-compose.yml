@@ -8,8 +8,7 @@ services:
       dockerfile: ./Dockerfile
     restart: always
     env_file:
-      - path: compose.env
-        required: true # default
+      - "compose.env"
     ports:
       - "8080:8080"
     networks:
