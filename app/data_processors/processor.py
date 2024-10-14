@@ -6,7 +6,7 @@ from app.serializers import CustomNote
 from .processors import (
     BaseDataProcessor,
     DudenDataProcessor,
-    OllamaDataProcessor,
+    # OllamaDataProcessor,
     VerbenDataProcessor,
     WiktionaryDataProcessor,
 )
@@ -18,7 +18,7 @@ PROCESSORS_MAP: dict[
     "verben": VerbenDataProcessor(),
     "duden": DudenDataProcessor(),
     "wiktionary": WiktionaryDataProcessor(),
-    "ollama": OllamaDataProcessor(),
+    # "ollama": OllamaDataProcessor(),
 }
 
 
