@@ -19,7 +19,12 @@ ollama = "^0.2.0"
 duden = "*"
 genanki = "^0.13.1"
 # anki = { url = "https://files.pythonhosted.org/packages/51/5f/6f52b958fe38a36a0799c01fbd56a742ebdfcf41f89438dbee998b8ce692/anki-24.06.3-cp39-abi3-manylinux_2_28_x86_64.whl" }
-anki = { url = "https://files.pythonhosted.org/packages/df/bb/b0bfbc6a06a598b0b614d18dd8c4f40827828649f9742f1f44a4e44d6a2c/anki-24.06.3-cp39-abi3-manylinux_2_31_aarch64.whl" }
+# anki = { url = "https://files.pythonhosted.org/packages/df/bb/b0bfbc6a06a598b0b614d18dd8c4f40827828649f9742f1f44a4e44d6a2c/anki-24.06.3-cp39-abi3-manylinux_2_31_aarch64.whl", markers = "platform_machine == 'aarch64' }
+
+anki = [
+  { url = "https://files.pythonhosted.org/packages/51/5f/6f52b958fe38a36a0799c01fbd56a742ebdfcf41f89438dbee998b8ce692/anki-24.06.3-cp39-abi3-manylinux_2_28_x86_64.whl", markers = "platform_machine == 'x86_64'" },
+  { url = "https://files.pythonhosted.org/packages/df/bb/b0bfbc6a06a598b0b614d18dd8c4f40827828649f9742f1f44a4e44d6a2c/anki-24.06.3-cp39-abi3-manylinux_2_31_aarch64.whl", markers = "platform_machine == 'aarch64'" },
+]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"

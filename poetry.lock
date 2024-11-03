@@ -18,6 +18,30 @@ description = ""
 optional = false
 python-versions = ">=3.9"
 files = [
+    {file = "anki-24.06.3-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:e03959487c5664db136ec7809d864d03141a3ce356d4b6354ceeb7dd5b8c9d37"},
+]
+
+[package.dependencies]
+beautifulsoup4 = "*"
+decorator = "*"
+distro = {version = "*", markers = "sys_platform != \"darwin\" and sys_platform != \"win32\""}
+markdown = "*"
+orjson = "*"
+protobuf = ">=4.21"
+psutil = {version = "*", markers = "sys_platform == \"win32\""}
+requests = {version = "*", extras = ["socks"]}
+
+[package.source]
+type = "url"
+url = "https://files.pythonhosted.org/packages/51/5f/6f52b958fe38a36a0799c01fbd56a742ebdfcf41f89438dbee998b8ce692/anki-24.06.3-cp39-abi3-manylinux_2_28_x86_64.whl"
+
+[[package]]
+name = "anki"
+version = "24.06.3"
+description = ""
+optional = false
+python-versions = ">=3.9"
+files = [
     {file = "anki-24.06.3-cp39-abi3-manylinux_2_31_aarch64.whl", hash = "sha256:dcd7a1f828c4fb367d5147f012120a1e18e8d7607ed64c69e559b27b5185819a"},
 ]
 
@@ -2383,4 +2407,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "5d56d4f34f19a2828c41e1918eadb0f40c3579b5a104b0fc24762bc582351472"
+content-hash = "3dc26f554702e7e0556ad402cbc77146613ea65abead933b2309ba502d886b3b"
