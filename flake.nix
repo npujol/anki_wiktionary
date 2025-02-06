@@ -38,6 +38,7 @@
               poetry env use ${pkgs.lib.getExe pkgs.python312}
               export VIRTUAL_ENV=$(poetry env info --path)
               export PATH=$VIRTUAL_ENV/bin/:$PATH
+              export LD_PRELOAD="$LD_PRELOAD:${pkgs.stdenv.cc.cc.lib}/lib/libstdc++.so.6"
               ${environment-variable}
             '';
           };
