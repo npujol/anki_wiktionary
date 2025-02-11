@@ -31,15 +31,20 @@ class GeminiDataProcessor(BaseDataProcessor):
             ):
                 self.logger.debug(msg=f"Skipping field '{key}'")
                 continue
+            try:
+                prompt: str = f"Word: '{word}'. {field.get("description", "")} The answer should be in german."
+                response: GenerateContentResponse = self.client.generate_content(
+                    contents=prompt
+                )
 
-            prompt: str = f"Word: '{word}'. {field.get("description", "")} The answer should be in german."
-            response: GenerateContentResponse = self.client.generate_content(
-                contents=prompt
-            )
-
-            if not response:
+                if not response:
+                    self.logger.warning(
+                        msg=f"Could not fetch data for word '{word}' using Gemini."
+                    )
+                    continue
+            except Exception as e:
                 self.logger.warning(
-                    msg=f"Could not fetch data for word '{word}' using Gemini."
+                    msg=f"Could not fetch data for word '{word}' using Gemini due to {e}."
                 )
                 continue
             content_dict[key] = response.text
@@ -47,7 +52,6 @@ class GeminiDataProcessor(BaseDataProcessor):
         updated_note: CustomNote | None = note.import_from_content(
             content=content_dict, fields_class=self.fields_class
         )
-        breakpoint()
         return updated_note
 
     def _extract_from_content(self, word: str, content: Any) -> dict[str, Any]:
