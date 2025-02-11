@@ -31,6 +31,7 @@ jobs:
         # complete the environment variables
         envkey_ANKI_USER: ${{ secrets.ANKI_USER }}
         envkey_ANKI_PASS: ${{ secrets.ANKI_PASS }}
+        envkey_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         file_name: .env
 
     - name: Check .env file
