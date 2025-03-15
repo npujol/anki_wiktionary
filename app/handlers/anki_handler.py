@@ -213,7 +213,7 @@ class AnkiHandler:
             )
         )
         await web_anki_connector.start()
-        is_successful: bool = web_anki_connector.send_card(
+        is_successful: bool = await web_anki_connector.send_card(
             custom_note=note,
             tags=[
                 deck_name,
