@@ -19,10 +19,12 @@
           inherit system;
         };
         inherit (poetry2nix.lib.mkPoetry2Nix {inherit pkgs;}) mkPoetryApplication overrides defaultPoetryOverrides;
-      environment-variable = ''
-        export BROWSERDRIVER_PATH=${pkgs.lib.getExe pkgs.geckodriver}
-        export BROWSER_PATH=${pkgs.lib.getExe pkgs.firefox}
-      '';
+        environment-variable = ''
+          export BROWSERDRIVER_PATH=${pkgs.lib.getExe pkgs.geckodriver}
+          export BROWSER_PATH=${pkgs.lib.getExe pkgs.firefox}
+          export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver.browsers}
+          export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=true
+        '';
       in
         with pkgs; rec {
           # Development shell including selenium dependencies
@@ -30,9 +32,8 @@
             name = "anki_wiktionary";
             buildInputs = [
               pkgs.python312
+              pkgs.python312Packages.playwright
               pkgs.poetry
-              pkgs.act
-              
             ];
             shellHook = ''
               poetry env use ${pkgs.lib.getExe pkgs.python312}
@@ -50,12 +51,12 @@
             python = pkgs.python312;
             checkGroups = [];
             overrides = overrides.withDefaults (final: prev: {
-                # Notice that using .overridePythonAttrs or .overrideAttrs won't work!
-               
-                anki = prev.anki.override {
-                  preferWheels = false;
-                };
-              });
+              # Notice that using .overridePythonAttrs or .overrideAttrs won't work!
+
+              anki = prev.anki.override {
+                preferWheels = false;
+              };
+            });
           };
 
           # Use xvfb-run to run the bot in headless mode

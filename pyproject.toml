@@ -20,6 +20,7 @@ duden = "*"
 genanki = "^0.13.1"
 anki = { url = "https://files.pythonhosted.org/packages/51/5f/6f52b958fe38a36a0799c01fbd56a742ebdfcf41f89438dbee998b8ce692/anki-24.06.3-cp39-abi3-manylinux_2_28_x86_64.whl" }
 google-generativeai = "^0.8.4"
+playwright = "^1.50.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
