@@ -3,7 +3,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Optional
 
-from app.anki_connectors import AnkiLocalConnector, AnkiWebConnector
+from app.anki_connectors import AnkiLocalConnector, AnkiWebPyConnector
 from app.data_processors import NoteDataProcessor
 from app.private_config import (
     anki_deck_name,
@@ -28,7 +28,7 @@ class AnkiHandler:
                 msg="Anki credentials not provided. Skipping Anki connector."
             )
 
-            web_connector = AnkiWebConnector(
+            web_connector = AnkiWebPyConnector(
                 username=anki_username,
                 password=anki_password,
             )
@@ -202,7 +202,7 @@ class AnkiHandler:
         await note.add_audio()
 
         # Send note to Anki web interface
-        web_anki_connector = AnkiWebConnector(
+        web_anki_connector = AnkiWebPyConnector(
             username=username,
             password=password,
         )
@@ -212,7 +212,7 @@ class AnkiHandler:
                 f"and {model_name}."
             )
         )
-        web_anki_connector.start()
+        await web_anki_connector.start()
         is_successful: bool = web_anki_connector.send_card(
             custom_note=note,
             tags=[
@@ -222,7 +222,7 @@ class AnkiHandler:
             ],
             card_type=note.card_type,  # type: ignore
         )
-        web_anki_connector.close()
+        await web_anki_connector.close()
 
         if not is_successful:
             self.logger.error(msg=f"Anki note for {word=} could not be created.")
