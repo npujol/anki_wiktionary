@@ -1,3 +1,9 @@
-from .serializers import BasicFields, CustomFields, CustomNote, Note  # type: ignore
+from .serializers import (  # type: ignore
+    BasicFields,
+    CustomFields,
+    CustomNote,
+    Note,
+    ToUpdateNote,
+)
 
-__all__ = ["CustomNote", "Note", "CustomFields", "BasicFields"]
+__all__ = ["CustomNote", "Note", "CustomFields", "BasicFields", ToUpdateNote]

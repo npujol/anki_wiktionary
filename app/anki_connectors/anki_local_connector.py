@@ -3,7 +3,7 @@ from typing import Any
 
 import requests
 
-from app.serializers import CustomNote, Note
+from app.serializers import CustomNote, Note, ToUpdateNote
 
 from .errors import CollectionNotFoundError, ResultNotFoundError
 
@@ -86,9 +86,15 @@ class AnkiLocalConnector:
             dict: The response from the 'findCards' request.
         """
         query = f"deck:{deck_name}"
+        card_ids = list(
+            self.make_request(
+                action="findCards",
+                params={"query": query},
+            )
+        )
         return self.make_request(
-            action="findCards",
-            params={"query": query},
+            action="cardsInfo",
+            params={"cards": card_ids},
         )
 
     def add_note(self, note: Note | CustomNote) -> dict[str, Any]:
@@ -122,3 +128,38 @@ class AnkiLocalConnector:
             and the note data.
         """
         return self.make_request(action="modelNamesAndIds")
+
+    async def add_audio_to_card(self, note: CustomNote) -> dict[str, Any]:
+        await note.add_audio()
+        note_json = note.model_dump(
+            mode="python",
+        )
+        return self.make_request(
+            action="updateNoteFields",
+            params={"note": note_json},
+        )
+
+    async def add_missing_audios(self):
+        decks = self.get_available_decks()
+        updated_cards = []
+        total_cards = 0
+        for deck in decks:
+            logger.info(f"Processing Deck: {deck}")
+            for card in self.get_cards_from_deck(deck_name=deck):
+                total_cards += 1
+                # logger.info(f"Processing Card: {card}")
+                try:
+                    note: ToUpdateNote = ToUpdateNote.model_validate(card, strict=False)
+                    if note.fields.audio is not None and note.fields.audio != "":
+                        continue
+                    await self.add_audio_to_card(note)
+                    updated_cards.append(note.id)
+                except Exception as e:
+                    logger.info(e)
+                    continue
+
+        logger.info(f"{len(updated_cards)}/{total_cards}")
+
+        if len(updated_cards) == 0:
+            return
+        self.make_request(action="forgetCards", params={"cards": [updated_cards]})

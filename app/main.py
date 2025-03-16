@@ -259,6 +259,9 @@
 #     logger.info(msg=f"Note of {word=} was created successfully.")
 #     return note
 
+from app.anki_connectors.anki_local_connector import AnkiLocalConnector
 
-# if __name__ == "__main__":
-#     generate_notes()
+if __name__ == "__main__":
+    import asyncio
+
+    asyncio.run(AnkiLocalConnector().add_missing_audios())

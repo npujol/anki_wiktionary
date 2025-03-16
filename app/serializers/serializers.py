@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field, ValidationError, computed_field, model_va
 from app.audio import AudioHandler
 from app.helpers import to_valid_filename
 from app.html_processors import extract_ordered_text
+from app.private_config import server_url
 
 logger: logging.Logger = logging.getLogger(name=__name__)
 
@@ -153,7 +154,7 @@ class CustomFields(BaseModel):
         meaning = values.get("meaning", "")
         if meaning is None:
             values["meaning"] = values.get("full_word", "")
-        else:
+        elif isinstance(meaning, str):
             values["meaning"] = values.get("full_word", "") + "\n" + meaning
 
         to_translate_map: dict[str, str] = {
@@ -281,3 +282,53 @@ class CustomNote(Note):
         if self.audio:
             return self.audio[0].url
         return None
+
+
+class OnlyAudioFields(BaseModel):
+    full_word: str
+    audio: Any = Field(
+        default="",
+        description=(
+            "This field contains the audio files associated with the word."
+            " In the generation process this field will be ignored."
+        ),
+    )
+
+    @model_validator(mode="before")
+    def validate_missing_translations(cls, values: Any) -> Any:
+        full_word = values.get("full_word", "")
+        if isinstance(full_word, dict):
+            values["full_word"] = full_word.get("value").replace(" <br>", "")
+
+        raw_audio = values.get("audio", None)
+        if isinstance(raw_audio, dict):
+            values["audio"] = raw_audio.get("value")
+
+        return values
+
+
+class ToUpdateNote(BaseModel):
+    id: dict[str, Any] | int = Field(..., alias="note")
+    fields: OnlyAudioFields
+    audio: list[AudioItem] = []
+
+    async def add_audio(self) -> Self:
+        word = str(self.fields.full_word)
+
+        audio_path = await AudioHandler().generate_audio(
+            text=str(word), language_code="de"
+        )
+        self.fields.audio = server_url + str(audio_path)
+        self.audio = [
+            AudioItem.model_validate(
+                obj={
+                    # This value is from the local server
+                    "url": server_url + str(audio_path),
+                    "filename": f"{to_valid_filename(word)}.mp3",
+                    "skipHash": "true",
+                    "fields": ["audio"],
+                }
+            )
+        ]
+
+        return self

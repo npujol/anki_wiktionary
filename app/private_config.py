@@ -25,3 +25,4 @@ bot_token: str = env.str("TELEGRAM_TOKEN", default=None)  # type: ignore
 # Ollama server url
 ollama_server_url: str = env.str("OLLAMA_URL", default="http://127.0.0.1:11434")  # type: ignore
 gemini_api_key: str = env.str("GEMINI_API_KEY", default="invalid")  # type: ignore
+server_url = "http://127.0.0.1:8000/"
