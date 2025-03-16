@@ -14,8 +14,8 @@ class GeminiDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
         self.fields_class = CustomFields
 
-        genai.configure(api_key=gemini_api_key)
-        self.client = genai.GenerativeModel(model_name="gemini-1.5-flash")
+        genai.configure(api_key=gemini_api_key)  # type: ignore
+        self.client = genai.GenerativeModel(model_name="gemini-1.5-flash")  # type: ignore
 
         super().__init__()
 
@@ -32,7 +32,7 @@ class GeminiDataProcessor(BaseDataProcessor):
                 self.logger.debug(msg=f"Skipping field '{key}'")
                 continue
             try:
-                prompt: str = f"Word: '{word}'. {field.get("description", "")} The answer should be in german."
+                prompt: str = f"Word: '{word}'. {field.get('description', '')} The answer should be in german."
                 response: GenerateContentResponse = self.client.generate_content(
                     contents=prompt
                 )

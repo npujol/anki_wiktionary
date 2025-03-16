@@ -1,4 +1,5 @@
 from playwright.async_api import async_playwright
+from playwright.async_api._generated import Browser, BrowserContext, Page, Playwright
 
 from app.serializers import CustomNote
 
@@ -9,17 +10,13 @@ class AnkiWebPyConnector:
     def __init__(self, username: str, password: str) -> None:
         self.username: str = username
         self.password: str = password
-        self.playwright = None
-        self.browser = None
-        self.context = None
-        self.page = None
 
     async def start(self) -> None:
         """Start the browser and login to Anki"""
-        self.playwright = await async_playwright().start()
-        self.browser = await self.playwright.chromium.launch()
-        self.context = await self.browser.new_context()
-        self.page = await self.context.new_page()
+        self.playwright: Playwright = await async_playwright().start()
+        self.browser: Browser = await self.playwright.chromium.launch()
+        self.context: BrowserContext = await self.browser.new_context()
+        self.page: Page = await self.context.new_page()
         await self._login_into_anki()
 
     async def close(self) -> None:
@@ -81,6 +78,9 @@ class AnkiWebPyConnector:
         for field, value in custom_note.fields:
             if field == "audio":
                 continue  # Skip audio handling
+
+            if not value:
+                continue
 
             field_locator = (
                 self.page.get_by_role("main")

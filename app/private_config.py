@@ -6,8 +6,8 @@ env = Env()
 env.read_env(override=True)
 
 # Path to Browser binary to be used for selenium webdriver
-browser_binary_location: str = env("BROWSER_PATH")  # type: ignore
-browser_driver_binary: str = env("BROWSERDRIVER_PATH") or "/usr/bin/webdriver"  # type: ignore
+browser_binary_location: str = env("BROWSER_PATH", default="/usr/bin/webdriver")  # type: ignore
+browser_driver_binary: str = env("BROWSERDRIVER_PATH", default="/usr/bin/webdriver")  # type: ignore
 
 files_path: str = env("FILES_PATH", default="files")  # type: ignore
 working_path: Path = Path(files_path)  # type: ignore

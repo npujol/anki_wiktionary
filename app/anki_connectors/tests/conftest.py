@@ -3,7 +3,6 @@ from typing import Any, Callable
 import pytest
 
 from app.anki_connectors.anki_local_connector import AnkiLocalConnector
-from app.anki_connectors.anki_web_connector import AnkiWebConnector
 from app.helpers import clean_request_body
 from app.serializers import CustomNote, Note
 
@@ -71,11 +70,6 @@ def note_obj(note_data: dict[str, Any]) -> Note:
 @pytest.fixture()
 def anki_local_connector() -> AnkiLocalConnector:
     return AnkiLocalConnector()
-
-
-@pytest.fixture(scope="function")
-def anki_web_connector() -> AnkiWebConnector:
-    return AnkiWebConnector(username="username", password="password")
 
 
 @pytest.fixture()
