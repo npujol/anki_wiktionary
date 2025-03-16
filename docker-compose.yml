@@ -5,7 +5,7 @@ services:
       context: .
       args:
         progress: plain
-      dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile.python
     restart: always
     env_file:
       - "compose.env"
