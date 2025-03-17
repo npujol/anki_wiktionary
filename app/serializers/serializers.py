@@ -318,7 +318,6 @@ class ToUpdateNote(BaseModel):
         audio_path = await AudioHandler().generate_audio(
             text=str(word), language_code="de"
         )
-        self.fields.audio = server_url + str(audio_path)
         self.audio = [
             AudioItem.model_validate(
                 obj={
