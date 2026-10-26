@@ -32,7 +32,6 @@ class DWDSDataProcessor(BaseDataProcessor):
 
             try:
                 page.goto(f"{self.base_url}{word}")
-                breakpoint()
                 # Check if word page exists
                 if page.query_selector(".dwdswb-ft-error"):
                     self.logger.error(f"Word '{word}' not found on DWDS")

@@ -142,3 +142,4 @@ anki_notes.txt
 *.env
 lcov.info
 temp.txt
+.devenv/

@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   # Match the project's previous flake development environment.
   packages = with pkgs; [
     python312
@@ -20,7 +18,7 @@
       install = {
         enable = true;
         # Keep the environment aligned with the Poetry lockfile, including dev tools.
-        groups = [ "main" "dev" ];
+        groups = ["main" "dev"];
       };
     };
   };
