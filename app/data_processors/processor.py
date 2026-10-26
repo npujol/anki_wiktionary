@@ -1,5 +1,5 @@
 import logging
-from typing import Any, Optional
+from typing import Optional
 
 from app.serializers import CustomNote
 
@@ -12,10 +12,7 @@ from .processors import (
     WiktionaryDataProcessor,
 )
 
-PROCESSORS_MAP: dict[
-    str,
-    BaseDataProcessor,
-] = {
+PROCESSORS_MAP: dict[str, BaseDataProcessor] = {
     "verben": VerbenDataProcessor(),
     "duden": DudenDataProcessor(),
     "wiktionary": WiktionaryDataProcessor(),
@@ -69,25 +66,23 @@ class NoteDataProcessor:
         word: str,
         note: CustomNote,
     ) -> CustomNote | None:
-        content: dict[str, Any] = {}
-        updated_note = note
-        for processor in PROCESSORS_MAP.values():
-            if processor.__class__.__name__ == "OllamaDataProcessor":
-                self.logger.info(
-                    msg=f"Skipping {processor.__class__.__name__} processor."
-                )
-                continue
-            if processor.__class__.__name__ == "VerbenDataProcessor":
-                # TODO: Change VerbenDataProcessor to use CustomFields
-                self.logger.info(
-                    msg=f"Skipping {processor.__class__.__name__} processor."
-                )
+        updated_note: CustomNote | None = note
+        for processor_name in ("wiktionary", "duden", "verben"):
+            processor = PROCESSORS_MAP.get(processor_name)
+            if processor is None:
                 continue
 
-            updated_note: CustomNote | None = processor.get_note_data(
-                word=word, note=note
+            candidate = processor.get_note_data(word=word, note=updated_note or note)
+            if candidate is None:
+                continue
+
+            updated_note = candidate
+            fields = candidate.fields
+            content = (
+                fields.model_dump(exclude_none=True)
+                if fields is not None
+                else {}
             )
-
             if processor.is_content_complete(content=content):
                 break
 

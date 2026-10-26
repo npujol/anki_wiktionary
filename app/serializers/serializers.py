@@ -1,7 +1,6 @@
 import logging
 from typing import Any, Callable, Optional, Self
 
-from deep_translator import GoogleTranslator  # type: ignore
 from pydantic import BaseModel, Field, ValidationError, computed_field, model_validator
 
 from app.audio import AudioHandler
@@ -43,9 +42,9 @@ class Note(BaseModel):
     note_model_name: str = Field(default=..., alias="modelName")
     fields: Fields
     tags: list[str]
-    audio: list[AudioItem] = []
-    video: list[VideoItem] = []
-    picture: list[PictureItem] = []
+    audio: list[AudioItem] = Field(default_factory=list)
+    video: list[VideoItem] = Field(default_factory=list)
+    picture: list[PictureItem] = Field(default_factory=list)
     # options: dict = {"allowDuplicate": False}
 
 
@@ -147,28 +146,17 @@ class CustomFields(BaseModel):
     )
 
     @model_validator(mode="before")
-    def validate_missing_translations(cls, values: Any) -> Any:
-        handler = GoogleTranslator(source="de", target="es")
+    @classmethod
+    def add_word_to_meaning(cls, values: Any) -> Any:
+        """Normalize the meaning without performing network I/O."""
+        if not isinstance(values, dict):
+            return values
 
-        # Add the full word to the meaning
-        meaning = values.get("meaning", "")
-        if meaning is None:
-            values["meaning"] = values.get("full_word", "")
-        elif isinstance(meaning, str):
-            values["meaning"] = values.get("full_word", "") + "\n" + meaning
-
-        to_translate_map: dict[str, str] = {
-            "meaning": "meaning_spanish",
-            "example1": "example1e",
-            "example2": "example2e",
-        }
-        for original, to_generate in to_translate_map.items():
-            original_value = values.get(original, None)
-            if not values.get(to_generate, None) and original_value:
-                trans_result: str = handler.translate(  # type: ignore
-                    text=original_value,
-                )
-                values[to_generate] = trans_result if trans_result else ""
+        meaning = values.get("meaning")
+        if isinstance(meaning, str):
+            full_word = values.get("full_word", "")
+            if full_word and not meaning.startswith(f"{full_word}\n"):
+                values["meaning"] = f"{full_word}\n{meaning}"
         return values
 
     @classmethod
@@ -310,7 +298,7 @@ class OnlyAudioFields(BaseModel):
 class ToUpdateNote(BaseModel):
     id: dict[str, Any] | int = Field(..., alias="note")
     fields: OnlyAudioFields
-    audio: list[AudioItem] = []
+    audio: list[AudioItem] = Field(default_factory=list)
 
     async def add_audio(self) -> Self:
         word = str(self.fields.full_word)

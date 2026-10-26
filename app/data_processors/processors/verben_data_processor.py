@@ -12,14 +12,16 @@ from .base_data_processor import BaseDataProcessor
 
 class VerbenDataProcessor(BaseDataProcessor):
     def __init__(self) -> None:
-        self.base_url = "https://www.verben.de/?w="
+        self.base_url = "https://www.verben.de/"
         self.fields_class = CustomFields
 
         super().__init__()
 
     def get_note_data(self, word: str, note: CustomNote) -> CustomNote | None:
         response: requests.Response = requests.get(
-            url=self.base_url + word,
+            url=self.base_url,
+            params={"w": word},
+            timeout=15,
         )
 
         if response.status_code != http.HTTPStatus.OK:
@@ -42,6 +44,8 @@ class VerbenDataProcessor(BaseDataProcessor):
         content_dict: dict[str, Any] = self._extract_from_content(
             word=word, content=content
         )
+        # VerbenDataProcessor currently extracts the same field shape as the
+        # other dictionary processors, so use the shared schema.
         updated_note: CustomNote | None = note.import_from_content(
             content=content_dict, fields_class=self.fields_class
         )

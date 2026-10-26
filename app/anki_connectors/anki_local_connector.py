@@ -25,7 +25,7 @@ class AnkiLocalConnector:
     def make_request(
         self,
         action: str,
-        params: dict[str, Any] = {},
+        params: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         """
         Makes a request to the server with the specified action and parameters.
@@ -40,12 +40,14 @@ class AnkiLocalConnector:
         """
         request_data: dict[str, Any] = {
             "action": action,
-            "params": params,
+            "params": params or {},
             "version": 6,
         }
-        response: dict[str, dict[str, Any]] = requests.post(
-            url=self.server_url, json=request_data
-        ).json()
+        http_response = requests.post(
+            url=self.server_url, json=request_data, timeout=15
+        )
+        http_response.raise_for_status()
+        response: dict[str, Any] = http_response.json()
 
         if response.get("error") is not None:
             msg = f"Request failed: {response.get('error')}"
@@ -129,19 +131,23 @@ class AnkiLocalConnector:
         """
         return self.make_request(action="modelNamesAndIds")
 
-    async def add_audio_to_card(self, note: CustomNote) -> dict[str, Any]:
+    async def add_audio_to_card(self, note: ToUpdateNote) -> dict[str, Any]:
         await note.add_audio()
-        note_json = note.model_dump(
-            mode="python",
-        )
         return self.make_request(
             action="updateNoteFields",
-            params={"note": note_json},
+            params={
+                "note": {
+                    "id": note.id,
+                    "fields": {
+                        "audio": {"value": note.audio[0].url},
+                    },
+                }
+            },
         )
 
-    async def add_missing_audios(self):
+    async def add_missing_audios(self) -> None:
         decks = self.get_available_decks()
-        updated_cards = []
+        updated_cards: list[int | dict[str, Any]] = []
         total_cards = 0
         for deck in decks:
             logger.info(f"Processing Deck: {deck}")
@@ -155,11 +161,10 @@ class AnkiLocalConnector:
                     await self.add_audio_to_card(note)
                     updated_cards.append(note.id)
                 except Exception as e:
-                    logger.info(e)
+                    logger.warning("Could not add audio for note %s: %s", card, e)
                     continue
 
         logger.info(f"{len(updated_cards)}/{total_cards}")
 
-        if len(updated_cards) == 0:
-            return
-        self.make_request(action="forgetCards", params={"cards": [updated_cards]})
+        # Updating a note field already updates its cards. Do not call
+        # forgetCards here: that action resets scheduling progress.
