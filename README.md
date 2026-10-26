@@ -91,19 +91,20 @@ __Note__: Copy the token provided by BotFather and save it securely. Do not shar
 - `/web_word`: Creates an Anki note and sends it to Anki using Selenium. Note: This option cannot send audio files.
 - `/audio`: Creates audio from a given text.
 
-## Compiling and Running Using Nix
+## Development environment with devenv
 
-1. Build the bot:
+Enter the project environment (requires [devenv](https://devenv.sh/) and direnv):
 
-    ```bash
-    nix build
-    ```
+```bash
+direnv allow
+```
 
-2. Run the bot:
+This provides Python 3.12, Poetry, browser dependencies, and installs the Poetry
+project dependencies. Run the bot from the activated environment with:
 
-    ```bash
-    ./result/bin/bot
-    ```
+```bash
+poetry run bot
+```
 
 ## Compiling and Running Using Docker
 
